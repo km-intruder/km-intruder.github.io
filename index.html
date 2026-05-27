@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태양계 OX 퀴즈</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Arial", "Malgun Gothic", sans-serif;
+      color: #223047;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255, 232, 126, 0.75) 0 70px, transparent 72px),
+        radial-gradient(circle at 85% 15%, rgba(113, 204, 255, 0.5) 0 55px, transparent 58px),
+        linear-gradient(160deg, #e9f7ff 0%, #fff7d6 48%, #ffe8f0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .quiz-wrap {
+      width: min(100%, 720px);
+      background: rgba(255, 255, 255, 0.94);
+      border: 4px solid #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 18px 45px rgba(53, 82, 126, 0.18);
+      padding: clamp(20px, 5vw, 36px);
+      text-align: center;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .badge {
+      background: #f0f7ff;
+      border: 2px solid #cde8ff;
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: clamp(14px, 3.5vw, 17px);
+    }
+
+    h1 {
+      margin: 4px 0 10px;
+      font-size: clamp(30px, 7vw, 48px);
+      line-height: 1.15;
+      color: #243b7a;
+    }
+
+    .subtitle {
+      margin: 0 0 24px;
+      font-size: clamp(16px, 4vw, 20px);
+      color: #53627c;
+      font-weight: 700;
+    }
+
+    .planet-line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(6px, 2vw, 12px);
+      margin: 18px 0 24px;
+      min-height: 42px;
+    }
+
+    .planet {
+      width: clamp(18px, 6vw, 38px);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      box-shadow: inset -7px -7px 0 rgba(0, 0, 0, 0.08);
+      flex: 0 0 auto;
+    }
+
+    .sun {
+      width: clamp(32px, 9vw, 58px);
+      background: #ffce3a;
+      box-shadow: 0 0 22px rgba(255, 188, 38, 0.75);
+    }
+
+    .mercury { background: #b4adb0; }
+    .venus { background: #f2b35d; }
+    .earth { background: #42a5f5; }
+    .mars { background: #ef6c57; }
+    .jupiter { background: #d89b6b; }
+    .saturn {
+      background: #e8c879;
+      position: relative;
+    }
+    .saturn::before {
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 45%;
+      left: -25%;
+      top: 28%;
+      border: 3px solid rgba(151, 108, 43, 0.45);
+      border-radius: 50%;
+      transform: rotate(-15deg);
+    }
+    .uranus { background: #77d7d8; }
+    .neptune { background: #4d76d9; }
+
+    .progress {
+      height: 14px;
+      background: #e8eef8;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 22px;
+    }
+
+    .progress-bar {
+      width: 10%;
+      height: 100%;
+      background: linear-gradient(90deg, #5bc0ff, #7ed957);
+      border-radius: inherit;
+      transition: width 0.25s ease;
+    }
+
+    .question-box {
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff9e8;
+      border: 3px dashed #ffd36b;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .question {
+      margin: 0;
+      font-size: clamp(22px, 5.5vw, 34px);
+      line-height: 1.45;
+      font-weight: 800;
+      word-break: keep-all;
+    }
+
+    .answer-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 18px;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 900;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+    }
+
+    button:disabled {
+      cursor: default;
+      opacity: 0.72;
+      transform: none;
+    }
+
+    .choice {
+      min-height: 96px;
+      color: white;
+      font-size: clamp(36px, 12vw, 64px);
+      box-shadow: 0 9px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .choice-o {
+      background: #26b86f;
+    }
+
+    .choice-x {
+      background: #ff6464;
+    }
+
+    .feedback {
+      min-height: 38px;
+      margin: 0;
+      font-size: clamp(18px, 4.5vw, 24px);
+      font-weight: 900;
+    }
+
+    .feedback.correct {
+      color: #16804c;
+    }
+
+    .feedback.wrong {
+      color: #df4545;
+    }
+
+    .next-button,
+    .restart-button {
+      width: 100%;
+      min-height: 56px;
+      margin-top: 14px;
+      background: #405cf5;
+      color: white;
+      font-size: clamp(18px, 4.5vw, 22px);
+      box-shadow: 0 7px 0 #253bb5;
+    }
+
+    .restart-button {
+      background: #ff9f1c;
+      box-shadow: 0 7px 0 #c56f00;
+    }
+
+    .result-screen {
+      display: none;
+    }
+
+    .score {
+      margin: 18px 0 8px;
+      font-size: clamp(48px, 16vw, 88px);
+      color: #243b7a;
+      font-weight: 900;
+    }
+
+    .message {
+      margin: 0 0 18px;
+      color: #53627c;
+      font-size: clamp(18px, 4.5vw, 24px);
+      font-weight: 800;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 12px;
+        align-items: flex-start;
+      }
+
+      .quiz-wrap {
+        border-radius: 20px;
+      }
+
+      .top-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .badge {
+        width: 100%;
+      }
+
+      .question-box {
+        min-height: 170px;
+        padding: 18px;
+      }
+
+      .answer-buttons {
+        gap: 10px;
+      }
+
+      .choice {
+        min-height: 86px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="quiz-wrap">
+    <section id="quizScreen">
+      <div class="top-row">
+        <div class="badge" id="questionCount">1 / 10</div>
+        <div class="badge" id="scoreCount">점수 0점</div>
+      </div>
+
+      <h1>태양계 OX 퀴즈</h1>
+      <p class="subtitle">문장을 읽고 맞으면 O, 틀리면 X를 눌러요!</p>
+
+      <div class="planet-line" aria-hidden="true">
+        <span class="planet sun"></span>
+        <span class="planet mercury"></span>
+        <span class="planet venus"></span>
+        <span class="planet earth"></span>
+        <span class="planet mars"></span>
+        <span class="planet jupiter"></span>
+        <span class="planet saturn"></span>
+        <span class="planet uranus"></span>
+        <span class="planet neptune"></span>
+      </div>
+
+      <div class="progress" aria-label="퀴즈 진행률">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div class="question-box">
+        <p class="question" id="questionText"></p>
+      </div>
+
+      <div class="answer-buttons">
+        <button class="choice choice-o" id="trueButton" type="button" aria-label="O 선택">O</button>
+        <button class="choice choice-x" id="falseButton" type="button" aria-label="X 선택">X</button>
+      </div>
+
+      <p class="feedback" id="feedback"></p>
+      <button class="next-button" id="nextButton" type="button" hidden>다음 문제</button>
+    </section>
+
+    <section class="result-screen" id="resultScreen">
+      <h1>퀴즈 끝!</h1>
+      <div class="planet-line" aria-hidden="true">
+        <span class="planet sun"></span>
+        <span class="planet earth"></span>
+        <span class="planet mars"></span>
+        <span class="planet saturn"></span>
+        <span class="planet neptune"></span>
+      </div>
+      <div class="score" id="finalScore">0 / 10</div>
+      <p class="message" id="resultMessage"></p>
+      <button class="restart-button" id="restartButton" type="button">다시 풀기</button>
+    </section>
+  </main>
+
+  <script>
+    const questions = [
+      {
+        text: "태양은 스스로 빛과 열을 내는 별이다.",
+        answer: true,
+        explain: "맞아요! 태양은 태양계의 중심에 있는 별이에요."
+      },
+      {
+        text: "지구는 태양계에서 태양과 가장 가까운 행성이다.",
+        answer: false,
+        explain: "수성은 태양과 가장 가까운 행성이에요."
+      },
+      {
+        text: "태양계에는 행성이 8개 있다.",
+        answer: true,
+        explain: "맞아요! 수성부터 해왕성까지 8개의 행성이 있어요."
+      },
+      {
+        text: "달은 지구 주위를 도는 위성이다.",
+        answer: true,
+        explain: "맞아요! 달은 지구의 자연 위성이에요."
+      },
+      {
+        text: "목성은 태양계에서 가장 작은 행성이다.",
+        answer: false,
+        explain: "목성은 태양계에서 가장 큰 행성이에요."
+      },
+      {
+        text: "토성은 아름다운 고리를 가지고 있다.",
+        answer: true,
+        explain: "맞아요! 토성은 뚜렷한 고리로 유명해요."
+      },
+      {
+        text: "화성은 붉게 보여서 붉은 행성이라고 불린다.",
+        answer: true,
+        explain: "맞아요! 화성 표면의 산화 철 때문에 붉게 보여요."
+      },
+      {
+        text: "금성은 지구보다 태양에서 더 멀리 있다.",
+        answer: false,
+        explain: "금성은 지구보다 태양에 더 가까워요."
+      },
+      {
+        text: "행성들은 태양 주위를 돈다.",
+        answer: true,
+        explain: "맞아요! 행성들은 태양 주위를 공전해요."
+      },
+      {
+        text: "해왕성은 태양계의 8번째 행성이다.",
+        answer: true,
+        explain: "맞아요! 해왕성은 태양에서 가장 먼 8번째 행성이에요."
+      }
+    ];
+
+    const quizScreen = document.getElementById("quizScreen");
+    const resultScreen = document.getElementById("resultScreen");
+    const questionCount = document.getElementById("questionCount");
+    const scoreCount = document.getElementById("scoreCount");
+    const questionText = document.getElementById("questionText");
+    const feedback = document.getElementById("feedback");
+    const progressBar = document.getElementById("progressBar");
+    const trueButton = document.getElementById("trueButton");
+    const falseButton = document.getElementById("falseButton");
+    const nextButton = document.getElementById("nextButton");
+    const finalScore = document.getElementById("finalScore");
+    const resultMessage = document.getElementById("resultMessage");
+    const restartButton = document.getElementById("restartButton");
+
+    let currentIndex = 0;
+    let score = 0;
+    let answered = false;
+
+    function showQuestion() {
+      const currentQuestion = questions[currentIndex];
+      answered = false;
+
+      questionText.textContent = currentQuestion.text;
+      questionCount.textContent = `${currentIndex + 1} / ${questions.length}`;
+      scoreCount.textContent = `점수 ${score}점`;
+      progressBar.style.width = `${((currentIndex + 1) / questions.length) * 100}%`;
+      feedback.textContent = "";
+      feedback.className = "feedback";
+      nextButton.hidden = true;
+      trueButton.disabled = false;
+      falseButton.disabled = false;
+    }
+
+    function checkAnswer(choice) {
+      if (answered) {
+        return;
+      }
+
+      answered = true;
+      trueButton.disabled = true;
+      falseButton.disabled = true;
+
+      const currentQuestion = questions[currentIndex];
+      const isCorrect = choice === currentQuestion.answer;
+
+      if (isCorrect) {
+        score += 1;
+        feedback.textContent = `정답! ${currentQuestion.explain}`;
+        feedback.classList.add("correct");
+      } else {
+        feedback.textContent = `아쉬워요! ${currentQuestion.explain}`;
+        feedback.classList.add("wrong");
+      }
+
+      scoreCount.textContent = `점수 ${score}점`;
+      nextButton.textContent = currentIndex === questions.length - 1 ? "결과 보기" : "다음 문제";
+      nextButton.hidden = false;
+    }
+
+    function showResult() {
+      quizScreen.style.display = "none";
+      resultScreen.style.display = "block";
+      finalScore.textContent = `${score} / ${questions.length}`;
+
+      if (score === questions.length) {
+        resultMessage.textContent = "대단해요! 태양계 박사 같아요!";
+      } else if (score >= 7) {
+        resultMessage.textContent = "잘했어요! 태양계를 아주 많이 알고 있네요.";
+      } else if (score >= 4) {
+        resultMessage.textContent = "좋아요! 다시 풀면 더 높은 점수를 받을 수 있어요.";
+      } else {
+        resultMessage.textContent = "괜찮아요! 천천히 다시 도전해 봐요.";
+      }
+    }
+
+    function goNext() {
+      currentIndex += 1;
+
+      if (currentIndex >= questions.length) {
+        showResult();
+      } else {
+        showQuestion();
+      }
+    }
+
+    function restartQuiz() {
+      currentIndex = 0;
+      score = 0;
+      quizScreen.style.display = "block";
+      resultScreen.style.display = "none";
+      showQuestion();
+    }
+
+    trueButton.addEventListener("click", () => checkAnswer(true));
+    falseButton.addEventListener("click", () => checkAnswer(false));
+    nextButton.addEventListener("click", goNext);
+    restartButton.addEventListener("click", restartQuiz);
+
+    showQuestion();
+  </script>
+</body>
+</html>
