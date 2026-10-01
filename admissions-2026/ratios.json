@@ -10,7 +10,8 @@
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40130831.html",
    "time": "2026-10-02 최종 마감",
    "lat": 37.739,
-   "lon": 127.192
+   "lon": 127.192,
+   "type": "전문대"
   },
   {
    "id": "km",
@@ -20,9 +21,10 @@
    "x": 490,
    "y": 120,
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120531.html",
-   "time": "2026-10-01 00:00",
+   "time": "2026-10-01 최종 마감",
    "lat": 37.746,
-   "lon": 127.071
+   "lon": 127.071,
+   "type": "전문대"
   },
   {
    "id": "sh",
@@ -33,7 +35,8 @@
    "y": 185,
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11870871.html",
    "lat": 37.709,
-   "lon": 127.047
+   "lon": 127.047,
+   "type": "4년제"
   },
   {
    "id": "dj",
@@ -44,7 +47,8 @@
    "y": 145,
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio1051411.aspx",
    "lat": 37.893,
-   "lon": 127.201
+   "lon": 127.201,
+   "type": "4년제"
   },
   {
    "id": "dy",
@@ -56,7 +60,8 @@
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580411.html",
    "time": "2026-10-02 최종 마감",
    "lat": 37.499,
-   "lon": 126.868
+   "lon": 126.868,
+   "type": "전문대"
   },
   {
    "id": "si",
@@ -68,7 +73,8 @@
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40840701.html",
    "time": "2026-10-02 최종 마감",
    "lat": 37.586,
-   "lon": 127.097
+   "lon": 127.097,
+   "type": "전문대"
   },
   {
    "id": "id",
@@ -80,7 +86,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KOTpWVyVKZkNDYUxKN2ZUZg==",
    "time": "2026-10-02 최종 마감",
    "lat": 37.632,
-   "lon": 127.057
+   "lon": 127.057,
+   "type": "전문대"
   },
   {
    "id": "bc",
@@ -92,7 +99,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KTEJKZkNDYUxKN2ZUZg==",
    "lat": 37.486,
    "lon": 126.784,
-   "time": "2026-10-02 최종 마감"
+   "time": "2026-10-02 최종 마감",
+   "type": "전문대"
   },
   {
    "id": "gt",
@@ -104,7 +112,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KMCZXJTlKZkNDYUxKN2ZUZg==",
    "time": "2026-10-02 최종 마감",
    "lat": 37.337,
-   "lon": 126.734
+   "lon": 126.734,
+   "type": "전문대"
   },
   {
    "id": "yh",
@@ -116,7 +125,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KVzh8OmJKZkNDYUxKN2ZUZg==",
    "time": "2026-10-02 최종 마감",
    "lat": 37.488,
-   "lon": 126.813
+   "lon": 126.813,
+   "type": "전문대"
   },
   {
    "id": "ss",
@@ -128,7 +138,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KTCYmSmZDQ2FMSjdmVGY=",
    "time": "2026-10-02 최종 마감",
    "lat": 37.194,
-   "lon": 126.973
+   "lon": 126.973,
+   "type": "전문대"
   },
   {
    "id": "ih",
@@ -140,7 +151,8 @@
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260551.html",
    "time": "2026-09-30 21:00",
    "lat": 37.448,
-   "lon": 126.657
+   "lon": 126.657,
+   "type": "전문대"
   },
   {
    "id": "je",
@@ -152,7 +164,8 @@
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41290971.html",
    "time": "2026-10-02 최종 마감",
    "lat": 37.477,
-   "lon": 126.649
+   "lon": 126.649,
+   "type": "전문대"
   },
   {
    "id": "ds",
@@ -164,7 +177,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KOlZKZkNDYUxKN2ZUZg==",
    "time": "2026-10-02 최종 마감",
    "lat": 37.459,
-   "lon": 127.162
+   "lon": 127.162,
+   "type": "전문대"
   },
   {
    "id": "dl",
@@ -176,7 +190,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KTSVDYDhWSmZDQ2FMSjdmVGY=",
    "time": "2026-09-28 08:40",
    "lat": 37.403,
-   "lon": 126.928
+   "lon": 126.928,
+   "type": "전문대"
   },
   {
    "id": "mj",
@@ -187,7 +202,8 @@
    "y": 208,
    "url": "https://ratio.uwayapply.com/Sl5KTC9NSmZDQ2FMSjdmVGY=",
    "lat": 37.584,
-   "lon": 126.925
+   "lon": 126.925,
+   "type": "전문대"
   },
   {
    "id": "sg",
@@ -199,7 +215,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KOnJXJXwmSmZDQ2FMSjdmVGY=",
    "lat": 37.446,
    "lon": 127.158,
-   "time": "2026-10-02 최종 마감"
+   "time": "2026-10-02 최종 마감",
+   "type": "전문대"
   },
   {
    "id": "ys",
@@ -210,7 +227,8 @@
    "y": 385,
    "url": "https://ratio.uwayapply.com/Sl5Kclc6JldhYGJKZkNDYUxKN2ZUZg==",
    "lat": 37.397,
-   "lon": 126.926
+   "lon": 126.926,
+   "type": "전문대"
   },
   {
    "id": "sa",
@@ -221,7 +239,8 @@
    "y": 371,
    "url": "https://ratio.uwayapply.com/Sl5KMEw4SmZDQ2FMSjdmVGY=",
    "lat": 37.311,
-   "lon": 126.847
+   "lon": 126.847,
+   "type": "전문대"
   },
   {
    "id": "os",
@@ -232,7 +251,8 @@
    "y": 437,
    "url": "https://ratio.uwayapply.com/Sl5KVzgmYUpmQ0NhTEo3ZlRm",
    "lat": 37.148,
-   "lon": 127.067
+   "lon": 127.067,
+   "type": "전문대"
   }
  ],
  "rows": [
@@ -246,7 +266,8 @@
    "prior": 6.2,
    "priorName": "컴퓨터소프트웨어과",
    "priorQuota": 39,
-   "priorUrl": "https://ipsi.bc.ac.kr/ipsi/susi01/results-grades-2026-s1-01.do"
+   "priorUrl": "https://ipsi.bc.ac.kr/ipsi/susi01/results-grades-2026-s1-01.do",
+   "comparable": true
   },
   {
    "school": "bc",
@@ -258,7 +279,8 @@
    "prior": 5.4,
    "priorName": "컴퓨터정보보안학과",
    "priorQuota": 17,
-   "priorUrl": "https://ipsi.bc.ac.kr/ipsi/susi01/results-grades-2026-s1-01.do"
+   "priorUrl": "https://ipsi.bc.ac.kr/ipsi/susi01/results-grades-2026-s1-01.do",
+   "comparable": true
   },
   {
    "school": "gb",
@@ -271,7 +293,8 @@
    "priorName": "소프트웨어융합과(전공구성 상이)",
    "priorQuota": 60,
    "priorApplied": 136,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40130691.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40130691.html",
+   "comparable": false
   },
   {
    "school": "km",
@@ -279,12 +302,15 @@
    "field": "SW",
    "track": "일반전형",
    "quota": 35,
-   "applied": 98,
+   "applied": 101,
    "prior": 3.8,
    "priorName": "컴퓨터소프트웨어과",
    "priorQuota": 35,
    "priorApplied": 133,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html",
+   "comparable": true,
+   "locked": true,
+   "note": "학과 확인 최종값"
   },
   {
    "school": "km",
@@ -292,12 +318,15 @@
    "field": "IT",
    "track": "일반전형",
    "quota": 15,
-   "applied": 67,
+   "applied": 68,
    "prior": 3.38,
    "priorName": "사이버보안학과(학과명 상이)",
    "priorQuota": 13,
    "priorApplied": 44,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html",
+   "comparable": false,
+   "locked": true,
+   "note": "학과 확인 최종값"
   },
   {
    "school": "dy",
@@ -305,7 +334,8 @@
    "field": "컴퓨터",
    "track": "일반고 전형",
    "quota": 40,
-   "applied": 260
+   "applied": 260,
+   "comparable": false
   },
   {
    "school": "dy",
@@ -318,7 +348,8 @@
    "priorName": "컴퓨터소프트웨어공학과(3년)",
    "priorQuota": 40,
    "priorApplied": 274,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580361.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580361.html",
+   "comparable": true
   },
   {
    "school": "dy",
@@ -331,7 +362,8 @@
    "priorName": "인공지능소프트웨어학과(3년)",
    "priorQuota": 40,
    "priorApplied": 235,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580361.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580361.html",
+   "comparable": true
   },
   {
    "school": "dy",
@@ -344,7 +376,8 @@
    "priorName": "로봇소프트웨어과(3년)",
    "priorQuota": 34,
    "priorApplied": 116,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580361.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580361.html",
+   "comparable": true
   },
   {
    "school": "dy",
@@ -357,7 +390,8 @@
    "priorName": "정보통신공학과(3년)",
    "priorQuota": 56,
    "priorApplied": 200,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580361.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580361.html",
+   "comparable": true
   },
   {
    "school": "si",
@@ -370,7 +404,8 @@
    "priorName": "소프트웨어공학과",
    "priorQuota": 28,
    "priorApplied": 260,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40840641.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40840641.html",
+   "comparable": true
   },
   {
    "school": "si",
@@ -383,7 +418,8 @@
    "priorName": "AI게임융합학과",
    "priorQuota": 45,
    "priorApplied": 266,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40840641.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40840641.html",
+   "comparable": true
   },
   {
    "school": "si",
@@ -391,7 +427,8 @@
    "field": "컴퓨터",
    "track": "특별전형(일반고)",
    "quota": 37,
-   "applied": 256
+   "applied": 256,
+   "comparable": false
   },
   {
    "school": "si",
@@ -399,7 +436,8 @@
    "field": "IT",
    "track": "특별전형(일반고)",
    "quota": 47,
-   "applied": 261
+   "applied": 261,
+   "comparable": false
   },
   {
    "school": "id",
@@ -411,7 +449,8 @@
    "prior": 5.9,
    "priorName": "컴퓨터소프트웨어학과",
    "priorQuota": 40,
-   "priorUrl": "https://ipsi.induk.ac.kr/IPSI/cms/CM_CN01_CON/index.do?MENU_SN=506"
+   "priorUrl": "https://ipsi.induk.ac.kr/IPSI/cms/CM_CN01_CON/index.do?MENU_SN=506",
+   "comparable": true
   },
   {
    "school": "id",
@@ -423,7 +462,8 @@
    "prior": 5.13,
    "priorName": "컴퓨터전자공학과",
    "priorQuota": 31,
-   "priorUrl": "https://ipsi.induk.ac.kr/IPSI/cms/CM_CN01_CON/index.do?MENU_SN=506"
+   "priorUrl": "https://ipsi.induk.ac.kr/IPSI/cms/CM_CN01_CON/index.do?MENU_SN=506",
+   "comparable": true
   },
   {
    "school": "id",
@@ -431,7 +471,8 @@
    "field": "IT",
    "track": "특별전형(일반고교)",
    "quota": 35,
-   "applied": 199
+   "applied": 199,
+   "comparable": false
   },
   {
    "school": "gt",
@@ -439,7 +480,8 @@
    "field": "컴퓨터",
    "track": "일반고(학생부)",
    "quota": 34,
-   "applied": 122
+   "applied": 122,
+   "comparable": false
   },
   {
    "school": "gt",
@@ -447,7 +489,8 @@
    "field": "AI",
    "track": "일반고(학생부)",
    "quota": 17,
-   "applied": 94
+   "applied": 94,
+   "comparable": false
   },
   {
    "school": "yh",
@@ -460,7 +503,8 @@
    "priorName": "컴퓨터소프트웨어전공",
    "priorQuota": 34,
    "priorApplied": 218,
-   "priorUrl": "https://sky.yuhan.ac.kr/preResult.do?gubun=15&menu_idx=4011"
+   "priorUrl": "https://sky.yuhan.ac.kr/preResult.do?gubun=15&menu_idx=4011",
+   "comparable": true
   },
   {
    "school": "yh",
@@ -473,7 +517,8 @@
    "priorName": "인공지능전공",
    "priorQuota": 14,
    "priorApplied": 163,
-   "priorUrl": "https://sky.yuhan.ac.kr/preResult.do?gubun=15&menu_idx=4011"
+   "priorUrl": "https://sky.yuhan.ac.kr/preResult.do?gubun=15&menu_idx=4011",
+   "comparable": true
   },
   {
    "school": "ss",
@@ -481,7 +526,8 @@
    "field": "SW",
    "track": "일반고 전형",
    "quota": 33,
-   "applied": 105
+   "applied": 105,
+   "comparable": false
   },
   {
    "school": "ss",
@@ -489,7 +535,8 @@
    "field": "게임",
    "track": "일반고 전형",
    "quota": 23,
-   "applied": 107
+   "applied": 107,
+   "comparable": false
   },
   {
    "school": "ih",
@@ -502,7 +549,8 @@
    "priorName": "컴퓨터정보공학과(학과명 상이)",
    "priorQuota": 53,
    "priorApplied": 237,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260461.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260461.html",
+   "comparable": false
   },
   {
    "school": "ih",
@@ -515,7 +563,8 @@
    "priorName": "컴퓨터시스템공학과(학과명 상이)",
    "priorQuota": 52,
    "priorApplied": 171,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260461.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260461.html",
+   "comparable": false
   },
   {
    "school": "ih",
@@ -523,7 +572,8 @@
    "field": "IT",
    "track": "일반고",
    "quota": 46,
-   "applied": 257
+   "applied": 257,
+   "comparable": false
   },
   {
    "school": "je",
@@ -536,7 +586,8 @@
    "priorName": "컴퓨터소프트웨어학과",
    "priorQuota": 17,
    "priorApplied": 89,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41290841.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41290841.html",
+   "comparable": true
   },
   {
    "school": "je",
@@ -549,7 +600,8 @@
    "priorName": "컴퓨터시스템과",
    "priorQuota": 21,
    "priorApplied": 59,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41290841.html"
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41290841.html",
+   "comparable": true
   },
   {
    "school": "ds",
@@ -557,7 +609,8 @@
    "field": "SW",
    "track": "일반고전형",
    "quota": 32,
-   "applied": 171
+   "applied": 171,
+   "comparable": false
   },
   {
    "school": "ds",
@@ -565,7 +618,8 @@
    "field": "AI",
    "track": "일반고전형",
    "quota": 17,
-   "applied": 94
+   "applied": 94,
+   "comparable": false
   },
   {
    "school": "dl",
@@ -578,7 +632,8 @@
    "priorName": "소프트웨어학부",
    "priorQuota": 62,
    "priorApplied": 236,
-   "priorUrl": "https://ent.daelim.ac.kr/cms/FrCon/index.do?MENU_ID=3420"
+   "priorUrl": "https://ent.daelim.ac.kr/cms/FrCon/index.do?MENU_ID=3420",
+   "comparable": true
   },
   {
    "school": "sg",
@@ -591,7 +646,8 @@
    "priorName": "컴퓨터소프트웨어과",
    "priorQuota": 49,
    "priorApplied": 162,
-   "priorUrl": "https://enter.shingu.ac.kr/cms/FR_CON/index.do?MENU_ID=860"
+   "priorUrl": "https://enter.shingu.ac.kr/cms/FR_CON/index.do?MENU_ID=860",
+   "comparable": true
   },
   {
    "school": "sg",
@@ -604,7 +660,35 @@
    "priorName": "AI데이터과",
    "priorQuota": 28,
    "priorApplied": 78,
-   "priorUrl": "https://enter.shingu.ac.kr/cms/FR_CON/index.do?MENU_ID=860"
+   "priorUrl": "https://enter.shingu.ac.kr/cms/FR_CON/index.do?MENU_ID=860",
+   "comparable": true
+  },
+  {
+   "school": "sh",
+   "dept": "소프트웨어융합학과",
+   "field": "SW",
+   "track": "일반전형",
+   "quota": 13,
+   "applied": 129,
+   "comparable": false
+  },
+  {
+   "school": "dj",
+   "dept": "컴퓨터공학과",
+   "field": "컴퓨터",
+   "track": "적성고사",
+   "quota": 16,
+   "applied": 159,
+   "comparable": false
+  },
+  {
+   "school": "dj",
+   "dept": "컴퓨터공학과",
+   "field": "컴퓨터",
+   "track": "학생부교과우수자",
+   "quota": 15,
+   "applied": 84,
+   "comparable": false
   }
  ],
  "live": [
@@ -634,7 +718,12 @@
   "gt",
   "yh",
   "ss",
-  "ds"
+  "ds",
+  "km"
  ],
- "checkedAt": "2026-10-02 05:49"
+ "checkedAt": "2026-10-02 06:21",
+ "baseline": {
+  "school": "km",
+  "dept": "지능형소프트웨어과"
+ }
 }

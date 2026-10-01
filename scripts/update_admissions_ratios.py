@@ -186,6 +186,8 @@ def main():
         if any(match_row(row, entries) for row in rows):
             live.append(school["id"])
         for row in rows:
+            if row.get("locked"):  # 학과에서 확인한 최종값은 원문 수집으로 덮어쓰지 않음
+                continue
             hit = match_row(row, entries)
             if not hit:
                 print(f"[{school['name']}] {row['dept']} ({row.get('track')}) - 일치 행 없음, 기존값 유지")
