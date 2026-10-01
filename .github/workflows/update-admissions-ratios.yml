@@ -1,0 +1,38 @@
+name: 수시 경쟁률 공개값 갱신
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # 매시 정각 (UTC 기준, 한국시간도 매시 정각)
+  workflow_dispatch:       # Actions 탭에서 수동 실행
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-admissions-ratios
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 경쟁률 원문 수집
+        run: python scripts/update_admissions_ratios.py
+
+      - name: 변경 시 커밋
+        run: |
+          if git diff --quiet -- admissions-2026/ratios.json; then
+            echo "변경 없음"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add admissions-2026/ratios.json
+          git commit -m "Update admissions ratios"
+          git push
