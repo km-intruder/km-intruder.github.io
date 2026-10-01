@@ -1,6 +1,7 @@
 """수시 경쟁률 공개값 수집기.
 
-admissions-2026/ratios.json 에 정의된 학교(url)와 학과(rows)를 기준으로
+admissions-2026/ratios*.json (회차별: ratios.json=수시 1차, ratios-susi2.json=수시 2차 …)에
+정의된 학교(url)와 학과(rows)를 기준으로
 진학어플라이 / 유웨이어플라이 경쟁률 페이지를 읽어 지원인원(applied)과
 학교별 기준 시각(time)을 갱신한다. 표준 라이브러리만 사용한다.
 
@@ -14,7 +15,7 @@ from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 
-DATA_PATH = Path(__file__).resolve().parent.parent / "admissions-2026" / "ratios.json"
+DATA_DIR = Path(__file__).resolve().parent.parent / "admissions-2026"
 KST = timezone(timedelta(hours=9))
 RATE_RE = re.compile(r"^\d+(?:\.\d+\s*(?::\s*1)?|\s*:\s*1)$")  # "7.74 : 1" 또는 "7.74"
 FINAL_RE = re.compile(r"최종\s*(?:경쟁률\s*(?:현황)?\s*입니다|마감\s*(?:현황)?\s*입니다|마감되었습니다)")
@@ -150,9 +151,9 @@ def match_row(row, entries):
     return cands[0] if len(cands) == 1 else None
 
 
-def main():
-    dry_run = "--dry-run" in sys.argv
-    data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+def update_file(path, dry_run):
+    print(f"== {path.name}")
+    data = json.loads(path.read_text(encoding="utf-8"))
     before = {k: v for k, v in data.items() if k != "checkedAt"}
     before = json.dumps(before, ensure_ascii=False, sort_keys=True)
     prev_live = set(data.get("live", []))
@@ -206,7 +207,13 @@ def main():
     # checkedAt 은 공개값이 실제로 바뀐 시각 (매 실행마다 커밋이 쌓이지 않도록)
     data["checkedAt"] = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
     if not dry_run:
-        DATA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def main():
+    dry_run = "--dry-run" in sys.argv
+    for path in sorted(DATA_DIR.glob("ratios*.json")):
+        update_file(path, dry_run)
 
 
 if __name__ == "__main__":

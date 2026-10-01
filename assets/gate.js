@@ -1,12 +1,13 @@
 /* 간단한 접근 코드 화면 (사이트 전체)
    - 코드는 저장하지 않고 SHA-256 해시만 둔다. 변경: python scripts/set_access_code.py <새 코드>
+   - 입력 상태는 sessionStorage 에만 둔다: 브라우저(탭)를 닫으면 다시 묻는다
    - 공개 저장소의 파일 자체를 숨기지는 않는다. 우연한 방문·검색 노출을 막는 용도 */
 (function () {
   var HASH = '56bb10679132bfba0133eb050cb5bb48a0ea50efe91ad934ff4bf6f6df63ac1a'; // set_access_code.py 가 갱신
   var SALT = 'km-intruder:';
   var KEY = 'km-access';
 
-  function saved() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function saved() { try { return sessionStorage.getItem(KEY); } catch (e) { return null; } }
   if (saved() === HASH) return;
 
   var hide = document.createElement('style');
@@ -40,7 +41,7 @@
       e.preventDefault();
       if (!window.crypto || !crypto.subtle) { msg.textContent = 'https 주소로 접속해 주세요.'; return; }
       if (await sha256(SALT + input.value) === HASH) {
-        try { localStorage.setItem(KEY, HASH); } catch (err) {}
+        try { sessionStorage.setItem(KEY, HASH); } catch (err) {}
         box.remove();
         hide.remove();
       } else {

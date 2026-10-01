@@ -70,9 +70,9 @@
     };
   }
 
-  async function load() {
-    const res = await fetch('ratios.json', { cache: 'no-store' });
-    if (!res.ok) throw new Error('ratios.json ' + res.status);
+  async function load(file = 'ratios.json') {
+    const res = await fetch(file, { cache: 'no-store' });
+    if (!res.ok) throw new Error(file + ' ' + res.status);
     return prepare(await res.json());
   }
 
