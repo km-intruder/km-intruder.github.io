@@ -42,7 +42,14 @@
     // 경민대의 다른 학과는 같은 학교라 비교군에서 빼고 참고용으로만 둔다
     const sameSchool = all.filter(r => r.school === b.school && r !== base);
     const rows = all.filter(r => !sameSchool.includes(r));
+    // 경민대 소재지에서의 직선거리(km)
+    const km = (a, c) => {
+      const rad = x => x * Math.PI / 180, dLat = rad(c.lat - a.lat), dLon = rad(c.lon - a.lon);
+      const h = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(c.lat)) * Math.sin(dLon / 2) ** 2;
+      return 6371 * 2 * Math.asin(Math.sqrt(h));
+    };
     rows.forEach(r => {
+      r.distKm = base ? km(base.s, r.s) : null;
       r.isBase = r === base;
       r.vsBase = base && base.rate ? r.rate / base.rate : null;
       r.gap = base ? r.rate - base.rate : null;

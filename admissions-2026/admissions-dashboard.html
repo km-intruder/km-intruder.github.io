@@ -65,13 +65,23 @@
     <select id="field" aria-label="분야">
       <option value="all">전체 분야</option><option>SW</option><option>AI</option><option>컴퓨터</option><option>게임</option><option>로봇</option><option>IT</option>
     </select>
+    <select id="sort" aria-label="정렬">
+      <option value="rate-desc">경쟁률 높은 순</option>
+      <option value="rate-asc">경쟁률 낮은 순</option>
+      <option value="near">경민대와 가까운 순</option>
+      <option value="similar">경민대와 경쟁률 비슷한 순</option>
+      <option value="change-desc">2026 대비 상승 큰 순</option>
+      <option value="change-asc">2026 대비 하락 큰 순</option>
+      <option value="applied-desc">지원자 많은 순</option>
+      <option value="name">학교 이름순</option>
+    </select>
     <button class="btn" id="clearSchool" type="button" hidden></button>
   </div>
   <div class="table-wrap">
     <table>
       <thead><tr>
-        <th>학교 · 모집단위</th><th>권역</th><th class="n">모집</th><th class="n">지원</th><th class="n">경쟁률</th>
-        <th class="n">경민대 대비</th><th class="n">2026 → 2027</th><th>변화 원인</th><th>원문</th>
+        <th data-sort="name">학교 · 모집단위</th><th data-sort="near">권역 · 거리</th><th class="n">모집</th><th class="n" data-sort="applied-desc">지원</th><th class="n" data-sort="rate-desc,rate-asc">경쟁률</th>
+        <th class="n" data-sort="similar">경민대 대비</th><th class="n" data-sort="change-desc,change-asc">2026 → 2027</th><th>변화 원인</th><th>원문</th>
       </tr></thead>
       <tbody id="rows"></tbody>
     </table>
@@ -205,7 +215,7 @@ function rowHtml(r) {
   const opposite = r.change != null && b.change != null && r.change > 0 && b.change < 0;
   return `<tr class="${selected === s.id ? 'selected' : ''}">
     <td><div class="school">${esc(s.name)}</div><div class="dept">${esc(r.dept)}</div><div class="muted">${esc(r.track)}</div></td>
-    <td><div class="${sameRegion ? 'alert' : 'muted'}">${esc(s.region)} · ${esc(s.city)}${sameRegion ? ' (같은 권역)' : ''}</div></td>
+    <td><div class="${sameRegion ? 'alert' : 'muted'}">${esc(s.region)} · ${esc(s.city)}${sameRegion ? ' (같은 권역)' : ''}</div><div class="muted">경민대에서 ${Math.round(r.distKm)}km</div></td>
     <td class="n">${num(r.quota)}</td>
     <td class="n">${num(r.applied)}<div class="muted">${r.applied - b.applied >= 0 ? '+' : '−'}${num(Math.abs(r.applied - b.applied))} vs 경민대</div></td>
     <td class="n"><span class="rate">${fx(r.rate)}</span><div class="muted">${r.final ? '최종' : '최종 미확인'}</div></td>
@@ -216,6 +226,29 @@ function rowHtml(r) {
   </tr>`;
 }
 
+// 정렬 기준 (변화율이 없는 행은 항상 뒤로)
+const byChange = dir => (x, y) => (x.change == null) - (y.change == null) || dir * ((y.change ?? 0) - (x.change ?? 0));
+const SORTS = {
+  'rate-desc': (x, y) => y.rate - x.rate,
+  'rate-asc': (x, y) => x.rate - y.rate,
+  'near': (x, y) => x.distKm - y.distKm || y.rate - x.rate,
+  'similar': (x, y) => Math.abs(x.gap) - Math.abs(y.gap),
+  'change-desc': byChange(1),
+  'change-asc': byChange(-1),
+  'applied-desc': (x, y) => y.applied - x.applied,
+  'name': (x, y) => x.s.name.localeCompare(y.s.name, 'ko') || y.rate - x.rate,
+};
+
+function markSortHeader() {
+  const v = el('sort').value;
+  document.querySelectorAll('th[data-sort]').forEach(th => {
+    const keys = th.dataset.sort.split(',');
+    const i = keys.indexOf(v);
+    th.classList.toggle('sorted', i >= 0);
+    th.dataset.dir = i < 0 ? '' : v.endsWith('-asc') ? '▲' : '▼';
+  });
+}
+
 function renderRows() {
   const q = el('q').value.trim().toLowerCase(), reg = el('reg').value, field = el('field').value;
   const list = R.rows.filter(r => !r.isBase
@@ -223,9 +256,10 @@ function renderRows() {
     && (field === 'all' || r.field === field)
     && (!selected || r.school === selected)
     && (r.s.name + ' ' + r.dept).toLowerCase().includes(q))
-    .sort((x, y) => y.rate - x.rate);
+    .sort(SORTS[el('sort').value] || SORTS['rate-desc']);
   el('rows').innerHTML = list.map(rowHtml).join('') || '<tr><td colspan="9" class="empty">조건에 맞는 모집단위가 없습니다.</td></tr>';
-  el('count').textContent = `${list.length}개 모집단위 · 경쟁률 높은 순`;
+  el('count').textContent = `${list.length}개 모집단위 · ${el('sort').selectedOptions[0].text}`;
+  markSortHeader();
   const btn = el('clearSchool');
   btn.hidden = !selected;
   if (selected) btn.textContent = R.byId[selected].name + ' 선택 해제 ×';
@@ -303,6 +337,18 @@ async function reload() {
 }
 
 for (const id of ['q', 'reg', 'field']) el(id).addEventListener(id === 'q' ? 'input' : 'change', () => R && renderRows());
+// 정렬: 선택 상자 또는 열 제목 클릭 (같은 열을 다시 누르면 반대 방향)
+try { const saved = localStorage.getItem('admissions-sort'); if (saved && SORTS[saved]) el('sort').value = saved; } catch (e) {}
+function setSort(v) {
+  el('sort').value = v;
+  try { localStorage.setItem('admissions-sort', v); } catch (e) {}
+  if (R) renderRows();
+}
+el('sort').addEventListener('change', () => setSort(el('sort').value));
+document.querySelectorAll('th[data-sort]').forEach(th => th.addEventListener('click', () => {
+  const keys = th.dataset.sort.split(','), i = keys.indexOf(el('sort').value);
+  setSort(keys[i < 0 ? 0 : (i + 1) % keys.length]);
+}));
 el('clearSchool').addEventListener('click', () => { selected = null; renderRows(); drawMap(); });
 el('reload').addEventListener('click', reload);
 reload();

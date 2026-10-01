@@ -227,3 +227,9 @@ footer.colophon { margin-top: 48px; border-top: 1px solid var(--rule); padding-t
 .post hr { border: 0; border-top: 1px solid var(--rule); margin: 28px 0; }
 .post .sources { font-size: 13px; color: var(--ink-2); }
 @media (max-width: 600px) { .board-list a { grid-template-columns: 1fr; gap: 2px; } }
+
+/* ── 정렬 가능한 열 제목 ── */
+th[data-sort] { cursor: pointer; user-select: none; }
+th[data-sort]:hover { color: var(--ink); text-decoration: underline; }
+th.sorted { color: var(--brand); }
+th.sorted::after { content: " " attr(data-dir); }
