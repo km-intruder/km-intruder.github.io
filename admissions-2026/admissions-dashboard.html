@@ -18,7 +18,7 @@
   <div class="title-row">
     <div>
       <h1>수도권 SW·AI 계열 수시 1차 경쟁률</h1>
-      <div class="meta">기준 학과: 경민대학교 지능형소프트웨어과 (일반전형) · 수도권 20개교</div>
+      <div class="meta">기준 학과: 경민대학교 지능형소프트웨어과 (일반전형) · 수도권 전문대 18개교</div>
     </div>
     <div class="tools">
       <span class="stamp" id="stamp">불러오는 중</span>
@@ -29,6 +29,8 @@
   <nav class="tabs">
     <a href="admissions-dashboard.html" aria-current="page">경쟁률 현황</a>
     <a href="competition-curriculum.html">교육과정 비교</a>
+    <a href="colleges.html">전문대 현황</a>
+    <a href="industry.html">산업 현황</a>
   </nav>
 </header>
 
@@ -63,15 +65,12 @@
     <select id="field" aria-label="분야">
       <option value="all">전체 분야</option><option>SW</option><option>AI</option><option>컴퓨터</option><option>게임</option><option>로봇</option><option>IT</option>
     </select>
-    <select id="kind" aria-label="학제">
-      <option value="all">전문대 + 4년제</option><option>전문대</option><option>4년제</option>
-    </select>
     <button class="btn" id="clearSchool" type="button" hidden></button>
   </div>
   <div class="table-wrap">
     <table>
       <thead><tr>
-        <th>학교 · 모집단위</th><th>학제 · 권역</th><th class="n">모집</th><th class="n">지원</th><th class="n">경쟁률</th>
+        <th>학교 · 모집단위</th><th>권역</th><th class="n">모집</th><th class="n">지원</th><th class="n">경쟁률</th>
         <th class="n">경민대 대비</th><th class="n">2026 → 2027</th><th>변화 원인</th><th>원문</th>
       </tr></thead>
       <tbody id="rows"></tbody>
@@ -81,7 +80,6 @@
     <summary>표 읽는 법</summary>
     <p>‘경민대 대비’는 각 모집단위 경쟁률 ÷ 경민대 지능형소프트웨어과 경쟁률입니다. <span class="alert">빨간색</span>은 경민대의 2.5배 이상이거나, 경민대가 하락한 해에 상승한 모집단위입니다.</p>
     <p>‘변화 원인’은 2026학년도 대비 모집인원·지원인원 변화로 나눈 산술적 분류입니다. 정원이 줄면 지원자가 줄어도 경쟁률이 오를 수 있습니다.</p>
-    <p>4년제는 전형 구조가 전문대 수시 1차와 달라 순위·중앙값 계산에서 제외하고 별도 묶음으로 표시합니다.</p>
   </details>
 </section>
 
@@ -94,6 +92,17 @@
     </table>
   </div>
 </section>
+
+<details class="notes">
+  <summary>참고 · 인근 4년제 경쟁률 (비교 대상 아님)</summary>
+  <p>4년제는 전형 구조와 모집 시기가 전문대 수시 1차와 달라 순위·중앙값·경민대 대비 비교에서 모두 제외했습니다. 같은 권역의 진학 선택지를 파악하는 참고용입니다.</p>
+  <div class="table-wrap" style="max-width:820px;margin-bottom:10px">
+    <table>
+      <thead><tr><th>학교</th><th>모집단위</th><th>전형</th><th class="n">모집</th><th class="n">지원</th><th class="n">경쟁률</th><th>원문</th></tr></thead>
+      <tbody id="reference"></tbody>
+    </table>
+  </div>
+</details>
 
 <details class="notes">
   <summary>자료 기준과 유의 사항</summary>
@@ -116,15 +125,11 @@ const { esc, num, fx, pct, signed } = Ratio;
 const el = id => document.getElementById(id);
 let R = null, selected = null, map = null, layer = null;
 
-function kindBadge(s) {
-  return s.type === '4년제' ? '<span class="badge univ">4년제</span>' : '<span class="badge college">전문대</span>';
-}
-
 function renderBaseline() {
   const b = R.base, s = b.s;
   const dApplied = b.priorApplied != null ? b.applied - b.priorApplied : null;
   const north = R.rows.filter(r => !r.isBase && r.s.region === s.region);
-  const opposite = R.comparable.filter(r => r.s.type !== '4년제' && r.change > 0);
+  const opposite = R.comparable.filter(r => r.change > 0);
   const finalText = b.final ? '최종 마감값' + (b.note ? ' · ' + esc(b.note) : '') : '최종 미확인 · ' + esc(s.time || '') + ' 공개값';
   el('baseline').innerHTML = `
     <div class="baseline-head">
@@ -142,15 +147,47 @@ function renderBaseline() {
     </div>
     <ul class="findings">
       <li>전문대 비교군 ${R.peerCount - 1}개 모집단위 중 <b class="alert">${R.above}개</b>가 경민대 지능형소프트웨어과보다 경쟁률이 높습니다.</li>
-      ${b.change != null ? `<li>경민대는 2026년 대비 경쟁률이 <b class="${b.change < 0 ? 'alert' : ''}">${pct(b.change)}</b> (${fx(b.prior)} → ${fx(b.rate)}) 변했고, 원인은 <b>${esc(b.cause)}</b>입니다. 같은 기간 직접 비교 가능한 전문대 ${R.comparable.filter(r => r.s.type !== '4년제').length}개 모집단위 중 <b class="${b.change < 0 ? 'alert' : ''}">${opposite.length}개는 상승</b>했습니다.</li>` : ''}
-      ${north.length ? `<li>같은 ${esc(s.region)} 권역: ${north.map(r => `${esc(r.s.name)} ${esc(r.dept.replace(/\(.*\)/, ''))} ${r.s.type === '4년제' ? '(4년제 · ' + esc(r.track) + ') ' : ''}<b class="${r.rate > b.rate ? 'alert' : ''}">${fx(r.rate)}:1</b>`).join(', ')}</li>` : ''}
-    </ul>`;
+      ${b.change != null ? `<li>경민대는 2026년 대비 경쟁률이 <b class="${b.change < 0 ? 'alert' : ''}">${pct(b.change)}</b> (${fx(b.prior)} → ${fx(b.rate)}) 변했고, 원인은 <b>${esc(b.cause)}</b>입니다. 같은 기간 직접 비교 가능한 전문대 ${R.comparable.length}개 모집단위 중 <b class="${b.change < 0 ? 'alert' : ''}">${opposite.length}개는 상승</b>했습니다.</li>` : ''}
+      ${north.length ? `<li>같은 ${esc(s.region)} 권역: ${north.map(r => `${esc(r.s.name)} ${esc(r.dept.replace(/\(.*\)/, ''))} <b class="${r.rate > b.rate ? 'alert' : ''}">${fx(r.rate)}:1</b>`).join(', ')}</li>` : ''}
+    </ul>
+    ${diagnosis()}`;
+}
+
+// 지원 감소가 곧 경쟁력 하락인지: 시장 전체 · 학교 내부 이동 · 권역 공통 요인으로 나눠 본다
+function diagnosis() {
+  const b = R.base;
+  if (b.priorApplied == null) return '';
+  const sum = (rs, k) => rs.reduce((n, r) => n + r[k], 0);
+  const chg = (a, p) => (a - p) / p * 100;
+  const market = R.comparable.filter(r => r.priorApplied != null);
+  const mP = sum(market, 'priorApplied'), mA = sum(market, 'applied');
+  const mChg = chg(mA, mP), bChg = chg(b.applied, b.priorApplied);
+  const school = [b, ...R.sameSchool.filter(r => r.priorApplied != null)];
+  const sP = sum(school, 'priorApplied'), sA = sum(school, 'applied'), sChg = chg(sA, sP);
+  const sibs = R.sameSchool.filter(r => r.priorApplied != null);
+  const region = R.rows.filter(r => !r.isBase && r.s.region === b.s.region && r.priorApplied != null);
+  return `<div class="diagnosis">
+    <h3>지원 감소 = 경쟁력 하락인가?</h3>
+    <table>
+      <tbody>
+        <tr><th>비교 학과 전체 (직접 대응 ${market.length}개)</th><td class="n">${num(mP)} → ${num(mA)}명</td><td class="n"><b>${pct(mChg)}</b></td>
+          <td>모집 ${num(sum(market, 'priorQuota'))} → ${num(sum(market, 'quota'))}명. 비교 시장은 지원자가 늘었는데 경민대는 <b class="alert">${pct(bChg)}</b> — 상대적 점유는 실제로 줄었습니다.</td></tr>
+        <tr><th>경민대 IT 계열 합계 (${school.length}개 학과)</th><td class="n">${num(sP)} → ${num(sA)}명</td><td class="n"><b>${pct(sChg)}</b></td>
+          <td>${sibs.map(r => `${esc(r.dept)} ${num(r.priorApplied)} → ${num(r.applied)}명 (${pct(chg(r.applied, r.priorApplied))}, 모집 ${r.priorQuota} → ${r.quota}명)`).join(', ')}. 지능형SW 감소분 일부가 같은 학교 안에서 옮겨 갔을 가능성이 있습니다.</td></tr>
+        ${region.map(r => `<tr><th>같은 권역 · ${esc(r.s.name)}</th><td class="n">${num(r.priorApplied)} → ${num(r.applied)}명</td><td class="n"><b>${pct(chg(r.applied, r.priorApplied))}</b></td>
+          <td>${esc(r.s.region)} 학교도 비슷한 폭으로 줄어, 권역 공통 요인도 함께 작용한 것으로 보입니다.</td></tr>`).join('')}
+        <tr><th>학령 인구</th><td class="n">−16,506명</td><td class="n"><b>−4.4%</b></td>
+          <td>2027 수능 재학생 지원자 355,391명 (<a class="src" href="https://www.newspim.com/news/view/20260908000096" target="_blank" rel="noopener noreferrer">뉴스핌 2026.09.08</a>). 경민대 감소폭이 인구 감소폭보다 훨씬 큽니다.</td></tr>
+      </tbody>
+    </table>
+    <p class="verdict"><b>판단:</b> 지원 감소의 일부는 학교 안 학과 간 이동과 경기 북부 권역의 공통 감소로 설명됩니다. 그래도 경민대 IT 계열 합계(${pct(sChg)})조차 비교 시장(${pct(mChg)})보다 <b class="alert">${Math.abs(sChg - mChg).toFixed(1)}%p 낮아</b>, 상대적 경쟁력 약화는 실제로 있다고 보는 것이 타당합니다. 다만 1년치 비교이며, 학과명 변경(컴퓨터소프트웨어과 → 지능형소프트웨어과)에 따른 인지도 영향은 이 자료로 분리할 수 없습니다.</p>
+  </div>`;
 }
 
 function regionRows() {
   const order = ['서울', '경기 북부', '경기 남부', '경기 서부', '인천'];
   el('regions').innerHTML = order.map(reg => {
-    const schools = R.data.schools.filter(s => s.region === reg);
+    const schools = R.colleges.filter(s => s.region === reg);
     const rows = R.peers.filter(r => r.s.region === reg && !r.isBase);
     const avg = rows.length ? rows.reduce((n, r) => n + r.rate, 0) / rows.length : null;
     const ratio = avg != null ? avg / R.base.rate : null;
@@ -168,7 +205,7 @@ function rowHtml(r) {
   const opposite = r.change != null && b.change != null && r.change > 0 && b.change < 0;
   return `<tr class="${selected === s.id ? 'selected' : ''}">
     <td><div class="school">${esc(s.name)}</div><div class="dept">${esc(r.dept)}</div><div class="muted">${esc(r.track)}</div></td>
-    <td>${kindBadge(s)}<div class="${sameRegion ? 'alert' : 'muted'}" style="margin-top:4px">${esc(s.region)} · ${esc(s.city)}${sameRegion ? ' (같은 권역)' : ''}</div></td>
+    <td><div class="${sameRegion ? 'alert' : 'muted'}">${esc(s.region)} · ${esc(s.city)}${sameRegion ? ' (같은 권역)' : ''}</div></td>
     <td class="n">${num(r.quota)}</td>
     <td class="n">${num(r.applied)}<div class="muted">${r.applied - b.applied >= 0 ? '+' : '−'}${num(Math.abs(r.applied - b.applied))} vs 경민대</div></td>
     <td class="n"><span class="rate">${fx(r.rate)}</span><div class="muted">${r.final ? '최종' : '최종 미확인'}</div></td>
@@ -180,18 +217,14 @@ function rowHtml(r) {
 }
 
 function renderRows() {
-  const q = el('q').value.trim().toLowerCase(), reg = el('reg').value, field = el('field').value, kind = el('kind').value;
+  const q = el('q').value.trim().toLowerCase(), reg = el('reg').value, field = el('field').value;
   const list = R.rows.filter(r => !r.isBase
     && (reg === 'all' || r.s.region === reg)
     && (field === 'all' || r.field === field)
-    && (kind === 'all' || r.s.type === kind)
     && (!selected || r.school === selected)
     && (r.s.name + ' ' + r.dept).toLowerCase().includes(q))
     .sort((x, y) => y.rate - x.rate);
-  const college = list.filter(r => r.s.type !== '4년제'), univ = list.filter(r => r.s.type === '4년제');
-  let html = college.map(rowHtml).join('');
-  if (univ.length) html += `<tr class="group"><td colspan="9">4년제 · 전형 구조가 달라 순위·중앙값에서 제외</td></tr>` + univ.map(rowHtml).join('');
-  el('rows').innerHTML = html || '<tr><td colspan="9" class="empty">조건에 맞는 모집단위가 없습니다.</td></tr>';
+  el('rows').innerHTML = list.map(rowHtml).join('') || '<tr><td colspan="9" class="empty">조건에 맞는 모집단위가 없습니다.</td></tr>';
   el('count').textContent = `${list.length}개 모집단위 · 경쟁률 높은 순`;
   const btn = el('clearSchool');
   btn.hidden = !selected;
@@ -199,7 +232,7 @@ function renderRows() {
 }
 
 function renderChanges() {
-  const list = [R.base, ...R.comparable.filter(r => r.s.type !== '4년제')].sort((x, y) => y.change - x.change);
+  const list = [R.base, ...R.comparable].sort((x, y) => y.change - x.change);
   const max = Math.max(...list.map(r => Math.abs(r.change)), 1);
   el('changes').innerHTML = list.map(r => {
     const w = Math.abs(r.change) / max * 50;
@@ -221,12 +254,12 @@ function drawMap() {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     layer = L.layerGroup().addTo(map);
-    map.fitBounds(R.data.schools.map(s => [s.lat, s.lon]), { padding: [20, 20] });
+    map.fitBounds(R.colleges.map(s => [s.lat, s.lon]), { padding: [20, 20] });
     // 레이아웃 확정 뒤 타일 크기 재계산
     setTimeout(() => map.invalidateSize(), 0);
   }
   layer.clearLayers();
-  for (const s of R.data.schools) {
+  for (const s of R.colleges) {
     const rows = R.rows.filter(r => r.school === s.id);
     const best = rows.length ? Math.max(...rows.map(r => r.rate)) : null;
     const cls = 'map-pin' + (s.id === R.base.school ? ' base' : '') + (rows.length ? '' : ' off') + (selected === s.id ? ' active' : '');
@@ -235,7 +268,7 @@ function drawMap() {
       icon: L.divIcon({ className: cls, html: '<i></i>', iconSize: [size, size], iconAnchor: [size / 2, size / 2] }),
       title: s.name, keyboard: true
     }).addTo(layer);
-    m.bindPopup(`<b>${esc(s.name)}</b> <small>${esc(s.type)}</small><br>${esc(s.region)} · ${esc(s.city)}<br>${best != null ? '최고 경쟁률 ' + fx(best) + ':1 (경민대의 ' + fx(best / R.base.rate) + '배)' : '경쟁률 수치 미수록'}`);
+    m.bindPopup(`<b>${esc(s.name)}</b><br>${esc(s.region)} · ${esc(s.city)}<br>${best != null ? '최고 경쟁률 ' + fx(best) + ':1 (경민대의 ' + fx(best / R.base.rate) + '배)' : '경쟁률 수치 미수록'}`);
     if (s.id === R.base.school) m.bindTooltip('경민대', { permanent: true, direction: 'right', offset: [10, 0], className: 'pin-label' });
     m.on('click', () => { selected = selected === s.id ? null : s.id; renderRows(); drawMap(); });
   }
@@ -243,15 +276,22 @@ function drawMap() {
 
 function renderNotes() {
   const fin = R.data.finalized || [];
-  const pending = R.data.schools.filter(s => !fin.includes(s.id) && R.rows.some(r => r.school === s.id)).map(s => s.name);
+  const pending = R.colleges.filter(s => !fin.includes(s.id) && R.rows.some(r => r.school === s.id)).map(s => s.name);
   el('finalNote').innerHTML = `원문에서 최종 마감 표시를 확인한 학교 ${fin.length}개교. ` + (pending.length ? `<span class="alert">최종 여부 미확인: ${pending.map(esc).join(', ')}</span>` : '');
-  el('watch').innerHTML = R.data.schools.filter(s => !R.rows.some(r => r.school === s.id))
+  el('watch').innerHTML = R.colleges.filter(s => !R.rows.some(r => r.school === s.id))
     .map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>`).join('');
+}
+
+function renderReference() {
+  el('reference').innerHTML = R.reference.map(r => `<tr><td><b>${esc(r.s.name)}</b> <span class="muted">${esc(r.s.region)} · ${esc(r.s.city)}</span></td>
+    <td>${esc(r.dept)}</td><td>${esc(r.track)}</td><td class="n">${num(r.quota)}</td><td class="n">${num(r.applied)}</td>
+    <td class="n">${fx(r.rate)}:1</td><td class="src"><a href="${esc(r.s.url)}" target="_blank" rel="noopener noreferrer">원문</a></td></tr>`).join('')
+    || '<tr><td colspan="7" class="empty">참고 자료 없음</td></tr>';
 }
 
 function renderAll() {
   el('stamp').textContent = R.data.checkedAt ? '공개값 갱신 ' + R.data.checkedAt : '저장된 공개값';
-  renderBaseline(); regionRows(); renderRows(); renderChanges(); renderNotes(); drawMap();
+  renderBaseline(); regionRows(); renderRows(); renderChanges(); renderNotes(); renderReference(); drawMap();
 }
 
 async function reload() {
@@ -262,7 +302,7 @@ async function reload() {
   finally { b.disabled = false; b.textContent = '공개값 다시 불러오기'; }
 }
 
-for (const id of ['q', 'reg', 'field', 'kind']) el(id).addEventListener(id === 'q' ? 'input' : 'change', () => R && renderRows());
+for (const id of ['q', 'reg', 'field']) el(id).addEventListener(id === 'q' ? 'input' : 'change', () => R && renderRows());
 el('clearSchool').addEventListener('click', () => { selected = null; renderRows(); drawMap(); });
 el('reload').addEventListener('click', reload);
 reload();

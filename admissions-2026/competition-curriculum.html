@@ -17,7 +17,7 @@
   <div class="title-row">
     <div>
       <h1>SW·AI 계열 교육과정 비교</h1>
-      <div class="meta">기준 학과: 경민대학교 지능형소프트웨어과 · 수도권 20개교 공식 학과 안내·교육과정표 기준 (2026.10.02 확인)</div>
+      <div class="meta">기준 학과: 경민대학교 지능형소프트웨어과 · 수도권 전문대 18개교 공식 학과 안내·교육과정표 기준 (2026.10.02 확인)</div>
     </div>
     <div class="tools">
       <span class="stamp" id="stamp"></span>
@@ -27,6 +27,8 @@
   <nav class="tabs">
     <a href="admissions-dashboard.html">경쟁률 현황</a>
     <a href="competition-curriculum.html" aria-current="page">교육과정 비교</a>
+    <a href="colleges.html">전문대 현황</a>
+    <a href="industry.html">산업 현황</a>
   </nav>
 </header>
 
@@ -51,7 +53,6 @@
     <input id="find" type="search" placeholder="학교·학과·기술 키워드 검색" aria-label="검색">
     <select id="region" aria-label="지역"><option value="all">전체 지역</option><option>서울</option><option>경기</option><option>인천</option></select>
     <select id="topic" aria-label="교육축"><option value="all">전체 교육축</option></select>
-    <select id="kind" aria-label="학제"><option value="all">전문대 + 4년제</option><option>전문대</option><option>4년제</option></select>
   </div>
   <div class="table-wrap">
     <table>
@@ -78,9 +79,20 @@
 </section>
 
 <details class="notes">
+  <summary>참고 · 인근 4년제 (비교 대상 아님)</summary>
+  <p>4년제는 학제와 전형 구조가 달라 교육축 비교·경민대 대비 비교에서 제외했습니다. 같은 권역의 진학 선택지를 파악하는 참고용입니다.</p>
+  <div class="table-wrap" style="margin-bottom:10px">
+    <table>
+      <thead><tr><th style="width:16%">학교</th><th style="width:40%">공식 자료에서 확인한 교육과정</th><th style="width:28%">참고</th><th>2027 경쟁률</th></tr></thead>
+      <tbody id="references"></tbody>
+    </table>
+  </div>
+</details>
+
+<details class="notes">
   <summary>자료 기준</summary>
   <p>교육과정은 학교별 최신 공개 페이지를 우선했지만, 일부 학과는 2026학년도 입학 안내·학과 소개를 기준으로 요약했습니다. 개편·신설 학과는 첫 졸업자 취업성과가 아직 누적되지 않을 수 있습니다.</p>
-  <p>경쟁률은 해당 수시 1차 전형 모집인원 대비 지원인원 비율이며 전체 정원이나 학과 전체 경쟁률이 아닙니다. 4년제는 전형 구조가 전문대 수시 1차와 달라 별도 참고로만 표시합니다. 모집요강과 교육과정은 매년 달라질 수 있으므로 각 원문을 확인하세요.</p>
+  <p>경쟁률은 해당 수시 1차 전형 모집인원 대비 지원인원 비율이며 전체 정원이나 학과 전체 경쟁률이 아닙니다. 모집요강과 교육과정은 매년 달라질 수 있으므로 각 원문을 확인하세요.</p>
 </details>
 
 <footer class="colophon">경민대학교 김광섭 · 교육용 참고 자료.</footer>
@@ -113,8 +125,6 @@ const KM = {
 
 const schools = [
   { id: 'gb', name: '경복대학교', region: '경기', dept: '소프트웨어융합과', cur: '학생 선택형 통합과정, 정보처리산업기사·정보보안산업기사, 코딩·사이버보안·클라우드서비스 전공 및 산업체 협약형 교육을 안내.', topics: ['웹·앱', '클라우드', '보안·시스템', '특화·현장'], compare: '남양주 캠퍼스의 북부권 전문대. 산업체 협약·보안/클라우드 선택 트랙이 뚜렷함.', url: 'https://info.kbu.ac.kr/sc/CMS/Contents/Contents.do?mCode=MN034' },
-  { id: 'sh', name: '신한대학교', region: '경기', dept: '소프트웨어융합학과', cur: '입학 학년도별 교육과정·이수체계도·교과목 역량체계를 공개. 기초·응용공학을 갖춘 현장 중심 IT 전문가 양성을 강조.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: '의정부 소재 4년제. 같은 도시의 4년제 선택지로 지원자 유출 관점에서 참고.', url: 'https://okay.shinhan.ac.kr/ce/index.do' },
-  { id: 'dj', name: '대진대학교', region: '경기', dept: '컴퓨터공학과', cur: '컴퓨터공학전공의 역량기반 전공 교육과정 공개 자료가 확인됨. 세부 과목표는 원문에서 확인.', topics: ['웹·앱', 'AI·데이터', '보안·시스템', '특화·현장'], compare: '포천 소재 4년제. 학생부교과·적성고사 전형으로 전문대 수시 1차와 구조가 다름.', url: 'https://www.daejin.ac.kr/ce/2508/subview.do' },
   { id: 'dy', name: '동양미래대학교', region: '서울', dept: '컴퓨터소프트웨어공학과 · 인공지능소프트웨어학과 · 컴퓨터정보공학과', cur: '웹·앱 개발과 시스템 운용, SW 개발·시스템 엔지니어, AI 서비스 SW 등으로 전공 분화. PBL·기업연계 프로젝트를 강조.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: 'SW 일반 개발과 AI 서비스 과정을 학과 단위로 나눠 선택 가능. 기업 PBL 운영 확인.', url: 'https://www.dongyang.ac.kr/dmu/4577/subview.do' },
   { id: 'si', name: '서일대학교', region: '서울', dept: '소프트웨어공학과 · AI게임융합학과', cur: 'SW공학에서 빅데이터·모바일·IoT·컴퓨터보안, 웹/앱·AI SW·DB·서버 직무까지 넓게 제시. 산학협력·일학습병행을 안내.', topics: ['웹·앱', 'AI·데이터', '보안·시스템', '특화·현장'], compare: '응용 SW 범위와 보안·IoT·산업 연계가 강점. 경민대의 공공안전 접목과 응용 분야를 대조.', url: 'https://www.seoil.ac.kr/seoil/526/subview.do' },
   { id: 'id', name: '인덕대학교', region: '서울', dept: '컴퓨터소프트웨어학과 · 컴퓨터전자공학과', cur: '고숙련 프로그래머·클라우드 엔지니어 양성. 클라우드·웹개발, 모바일, 보안·사고분석 진로 트랙 제시.', topics: ['웹·앱', '클라우드', '보안·시스템', '특화·현장'], compare: '클라우드 운영·보안 진로 트랙과 심화과정이 뚜렷함.', url: 'https://www.induk.ac.kr/SW/cms/frCmnCon/index.do?MENU_ID=100' },
@@ -133,16 +143,21 @@ const schools = [
   { id: 'os', name: '오산대학교', region: '경기', dept: '컴퓨터소프트웨어과(3년제)', cur: 'Python·Java·웹·DB·모바일과 정보보안·Linux·AI프로그래밍·빅데이터 분석·취약점 진단·캡스톤을 학기별 로드맵으로 제시.', topics: ['웹·앱', 'AI·데이터', '보안·시스템', '특화·현장'], compare: '보안·AI·빅데이터·통합구현 프로젝트 축. 학기 로드맵 공개도가 높음.', url: 'https://iphak.osan.ac.kr/?d_no=138&menuno=490' },
 ];
 
+// 참고용 4년제 (비교 대상 아님)
+const references = [
+  { id: 'sh', name: '신한대학교', region: '경기', dept: '소프트웨어융합학과', cur: '입학 학년도별 교육과정·이수체계도·교과목 역량체계를 공개. 기초·응용공학을 갖춘 현장 중심 IT 전문가 양성을 강조.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: '의정부 소재 4년제. 같은 도시의 4년제 선택지로 지원자 유출 관점에서 참고.', url: 'https://okay.shinhan.ac.kr/ce/index.do' },
+  { id: 'dj', name: '대진대학교', region: '경기', dept: '컴퓨터공학과', cur: '컴퓨터공학전공의 역량기반 전공 교육과정 공개 자료가 확인됨. 세부 과목표는 원문에서 확인.', topics: ['웹·앱', 'AI·데이터', '보안·시스템', '특화·현장'], compare: '포천 소재 4년제. 학생부교과·적성고사 전형으로 전문대 수시 1차와 구조가 다름.', url: 'https://www.daejin.ac.kr/ce/2508/subview.do' },
+];
+
 let R = null;
 const missingAxes = s => s.topics.filter(t => !KM.topics.includes(t));
 const has31 = s => /3\+1|전공심화/.test(s.cur);
-const isUniv = s => (R?.byId[s.id]?.type || '') === '4년제';
 
 function rateSummary(id) {
   if (!R) return '<span class="muted">—</span>';
   const rows = R.rows.filter(r => r.school === id && !r.isBase).sort((a, b) => b.rate - a.rate);
   if (!rows.length) return '<span class="muted">수치 미수록</span>';
-  return rows.map(r => `<div>${esc(r.dept.replace(/\(.*?\)/g, ''))}${r.s.type === '4년제' ? ' <span class="muted">' + esc(r.track) + '</span>' : ''} <b>${fx(r.rate)}</b> <span class="${r.vsBase >= 2.5 ? 'alert' : 'muted'}">(${fx(r.vsBase)}배)</span></div>`).join('');
+  return rows.map(r => `<div>${esc(r.dept.replace(/\(.*?\)/g, ''))} <b>${fx(r.rate)}</b> <span class="${r.vsBase >= 2.5 ? 'alert' : 'muted'}">(${fx(r.vsBase)}배)</span></div>`).join('');
 }
 
 function renderKM() {
@@ -155,7 +170,7 @@ function renderKM() {
       <div class="stat"><span>전문대 순위</span><b class="${R.rank > R.peerCount / 2 ? 'alert' : ''}">${R.rank}위</b><small>${R.peerCount}개 모집단위 중</small></div>
       <div class="stat"><span>교육축</span><b>${KM.topics.length} / ${AXES.length}</b><small>없는 축: ${AXES.filter(a => !KM.topics.includes(a)).join(', ')}</small></div>
       <div class="stat"><span>3+1 전공심화</span><b>운영</b><small>같은 경로 운영 ${schools.filter(has31).length}개교</small></div>
-      <div class="stat"><span>비교 대학</span><b>${schools.length}개교</b><small>4년제 ${schools.filter(isUniv).length}개교 포함</small></div>
+      <div class="stat"><span>비교 대학</span><b>${schools.length}개교</b><small>수도권 전문대</small></div>
     </div>` : ''}
     <div class="km-cur">
       <div>
@@ -176,7 +191,7 @@ function renderKM() {
 
 function renderMatrix() {
   el('matrixHead').innerHTML = `<tr><th>학교</th>${AXES.map(a => `<th>${a}</th>`).join('')}<th>3+1 전공심화</th></tr>`;
-  const row = (s, base) => `<tr class="${base ? 'base-row' : ''}"><td>${esc(s.name)}${isUniv(s) ? ' <span class="badge univ">4년제</span>' : ''}</td>${AXES.map(a => {
+  const row = (s, base) => `<tr class="${base ? 'base-row' : ''}"><td>${esc(s.name)}</td>${AXES.map(a => {
     const on = s.topics.includes(a), extra = on && !KM.topics.includes(a) && !base;
     return `<td>${on ? `<span class="dot ${extra ? 'alert' : ''}" title="${extra ? '경민대에 없는 축' : ''}"></span>` : '<span class="dot none"></span>'}</td>`;
   }).join('')}<td>${base ? '운영' : has31(s) ? '<b class="alert">운영 (겹침)</b>' : '<span class="muted">—</span>'}</td></tr>`;
@@ -184,10 +199,9 @@ function renderMatrix() {
 }
 
 function renderSchools() {
-  const q = el('find').value.trim().toLowerCase(), reg = el('region').value, topic = el('topic').value, kind = el('kind').value;
+  const q = el('find').value.trim().toLowerCase(), reg = el('region').value, topic = el('topic').value;
   const list = schools.filter(s => (reg === 'all' || s.region === reg)
     && (topic === 'all' || s.topics.includes(topic))
-    && (kind === 'all' || (kind === '4년제') === isUniv(s))
     && (s.name + ' ' + s.dept + ' ' + s.cur + ' ' + s.compare).toLowerCase().includes(q));
   el('count').textContent = `${list.length}개교`;
   el('schools').innerHTML = list.map(s => {
@@ -197,7 +211,7 @@ function renderSchools() {
       ...(has31(s) ? ['<span class="mark-alert">3+1 전공심화 겹침</span>'] : []),
     ];
     return `<tr>
-      <td><div class="school">${esc(s.name)}</div><div style="margin:4px 0">${isUniv(s) ? '<span class="badge univ">4년제</span>' : '<span class="badge college">전문대</span>'}</div><div class="muted">${esc(s.region)}</div></td>
+      <td><div class="school">${esc(s.name)}</div><div class="muted">${esc(s.region)}</div></td>
       <td><div class="dept" style="color:var(--ink);font-weight:600">${esc(s.dept)}</div><div style="margin-top:4px">${esc(s.cur)}</div>
         <div class="axes" style="margin:8px 0 0">${s.topics.map(t => `<span class="axis ${KM.topics.includes(t) ? '' : 'missing'}">${t}</span>`).join('')}</div></td>
       <td>${esc(s.compare)}${flags.length ? `<div style="margin-top:6px;display:flex;flex-direction:column;gap:3px;align-items:flex-start">${flags.join('')}</div>` : ''}</td>
@@ -207,9 +221,19 @@ function renderSchools() {
   }).join('') || '<tr><td colspan="5" class="empty">조건에 맞는 학교가 없습니다.</td></tr>';
 }
 
+function renderReferences() {
+  el('references').innerHTML = references.map(s => {
+    const rows = R ? R.reference.filter(r => r.school === s.id) : [];
+    return `<tr><td><b>${esc(s.name)}</b><div class="muted">${esc(s.region)}</div></td>
+      <td><div style="font-weight:600">${esc(s.dept)}</div>${esc(s.cur)} <span class="src"><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">교육과정</a></span></td>
+      <td>${esc(s.compare)}</td>
+      <td>${rows.map(r => `<div>${esc(r.track)} <b>${fx(r.rate)}:1</b> <span class="muted">(${num(r.quota)}명 · ${num(r.applied)}명)</span></div>`).join('') || '<span class="muted">—</span>'}</td></tr>`;
+  }).join('');
+}
+
 function renderThemes() {
   const b = R.base;
-  const comp = R.comparable.filter(r => r.s.type !== '4년제');
+  const comp = R.comparable;
   const down = comp.filter(r => r.change < 0).sort((x, y) => x.change - y.change);
   const up = comp.filter(r => r.change > 0).sort((x, y) => y.change - x.change);
   const quotaEffect = up.filter(r => r.priorQuota != null && r.quota < r.priorQuota);
@@ -228,12 +252,12 @@ function renderThemes() {
 }
 
 el('topic').innerHTML += AXES.map(a => `<option>${a}</option>`).join('');
-for (const id of ['find', 'region', 'topic', 'kind']) el(id).addEventListener(id === 'find' ? 'input' : 'change', renderSchools);
-renderKM(); renderMatrix(); renderSchools();
+for (const id of ['find', 'region', 'topic']) el(id).addEventListener(id === 'find' ? 'input' : 'change', renderSchools);
+renderKM(); renderMatrix(); renderSchools(); renderReferences();
 Ratio.load().then(r => {
   R = r;
   el('stamp').textContent = r.data.checkedAt ? '경쟁률 공개값 갱신 ' + r.data.checkedAt : '';
-  renderKM(); renderMatrix(); renderSchools(); renderThemes();
+  renderKM(); renderMatrix(); renderSchools(); renderReferences(); renderThemes();
 }).catch(() => {
   el('stamp').innerHTML = '<span class="alert">경쟁률 공개값을 불러오지 못했습니다</span>';
   el('themes').innerHTML = '<p class="muted">경쟁률 공개값을 불러오지 못해 수치 분석을 표시할 수 없습니다.</p>';

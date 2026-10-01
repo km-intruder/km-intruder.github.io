@@ -191,3 +191,39 @@ footer.colophon { margin-top: 48px; border-top: 1px solid var(--rule); padding-t
   td, th { font-size: 10px; padding: 5px; }
   #map { height: 320px; }
 }
+
+/* ── 경쟁력 진단 ── */
+.diagnosis { border-top: 1px solid var(--rule); padding: 14px 20px 18px; }
+.diagnosis h3 { font-size: 15px; margin: 0 0 8px; }
+.diagnosis table { font-size: 13px; }
+.diagnosis th { white-space: normal; width: 22%; font-size: 13px; color: var(--ink); border-bottom: 1px solid var(--rule); vertical-align: top; }
+.diagnosis td { padding: 8px 10px; }
+.diagnosis .verdict { margin: 12px 0 0; padding: 10px 12px; background: var(--tint); font-size: 14px; }
+
+/* ── 게시판 ── */
+.board-list { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--rule-strong); }
+.board-list li { border-bottom: 1px solid var(--rule); }
+.board-list a { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 14px 4px; text-decoration: none; }
+.board-list a:hover { background: var(--tint); }
+.board-list time { font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.board-list strong { display: block; font-size: 16px; }
+.board-list p { margin: 4px 0 0; font-size: 14px; color: var(--ink-2); }
+.board-list .tags { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+.board-list .tags span { font-size: 12px; color: var(--ink-3); border: 1px solid var(--rule); padding: 0 6px; }
+.post-head { border-bottom: 1px solid var(--rule-strong); padding-bottom: 12px; margin-bottom: 20px; }
+.post-head .back { font-size: 13px; color: var(--brand); text-decoration: none; }
+.post-head h2 { font-size: 24px; margin: 8px 0 4px; letter-spacing: -0.02em; }
+.post-head time { font-size: 13px; color: var(--ink-3); }
+.post { max-width: 860px; font-size: 15px; }
+.post h2 { font-size: 19px; margin: 32px 0 10px; padding-top: 12px; border-top: 1px solid var(--rule); }
+.post h3 { font-size: 16px; margin: 22px 0 8px; }
+.post p, .post li { color: var(--ink); }
+.post ul, .post ol { padding-left: 20px; }
+.post li { margin: 4px 0; }
+.post table { margin: 10px 0 16px; border-top: 2px solid var(--rule-strong); }
+.post blockquote { margin: 14px 0; padding: 10px 14px; background: var(--tint); border-left: 3px solid var(--brand); }
+.post blockquote p { margin: 0; }
+.post a { color: var(--brand); }
+.post hr { border: 0; border-top: 1px solid var(--rule); margin: 28px 0; }
+.post .sources { font-size: 13px; color: var(--ink-2); }
+@media (max-width: 600px) { .board-list a { grid-template-columns: 1fr; gap: 2px; } }

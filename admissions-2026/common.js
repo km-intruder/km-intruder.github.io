@@ -26,7 +26,11 @@
   function prepare(data) {
     const byId = Object.fromEntries(data.schools.map(s => [s.id, s]));
     const finalized = new Set(data.finalized || []);
-    const rows = data.rows.map(r => {
+    // 4년제는 전형 구조가 달라 비교 대상에서 제외하고 참고용으로만 따로 둔다
+    const isUniv = r => byId[r.school]?.type === '4년제';
+    const reference = data.rows.filter(isUniv).map(r => ({ ...r, s: byId[r.school], rate: r.quota ? r.applied / r.quota : 0, final: finalized.has(r.school) }));
+    const b = data.baseline || { school: 'km', dept: '지능형소프트웨어과' };
+    const all = data.rows.filter(r => !isUniv(r)).map(r => {
       const s = byId[r.school];
       const rate = r.quota ? r.applied / r.quota : 0;
       const change = r.comparable && r.prior ? (rate - r.prior) / r.prior * 100 : null;
@@ -34,20 +38,23 @@
       row.cause = change == null ? '' : cause(row);
       return row;
     });
-    const b = data.baseline || { school: 'km', dept: '지능형소프트웨어과' };
-    const base = rows.find(r => r.school === b.school && r.dept === b.dept);
+    const base = all.find(r => r.school === b.school && r.dept === b.dept);
+    // 경민대의 다른 학과는 같은 학교라 비교군에서 빼고 참고용으로만 둔다
+    const sameSchool = all.filter(r => r.school === b.school && r !== base);
+    const rows = all.filter(r => !sameSchool.includes(r));
     rows.forEach(r => {
       r.isBase = r === base;
       r.vsBase = base && base.rate ? r.rate / base.rate : null;
       r.gap = base ? r.rate - base.rate : null;
     });
-    // 순위·평균은 전문대 수시 1차 모집단위끼리만 (4년제는 전형 구조가 달라 제외)
-    const peers = rows.filter(r => r.s.type !== '4년제');
+    const peers = rows;
     const ranked = [...peers].sort((x, y) => y.rate - x.rate);
     const others = peers.filter(r => !r.isBase);
     const median = arr => { const v = arr.map(r => r.rate).sort((a, c) => a - c); const m = v.length >> 1; return v.length ? (v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2) : null; };
     return {
-      data, byId, rows, base, peers,
+      data, byId, rows, base, peers, reference, sameSchool,
+      colleges: data.schools.filter(s => s.type !== '4년제'),
+      universities: data.schools.filter(s => s.type === '4년제'),
       rank: base ? ranked.indexOf(base) + 1 : null,
       peerCount: peers.length,
       median: median(others),
