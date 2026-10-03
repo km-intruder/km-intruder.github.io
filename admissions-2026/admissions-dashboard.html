@@ -162,33 +162,67 @@ function renderBaseline() {
 }
 
 // 지원 감소가 곧 경쟁력 하락인지: 시장 전체 · 학교 내부 이동 · 권역 공통 요인으로 나눠 본다
+// 문장은 수치에 따라 달라진다 (학과마다 상황이 다르므로)
 function diagnosis() {
   const b = R.base;
   if (b.priorApplied == null) return '';
   const sum = (rs, k) => rs.reduce((n, r) => n + r[k], 0);
   const chg = (a, p) => (a - p) / p * 100;
   const market = R.comparable.filter(r => r.priorApplied != null);
+  if (!market.length) return '';
   const mP = sum(market, 'priorApplied'), mA = sum(market, 'applied');
   const mChg = chg(mA, mP), bChg = chg(b.applied, b.priorApplied);
-  const school = [b, ...R.sameSchool.filter(r => r.priorApplied != null)];
-  const sP = sum(school, 'priorApplied'), sA = sum(school, 'applied'), sChg = chg(sA, sP);
   const sibs = R.sameSchool.filter(r => r.priorApplied != null);
+  const school = [b, ...sibs];
+  const sP = sum(school, 'priorApplied'), sA = sum(school, 'applied'), sChg = chg(sA, sP);
+  const sibChg = sibs.length ? chg(sum(sibs, 'applied'), sum(sibs, 'priorApplied')) : null;
+  const shift = sibChg != null && sibChg > 0;           // 같은 학교 다른 학과로 옮겨 갔을 가능성
   const region = R.rows.filter(r => !r.isBase && r.s.region === b.s.region && r.priorApplied != null);
+  const regionChg = region.length ? chg(sum(region, 'applied'), sum(region, 'priorApplied')) : null;
+  const regionShared = regionChg != null && regionChg < 0 && Math.abs(regionChg - bChg) <= 10;
+  const family = esc(D.familyLabel);
+
+  const marketText = mChg > 0 && bChg < 0
+    ? `비교 시장은 지원자가 늘었는데 경민대는 <b class="alert">${pct(bChg)}</b> — 상대적 점유는 실제로 줄었습니다.`
+    : bChg < mChg
+      ? `비교 시장(${pct(mChg)})보다 경민대(<b class="alert">${pct(bChg)}</b>)의 변화가 나빠, 상대적 점유가 줄었습니다.`
+      : `경민대(${pct(bChg)})가 비교 시장(${pct(mChg)})보다 나은 흐름입니다.`;
+  const schoolText = shift
+    ? `${esc(D.shortName)} 감소분 일부가 같은 학교 안에서 옮겨 갔을 가능성이 있습니다.`
+    : `같은 학교 ${family} 학과도 함께 줄어, 학교 안 이동으로는 설명되지 않습니다.`;
+  const regionText = r => {
+    const c = chg(r.applied, r.priorApplied);
+    if (c < 0 && Math.abs(c - bChg) <= 10) return `${esc(r.s.region)} 학교도 비슷한 폭으로 줄어, 권역 공통 요인도 함께 작용한 것으로 보입니다.`;
+    if (c < 0) return `${esc(r.s.region)} 학교도 줄었지만 감소폭이 경민대보다 작아, 권역 요인만으로는 설명되지 않습니다.`;
+    return `${esc(r.s.region)} 학교는 오히려 늘어, 권역 공통 요인으로 보기 어렵습니다.`;
+  };
+  const popText = bChg < -9.4 ? '경민대 감소폭이 인구 감소폭보다 훨씬 큽니다.'
+    : bChg < 0 ? '경민대 감소폭은 인구 감소폭과 큰 차이가 없습니다.' : '경민대는 인구 감소에도 지원이 늘었습니다.';
+
+  const causes = [shift && '학교 안 학과 간 이동', regionShared && `${esc(b.s.region)} 권역의 공통 감소`].filter(Boolean);
+  const gap = sChg - mChg;
+  const lead = causes.length ? `지원 감소의 일부는 ${causes.join('과 ')}로 설명됩니다. ` : '';
+  const body = gap < -5
+    ? `${causes.length ? '그래도 ' : ''}경민대 ${family} 합계(${pct(sChg)})${causes.length ? '조차' : '도'} 비교 시장(${pct(mChg)})보다 <b class="alert">${Math.abs(gap).toFixed(1)}%p 낮아</b>, 상대적 경쟁력 약화는 실제로 있다고 보는 것이 타당합니다.`
+    : gap <= 5
+      ? `경민대 ${family} 합계(${pct(sChg)})는 비교 시장(${pct(mChg)})과 비슷해, 이 자료만으로 경쟁력 약화를 단정하기는 어렵습니다.`
+      : `경민대 ${family} 합계(${pct(sChg)})는 비교 시장(${pct(mChg)})보다 높아, 계열 전체의 경쟁력은 유지되고 있습니다.`;
+
   return `<div class="diagnosis">
     <h3>지원 감소 = 경쟁력 하락인가?</h3>
     <table>
       <tbody>
         <tr><th>비교 학과 전체 (직접 대응 ${market.length}개)</th><td class="n">${num(mP)} → ${num(mA)}명</td><td class="n"><b>${pct(mChg)}</b></td>
-          <td>모집 ${num(sum(market, 'priorQuota'))} → ${num(sum(market, 'quota'))}명. 비교 시장은 지원자가 늘었는데 경민대는 <b class="alert">${pct(bChg)}</b> — 상대적 점유는 실제로 줄었습니다.</td></tr>
-        <tr><th>경민대 ${esc(D.familyLabel)} 합계 (${school.length}개 학과)</th><td class="n">${num(sP)} → ${num(sA)}명</td><td class="n"><b>${pct(sChg)}</b></td>
-          <td>${sibs.map(r => `${esc(r.dept)} ${num(r.priorApplied)} → ${num(r.applied)}명 (${pct(chg(r.applied, r.priorApplied))}, 모집 ${r.priorQuota} → ${r.quota}명)`).join(', ')}. ${esc(D.shortName)} 감소분 일부가 같은 학교 안에서 옮겨 갔을 가능성이 있습니다.</td></tr>
+          <td>모집 ${num(sum(market, 'priorQuota'))} → ${num(sum(market, 'quota'))}명. ${marketText}</td></tr>
+        ${sibs.length ? `<tr><th>경민대 ${family} 합계 (${school.length}개 학과)</th><td class="n">${num(sP)} → ${num(sA)}명</td><td class="n"><b>${pct(sChg)}</b></td>
+          <td>${sibs.map(r => `${esc(r.dept)} ${num(r.priorApplied)} → ${num(r.applied)}명 (${pct(chg(r.applied, r.priorApplied))}, 모집 ${r.priorQuota} → ${r.quota}명)`).join(', ')}. ${schoolText}</td></tr>` : ''}
         ${region.map(r => `<tr><th>같은 권역 · ${esc(r.s.name)}</th><td class="n">${num(r.priorApplied)} → ${num(r.applied)}명</td><td class="n"><b>${pct(chg(r.applied, r.priorApplied))}</b></td>
-          <td>${esc(r.s.region)} 학교도 비슷한 폭으로 줄어, 권역 공통 요인도 함께 작용한 것으로 보입니다.</td></tr>`).join('')}
+          <td>${regionText(r)}</td></tr>`).join('')}
         <tr><th>학령 인구</th><td class="n">−16,506명</td><td class="n"><b>−4.4%</b></td>
-          <td>2027 수능 재학생 지원자 355,391명 (<a class="src" href="https://www.newspim.com/news/view/20260908000096" target="_blank" rel="noopener noreferrer">뉴스핌 2026.09.08</a>). 경민대 감소폭이 인구 감소폭보다 훨씬 큽니다.</td></tr>
+          <td>2027 수능 재학생 지원자 355,391명 (<a class="src" href="https://www.newspim.com/news/view/20260908000096" target="_blank" rel="noopener noreferrer">뉴스핌 2026.09.08</a>). ${popText}</td></tr>
       </tbody>
     </table>
-    <p class="verdict"><b>판단:</b> 지원 감소의 일부는 학교 안 학과 간 이동과 경기 북부 권역의 공통 감소로 설명됩니다. 그래도 경민대 ${esc(D.familyLabel)} 합계(${pct(sChg)})조차 비교 시장(${pct(mChg)})보다 <b class="alert">${Math.abs(sChg - mChg).toFixed(1)}%p 낮아</b>, 상대적 경쟁력 약화는 실제로 있다고 보는 것이 타당합니다. 다만 1년치 비교${D.renameNote ? `이며, ${esc(D.renameNote)}에 따른 인지도 영향은 이 자료로 분리할 수 없습니다` : '입니다'}.</p>
+    <p class="verdict"><b>판단:</b> ${lead}${body} 다만 1년치 비교${D.renameNote ? `이며, ${esc(D.renameNote)}에 따른 인지도 영향은 이 자료로 분리할 수 없습니다` : '입니다'}.</p>
   </div>`;
 }
 
