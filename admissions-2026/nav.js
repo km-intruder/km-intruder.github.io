@@ -1,16 +1,17 @@
 /* 공통 탭 메뉴 · 학과/회차 선택
    학과 추가: DEPTS 에 한 줄 + depts/<id>/ 폴더(dept.json, ratios.json, posts/) 생성
+   boards: true 인 학과만 전문대·산업 현황 게시판 탭을 보여 준다
    회차 추가: 해당 학과 rounds 에 { id: 'susi2', label: '수시 2차', file: 'ratios-susi2.json' } 추가
    데이터 파일 형식은 depts/software 를 기준으로 한다. */
 (function () {
   const DEPTS = [
-    { id: 'software', name: '지능형소프트웨어과', rounds: [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }] },
+    { id: 'software', name: '지능형소프트웨어과', boards: true, rounds: [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }] },
   ];
   const BOARDS = [
     { href: 'competition-curriculum.html', label: '교육과정 비교' },
     { href: 'kyungmin.html', label: '경민대 소식', shared: true },
-    { href: 'colleges.html', label: '전문대 현황' },
-    { href: 'industry.html', label: '산업 현황' },
+    { href: 'colleges.html', label: '전문대 현황', deptBoard: true },
+    { href: 'industry.html', label: '산업 현황', deptBoard: true },
   ];
 
   const params = new URLSearchParams(location.search);
@@ -32,7 +33,7 @@
       href: link('admissions-dashboard.html', { round: r === dept.rounds[0] ? '' : r.id }),
       label: r.label, active: page === 'admissions-dashboard.html' && r === round,
     })),
-    ...BOARDS.map(b => ({ href: link(b.href), label: b.label, active: page === b.href })),
+    ...BOARDS.filter(b => !b.deptBoard || dept.boards).map(b => ({ href: link(b.href), label: b.label, active: page === b.href })),
   ];
   const nav = document.getElementById('tabs');
   if (nav) {

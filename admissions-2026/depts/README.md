@@ -6,19 +6,17 @@
 depts/<학과 id>/
 ├─ dept.json        학과 이름·분야·교육과정 비교 데이터
 ├─ ratios.json      수시 1차 경쟁률 (회차가 늘면 ratios-susi2.json …)
-└─ posts/
-    ├─ colleges/index.json   전문대 현황 게시판 (처음엔 [])
-    └─ industry/index.json   산업 현황 게시판 (처음엔 [])
+└─ posts/            전문대·산업 현황 게시판 (boards: true 인 학과만, 현재 software)
 ```
 
 ## 절차
 
 1. `depts/software/`를 본보기로 위 파일을 만든다.
 2. `../nav.js`의 `DEPTS`에 한 줄 추가:
-   `{ id: 'hotel-culinary', name: '호텔조리과', rounds: [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }] }`
+   `{ id: 'hotel-culinary', name: '호텔조리과', boards: false, rounds: [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }] }`
 3. 확인: `admissions-dashboard.html?dept=<학과 id>`. 학과가 둘 이상이면 탭 오른쪽에 학과 선택 메뉴가 나타난다.
 
-경쟁률 수집(`scripts/update_admissions_ratios.py`)과 매주 게시 작업은 `depts/*/`를 모두 돌기 때문에 따로 등록할 필요가 없다.
+경쟁률 수집(`scripts/update_admissions_ratios.py`)은 `depts/*/`를 모두 돌기 때문에 따로 등록할 필요가 없다. 매주 게시(전문대·산업 현황)는 지능형소프트웨어과만 한다.
 
 ## dept.json
 
