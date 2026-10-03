@@ -1,16 +1,18 @@
 # 게시글 작성 규칙
 
-탭별 게시판은 이 폴더의 글을 최신순, 10개씩 페이지로 보여 줍니다.
+탭별 게시판은 최신순, 10개씩 페이지로 보여 줍니다. 경민대 소식은 학교 공통, 전문대·산업 현황은 학과별입니다.
 
-| 탭 | 폴더 | 주기 | 파일·slug | 다루는 기간 |
+| 탭 | 폴더 (admissions-2026/ 기준) | 주기 | 파일·slug | 다루는 기간 |
 |---|---|---|---|---|
-| 경민대 소식 | `kyungmin/` | 매일 | `YYYY-MM-DD` (게시일) | 전날 하루 |
-| 전문대 현황 | `colleges/` | 매주 월요일 | `YYYY-MM-DD` (월요일 날짜) | 지난주 월~일, 수도권 위주 |
-| 산업 현황 | `industry/` | 매주 월요일 | `YYYY-MM-DD` (월요일 날짜) | 지난주 월~일 |
+| 경민대 소식 | `posts/kyungmin/` | 매일 | `YYYY-MM-DD` (게시일) | 전날 하루 |
+| 전문대 현황 | `depts/<학과>/posts/colleges/` | 매주 월요일 | `YYYY-MM-DD` (월요일 날짜) | 지난주 월~일, 수도권 위주 |
+| 산업 현황 | `depts/<학과>/posts/industry/` | 매주 월요일 | `YYYY-MM-DD` (월요일 날짜) | 지난주 월~일 |
+
+학과 목록은 `depts/*/dept.json` 입니다. 각 학과의 이름(`name`), 분야(`fieldLabel`), 산업 범위(`industryLabel`), 비교 학교(`ratios.json`의 schools)를 읽고 그 학과 관점으로 씁니다.
 
 ## 글 추가 절차
 
-1. `posts/<폴더>/<slug>.md` 작성 (마크다운).
+1. `<폴더>/<slug>.md` 작성 (마크다운).
 2. 같은 폴더 `index.json` 배열 **맨 앞**에 항목 추가:
 
 ```json
@@ -33,14 +35,15 @@
 - 중요한 부분: `<span class="alert">**강조**</span>` (빨간색). 한 글에 3~5곳 이내.
 - 굵게 표시가 괄호·%로 끝나고 바로 한글이 이어지면 마크다운이 깨지므로 `<b>…</b>`를 씁니다.
 - 출처 묶음은 `<div class="sources">` … `</div>`로 감싸고 앞뒤에 빈 줄을 둡니다.
+- 글 안의 다른 탭 링크는 학과 페이지 주소를 씁니다. 기본 학과(software)는 `admissions-dashboard.html`, 그 외는 `admissions-dashboard.html?dept=<학과>`.
 - 해당 기간에 새 소식이 없으면 글을 만들지 않습니다.
 
 ## 탭별 출처와 관점
 
-**경민대 소식** — 경민대학교 [경민뉴스](https://www.kyungmin.ac.kr/homepage/page.do?menu=57), [통합공지](https://www.kyungmin.ac.kr/homepage/page.do?menu=63), 언론 보도(“경민대학교” 검색). 구성: 학교 소식 / 주요 공지 / 언론 보도 / (있으면) 입시. 지능형소프트웨어과·IT 계열 관련 소식은 앞에 둡니다.
+**경민대 소식** — 경민대학교 [경민뉴스](https://www.kyungmin.ac.kr/homepage/page.do?menu=57), [통합공지](https://www.kyungmin.ac.kr/homepage/page.do?menu=63), 언론 보도(“경민대학교” 검색). 구성: 학교 소식 / 주요 공지 / 언론 보도 / (있으면) 입시. `depts/*/dept.json`에 있는 학과 관련 소식은 앞에 둡니다.
 
-**전문대 현황** — 경쟁률 현황 탭의 비교 전문대(수도권 SW·AI 계열) 학교 홈페이지 보도자료, 학과 개편·정원·신설, 입시 일정과 경쟁률, 재정지원사업 선정, 전문대학 정책(교육부·한국전문대학교육협의회). 경민대 지능형소프트웨어과와 비교되는 내용은 표나 “경민대 대비” 문장으로 정리합니다.
+**전문대 현황 (학과별)** — 그 학과 `ratios.json`의 비교 전문대 홈페이지 보도자료, 학과 개편·정원·신설, 입시 일정과 경쟁률, 재정지원사업 선정, 전문대학 정책(교육부·한국전문대학교육협의회). 경민대 해당 학과와 비교되는 내용은 표나 “경민대 대비” 문장으로 정리합니다.
 
-**산업 현황** — SW·AI 채용 시장, 정부 정책(과기정통부·고용노동부·교육부), 공공 SW 수요, 국방·공공안전 AI, 경기 북부 지역 산업. 마지막 절에 “경민대 지능형소프트웨어과에 주는 시사점(해석)”.
+**산업 현황 (학과별)** — 그 학과 `industryLabel` 범위의 채용 시장, 정부 정책, 공공 수요, 경기 북부 지역 산업. 마지막 절에 “경민대 <학과명>에 주는 시사점(해석)”.
 
-글 주소: `kyungmin.html?post=<slug>`, `colleges.html?post=<slug>`, `industry.html?post=<slug>`
+글 주소: `kyungmin.html?post=<slug>`, `colleges.html?dept=<학과>&post=<slug>`, `industry.html?dept=<학과>&post=<slug>` (기본 학과는 `dept=` 생략)

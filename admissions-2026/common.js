@@ -1,4 +1,4 @@
-/* 공통: ratios.json 로드와 경민대 기준 비교 계산 */
+/* 공통: 학과별 경쟁률 파일(depts/<학과>/ratios*.json) 로드와 경민대 기준 비교 계산 */
 (function () {
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const num = n => Number(n).toLocaleString('ko-KR');
@@ -70,7 +70,7 @@
     };
   }
 
-  async function load(file = 'ratios.json') {
+  async function load(file) {
     const res = await fetch(file, { cache: 'no-store' });
     if (!res.ok) throw new Error(file + ' ' + res.status);
     return prepare(await res.json());

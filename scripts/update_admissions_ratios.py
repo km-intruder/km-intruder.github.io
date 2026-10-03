@@ -1,6 +1,6 @@
 """수시 경쟁률 공개값 수집기.
 
-admissions-2026/ratios*.json (회차별: ratios.json=수시 1차, ratios-susi2.json=수시 2차 …)에
+admissions-2026/depts/<학과>/ratios*.json (회차별: ratios.json=수시 1차, ratios-susi2.json=수시 2차 …)에
 정의된 학교(url)와 학과(rows)를 기준으로
 진학어플라이 / 유웨이어플라이 경쟁률 페이지를 읽어 지원인원(applied)과
 학교별 기준 시각(time)을 갱신한다. 표준 라이브러리만 사용한다.
@@ -212,7 +212,7 @@ def update_file(path, dry_run):
 
 def main():
     dry_run = "--dry-run" in sys.argv
-    for path in sorted(DATA_DIR.glob("ratios*.json")):
+    for path in sorted(DATA_DIR.glob("depts/*/ratios*.json")):
         update_file(path, dry_run)
 
 

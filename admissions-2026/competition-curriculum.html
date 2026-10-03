@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>교육과정 비교</title>
-<meta name="description" content="경민대학교 지능형소프트웨어과 기준, 수도권 SW·AI 계열 학과 교육과정 비교">
+<meta name="description" content="경민대학교 학과 기준, 수도권 전문대 동일 계열 교육과정 비교">
 <link rel="icon" href="../assets/logo-kyungmin.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="stylesheet" href="report.css">
@@ -18,8 +18,8 @@
   <div class="crumb"><a href="../">김광섭 교수 교육 서비스</a> / 2027학년도 입시 분석</div>
   <div class="title-row">
     <div>
-      <h1>SW·AI 계열 교육과정 비교</h1>
-      <div class="meta">기준 학과: 경민대학교 지능형소프트웨어과 · 수도권 전문대 18개교 공식 학과 안내·교육과정표 기준 (2026.10.02 확인)</div>
+      <h1><span data-dept="fieldLabel"></span> 교육과정 비교</h1>
+      <div class="meta">기준 학과: 경민대학교 <span data-dept="name"></span> · 수도권 전문대 <span id="collegeCount"></span>개교 공식 학과 안내·교육과정표 기준 (<span id="checked"></span> 확인)</div>
     </div>
     <div class="tools">
       <span class="stamp" id="stamp"></span>
@@ -31,24 +31,23 @@
 </header>
 
 <section class="block">
-  <div class="block-head"><span class="no">01</span><h2>기준: 경민대학교 지능형소프트웨어과</h2></div>
+  <div class="block-head"><span class="no">01</span><h2>기준: 경민대학교 <span data-dept="name"></span></h2></div>
   <div class="baseline" id="kmBlock"></div>
 </section>
 
 <section class="block">
-  <div class="block-head"><span class="no">02</span><h2>교육축 비교</h2><span class="aside">● 공식 자료에서 확인 · <span class="alert">●</span> 경민대 지능형소프트웨어과에 없는 축</span></div>
+  <div class="block-head"><span class="no">02</span><h2>교육축 비교</h2><span class="aside">● 공식 자료에서 확인 · <span class="alert">●</span> 경민대 <span data-dept="name"></span>에 없는 축</span></div>
   <div class="table-wrap"><table class="matrix"><thead id="matrixHead"></thead><tbody id="matrix"></tbody></table></div>
   <details class="notes">
     <summary>교육축 분류 기준</summary>
-    <p>과목명과 교육목표에 나타난 내용을 다섯 개 축으로 묶었습니다. 점수나 우열을 매긴 것이 아니라, 해당 축이 공식 자료에서 확인되는지 여부입니다.</p>
-    <p>경민대의 보안·시스템 교육은 별도 학과인 사이버·정보시스템학과에서 운영되므로, 지능형소프트웨어과 기준표에서는 ‘없음’으로 표시합니다.</p>
+    <div id="axesNotes"></div>
   </details>
 </section>
 
 <section class="block">
   <div class="block-head"><span class="no">03</span><h2>대학별 교육과정 — 경민대 대비</h2><span class="aside" id="count"></span></div>
   <div class="filters">
-    <input id="find" type="search" placeholder="학교·학과·기술 키워드 검색" aria-label="검색">
+    <input id="find" type="search" placeholder="학교·학과 검색" aria-label="검색">
     <select id="region" aria-label="지역"><option value="all">전체 지역</option><option>서울</option><option>경기</option><option>인천</option></select>
     <select id="topic" aria-label="교육축"><option value="all">전체 교육축</option></select>
   </div>
@@ -63,16 +62,12 @@
 <section class="block">
   <div class="block-head"><span class="no">04</span><h2>경쟁률 변화의 배경</h2><span class="aside">수치는 공개값에서 자동 계산</span></div>
   <div class="themes" id="themes"></div>
-  <h3 style="font-size:15px;margin:28px 0 8px">최근 1년 공개 커뮤니티 표본</h3>
-  <ul class="posts">
-    <li><div><small>디시인사이드 백엔드 갤러리 · 2026.09.29</small></div><div><b>“인서울 컴공 취준 조언”</b><p>개발 직군을 공채형 IT 직무와 웹·앱·클라우드 등 순수 개발형으로 나누고, 후자는 프로젝트·인턴·문제 해결 포트폴리오가 중요하다는 경험담. <a class="src" href="https://gall.dcinside.com/mgallery/board/view/?id=backend&no=82708&page=1" target="_blank" rel="noopener noreferrer">원문</a></p></div></li>
-    <li><div><small>디시인사이드 취업 갤러리 · 2026.01.10</small></div><div><b>“컴공 개발자 담백한 팩트”</b><p>AI가 웹·앱 개발을 대체할 것이라는 우려와 금융권 IT의 안정성을 강조하는 개인 의견. 대표성 있는 조사로 볼 수는 없습니다. <a class="src" href="https://gall.dcinside.com/board/view/?id=employment&no=2275734" target="_blank" rel="noopener noreferrer">원문</a></p></div></li>
-    <li><div><small>디시인사이드 취업 갤러리 · 2026.05.25</small></div><div><b>“컴공 개발자 취업 안 돼서 진로 변경 고민”</b><p>취업이 어려워 진로를 바꾸려 한다는 글. 본문 정보가 제한적이어서 불안 정서가 드러난 사례로만 다뤘습니다. <a class="src" href="https://gall.dcinside.com/board/view/?id=employment&no=2352473&page=1&t=cv" target="_blank" rel="noopener noreferrer">원문</a></p></div></li>
-  </ul>
+  <h3 style="font-size:15px;margin:28px 0 8px" id="communityTitle"></h3>
+  <ul class="posts" id="communityPosts"></ul>
   <details class="notes">
     <summary>해석 시 유의 사항</summary>
     <p>경쟁률은 지원자 수 ÷ 모집인원입니다. 비율이 올라도 지원자가 늘었다고 단정할 수 없습니다. 모집인원, 전형, 학과명 변경과 원서접수 공개 시점이 함께 작용합니다.</p>
-    <p>커뮤니티 게시물은 공개 검색으로 확인되는 것만 포함했습니다(검색 기간 2025.10.02–2026.10.02). 작성자·플랫폼 이용자층이 제한돼 있어 여론조사나 지원율 변화의 원인 증명이 아니며, 공식 취업률·채용자료를 대신하지 않습니다.</p>
+    <p>커뮤니티 게시물은 공개 검색으로 확인되는 것만 포함했습니다(검색 기간 <span id="communityPeriod"></span>). 작성자·플랫폼 이용자층이 제한돼 있어 여론조사나 지원율 변화의 원인 증명이 아니며, 공식 취업률·채용자료를 대신하지 않습니다.</p>
   </details>
 </section>
 
@@ -100,52 +95,10 @@
 <script>
 const { esc, num, fx, pct, signed } = Ratio;
 const el = id => document.getElementById(id);
-const AXES = ['웹·앱', 'AI·데이터', '클라우드', '보안·시스템', '특화·현장'];
-
-// 경민대 기준 학과 교육과정 (지능형소프트웨어과)
-const KM = {
-  id: 'km', name: '경민대학교', dept: '지능형소프트웨어과', region: '경기', type: '전문대',
-  topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'],
-  cur: 'C·Python·객체지향·웹·네트워크 기초에서 SW 구현·프로젝트로 연결합니다. 기존 컴퓨터소프트웨어과 교과표 기준으로 3년 전문학사와 1년 전공심화(3+1) 경로를 제공합니다.',
-  strategy: [
-    '3년 전문학사 기초 위에 전공심화 1년(3+1) 연계',
-    '프로그래밍(C·Python·객체지향) → 웹·DB·네트워크 → 프로젝트로 이어지는 SW 개발 축',
-    '2027 개편 차별화 축: AI·DX, 경기북부 국방·공공안전 산업 연계',
-  ],
-  checks: [
-    '경쟁 대학 대부분이 AI·클라우드·프로젝트를 이미 운영 — ‘AI 교과목이 있다’만으로는 차별화가 되지 않음',
-    '정규 교과의 깊이와 실습 시간',
-    '팀 프로젝트 · 현장실습 · 졸업작품',
-    '전공심화(3+1) 연계 여부와 진학 경로',
-  ],
-  url: 'https://iphak.kyungmin.ac.kr/software/?bmode=view&idx=7491781',
-};
-
-const schools = [
-  { id: 'gb', name: '경복대학교', region: '경기', dept: '소프트웨어융합과', cur: '학생 선택형 통합과정, 정보처리산업기사·정보보안산업기사, 코딩·사이버보안·클라우드서비스 전공 및 산업체 협약형 교육을 안내.', topics: ['웹·앱', '클라우드', '보안·시스템', '특화·현장'], compare: '남양주 캠퍼스의 북부권 전문대. 산업체 협약·보안/클라우드 선택 트랙이 뚜렷함.', url: 'https://info.kbu.ac.kr/sc/CMS/Contents/Contents.do?mCode=MN034' },
-  { id: 'dy', name: '동양미래대학교', region: '서울', dept: '컴퓨터소프트웨어공학과 · 인공지능소프트웨어학과 · 컴퓨터정보공학과', cur: '웹·앱 개발과 시스템 운용, SW 개발·시스템 엔지니어, AI 서비스 SW 등으로 전공 분화. PBL·기업연계 프로젝트를 강조.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: 'SW 일반 개발과 AI 서비스 과정을 학과 단위로 나눠 선택 가능. 기업 PBL 운영 확인.', url: 'https://www.dongyang.ac.kr/dmu/4577/subview.do' },
-  { id: 'si', name: '서일대학교', region: '서울', dept: '소프트웨어공학과 · AI게임융합학과', cur: 'SW공학에서 빅데이터·모바일·IoT·컴퓨터보안, 웹/앱·AI SW·DB·서버 직무까지 넓게 제시. 산학협력·일학습병행을 안내.', topics: ['웹·앱', 'AI·데이터', '보안·시스템', '특화·현장'], compare: '응용 SW 범위와 보안·IoT·산업 연계가 강점. 경민대의 공공안전 접목과 응용 분야를 대조.', url: 'https://www.seoil.ac.kr/seoil/526/subview.do' },
-  { id: 'id', name: '인덕대학교', region: '서울', dept: '컴퓨터소프트웨어학과 · 컴퓨터전자공학과', cur: '고숙련 프로그래머·클라우드 엔지니어 양성. 클라우드·웹개발, 모바일, 보안·사고분석 진로 트랙 제시.', topics: ['웹·앱', '클라우드', '보안·시스템', '특화·현장'], compare: '클라우드 운영·보안 진로 트랙과 심화과정이 뚜렷함.', url: 'https://www.induk.ac.kr/SW/cms/frCmnCon/index.do?MENU_ID=100' },
-  { id: 'bc', name: '부천대학교', region: '경기', dept: '컴퓨터소프트웨어과', cur: '지능형 SW 개발을 기본으로 AI 도구 활용·UX/UI 나노디그리, AI·컴퓨터비전·영상처리·알고리즘 마이크로디그리 운영(예정) 안내.', topics: ['웹·앱', 'AI·데이터', '특화·현장'], compare: '‘지능형 SW’를 같은 표현으로 내세움. AI 도구와 비전·영상처리 소단위 과정이 선명함.', url: 'https://dept.bc.ac.kr/computer-software/intro/career.do' },
-  { id: 'gt', name: '경기과학기술대학교', region: '경기', dept: '컴퓨터모바일융합과', cur: 'S/W융합 전공은 인터넷·클라우드 기반에 IoT·빅데이터·AI·모바일 응용 SW를 결합.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: '모바일·IoT와 클라우드/AI 응용이 특징. 개발 플랫폼·산업 프로젝트 범위 중심으로 비교.', url: 'https://www.gtec.ac.kr/cmc/cms/FrCon/index.do?MENU_ID=180' },
-  { id: 'yh', name: '유한대학교', region: '경기', dept: '컴퓨터소프트웨어전공 · 인공지능전공', cur: '2026 교육과정표를 학년·학기 단위로 공개. C·HTML5·JavaScript·DB·네트워크·Linux응용·기업솔루션 프로젝트·캡스톤·현장실습. AI전공은 AI모델링·컴퓨터비전 응용.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: '학년별 교과표와 프로젝트·현장실습이 공개돼 교과 깊이 비교에 유용. 정원 변화에 따른 경쟁률 착시 주의.', url: 'https://cse.yuhan.ac.kr/couresChart.do?menu_idx=1027' },
-  { id: 'ss', name: '수원과학대학교', region: '경기', dept: '컴퓨터소프트웨어과', cur: '컴퓨터정보·AI소프트웨어 기반을 통합한 프로젝트 중심 교육. 프론트엔드·백엔드·클라우드·인공지능 최신 기술 반영을 안내.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: '웹 풀스택과 클라우드·AI 통합을 강조. 팀 프로젝트 결과물 수준을 대조.', url: 'https://www.ssc.ac.kr/department/it/computersoftware/sub020409' },
-  { id: 'ih', name: '인하공업전문대학', region: '인천', dept: 'AI소프트웨어학과 · AI컴퓨터학과 · 공간정보빅데이터학과', cur: '웹프레임워크·SW 융합 프로젝트·AI agent 프로그래밍 과목 공개. 공간정보빅데이터는 GIS·공간분석·빅데이터와 3+1 전공심화 운영.', topics: ['웹·앱', 'AI·데이터', '클라우드', '보안·시스템', '특화·현장'], compare: '전공별 분화와 공간정보 3+1이 비교점. 공공안전 서비스라는 상위 활용 분야로 비교.', url: 'https://cs.inhatc.ac.kr/cs/1779/subview.do' },
-  { id: 'je', name: '재능대학교', region: '인천', dept: '컴퓨터소프트웨어학과 · 컴퓨터시스템과', cur: 'HTML·CSS·JavaScript·Java·Python, 빅데이터·AI·IoT·클라우드와 웹/앱 서비스 기획·설계·개발·운영을 안내. 캡스톤·전공심화 소개 확인.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: '서비스 기획부터 운영까지와 최신기술 프로젝트를 강조.', url: 'https://jeiu.ac.kr/front.asp' },
-  { id: 'ds', name: '동서울대학교', region: '경기', dept: '컴퓨터소프트웨어학과', cur: 'C/C++·Java·Python·자료구조·DB·네트워크·Linux·웹·모바일·IoT·포트폴리오·졸업작품 수록. 웹·모바일·AI SW 개발 트랙 소개.', topics: ['웹·앱', 'AI·데이터', '보안·시스템', '특화·현장'], compare: '기초 CS부터 포트폴리오·졸업작품까지 폭넓게 구성.', url: 'https://www.adiga.kr/ucp/cls/col/classColDetail.do?menuId=PCCLSINF2000&ruCd=0226987&searchSyr=2026&unvCd=0000450' },
-  { id: 'dl', name: '대림대학교', region: '경기', dept: '소프트웨어학부', cur: '1~2학년 공통 핵심 후 3학년에 모바일앱·AI융합SW·웹애플리케이션 전공 선택. 교육과정표·교과목 개요·실무 프로젝트 공개.', topics: ['웹·앱', 'AI·데이터', '특화·현장'], compare: '3학년 전공선택으로 앱·AI·웹 전문화를 선택하는 구조.', url: 'https://dept.daelim.ac.kr/com/cms/FrCon/index.do?MENU_ID=160' },
-  { id: 'mj', name: '명지전문대학', region: '서울', dept: '컴퓨터공학과 · 컴퓨터보안공학과', cur: '컴퓨팅사고력·컴퓨터과학·프로그래밍·인터넷프로그래밍·DB 제시. 컴퓨터보안공학과는 별도 보안 전문 과정 운영.', topics: ['웹·앱', '보안·시스템', 'AI·데이터'], compare: '일반 응용SW와 보안 전문화가 학과 단위로 구분됨.', url: 'https://mjcs.mjc.ac.kr/ibuilder.do?menu_idx=802' },
-  { id: 'sg', name: '신구대학교', region: '경기', dept: '컴퓨터공학전공 · AI데이터전공', cur: '웹·Java·앱·Python·클라우드 구축·빅데이터 분석·프로젝트패키징과 3년+전공심화 경로 공개. 별도 AI데이터 전공의 실습 중심 교육.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: '클라우드·빅데이터·웹앱 축과 별도 AI데이터 전공이 강점.', url: 'https://software.shingu.ac.kr/cms/FR_CON/index.do?MENU_ID=110' },
-  { id: 'ys', name: '연성대학교', region: '경기', dept: '컴퓨터소프트웨어과', cur: '전산학개론·빅데이터AI기초·프론트엔드프로그래밍 등 확인. 이론과 실습 연계 교육 안내.', topics: ['웹·앱', 'AI·데이터', '특화·현장'], compare: '전 학년 교육과정표에서 백엔드·배포·프로젝트 깊이 추가 확인 필요.', url: 'https://www.yeonsung.ac.kr/bbs/ko/448/239097/artclView.do' },
-  { id: 'sa', name: '신안산대학교', region: '경기', dept: '컴퓨터정보학과', cur: '컴퓨터정보·클라우드·네트워크·AIoT·빅데이터 진로 분야 공개. 최신 학년별 과목표 근거는 제한적.', topics: ['AI·데이터', '클라우드', '보안·시스템'], compare: '과목표 확인이 부족해 과목 단위 비교는 보류.', url: 'https://www.sau.ac.kr/sau/department/computer_information.do' },
-  { id: 'os', name: '오산대학교', region: '경기', dept: '컴퓨터소프트웨어과(3년제)', cur: 'Python·Java·웹·DB·모바일과 정보보안·Linux·AI프로그래밍·빅데이터 분석·취약점 진단·캡스톤을 학기별 로드맵으로 제시.', topics: ['웹·앱', 'AI·데이터', '보안·시스템', '특화·현장'], compare: '보안·AI·빅데이터·통합구현 프로젝트 축. 학기 로드맵 공개도가 높음.', url: 'https://iphak.osan.ac.kr/?d_no=138&menuno=490' },
-];
-
-// 참고용 4년제 (비교 대상 아님)
-const references = [
-  { id: 'sh', name: '신한대학교', region: '경기', dept: '소프트웨어융합학과', cur: '입학 학년도별 교육과정·이수체계도·교과목 역량체계를 공개. 기초·응용공학을 갖춘 현장 중심 IT 전문가 양성을 강조.', topics: ['웹·앱', 'AI·데이터', '클라우드', '특화·현장'], compare: '의정부 소재 4년제. 같은 도시의 4년제 선택지로 지원자 유출 관점에서 참고.', url: 'https://okay.shinhan.ac.kr/ce/index.do' },
-  { id: 'dj', name: '대진대학교', region: '경기', dept: '컴퓨터공학과', cur: '컴퓨터공학전공의 역량기반 전공 교육과정 공개 자료가 확인됨. 세부 과목표는 원문에서 확인.', topics: ['웹·앱', 'AI·데이터', '보안·시스템', '특화·현장'], compare: '포천 소재 4년제. 학생부교과·적성고사 전형으로 전문대 수시 1차와 구조가 다름.', url: 'https://www.daejin.ac.kr/ce/2508/subview.do' },
-];
+// 학과별 교육과정 데이터는 depts/<학과>/dept.json 의 curriculum
+let D = null, AXES = [], KM = null, schools = [], references = [];
+// 받침에 따라 은/는
+const eunNeun = w => { const c = w.charCodeAt(w.length - 1) - 0xac00; return w + (c >= 0 && c < 11172 && c % 28 ? '은' : '는'); };
 
 let R = null;
 const missingAxes = s => s.topics.filter(t => !KM.topics.includes(t));
@@ -161,7 +114,7 @@ function rateSummary(id) {
 function renderKM() {
   const b = R?.base;
   el('kmBlock').innerHTML = `
-    <div class="baseline-head"><strong>${KM.name} ${KM.dept}</strong><span>${KM.type} · 경기 북부(의정부)</span></div>
+    <div class="baseline-head"><strong>${KM.name} ${KM.dept}</strong><span>${KM.type} · ${KM.area}</span></div>
     ${b ? `<div class="stats">
       <div class="stat"><span>2027 경쟁률</span><b>${fx(b.rate)}:1</b><small>모집 ${num(b.quota)} · 지원 ${num(b.applied)}</small></div>
       <div class="stat"><span>2026 대비</span><b class="${b.change < 0 ? 'alert' : ''}">${b.change != null ? pct(b.change) : '—'}</b><small>${esc(b.cause)}</small></div>
@@ -238,21 +191,37 @@ function renderThemes() {
   const line = r => `<li><b>${esc(r.s.name)} ${esc(r.dept.replace(/\(.*?\)/g, ''))}</b>: 모집 ${r.priorQuota ?? '미공개'}→${r.quota}명, 지원 ${r.priorApplied != null ? num(r.priorApplied) : '미공개'}→${num(r.applied)}명, ${fx(r.prior)}→${fx(r.rate)}:1 <span class="${r.change > 0 ? 'alert' : ''}">(${pct(r.change)})</span></li>`;
   el('themes').innerHTML = `
     <article class="theme"><h3>경민대 하락의 수치 요인</h3>
-      <p>경민대 지능형소프트웨어과는 모집 ${b.priorQuota}→${b.quota}명, 지원 ${num(b.priorApplied)}→${num(b.applied)}명으로 경쟁률이 ${fx(b.prior)}→${fx(b.rate)}:1 <b class="alert">(${pct(b.change)})</b>입니다. 분류: <b>${esc(b.cause)}</b>. 모집인원 변화보다 지원자 수 변화가 직접 반영됐습니다.</p></article>
+      <p>경민대 ${esc(eunNeun(KM.dept))} 모집 ${b.priorQuota}→${b.quota}명, 지원 ${num(b.priorApplied)}→${num(b.applied)}명으로 경쟁률이 ${fx(b.prior)}→${fx(b.rate)}:1 <b class="alert">(${pct(b.change)})</b>입니다. 분류: <b>${esc(b.cause)}</b>. 모집인원 변화보다 지원자 수 변화가 직접 반영됐습니다.</p></article>
     <article class="theme"><h3>같은 기간 하락한 모집단위 (${down.length}개)</h3><ul>${down.map(line).join('') || '<li>없음</li>'}</ul></article>
     <article class="theme"><h3>상승한 모집단위 (${up.length}개) — <span class="alert">경민대와 반대 방향</span></h3><ul>${up.map(line).join('') || '<li>없음</li>'}</ul></article>
     <article class="theme"><h3>상승 사례는 정원 변화와 나눠 봐야 함</h3>
       <p>${quotaEffect.length ? `상승 ${up.length}개 중 ${quotaEffect.length}개(${[...new Set(quotaEffect.map(r => r.s.name))].map(esc).join(', ')})는 모집인원이 줄었습니다. 이 경우 경쟁률 상승의 일부는 정원 축소 효과이므로 ‘인기 상승’으로만 해석하면 오해가 생깁니다.` : '상승한 모집단위 중 모집인원이 줄어든 곳은 없습니다.'}</p></article>
-    <article class="theme"><h3>연도 전체 추세와 개별 학과는 다를 수 있음</h3>
-      <p>2026학년도 전문대 수시 1차 전체는 모집인원 감소에도 지원자가 늘어 평균 경쟁률이 상승했다는 집계가 있습니다. 다만 전체 대학·전공 합산이므로 수도권 SW학과의 방향을 대신하지 않습니다.</p></article>
-    <article class="theme"><h3>커뮤니티에서 반복된 진로 불안</h3>
-      <p>최근 1년 공개 게시물에는 신입 개발자 채용 난도, AI가 웹·앱 코딩 업무를 줄일 수 있다는 걱정, 다른 진로를 함께 준비해야 한다는 의견이 보입니다. 반대로 포트폴리오·인턴·프로젝트로 기회를 만든다는 조언도 확인됩니다. 개인 경험의 표본이지 지원율 변화의 원인 증명은 아닙니다.</p></article>`;
+    ${(D.curriculum.context || []).map(c => `<article class="theme"><h3>${esc(c.title)}</h3>
+      <p>${esc(c.text)}</p></article>`).join('')}`;
 }
 
-el('topic').innerHTML += AXES.map(a => `<option>${a}</option>`).join('');
-for (const id of ['find', 'region', 'topic']) el(id).addEventListener(id === 'find' ? 'input' : 'change', renderSchools);
-renderKM(); renderMatrix(); renderSchools(); renderReferences();
-Ratio.load().then(r => {
+// 학과 설정을 읽은 뒤 화면을 그리고, 경쟁률 공개값이 오면 다시 그린다
+function setupDept(cfg) {
+  D = cfg;
+  ({ axes: AXES, km: KM, schools, references } = D.curriculum);
+  Admission.fill(D);
+  el('checked').textContent = D.curriculum.checked;
+  el('find').placeholder = D.curriculum.searchPlaceholder || '학교·학과 검색';
+  el('axesNotes').innerHTML = (D.curriculum.axesNotes || []).map(t => `<p>${esc(t)}</p>`).join('');
+  const cm = D.curriculum.community;
+  el('communityTitle').textContent = cm ? cm.title : '';
+  el('communityPeriod').textContent = cm ? cm.period : '';
+  el('communityPosts').innerHTML = cm ? cm.posts.map(p => `<li><div><small>${esc(p.source)}</small></div><div><b>${esc(p.title)}</b><p>${esc(p.text)} <a class="src" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">원문</a></p></div></li>`).join('') : '';
+  el('topic').innerHTML = '<option value="all">전체 교육축</option>' + AXES.map(a => `<option>${esc(a)}</option>`).join('');
+}
+
+for (const id of ['find', 'region', 'topic']) el(id).addEventListener(id === 'find' ? 'input' : 'change', () => D && renderSchools());
+Admission.loadDept().then(cfg => {
+  setupDept(cfg);
+  renderKM(); renderMatrix(); renderSchools(); renderReferences();
+  return Ratio.load(Admission.dataFile);
+}).then(r => {
+  el('collegeCount').textContent = r.colleges.length;
   R = r;
   el('stamp').textContent = r.data.checkedAt ? '경쟁률 공개값 갱신 ' + r.data.checkedAt : '';
   renderKM(); renderMatrix(); renderSchools(); renderReferences(); renderThemes();

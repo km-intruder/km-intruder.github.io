@@ -4,10 +4,14 @@
   const PER_PAGE = 10;
   const root = document.getElementById('board');
   const cat = root.dataset.cat;
-  const base = 'posts/' + cat + '/';
+  // 경민대 소식은 학교 공통, 전문대·산업 현황은 학과별 폴더
+  const base = root.dataset.shared != null ? 'posts/' + cat + '/' : window.Admission.base + 'posts/' + cat + '/';
   const params = new URLSearchParams(location.search);
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const pageHref = n => (n > 1 ? '?page=' + n : '?');
+  // 학과 선택(dept)을 유지한 채 목록·글 주소를 만든다
+  const here = location.pathname.split('/').pop();
+  const href = extra => window.Admission.link(here, extra);
+  const pageHref = n => href({ page: n > 1 ? n : '' });
 
   async function getJSON(url) {
     const res = await fetch(url, { cache: 'no-store' });
@@ -36,7 +40,7 @@
     root.innerHTML = sorted.length ? `
       <div class="board-meta">전체 ${sorted.length}개 · ${page} / ${pages} 페이지</div>
       <ul class="board-list">${slice.map(p => `
-      <li><a href="?post=${encodeURIComponent(p.slug)}">
+      <li><a href="${href({ post: p.slug })}">
         <time datetime="${esc(p.date)}">${esc(p.date)}</time>
         <div><strong>${esc(p.title)}</strong><p>${esc(p.summary)}</p>
           ${p.tags?.length ? `<div class="tags">${p.tags.map(t => `<span>${esc(t)}</span>`).join('')}</div>` : ''}</div>
@@ -46,7 +50,7 @@
   async function renderPost(posts, slug) {
     const sorted = newestFirst(posts);
     const i = sorted.findIndex(x => x.slug === slug);
-    if (i < 0) { root.innerHTML = '<p class="empty">게시글을 찾을 수 없습니다. <a href="?">목록으로</a></p>'; return; }
+    if (i < 0) { root.innerHTML = `<p class="empty">게시글을 찾을 수 없습니다. <a href="${pageHref(1)}">목록으로</a></p>`; return; }
     const p = sorted[i], listPage = Math.floor(i / PER_PAGE) + 1;
     const res = await fetch(base + p.file, { cache: 'no-store' });
     const md = res.ok ? await res.text() : '본문을 불러오지 못했습니다.';
@@ -54,7 +58,7 @@
       ? DOMPurify.sanitize(marked.parse(md), { ADD_ATTR: ['target'] })
       : '<pre>' + esc(md) + '</pre>';
     const newer = sorted[i - 1], older = sorted[i + 1];
-    const link = (x, label) => x ? `<a href="?post=${encodeURIComponent(x.slug)}"><small>${label}</small>${esc(x.title)}</a>` : '<span></span>';
+    const link = (x, label) => x ? `<a href="${href({ post: x.slug })}"><small>${label}</small>${esc(x.title)}</a>` : '<span></span>';
     root.innerHTML = `<div class="post-head"><a class="back" href="${pageHref(listPage)}">← 목록</a>
       <h2>${esc(p.title)}</h2><time datetime="${esc(p.date)}">${esc(p.date)}</time></div>
       <article class="post">${html}</article>

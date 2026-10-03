@@ -246,3 +246,7 @@ th.sorted::after { content: " " attr(data-dir); }
 .post-nav a:last-child { text-align: right; }
 .post-nav small { display: block; font-size: 12px; color: var(--ink-3); }
 .post-nav a:hover { color: var(--brand); }
+
+/* ── 학과 선택 ── */
+.tabs { align-items: flex-end; }
+.dept-select { margin-left: auto; align-self: center; border: 1px solid var(--rule); background: var(--paper); padding: 5px 8px; font-size: 13px; border-radius: 0; }

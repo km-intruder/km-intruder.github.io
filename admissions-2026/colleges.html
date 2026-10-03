@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>비교 전문대 현황</title>
-<meta name="description" content="경민대 지능형소프트웨어과와 비교하는 수도권 전문대 동향">
+<meta name="description" content="경민대 학과와 비교하는 수도권 전문대 동향">
 <link rel="icon" href="../assets/logo-kyungmin.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="stylesheet" href="report.css">
@@ -19,7 +19,7 @@
   <div class="title-row">
     <div>
       <h1>비교 전문대 현황</h1>
-      <div class="meta">경민대 지능형소프트웨어과와 비교하는 수도권 전문대 동향 · 매주 월요일 지난주 동향을 게시합니다</div>
+      <div class="meta">경민대 <span data-dept="name"></span>와 비교하는 수도권 전문대 동향 · 매주 월요일 지난주 동향을 게시합니다</div>
     </div>
     <div class="tools"><button class="btn" type="button" onclick="window.print()">인쇄 · PDF</button></div>
   </div>
@@ -34,5 +34,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
 <script src="board.js"></script>
+<script>Admission.loadDept().then(Admission.fill).catch(() => {});</script>
 </body>
 </html>
