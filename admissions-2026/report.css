@@ -138,6 +138,9 @@ tr.selected td { background: var(--brand-tint); }
 .dot.alert { background: var(--alert); }
 .dot.none { background: none; border: 1px solid var(--rule); }
 tr.base-row td { background: var(--brand-tint); font-weight: 600; }
+/* 경민대 기준 대비: 높으면 파랑, 낮으면 빨강 */
+.vs-hi, .vs-hi b { color: var(--viz-up, #2a78d6); }
+.vs-lo, .vs-lo b { color: var(--viz-down, #c4161c); }
 
 .themes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--rule); }
 .theme { padding: 16px 20px 16px 0; border-bottom: 1px solid var(--rule); }

@@ -79,7 +79,7 @@
   <div class="table-wrap">
     <table>
       <thead><tr>
-        <th data-sort="name">학교 · 모집단위</th><th data-sort="near">권역 · 거리</th><th class="n">모집</th><th class="n" data-sort="applied-desc">지원</th><th class="n" data-sort="rate-desc,rate-asc">경쟁률</th>
+        <th class="n" data-sort="rate-desc,rate-asc">순위</th><th data-sort="name">학교 · 모집단위</th><th data-sort="near">권역 · 거리</th><th class="n">모집</th><th class="n" data-sort="applied-desc">지원</th><th class="n" data-sort="rate-desc,rate-asc">경쟁률</th>
         <th class="n" data-sort="similar">경민대 대비</th><th class="n" data-sort="change-desc,change-asc">2026 → 2027</th><th>변화 원인</th><th>원문</th>
       </tr></thead>
       <tbody id="rows"></tbody>
@@ -87,8 +87,8 @@
   </div>
   <details class="notes">
     <summary>표 읽는 법</summary>
-    <p>‘경민대 대비’는 각 모집단위 경쟁률 ÷ 경민대 <span data-dept="name"></span> 경쟁률입니다. <span class="alert">빨간색</span>은 경민대의 2.5배 이상이거나, 경민대가 하락한 해에 상승한 모집단위입니다.</p>
-    <p>경민대 기준 모집단위는 학교 집계표의 학과 전체(정원내 모든 전형, 2027·2026 최종) 값입니다. 비교 학교는 각 대학 공개 원문의 주력 전형(주로 일반고) 값이라, 전형이 여럿인 학과는 경민대 경쟁률이 상대적으로 낮게 보일 수 있습니다.</p>
+    <p>‘순위’는 경민대 <span data-dept="name"></span>를 포함한 경쟁률 순위입니다(같은 경쟁률은 같은 순위). 순위·경쟁률·경민대 대비가 <span class="vs-hi">파란색</span>이면 경민대보다 높고, <span class="vs-lo">빨간색</span>이면 경민대보다 낮은 모집단위입니다. ‘경민대 대비’는 각 모집단위 경쟁률 ÷ 경민대 경쟁률입니다.</p>
+    <p>경민대는 비교 학교와 같은 주 전형(일반전형 또는 특별전형-일반고) 값이 학교 집계표에 있으면 그 값으로 순위를 매기고, 없으면 학과 전체(정원내) 값을 씁니다. 2026 → 2027 변화는 학과 전체 기준입니다. 같은 경민대의 다른 학과는 비교군에서 뺍니다.</p>
     <p>‘변화 원인’은 2026학년도 대비 모집인원·지원인원 변화로 나눈 산술적 분류입니다. 정원이 줄면 지원자가 줄어도 경쟁률이 오를 수 있습니다.</p>
   </details>
 </section>
@@ -247,19 +247,22 @@ function regionRows() {
 
 function rowHtml(r) {
   const b = R.base, s = r.s;
-  const sameRegion = s.region === b.s.region;
-  const strong = r.vsBase >= 2.5;
+  const sameRegion = !r.isBase && s.region === b.s.region;
+  // 경민대보다 높으면 파랑(vs-hi), 낮으면 빨강(vs-lo)
+  const vs = r.isBase ? '' : r.rate > b.rate ? 'vs-hi' : r.rate < b.rate ? 'vs-lo' : '';
+  const rank = 1 + R.rows.filter(x => x.rate > r.rate).length;
   const opposite = r.change != null && b.change != null && r.change > 0 && b.change < 0;
   // 경민대 주 전형 값이 있으면 경쟁률과 같은 기준으로 모집·지원 인원을 보여 준다
   const q = r.main?.quota ?? r.quota, a = r.main?.applied ?? r.applied, ba = b.main?.applied ?? b.applied;
-  return `<tr class="${selected === s.id ? 'selected' : ''}">
+  return `<tr class="${r.isBase ? 'base-row' : selected === s.id ? 'selected' : ''}">
+    <td class="n ${vs}"><b>${rank}</b><div class="muted">/ ${R.rows.length}</div></td>
     <td><div class="school">${esc(s.name)}</div><div class="dept">${esc(r.dept)}</div><div class="muted">${esc(r.mainTrack || r.track)}</div></td>
-    <td><div class="${sameRegion ? 'alert' : 'muted'}">${esc(s.region)} · ${esc(s.city)}${sameRegion ? ' (같은 권역)' : ''}</div><div class="muted">경민대에서 ${Math.round(r.distKm)}km</div></td>
+    <td><div class="${sameRegion ? 'alert' : 'muted'}">${esc(s.region)} · ${esc(s.city)}${sameRegion ? ' (같은 권역)' : ''}</div><div class="muted">${r.isBase ? '기준 학과' : `경민대에서 ${Math.round(r.distKm)}km`}</div></td>
     <td class="n">${num(q)}</td>
-    <td class="n">${num(a)}<div class="muted">${a - ba >= 0 ? '+' : '−'}${num(Math.abs(a - ba))} vs 경민대</div></td>
-    <td class="n"><span class="rate">${fx(r.rate)}</span><div class="muted">${r.final ? '최종' : '최종 미확인'}</div></td>
-    <td class="n"><b class="${strong ? 'alert' : r.vsBase < 1 ? 'good' : ''}">${fx(r.vsBase)}배</b><div class="muted">${signed(r.gap)}p</div></td>
-    <td class="n">${r.change != null ? `${fx(r.prior)} → ${fx(r.totalRate)}${r.mainTrack ? ' (학과 전체)' : ''}<div class="${opposite ? 'alert' : 'muted'}">${pct(r.change)}${opposite ? ' · 경민대와 반대' : ''}</div>` : `<span class="muted">${esc(r.priorShort || (r.prior != null ? '직접 비교 제외' : '자료 미확인'))}</span>`}</td>
+    <td class="n">${num(a)}${r.isBase ? '' : `<div class="muted">${a - ba >= 0 ? '+' : '−'}${num(Math.abs(a - ba))} vs 경민대</div>`}</td>
+    <td class="n ${vs}"><span class="rate">${fx(r.rate)}</span><div class="muted">${r.final ? '최종' : '최종 미확인'}</div></td>
+    <td class="n ${vs}">${r.isBase ? '<b>기준</b>' : `<b>${fx(r.vsBase)}배</b><div>${signed(r.gap)}p</div>`}</td>
+    <td class="n">${r.change != null ? `${fx(r.prior)} → ${fx(r.totalRate)}${r.mainTrack ? ' (학과 전체)' : ''}<div class="muted">${opposite ? `<b style="color:var(--ink)">${pct(r.change)} · 경민대와 반대</b>` : pct(r.change)}</div>` : `<span class="muted">${esc(r.priorShort || (r.prior != null ? '직접 비교 제외' : '자료 미확인'))}</span>`}</td>
     <td>${r.cause ? esc(r.cause) : '<span class="muted">—</span>'}</td>
     <td class="src"><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">2027</a>${r.priorUrl ? ` · <a href="${esc(r.priorUrl)}" target="_blank" rel="noopener noreferrer">2026</a>` : ''}</td>
   </tr>`;
@@ -290,14 +293,14 @@ function markSortHeader() {
 
 function renderRows() {
   const q = el('q').value.trim().toLowerCase(), reg = el('reg').value, field = el('field').value;
-  const list = R.rows.filter(r => !r.isBase
-    && (reg === 'all' || r.s.region === reg)
+  // 경민대 기준 행은 필터와 관계없이 항상 함께 보여 준다
+  const list = R.rows.filter(r => r.isBase || ((reg === 'all' || r.s.region === reg)
     && (field === 'all' || r.field === field)
     && (!selected || r.school === selected)
-    && (r.s.name + ' ' + r.dept).toLowerCase().includes(q))
+    && (r.s.name + ' ' + r.dept).toLowerCase().includes(q)))
     .sort(SORTS[el('sort').value] || SORTS['rate-desc']);
-  el('rows').innerHTML = list.map(rowHtml).join('') || '<tr><td colspan="9" class="empty">조건에 맞는 모집단위가 없습니다.</td></tr>';
-  el('count').textContent = `${list.length}개 모집단위 · ${el('sort').selectedOptions[0].text}`;
+  el('rows').innerHTML = list.map(rowHtml).join('') || '<tr><td colspan="10" class="empty">조건에 맞는 모집단위가 없습니다.</td></tr>';
+  el('count').textContent = `${list.length - 1}개 모집단위 + 경민대 · ${el('sort').selectedOptions[0].text}`;
   markSortHeader();
   const btn = el('clearSchool');
   btn.hidden = !selected;

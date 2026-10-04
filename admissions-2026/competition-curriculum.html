@@ -109,7 +109,7 @@ function rateSummary(id) {
   if (!R) return '<span class="muted">—</span>';
   const rows = R.rows.filter(r => r.school === id && !r.isBase).sort((a, b) => b.rate - a.rate);
   if (!rows.length) return '<span class="muted">수치 미수록</span>';
-  return rows.map(r => `<div>${esc(r.dept.replace(/\(.*?\)/g, ''))} <b>${fx(r.rate)}</b> <span class="${r.vsBase >= 2.5 ? 'alert' : 'muted'}">(${fx(r.vsBase)}배)</span></div>`).join('');
+  return rows.map(r => `<div>${esc(r.dept.replace(/\(.*?\)/g, ''))} <b class="${r.rate > R.base.rate ? 'vs-hi' : r.rate < R.base.rate ? 'vs-lo' : ''}">${fx(r.rate)}</b> <span class="${r.rate > R.base.rate ? 'vs-hi' : r.rate < R.base.rate ? 'vs-lo' : 'muted'}">(${fx(r.vsBase)}배)</span></div>`).join('');
 }
 
 function renderKM() {
