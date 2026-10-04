@@ -114,7 +114,29 @@
 </section>
 
 <section class="block">
-  <div class="block-head"><span class="no">05</span><h2>계열별 요약</h2></div>
+  <div class="block-head"><span class="no">05</span><h2>학과별 전문대 순위</h2><span class="aside">학과를 누르면 그 학과의 순위표가 펼쳐집니다</span></div>
+  <div class="filters">
+    <select id="rankOrder" aria-label="정렬">
+      <option value="pos-desc">순위 낮은 학과 먼저</option>
+      <option value="pos-asc">순위 높은 학과 먼저</option>
+      <option value="group">계열 순서</option>
+    </select>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>계열</th><th>학과</th><th>순위 기준 전형</th><th class="n">경민대 경쟁률</th><th class="n">전문대 순위</th><th class="n">경민대보다 높음</th><th class="n">경민대보다 낮음</th><th class="n">비교군 중앙값</th><th>1위</th><th>분석</th></tr></thead>
+      <tbody id="ranks"></tbody>
+    </table>
+  </div>
+  <details class="notes">
+    <summary>표 읽는 법</summary>
+    <p>학과별 비교 화면의 ‘학과별 접수 현황’ 순위를 한곳에 모았습니다. 경민대는 비교 학교와 같은 주 전형(일반전형 또는 특별전형-일반고) 값이 있으면 그 값으로, 없으면 학과 전체(정원내) 값으로 순위를 매깁니다.</p>
+    <p>진로가 겹치는 경민대 학과끼리는 서로의 순위에 들어갑니다(호텔조리과↔카페베이커리과, 지능형소프트웨어과↔사이버·정보시스템학과, 레포츠과↔태권도외교과). 중앙값은 다른 학교만으로 계산합니다. <span class="vs-hi">파란색</span>은 경민대보다 경쟁률이 높은 곳, <span class="vs-lo">빨간색</span>은 낮은 곳입니다.</p>
+  </details>
+</section>
+
+<section class="block">
+  <div class="block-head"><span class="no">06</span><h2>계열별 요약</h2></div>
   <div class="table-wrap">
     <table>
       <thead><tr><th>계열</th><th class="n">학과</th><th class="n">모집</th><th class="n">2027 지원</th><th class="n">2026 지원</th><th class="n">증감</th><th class="n">증감률</th><th class="n">경쟁률</th></tr></thead>
@@ -124,7 +146,7 @@
 </section>
 
 <section class="block">
-  <div class="block-head"><span class="no">06</span><h2>최근 글</h2></div>
+  <div class="block-head"><span class="no">07</span><h2>최근 글</h2></div>
   <div class="themes">
     <article class="theme"><h3><a href="colleges.html" style="text-decoration:none">전문대 동향 →</a></h3><ul id="latestColleges"><li class="muted">불러오는 중</li></ul></article>
     <article class="theme"><h3><a href="kyungmin.html" style="text-decoration:none">학교 소식 →</a></h3><ul id="latestNews"><li class="muted">불러오는 중</li></ul></article>
@@ -393,6 +415,48 @@ function renderAll() {
   }));
 }
 
+// 학과별 전문대 순위: 학과 화면의 순위표(경민대 같은 계열 학과 포함)를 모아 보여 준다
+let rankOpen = null;
+function renderRanks() {
+  const o = el('rankOrder').value;
+  let list = K.depts.filter(d => MK[d.id]?.R.base);
+  const pos = d => MK[d.id].R.rank / MK[d.id].R.peerCount;
+  if (o === 'pos-desc') list.sort((a, b) => pos(b) - pos(a) || MK[b.id].R.peerCount - MK[a.id].R.peerCount);
+  if (o === 'pos-asc') list.sort((a, b) => pos(a) - pos(b) || MK[b.id].R.peerCount - MK[a.id].R.peerCount);
+  el('ranks').innerHTML = list.map(d => {
+    const R = MK[d.id].R, b = R.base, top = [...R.rankRows].sort((x, y) => y.rate - x.rate)[0];
+    const low = R.rank > R.peerCount / 2;
+    return `<tr data-rank="${esc(d.id)}" style="cursor:pointer" class="${rankOpen === d.id ? 'selected' : ''}">
+      <td class="muted">${esc(d.group)}</td><td><b>${esc(d.name)}</b></td>
+      <td class="muted">${esc(b.mainTrack || b.track)}</td>
+      <td class="n"><b>${fx(b.rate)}</b></td>
+      <td class="n"><b class="${low ? 'alert' : ''}">${R.rank}</b> <span class="muted">/ ${R.peerCount}</span></td>
+      <td class="n vs-hi"><b>${R.above}</b></td><td class="n vs-lo"><b>${R.below}</b></td>
+      <td class="n">${R.median != null ? fx(R.median) : '—'}</td>
+      <td>${top.isBase ? '<b>경민대 (기준 학과)</b>' : `${esc(top.isSibling ? '경민대 ' + top.dept : top.s.name.replace(/대학교$|대학$/, '대'))} <span class="muted">${fx(top.rate)}</span>`}</td>
+      <td class="src"><a href="${Admission.deptHref(d.id)}" onclick="event.stopPropagation()">비교 분석 →</a></td>
+    </tr>${rankOpen === d.id ? rankDetail(R) : ''}`;
+  }).join('');
+  el('ranks').querySelectorAll('tr[data-rank]').forEach(tr => tr.addEventListener('click', () => {
+    rankOpen = rankOpen === tr.dataset.rank ? null : tr.dataset.rank; renderRanks();
+  }));
+}
+function rankDetail(R) {
+  const b = R.base, list = [...R.rankRows].sort((x, y) => y.rate - x.rate);
+  return `<tr class="track"><td colspan="10" style="padding:6px 12px 14px"><table style="width:100%"><tbody>${list.map(r => {
+    const vs = r.isBase ? '' : r.rate > b.rate ? 'vs-hi' : r.rate < b.rate ? 'vs-lo' : '';
+    const rank = 1 + R.rankRows.filter(x => x.rate > r.rate).length;
+    return `<tr class="${r.isBase ? 'base-row' : ''}"><td class="n ${vs}" style="width:56px"><b>${rank}</b></td>
+      <td><b>${esc(r.s.name)}</b> <span class="muted">${esc(r.dept)}${r.isSibling ? ' · 같은 학교' : ''}</span></td>
+      <td class="muted">${esc(r.mainTrack || r.track)}</td>
+      <td class="n">${num(r.main?.quota ?? r.quota)}명 · ${num(r.main?.applied ?? r.applied)}명</td>
+      <td class="n ${vs}"><b>${fx(r.rate)}</b></td>
+      <td class="n ${vs}">${r.isBase ? '<b>기준</b>' : fx(r.vsBase) + '배'}</td>
+      <td class="muted">${r.final ? '최종' : '최종 미확인'}</td></tr>`;
+  }).join('')}</tbody></table></td></tr>`;
+}
+el('rankOrder').addEventListener('change', renderRanks);
+
 function renderGroups() {
   const groups = [...new Set(K.depts.map(d => d.group))];
   el('groups').innerHTML = groups.map(g => {
@@ -422,7 +486,7 @@ fetch('school/susi1-2027.json', { cache: 'no-store' }).then(r => r.json()).then(
   return Promise.all([loadMarkets(), fetch('school/industry-2034.json', { cache: 'no-store' }).then(r => r.json())]);
 }).then(([, ind]) => {
   IND = ind;
-  renderMinus(); renderOverview(); renderStrategy(IND);
+  renderMinus(); renderRanks(); renderOverview(); renderStrategy(IND);
 }).catch(() => { el('summary').innerHTML = '<div class="empty alert">학교 집계 자료를 불러오지 못했습니다.</div>'; });
 for (const id of ['group', 'order']) el(id).addEventListener('change', () => K && renderAll());
 latest('colleges', 'latestColleges', 'colleges.html');

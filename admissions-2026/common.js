@@ -51,24 +51,27 @@
       const h = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(c.lat)) * Math.sin(dLon / 2) ** 2;
       return 6371 * 2 * Math.asin(Math.sqrt(h));
     };
-    rows.forEach(r => {
+    // 순위표에는 진로가 겹치는 경민대 다른 학과(rankWith 표시)도 넣는다 (시장 합계·중앙값 계산에서는 빼 둔다)
+    const rankRows = [...rows, ...sameSchool.filter(r => r.rankWith)];
+    rankRows.forEach(r => {
+      r.isSibling = sameSchool.includes(r);
       r.distKm = base ? km(base.s, r.s) : null;
       r.isBase = r === base;
       r.vsBase = base && base.rate ? r.rate / base.rate : null;
       r.gap = base ? r.rate - base.rate : null;
     });
     const peers = rows;
-    const ranked = [...peers].sort((x, y) => y.rate - x.rate);
     const others = peers.filter(r => !r.isBase);
     const median = arr => { const v = arr.map(r => r.rate).sort((a, c) => a - c); const m = v.length >> 1; return v.length ? (v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2) : null; };
     return {
-      data, byId, rows, base, peers, reference, sameSchool,
+      data, byId, rows, base, peers, reference, sameSchool, rankRows,
       colleges: data.schools.filter(s => s.type !== '4년제'),
       universities: data.schools.filter(s => s.type === '4년제'),
-      rank: base ? ranked.indexOf(base) + 1 : null,
-      peerCount: peers.length,
+      rank: base ? 1 + rankRows.filter(r => r.rate > base.rate).length : null,
+      peerCount: rankRows.length,
       median: median(others),
-      above: others.filter(r => r.rate > (base?.rate ?? 0)).length,
+      above: rankRows.filter(r => !r.isBase && r.rate > (base?.rate ?? 0)).length,
+      below: rankRows.filter(r => !r.isBase && r.rate < (base?.rate ?? 0)).length,
       comparable: rows.filter(r => r.change != null && !r.isBase),
     };
   }

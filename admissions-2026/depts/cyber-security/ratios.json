@@ -85,7 +85,8 @@
    "prior": 3.89,
    "priorQuota": 35,
    "priorApplied": 136,
-   "priorUrl": null
+   "priorUrl": null,
+   "rankWith": true
   },
   {
    "school": "km",

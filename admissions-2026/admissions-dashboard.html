@@ -88,7 +88,7 @@
   <details class="notes">
     <summary>표 읽는 법</summary>
     <p>‘순위’는 경민대 <span data-dept="name"></span>를 포함한 경쟁률 순위입니다(같은 경쟁률은 같은 순위). 순위·경쟁률·경민대 대비가 <span class="vs-hi">파란색</span>이면 경민대보다 높고, <span class="vs-lo">빨간색</span>이면 경민대보다 낮은 모집단위입니다. ‘경민대 대비’는 각 모집단위 경쟁률 ÷ 경민대 경쟁률입니다.</p>
-    <p>경민대는 비교 학교와 같은 주 전형(일반전형 또는 특별전형-일반고) 값이 학교 집계표에 있으면 그 값으로 순위를 매기고, 없으면 학과 전체(정원내) 값을 씁니다. 2026 → 2027 변화는 학과 전체 기준입니다. 같은 경민대의 다른 학과는 비교군에서 뺍니다.</p>
+    <p>경민대는 비교 학교와 같은 주 전형(일반전형 또는 특별전형-일반고) 값이 학교 집계표에 있으면 그 값으로 순위를 매기고, 없으면 학과 전체(정원내) 값을 씁니다. 2026 → 2027 변화는 학과 전체 기준입니다. 진로가 겹치는 경민대 학과(호텔조리과↔카페베이커리과, 지능형소프트웨어과↔사이버·정보시스템학과, 레포츠과↔태권도외교과)는 순위에는 넣지만, 비교군 중앙값과 시장 지원자 합계에서는 뺍니다.</p>
     <p>‘변화 원인’은 2026학년도 대비 모집인원·지원인원 변화로 나눈 산술적 분류입니다. 정원이 줄면 지원자가 줄어도 경쟁률이 오를 수 있습니다.</p>
   </details>
 </section>
@@ -157,7 +157,7 @@ function renderBaseline() {
     </div>
     <ul class="findings">
       ${b.mainTrack ? `<li>비교 학교는 주 전형(일반고·일반전형) 경쟁률이라, 순위·배수·중앙값은 경민대도 같은 <b>${esc(b.mainTrack)}</b> 값(${num(b.main.quota)}명 모집 · ${num(b.main.applied)}명 지원, ${fx(b.rate)}:1)으로 비교했습니다. 2026 대비 변화는 전형별 2026 값이 없어 학과 전체 기준입니다.</li>` : ''}
-      <li>전문대 비교군 ${R.peerCount - 1}개 모집단위 중 <b class="alert">${R.above}개</b>가 경민대 ${esc(D.name)}보다 경쟁률이 높습니다.</li>
+      <li>순위에 넣은 ${R.peerCount - 1}개 모집단위${R.rankRows.some(r => r.isSibling) ? `(경민대 ${R.rankRows.filter(r => r.isSibling).map(r => esc(r.dept)).join('·')} 포함)` : ''} 중 <b class="vs-hi">${R.above}개</b>가 경민대 ${esc(D.name)}보다 경쟁률이 높고, <b class="vs-lo">${R.below}개</b>가 낮습니다.</li>
       ${b.change != null ? `<li>경민대는 2026년 대비 경쟁률이 <b class="${b.change < 0 ? 'alert' : ''}">${pct(b.change)}</b> (${fx(b.prior)} → ${fx(b.totalRate)}) 변했고, 원인은 <b>${esc(b.cause)}</b>입니다. 같은 기간 직접 비교 가능한 전문대 ${R.comparable.length}개 모집단위 중 <b class="${b.change < 0 ? 'alert' : ''}">${opposite.length}개는 상승</b>했습니다.</li>` : ''}
       ${north.length ? `<li>같은 ${esc(s.region)} 권역: ${north.map(r => `${esc(r.s.name)} ${esc(r.dept.replace(/\(.*\)/, ''))} <b class="${r.rate > b.rate ? 'alert' : ''}">${fx(r.rate)}:1</b>`).join(', ')}</li>` : ''}
     </ul>
@@ -247,17 +247,17 @@ function regionRows() {
 
 function rowHtml(r) {
   const b = R.base, s = r.s;
-  const sameRegion = !r.isBase && s.region === b.s.region;
+  const sameRegion = !r.isBase && !r.isSibling && s.region === b.s.region;
   // 경민대보다 높으면 파랑(vs-hi), 낮으면 빨강(vs-lo)
   const vs = r.isBase ? '' : r.rate > b.rate ? 'vs-hi' : r.rate < b.rate ? 'vs-lo' : '';
-  const rank = 1 + R.rows.filter(x => x.rate > r.rate).length;
+  const rank = 1 + R.rankRows.filter(x => x.rate > r.rate).length;
   const opposite = r.change != null && b.change != null && r.change > 0 && b.change < 0;
   // 경민대 주 전형 값이 있으면 경쟁률과 같은 기준으로 모집·지원 인원을 보여 준다
   const q = r.main?.quota ?? r.quota, a = r.main?.applied ?? r.applied, ba = b.main?.applied ?? b.applied;
   return `<tr class="${r.isBase ? 'base-row' : selected === s.id ? 'selected' : ''}">
-    <td class="n ${vs}"><b>${rank}</b><div class="muted">/ ${R.rows.length}</div></td>
-    <td><div class="school">${esc(s.name)}</div><div class="dept">${esc(r.dept)}</div><div class="muted">${esc(r.mainTrack || r.track)}</div></td>
-    <td><div class="${sameRegion ? 'alert' : 'muted'}">${esc(s.region)} · ${esc(s.city)}${sameRegion ? ' (같은 권역)' : ''}</div><div class="muted">${r.isBase ? '기준 학과' : `경민대에서 ${Math.round(r.distKm)}km`}</div></td>
+    <td class="n ${vs}"><b>${rank}</b><div class="muted">/ ${R.rankRows.length}</div></td>
+    <td><div class="school">${esc(s.name)}</div><div class="dept">${esc(r.dept)}</div><div class="muted">${esc(r.mainTrack || r.track)}</div>${r.isSibling ? '<div class="muted">경민대 학과 · 순위에만 포함</div>' : ''}</td>
+    <td><div class="${sameRegion ? 'alert' : 'muted'}">${esc(s.region)} · ${esc(s.city)}${sameRegion ? ' (같은 권역)' : ''}</div><div class="muted">${r.isBase ? '기준 학과' : r.isSibling ? '같은 학교' : `경민대에서 ${Math.round(r.distKm)}km`}</div></td>
     <td class="n">${num(q)}</td>
     <td class="n">${num(a)}${r.isBase ? '' : `<div class="muted">${a - ba >= 0 ? '+' : '−'}${num(Math.abs(a - ba))} vs 경민대</div>`}</td>
     <td class="n ${vs}"><span class="rate">${fx(r.rate)}</span><div class="muted">${r.final ? '최종' : '최종 미확인'}</div></td>
@@ -294,7 +294,7 @@ function markSortHeader() {
 function renderRows() {
   const q = el('q').value.trim().toLowerCase(), reg = el('reg').value, field = el('field').value;
   // 경민대 기준 행은 필터와 관계없이 항상 함께 보여 준다
-  const list = R.rows.filter(r => r.isBase || ((reg === 'all' || r.s.region === reg)
+  const list = R.rankRows.filter(r => r.isBase || ((reg === 'all' || r.s.region === reg)
     && (field === 'all' || r.field === field)
     && (!selected || r.school === selected)
     && (r.s.name + ' ' + r.dept).toLowerCase().includes(q)))

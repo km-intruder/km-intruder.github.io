@@ -172,7 +172,8 @@
     "track": "특별전형-일반고",
     "quota": 32,
     "applied": 189
-   }
+   },
+   "rankWith": true
   },
   {
    "school": "sj",

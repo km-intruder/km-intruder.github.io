@@ -90,7 +90,8 @@
     "track": "일반전형",
     "quota": 5,
     "applied": 37
-   }
+   },
+   "rankWith": true
   },
   {
    "school": "je",

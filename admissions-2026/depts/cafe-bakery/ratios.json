@@ -161,7 +161,8 @@
     "track": "특별전형-일반고",
     "quota": 43,
     "applied": 241
-   }
+   },
+   "rankWith": true
   },
   {
    "school": "si",

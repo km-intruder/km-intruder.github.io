@@ -284,7 +284,8 @@
    "priorUrl": null,
    "comparable": false,
    "locked": true,
-   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "rankWith": true
   },
   {
    "school": "bc",
