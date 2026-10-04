@@ -27,6 +27,20 @@
   <script src="nav.js"></script>
 </header>
 
+<details class="fold" id="fold-overview" open>
+  <summary><span class="fold-title">한눈에 보기 · 전체 학과 지원자 변화</span><span class="fold-hint">접기 / 펴기</span></summary>
+  <div class="fold-body">
+    <p class="lead">막대는 경민대 학과의 2026 대비 지원자 증감률, ◆는 같은 계열 수도권 전문대(비교 학교) 지원자 합계의 증감률입니다. 막대가 ◆보다 왼쪽이면 시장보다 약한 학과입니다.</p>
+    <div class="chart-legend">
+      <span><i class="sw" style="background:var(--viz-up)"></i>경민대 증가</span>
+      <span><i class="sw" style="background:var(--viz-down)"></i>경민대 감소</span>
+      <span><i class="dia"></i>비교 학교 합계</span>
+    </div>
+    <div id="chartOverview" class="chart"></div>
+    <details class="notes"><summary>표로 보기</summary><div class="table-wrap"><table><thead><tr><th>학과</th><th class="n">경민대</th><th class="n">비교 학교</th><th class="n">차이</th></tr></thead><tbody id="overviewTable"></tbody></table></div></details>
+  </div>
+</details>
+
 <section class="block">
   <div class="block-head"><span class="no">01</span><h2>전체 요약</h2></div>
   <div class="baseline" id="summary"><div class="empty">불러오는 중</div></div>
@@ -43,7 +57,38 @@
 </section>
 
 <section class="block">
-  <div class="block-head"><span class="no">03</span><h2>전체 학과</h2><span class="aside" id="count"></span></div>
+  <div class="block-head"><span class="no">03</span><h2>앞으로의 방향 — 산업 수요 × 입시 시장 × 경민대 점유</h2></div>
+  <details class="fold" id="fold-strategy" open>
+    <summary><span class="fold-title">학과 포지션 지도와 권고</span><span class="fold-hint">접기 / 펴기</span></summary>
+    <div class="fold-body">
+      <p class="lead">가로축은 고용노동부·한국고용정보원의 2024~2034 직업별 취업자 연평균 증감률(학과와 맞는 직업군), 세로축은 경민대 점유 변화(경민대 지원자 증감률 − 비교 학교 합계 증감률)입니다. 오른쪽 위일수록 키울 학과, 왼쪽 아래일수록 구조를 다시 봐야 하는 학과입니다.</p>
+      <div class="chart-legend">
+        <span><i class="dot-sw" style="background:var(--viz-up)"></i>점유 상승</span>
+        <span><i class="dot-sw" style="background:var(--viz-down)"></i>점유 하락</span>
+        <span><i class="dot-sw" style="background:var(--paper);border:2px solid var(--ink-3);width:6px;height:6px"></i>비교 학교 2곳 이하</span>
+        <span class="muted">세로 점선: 산업 감소(−0.1%) · 성장(+0.8%) 경계 · 세로축 ±80%p 밖은 끝에 표시</span>
+      </div>
+      <div id="chartStrategy" class="chart"></div>
+      <div id="strategySummary"></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>권고</th><th>학과</th><th>산업 수요 (2024→2034)</th><th class="n">입시 시장</th><th class="n">경민대</th><th class="n">점유 변화</th><th>근거와 방향 (해석)</th></tr></thead>
+          <tbody id="strategyTable"></tbody>
+        </table>
+      </div>
+      <details class="notes">
+        <summary>분류 기준과 자료</summary>
+        <p>산업 수요: 성장 ≥ +0.8%/년, 정체 −0.1~+0.8%, 감소 ≤ −0.1%. 점유 변화: 0 이상이면 상승. 둘을 곱해 여섯 가지로 나눴습니다 — 성장·상승 <b>확대·선점</b>, 성장·하락 <b>추격 투자</b>, 정체·상승 <b>차별화 유지</b>, 정체·하락 <b>경쟁력 재정비</b>, 감소·상승 <b>내실 유지</b>, 감소·하락 <b>구조 개편 검토</b>.</p>
+        <p id="industrySource"></p>
+        <p>입시 시장은 학과별 비교 화면의 ‘2026년과 직접 대응되는 비교 학교’ 지원자 합계입니다. 비교 학교가 2곳 이하인 학과는 표에 ‘비교 학교 적음’으로 표시했습니다. 이 분류는 수치 규칙에 따른 것이며, 정원 정책·실습 여건·교원 구성 같은 학과 사정은 반영하지 않습니다.</p>
+        <div id="industryNotes"></div>
+      </div>
+    </div>
+  </details>
+</section>
+
+<section class="block">
+  <div class="block-head"><span class="no">04</span><h2>전체 학과</h2><span class="aside" id="count"></span></div>
   <div class="filters">
     <select id="group" aria-label="계열"><option value="all">전체 계열</option></select>
     <select id="order" aria-label="정렬">
@@ -69,7 +114,7 @@
 </section>
 
 <section class="block">
-  <div class="block-head"><span class="no">04</span><h2>계열별 요약</h2></div>
+  <div class="block-head"><span class="no">05</span><h2>계열별 요약</h2></div>
   <div class="table-wrap">
     <table>
       <thead><tr><th>계열</th><th class="n">학과</th><th class="n">모집</th><th class="n">2027 지원</th><th class="n">2026 지원</th><th class="n">증감</th><th class="n">증감률</th><th class="n">경쟁률</th></tr></thead>
@@ -79,7 +124,7 @@
 </section>
 
 <section class="block">
-  <div class="block-head"><span class="no">05</span><h2>최근 글</h2></div>
+  <div class="block-head"><span class="no">06</span><h2>최근 글</h2></div>
   <div class="themes">
     <article class="theme"><h3><a href="colleges.html" style="text-decoration:none">전문대 동향 →</a></h3><ul id="latestColleges"><li class="muted">불러오는 중</li></ul></article>
     <article class="theme"><h3><a href="kyungmin.html" style="text-decoration:none">학교 소식 →</a></h3><ul id="latestNews"><li class="muted">불러오는 중</li></ul></article>
@@ -139,27 +184,186 @@ function renderSummary() {
     </ul>`;
 }
 
-// 감소 학과: 학과별 비교 분석(ratios.json)에서 기준 모집단위의 시장 대비 위치를 요약
-async function renderMinus() {
+// 학과별 비교 분석(ratios.json)에서 경민대·비교 시장 지원자 변화를 한 번에 계산
+const MK = {};
+async function loadMarkets() {
+  await Promise.all(K.depts.filter(hasDetail).map(async d => {
+    try {
+      const R = await Ratio.load('depts/' + d.id + '/ratios.json');
+      const mk = R.comparable.filter(r => r.priorApplied != null);
+      const mP = mk.reduce((n, r) => n + r.priorApplied, 0), mA = mk.reduce((n, r) => n + r.applied, 0);
+      MK[d.id] = { R, n: mk.length, mc: mP ? (mA - mP) / mP * 100 : null, kc: dpct(d) };
+    } catch (e) { /* 분석 파일이 없으면 건너뜀 */ }
+  }));
+}
+
+// 감소 학과: 기준 모집단위의 시장 대비 위치 요약
+function renderMinus() {
   const minus = K.depts.filter(d => diff(d) < 0).sort((a, b) => diff(a) - diff(b));
-  el('minus').innerHTML = minus.map(d => `<tr>
+  el('minus').innerHTML = minus.map(d => {
+    const m = MK[d.id];
+    const cmp = !m ? '<span class="muted">비교 분석 없음</span>'
+      : `${esc(m.R.base.track)} ${fx(m.R.base.rate)}:1 · 전문대 <b class="${m.R.rank > m.R.peerCount / 2 ? 'alert' : ''}">${m.R.rank}/${m.R.peerCount}위</b>`
+        + (m.mc != null ? `<div class="muted">지원자 변화: 경민대 <span class="alert">${pct(m.kc)}</span> · 비교 학과 ${pct(m.mc)}</div>` : '');
+    return `<tr>
     <td><b>${hasDetail(d) ? `<a href="${Admission.deptHref(d.id)}">${esc(d.name)}</a>` : esc(d.name)}</b><div class="muted">${esc(d.group)}</div></td>
     <td class="n">${num(d.applied)}</td><td class="n">${num(d.prevApplied)}</td>
     <td class="n"><b class="alert">${signed(diff(d), 0)}</b></td><td class="n alert">${pct(dpct(d))}</td>
-    <td class="n">${fx(rate(d))}</td>
-    <td id="cmp-${esc(d.id || d.name)}"><span class="muted">${hasDetail(d) ? '분석 불러오는 중' : '비교 분석 없음'}</span></td>
-    <td class="src">${hasDetail(d) ? `<a href="${Admission.deptHref(d.id)}">상세 분석 →</a>` : ''}</td></tr>`).join('');
-  for (const d of minus.filter(hasDetail)) {
-    try {
-      const R = await Ratio.load('depts/' + d.id + '/ratios.json');
-      const b = R.base, mk = R.comparable.filter(r => r.priorApplied != null);
-      const mP = mk.reduce((n, r) => n + r.priorApplied, 0), mA = mk.reduce((n, r) => n + r.applied, 0);
-      const bChg = b.priorApplied ? (b.applied - b.priorApplied) / b.priorApplied * 100 : null;
-      el('cmp-' + d.id).innerHTML = `${esc(b.track)} ${fx(b.rate)}:1 · 전문대 <b class="${R.rank > R.peerCount / 2 ? 'alert' : ''}">${R.rank}/${R.peerCount}위</b>`
-        + (mP ? `<div class="muted">지원자 변화: 경민대 <span class="${bChg < 0 ? 'alert' : ''}">${pct(bChg)}</span> · 비교 학과 ${pct((mA - mP) / mP * 100)}</div>` : '');
-    } catch (e) { el('cmp-' + d.id).innerHTML = '<span class="muted">분석 자료를 불러오지 못했습니다</span>'; }
-  }
+    <td class="n">${fx(rate(d))}</td><td>${cmp}</td>
+    <td class="src">${hasDetail(d) ? `<a href="${Admission.deptHref(d.id)}">상세 분석 →</a>` : ''}</td></tr>`;
+  }).join('');
 }
+
+// ── 차트 공통: 툴팁 ──
+const tip = document.createElement('div'); tip.className = 'viz-tip'; document.body.appendChild(tip);
+function bindTips(root) {
+  root.querySelectorAll('[data-tip]').forEach(n => {
+    n.addEventListener('mousemove', e => {
+      tip.innerHTML = n.dataset.tip; tip.style.display = 'block';
+      tip.style.left = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8) + 'px';
+      tip.style.top = (e.clientY + 14) + 'px';
+    });
+    n.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+  });
+}
+const tipText = (d, m) => `<b>${esc(d.name)}</b><br>경민대 ${num(d.prevApplied)} → ${num(d.applied)}명 (${pct(dpct(d))})`
+  + (m && m.mc != null ? `<br>비교 학교 합계 ${pct(m.mc)} · ${m.n}개 모집단위` : '<br>비교 학교 2026 자료 없음');
+
+// ── 한눈에 보기: 경민대 증감률(막대) vs 비교 학교(◆) ──
+function renderOverview() {
+  const box = el('chartOverview');
+  if (!box.offsetParent) return;   // 접혀 있으면 펼칠 때 그린다
+  const list = K.depts.filter(d => d.prevApplied != null && !d.adult).map(d => ({ d, m: MK[d.id], k: dpct(d) }))
+    .sort((a, b) => a.k - b.k);
+  const vals = list.flatMap(x => [x.k, x.m?.mc ?? 0]);
+  // 축은 −60~+100%로 고정 (비교 학교가 적어 값이 튀는 학과 때문에 나머지가 눌리지 않게)
+  const lo = -60, hi = 100;
+  const W = Math.max(640, box.clientWidth), L = 160, R = 70, T = 24, row = 22, H = T + list.length * row + 10;
+  const X = v => L + (Math.max(lo, Math.min(hi, v)) - lo) / (hi - lo) * (W - L - R);
+  const ticks = []; for (let v = lo; v <= hi; v += 20) ticks.push(v);
+  let g = `<g class="grid">${ticks.map(v => `<line x1="${X(v)}" x2="${X(v)}" y1="${T - 6}" y2="${H - 6}"/><text x="${X(v)}" y="${T - 10}" text-anchor="middle">${v > 0 ? '+' : ''}${v}%</text>`).join('')}</g>`;
+  g += `<line class="zero" x1="${X(0)}" x2="${X(0)}" y1="${T - 6}" y2="${H - 6}"/>`;
+  list.forEach((x, i) => {
+    const y = T + i * row + row / 2, x0 = X(0), x1 = X(x.k), up = x.k >= 0, mx = x.m?.mc != null ? X(x.m.mc) : null;
+    const w = Math.max(2, Math.abs(x1 - x0));
+    g += `<text class="lbl" x="${L - 8}" y="${y + 4}" text-anchor="end" font-weight="${up ? 400 : 700}">${esc(x.d.name)}</text>`;
+    g += `<rect x="${up ? x0 : x0 - w}" y="${y - 7}" width="${w}" height="14" rx="3" fill="var(${up ? '--viz-up' : '--viz-down'})"/>`;
+    if (mx != null) g += `<rect x="${mx - 4}" y="${y - 4}" width="8" height="8" transform="rotate(45 ${mx} ${y})" fill="var(--ink)" stroke="var(--paper)" stroke-width="1.5"/>`;
+    if (x.m?.mc > hi) g += `<text x="${X(hi) + 8}" y="${y + 4}" font-size="11">${pct(x.m.mc)} →</text>`;
+    // 값 표시: 증가는 막대·◆ 오른쪽, 감소는 0선 오른쪽(이름과 겹치지 않게)
+    const edge = up ? Math.min(X(hi), Math.max(x1, mx ?? x1)) + 8 : Math.max(x0, mx ?? x0) + 8;
+    if (!(x.m?.mc > hi)) g += `<text x="${edge}" y="${y + 4}" fill="var(${up ? '--ink-2' : '--viz-down'})">${pct(x.k)}</text>`;
+    else g += `<text x="${x1 - 6}" y="${y + 4}" text-anchor="end" fill="#fff" style="fill:#fff">${pct(x.k)}</text>`;
+    g += `<rect class="hit" x="0" y="${y - row / 2}" width="${W}" height="${row}" data-tip="${esc(tipText(x.d, x.m))}"/>`;
+  });
+  box.innerHTML = `<svg width="${W}" height="${H}" role="img" aria-label="학과별 지원자 증감률과 비교 학교 증감률">${g}</svg>`;
+  bindTips(box);
+  el('overviewTable').innerHTML = [...list].reverse().map(x => `<tr><td>${esc(x.d.name)}</td><td class="n ${x.k < 0 ? 'alert' : ''}">${pct(x.k)}</td><td class="n">${x.m?.mc != null ? pct(x.m.mc) : '—'}</td><td class="n">${x.m?.mc != null ? signed(x.k - x.m.mc, 1) + '%p' : '—'}</td></tr>`).join('');
+}
+
+// ── 앞으로의 방향: 산업 수요 × 경민대 점유 변화 ──
+const RECO = {
+  cut: { label: '구조 개편 검토', cls: 'r-cut', order: 1, text: '산업 수요가 줄어드는 분야에서 경민대 점유도 떨어졌습니다. 전공 재구성·융합·정원 조정을 검토할 학과입니다.' },
+  chase: { label: '추격 투자', cls: 'r-chase', order: 2, text: '산업 수요는 늘어나는데 경민대 점유가 떨어졌습니다. 교육과정·실습·홍보에 먼저 투자할 학과입니다.' },
+  fix: { label: '경쟁력 재정비', cls: 'r-fix', order: 3, text: '산업이 정체된 가운데 경민대 점유가 떨어졌습니다. 경쟁 학교 대비 교육과정·전형·홍보를 다시 점검할 학과입니다.' },
+  keep: { label: '내실 유지', cls: 'r-keep', order: 4, text: '산업 수요는 줄어드는 분야지만 경민대 점유는 올랐습니다. 정원 확대는 신중히, 취업 연계 품질을 지킬 학과입니다.' },
+  diff: { label: '차별화 유지', cls: 'r-diff', order: 5, text: '산업은 정체지만 경민대 점유가 올랐습니다. 현재 강점을 유지하며 차별화 요소를 분명히 할 학과입니다.' },
+  grow: { label: '확대·선점', cls: 'r-grow', order: 6, text: '산업 수요가 늘고 경민대 점유도 올랐습니다. 정원 확대·홍보 강화로 우위를 굳힐 학과입니다.' },
+  watch: { label: '초기 모니터링', cls: 'r-watch', order: 7, text: '비교 기준이 부족해(신설·산업 지표 없음) 다음 입시 결과로 판단할 학과입니다.' },
+};
+function classify(I, S) {
+  if (I == null || S == null) return 'watch';
+  const band = I >= 0.8 ? 'up' : I <= -0.1 ? 'down' : 'flat', share = S >= 0;
+  return band === 'up' ? (share ? 'grow' : 'chase') : band === 'flat' ? (share ? 'diff' : 'fix') : (share ? 'keep' : 'cut');
+}
+function strategyItems(IND) {
+  return K.depts.filter(d => d.id && !d.adult).map(d => {
+    const m = MK[d.id], code = IND.map[d.id], g = code ? IND.groups[code] : null;
+    const S = m && m.mc != null && m.kc != null ? m.kc - m.mc : null;
+    return { d, m, g, I: g ? g.rate : null, S, key: classify(g ? g.rate : null, S) };
+  });
+}
+function renderStrategyChart(items) {
+  const box = el('chartStrategy');
+  if (!box.offsetParent) return;
+  const pts = items.filter(x => x.I != null && x.S != null).map(x => ({ ...x }));
+  const W = Math.max(640, box.clientWidth), H = 480, L = 56, R = 24, T = 24, B = 44;
+  const xs = [-1.3, 2.2], ymax = 80, ys = [-ymax, ymax];
+  const X = v => L + (v - xs[0]) / (xs[1] - xs[0]) * (W - L - R), Y = v => T + (ys[1] - v) / (ys[1] - ys[0]) * (H - T - B);
+  let g = '<g class="grid">';
+  for (let v = -1; v <= 2; v += 0.5) g += `<line x1="${X(v)}" x2="${X(v)}" y1="${T}" y2="${H - B}"/><text x="${X(v)}" y="${H - B + 16}" text-anchor="middle">${v > 0 ? '+' : ''}${v.toFixed(1)}%</text>`;
+  for (let v = -ymax; v <= ymax; v += ymax / 2) g += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${L - 6}" y="${Y(v) + 4}" text-anchor="end">${v > 0 ? '+' : ''}${v}</text>`;
+  g += '</g>';
+  g += `<line class="zero" x1="${L}" x2="${W - R}" y1="${Y(0)}" y2="${Y(0)}"/>`;
+  for (const c of [-0.1, 0.8]) g += `<line x1="${X(c)}" x2="${X(c)}" y1="${T}" y2="${H - B}" stroke="var(--ink-3)" stroke-dasharray="4 4"/>`;
+  const zone = (x, y, t, a) => `<text x="${x}" y="${y}" text-anchor="${a}" fill="var(--ink-3)" font-size="11">${t}</text>`;
+  g += zone(L + 6, T - 8, '감소 산업 · 점유 상승 → 내실 유지', 'start') + zone(W - R - 6, T - 8, '성장 산업 · 점유 상승 → 확대·선점', 'end');
+  g += zone(L + 6, H - B - 8, '감소 산업 · 점유 하락 → 구조 개편 검토', 'start') + zone(W - R - 6, H - B - 8, '성장 산업 · 점유 하락 → 추격 투자', 'end');
+  g += `<text x="${(L + W - R) / 2}" y="${H - 6}" text-anchor="middle">산업 수요: 2024~2034 직업별 취업자 연평균 증감률</text>`;
+  g += `<text transform="translate(14 ${(T + H - B) / 2}) rotate(-90)" text-anchor="middle">경민대 점유 변화 (%p)</text>`;
+  // 이름표 배치: 오른쪽 → 왼쪽 → 위아래로 비켜 놓아 겹치지 않게
+  const boxes = pts.map(p => { const cx = X(p.I), cy = Y(Math.max(ys[0], Math.min(ys[1], p.S))); return { x1: cx - 6, x2: cx + 6, y1: cy - 6, y2: cy + 6 }; });
+  const hits = (b) => boxes.some(o => b.x1 < o.x2 && b.x2 > o.x1 && b.y1 < o.y2 && b.y2 > o.y1);
+  pts.sort((a, b) => b.S - a.S).forEach(p => {
+    const cx = X(p.I), cy = Y(Math.max(ys[0], Math.min(ys[1], p.S)));
+    const w = (p.d.name.replace(/학과$|과$/, '').length + (Math.abs(p.S) > ymax ? 8 : 0)) * 11 + 4;
+    for (const dy of [0, -13, 13, -26, 26]) {
+      for (const side of ['start', 'end']) {
+        const x1 = side === 'start' ? cx + 9 : cx - 9 - w, b = { x1, x2: x1 + w, y1: cy + dy - 8, y2: cy + dy + 6 };
+        if (!hits(b)) { p.side = side; p.dy = dy; boxes.push(b); return; }
+      }
+    }
+    p.side = 'start'; p.dy = 0;
+  });
+  pts.forEach(p => {
+    const out = Math.abs(p.S) > ymax, few = p.m.n <= 2;
+    const cx = X(p.I), cy = Y(Math.max(ys[0], Math.min(ys[1], p.S))), up = p.S >= 0, col = `var(${up ? '--viz-up' : '--viz-down'})`;
+    g += few ? `<circle cx="${cx}" cy="${cy}" r="5" fill="var(--paper)" stroke="${col}" stroke-width="2"/>` : `<circle cx="${cx}" cy="${cy}" r="5" fill="${col}" stroke="var(--paper)" stroke-width="2"/>`;
+    g += `<text x="${cx + (p.side === 'start' ? 9 : -9)}" y="${cy + 4 + p.dy}" text-anchor="${p.side}" class="lbl" font-size="11">${esc(p.d.name.replace(/학과$|과$/, ''))}${out ? ` (${signed(p.S, 0)}%p)` : ''}</text>`;
+    g += `<circle class="hit" cx="${cx}" cy="${cy}" r="11" data-tip="${esc(`<b>${esc(p.d.name)}</b> · ${RECO[p.key].label}<br>산업 ${esc(p.g.name)} ${p.I > 0 ? '+' : ''}${p.I}%/년<br>경민대 ${pct(p.m.kc)} · 비교 학교 ${pct(p.m.mc)} → 점유 ${signed(p.S, 1)}%p`)}"/>`;
+  });
+  box.innerHTML = `<svg width="${W}" height="${H}" role="img" aria-label="산업 수요와 경민대 점유 변화로 본 학과 위치">${g}</svg>`;
+  bindTips(box);
+}
+function renderStrategy(IND) {
+  const items = strategyItems(IND);
+  renderStrategyChart(items);
+  const names = k => items.filter(x => x.key === k).map(x => esc(x.d.name)).join(', ') || '없음';
+  el('strategySummary').innerHTML = `<ul class="findings" style="border-top:0;padding-left:0">
+    <li><span class="reco r-cut">구조 개편 검토</span> ${names('cut')}</li>
+    <li><span class="reco r-chase">추격 투자</span> ${names('chase')}</li>
+    <li><span class="reco r-fix">경쟁력 재정비</span> ${names('fix')}</li>
+    <li><span class="reco r-grow">확대·선점</span> ${names('grow')} &nbsp; <span class="reco r-diff">차별화 유지</span> ${names('diff')} &nbsp; <span class="reco r-keep">내실 유지</span> ${names('keep')}</li>
+  </ul>`;
+  items.sort((a, b) => RECO[a.key].order - RECO[b.key].order || (a.S ?? 0) - (b.S ?? 0));
+  el('strategyTable').innerHTML = items.map(x => `<tr>
+    <td><span class="reco ${RECO[x.key].cls}">${RECO[x.key].label}</span></td>
+    <td><b>${hasDetail(x.d) ? `<a href="${Admission.deptHref(x.d.id)}">${esc(x.d.name)}</a>` : esc(x.d.name)}</b><div class="muted">${esc(x.d.group)}</div></td>
+    <td>${x.g ? `${esc(x.g.name)}<div class="muted">${num(x.g.y2024)} → ${num(x.g.y2034)}천 명 · <b class="${x.I < 0 ? 'alert' : ''}">${x.I > 0 ? '+' : ''}${x.I}%/년</b></div>` : '<span class="muted">해당 없음</span>'}</td>
+    <td class="n">${x.m?.mc != null ? pct(x.m.mc) : '—'}${x.m && x.m.n <= 2 ? '<div class="muted">비교 학교 적음</div>' : ''}</td>
+    <td class="n ${x.m?.kc < 0 ? 'alert' : ''}">${x.m?.kc != null ? pct(x.m.kc) : '신설'}</td>
+    <td class="n"><b class="${x.S < 0 ? 'alert' : ''}">${x.S != null ? signed(x.S, 1) + '%p' : '—'}</b></td>
+    <td style="font-size:13px">${RECO[x.key].text}</td></tr>`).join('');
+  el('industrySource').innerHTML = `산업 수요: <a class="src" href="${esc(IND.url)}" target="_blank" rel="noopener noreferrer">${esc(IND.title)}</a> — ${esc(IND.source)}. 전 직업 평균은 ${IND.total.rate.toFixed(1)}%/년(${num(IND.total.y2024)} → ${num(IND.total.y2034)}천 명)입니다.`;
+  el('industryNotes').innerHTML = Object.entries(IND.notes).map(([id, t]) => `<p>${esc((K.depts.find(d => d.id === id) || {}).name || id)}: ${esc(t)}</p>`).join('');
+}
+
+// 접기·펴기 상태 기억 (브라우저마다). 펼칠 때 차트를 다시 그린다
+let IND = null;
+document.querySelectorAll('details.fold').forEach(det => {
+  try { const v = localStorage.getItem('fold:' + det.id); if (v != null) det.open = v === '1'; } catch (e) {}
+  det.addEventListener('toggle', () => {
+    try { localStorage.setItem('fold:' + det.id, det.open ? '1' : '0'); } catch (e) {}
+    if (!det.open || !K) return;
+    if (det.id === 'fold-overview') renderOverview();
+    if (det.id === 'fold-strategy' && IND) renderStrategyChart(strategyItems(IND));
+  });
+});
+addEventListener('resize', () => {
+  if (!K) return;
+  clearTimeout(window._rz);
+  window._rz = setTimeout(() => { renderOverview(); if (IND) renderStrategyChart(strategyItems(IND)); }, 200);
+});
 
 function trackRows(d) {
   const rows = Object.entries(d.tracks).map(([k, [q, a]]) => `<span style="margin-right:16px">${TRACK[k]} <b>${num(q)}명 · ${num(a)}명</b> (${fx(a / q)}:1)</span>`).join('');
@@ -214,7 +418,11 @@ fetch('school/susi1-2027.json', { cache: 'no-store' }).then(r => r.json()).then(
   el('basis').textContent = `${K.title} · ${K.basis}`;
   el('sourceNote').textContent = `${K.source} · ${K.basis}. 학과별 2026 지원인원은 집계표의 ‘전년도 지원인원’입니다.`;
   el('group').insertAdjacentHTML('beforeend', [...new Set(K.depts.map(d => d.group))].map(g => `<option>${esc(g)}</option>`).join(''));
-  renderSummary(); renderAll(); renderGroups(); renderMinus();
+  renderSummary(); renderAll(); renderGroups();
+  return Promise.all([loadMarkets(), fetch('school/industry-2034.json', { cache: 'no-store' }).then(r => r.json())]);
+}).then(([, ind]) => {
+  IND = ind;
+  renderMinus(); renderOverview(); renderStrategy(IND);
 }).catch(() => { el('summary').innerHTML = '<div class="empty alert">학교 집계 자료를 불러오지 못했습니다.</div>'; });
 for (const id of ['group', 'order']) el(id).addEventListener('change', () => K && renderAll());
 latest('colleges', 'latestColleges', 'colleges.html');
