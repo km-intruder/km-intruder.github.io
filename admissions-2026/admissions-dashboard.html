@@ -150,14 +150,15 @@ function renderBaseline() {
     <div class="stats">
       <div class="stat"><span>모집인원</span><b>${num(b.quota)}명</b><small>2026 ${b.priorQuota != null ? num(b.priorQuota) + '명' : '—'}</small></div>
       <div class="stat"><span>지원인원</span><b>${num(b.applied)}명</b><small class="${dApplied < 0 ? 'alert' : ''}">2026 ${b.priorApplied != null ? num(b.priorApplied) + '명 (' + signed(dApplied, 0) + '명)' : '—'}</small></div>
-      <div class="stat"><span>2027 경쟁률</span><b>${fx(b.rate)}:1</b><small>2026 ${b.prior != null ? fx(b.prior) + ':1' : '—'}</small></div>
+      <div class="stat"><span>2027 경쟁률${b.mainTrack ? ' (학과 전체)' : ''}</span><b>${fx(b.totalRate)}:1</b><small>2026 ${b.prior != null ? fx(b.prior) + ':1' : '—'}</small></div>
       <div class="stat"><span>2026 대비</span><b class="${b.change < 0 ? 'alert' : ''}">${b.change != null ? pct(b.change) : '—'}</b><small>${esc(b.cause)}</small></div>
-      <div class="stat"><span>전문대 순위</span><b class="${R.rank > R.peerCount / 2 ? 'alert' : ''}">${R.rank}위</b><small>${R.peerCount}개 모집단위 중</small></div>
+      <div class="stat"><span>전문대 순위</span><b class="${R.rank > R.peerCount / 2 ? 'alert' : ''}">${R.rank}위</b><small>${R.peerCount}개 모집단위 중${b.mainTrack ? ` · ${esc(b.mainTrack)} ${fx(b.rate)}:1 기준` : ''}</small></div>
       <div class="stat"><span>비교군 중앙값</span><b>${fx(R.median)}:1</b><small class="${b.rate < R.median ? 'alert' : ''}">경민대 ${signed(b.rate - R.median)}p</small></div>
     </div>
     <ul class="findings">
+      ${b.mainTrack ? `<li>비교 학교는 주 전형(일반고·일반전형) 경쟁률이라, 순위·배수·중앙값은 경민대도 같은 <b>${esc(b.mainTrack)}</b> 값(${num(b.main.quota)}명 모집 · ${num(b.main.applied)}명 지원, ${fx(b.rate)}:1)으로 비교했습니다. 2026 대비 변화는 전형별 2026 값이 없어 학과 전체 기준입니다.</li>` : ''}
       <li>전문대 비교군 ${R.peerCount - 1}개 모집단위 중 <b class="alert">${R.above}개</b>가 경민대 ${esc(D.name)}보다 경쟁률이 높습니다.</li>
-      ${b.change != null ? `<li>경민대는 2026년 대비 경쟁률이 <b class="${b.change < 0 ? 'alert' : ''}">${pct(b.change)}</b> (${fx(b.prior)} → ${fx(b.rate)}) 변했고, 원인은 <b>${esc(b.cause)}</b>입니다. 같은 기간 직접 비교 가능한 전문대 ${R.comparable.length}개 모집단위 중 <b class="${b.change < 0 ? 'alert' : ''}">${opposite.length}개는 상승</b>했습니다.</li>` : ''}
+      ${b.change != null ? `<li>경민대는 2026년 대비 경쟁률이 <b class="${b.change < 0 ? 'alert' : ''}">${pct(b.change)}</b> (${fx(b.prior)} → ${fx(b.totalRate)}) 변했고, 원인은 <b>${esc(b.cause)}</b>입니다. 같은 기간 직접 비교 가능한 전문대 ${R.comparable.length}개 모집단위 중 <b class="${b.change < 0 ? 'alert' : ''}">${opposite.length}개는 상승</b>했습니다.</li>` : ''}
       ${north.length ? `<li>같은 ${esc(s.region)} 권역: ${north.map(r => `${esc(r.s.name)} ${esc(r.dept.replace(/\(.*\)/, ''))} <b class="${r.rate > b.rate ? 'alert' : ''}">${fx(r.rate)}:1</b>`).join(', ')}</li>` : ''}
     </ul>
     ${diagnosis()}`;
@@ -249,14 +250,16 @@ function rowHtml(r) {
   const sameRegion = s.region === b.s.region;
   const strong = r.vsBase >= 2.5;
   const opposite = r.change != null && b.change != null && r.change > 0 && b.change < 0;
+  // 경민대 주 전형 값이 있으면 경쟁률과 같은 기준으로 모집·지원 인원을 보여 준다
+  const q = r.main?.quota ?? r.quota, a = r.main?.applied ?? r.applied, ba = b.main?.applied ?? b.applied;
   return `<tr class="${selected === s.id ? 'selected' : ''}">
-    <td><div class="school">${esc(s.name)}</div><div class="dept">${esc(r.dept)}</div><div class="muted">${esc(r.track)}</div></td>
+    <td><div class="school">${esc(s.name)}</div><div class="dept">${esc(r.dept)}</div><div class="muted">${esc(r.mainTrack || r.track)}</div></td>
     <td><div class="${sameRegion ? 'alert' : 'muted'}">${esc(s.region)} · ${esc(s.city)}${sameRegion ? ' (같은 권역)' : ''}</div><div class="muted">경민대에서 ${Math.round(r.distKm)}km</div></td>
-    <td class="n">${num(r.quota)}</td>
-    <td class="n">${num(r.applied)}<div class="muted">${r.applied - b.applied >= 0 ? '+' : '−'}${num(Math.abs(r.applied - b.applied))} vs 경민대</div></td>
+    <td class="n">${num(q)}</td>
+    <td class="n">${num(a)}<div class="muted">${a - ba >= 0 ? '+' : '−'}${num(Math.abs(a - ba))} vs 경민대</div></td>
     <td class="n"><span class="rate">${fx(r.rate)}</span><div class="muted">${r.final ? '최종' : '최종 미확인'}</div></td>
     <td class="n"><b class="${strong ? 'alert' : r.vsBase < 1 ? 'good' : ''}">${fx(r.vsBase)}배</b><div class="muted">${signed(r.gap)}p</div></td>
-    <td class="n">${r.change != null ? `${fx(r.prior)} → ${fx(r.rate)}<div class="${opposite ? 'alert' : 'muted'}">${pct(r.change)}${opposite ? ' · 경민대와 반대' : ''}</div>` : `<span class="muted">${r.prior != null ? '직접 비교 제외' : '자료 미확인'}</span>`}</td>
+    <td class="n">${r.change != null ? `${fx(r.prior)} → ${fx(r.totalRate)}${r.mainTrack ? ' (학과 전체)' : ''}<div class="${opposite ? 'alert' : 'muted'}">${pct(r.change)}${opposite ? ' · 경민대와 반대' : ''}</div>` : `<span class="muted">${esc(r.priorShort || (r.prior != null ? '직접 비교 제외' : '자료 미확인'))}</span>`}</td>
     <td>${r.cause ? esc(r.cause) : '<span class="muted">—</span>'}</td>
     <td class="src"><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">2027</a>${r.priorUrl ? ` · <a href="${esc(r.priorUrl)}" target="_blank" rel="noopener noreferrer">2026</a>` : ''}</td>
   </tr>`;
@@ -311,9 +314,17 @@ function renderChanges() {
     const bar = `<div style="position:relative;height:12px;background:linear-gradient(var(--rule),var(--rule)) center/1px 100% no-repeat">
       <div style="position:absolute;top:0;height:12px;background:${color};${r.change >= 0 ? 'left:50%' : 'right:50%'};width:${w}%"></div></div>`;
     return `<tr class="${r.isBase ? 'base-row' : ''}"><td><b>${esc(r.s.name)}</b> <span class="dept">${esc(r.dept)}</span></td>
-      <td class="n">${fx(r.prior)}</td><td class="n">${fx(r.rate)}</td>
+      <td class="n">${fx(r.prior)}</td><td class="n">${fx(r.totalRate)}</td>
       <td class="n ${r.isBase && r.change < 0 ? 'alert' : ''}"><b>${pct(r.change)}</b></td><td>${bar}</td><td>${esc(r.cause)}</td></tr>`;
-  }).join('');
+  }).join('') + excludedRows();
+}
+
+// 2026과 직접 비교하지 못한 모집단위도 이유와 함께 보여 준다 (신설·명칭 변경·자료 없음)
+function excludedRows() {
+  const ex = R.rows.filter(r => !r.isBase && r.change == null);
+  if (!ex.length) return '';
+  return `<tr><td colspan="6" class="muted" style="padding-top:14px"><b>증감 비교에서 제외 ${ex.length}개</b></td></tr>` + ex.map(r => `<tr class="muted"><td><b>${esc(r.s.name)}</b> <span class="dept">${esc(r.dept)}</span></td>
+      <td class="n">—</td><td class="n">${fx(r.rate)}</td><td class="n">—</td><td colspan="2">${esc(r.priorNote || (r.prior == null ? '2026학년도 같은 모집단위 경쟁률을 찾지 못함' : '2026과 전형·모집단위가 달라 직접 비교 불가'))}</td></tr>`).join('');
 }
 
 function drawMap() {

@@ -106,7 +106,12 @@
    "prior": 4.71,
    "priorQuota": 90,
    "priorApplied": 424,
-   "priorUrl": null
+   "priorUrl": null,
+   "main": {
+    "track": "일반전형",
+    "quota": 80,
+    "applied": 490
+   }
   },
   {
    "school": "bc",

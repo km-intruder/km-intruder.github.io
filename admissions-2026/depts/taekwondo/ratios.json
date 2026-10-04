@@ -85,7 +85,12 @@
    "priorUrl": null,
    "comparable": true,
    "locked": true,
-   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "main": {
+    "track": "일반전형",
+    "quota": 5,
+    "applied": 37
+   }
   },
   {
    "school": "je",

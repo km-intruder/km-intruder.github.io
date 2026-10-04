@@ -117,7 +117,7 @@ function renderKM() {
   el('kmBlock').innerHTML = `
     <div class="baseline-head"><strong>${KM.name} ${KM.dept}</strong><span>${KM.type} · ${KM.area}</span></div>
     ${b ? `<div class="stats">
-      <div class="stat"><span>2027 경쟁률</span><b>${fx(b.rate)}:1</b><small>모집 ${num(b.quota)} · 지원 ${num(b.applied)}</small></div>
+      <div class="stat"><span>2027 경쟁률${b.mainTrack ? ' (' + esc(b.mainTrack) + ')' : ''}</span><b>${fx(b.rate)}:1</b><small>모집 ${num(b.main?.quota ?? b.quota)} · 지원 ${num(b.main?.applied ?? b.applied)}${b.mainTrack ? ` · 학과 전체 ${fx(b.totalRate)}:1` : ''}</small></div>
       <div class="stat"><span>2026 대비</span><b class="${b.change < 0 ? 'alert' : ''}">${b.change != null ? pct(b.change) : '—'}</b><small>${esc(b.cause)}</small></div>
       <div class="stat"><span>전문대 순위</span><b class="${R.rank > R.peerCount / 2 ? 'alert' : ''}">${R.rank}위</b><small>${R.peerCount}개 모집단위 중</small></div>
       <div class="stat"><span>교육축</span><b>${KM.topics.length} / ${AXES.length}</b><small>없는 축: ${AXES.filter(a => !KM.topics.includes(a)).join(', ')}</small></div>

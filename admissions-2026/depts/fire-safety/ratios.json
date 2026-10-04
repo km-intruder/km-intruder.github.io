@@ -113,7 +113,12 @@
    "priorQuota": 90,
    "priorApplied": 424,
    "priorUrl": null,
-   "comparable": true
+   "comparable": true,
+   "main": {
+    "track": "일반전형",
+    "quota": 80,
+    "applied": 490
+   }
   },
   {
    "school": "km",

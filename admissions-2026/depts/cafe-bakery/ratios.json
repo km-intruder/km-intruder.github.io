@@ -136,7 +136,12 @@
    "priorUrl": null,
    "comparable": true,
    "locked": true,
-   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "main": {
+    "track": "특별전형-일반고",
+    "quota": 32,
+    "applied": 189
+   }
   },
   {
    "school": "km",
@@ -151,7 +156,12 @@
    "priorUrl": null,
    "comparable": true,
    "locked": true,
-   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "main": {
+    "track": "특별전형-일반고",
+    "quota": 43,
+    "applied": 241
+   }
   },
   {
    "school": "si",
@@ -160,7 +170,9 @@
    "track": "특별전형(일반고)",
    "quota": 19,
    "applied": 278,
-   "comparable": false
+   "comparable": false,
+   "priorShort": "2027 신설",
+   "priorNote": "2027학년도 신설 학과입니다. 서일대 2026 수시 1차 경쟁률표에 카페베이커리과가 없어 증감을 계산할 수 없습니다."
   },
   {
    "school": "yh",
@@ -213,7 +225,9 @@
    "priorApplied": 411,
    "priorUrl": "https://ratio.uwayapply.com/Sl5KOlZKZkNDYUxKLWZUZg==",
    "comparable": false,
-   "priorName": "카페베이커리전공(모집단위명 변경)"
+   "priorName": "카페베이커리전공(모집단위명 변경)",
+   "priorShort": "전공명 변경",
+   "priorNote": "2026년에는 호텔외식조리과 카페베이커리전공(일반고 48명 모집·411명 지원, 8.56:1)이었고, 2027년에 제과제빵전공(46명·232명, 5.04:1)으로 바뀌었습니다. 이름과 내용이 달라져 같은 모집단위로 보지 않고 증감 비교에서 뺐습니다. 그대로 이어 보면 −41.1%입니다."
   },
   {
    "school": "dl",

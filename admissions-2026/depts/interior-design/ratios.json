@@ -221,7 +221,12 @@
    "prior": 6.33,
    "priorQuota": 27,
    "priorApplied": 171,
-   "priorUrl": null
+   "priorUrl": null,
+   "main": {
+    "track": "일반전형",
+    "quota": 23,
+    "applied": 201
+   }
   },
   {
    "school": "gb",

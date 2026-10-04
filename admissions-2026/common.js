@@ -34,7 +34,10 @@
       const s = byId[r.school];
       const rate = r.quota ? r.applied / r.quota : 0;
       const change = r.comparable && r.prior ? (rate - r.prior) / r.prior * 100 : null;
-      const row = { ...r, s, rate, change, final: finalized.has(r.school) };
+      const row = { ...r, s, rate, totalRate: rate, change, final: finalized.has(r.school) };
+      // 경민대는 학과 전체(정원내) 값이 기본이라, 비교 학교와 같은 주 전형 값이 있으면 순위·배수 비교에 그 값을 쓴다
+      // (2026 대비 변화는 학과 전체 기준 그대로)
+      if (r.main && r.main.quota) { row.rate = r.main.applied / r.main.quota; row.mainTrack = r.main.track; }
       row.cause = change == null ? '' : cause(row);
       return row;
     });

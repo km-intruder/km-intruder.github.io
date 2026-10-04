@@ -147,7 +147,12 @@
    "priorUrl": null,
    "comparable": true,
    "locked": true,
-   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "main": {
+    "track": "특별전형-일반고",
+    "quota": 43,
+    "applied": 241
+   }
   },
   {
    "school": "km",
@@ -162,7 +167,12 @@
    "priorUrl": null,
    "comparable": true,
    "locked": true,
-   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "main": {
+    "track": "특별전형-일반고",
+    "quota": 32,
+    "applied": 189
+   }
   },
   {
    "school": "sj",

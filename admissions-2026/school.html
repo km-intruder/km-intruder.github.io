@@ -203,7 +203,7 @@ function renderMinus() {
   el('minus').innerHTML = minus.map(d => {
     const m = MK[d.id];
     const cmp = !m ? '<span class="muted">비교 분석 없음</span>'
-      : `${esc(m.R.base.track)} ${fx(m.R.base.rate)}:1 · 전문대 <b class="${m.R.rank > m.R.peerCount / 2 ? 'alert' : ''}">${m.R.rank}/${m.R.peerCount}위</b>`
+      : `${esc(m.R.base.mainTrack || m.R.base.track)} ${fx(m.R.base.rate)}:1 · 전문대 <b class="${m.R.rank > m.R.peerCount / 2 ? 'alert' : ''}">${m.R.rank}/${m.R.peerCount}위</b>`
         + (m.mc != null ? `<div class="muted">지원자 변화: 경민대 <span class="alert">${pct(m.kc)}</span> · 비교 학과 ${pct(m.mc)}</div>` : '');
     return `<tr>
     <td><b>${hasDetail(d) ? `<a href="${Admission.deptHref(d.id)}">${esc(d.name)}</a>` : esc(d.name)}</b><div class="muted">${esc(d.group)}</div></td>

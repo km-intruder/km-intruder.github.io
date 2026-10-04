@@ -183,7 +183,12 @@
    "prior": 6.96,
    "priorQuota": 51,
    "priorApplied": 355,
-   "priorUrl": null
+   "priorUrl": null,
+   "main": {
+    "track": "특별전형-일반고",
+    "quota": 32,
+    "applied": 189
+   }
   },
   {
    "school": "km",
@@ -198,7 +203,12 @@
    "prior": 5.16,
    "priorQuota": 63,
    "priorApplied": 325,
-   "priorUrl": null
+   "priorUrl": null,
+   "main": {
+    "track": "특별전형-일반고",
+    "quota": 43,
+    "applied": 241
+   }
   },
   {
    "school": "gb",
