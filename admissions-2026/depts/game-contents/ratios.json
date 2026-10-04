@@ -107,7 +107,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KTC9NSmZDQ2FMSjdmVGY=",
    "lat": 37.584,
    "lon": 126.925,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "sg",
@@ -128,7 +129,8 @@
    "url": "https://ratio.uwayapply.com/Sl5Kclc6JldhYGJKZkNDYUxKN2ZUZg==",
    "lat": 37.397,
    "lon": 126.926,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   }
  ],
  "rows": [
@@ -375,7 +377,17 @@
    "comparable": true
   }
  ],
- "live": [],
+ "live": [
+  "id",
+  "bc",
+  "gt",
+  "yh",
+  "ss",
+  "ds",
+  "mj",
+  "sg",
+  "ys"
+ ],
  "finalized": [
   "km",
   "si",
@@ -386,9 +398,11 @@
   "ss",
   "je",
   "ds",
-  "sg"
+  "sg",
+  "mj",
+  "ys"
  ],
- "checkedAt": null,
+ "checkedAt": "2026-10-04 18:00",
  "baseline": {
   "school": "km",
   "dept": "게임콘텐츠과"

@@ -74,7 +74,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KMEw4SmZDQ2FMSjdmVGY=",
    "lat": 37.311,
    "lon": 126.847,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "os",
@@ -84,7 +85,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KVzgmYUpmQ0NhTEo3ZlRm",
    "lat": 37.148,
    "lon": 127.067,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "sj",
@@ -246,16 +248,25 @@
    "comparable": true
   }
  ],
- "live": [],
+ "live": [
+  "gt",
+  "yh",
+  "ss",
+  "dl",
+  "sa",
+  "os"
+ ],
  "finalized": [
   "km",
   "dy",
   "gt",
   "yh",
   "ss",
-  "sj"
+  "sj",
+  "sa",
+  "os"
  ],
- "checkedAt": null,
+ "checkedAt": "2026-10-04 18:00",
  "baseline": {
   "school": "km",
   "dept": "소방안전관리과"

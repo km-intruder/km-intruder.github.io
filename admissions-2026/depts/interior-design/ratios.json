@@ -162,7 +162,8 @@
    "url": "https://ratio.uwayapply.com/Sl5Kclc6JldhYGJKZkNDYUxKN2ZUZg==",
    "lat": 37.397,
    "lon": 126.926,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "sa",
@@ -172,7 +173,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KMEw4SmZDQ2FMSjdmVGY=",
    "lat": 37.311,
    "lon": 126.847,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   }
  ],
  "rows": [
@@ -539,7 +541,18 @@
    "comparable": true
   }
  ],
- "live": [],
+ "live": [
+  "id",
+  "bc",
+  "gt",
+  "yh",
+  "ss",
+  "ds",
+  "dl",
+  "sg",
+  "ys",
+  "sa"
+ ],
  "finalized": [
   "km",
   "gb",
@@ -552,9 +565,11 @@
   "ss",
   "je",
   "ds",
-  "sg"
+  "sg",
+  "ys",
+  "sa"
  ],
- "checkedAt": null,
+ "checkedAt": "2026-10-04 18:00",
  "baseline": {
   "school": "km",
   "dept": "건축공간디자인학과"

@@ -103,13 +103,15 @@
    "comparable": true
   }
  ],
- "live": [],
+ "live": [
+  "ds"
+ ],
  "finalized": [
   "km",
   "gb",
   "ds"
  ],
- "checkedAt": null,
+ "checkedAt": "2026-10-04 18:00",
  "baseline": {
   "school": "km",
   "dept": "실용음악과"

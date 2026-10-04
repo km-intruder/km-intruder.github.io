@@ -52,7 +52,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KTC9NSmZDQ2FMSjdmVGY=",
    "lat": 37.584,
    "lon": 126.925,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "os",
@@ -62,7 +63,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KVzgmYUpmQ0NhTEo3ZlRm",
    "lat": 37.148,
    "lon": 127.067,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   }
  ],
  "rows": [
@@ -180,13 +182,18 @@
    "comparable": true
   }
  ],
- "live": [],
+ "live": [
+  "mj",
+  "os"
+ ],
  "finalized": [
   "km",
   "gb",
-  "je"
+  "je",
+  "mj",
+  "os"
  ],
- "checkedAt": null,
+ "checkedAt": "2026-10-04 18:00",
  "baseline": {
   "school": "km",
   "dept": "국방드론봇시스템과"

@@ -63,7 +63,8 @@
    "url": "https://ratio.uwayapply.com/Sl5Kclc6JldhYGJKZkNDYUxKN2ZUZg==",
    "lat": 37.397,
    "lon": 126.926,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "sj",
@@ -182,15 +183,22 @@
    "comparable": true
   }
  ],
- "live": [],
+ "live": [
+  "bc",
+  "yh",
+  "dl",
+  "sg",
+  "ys"
+ ],
  "finalized": [
   "km",
   "bc",
   "yh",
   "sg",
-  "sj"
+  "sj",
+  "ys"
  ],
- "checkedAt": null,
+ "checkedAt": "2026-10-04 18:00",
  "baseline": {
   "school": "km",
   "dept": "응급구조학과"

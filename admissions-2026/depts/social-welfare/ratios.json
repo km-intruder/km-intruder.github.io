@@ -129,7 +129,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KTC9NSmZDQ2FMSjdmVGY=",
    "lat": 37.584,
    "lon": 126.925,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "sg",
@@ -150,7 +151,8 @@
    "url": "https://ratio.uwayapply.com/Sl5Kclc6JldhYGJKZkNDYUxKN2ZUZg==",
    "lat": 37.397,
    "lon": 126.926,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "sa",
@@ -160,7 +162,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KMEw4SmZDQ2FMSjdmVGY=",
    "lat": 37.311,
    "lon": 126.847,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "os",
@@ -170,7 +173,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KVzgmYUpmQ0NhTEo3ZlRm",
    "lat": 37.148,
    "lon": 127.067,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "sj",
@@ -434,7 +438,20 @@
    "comparable": true
   }
  ],
- "live": [],
+ "live": [
+  "id",
+  "bc",
+  "gt",
+  "yh",
+  "ss",
+  "ds",
+  "dl",
+  "mj",
+  "sg",
+  "ys",
+  "sa",
+  "os"
+ ],
  "finalized": [
   "km",
   "gb",
@@ -447,9 +464,13 @@
   "je",
   "ds",
   "sg",
-  "sj"
+  "sj",
+  "mj",
+  "ys",
+  "sa",
+  "os"
  ],
- "checkedAt": null,
+ "checkedAt": "2026-10-04 18:00",
  "baseline": {
   "school": "km",
   "dept": "사회복지과"

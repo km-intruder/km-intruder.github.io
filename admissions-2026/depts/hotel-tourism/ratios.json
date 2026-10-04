@@ -140,7 +140,8 @@
    "url": "https://ratio.uwayapply.com/Sl5KVzgmYUpmQ0NhTEo3ZlRm",
    "lat": 37.148,
    "lon": 127.067,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
   },
   {
    "id": "sj",
@@ -378,7 +379,16 @@
    "comparable": true
   }
  ],
- "live": [],
+ "live": [
+  "id",
+  "bc",
+  "yh",
+  "ss",
+  "ds",
+  "dl",
+  "sg",
+  "os"
+ ],
  "finalized": [
   "km",
   "gb",
@@ -390,9 +400,10 @@
   "je",
   "ds",
   "sg",
-  "sj"
+  "sj",
+  "os"
  ],
- "checkedAt": null,
+ "checkedAt": "2026-10-04 18:00",
  "baseline": {
   "school": "km",
   "dept": "호텔관광학과"
