@@ -250,3 +250,7 @@ th.sorted::after { content: " " attr(data-dir); }
 /* ── 학과 선택 ── */
 .tabs { align-items: flex-end; }
 .dept-select { margin-left: auto; align-self: center; border: 1px solid var(--rule); background: var(--paper); padding: 5px 8px; font-size: 13px; border-radius: 0; }
+
+/* ── 학교 전체: 감소 학과 행 ── */
+tr.minus td { background: #fff8f8; }
+tr.minus:hover td { background: var(--alert-tint); }

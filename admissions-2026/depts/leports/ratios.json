@@ -6,7 +6,7 @@
    "region": "경기 북부",
    "city": "의정부",
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120531.html",
-   "time": "2026-10-01 00:00",
+   "time": "2026-10-01 최종 마감",
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대"
@@ -138,30 +138,31 @@
    "school": "km",
    "dept": "레포츠과",
    "field": "스포츠지도·레저",
-   "track": "일반전형",
-   "quota": 5,
-   "applied": 37,
-   "prior": 12.2,
-   "priorQuota": 5,
-   "priorApplied": 61,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html",
+   "track": "정원내 전체 (일반·독자·특별인재)",
+   "quota": 29,
+   "applied": 94,
+   "prior": 3.59,
+   "priorQuota": 29,
+   "priorApplied": 104,
+   "priorUrl": null,
    "comparable": true,
-   "note": "일반전형 모집 5명 · 축구·야구 특기는 대학자체전형 별도"
+   "locked": true,
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
   },
   {
    "school": "km",
-   "dept": "태권도외교과(특기자 합계)",
+   "dept": "태권도외교과",
    "field": "태권도",
-   "track": "특별전형-특기자 (시범·품새·겨루기·자유품새)",
-   "quota": 72,
-   "applied": 172,
-   "prior": 3.66,
-   "priorQuota": 71,
-   "priorApplied": 260,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html",
+   "track": "정원내 전체 (특기자·특별인재)",
+   "quota": 80,
+   "applied": 203,
+   "prior": 3.61,
+   "priorQuota": 80,
+   "priorApplied": 289,
+   "priorUrl": null,
    "comparable": true,
    "locked": true,
-   "note": "특기자전형 4개 종목 합계"
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
   },
   {
    "school": "os",
@@ -231,7 +232,11 @@
    "track": "일반고",
    "quota": 34,
    "applied": 227,
-   "comparable": false
+   "comparable": true,
+   "prior": 9.91,
+   "priorQuota": 34,
+   "priorApplied": 337,
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260461.html"
   },
   {
    "school": "bc",
@@ -323,7 +328,8 @@
   "sg",
   "os",
   "ih",
-  "ys"
+  "ys",
+  "km"
  ],
  "checkedAt": "2026-10-04 10:30",
  "baseline": {

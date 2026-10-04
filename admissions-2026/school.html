@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<script src="/assets/gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>경민대 전체 · 수시 1차</title>
+<meta name="description" content="경민대학교 2027학년도 수시 1차 전체 학과 지원현황과 감소 학과 분석">
+<link rel="icon" href="../assets/logo-kyungmin.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="report.css">
+</head>
+<body>
+<div class="page">
+
+<header class="masthead">
+  <div class="crumb"><a href="../">김광섭 교수 교육 서비스</a> / 2027학년도 입시 분석</div>
+  <div class="title-row">
+    <div>
+      <h1>경민대학교 2027학년도 수시 1차</h1>
+      <div class="meta" id="basis">정원내 지원현황</div>
+    </div>
+    <div class="tools"><button class="btn" type="button" onclick="window.print()">인쇄 · PDF</button></div>
+  </div>
+  <nav class="tabs" id="tabs"></nav>
+  <script src="nav.js"></script>
+</header>
+
+<section class="block">
+  <div class="block-head"><span class="no">01</span><h2>전체 요약</h2></div>
+  <div class="baseline" id="summary"><div class="empty">불러오는 중</div></div>
+</section>
+
+<section class="block">
+  <div class="block-head"><span class="no">02</span><h2>전년 대비 지원자가 줄어든 학과</h2><span class="aside">학과를 누르면 비교 학교 분석으로 이동합니다</span></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>학과</th><th class="n">2027 지원</th><th class="n">2026 지원</th><th class="n">증감</th><th class="n">증감률</th><th class="n">경쟁률</th><th>비교 학교 대비 (기준 모집단위)</th><th></th></tr></thead>
+      <tbody id="minus"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block">
+  <div class="block-head"><span class="no">03</span><h2>전체 학과</h2><span class="aside" id="count"></span></div>
+  <div class="filters">
+    <select id="group" aria-label="계열"><option value="all">전체 계열</option></select>
+    <select id="order" aria-label="정렬">
+      <option value="diff-asc">증감 적은 순 (감소 먼저)</option>
+      <option value="pct-asc">증감률 낮은 순</option>
+      <option value="diff-desc">증감 많은 순</option>
+      <option value="rate-desc">경쟁률 높은 순</option>
+      <option value="applied-desc">지원자 많은 순</option>
+      <option value="group">계열 순서</option>
+    </select>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>계열</th><th>학과</th><th class="n">모집</th><th class="n">지원</th><th class="n">경쟁률</th><th class="n">2026 지원</th><th class="n">증감</th><th class="n">증감률</th><th class="n">잔존인원</th><th>분석</th></tr></thead>
+      <tbody id="all"></tbody>
+    </table>
+  </div>
+  <details class="notes">
+    <summary>표 읽는 법</summary>
+    <p>학과 행을 누르면 전형별(일반전형·특별전형 일반고·특성화고·성인/특기자/독자·특별인재) 모집·지원 인원이 펼쳐집니다. ‘분석’이 있는 학과는 수도권 전문대 같은 계열과 비교한 화면으로 이동합니다.</p>
+    <p>‘잔존인원’은 학교 집계표의 ‘전년도 수시1차 충원 후 잔존인원’ 값을 그대로 옮긴 것입니다.</p>
+  </details>
+</section>
+
+<section class="block">
+  <div class="block-head"><span class="no">04</span><h2>계열별 요약</h2></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>계열</th><th class="n">학과</th><th class="n">모집</th><th class="n">2027 지원</th><th class="n">2026 지원</th><th class="n">증감</th><th class="n">증감률</th><th class="n">경쟁률</th></tr></thead>
+      <tbody id="groups"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block">
+  <div class="block-head"><span class="no">05</span><h2>최근 글</h2></div>
+  <div class="themes">
+    <article class="theme"><h3><a href="colleges.html" style="text-decoration:none">전문대 동향 →</a></h3><ul id="latestColleges"><li class="muted">불러오는 중</li></ul></article>
+    <article class="theme"><h3><a href="kyungmin.html" style="text-decoration:none">학교 소식 →</a></h3><ul id="latestNews"><li class="muted">불러오는 중</li></ul></article>
+  </div>
+</section>
+
+<details class="notes">
+  <summary>자료 기준</summary>
+  <p id="sourceNote"></p>
+  <p>학과별 비교 분석 화면의 2026 값은 각 대학 공개 경쟁률 원문(모집단위·전형별)을 쓰므로, 이 화면의 학교 집계 합계와 몇 명 다를 수 있습니다. 지능형소프트웨어과·자유전공학과는 2026 값도 학교 집계를 썼습니다.</p>
+</details>
+
+<footer class="colophon">경민대학교 김광섭 · 교육용 참고 자료.</footer>
+</div>
+
+<script src="common.js"></script>
+<script>
+const { esc, num, fx, pct, signed } = Ratio;
+const el = id => document.getElementById(id);
+const TRACK = { general: '일반전형', regular: '특별전형 일반고', vocational: '특별전형 특성화고', special: '성인/특기자/독자', talent: '특별인재' };
+const rate = d => d.quota ? d.applied / d.quota : 0;
+const diff = d => d.prevApplied == null ? null : d.applied - d.prevApplied;
+const dpct = d => d.prevApplied ? (d.applied - d.prevApplied) / d.prevApplied * 100 : null;
+const hasDetail = d => d.id && Admission.DEPTS.some(x => x.id === d.id);
+let K = null, open = null;
+
+const ORDERS = {
+  'diff-asc': (a, b) => (diff(a) ?? 1e9) - (diff(b) ?? 1e9),
+  'pct-asc': (a, b) => (dpct(a) ?? 1e9) - (dpct(b) ?? 1e9),
+  'diff-desc': (a, b) => (diff(b) ?? -1e9) - (diff(a) ?? -1e9),
+  'rate-desc': (a, b) => rate(b) - rate(a),
+  'applied-desc': (a, b) => b.applied - a.applied,
+  'group': () => 0,
+};
+
+function renderSummary() {
+  const t = K.total, dt = t.day;
+  const day = K.depts.filter(d => !d.adult);
+  const minus = K.depts.filter(d => diff(d) < 0), plus = K.depts.filter(d => diff(d) > 0), fresh = K.depts.filter(d => d.new);
+  const top = [...plus].sort((a, b) => diff(b) - diff(a)).slice(0, 3);
+  const loss = minus.reduce((n, d) => n + diff(d), 0);
+  const tChg = (t.applied - t.prevApplied) / t.prevApplied * 100, dChg = (dt.applied - dt.prevApplied) / dt.prevApplied * 100;
+  el('summary').innerHTML = `
+    <div class="baseline-head"><strong>경민대학교 전체</strong><span>${esc(K.basis)}</span></div>
+    <div class="stats">
+      <div class="stat"><span>총 지원자</span><b>${num(t.applied)}명</b><small>2026 ${num(t.prevApplied)}명 (${signed(t.applied - t.prevApplied, 0)})</small></div>
+      <div class="stat"><span>전년 대비</span><b class="${tChg >= 0 ? 'good' : 'alert'}">${pct(tChg)}</b><small>주간 정원내 ${pct(dChg)}</small></div>
+      <div class="stat"><span>모집 · 경쟁률</span><b>${fx(t.applied / t.quota)}:1</b><small>모집 ${num(t.quota)}명 (주간 ${fx(dt.applied / dt.quota)}:1)</small></div>
+      <div class="stat"><span>증가 학과</span><b>${plus.length}개</b><small>${day.length}개 주간 학과 + 성인학습자 2개</small></div>
+      <div class="stat"><span>감소 학과</span><b class="alert">${minus.length}개</b><small>합계 ${signed(loss, 0)}명</small></div>
+      <div class="stat"><span>신설</span><b>${fresh.length}개</b><small>${fresh.map(d => esc(d.name)).join(', ')}</small></div>
+    </div>
+    <ul class="findings">
+      <li>학교 전체 지원자는 <b class="good">${pct(tChg)}</b> 늘었지만, <b class="alert">${minus.length}개 학과</b>(${minus.map(d => esc(d.name)).join(', ')})는 줄었습니다.</li>
+      <li>증가 폭이 큰 학과: ${top.map(d => `${esc(d.name)} <b>${signed(diff(d), 0)}명</b>`).join(', ')}.</li>
+      <li>감소 학과의 계열: ${Object.entries(minus.reduce((m, d) => (m[d.group] = (m[d.group] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]).map(([g, n]) => `${esc(g)} ${n}개`).join(', ')}.</li>
+    </ul>`;
+}
+
+// 감소 학과: 학과별 비교 분석(ratios.json)에서 기준 모집단위의 시장 대비 위치를 요약
+async function renderMinus() {
+  const minus = K.depts.filter(d => diff(d) < 0).sort((a, b) => diff(a) - diff(b));
+  el('minus').innerHTML = minus.map(d => `<tr>
+    <td><b>${hasDetail(d) ? `<a href="${Admission.deptHref(d.id)}">${esc(d.name)}</a>` : esc(d.name)}</b><div class="muted">${esc(d.group)}</div></td>
+    <td class="n">${num(d.applied)}</td><td class="n">${num(d.prevApplied)}</td>
+    <td class="n"><b class="alert">${signed(diff(d), 0)}</b></td><td class="n alert">${pct(dpct(d))}</td>
+    <td class="n">${fx(rate(d))}</td>
+    <td id="cmp-${esc(d.id || d.name)}"><span class="muted">${hasDetail(d) ? '분석 불러오는 중' : '비교 분석 없음'}</span></td>
+    <td class="src">${hasDetail(d) ? `<a href="${Admission.deptHref(d.id)}">상세 분석 →</a>` : ''}</td></tr>`).join('');
+  for (const d of minus.filter(hasDetail)) {
+    try {
+      const R = await Ratio.load('depts/' + d.id + '/ratios.json');
+      const b = R.base, mk = R.comparable.filter(r => r.priorApplied != null);
+      const mP = mk.reduce((n, r) => n + r.priorApplied, 0), mA = mk.reduce((n, r) => n + r.applied, 0);
+      const bChg = b.priorApplied ? (b.applied - b.priorApplied) / b.priorApplied * 100 : null;
+      el('cmp-' + d.id).innerHTML = `${esc(b.track)} ${fx(b.rate)}:1 · 전문대 <b class="${R.rank > R.peerCount / 2 ? 'alert' : ''}">${R.rank}/${R.peerCount}위</b>`
+        + (mP ? `<div class="muted">지원자 변화: 경민대 <span class="${bChg < 0 ? 'alert' : ''}">${pct(bChg)}</span> · 비교 학과 ${pct((mA - mP) / mP * 100)}</div>` : '');
+    } catch (e) { el('cmp-' + d.id).innerHTML = '<span class="muted">분석 자료를 불러오지 못했습니다</span>'; }
+  }
+}
+
+function trackRows(d) {
+  const rows = Object.entries(d.tracks).map(([k, [q, a]]) => `<span style="margin-right:16px">${TRACK[k]} <b>${num(q)}명 · ${num(a)}명</b> (${fx(a / q)}:1)</span>`).join('');
+  return `<tr class="group"><td></td><td colspan="9" style="font-weight:400;color:var(--ink)">${rows}${d.trackDetail ? `<div class="muted" style="margin-top:4px">${esc(d.trackDetail)}</div>` : ''}</td></tr>`;
+}
+
+function renderAll() {
+  const g = el('group').value, o = el('order').value;
+  let list = K.depts.filter(d => g === 'all' || d.group === g);
+  if (o !== 'group') list = [...list].sort(ORDERS[o]);
+  el('count').textContent = `${list.length}개 학과`;
+  el('all').innerHTML = list.map(d => {
+    const df = diff(d), p = dpct(d), key = d.name;
+    return `<tr class="${df < 0 ? 'minus' : ''}${open === key ? ' selected' : ''}" data-key="${esc(key)}" style="cursor:pointer">
+      <td class="muted">${esc(d.group)}</td>
+      <td><b>${esc(d.name)}</b></td>
+      <td class="n">${num(d.quota)}</td><td class="n">${num(d.applied)}</td><td class="n">${fx(rate(d))}</td>
+      <td class="n">${d.new ? '<span class="muted">신설</span>' : num(d.prevApplied)}</td>
+      <td class="n">${df == null ? '—' : `<b class="${df < 0 ? 'alert' : ''}">${signed(df, 0)}</b>`}</td>
+      <td class="n ${p < 0 ? 'alert' : ''}">${p == null ? '—' : pct(p)}</td>
+      <td class="n ${d.remain < 0 ? 'alert' : ''}">${d.remain == null ? '—' : num(d.remain)}</td>
+      <td class="src">${hasDetail(d) ? `<a href="${Admission.deptHref(d.id)}" onclick="event.stopPropagation()">비교 분석 →</a>` : '<span class="muted">—</span>'}</td>
+    </tr>${open === key ? trackRows(d) : ''}`;
+  }).join('');
+  el('all').querySelectorAll('tr[data-key]').forEach(tr => tr.addEventListener('click', () => {
+    open = open === tr.dataset.key ? null : tr.dataset.key; renderAll();
+  }));
+}
+
+function renderGroups() {
+  const groups = [...new Set(K.depts.map(d => d.group))];
+  el('groups').innerHTML = groups.map(g => {
+    const ds = K.depts.filter(d => d.group === g), old = ds.filter(d => d.prevApplied != null);
+    const a = ds.reduce((n, d) => n + d.applied, 0), q = ds.reduce((n, d) => n + d.quota, 0);
+    const oa = old.reduce((n, d) => n + d.applied, 0), op = old.reduce((n, d) => n + d.prevApplied, 0);
+    const c = op ? (oa - op) / op * 100 : null;
+    return `<tr><td><b>${esc(g)}</b></td><td class="n">${ds.length}</td><td class="n">${num(q)}</td><td class="n">${num(a)}</td><td class="n">${num(op)}${old.length < ds.length ? '<div class="muted">신설 제외</div>' : ''}</td>
+      <td class="n"><b class="${oa - op < 0 ? 'alert' : ''}">${signed(oa - op, 0)}</b></td><td class="n ${c < 0 ? 'alert' : ''}">${c == null ? '—' : pct(c)}</td><td class="n">${fx(a / q)}</td></tr>`;
+  }).join('');
+}
+
+async function latest(cat, target, hrefPage) {
+  try {
+    const posts = await (await fetch('posts/' + cat + '/index.json', { cache: 'no-store' })).json();
+    el(target).innerHTML = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3)
+      .map(p => `<li><a href="${hrefPage}?post=${encodeURIComponent(p.slug)}">${esc(p.title)}</a> <span class="muted">${esc(p.date)}</span></li>`).join('') || '<li class="muted">아직 게시글이 없습니다.</li>';
+  } catch (e) { el(target).innerHTML = '<li class="muted">불러오지 못했습니다.</li>'; }
+}
+
+fetch('school/susi1-2027.json', { cache: 'no-store' }).then(r => r.json()).then(data => {
+  K = data;
+  el('basis').textContent = `${K.title} · ${K.basis}`;
+  el('sourceNote').textContent = `${K.source} · ${K.basis}. 학과별 2026 지원인원은 집계표의 ‘전년도 지원인원’입니다.`;
+  el('group').insertAdjacentHTML('beforeend', [...new Set(K.depts.map(d => d.group))].map(g => `<option>${esc(g)}</option>`).join(''));
+  renderSummary(); renderAll(); renderGroups(); renderMinus();
+}).catch(() => { el('summary').innerHTML = '<div class="empty alert">학교 집계 자료를 불러오지 못했습니다.</div>'; });
+for (const id of ['group', 'order']) el(id).addEventListener('change', () => K && renderAll());
+latest('colleges', 'latestColleges', 'colleges.html');
+latest('kyungmin', 'latestNews', 'kyungmin.html');
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+ "title": "2027학년도 수시 1차 정원내 지원현황",
+ "basis": "2026년 10월 1일 24시 기준 (24일차, 학교 집계 최종)",
+ "source": "경민대학교 입학 집계표",
+ "columns": {
+  "general": "일반전형",
+  "regular": "특별전형-일반고",
+  "vocational": "특별전형-특성화고",
+  "special": "특별전형-성인/특기자/독자",
+  "talent": "특별전형-특별인재"
+ },
+ "total": { "quota": 1126, "applied": 6825, "prevApplied": 5952, "day": { "quota": 974, "applied": 6506, "prevApplied": 5681 } },
+ "depts": [
+  { "group": "보건의료", "name": "간호학과", "capacity": 145, "tracks": { "regular": [110, 1182], "vocational": [10, 194] }, "quota": 120, "applied": 1376, "prevApplied": 1149, "remain": 648 },
+  { "group": "보건의료", "name": "보건의료행정과", "capacity": 60, "tracks": { "regular": [35, 217], "vocational": [15, 58] }, "quota": 50, "applied": 275, "prevApplied": 267, "remain": 62 },
+  { "group": "보건의료", "name": "언어치료학과", "capacity": 30, "tracks": { "general": [24, 107] }, "quota": 24, "applied": 107, "prevApplied": 58, "remain": -19 },
+  { "group": "보건의료", "name": "의료미용과", "capacity": 30, "tracks": { "general": [26, 122] }, "quota": 26, "applied": 122, "prevApplied": 102, "remain": 10 },
+  { "group": "공공안전", "name": "소방안전관리과", "capacity": 120, "tracks": { "general": [80, 490], "special": [10, 51] }, "quota": 90, "applied": 541, "prevApplied": 424, "remain": 239 },
+  { "group": "공공안전", "name": "응급구조학과", "capacity": 40, "tracks": { "general": [32, 469] }, "quota": 32, "applied": 469, "prevApplied": 402, "remain": 170 },
+  { "group": "외식관광", "name": "카페베이커리과", "id": "cafe-bakery", "capacity": 60, "tracks": { "regular": [32, 189], "vocational": [9, 68], "special": [10, 30] }, "quota": 51, "applied": 287, "prevApplied": 355, "remain": 152 },
+  { "group": "외식관광", "name": "호텔관광학과", "capacity": 35, "tracks": { "general": [29, 273] }, "quota": 29, "applied": 273, "prevApplied": 214, "remain": 2 },
+  { "group": "외식관광", "name": "호텔조리과", "id": "hotel-culinary", "capacity": 72, "tracks": { "regular": [43, 241], "vocational": [10, 43], "special": [10, 34] }, "quota": 63, "applied": 318, "prevApplied": 325, "remain": 98 },
+  { "group": "휴먼서비스", "name": "건축공간디자인학과", "capacity": 35, "tracks": { "general": [27, 188] }, "quota": 27, "applied": 188, "prevApplied": 187, "remain": 0 },
+  { "group": "휴먼서비스", "name": "사회복지과", "capacity": 50, "tracks": { "general": [42, 280] }, "quota": 42, "applied": 280, "prevApplied": 266, "remain": 37 },
+  { "group": "휴먼서비스", "name": "유아교육학과", "capacity": 32, "tracks": { "general": [23, 201], "special": [2, 3] }, "quota": 25, "applied": 204, "prevApplied": 171, "remain": 40 },
+  { "group": "국방안전", "name": "국방드론봇시스템과", "capacity": 30, "tracks": { "general": [25, 124] }, "quota": 25, "applied": 124, "prevApplied": null, "new": true, "remain": null },
+  { "group": "국방안전", "name": "사이버·정보시스템학과", "capacity": 20, "tracks": { "general": [15, 68] }, "quota": 15, "applied": 68, "prevApplied": 45, "remain": -8 },
+  { "group": "국방안전", "name": "지능형소프트웨어과", "id": "software", "capacity": 39, "tracks": { "general": [35, 101] }, "quota": 35, "applied": 101, "prevApplied": 136, "remain": -13 },
+  { "group": "국방안전", "name": "효충군사학과", "capacity": 40, "tracks": { "general": [35, 118] }, "quota": 35, "applied": 118, "prevApplied": 98, "remain": 30 },
+  { "group": "인플루언서 재양성", "name": "미디어영상과", "capacity": 50, "tracks": { "general": [36, 345] }, "quota": 36, "applied": 345, "prevApplied": 321, "remain": 9 },
+  { "group": "인플루언서 재양성", "name": "실용음악과", "capacity": 40, "tracks": { "general": [15, 108] }, "quota": 15, "applied": 108, "prevApplied": 56, "remain": 6 },
+  { "group": "인플루언서 재양성", "name": "연기예술과", "capacity": 40, "tracks": { "general": [13, 68] }, "quota": 13, "applied": 68, "prevApplied": 38, "remain": 4 },
+  { "group": "K-콘텐츠", "name": "게임콘텐츠과", "capacity": 80, "tracks": { "general": [42, 361], "special": [21, 124] }, "quota": 63, "applied": 485, "prevApplied": 373, "remain": 48 },
+  { "group": "K-콘텐츠", "name": "레포츠과", "id": "leports", "capacity": 50, "tracks": { "general": [5, 37], "special": [23, 56], "talent": [1, 1] }, "quota": 29, "applied": 94, "prevApplied": 104, "remain": 52 },
+  { "group": "K-콘텐츠", "name": "태권도외교과", "id": "taekwondo", "capacity": 100, "tracks": { "special": [72, 172], "talent": [8, 31] }, "trackDetail": "특기자: 시범 37/84 · 품새 23/66 · 겨루기 8/17 · 자유품새 4/5 / 특별인재: 시범 4/18 · 품새 2/9 · 겨루기 2/4", "quota": 80, "applied": 203, "prevApplied": 289, "remain": 119 },
+  { "group": "K-콘텐츠", "name": "헤어디자인과", "capacity": 30, "tracks": { "general": [27, 185] }, "quota": 27, "applied": 185, "prevApplied": 120, "remain": 39 },
+  { "group": "공통", "name": "자유전공학과", "id": "free-major", "capacity": 30, "tracks": { "general": [22, 167] }, "quota": 22, "applied": 167, "prevApplied": 181, "remain": 79 },
+  { "group": "성인학습자", "name": "라이프케어과", "capacity": 90, "tracks": { "special": [85, 167] }, "quota": 85, "applied": 167, "prevApplied": 146, "remain": 0, "adult": true },
+  { "group": "성인학습자", "name": "라이프콘텐츠과", "capacity": 70, "tracks": { "special": [67, 152] }, "quota": 67, "applied": 152, "prevApplied": 125, "remain": 4, "adult": true }
+ ]
+}

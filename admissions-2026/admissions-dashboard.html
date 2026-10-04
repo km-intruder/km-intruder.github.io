@@ -87,6 +87,7 @@
   <details class="notes">
     <summary>표 읽는 법</summary>
     <p>‘경민대 대비’는 각 모집단위 경쟁률 ÷ 경민대 <span data-dept="name"></span> 경쟁률입니다. <span class="alert">빨간색</span>은 경민대의 2.5배 이상이거나, 경민대가 하락한 해에 상승한 모집단위입니다.</p>
+    <p>경민대 기준 모집단위는 학교 집계표의 학과 전체(정원내 모든 전형, 2027·2026 최종) 값입니다. 비교 학교는 각 대학 공개 원문의 주력 전형(주로 일반고) 값이라, 전형이 여럿인 학과는 경민대 경쟁률이 상대적으로 낮게 보일 수 있습니다.</p>
     <p>‘변화 원인’은 2026학년도 대비 모집인원·지원인원 변화로 나눈 산술적 분류입니다. 정원이 줄면 지원자가 줄어도 경쟁률이 오를 수 있습니다.</p>
   </details>
 </section>
@@ -187,11 +188,13 @@ function diagnosis() {
     : bChg < mChg
       ? `비교 시장(${pct(mChg)})보다 경민대 지원자 변화(<b class="alert">${pct(bChg)}</b>)가 나빠, 상대적 점유가 줄었습니다.`
       : `경민대 지원자 변화(${pct(bChg)})가 비교 시장(${pct(mChg)})보다 나은 흐름입니다.`;
-  const schoolText = shift
-    ? `${esc(D.shortName)} 감소분 일부가 같은 학교 안에서 옮겨 갔을 가능성이 있습니다.`
+  const decline = bChg < 0;
+  const schoolText = !decline ? `같은 학교 ${family} 학과 변화도 함께 보세요.`
+    : shift ? `${esc(D.shortName)} 감소분 일부가 같은 학교 안에서 옮겨 갔을 가능성이 있습니다.`
     : `같은 학교 ${family} 학과도 함께 줄어, 학교 안 이동으로는 설명되지 않습니다.`;
   const regionText = r => {
     const c = chg(r.applied, r.priorApplied);
+    if (!decline) return c < 0 ? `${esc(r.s.region)} 학교는 줄었는데 경민대는 늘었습니다.` : `${esc(r.s.region)} 학교도 함께 늘었습니다.`;
     if (c < 0 && Math.abs(c - bChg) <= 10) return `${esc(r.s.region)} 학교도 비슷한 폭으로 줄어, 권역 공통 요인도 함께 작용한 것으로 보입니다.`;
     if (c < 0) return `${esc(r.s.region)} 학교도 줄었지만 감소폭이 경민대보다 작아, 권역 요인만으로는 설명되지 않습니다.`;
     return `${esc(r.s.region)} 학교는 오히려 늘어, 권역 공통 요인으로 보기 어렵습니다.`;
@@ -199,9 +202,9 @@ function diagnosis() {
   const popText = bChg < -9.4 ? '경민대 감소폭이 인구 감소폭보다 훨씬 큽니다.'
     : bChg < 0 ? '경민대 감소폭은 인구 감소폭과 큰 차이가 없습니다.' : '경민대는 인구 감소에도 지원이 늘었습니다.';
 
-  const causes = [shift && '학교 안 학과 간 이동', regionShared && `${esc(b.s.region)} 권역의 공통 감소`].filter(Boolean);
+  const causes = decline ? [shift && '학교 안 학과 간 이동', regionShared && `${esc(b.s.region)} 권역의 공통 감소`].filter(Boolean) : [];
   const gap = sChg - mChg;
-  const lead = causes.length ? `지원 감소의 일부는 ${causes.join('과 ')}로 설명됩니다. ` : '';
+  const lead = !decline ? `경민대 지원자는 ${pct(bChg)} 늘었습니다. ` : causes.length ? `지원 감소의 일부는 ${causes.join('과 ')}로 설명됩니다. ` : '';
   const body = gap < -5
     ? `${causes.length ? '그래도 ' : ''}경민대 ${family} 합계(${pct(sChg)})${causes.length ? '조차' : '도'} 비교 시장(${pct(mChg)})보다 <b class="alert">${Math.abs(gap).toFixed(1)}%p 낮아</b>, 상대적 경쟁력 약화는 실제로 있다고 보는 것이 타당합니다.`
     : gap <= 5
@@ -209,7 +212,7 @@ function diagnosis() {
       : `경민대 ${family} 합계(${pct(sChg)})는 비교 시장(${pct(mChg)})보다 높아, 계열 전체의 경쟁력은 유지되고 있습니다.`;
 
   return `<div class="diagnosis">
-    <h3>지원 감소 = 경쟁력 하락인가?</h3>
+    <h3>${decline ? '지원 감소 = 경쟁력 하락인가?' : '지원 변화 진단'}</h3>
     <table>
       <tbody>
         <tr><th>비교 학과 전체 (직접 대응 ${market.length}개)</th><td class="n">${num(mP)} → ${num(mA)}명</td><td class="n"><b>${pct(mChg)}</b></td>

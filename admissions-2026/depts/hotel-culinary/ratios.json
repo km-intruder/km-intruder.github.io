@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-10-01 00:00"
+   "time": "2026-10-01 최종 마감"
   },
   {
    "id": "sj",
@@ -138,27 +138,31 @@
    "school": "km",
    "dept": "호텔조리과",
    "field": "호텔조리",
-   "track": "특별전형-일반고",
-   "quota": 43,
-   "applied": 133,
-   "prior": 4.57,
-   "priorQuota": 35,
-   "priorApplied": 160,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html",
-   "comparable": true
+   "track": "정원내 전체 (일반고·특성화고·독자)",
+   "quota": 63,
+   "applied": 318,
+   "prior": 5.16,
+   "priorQuota": 63,
+   "priorApplied": 325,
+   "priorUrl": null,
+   "comparable": true,
+   "locked": true,
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
   },
   {
    "school": "km",
    "dept": "카페베이커리과",
    "field": "제과제빵",
-   "track": "특별전형-일반고",
-   "quota": 32,
-   "applied": 138,
-   "prior": 7.07,
-   "priorQuota": 30,
-   "priorApplied": 212,
-   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html",
-   "comparable": true
+   "track": "정원내 전체 (일반고·특성화고·독자)",
+   "quota": 51,
+   "applied": 287,
+   "prior": 6.96,
+   "priorQuota": 51,
+   "priorApplied": 355,
+   "priorUrl": null,
+   "comparable": true,
+   "locked": true,
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)"
   },
   {
    "school": "sj",
@@ -328,7 +332,8 @@
   "ys",
   "sa",
   "os",
-  "je"
+  "je",
+  "km"
  ],
  "checkedAt": "2026-10-03 22:24",
  "baseline": {
