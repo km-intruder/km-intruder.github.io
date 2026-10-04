@@ -1,0 +1,161 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120531.html",
+   "time": "2026-10-01 00:00",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대"
+  },
+  {
+   "id": "je",
+   "name": "재능대학교",
+   "region": "인천",
+   "city": "동구",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41290971.html",
+   "time": "2026-10-02 최종 마감",
+   "lat": 37.477,
+   "lon": 126.649,
+   "type": "전문대"
+  },
+  {
+   "id": "sa",
+   "name": "신안산대학교",
+   "region": "경기 서부",
+   "city": "안산",
+   "url": "https://ratio.uwayapply.com/Sl5KMEw4SmZDQ2FMSjdmVGY=",
+   "lat": 37.311,
+   "lon": 126.847,
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
+  },
+  {
+   "id": "ds",
+   "name": "동서울대학교",
+   "region": "경기 남부",
+   "city": "성남",
+   "url": "https://ratio.uwayapply.com/Sl5KOlZKZkNDYUxKN2ZUZg==",
+   "time": "2026-10-02 최종 마감",
+   "lat": 37.459,
+   "lon": 127.162,
+   "type": "전문대"
+  },
+  {
+   "id": "ys",
+   "name": "연성대학교",
+   "region": "경기 남부",
+   "city": "안양",
+   "url": "https://ratio.uwayapply.com/Sl5Kclc6JldhYGJKZkNDYUxKN2ZUZg==",
+   "lat": 37.397,
+   "lon": 126.926,
+   "type": "전문대",
+   "time": "2026-10-04 최종 마감"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "태권도외교과(특기자 합계)",
+   "field": "태권도",
+   "track": "특별전형-특기자 (시범·품새·겨루기·자유품새)",
+   "quota": 72,
+   "applied": 172,
+   "prior": 3.66,
+   "priorQuota": 71,
+   "priorApplied": 260,
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html",
+   "comparable": true,
+   "locked": true,
+   "note": "특기자전형 4개 종목 합계"
+  },
+  {
+   "school": "km",
+   "dept": "레포츠과",
+   "field": "스포츠지도·레저",
+   "track": "일반전형",
+   "quota": 5,
+   "applied": 37,
+   "prior": 12.2,
+   "priorQuota": 5,
+   "priorApplied": 61,
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120491.html",
+   "comparable": true,
+   "note": "일반전형 모집 5명 · 축구·야구 특기는 대학자체전형 별도"
+  },
+  {
+   "school": "je",
+   "dept": "글로벌태권도학과(특기자·실기 합계)",
+   "field": "태권도",
+   "track": "특기자전형 + 실기전형",
+   "quota": 36,
+   "applied": 53,
+   "prior": 1.53,
+   "priorQuota": 36,
+   "priorApplied": 55,
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41290841.html",
+   "comparable": true,
+   "locked": true,
+   "note": "특기자 6명 + 실기 30명 합계"
+  },
+  {
+   "school": "sa",
+   "dept": "경호무도학과",
+   "field": "경호·무도",
+   "track": "일반전형(학생부)",
+   "quota": 10,
+   "applied": 177,
+   "prior": 17.57,
+   "priorQuota": 7,
+   "priorApplied": 123,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5KMEw4SmZDQ2FMSi1mVGY=",
+   "comparable": true
+  },
+  {
+   "school": "ds",
+   "dept": "경호스포츠과",
+   "field": "경호·무도",
+   "track": "일반전형",
+   "quota": 18,
+   "applied": 91,
+   "prior": 4.28,
+   "priorQuota": 18,
+   "priorApplied": 77,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5KOlZKZkNDYUxKLWZUZg==",
+   "comparable": true
+  },
+  {
+   "school": "ys",
+   "dept": "경찰경호보안과",
+   "field": "경호·무도",
+   "track": "특별전형-일반고",
+   "quota": 35,
+   "applied": 198,
+   "prior": 3.44,
+   "priorQuota": 45,
+   "priorApplied": 155,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5Kclc6JldhYGJKZkNDYUxKLWZUZg==",
+   "comparable": true
+  }
+ ],
+ "live": [
+  "km",
+  "sa",
+  "ds",
+  "ys"
+ ],
+ "finalized": [
+  "je",
+  "ds",
+  "sa",
+  "ys"
+ ],
+ "checkedAt": "2026-10-04 10:30",
+ "baseline": {
+  "school": "km",
+  "dept": "태권도외교과(특기자 합계)"
+ }
+}

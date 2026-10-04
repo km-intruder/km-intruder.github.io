@@ -7,6 +7,9 @@
   const DEPTS = [
     { id: 'software', name: '지능형소프트웨어과', boards: true, rounds: [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }] },
     { id: 'hotel-culinary', name: '호텔조리과', boards: false, rounds: [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }] },
+    { id: 'cafe-bakery', name: '카페베이커리과', boards: false, rounds: [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }] },
+    { id: 'leports', name: '레포츠과', boards: false, rounds: [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }] },
+    { id: 'taekwondo', name: '태권도외교과', boards: false, rounds: [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }] },
   ];
   const BOARDS = [
     { href: 'competition-curriculum.html', label: '교육과정 비교' },

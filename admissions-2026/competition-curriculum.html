@@ -120,7 +120,7 @@ function renderKM() {
       <div class="stat"><span>2026 대비</span><b class="${b.change < 0 ? 'alert' : ''}">${b.change != null ? pct(b.change) : '—'}</b><small>${esc(b.cause)}</small></div>
       <div class="stat"><span>전문대 순위</span><b class="${R.rank > R.peerCount / 2 ? 'alert' : ''}">${R.rank}위</b><small>${R.peerCount}개 모집단위 중</small></div>
       <div class="stat"><span>교육축</span><b>${KM.topics.length} / ${AXES.length}</b><small>없는 축: ${AXES.filter(a => !KM.topics.includes(a)).join(', ')}</small></div>
-      <div class="stat"><span>3+1 전공심화</span><b>운영</b><small>같은 경로 운영 ${schools.filter(has31).length}개교</small></div>
+      <div class="stat"><span>3+1 전공심화</span><b>${has31(KM) ? '운영' : '확인 안 됨'}</b><small>같은 경로 운영 ${schools.filter(has31).length}개교</small></div>
       <div class="stat"><span>비교 대학</span><b>${schools.length}개교</b><small>수도권 전문대</small></div>
     </div>` : ''}
     <div class="km-cur">
@@ -145,7 +145,7 @@ function renderMatrix() {
   const row = (s, base) => `<tr class="${base ? 'base-row' : ''}"><td>${esc(s.name)}</td>${AXES.map(a => {
     const on = s.topics.includes(a), extra = on && !KM.topics.includes(a) && !base;
     return `<td>${on ? `<span class="dot ${extra ? 'alert' : ''}" title="${extra ? '경민대에 없는 축' : ''}"></span>` : '<span class="dot none"></span>'}</td>`;
-  }).join('')}<td>${base ? '운영' : has31(s) ? '<b class="alert">운영 (겹침)</b>' : '<span class="muted">—</span>'}</td></tr>`;
+  }).join('')}<td>${base ? (has31(s) ? '운영' : '<span class="muted">—</span>') : has31(s) ? `<b class="${has31(KM) ? 'alert' : ''}">운영${has31(KM) ? ' (겹침)' : ''}</b>` : '<span class="muted">—</span>'}</td></tr>`;
   el('matrix').innerHTML = row(KM, true) + schools.map(s => row(s, false)).join('');
 }
 
@@ -159,7 +159,7 @@ function renderSchools() {
     const miss = missingAxes(s);
     const flags = [
       ...miss.map(a => `<span class="mark-alert">경민대에 없는 축: ${a}</span>`),
-      ...(has31(s) ? ['<span class="mark-alert">3+1 전공심화 겹침</span>'] : []),
+      ...(has31(s) && has31(KM) ? ['<span class="mark-alert">3+1 전공심화 겹침</span>'] : []),
     ];
     return `<tr>
       <td><div class="school">${esc(s.name)}</div><div class="muted">${esc(s.region)}</div></td>

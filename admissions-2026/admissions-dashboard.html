@@ -101,7 +101,7 @@
   </div>
 </section>
 
-<details class="notes">
+<details class="notes" id="refBlock">
   <summary>참고 · 인근 4년제 경쟁률 (비교 대상 아님)</summary>
   <p>4년제는 전형 구조와 모집 시기가 전문대 <span class="round-label">수시 1차</span>와 달라 순위·중앙값·경민대 대비 비교에서 모두 제외했습니다. 같은 권역의 진학 선택지를 파악하는 참고용입니다.</p>
   <div class="table-wrap" style="max-width:820px;margin-bottom:10px">
@@ -138,7 +138,7 @@ function renderBaseline() {
   const dApplied = b.priorApplied != null ? b.applied - b.priorApplied : null;
   const north = R.rows.filter(r => !r.isBase && r.s.region === s.region);
   const opposite = R.comparable.filter(r => r.change > 0);
-  const finalText = b.final ? '최종 마감값' + (b.note ? ' · ' + esc(b.note) : '') : '최종 미확인 · ' + esc(s.time || '') + ' 공개값';
+  const finalText = b.final ? '최종 마감값' + (b.note ? ' · ' + esc(b.note) : '') : '최종 미확인 · ' + esc(s.time || '') + ' 공개값' + (b.note ? ' · ' + esc(b.note) : '');
   el('baseline').innerHTML = `
     <div class="baseline-head">
       <strong>${esc(s.name)} ${esc(b.dept)}</strong>
@@ -183,10 +183,10 @@ function diagnosis() {
   const family = esc(D.familyLabel);
 
   const marketText = mChg > 0 && bChg < 0
-    ? `비교 시장은 지원자가 늘었는데 경민대는 <b class="alert">${pct(bChg)}</b> — 상대적 점유는 실제로 줄었습니다.`
+    ? `비교 시장은 지원자가 늘었는데 경민대 지원자는 <b class="alert">${pct(bChg)}</b> — 상대적 점유는 실제로 줄었습니다.`
     : bChg < mChg
-      ? `비교 시장(${pct(mChg)})보다 경민대(<b class="alert">${pct(bChg)}</b>)의 변화가 나빠, 상대적 점유가 줄었습니다.`
-      : `경민대(${pct(bChg)})가 비교 시장(${pct(mChg)})보다 나은 흐름입니다.`;
+      ? `비교 시장(${pct(mChg)})보다 경민대 지원자 변화(<b class="alert">${pct(bChg)}</b>)가 나빠, 상대적 점유가 줄었습니다.`
+      : `경민대 지원자 변화(${pct(bChg)})가 비교 시장(${pct(mChg)})보다 나은 흐름입니다.`;
   const schoolText = shift
     ? `${esc(D.shortName)} 감소분 일부가 같은 학교 안에서 옮겨 갔을 가능성이 있습니다.`
     : `같은 학교 ${family} 학과도 함께 줄어, 학교 안 이동으로는 설명되지 않습니다.`;
@@ -349,6 +349,7 @@ function renderNotes() {
 }
 
 function renderReference() {
+  el('refBlock').hidden = !R.reference.length;
   el('reference').innerHTML = R.reference.map(r => `<tr><td><b>${esc(r.s.name)}</b> <span class="muted">${esc(r.s.region)} · ${esc(r.s.city)}</span></td>
     <td>${esc(r.dept)}</td><td>${esc(r.track)}</td><td class="n">${num(r.quota)}</td><td class="n">${num(r.applied)}</td>
     <td class="n">${fx(r.rate)}:1</td><td class="src"><a href="${esc(r.s.url)}" target="_blank" rel="noopener noreferrer">원문</a></td></tr>`).join('')
