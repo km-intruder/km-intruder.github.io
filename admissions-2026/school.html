@@ -339,7 +339,7 @@ function renderStrategy(IND) {
   el('strategyTable').innerHTML = items.map(x => `<tr>
     <td><span class="reco ${RECO[x.key].cls}">${RECO[x.key].label}</span></td>
     <td><b>${hasDetail(x.d) ? `<a href="${Admission.deptHref(x.d.id)}">${esc(x.d.name)}</a>` : esc(x.d.name)}</b><div class="muted">${esc(x.d.group)}</div></td>
-    <td>${x.g ? `${esc(x.g.name)}<div class="muted">${num(x.g.y2024)} → ${num(x.g.y2034)}천 명 · <b class="${x.I < 0 ? 'alert' : ''}">${x.I > 0 ? '+' : ''}${x.I}%/년</b></div>` : '<span class="muted">해당 없음</span>'}${IND.extra?.[x.d.id] ? `<div style="margin-top:6px"><b>${esc(IND.extra[x.d.id].label)}</b>${IND.extra[x.d.id].items.map(t => `<div class="muted">${esc(t.text)} <a class="src" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">출처</a></div>`).join('')}</div>` : ''}</td>
+    <td>${x.g ? `${esc(x.g.name)}<div class="muted">${x.g.detail ? `${esc(x.g.detail)} <a class="src" href="${esc(x.g.url)}" target="_blank" rel="noopener noreferrer">출처</a>` : `${num(x.g.y2024)} → ${num(x.g.y2034)}천 명`} · <b class="${x.I < 0 ? 'alert' : ''}">${x.I > 0 ? '+' : ''}${x.I}%/년</b></div>` : '<span class="muted">해당 없음</span>'}${IND.extra?.[x.d.id] ? `<div style="margin-top:6px"><b>${esc(IND.extra[x.d.id].label)}</b>${IND.extra[x.d.id].items.map(t => `<div class="muted">${esc(t.text)} <a class="src" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">출처</a></div>`).join('')}</div>` : ''}</td>
     <td class="n">${x.m?.mc != null ? pct(x.m.mc) : '—'}${x.m && x.m.n <= 2 ? '<div class="muted">비교 학교 적음</div>' : ''}</td>
     <td class="n ${x.m?.kc < 0 ? 'alert' : ''}">${x.m?.kc != null ? pct(x.m.kc) : '신설'}</td>
     <td class="n"><b class="${x.S < 0 ? 'alert' : ''}">${x.S != null ? signed(x.S, 1) + '%p' : '—'}</b></td>

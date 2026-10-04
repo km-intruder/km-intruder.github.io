@@ -10,5 +10,10 @@
  "renameNote": "",
  "industryLabel": "",
  "curriculum": null,
- "curriculumNote": "교육과정 비교는 아직 준비되지 않았습니다. 요청하시면 비교 학교의 공식 학과 자료를 조사해 추가합니다."
+ "curriculumNote": "교육과정 비교는 아직 준비되지 않았습니다. 요청하시면 비교 학교의 공식 학과 자료를 조사해 추가합니다.",
+ "kmIntro": {
+  "text": "메디 뷰티 융합 전문가 양성. 산업체 주문식 학과, 졸업 시 미용사(종합) 면허 100% 취득.",
+  "url": "https://iphak.kyungmin.ac.kr/department/medibeauty",
+  "checked": "2026-10-04"
+ }
 }

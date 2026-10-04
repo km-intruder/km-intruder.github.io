@@ -99,6 +99,16 @@
     // data-dept="name" 같은 자리에 학과 설정값을 채운다
     fill(cfg) {
       document.querySelectorAll('[data-dept]').forEach(e => { e.textContent = cfg[e.dataset.dept] ?? ''; });
+      // 경민대 입학처 학과 소개 요약 (출처 링크 포함)
+      const it = cfg.kmIntro;
+      document.querySelectorAll('[data-dept-intro]').forEach(e => {
+        e.hidden = !it;
+        if (!it) return;
+        e.textContent = '학과 소개: ' + it.text + ' ';
+        const l = document.createElement('a');
+        Object.assign(l, { href: it.url, target: '_blank', rel: 'noopener noreferrer', textContent: '입학처 원문' });
+        e.append(l, ` (${it.checked} 확인)`);
+      });
     },
   };
 })();

@@ -10,5 +10,10 @@
  "renameNote": "",
  "industryLabel": "",
  "curriculum": null,
- "curriculumNote": "교육과정 비교는 아직 준비되지 않았습니다. 요청하시면 비교 학교의 공식 학과 자료를 조사해 추가합니다."
+ "curriculumNote": "교육과정 비교는 아직 준비되지 않았습니다. 요청하시면 비교 학교의 공식 학과 자료를 조사해 추가합니다.",
+ "kmIntro": {
+  "text": "유치원 2급 정교사·보육교사 2급 자격 100% 취득. 교원양성기관평가 연속 A등급, 1년 전공심화로 학사학위.",
+  "url": "https://iphak.kyungmin.ac.kr/department/infant",
+  "checked": "2026-10-04"
+ }
 }

@@ -10,5 +10,10 @@
  "renameNote": "",
  "industryLabel": "",
  "curriculum": null,
- "curriculumNote": "교육과정 비교는 아직 준비되지 않았습니다. 요청하시면 비교 학교의 공식 학과 자료를 조사해 추가합니다."
+ "curriculumNote": "교육과정 비교는 아직 준비되지 않았습니다. 요청하시면 비교 학교의 공식 학과 자료를 조사해 추가합니다.",
+ "kmIntro": {
+  "text": "30년 역사의 건축·인테리어 학과. 3+1 학사학위, 스마트건설 핵심인 BIM 교육, 스마트시티안전융합 기술석사과정.",
+  "url": "https://iphak.kyungmin.ac.kr/department/archi",
+  "checked": "2026-10-04"
+ }
 }

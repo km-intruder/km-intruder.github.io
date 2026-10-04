@@ -374,5 +374,10 @@
     }
    ]
   }
+ },
+ "kmIntro": {
+  "text": "SW개발 직무 취업률 75.0%(2022), 정보처리기사 92.3% 취득. 주문식교육과정, 학사학위과정.",
+  "url": "https://iphak.kyungmin.ac.kr/department/software",
+  "checked": "2026-10-04"
  }
 }
