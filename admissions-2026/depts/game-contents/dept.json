@@ -1,0 +1,14 @@
+{
+ "id": "game-contents",
+ "name": "게임콘텐츠과",
+ "shortName": "게임콘텐츠",
+ "fieldLabel": "게임 계열",
+ "fields": [
+  "게임콘텐츠"
+ ],
+ "familyLabel": "K-콘텐츠 계열",
+ "renameNote": "",
+ "industryLabel": "",
+ "curriculum": null,
+ "curriculumNote": "교육과정 비교는 아직 준비되지 않았습니다. 요청하시면 비교 학교의 공식 학과 자료를 조사해 추가합니다."
+}

@@ -1,0 +1,151 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120531.html",
+   "time": "2026-10-01 최종 마감",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대"
+  },
+  {
+   "id": "bc",
+   "name": "부천대학교",
+   "region": "경기 서부",
+   "city": "부천",
+   "url": "https://ratio.uwayapply.com/Sl5KTEJKZkNDYUxKN2ZUZg==",
+   "lat": 37.486,
+   "lon": 126.784,
+   "time": "2026-10-02 최종 마감",
+   "type": "전문대"
+  },
+  {
+   "id": "ds",
+   "name": "동서울대학교",
+   "region": "경기 남부",
+   "city": "성남",
+   "url": "https://ratio.uwayapply.com/Sl5KOlZKZkNDYUxKN2ZUZg==",
+   "time": "2026-10-02 최종 마감",
+   "lat": 37.459,
+   "lon": 127.162,
+   "type": "전문대"
+  },
+  {
+   "id": "mj",
+   "name": "명지전문대학",
+   "region": "서울",
+   "city": "서대문",
+   "url": "https://ratio.uwayapply.com/Sl5KTC9NSmZDQ2FMSjdmVGY=",
+   "lat": 37.584,
+   "lon": 126.925,
+   "type": "전문대"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "사이버·정보시스템학과",
+   "field": "사이버보안",
+   "track": "정원내 전체",
+   "quota": 15,
+   "applied": 68,
+   "locked": true,
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "prior": 3.46,
+   "priorQuota": 13,
+   "priorApplied": 45,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "km",
+   "dept": "국방드론봇시스템과",
+   "field": "국방안전",
+   "track": "정원내 전체",
+   "quota": 25,
+   "applied": 124,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false
+  },
+  {
+   "school": "km",
+   "dept": "지능형소프트웨어과",
+   "field": "국방안전",
+   "track": "정원내 전체",
+   "quota": 35,
+   "applied": 101,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 3.89,
+   "priorQuota": 35,
+   "priorApplied": 136,
+   "priorUrl": null
+  },
+  {
+   "school": "km",
+   "dept": "효충군사학과",
+   "field": "국방안전",
+   "track": "정원내 전체",
+   "quota": 35,
+   "applied": 118,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 2.8,
+   "priorQuota": 35,
+   "priorApplied": 98,
+   "priorUrl": null
+  },
+  {
+   "school": "bc",
+   "dept": "컴퓨터정보보안학과",
+   "field": "사이버보안",
+   "track": "일반고",
+   "quota": 18,
+   "applied": 144,
+   "prior": 5.35,
+   "priorQuota": 17,
+   "priorApplied": 91,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5KTEJKZkNDYUxKLWZUZg==",
+   "comparable": true
+  },
+  {
+   "school": "ds",
+   "dept": "사이버보안학과",
+   "field": "사이버보안",
+   "track": "정원내 일반고전형",
+   "quota": 25,
+   "applied": 112,
+   "comparable": false
+  },
+  {
+   "school": "mj",
+   "dept": "컴퓨터보안공학과",
+   "field": "사이버보안",
+   "track": "정원내 특별전형(일반고)",
+   "quota": 37,
+   "applied": 204,
+   "prior": 6.0,
+   "priorQuota": 37,
+   "priorApplied": 222,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5KTC9NSmZDQ2FMSi1mVGY=",
+   "comparable": true
+  }
+ ],
+ "live": [],
+ "finalized": [
+  "km",
+  "bc",
+  "ds"
+ ],
+ "checkedAt": null,
+ "baseline": {
+  "school": "km",
+  "dept": "사이버·정보시스템학과"
+ }
+}

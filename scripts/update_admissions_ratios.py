@@ -87,7 +87,16 @@ def norm_track(text):
     return re.sub(r"경쟁률|현황|전형|특별|학생부|[\s()\[\]·]", "", text).replace("고교", "고")
 
 
+_PAGES = {}  # 한 번 실행하는 동안 같은 학교 원문은 한 번만 받는다 (학과 파일이 여러 개라서)
+
+
 def fetch(url):
+    if url not in _PAGES:
+        _PAGES[url] = _fetch(url)
+    return _PAGES[url]
+
+
+def _fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (ratio-updater)"})
     with urllib.request.urlopen(req, timeout=30) as res:
         raw = res.read()

@@ -1,0 +1,110 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120531.html",
+   "time": "2026-10-01 최종 마감",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대"
+  },
+  {
+   "id": "dl",
+   "name": "대림대학교",
+   "region": "경기 남부",
+   "city": "안양",
+   "url": "https://ratio.uwayapply.com/Sl5KTSVDYDhWSmZDQ2FMSjdmVGY=",
+   "time": "2026-09-28 08:40",
+   "lat": 37.403,
+   "lon": 126.928,
+   "type": "전문대"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "언어치료학과",
+   "field": "언어치료",
+   "track": "정원내 전체",
+   "quota": 24,
+   "applied": 107,
+   "locked": true,
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "prior": 2.23,
+   "priorQuota": 26,
+   "priorApplied": 58,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "km",
+   "dept": "간호학과",
+   "field": "보건의료",
+   "track": "정원내 전체",
+   "quota": 120,
+   "applied": 1376,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 8.84,
+   "priorQuota": 130,
+   "priorApplied": 1149,
+   "priorUrl": null
+  },
+  {
+   "school": "km",
+   "dept": "보건의료행정과",
+   "field": "보건의료",
+   "track": "정원내 전체",
+   "quota": 50,
+   "applied": 275,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 5.34,
+   "priorQuota": 50,
+   "priorApplied": 267,
+   "priorUrl": null
+  },
+  {
+   "school": "km",
+   "dept": "의료미용과",
+   "field": "보건의료",
+   "track": "정원내 전체",
+   "quota": 26,
+   "applied": 122,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 3.92,
+   "priorQuota": 26,
+   "priorApplied": 102,
+   "priorUrl": null
+  },
+  {
+   "school": "dl",
+   "dept": "언어치료학과",
+   "field": "언어치료",
+   "track": "정원내 특별전형(일반고전형)",
+   "quota": 42,
+   "applied": 203,
+   "prior": 4.05,
+   "priorQuota": 42,
+   "priorApplied": 170,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5KTSVDYDhWSmZDQ2FMSi1mVGY=",
+   "comparable": true
+  }
+ ],
+ "live": [],
+ "finalized": [
+  "km"
+ ],
+ "checkedAt": null,
+ "baseline": {
+  "school": "km",
+  "dept": "언어치료학과"
+ }
+}

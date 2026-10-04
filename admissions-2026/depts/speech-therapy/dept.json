@@ -1,0 +1,14 @@
+{
+ "id": "speech-therapy",
+ "name": "언어치료학과",
+ "shortName": "언어치료",
+ "fieldLabel": "언어치료·재활 계열",
+ "fields": [
+  "언어치료"
+ ],
+ "familyLabel": "보건의료 계열",
+ "renameNote": "",
+ "industryLabel": "",
+ "curriculum": null,
+ "curriculumNote": "교육과정 비교는 아직 준비되지 않았습니다. 요청하시면 비교 학교의 공식 학과 자료를 조사해 추가합니다."
+}

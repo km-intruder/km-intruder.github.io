@@ -1,0 +1,130 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120531.html",
+   "time": "2026-10-01 최종 마감",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대"
+  },
+  {
+   "id": "gt",
+   "name": "경기과학기술대학교",
+   "region": "경기 서부",
+   "city": "시흥",
+   "url": "https://ratio.uwayapply.com/Sl5KMCZXJTlKZkNDYUxKN2ZUZg==",
+   "time": "2026-10-02 최종 마감",
+   "lat": 37.337,
+   "lon": 126.734,
+   "type": "전문대"
+  },
+  {
+   "id": "ys",
+   "name": "연성대학교",
+   "region": "경기 남부",
+   "city": "안양",
+   "url": "https://ratio.uwayapply.com/Sl5Kclc6JldhYGJKZkNDYUxKN2ZUZg==",
+   "lat": 37.397,
+   "lon": 126.926,
+   "type": "전문대"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "효충군사학과",
+   "field": "군사",
+   "track": "정원내 전체",
+   "quota": 35,
+   "applied": 118,
+   "locked": true,
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "prior": 2.8,
+   "priorQuota": 35,
+   "priorApplied": 98,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "km",
+   "dept": "국방드론봇시스템과",
+   "field": "국방안전",
+   "track": "정원내 전체",
+   "quota": 25,
+   "applied": 124,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false
+  },
+  {
+   "school": "km",
+   "dept": "사이버·정보시스템학과",
+   "field": "국방안전",
+   "track": "정원내 전체",
+   "quota": 15,
+   "applied": 68,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 3.46,
+   "priorQuota": 13,
+   "priorApplied": 45,
+   "priorUrl": null
+  },
+  {
+   "school": "km",
+   "dept": "지능형소프트웨어과",
+   "field": "국방안전",
+   "track": "정원내 전체",
+   "quota": 35,
+   "applied": 101,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 3.89,
+   "priorQuota": 35,
+   "priorApplied": 136,
+   "priorUrl": null
+  },
+  {
+   "school": "gt",
+   "dept": "국방군사학과",
+   "field": "군사",
+   "track": "정원내 일반고(학생부)",
+   "quota": 16,
+   "applied": 184,
+   "prior": 8.31,
+   "priorQuota": 16,
+   "priorApplied": 133,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5KMCZXJTlKZkNDYUxKLWZUZg==",
+   "comparable": true
+  },
+  {
+   "school": "ys",
+   "dept": "국방군사학과",
+   "field": "군사",
+   "track": "정원내 특별전형-일반고",
+   "quota": 18,
+   "applied": 93,
+   "prior": 3.74,
+   "priorQuota": 19,
+   "priorApplied": 71,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5Kclc6JldhYGJKZkNDYUxKLWZUZg==",
+   "comparable": true
+  }
+ ],
+ "live": [],
+ "finalized": [
+  "km",
+  "gt"
+ ],
+ "checkedAt": null,
+ "baseline": {
+  "school": "km",
+  "dept": "효충군사학과"
+ }
+}

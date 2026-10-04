@@ -1,0 +1,194 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120531.html",
+   "time": "2026-10-01 최종 마감",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대"
+  },
+  {
+   "id": "gb",
+   "name": "경복대학교",
+   "region": "경기 북부",
+   "city": "남양주",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40130831.html",
+   "time": "2026-10-02 최종 마감",
+   "lat": 37.739,
+   "lon": 127.192,
+   "type": "전문대"
+  },
+  {
+   "id": "ih",
+   "name": "인하공업전문대학",
+   "region": "인천",
+   "city": "미추홀",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260551.html",
+   "time": "2026-09-30 21:00",
+   "lat": 37.448,
+   "lon": 126.657,
+   "type": "전문대"
+  },
+  {
+   "id": "je",
+   "name": "재능대학교",
+   "region": "인천",
+   "city": "동구",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41290971.html",
+   "time": "2026-10-02 최종 마감",
+   "lat": 37.477,
+   "lon": 126.649,
+   "type": "전문대"
+  },
+  {
+   "id": "mj",
+   "name": "명지전문대학",
+   "region": "서울",
+   "city": "서대문",
+   "url": "https://ratio.uwayapply.com/Sl5KTC9NSmZDQ2FMSjdmVGY=",
+   "lat": 37.584,
+   "lon": 126.925,
+   "type": "전문대"
+  },
+  {
+   "id": "os",
+   "name": "오산대학교",
+   "region": "경기 남부",
+   "city": "오산",
+   "url": "https://ratio.uwayapply.com/Sl5KVzgmYUpmQ0NhTEo3ZlRm",
+   "lat": 37.148,
+   "lon": 127.067,
+   "type": "전문대"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "국방드론봇시스템과",
+   "field": "국방드론봇",
+   "track": "정원내 전체",
+   "quota": 25,
+   "applied": 124,
+   "locked": true,
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "comparable": false
+  },
+  {
+   "school": "km",
+   "dept": "사이버·정보시스템학과",
+   "field": "국방안전",
+   "track": "정원내 전체",
+   "quota": 15,
+   "applied": 68,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 3.46,
+   "priorQuota": 13,
+   "priorApplied": 45,
+   "priorUrl": null
+  },
+  {
+   "school": "km",
+   "dept": "지능형소프트웨어과",
+   "field": "국방안전",
+   "track": "정원내 전체",
+   "quota": 35,
+   "applied": 101,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 3.89,
+   "priorQuota": 35,
+   "priorApplied": 136,
+   "priorUrl": null
+  },
+  {
+   "school": "km",
+   "dept": "효충군사학과",
+   "field": "국방안전",
+   "track": "정원내 전체",
+   "quota": 35,
+   "applied": 118,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 2.8,
+   "priorQuota": 35,
+   "priorApplied": 98,
+   "priorUrl": null
+  },
+  {
+   "school": "gb",
+   "dept": "드론건설환경과",
+   "field": "국방드론봇",
+   "track": "일반고",
+   "quota": 14,
+   "applied": 106,
+   "comparable": false
+  },
+  {
+   "school": "ih",
+   "dept": "로봇자동화공학과",
+   "field": "국방드론봇",
+   "track": "일반고",
+   "quota": 47,
+   "applied": 292,
+   "prior": 3.82,
+   "priorQuota": 45,
+   "priorApplied": 172,
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260461.html",
+   "comparable": true
+  },
+  {
+   "school": "je",
+   "dept": "드론영상과",
+   "field": "국방드론봇",
+   "track": "일반고전형",
+   "quota": 15,
+   "applied": 134,
+   "prior": 5.87,
+   "priorQuota": 15,
+   "priorApplied": 88,
+   "priorUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41290841.html",
+   "comparable": true
+  },
+  {
+   "school": "mj",
+   "dept": "AI드론공학과",
+   "field": "국방드론봇",
+   "track": "정원내 특별전형(일반고)",
+   "quota": 25,
+   "applied": 252,
+   "comparable": false
+  },
+  {
+   "school": "os",
+   "dept": "전투드론과",
+   "field": "국방드론봇",
+   "track": "정원내 일반전형",
+   "quota": 24,
+   "applied": 156,
+   "prior": 6.33,
+   "priorQuota": 24,
+   "priorApplied": 152,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5KVzgmYUpmQ0NhTEotZlRm",
+   "comparable": true
+  }
+ ],
+ "live": [],
+ "finalized": [
+  "km",
+  "gb",
+  "je"
+ ],
+ "checkedAt": null,
+ "baseline": {
+  "school": "km",
+  "dept": "국방드론봇시스템과"
+ }
+}

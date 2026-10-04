@@ -1,0 +1,117 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120531.html",
+   "time": "2026-10-01 최종 마감",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대"
+  },
+  {
+   "id": "gb",
+   "name": "경복대학교",
+   "region": "경기 북부",
+   "city": "남양주",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40130831.html",
+   "time": "2026-10-02 최종 마감",
+   "lat": 37.739,
+   "lon": 127.192,
+   "type": "전문대"
+  },
+  {
+   "id": "ds",
+   "name": "동서울대학교",
+   "region": "경기 남부",
+   "city": "성남",
+   "url": "https://ratio.uwayapply.com/Sl5KOlZKZkNDYUxKN2ZUZg==",
+   "time": "2026-10-02 최종 마감",
+   "lat": 37.459,
+   "lon": 127.162,
+   "type": "전문대"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "실용음악과",
+   "field": "실용음악",
+   "track": "정원내 전체",
+   "quota": 15,
+   "applied": 108,
+   "locked": true,
+   "note": "학교 집계 최종값(2027·2026 학과 전체, 10.1 24시)",
+   "prior": 3.73,
+   "priorQuota": 15,
+   "priorApplied": 56,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "km",
+   "dept": "미디어영상과",
+   "field": "인플루언서 재양성",
+   "track": "정원내 전체",
+   "quota": 36,
+   "applied": 345,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 8.45,
+   "priorQuota": 38,
+   "priorApplied": 321,
+   "priorUrl": null
+  },
+  {
+   "school": "km",
+   "dept": "연기예술과",
+   "field": "인플루언서 재양성",
+   "track": "정원내 전체",
+   "quota": 13,
+   "applied": 68,
+   "locked": true,
+   "note": "학교 집계 최종값",
+   "comparable": false,
+   "prior": 2.53,
+   "priorQuota": 15,
+   "priorApplied": 38,
+   "priorUrl": null
+  },
+  {
+   "school": "gb",
+   "dept": "실용음악과(보컬)",
+   "field": "실용음악",
+   "track": "일반전형",
+   "quota": 20,
+   "applied": 48,
+   "comparable": false
+  },
+  {
+   "school": "ds",
+   "dept": "실용음악학과",
+   "field": "실용음악",
+   "track": "정원내 일반전형",
+   "quota": 10,
+   "applied": 257,
+   "prior": 6.38,
+   "priorQuota": 8,
+   "priorApplied": 51,
+   "priorUrl": "https://ratio.uwayapply.com/Sl5KOlZKZkNDYUxKLWZUZg==",
+   "comparable": true
+  }
+ ],
+ "live": [],
+ "finalized": [
+  "km",
+  "gb",
+  "ds"
+ ],
+ "checkedAt": null,
+ "baseline": {
+  "school": "km",
+  "dept": "실용음악과"
+ }
+}

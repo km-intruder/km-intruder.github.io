@@ -1,0 +1,14 @@
+{
+ "id": "defense-drone",
+ "name": "국방드론봇시스템과",
+ "shortName": "국방드론봇",
+ "fieldLabel": "드론·로봇·국방 계열",
+ "fields": [
+  "국방드론봇"
+ ],
+ "familyLabel": "국방안전 계열",
+ "renameNote": "",
+ "industryLabel": "",
+ "curriculum": null,
+ "curriculumNote": "교육과정 비교는 아직 준비되지 않았습니다. 요청하시면 비교 학교의 공식 학과 자료를 조사해 추가합니다."
+}

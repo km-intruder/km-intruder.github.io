@@ -206,7 +206,7 @@ function diagnosis() {
   const gap = sChg - mChg;
   const lead = !decline ? `경민대 지원자는 ${pct(bChg)} 늘었습니다. ` : causes.length ? `지원 감소의 일부는 ${causes.join('과 ')}로 설명됩니다. ` : '';
   const body = gap < -5
-    ? `${causes.length ? '그래도 ' : ''}경민대 ${family} 합계(${pct(sChg)})${causes.length ? '조차' : '도'} 비교 시장(${pct(mChg)})보다 <b class="alert">${Math.abs(gap).toFixed(1)}%p 낮아</b>, 상대적 경쟁력 약화는 실제로 있다고 보는 것이 타당합니다.`
+    ? `${causes.length ? '그래도 ' : ''}경민대 ${family} 합계(${pct(sChg)})${causes.length ? '조차' : decline ? '도' : '는'} 비교 시장(${pct(mChg)})보다 <b class="alert">${Math.abs(gap).toFixed(1)}%p 낮아</b>, 상대적 경쟁력 약화는 실제로 있다고 보는 것이 타당합니다.`
     : gap <= 5
       ? `경민대 ${family} 합계(${pct(sChg)})는 비교 시장(${pct(mChg)})과 비슷해, 이 자료만으로 경쟁력 약화를 단정하기는 어렵습니다.`
       : `경민대 ${family} 합계(${pct(sChg)})는 비교 시장(${pct(mChg)})보다 높아, 계열 전체의 경쟁력은 유지되고 있습니다.`;
@@ -301,7 +301,8 @@ function renderRows() {
 }
 
 function renderChanges() {
-  const list = [R.base, ...R.comparable].sort((x, y) => y.change - x.change);
+  const list = [...(R.base.change != null ? [R.base] : []), ...R.comparable].sort((x, y) => y.change - x.change);
+  if (!list.length) { el('changes').innerHTML = '<tr><td colspan="6" class="empty">2026학년도와 직접 비교할 수 있는 모집단위가 없습니다.</td></tr>'; return; }
   const max = Math.max(...list.map(r => Math.abs(r.change)), 1);
   el('changes').innerHTML = list.map(r => {
     const w = Math.abs(r.change) / max * 50;
