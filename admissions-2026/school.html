@@ -320,7 +320,7 @@ function renderStrategyChart(items) {
     const cx = X(p.I), cy = Y(Math.max(ys[0], Math.min(ys[1], p.S))), up = p.S >= 0, col = `var(${up ? '--viz-up' : '--viz-down'})`;
     g += few ? `<circle cx="${cx}" cy="${cy}" r="5" fill="var(--paper)" stroke="${col}" stroke-width="2"/>` : `<circle cx="${cx}" cy="${cy}" r="5" fill="${col}" stroke="var(--paper)" stroke-width="2"/>`;
     g += `<text x="${cx + (p.side === 'start' ? 9 : -9)}" y="${cy + 4 + p.dy}" text-anchor="${p.side}" class="lbl" font-size="11">${esc(p.d.name.replace(/학과$|과$/, ''))}${out ? ` (${signed(p.S, 0)}%p)` : ''}</text>`;
-    g += `<circle class="hit" cx="${cx}" cy="${cy}" r="11" data-tip="${esc(`<b>${esc(p.d.name)}</b> · ${RECO[p.key].label}<br>산업 ${esc(p.g.name)} ${p.I > 0 ? '+' : ''}${p.I}%/년<br>경민대 ${pct(p.m.kc)} · 비교 학교 ${pct(p.m.mc)} → 점유 ${signed(p.S, 1)}%p`)}"/>`;
+    g += `<circle class="hit" cx="${cx}" cy="${cy}" r="11" data-tip="${esc(`<b>${esc(p.d.name)}</b> · ${RECO[p.key].label}<br>산업 ${esc(p.g.name)} ${p.I > 0 ? '+' : ''}${p.I}%/년<br>${IND.extra?.[p.d.id] ? esc(IND.extra[p.d.id].items[0].text) + '<br>' : ''}경민대 ${pct(p.m.kc)} · 비교 학교 ${pct(p.m.mc)} → 점유 ${signed(p.S, 1)}%p`)}"/>`;
   });
   box.innerHTML = `<svg width="${W}" height="${H}" role="img" aria-label="산업 수요와 경민대 점유 변화로 본 학과 위치">${g}</svg>`;
   bindTips(box);
@@ -339,11 +339,11 @@ function renderStrategy(IND) {
   el('strategyTable').innerHTML = items.map(x => `<tr>
     <td><span class="reco ${RECO[x.key].cls}">${RECO[x.key].label}</span></td>
     <td><b>${hasDetail(x.d) ? `<a href="${Admission.deptHref(x.d.id)}">${esc(x.d.name)}</a>` : esc(x.d.name)}</b><div class="muted">${esc(x.d.group)}</div></td>
-    <td>${x.g ? `${esc(x.g.name)}<div class="muted">${num(x.g.y2024)} → ${num(x.g.y2034)}천 명 · <b class="${x.I < 0 ? 'alert' : ''}">${x.I > 0 ? '+' : ''}${x.I}%/년</b></div>` : '<span class="muted">해당 없음</span>'}</td>
+    <td>${x.g ? `${esc(x.g.name)}<div class="muted">${num(x.g.y2024)} → ${num(x.g.y2034)}천 명 · <b class="${x.I < 0 ? 'alert' : ''}">${x.I > 0 ? '+' : ''}${x.I}%/년</b></div>` : '<span class="muted">해당 없음</span>'}${IND.extra?.[x.d.id] ? `<div style="margin-top:6px"><b>${esc(IND.extra[x.d.id].label)}</b>${IND.extra[x.d.id].items.map(t => `<div class="muted">${esc(t.text)} <a class="src" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">출처</a></div>`).join('')}</div>` : ''}</td>
     <td class="n">${x.m?.mc != null ? pct(x.m.mc) : '—'}${x.m && x.m.n <= 2 ? '<div class="muted">비교 학교 적음</div>' : ''}</td>
     <td class="n ${x.m?.kc < 0 ? 'alert' : ''}">${x.m?.kc != null ? pct(x.m.kc) : '신설'}</td>
     <td class="n"><b class="${x.S < 0 ? 'alert' : ''}">${x.S != null ? signed(x.S, 1) + '%p' : '—'}</b></td>
-    <td style="font-size:13px">${RECO[x.key].text}</td></tr>`).join('');
+    <td style="font-size:13px">${IND.extra?.[x.d.id]?.advice ? esc(IND.extra[x.d.id].advice) : RECO[x.key].text}</td></tr>`).join('');
   el('industrySource').innerHTML = `산업 수요: <a class="src" href="${esc(IND.url)}" target="_blank" rel="noopener noreferrer">${esc(IND.title)}</a> — ${esc(IND.source)}. 전 직업 평균은 ${IND.total.rate.toFixed(1)}%/년(${num(IND.total.y2024)} → ${num(IND.total.y2034)}천 명)입니다.`;
   el('industryNotes').innerHTML = Object.entries(IND.notes).map(([id, t]) => `<p>${esc((K.depts.find(d => d.id === id) || {}).name || id)}: ${esc(t)}</p>`).join('');
 }
