@@ -278,7 +278,7 @@ function renderOverview() {
     else g += `<text x="${x1 - 6}" y="${y + 4}" text-anchor="end" fill="#fff" style="fill:#fff">${pct(x.k)}</text>`;
     g += `<rect class="hit" x="0" y="${y - row / 2}" width="${W}" height="${row}" data-tip="${esc(tipText(x.d, x.m))}"/>`;
   });
-  box.innerHTML = `<svg width="${W}" height="${H}" role="img" aria-label="학과별 지원자 증감률과 비교 학교 증감률">${g}</svg>`;
+  box.innerHTML = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="학과별 지원자 증감률과 비교 학교 증감률">${g}</svg>`;
   bindTips(box);
   el('overviewTable').innerHTML = [...list].reverse().map(x => `<tr><td>${esc(x.d.name)}</td><td class="n ${x.k < 0 ? 'alert' : ''}">${pct(x.k)}</td><td class="n">${x.m?.mc != null ? pct(x.m.mc) : '—'}</td><td class="n">${x.m?.mc != null ? signed(x.k - x.m.mc, 1) + '%p' : '—'}</td></tr>`).join('');
 }
@@ -344,7 +344,7 @@ function renderStrategyChart(items) {
     g += `<text x="${cx + (p.side === 'start' ? 9 : -9)}" y="${cy + 4 + p.dy}" text-anchor="${p.side}" class="lbl" font-size="11">${esc(p.d.name.replace(/학과$|과$/, ''))}${out ? ` (${signed(p.S, 0)}%p)` : ''}</text>`;
     g += `<circle class="hit" cx="${cx}" cy="${cy}" r="11" data-tip="${esc(`<b>${esc(p.d.name)}</b> · ${RECO[p.key].label}<br>산업 ${esc(p.g.name)} ${p.I > 0 ? '+' : ''}${p.I}%/년<br>${IND.extra?.[p.d.id] ? esc(IND.extra[p.d.id].items[0].text) + '<br>' : ''}경민대 ${pct(p.m.kc)} · 비교 학교 ${pct(p.m.mc)} → 점유 ${signed(p.S, 1)}%p`)}"/>`;
   });
-  box.innerHTML = `<svg width="${W}" height="${H}" role="img" aria-label="산업 수요와 경민대 점유 변화로 본 학과 위치">${g}</svg>`;
+  box.innerHTML = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="산업 수요와 경민대 점유 변화로 본 학과 위치">${g}</svg>`;
   bindTips(box);
 }
 function renderStrategy(IND) {

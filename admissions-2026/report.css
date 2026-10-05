@@ -186,11 +186,20 @@ footer.colophon { margin-top: 48px; border-top: 1px solid var(--rule); padding-t
 }
 @media print {
   @page { size: A4 landscape; margin: 10mm; }
-  .tools, .tabs, .filters, .leaflet-control-container { display: none !important; }
+  /* 서비스 이름(경로 표시·바닥글)과 조작 요소는 인쇄하지 않는다 */
+  .crumb, footer.colophon, .tools, .tabs, .filters, .leaflet-control-container, #gate-lock { display: none !important; }
   details.notes { display: block; }
   details.notes > *:not(summary) { display: block; }
-  section.block { break-inside: avoid-page; }
-  tr { break-inside: avoid; }
+  /* 섹션을 통째로 넘기지 않고 이어서 채운다 — 작은 단위만 쪼개지 않게 */
+  section.block { break-inside: auto; margin-top: 18px; }
+  .block-head, .baseline-head, h2, h3 { break-after: avoid; }
+  tr, .stat, .verdict, .findings li, svg, figure { break-inside: avoid; }
+  .masthead { margin-bottom: 8px; }
+  /* 높은 그래프는 쪽에 맞게 줄여 통째로 다음 쪽으로 밀리지 않게 */
+  .chart svg { width: 100%; height: auto; max-height: 95mm; }
+  /* overflow가 걸린 상자와 details는 크롬에서 쪽 나눔이 안 되므로 인쇄 때는 푼다 */
+  .chart, .table-wrap { overflow: visible !important; }
+  details.fold { display: block; }
   td, th { font-size: 10px; padding: 5px; }
   #map { height: 320px; }
 }
