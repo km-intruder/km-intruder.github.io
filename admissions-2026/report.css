@@ -194,6 +194,8 @@ footer.colophon { margin-top: 48px; border-top: 1px solid var(--rule); padding-t
   section.block { break-inside: auto; margin-top: 18px; }
   .block-head, .baseline-head, h2, h3 { break-after: avoid; }
   tr, .stat, .verdict, .findings li, svg, figure { break-inside: avoid; }
+  /* 표 머리글을 쪽마다 반복하면 쪽 끝에 빈칸이 생겨 반복하지 않는다 */
+  thead { display: table-row-group; }
   .masthead { margin-bottom: 8px; }
   /* 높은 그래프는 쪽에 맞게 줄여 통째로 다음 쪽으로 밀리지 않게 */
   .chart svg { width: 100%; height: auto; max-height: 95mm; }
