@@ -4,7 +4,7 @@
 
 | 탭 | 범위 | 폴더 (admissions-2026/ 기준) | 주기 | 파일·slug | 다루는 기간 |
 |---|---|---|---|---|---|
-| 학교 소식 | 학교 전체 | `posts/kyungmin/` | 매일 | `YYYY-MM-DD` (게시일) | 전날 하루 |
+| 학교 소식 | 학교 전체 | `posts/kyungmin/` | 매일 | `YYYY-MM-DD` (게시일) | 최근 7일 중 아직 올리지 않은 기사 |
 | 전문대 동향 | 학교 전체 | `posts/colleges/` | 매주 월요일 | `YYYY-MM-DD` (월요일 날짜) | 지난주 월~일, 수도권 위주 |
 | 산업 현황 | 지능형소프트웨어과만 | `depts/software/posts/industry/` | 매주 월요일 | `YYYY-MM-DD` (월요일 날짜) | 지난주 월~일 |
 
