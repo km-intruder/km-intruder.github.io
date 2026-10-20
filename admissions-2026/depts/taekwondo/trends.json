@@ -12,7 +12,7 @@
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
   "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
-  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료, 그리고 전문대학포털 대학별 전형방법(전형별 모집인원) × 전문대학포털(한국전문대학교육협의회) 전년도 입시결과의 전형별 경쟁률로 계산한 지원자 (진학사에 공개된 해는 공식값)"
  },
  "units": [
   {
@@ -381,7 +381,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 2.9
+     "mainRate": 2.9,
+     "quota": 18,
+     "applied": 54,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 13×2.9, 특성화고 5×3.2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "경찰경호과",
@@ -393,7 +400,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 1.8
+     "mainRate": 1.8,
+     "quota": 18,
+     "applied": 39,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 13×1.8, 특성화고 5×3.2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "경찰경호과",
@@ -405,7 +419,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 2.4
+     "mainRate": 2.4,
+     "quota": 18,
+     "applied": 50,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 13×2.4, 특성화고 5×3.8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 18,
@@ -437,7 +458,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 2.81
+     "mainRate": 2.81,
+     "quota": 40,
+     "applied": 127,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 27×2.81, 특성화고 13×3.92 (경쟁률 없는 전형 제외: 특기자 45명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "경찰경호행정과",
@@ -449,7 +477,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 6.0
+     "mainRate": 6.0,
+     "quota": 49,
+     "applied": 179,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 27×1.74, 일반고 14×6, 특성화고 8×6 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "경찰경호행정과",
@@ -461,7 +496,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.53
+     "mainRate": 4.53,
+     "quota": 49,
+     "applied": 138,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 28×1.36, 일반고 15×4.53, 특성화고 6×5.33 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 51,
@@ -494,9 +536,13 @@
      },
      "mainTrack": "일반전형",
      "mainRate": 1.7,
-     "quota": 71,
-     "applied": 121,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 71 × 경쟁률 1.7"
+     "quota": 65,
+     "applied": 110,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 65×1.7 (경쟁률 없는 전형 제외: 특기자 6명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "경찰경호학과",
@@ -509,9 +555,13 @@
      },
      "mainTrack": "일반전형",
      "mainRate": 2.7,
-     "quota": 34,
-     "applied": 92,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 34 × 경쟁률 2.7"
+     "quota": 28,
+     "applied": 76,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 28×2.7 (경쟁률 없는 전형 제외: 특기자 6명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "경찰경호학과",
@@ -526,22 +576,18 @@
      "mainRate": 3.2,
      "quota": 30,
      "applied": 96,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 30 × 경쟁률 3.2"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 30×3.2 (경쟁률 없는 전형 제외: 특기자 7명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
-     "name": "경찰경호학과",
-     "unofficial": true,
-     "tracks": "학과 모집 31명 · 일반전형 4.8",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
-     "mainTrack": "일반전형",
-     "mainRate": 4.8,
      "quota": 31,
-     "applied": 149,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 31 × 경쟁률 4.8"
+     "applied": 128,
+     "name": "경찰경호학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.84
     },
     "2027": {
      "quota": 28,
@@ -606,6 +652,27 @@
    "scope": "전국",
    "unofficial": false,
    "series": {
+    "2023": {
+     "quota": 70,
+     "applied": 155,
+     "name": "경찰경호학부",
+     "mainTrack": "일반전형",
+     "mainRate": 2.51
+    },
+    "2024": {
+     "quota": 76,
+     "applied": 142,
+     "name": "경찰경호학부",
+     "mainTrack": "일반전형",
+     "mainRate": 2.25
+    },
+    "2025": {
+     "quota": 111,
+     "applied": 133,
+     "name": "경찰경호학부",
+     "mainTrack": "일반전형",
+     "mainRate": 1.6
+    },
     "2026": {
      "quota": 56,
      "applied": 161,
@@ -649,7 +716,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 3.75
+     "mainRate": 3.75,
+     "quota": 44,
+     "applied": 79,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 4×3.75, 대학자체기준 35×1.51, 고른 기회1 5×2.2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 44,
@@ -672,16 +746,11 @@
    "unofficial": true,
    "series": {
     "2023": {
-     "name": "스포츠·경호과",
-     "unofficial": true,
-     "tracks": "학과 모집 32명 · 일반전형 3.9 · 대학자체 1",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
+     "quota": 70,
+     "applied": 150,
+     "name": "스포츠.경호과",
      "mainTrack": "일반전형",
-     "mainRate": 3.9
+     "mainRate": 3.56
     },
     "2024": {
      "name": "스포츠·경호과",
@@ -693,7 +762,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 8.5
+     "mainRate": 8.5,
+     "quota": 55,
+     "applied": 211,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 10×8.5, 대학자체기준 45×2.8 (경쟁률 없는 전형 제외: 추천자 8명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "스포츠·경호과",
@@ -705,19 +781,21 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 4.9
+     "mainRate": 4.9,
+     "quota": 50,
+     "applied": 139,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 17×4.9, 대학자체기준 33×1.7 (경쟁률 없는 전형 제외: 추천자 3명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
+     "quota": 53,
+     "applied": 147,
      "name": "스포츠·경호과",
-     "unofficial": true,
-     "tracks": "학과 모집 53명 · 일반전형 6.5 · 대학자체 1",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "mainTrack": "일반전형",
-     "mainRate": 6.5
+     "mainRate": 6.53
     },
     "2027": {
      "quota": 56,
@@ -755,7 +833,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 0.2
+     "mainRate": 0.2,
+     "quota": 29,
+     "applied": 50,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 11×4.4, 일반고 9×0.2, 특성화고 9×0 (경쟁률 없는 전형 제외: 추천자 1명, 특기자 1명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "태권도체육학과",
@@ -767,7 +852,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 1.0
+     "mainRate": 1.0,
+     "quota": 29,
+     "applied": 23,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 11×1.3, 일반고 9×1, 특성화고 9×0 (경쟁률 없는 전형 제외: 추천자 1명, 특기자 1명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "태권도체육학과",
@@ -779,7 +871,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 1.8
+     "mainRate": 1.8,
+     "quota": 26,
+     "applied": 54,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 10×2.8, 일반고 8×1.8, 특성화고 8×1.4 (경쟁률 없는 전형 제외: 추천자 1명, 특기자 1명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "quota": 28,

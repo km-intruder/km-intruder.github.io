@@ -9,7 +9,8 @@ admissions-2026/depts/<학과>/trends.json 을 학과마다 만든다.
 - 주 전형 경쟁률(일반고, 없으면 일반전형)을 해마다 따로 둔다 — 학교마다 전형 구성이 달라도 같은 기준으로 비교하려고.
 - 진학사 과거값이 없는 학교(비공식 자료 학교 등)는 national-extra.json 의 2027·2026 값과
   전문대학포털(전문대교협) 전년도 입시결과(학과 모집인원 + 전형별 경쟁률)로 채우고 해마다 unofficial 로 표시한다.
-  포털은 전형별 모집인원이 없어 정원내 전형이 하나뿐인 해만 지원자를 계산하고, 그 밖의 해는 주 전형 경쟁률만 둔다.
+  진학사 과거값이 있는 해(공식)를 먼저 쓰고, 없는 해는 포털 '대학별 전형방법'의 전형별 모집인원(입학전형 시행계획)과
+  '전년도 입시결과'의 전형별 경쟁률을 곱해 지원자를 계산한다(정원내 전형 합계, 주·야 구분).
 
     python scripts/build_trends.py
 """
@@ -30,6 +31,10 @@ PAST_YEARS = YEARS[:-1]
 PAST = "https://apply.jinhakapply.com/SmartRatio/PastRatioUniv?univid={}&year={}&category=1"
 PORTAL = "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
 PORTAL_TITLE = "전문대학포털(한국전문대학교육협의회) 전년도 입시결과"
+PLAN = "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+PLAN_TITLE = "전문대학포털 대학별 전형방법(전형별 모집인원)"
+PLAN_ROW = re.compile(r"<tr>\s*<td>([^<]*)</td>\s*<td><a[^>]*fn_goLink[^>]*>([^<]*)</a></td>\s*<td>\s*([^<]*?)\s*</td>\s*<td>\s*"
+                      r"<span[^>]*>([^<]*)</span>\s*</td>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>")
 GENERAL_HS = r"일반고|일반계고|인문계고"
 GENERAL = r"일반전형|^일반$|일반_일반"
 # 해마다 이름이 바뀐 모집단위: (학교 이름, 현재 학과명) → 예전 학과명들
@@ -43,6 +48,8 @@ ALIAS = {
     ("경민대학교", "연기예술과"): ["공연예술과"],
     ("경민대학교", "자유전공학과"): ["자율전공학부"],
     ("경민대학교", "의료미용과"): ["뷰티케어과"],
+    ("서영대학교(파주)", "조리제과제빵과(주간)"): ["호텔외식조리과"],
+    ("서영대학교(파주)", "조리제과제빵과(야간)"): ["호텔외식조리과(야)"],
 }
 
 
@@ -101,8 +108,11 @@ def main_rate_text(track, quota, applied, derived="", note=""):
 def total(rows, names):
     """한 해 원문 행 [(학과명, 전형, 모집, 지원)] 에서 names 에 맞는 정원내 합계와 주 전형 경쟁률."""
     want = {base_name(n) for n in names}
+    # 주간·야간을 따로 모집하는 학과: 이름에 주/야가 있으면 그 과정 행만
+    shift = "야" if re.search(r"\(야|야간", names[0]) else "주" if re.search(r"\(주|주간", names[0]) else None
     rows = [(label, mq, ma, base_name(label), track) for label, track, mq, ma in rows
-            if mq and not re.search(N.SUMMARY, label) and not N.outside(track) and not N.outside(label)]
+            if mq and not re.search(N.SUMMARY, label) and not N.outside(track) and not N.outside(label)
+            and (shift != "야" or re.search(r"\(야|야간", label)) and (shift != "주" or not re.search(r"\(야|야간", label))]
     # 같은 이름이 있으면 그것만, 없을 때만 이름 일부 일치(개명·학부 머리말)를 쓴다
     picked = [r for r in rows if r[3] in want] or \
              [r for r in rows if any(w and len(w) >= 3 and (w in r[3] or r[3] in w) for w in want)]
@@ -133,7 +143,7 @@ class Portal:
         self.op.open(PORTAL, timeout=40).read()
 
     def rows(self, school, year):
-        """[(지역, 학과, 모집시기별 입학정원, 전형구분, 경쟁률)] — 수시 1차만."""
+        """[(지역, 학과, 모집시기별 입학정원, 전형명, 경쟁률, 주/야)] — 수시 1차만."""
         name, out, page = school.split("(")[0], [], 1
         while True:
             data = urllib.parse.urlencode({"cate": "1", "univName": name, "sel_1": str(year), "sel_2": "", "sel_3": "",
@@ -154,16 +164,38 @@ class Portal:
             if r[1] != name or not r[2].startswith("수시1"):
                 continue
             try:
-                res.append((r[0], r[3], int(r[4] or 0), r[7] or r[6], float(r[10])))
+                res.append((r[0], r[3], int(r[4] or 0), r[7] or r[6], float(r[10]), "야" if "야" in r[5] else "주"))
             except ValueError:
                 continue
         return res
 
 
-def portal_year(rows, province, names):
+    def plan(self, school, year):
+        """[(지역, 전형구분, 전형명, 학과, 주간 인원, 야간 인원)] — 수시 1차 입학전형 시행계획."""
+        name, out, page = school.split("(")[0], [], 1
+        while True:
+            data = urllib.parse.urlencode({"cate": "1", "univName": name, "sel_1": str(year), "sel_2": "11", "sel_3": "", "sel_4": "",
+                                           "pageUnit": "100", "pageIndex": str(page), "codeyear": str(year), "searchY": "Y",
+                                           "schOrderField": "korname", "schOrderBy": "asc"}).encode()
+            t = self.op.open(urllib.request.Request(PLAN, data=data), timeout=60).read().decode("utf-8", "replace")
+            rows = PLAN_ROW.findall(t)
+            out += rows
+            if len(rows) < 100:
+                break
+            page += 1
+        num = lambda s: int(s) if s.strip().isdigit() else 0
+        return [(r[0], r[2], r[3], r[4], num(r[7]), num(r[8])) for r in out if r[1] == name and r[6].startswith("수시1")]
+
+
+def track_key(s):
+    return re.sub(r"[\s\d·Ⅰ-Ⅹ()]", "", s).replace("기준", "")
+
+
+def portal_year(rows, province, names, plan=()):
     """포털 한 해 행에서 모집단위 값: 주 전형 경쟁률, 정원내 전형이 하나뿐이면 지원자(모집인원 × 경쟁률)."""
     want = {base_name(n) for n in names}
-    rows = [r for r in rows if (r[0] in province or province in r[0]) and not N.outside(r[3])]
+    shift = "야" if re.search(r"\(야|야간", names[0]) else "주" if re.search(r"\(주|주간", names[0]) else None
+    rows = [r for r in rows if (r[0] in province or province in r[0]) and not N.outside(r[3]) and (not shift or r[5] == shift)]
     picked = [r for r in rows if base_name(r[1]) in want] or \
              [r for r in rows if any(w and len(w) >= 3 and (w in base_name(r[1]) or base_name(r[1]) in w) for w in want)]
     if not picked or (len({base_name(r[1]) for r in picked}) > 1 and not any(base_name(r[1]) in want for r in picked)):
@@ -180,7 +212,27 @@ def portal_year(rows, province, names):
         if hit:
             out.update(mainTrack=mt, mainRate=hit[0])
             break
-    if len(tracks) == 1 and seats:
+    # 전형별 모집인원(시행계획) × 전형별 경쟁률(입시결과) → 정원내 지원자 합계
+    unit = base_name(picked[0][1])
+    prow = [p for p in plan if (p[0] in province or province in p[0]) and base_name(p[3]) == unit and not N.outside(p[2])]
+    parts, miss = [], []
+    for p in prow:
+        seat = (p[5] if shift == "야" else p[4] if shift == "주" else p[4] + p[5])
+        if not seat:
+            continue
+        rate = next((v for k, v in tracks.items() if track_key(k) and (track_key(k).startswith(track_key(p[2])) or track_key(p[2]).startswith(track_key(k)))), None)
+        if rate is None:
+            miss.append(f"{p[2]} {seat}명")
+            continue
+        parts.append((p[2], seat, rate))
+    if parts:
+        q = sum(s for _, s, _ in parts)
+        out.update(quota=q, applied=round(sum(s * r for _, s, r in parts)),
+                   derived="지원자 = 전형별 모집인원 × 전형별 경쟁률: " + ", ".join(f"{k} {s}×{r:g}" for k, s, r in parts)
+                   + (f" (경쟁률 없는 전형 제외: {', '.join(miss)})" if miss else "")
+                   + " — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+                   planSource={"title": PLAN_TITLE, "url": PLAN})
+    elif len(tracks) == 1 and seats:
         rate = next(iter(tracks.values()))
         out.update(quota=seats, applied=round(seats * rate),
                    derived=f"정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 {seats} × 경쟁률 {rate:g}")
@@ -202,7 +254,7 @@ def extra_units(dept, extra, units):
     return out
 
 
-def extra_series(u, prows):
+def extra_series(u, prows, plans, past, cs):
     x = u["extra"]
     s27 = {"quota": x["quota"], "applied": x["applied"], "name": x["dept"], "unofficial": not x["official"]}
     if not x["official"]:
@@ -221,8 +273,14 @@ def extra_series(u, prows):
         if mr is not None:
             s26.update(mainTrack=mt, mainRate=mr)
         series["2026"] = s26
+    names = [u["dept"]] + ALIAS.get((u["schoolName"], u["dept"]), [])
     for y in PAST_YEARS:
-        v = portal_year(prows.get((u["schoolName"], y), []), u["province"], [u["dept"]])
+        if str(y) not in series and cs.get(u["schoolName"], {}).get("uid"):
+            v = total(past.get((u["schoolName"], y), []), names)   # 진학사 과거 경쟁률이 공개된 해는 공식값
+            if v:
+                series[str(y)] = v
+                continue
+        v = portal_year(prows.get((u["schoolName"], y), []), u["province"], names, plans.get((u["schoolName"], y), []))
         if not v:
             continue
         if str(y) in series:   # 학교 자료가 있는 해는 포털에서 주 전형 경쟁률만 보탠다
@@ -276,6 +334,12 @@ def main():
     pjobs = sorted({(u["schoolName"], y) for us in plan.values() for u in us if "extra" in u for y in PAST_YEARS})
     with ThreadPoolExecutor(4) as ex:
         prows = dict(zip(pjobs, ex.map(lambda j: portal.rows(*j), pjobs)))
+        plans = dict(zip(pjobs, ex.map(lambda j: portal.plan(*j), pjobs)))
+    # 비공식 경로 학교도 진학사 과거 경쟁률이 공개된 해가 있으면 공식값으로 쓴다
+    xjobs = sorted({(u["schoolName"], y) for us in plan.values() for u in us if "extra" in u
+                    for y in PAST_YEARS if cs.get(u["schoolName"], {}).get("uid")} - set(past))
+    with ThreadPoolExecutor(12) as ex:
+        past.update(zip(xjobs, ex.map(lambda j: past_rows(cs[j[0]]["uid"], j[1]), xjobs)))
 
     for dept, units in plan.items():
         out = []
@@ -283,7 +347,7 @@ def main():
             names = [u["dept"]] + ALIAS.get((u["schoolName"], u["dept"]), [])
             series = {}
             if "extra" in u:
-                series = extra_series(u, prows)
+                series = extra_series(u, prows, plans, past, cs)
                 if len(series) < 2:
                     print(f"  [{dept}] 자료 부족으로 뺌: {u['schoolName']} {u['dept']} ({', '.join(series) or '없음'})")
                     continue
@@ -316,8 +380,8 @@ def main():
                 "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
                 "sources": {"past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
                             "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
-                            "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 " + PORTAL_TITLE
-                                          + "(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"},
+                            "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료, 그리고 " + PLAN_TITLE + " × " + PORTAL_TITLE
+                                          + "의 전형별 경쟁률로 계산한 지원자 (진학사에 공개된 해는 공식값)"},
                 "units": out}
         (N.DEPT_DIR / dept / "trends.json").write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         base = next((x for x in out if x["isBase"]), None)

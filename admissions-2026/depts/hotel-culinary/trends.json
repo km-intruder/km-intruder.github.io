@@ -12,7 +12,7 @@
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
   "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
-  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료, 그리고 전문대학포털 대학별 전형방법(전형별 모집인원) × 전문대학포털(한국전문대학교육협의회) 전년도 입시결과의 전형별 경쟁률로 계산한 지원자 (진학사에 공개된 해는 공식값)"
  },
  "units": [
   {
@@ -901,7 +901,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.8
+     "mainRate": 4.8,
+     "quota": 13,
+     "applied": 57,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 8×4.8, 특성화고 5×3.8 (경쟁률 없는 전형 제외: 대학자체기준 2명, 고른 기회 20명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "조리제빵과",
@@ -913,7 +920,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.75
+     "mainRate": 4.75,
+     "quota": 12,
+     "applied": 61,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 8×4.75, 특성화고 4×5.75 (경쟁률 없는 전형 제외: 고른 기회 25명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "조리제빵과",
@@ -925,7 +939,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 7.7
+     "mainRate": 7.7,
+     "quota": 32,
+     "applied": 93,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 6×7.7, 특성화고 4×3.5, 고른 기회 22×1.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "quota": 32,
@@ -1014,7 +1035,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 7.3
+     "mainRate": 7.3,
+     "quota": 17,
+     "applied": 100,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 8×4.5, 일반고 7×7.3, 고른 기회 2×6.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 13,
@@ -1055,7 +1083,11 @@
      "mainRate": 3.8,
      "quota": 63,
      "applied": 239,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 63 × 경쟁률 3.8"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 63×3.8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "외식조리제빵계열",
@@ -1070,7 +1102,11 @@
      "mainRate": 3.5,
      "quota": 54,
      "applied": 189,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 54 × 경쟁률 3.5"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 54×3.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "외식조리제빵계열",
@@ -1085,22 +1121,18 @@
      "mainRate": 3.1,
      "quota": 54,
      "applied": 167,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 54 × 경쟁률 3.1"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 54×3.1 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
-     "name": "외식조리제빵계열",
-     "unofficial": true,
-     "tracks": "학과 모집 54명 · 일반전형 4.5",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
-     "mainTrack": "일반전형",
-     "mainRate": 4.5,
      "quota": 54,
-     "applied": 243,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 54 × 경쟁률 4.5"
+     "applied": 245,
+     "name": "외식조리제빵계열",
+     "mainTrack": "일반전형",
+     "mainRate": 4.54
     },
     "2027": {
      "quota": 54,
@@ -1138,7 +1170,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 8.1
+     "mainRate": 8.1,
+     "quota": 22,
+     "applied": 191,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 1×18, 일반고 12×8.1, 특성화고 9×8.4 (경쟁률 없는 전형 제외: 협약을 통한 연계교육 5명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "외식조리산업과",
@@ -1150,7 +1189,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 5.6
+     "mainRate": 5.6,
+     "quota": 49,
+     "applied": 290,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 7×3.4, 일반고 24×5.6, 특성화고 18×7.3 (경쟁률 없는 전형 제외: 협약을 통한 연계교육 8명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "외식조리산업과",
@@ -1162,7 +1208,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.2
+     "mainRate": 4.2,
+     "quota": 23,
+     "applied": 129,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 2×5, 일반고 11×4.2, 특성화고 10×7.3 (경쟁률 없는 전형 제외: 협약을 통한 연계교육 4명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "quota": 27,
@@ -1214,7 +1267,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 4.42
+     "mainRate": 4.42,
+     "quota": 15,
+     "applied": 70,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 12×4.42, 특성화고 3×5.67 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "호텔조리과",
@@ -1226,7 +1286,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 10.08
+     "mainRate": 10.08,
+     "quota": 15,
+     "applied": 134,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 12×10.08, 특성화고 3×4.33 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "호텔조리과",
@@ -1238,7 +1305,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 7.47
+     "mainRate": 7.47,
+     "quota": 17,
+     "applied": 125,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 15×7.47, 특성화고 2×6.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "호텔조리과",
@@ -1250,7 +1324,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 10.1
+     "mainRate": 10.1,
+     "quota": 11,
+     "applied": 115,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 10×10.1, 특성화고 1×14 (경쟁률 없는 전형 제외: 추천자 6명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 17,
@@ -1282,7 +1363,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.5
+     "mainRate": 4.5,
+     "quota": 58,
+     "applied": 316,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 45×4.5, 특성화고 13×8.7 (경쟁률 없는 전형 제외: 추천자 9명, 특기자 45명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "외식조리제빵과",
@@ -1294,7 +1382,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.7
+     "mainRate": 4.7,
+     "quota": 67,
+     "applied": 347,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 51×4.7, 특성화고 16×6.7 (경쟁률 없는 전형 제외: 특기자 45명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "외식조리제빵과",
@@ -1306,7 +1401,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.2
+     "mainRate": 4.2,
+     "quota": 70,
+     "applied": 288,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 45×4.2, 특성화고 15×5.9, 고른 기회 10×1 (경쟁률 없는 전형 제외: 특기자 40명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "외식조리제빵과",
@@ -1318,7 +1420,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 6.0
+     "mainRate": 6.0,
+     "quota": 60,
+     "applied": 353,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 45×6, 특성화고 15×5.53 (경쟁률 없는 전형 제외: 특기자 40명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 97,
@@ -1390,7 +1499,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 3.8
+     "mainRate": 3.8,
+     "quota": 15,
+     "applied": 42,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 5×3.8, 특성화고 10×2.3 (경쟁률 없는 전형 제외: 대학자체기준 1명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 14,
@@ -1420,16 +1536,11 @@
    "unofficial": true,
    "series": {
     "2023": {
+     "quota": 51,
+     "applied": 227,
      "name": "호텔조리제빵과",
-     "unofficial": true,
-     "tracks": "학과 모집 51명 · 특성화고 4.8 · 일반고 4.3",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "mainTrack": "일반고",
-     "mainRate": 4.3
+     "mainRate": 4.2
     },
     "2024": {
      "name": "호텔조리제빵과",
@@ -1441,7 +1552,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.8
+     "mainRate": 4.8,
+     "quota": 52,
+     "applied": 257,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 28×4.8, 특성화고 24×5.1 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "호텔조리제빵과",
@@ -1453,7 +1571,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.0
+     "mainRate": 4.0,
+     "quota": 46,
+     "applied": 249,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 25×4, 특성화고 21×7.1 (경쟁률 없는 전형 제외: 협약을 통한 연계교육 2명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "호텔조리제빵과",
@@ -1465,7 +1590,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 6.4
+     "mainRate": 6.4,
+     "quota": 47,
+     "applied": 255,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 20×6.4, 특성화고 25×5, 고른 기회2 2×1 (경쟁률 없는 전형 제외: 협약을 통한 연계교육 1명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 45,
@@ -1494,6 +1626,32 @@
    "scope": "전국",
    "unofficial": true,
    "series": {
+    "2023": {
+     "quota": 29,
+     "applied": 224,
+     "name": "호텔외식조리과",
+     "mainTrack": "일반고",
+     "mainRate": 5.4
+    },
+    "2024": {
+     "name": "호텔외식조리과",
+     "unofficial": true,
+     "tracks": "학과 모집 34명 · 특성화고 18.7 · 일반고 6.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.3,
+     "quota": 25,
+     "applied": 195,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 22×6.3, 특성화고 3×18.7 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
+    },
     "2025": {
      "name": "조리제과제빵과",
      "unofficial": true,
@@ -1504,7 +1662,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 6.1
+     "mainRate": 6.1,
+     "quota": 23,
+     "applied": 176,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 20×6.1, 특성화고 3×18 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "조리제과제빵과",
@@ -1516,7 +1681,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 7.8
+     "mainRate": 7.8,
+     "quota": 20,
+     "applied": 132,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 12×7.8, 특성화고 6×5.7, 고른 기회2 2×2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 18,
@@ -1546,19 +1718,11 @@
    "unofficial": true,
    "series": {
     "2023": {
-     "name": "외식조리학부",
-     "unofficial": true,
-     "tracks": "학과 모집 105명 · 일반전형 2.6",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
-     "mainTrack": "일반전형",
-     "mainRate": 2.6,
      "quota": 105,
-     "applied": 273,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 105 × 경쟁률 2.6"
+     "applied": 272,
+     "name": "외식조리학부",
+     "mainTrack": "일반전형",
+     "mainRate": 2.59
     },
     "2024": {
      "name": "외식조리학부",
@@ -1573,7 +1737,11 @@
      "mainRate": 2.62,
      "quota": 96,
      "applied": 252,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 96 × 경쟁률 2.62"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 96×2.62 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "외식조리학부",
@@ -1588,7 +1756,11 @@
      "mainRate": 2.9,
      "quota": 96,
      "applied": 278,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 96 × 경쟁률 2.9"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 96×2.9 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "외식조리학부",
@@ -1603,7 +1775,11 @@
      "mainRate": 4.53,
      "quota": 95,
      "applied": 430,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 95 × 경쟁률 4.53"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 95×4.53 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 72,
@@ -1632,16 +1808,11 @@
    "unofficial": true,
    "series": {
     "2023": {
+     "quota": 57,
+     "applied": 145,
      "name": "일본외식조리학부",
-     "unofficial": true,
-     "tracks": "학과 모집 57명 · 일반전형 2.4 · 특성화고 5",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "mainTrack": "일반전형",
-     "mainRate": 2.4
+     "mainRate": 2.41
     },
     "2024": {
      "name": "일본외식조리학부",
@@ -1653,7 +1824,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 2.87
+     "mainRate": 2.87,
+     "quota": 57,
+     "applied": 176,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 54×2.87, 특성화고 3×7 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "일본외식조리학부",
@@ -1665,7 +1843,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 3.4
+     "mainRate": 3.4,
+     "quota": 57,
+     "applied": 201,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 54×3.4, 특성화고 3×5.7 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "일본외식조리학부",
@@ -1680,7 +1865,11 @@
      "mainRate": 3.47,
      "quota": 57,
      "applied": 198,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 57 × 경쟁률 3.47"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 57×3.47 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 47,
@@ -1709,19 +1898,11 @@
    "unofficial": false,
    "series": {
     "2023": {
-     "name": "호텔조리제빵학과",
-     "unofficial": true,
-     "tracks": "학과 모집 38명 · 일반전형 3.3",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
-     "mainTrack": "일반전형",
-     "mainRate": 3.3,
      "quota": 38,
-     "applied": 125,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 38 × 경쟁률 3.3"
+     "applied": 126,
+     "name": "호텔조리제빵학과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.32
     },
     "2024": {
      "name": "호텔조리제빵학과",
@@ -1736,7 +1917,11 @@
      "mainRate": 5.6,
      "quota": 31,
      "applied": 174,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 31 × 경쟁률 5.6"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 31×5.6 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "호텔조리제빵학과",
@@ -1751,22 +1936,18 @@
      "mainRate": 7.2,
      "quota": 31,
      "applied": 223,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 31 × 경쟁률 7.2"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 31×7.2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
+     "quota": 28,
+     "applied": 170,
      "name": "호텔조리제빵학과",
-     "unofficial": true,
-     "tracks": "학과 모집 27명 · 일반전형 6.1",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "mainTrack": "일반전형",
-     "mainRate": 6.1,
-     "quota": 27,
-     "applied": 165,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 27 × 경쟁률 6.1"
+     "mainRate": 6.07
     },
     "2027": {
      "quota": 28,

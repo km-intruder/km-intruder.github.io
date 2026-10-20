@@ -12,7 +12,7 @@
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
   "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
-  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료, 그리고 전문대학포털 대학별 전형방법(전형별 모집인원) × 전문대학포털(한국전문대학교육협의회) 전년도 입시결과의 전형별 경쟁률로 계산한 지원자 (진학사에 공개된 해는 공식값)"
  },
  "units": [
   {
@@ -606,14 +606,9 @@
    "unofficial": false,
    "series": {
     "2023": {
+     "quota": 38,
+     "applied": 57,
      "name": "레저스포츠과",
-     "unofficial": true,
-     "tracks": "학과 모집 38명 · 특성화고 2.33 · 일반고 2.5",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "mainTrack": "일반고",
      "mainRate": 2.5
     },
@@ -627,7 +622,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 2.8
+     "mainRate": 2.8,
+     "quota": 15,
+     "applied": 37,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 9×2.8, 특성화고 6×2 (경쟁률 없는 전형 제외: 특기자 23명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "레저스포츠과",
@@ -639,7 +641,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 3.6
+     "mainRate": 3.6,
+     "quota": 15,
+     "applied": 44,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 9×3.6, 특성화고 6×2 (경쟁률 없는 전형 제외: 특기자 23명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "레저스포츠과",
@@ -651,7 +660,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 6.4
+     "mainRate": 6.4,
+     "quota": 11,
+     "applied": 42,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 5×6.4, 특성화고 6×1.7 (경쟁률 없는 전형 제외: 특기자 27명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 38,
@@ -709,14 +725,9 @@
    "unofficial": true,
    "series": {
     "2023": {
+     "quota": 54,
+     "applied": 201,
      "name": "생활체육학부",
-     "unofficial": true,
-     "tracks": "학과 모집 54명 · 특성화고 5 · 대학자체 5.2 · 일반고 3.2",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "mainTrack": "일반고",
      "mainRate": 3.2
     },
@@ -730,7 +741,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 3.1
+     "mainRate": 3.1,
+     "quota": 49,
+     "applied": 150,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 29×3.1, 특성화고 20×3 (경쟁률 없는 전형 제외: 대학자체기준 10명, 특기자 4명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "생활체육학부",
@@ -742,7 +760,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 2.4
+     "mainRate": 2.4,
+     "quota": 44,
+     "applied": 131,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 26×2.4, 특성화고 18×3.8 (경쟁률 없는 전형 제외: 대학자체기준 15명, 특기자 4명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "quota": 39,
@@ -794,9 +819,13 @@
      },
      "mainTrack": "일반전형",
      "mainRate": 2.7,
-     "quota": 39,
-     "applied": 105,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 39 × 경쟁률 2.7"
+     "quota": 35,
+     "applied": 94,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 35×2.7 (경쟁률 없는 전형 제외: 특기자 4명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "스포츠건강관리학과",
@@ -809,9 +838,13 @@
      },
      "mainTrack": "일반전형",
      "mainRate": 2.9,
-     "quota": 48,
-     "applied": 139,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 48 × 경쟁률 2.9"
+     "quota": 39,
+     "applied": 113,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 39×2.9 (경쟁률 없는 전형 제외: 특기자 9명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "스포츠건강관리학과",
@@ -826,22 +859,18 @@
      "mainRate": 2.4,
      "quota": 39,
      "applied": 94,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 39 × 경쟁률 2.4"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 39×2.4 (경쟁률 없는 전형 제외: 특기자 9명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
-     "name": "스포츠건강관리학과",
-     "unofficial": true,
-     "tracks": "학과 모집 48명 · 일반전형 3.7",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
-     "mainTrack": "일반전형",
-     "mainRate": 3.7,
      "quota": 48,
-     "applied": 178,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 48 × 경쟁률 3.7"
+     "applied": 159,
+     "name": "스포츠건강관리학과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.69
     },
     "2027": {
      "quota": 48,
@@ -880,9 +909,13 @@
      },
      "mainTrack": "일반전형",
      "mainRate": 3.1,
-     "quota": 68,
-     "applied": 211,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 68 × 경쟁률 3.1"
+     "quota": 34,
+     "applied": 105,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 34×3.1 (경쟁률 없는 전형 제외: 추천자 2명, 특기자 32명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "레저스포츠과",
@@ -894,7 +927,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 2.5
+     "mainRate": 2.5,
+     "quota": 34,
+     "applied": 104,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 23×2.5, 특성화고 11×4.2 (경쟁률 없는 전형 제외: 특기자 34명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "레저스포츠과",
@@ -906,7 +946,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 2.5
+     "mainRate": 2.5,
+     "quota": 36,
+     "applied": 89,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 22×2.5, 특성화고 14×2.4 (경쟁률 없는 전형 제외: 특기자 30명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "레저스포츠과",
@@ -918,7 +965,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 3.2
+     "mainRate": 3.2,
+     "quota": 34,
+     "applied": 107,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 20×3.2, 특성화고 14×3.07 (경쟁률 없는 전형 제외: 특기자 29명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 59,
@@ -997,7 +1051,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 1.3
+     "mainRate": 1.3,
+     "quota": 13,
+     "applied": 26,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 4×1.3, 특성화고 5×2.2, 고른 기회2 4×2.5 (경쟁률 없는 전형 제외: 대학자체기준 1명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 13,
@@ -1029,14 +1090,21 @@
     "2026": {
      "name": "스포츠융합학부(스포츠지도전공)",
      "unofficial": true,
-     "tracks": "학과 모집 11명 · 일반전형 1.8 · 특성화고 3.4 · 고른기회 1 · 일반고 7.4",
+     "tracks": "학과 모집 8명 · 일반전형 1.8",
      "source": {
       "kind": "portal",
       "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
-     "mainTrack": "일반고",
-     "mainRate": 7.4
+     "mainTrack": "일반전형",
+     "mainRate": 1.8,
+     "quota": 24,
+     "applied": 43,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 24×1.8 (경쟁률 없는 전형 제외: 고른 기회2 1명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 24,
@@ -1068,50 +1136,78 @@
     "2023": {
      "name": "스포츠레저과",
      "unofficial": true,
-     "tracks": "학과 모집 92명 · 일반전형 9.8 · 특성화고 11.5 · 대학자체 2.9",
+     "tracks": "학과 모집 92명 · 일반전형 2.6 · 특성화고 3 · 대학자체 1.5",
      "source": {
       "kind": "portal",
       "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 9.8
+     "mainRate": 2.6,
+     "quota": 18,
+     "applied": 41,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 9×2.6, 대학자체기준 6×1.5, 특성화고 3×3 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2024": {
      "name": "스포츠레저과",
      "unofficial": true,
-     "tracks": "학과 모집 62명 · 일반전형 3.2 · 특성화고 4.3 · 대학자체 1.4",
+     "tracks": "학과 모집 62명 · 일반전형 1.4 · 대학자체 1.1",
      "source": {
       "kind": "portal",
       "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 3.2
+     "mainRate": 1.4,
+     "quota": 26,
+     "applied": 33,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 16×1.4, 대학자체기준 10×1.1 (경쟁률 없는 전형 제외: 특성화고 5명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "스포츠레저과",
      "unofficial": true,
-     "tracks": "학과 모집 26명 · 일반전형 16 · 특성화고 2.3 · 대학자체 1.5",
+     "tracks": "학과 모집 26명 · 일반전형 3.6 · 특성화고 2.3 · 대학자체 1.5",
      "source": {
       "kind": "portal",
       "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 16.0
+     "mainRate": 3.6,
+     "quota": 31,
+     "applied": 84,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 16×3.6, 대학자체기준 10×1.5, 특성화고 5×2.3 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "스포츠학부 스포츠레저전공",
      "unofficial": true,
-     "tracks": "학과 모집 38명 · 일반전형 5.7 · 특성화고 1 · 대학자체 2.2",
+     "tracks": "학과 모집 38명 · 일반전형 2.2 · 특성화고 2 · 대학자체 2.5",
      "source": {
       "kind": "portal",
       "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 5.7
+     "mainRate": 2.2,
+     "quota": 26,
+     "applied": 59,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 16×2.2, 대학자체기준 8×2.5, 특성화고 2×2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 46,
@@ -1141,16 +1237,11 @@
    "unofficial": false,
    "series": {
     "2023": {
+     "quota": 47,
+     "applied": 99,
      "name": "스포츠레저과",
-     "unofficial": true,
-     "tracks": "학과 모집 50명 · 일반전형 3.2 · 고른기회 3.8 · 대학자체 1.8",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "mainTrack": "일반전형",
-     "mainRate": 3.2
+     "mainRate": 3.29
     },
     "2024": {
      "name": "스포츠레저과",
@@ -1162,7 +1253,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 5.57
+     "mainRate": 5.57,
+     "quota": 42,
+     "applied": 127,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 7×5.57, 대학자체기준 35×2.51 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "스포츠레저과",
@@ -1174,7 +1272,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 4.6
+     "mainRate": 4.6,
+     "quota": 41,
+     "applied": 80,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 5×4.6, 대학자체기준 36×1.58 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "스포츠레저과",
@@ -1186,7 +1291,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 9.0
+     "mainRate": 9.0,
+     "quota": 38,
+     "applied": 85,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 3×9, 대학자체기준 35×1.66 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 41,
@@ -1219,20 +1331,16 @@
      },
      "quota": 25,
      "applied": 15,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 25 × 경쟁률 0.6"
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 25×0.6 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
-     "name": "골프산업과",
-     "unofficial": true,
-     "tracks": "학과 모집 25명 · 대학자체 0.9",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "quota": 25,
      "applied": 22,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 25 × 경쟁률 0.9"
+     "name": "골프산업과"
     },
     "2027": {
      "quota": 20,
@@ -1259,17 +1367,9 @@
    "unofficial": true,
    "series": {
     "2026": {
-     "name": "파크골프지도과",
-     "unofficial": true,
-     "tracks": "학과 모집 34명 · 대학자체 1.7",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "quota": 34,
-     "applied": 58,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 34 × 경쟁률 1.7"
+     "applied": 57,
+     "name": "파크골프지도과"
     },
     "2027": {
      "quota": 30,

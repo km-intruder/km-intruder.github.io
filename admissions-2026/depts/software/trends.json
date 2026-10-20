@@ -12,7 +12,7 @@
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
   "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
-  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료, 그리고 전문대학포털 대학별 전형방법(전형별 모집인원) × 전문대학포털(한국전문대학교육협의회) 전년도 입시결과의 전형별 경쟁률로 계산한 지원자 (진학사에 공개된 해는 공식값)"
  },
  "units": [
   {
@@ -1936,19 +1936,11 @@
    "unofficial": true,
    "series": {
     "2026": {
-     "name": "AI소프트웨어공학과",
-     "unofficial": true,
-     "tracks": "학과 모집 34명 · 일반전형 1.1",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
-     "mainTrack": "일반전형",
-     "mainRate": 1.1,
      "quota": 34,
      "applied": 37,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 34 × 경쟁률 1.1"
+     "name": "AI소프트웨어공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.09
     },
     "2027": {
      "quota": 34,
@@ -1977,16 +1969,11 @@
    "unofficial": false,
    "series": {
     "2023": {
+     "quota": 40,
+     "applied": 132,
      "name": "컴퓨터공학과",
-     "unofficial": true,
-     "tracks": "학과 모집 40명 · 일반전형 3.63 · 특성화고 2.1",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "mainTrack": "일반전형",
-     "mainRate": 3.63
+     "mainRate": 3.67
     },
     "2025": {
      "name": "컴퓨터공학과",
@@ -1998,7 +1985,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 2.7
+     "mainRate": 2.7,
+     "quota": 36,
+     "applied": 85,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 27×2.7, 특성화고 9×1.33 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "컴퓨터공학과",
@@ -2010,7 +2004,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 2.22
+     "mainRate": 2.22,
+     "quota": 35,
+     "applied": 72,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 27×2.22, 특성화고 8×1.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 31,
@@ -2042,7 +2043,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 3.1
+     "mainRate": 3.1,
+     "quota": 12,
+     "applied": 45,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 7×3.1, 특성화고 5×4.6 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "quota": 12,
@@ -2085,19 +2093,11 @@
    "unofficial": true,
    "series": {
     "2026": {
-     "name": "AI소프트웨어과",
-     "unofficial": true,
-     "tracks": "학과 모집 25명 · 일반전형 2.3",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
-     "mainTrack": "일반전형",
-     "mainRate": 2.3,
      "quota": 25,
      "applied": 57,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 25 × 경쟁률 2.3"
+     "name": "AI소프트웨어과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.28
     },
     "2027": {
      "quota": 20,
@@ -2169,7 +2169,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.6
+     "mainRate": 4.6,
+     "quota": 114,
+     "applied": 493,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 44×2.8, 일반고 42×4.6, 특성화고 28×6.3 (경쟁률 없는 전형 제외: 협약을 통한 연계교육 30명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "컴퓨터정보계열",
@@ -2181,7 +2188,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 4.4
+     "mainRate": 4.4,
+     "quota": 109,
+     "applied": 333,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 44×1.5, 일반고 38×4.4, 특성화고 27×3.7 (경쟁률 없는 전형 제외: 협약을 통한 연계교육 30명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
      "name": "컴퓨터정보계열",
@@ -2193,7 +2207,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 3.5
+     "mainRate": 3.5,
+     "quota": 92,
+     "applied": 326,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 40×2.2, 일반고 40×3.5, 특성화고 12×8.2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 95,
@@ -2231,7 +2252,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반고",
-     "mainRate": 2.3
+     "mainRate": 2.3,
+     "quota": 68,
+     "applied": 96,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 24×0.5, 일반고 22×2.3, 특성화고 22×1.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2027": {
      "quota": 63,
@@ -2260,19 +2288,11 @@
    "unofficial": false,
    "series": {
     "2023": {
-     "name": "컴퓨터공학과",
-     "unofficial": true,
-     "tracks": "학과 모집 28명 · 일반전형 1.8",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
-     "mainTrack": "일반전형",
-     "mainRate": 1.8,
      "quota": 28,
-     "applied": 50,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 28 × 경쟁률 1.8"
+     "applied": 49,
+     "name": "컴퓨터공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.81
     },
     "2024": {
      "name": "컴퓨터공학과",
@@ -2284,7 +2304,14 @@
       "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
      },
      "mainTrack": "일반전형",
-     "mainRate": 2.4
+     "mainRate": 2.4,
+     "quota": 23,
+     "applied": 54,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 22×2.4, 대학자체기준 1×1 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2025": {
      "name": "컴퓨터공학과",
@@ -2297,24 +2324,20 @@
      },
      "mainTrack": "일반전형",
      "mainRate": 1.8,
-     "quota": 23,
-     "applied": 41,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 23 × 경쟁률 1.8"
+     "quota": 22,
+     "applied": 40,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 22×1.8 (경쟁률 없는 전형 제외: 대학자체기준 1명) — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     }
     },
     "2026": {
+     "quota": 23,
+     "applied": 50,
      "name": "컴퓨터공학과",
-     "unofficial": true,
-     "tracks": "학과 모집 6명 · 일반전형 2.2",
-     "source": {
-      "kind": "portal",
-      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
-      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
-     },
      "mainTrack": "일반전형",
-     "mainRate": 2.2,
-     "quota": 6,
-     "applied": 13,
-     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 6 × 경쟁률 2.2"
+     "mainRate": 2.23
     },
     "2027": {
      "quota": 24,
