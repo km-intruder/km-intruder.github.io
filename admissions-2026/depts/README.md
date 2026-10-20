@@ -6,6 +6,7 @@
 depts/<학과 id>/
 ├─ dept.json        학과 이름·분야·교육과정 비교 데이터
 ├─ ratios.json      수시 1차 경쟁률 (회차가 늘면 ratios-susi2.json …)
+├─ ratios-national.json  수시 1차 전국 공개 전문대 비교 (지원 감소 학과만, 아래 참고)
 └─ posts/            전문대·산업 현황 게시판 (boards: true 인 학과만, 현재 software)
 ```
 
@@ -38,3 +39,14 @@ depts/<학과 id>/
 - `rows`: 모집단위별 `school`, `dept`, `field`, `track`, `quota`, `applied`, 2026 대비용 `prior`·`priorQuota`·`priorApplied`·`priorUrl`, 직접 비교 가능 여부 `comparable`
 - 경민대의 같은 학교 다른 학과 행은 비교군에서 자동 제외되고 진단 표의 “경민대 ○○ 계열 합계”에만 쓰인다
 - 학과에서 받은 확정값은 `"locked": true`로 두면 자동 수집이 덮어쓰지 않는다
+
+## 전국 비교 (ratios-national.json)
+
+2026 대비 지원자가 줄어든 학과(카페베이커리·호텔조리·지능형SW·레포츠·태권도외교·자유전공)는 `nav.js`의 `S1N` 회차로 ‘수시 1차 전국’ 탭이 붙는다. 같은 `admissions-dashboard.html`을 `scope: 'national'`로 보여 준다.
+
+- 만들기: `python scripts/build_national_ratios.py` (진학사 스마트경쟁률 전문대 목록 → 각 학교 경쟁률 원문 + 2026 진학사 과거 경쟁률)
+- 모든 모집단위는 정원내 전형 합계. 경민대 행은 그 학과 `ratios.json`의 학교 집계값을 쓴다
+- 경쟁률을 공개하지 않은 지방 전문대가 많아 비교 학교는 대부분 수도권이다. 빠진 학교는 `coverage`에 권역별로 남는다
+- 비교 학과 고르기: 스크립트의 `DEPTS`(키워드)·`EXCLUDE`·`DROP`. 매시 수집기는 이 파일을 건드리지 않는다
+- 공식 원문이 없는 학교는 `depts/national-extra.json`에 학교 공지·입시결과·기사 등에서 찾은 값을 출처와 함께 적어 두면 생성기가 합친다. `official: false` 행은 화면에 '비공식'과 출처가 표시되고, 03 표의 자료 선택으로 빼고 볼 수 있다. 진학사 스마트경쟁률에 등록된 학교 경쟁률 링크에서 직접 읽은 값만 `official: true`
+- 성인학습자·만학도만 뽑는 모집단위는 공식·비공식 모두 비교에서 뺀다. 조리·제과제빵 통합 학과는 호텔조리·카페베이커리 두 비교에 모두 넣는다

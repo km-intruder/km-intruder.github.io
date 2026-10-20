@@ -100,6 +100,10 @@ tr.selected td { background: var(--brand-tint); }
 }
 .badge.college { color: var(--ink-2); }
 .badge.univ { color: var(--brand); }
+.badge.unofficial { color: #9a5b00; }
+.remark { font-size: 12px; color: var(--ink-3); line-height: 1.45; max-width: 260px; }
+.src .remark a { color: var(--ink-2); white-space: normal; word-break: break-all; }
+.remark details summary { cursor: pointer; color: var(--ink-2); }
 .rate { font-size: 16px; font-weight: 700; }
 .src a { font-size: 13px; color: var(--brand); text-decoration: none; white-space: nowrap; }
 .src a:hover { text-decoration: underline; }
@@ -115,6 +119,7 @@ tr.selected td { background: var(--brand-tint); }
   background: var(--paper); border: 3px solid var(--ink-2);
 }
 .map-pin.off i { border-color: #b9bfc6; }
+.map-pin.unofficial i { border-style: dashed; border-color: #9a5b00; }
 .map-pin.base i { width: 20px; height: 20px; background: var(--brand); border-color: #fff; box-shadow: 0 0 0 2px var(--brand); }
 .map-pin.active i { background: var(--ink); border-color: var(--ink); }
 .leaflet-tooltip.pin-label { font-weight: 700; font-size: 12px; border-radius: 0; box-shadow: none; border: 1px solid var(--brand); color: var(--brand); padding: 1px 5px; }

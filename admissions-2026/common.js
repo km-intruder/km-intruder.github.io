@@ -82,5 +82,5 @@
     return prepare(await res.json());
   }
 
-  window.Ratio = { load, esc, num, fx, pct, signed };
+  window.Ratio = { load, prepare, esc, num, fx, pct, signed };
 })();

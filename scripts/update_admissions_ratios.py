@@ -222,6 +222,8 @@ def update_file(path, dry_run):
 def main():
     dry_run = "--dry-run" in sys.argv
     for path in sorted(DATA_DIR.glob("depts/*/ratios*.json")):
+        if path.name == "ratios-national.json":  # 전국 비교는 마감 뒤 한 번 만드는 자료 (build_national_ratios.py)
+            continue
         update_file(path, dry_run)
 
 

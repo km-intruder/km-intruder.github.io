@@ -1,0 +1,2238 @@
+{
+ "about": "공식 경쟁률 원문(진학사 스마트경쟁률 등록 링크)이 없거나 읽히지 않는 전문대의 2027 수시 1차 값. 학교 입학처 화면·공지, 기사, 기타 사이트에서 찾은 값과 출처. official=true 는 등록 링크에서 직접 읽은 값.",
+ "updated": "2026-10-20",
+ "schools": [
+  {
+   "name": "강원도립대학교",
+   "province": "강원",
+   "city": "강릉",
+   "lat": 37.883,
+   "lon": 128.823,
+   "checked": [
+    "입학처 경쟁률(https://ipsi.gw.ac.kr/loadPage.do?jspPage=/IPSI/STUD/A/IPAA050&menuId=00029) — 값은 /save.do 데이터 요청으로 로딩, 직접 요청해 확인"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "바리스타제과제빵과",
+     "track": "정원내 합계(일반고 26/131 + 특성화고 13/52)",
+     "quota": 39,
+     "applied": 183,
+     "asOf": "2026-10-20 13:20:58 기준 (접수 마감 후 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027년 수시모집1차 접수현황 (접수기간 2026.09.07~09.30)",
+      "url": "https://ipsi.gw.ac.kr/loadPage.do?jspPage=/IPSI/STUD/A/IPAA050&menuId=00029",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "leports",
+     "dept": "레저스포츠과",
+     "track": "정원내 합계(일반고 2/28 + 특성화고 7/7 + 체육특기 29/30)",
+     "quota": 38,
+     "applied": 65,
+     "asOf": "2026-10-20 13:20:58 기준 (접수 마감 후 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027년 수시모집1차 접수현황 (접수기간 2026.09.07~09.30)",
+      "url": "https://ipsi.gw.ac.kr/loadPage.do?jspPage=/IPSI/STUD/A/IPAA050&menuId=00029",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "taekwondo",
+     "dept": "경찰경호과",
+     "track": "정원내 합계(일반고 13/53 + 특성화고 5/20)",
+     "quota": 18,
+     "applied": 73,
+     "asOf": "2026-10-20 13:20:58 기준 (접수 마감 후 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027년 수시모집1차 접수현황 (접수기간 2026.09.07~09.30)",
+      "url": "https://ipsi.gw.ac.kr/loadPage.do?jspPage=/IPSI/STUD/A/IPAA050&menuId=00029",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "거제대학교",
+   "province": "경남",
+   "city": "거제",
+   "lat": 34.883,
+   "lon": 128.621,
+   "checked": [
+    "입학홈페이지 지원현황(경쟁률) 메뉴 https://www.koje.ac.kr/enter/competitionrate — 학과별 정원내/정원외 모집·지원 인원 공개"
+   ],
+   "rows": [
+    {
+     "key": "hotel-culinary",
+     "dept": "조리제빵과",
+     "track": "정원내 합계(화면 '정원내' 열)",
+     "quota": 37,
+     "applied": 118,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "거제대 입학홈페이지 지원현황(경쟁률) — 2027학년도 수시1차 (데이터: /Common/services/application_compet.aspx)",
+      "url": "https://www.koje.ac.kr/enter/competitionrate",
+      "date": "2026-10",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 32,
+      "applied": 89,
+      "track": "정원내 합계",
+      "url": "https://www.koje.ac.kr/enter/competitionrate",
+      "title": "같은 화면 2026학년도 수시1차"
+     },
+     "note": "조리+제빵 통합 학과 — cafe-bakery 로도 볼 수 있음. 2026에 있던 베이커리창업과(야)(12/10)는 2027 수시1차 목록에 없음 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "조리제빵과",
+     "track": "정원내 합계(화면 '정원내' 열)",
+     "quota": 37,
+     "applied": 118,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "거제대 입학홈페이지 지원현황(경쟁률) — 2027학년도 수시1차 (데이터: /Common/services/application_compet.aspx)",
+      "url": "https://www.koje.ac.kr/enter/competitionrate",
+      "date": "2026-10",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 32,
+      "applied": 89,
+      "track": "정원내 합계",
+      "url": "https://www.koje.ac.kr/enter/competitionrate",
+      "title": "같은 화면 2026학년도 수시1차"
+     },
+     "note": "조리+제빵 통합 학과 — cafe-bakery 로도 볼 수 있음. 2026에 있던 베이커리창업과(야)(12/10)는 2027 수시1차 목록에 없음 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "leports",
+     "dept": "파크골프경영과",
+     "track": "정원내 합계(화면 '정원내' 열)",
+     "quota": 22,
+     "applied": 16,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "거제대 입학홈페이지 지원현황(경쟁률) — 2027학년도 수시1차 (데이터: /Common/services/application_compet.aspx)",
+      "url": "https://www.koje.ac.kr/enter/competitionrate",
+      "date": "2026-10",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 17,
+      "applied": 21,
+      "track": "정원내 합계",
+      "url": "https://www.koje.ac.kr/enter/competitionrate",
+      "title": "같은 화면 2026학년도 수시1차"
+     },
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "계명문화대학교",
+   "province": "대구",
+   "city": "대구 달서",
+   "lat": 35.853,
+   "lon": 128.531,
+   "checked": [
+    "입학처 학과별 경쟁률 https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000420 — '2027학년도 수시1차 정원내 학과별 지원현황 (기준일시 2026. 9. 30. 24:00)' 표가 서버에서 바로 나옴",
+    "2026학년도 같은 표 https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000397 (기준 2025. 9. 30. 24:00)"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "제과제빵과",
+     "track": "정원내 합계(일반고/학생부 21/172 + 특성화고/수능 14/77 + 산업체수요 18/115)",
+     "quota": 53,
+     "applied": 364,
+     "asOf": "최종(2026-09-30 24:00 기준)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000420",
+      "date": "2026-09-30",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 54,
+      "applied": 324,
+      "track": "정원내 합계(일반고 22/156 + 특성화고 14/74 + 비교과(면접) 18/94)",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000397",
+      "title": "2026학년도 수시1차 정원내 학과별 지원현황"
+     },
+     "note": ""
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "호텔외식조리학부",
+     "track": "정원내 합계(일반고/학생부 19/102 + 특성화고/수능 7/41 + 산업체수요 10/63)",
+     "quota": 36,
+     "applied": 206,
+     "asOf": "최종(2026-09-30 24:00 기준)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000420",
+      "date": "2026-09-30",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 37,
+      "applied": 238,
+      "track": "정원내 합계(일반고 15/108 + 특성화고 10/43 + 비교과(면접) 12/87), 표기 '호텔조리'",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000397",
+      "title": "2026학년도 수시1차 정원내 학과별 지원현황"
+     },
+     "note": "표에는 '조리'로 줄여 적혀 있음. 학과 목록에 호텔외식조리학부(호텔조리과)가 있어 그 학과로 봄."
+    },
+    {
+     "key": "leports",
+     "dept": "생활체육학부",
+     "track": "정원내 합계(일반고/학생부 14/67 + 특성화고/수능 15/32 + 산업체수요 6/13 + 입상자 4/4)",
+     "quota": 39,
+     "applied": 116,
+     "asOf": "최종(2026-09-30 24:00 기준)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000420",
+      "date": "2026-09-30",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 39,
+      "applied": 126,
+      "track": "정원내 합계(일반고 14/56 + 특성화고 15/43 + 비교과(면접) 6/23 + 체육특기자 4/4)",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000397",
+      "title": "2026학년도 수시1차 정원내 학과별 지원현황"
+     },
+     "note": "성인학습자로 모집하는 생활체육은 표에 '생체'로 따로 있음: 2027년 110명 모집에 37명 지원, 2026년('생활체육(성인)') 80명 모집에 70명 지원. 위 합계에는 넣지 않음. 골프·피트니스과와 태권도시범공연과는 표에 따로 나오지 않아, 생활체육학부 안에 들어 있는지 확인 못 함."
+    },
+    {
+     "key": "free-major",
+     "dept": "자율전공과",
+     "track": "정원내 합계(일반고/학생부 19/30 + 특성화고/수능 8/19)",
+     "quota": 27,
+     "applied": 49,
+     "asOf": "최종(2026-09-30 24:00 기준)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000420",
+      "date": "2026-09-30",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 18,
+      "applied": 67,
+      "track": "정원내 합계(일반고 12/45 + 특성화고 6/22)",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000397",
+      "title": "2026학년도 수시1차 정원내 학과별 지원현황"
+     },
+     "note": "성인학습자로 모집하는 '문화융합'(문화융합자율전공과)은 학교 전체 대상 자유전공이 아니라서 뺌."
+    }
+   ]
+  },
+  {
+   "name": "김해대학교",
+   "province": "경남",
+   "city": "김해",
+   "lat": 35.252,
+   "lon": 128.871,
+   "checked": [
+    "입학처 공지 '2027학년도 수시1차 경쟁률'(2026-10-06) 첨부 PDF '2027학년도 수시1차 접수 현황(경쟁률).pdf' https://ipsi.gimhae.ac.kr/ipsi/board/postview/73/17816"
+   ],
+   "rows": [
+    {
+     "key": "hotel-culinary",
+     "dept": "호텔조리제과제빵과",
+     "track": "정원내 합계(PDF '정원 내' 모집인원·지원자 수)",
+     "quota": 13,
+     "applied": 106,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 경쟁률 (첨부: 2027학년도 수시1차 접수 현황(경쟁률).pdf)",
+      "url": "https://ipsi.gimhae.ac.kr/ipsi/board/postview/73/17816",
+      "date": "2026-10-06",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "조리+제과제빵 통합 학과 — cafe-bakery 로도 볼 수 있음. 전형별: 일반고 14.75, 대학자체 8.40, 고른기회 1.25 (경쟁률만) · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "호텔조리제과제빵과",
+     "track": "정원내 합계(PDF '정원 내' 모집인원·지원자 수)",
+     "quota": 13,
+     "applied": 106,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 경쟁률 (첨부: 2027학년도 수시1차 접수 현황(경쟁률).pdf)",
+      "url": "https://ipsi.gimhae.ac.kr/ipsi/board/postview/73/17816",
+      "date": "2026-10-06",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "조리+제과제빵 통합 학과 — cafe-bakery 로도 볼 수 있음. 전형별: 일반고 14.75, 대학자체 8.40, 고른기회 1.25 (경쟁률만) · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    }
+   ]
+  },
+  {
+   "name": "대구과학대학교",
+   "province": "대구",
+   "city": "대구 북구",
+   "lat": 35.902,
+   "lon": 128.571,
+   "checked": [
+    "입학처 경쟁률 화면 iframe(https://100.tsu.ac.kr/sub/selectIpsiStatapplIpsiList.do?searchMoj_cd=MOJ01) — 서버가 HTML 안 document.write(getInt('정원','..')) 형태로 값을 내려줌. 2027(open_yr) 수시1차(MOJ01), 접수종료 2026-09-30 이후 조회",
+    "검색: 대구과학대 2027 수시 경쟁률 — 경북매일 10-01 기사에 학교 전체 1,165명/4,869명(4.2:1)만"
+   ],
+   "rows": [
+    {
+     "key": "taekwondo",
+     "dept": "경찰경호행정과(주)",
+     "track": "정원내 합계(일반고 16/86 + 특성화고 7/60 + 대학자체 28/49)",
+     "quota": 51,
+     "applied": 195,
+     "asOf": "최종",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "대구과학대 입시행정 지원현황(2027 수시1차)",
+      "url": "https://100.tsu.ac.kr/sub/selectIpsiStatapplIpsiList.do?searchMoj_cd=MOJ01",
+      "date": "2026-10-20(조회)",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "화면 정원내 열은 일반고·특성화고·대학자체 3개(정원외 농어촌·기초·성인·대졸은 주석 처리). 경찰+경호 결합 학과"
+    },
+    {
+     "key": "free-major",
+     "dept": "라이프케어자율대학(주)",
+     "track": "정원내 합계(일반고 35/198 + 특성화고 25/94 + 대학자체 78/168)",
+     "quota": 138,
+     "applied": 460,
+     "asOf": "최종",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "대구과학대 입시행정 지원현황(2027 수시1차)",
+      "url": "https://100.tsu.ac.kr/sub/selectIpsiStatapplIpsiList.do?searchMoj_cd=MOJ01",
+      "date": "2026-10-20(조회)",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "'자율대학' 모집단위 — 학교 전체 대상인지 계열(라이프케어) 자율인지는 미확인"
+    }
+   ]
+  },
+  {
+   "name": "대구보건대학교",
+   "province": "대구",
+   "city": "대구 북구",
+   "lat": 35.924,
+   "lon": 128.582,
+   "checked": [
+    "입학처 지원현황 조회(https://apply.dhc.ac.kr/rate/list) — 화면은 비어 있으나 실제 데이터 요청 POST https://apply.dhc.ac.kr/ajax/rate/search (jiweoncasu=112 수시1차, jh_sajeong_gb=전형코드)로 학과별 모집·지원 인원 확인",
+    "정원내 전형 5개(17 일반고, 18 특성화고, 19 대학자체기준, 20 비교과, 23 검정고시) 합계 1,691명 모집 / 12,181명 지원 — 경북매일 2026-10-01 기사(https://kbmaeil.com/article/20261001500384)의 대구보건대 수시1차 1,691명·12,181명과 정확히 일치하므로 2027 수시1차 최종값으로 판단",
+    "전년도 입시결과(https://www.dhc.ac.kr/iphak/help/help10_1.jsp) — 학과별 인원 표를 텍스트로 뽑을 수 없어 prior 생략"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "호텔제과제빵학과(주)",
+     "track": "정원내 합계(일반고 17/185 + 특성화고 5/63 + 대학자체기준 1/6 + 비교과 4/63; 검정고시 모집 없음)",
+     "quota": 27,
+     "applied": 317,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "대구보건대학교 입학원서접수 지원현황 조회(수시1차)",
+      "url": "https://apply.dhc.ac.kr/rate/list",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "데이터 요청: POST https://apply.dhc.ac.kr/ajax/rate/search jiweoncasu=112. 정원외(저소득층·만학도/성인재직자·대졸자·농어촌) 제외. sourceDate는 조회일."
+    },
+    {
+     "key": "free-major",
+     "dept": "자율전공학과(주)",
+     "track": "정원내 합계(일반고 25/39 + 특성화고 19/24 + 대학자체기준 4/0 + 검정고시 3/8; 비교과 모집 없음)",
+     "quota": 51,
+     "applied": 71,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "대구보건대학교 입학원서접수 지원현황 조회(수시1차)",
+      "url": "https://apply.dhc.ac.kr/rate/list",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "데이터 요청: POST https://apply.dhc.ac.kr/ajax/rate/search jiweoncasu=112. 정원외 제외. sourceDate는 조회일."
+    }
+   ]
+  },
+  {
+   "name": "대전과학기술대학교",
+   "province": "대전",
+   "city": "대전 서구",
+   "lat": 36.31,
+   "lon": 127.382,
+   "checked": [
+    "입학처 지원현황>수시1차>정원내(https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077) — 2027 수시1차 정원내 경쟁률 '마감' 표 공개"
+   ],
+   "rows": [
+    {
+     "key": "hotel-culinary",
+     "dept": "외식조리제빵계열",
+     "track": "정원내 일반전형(다른 정원내 전형 모집 없음)",
+     "quota": 54,
+     "applied": 330,
+     "asOf": "최종(마감)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "조리+제빵 통합 계열 — cafe-bakery 에도 해당 가능 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "외식조리제빵계열",
+     "track": "정원내 일반전형(다른 정원내 전형 모집 없음)",
+     "quota": 54,
+     "applied": 330,
+     "asOf": "최종(마감)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "조리+제빵 통합 계열 — cafe-bakery 에도 해당 가능 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "software",
+     "dept": "AI소프트웨어공학과",
+     "track": "정원내 일반전형(다른 정원내 전형 모집 없음)",
+     "quota": 34,
+     "applied": 58,
+     "asOf": "최종(마감)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "software",
+     "dept": "컴퓨터공학＆그래픽과",
+     "track": "정원내 일반전형(다른 정원내 전형 모집 없음)",
+     "quota": 34,
+     "applied": 51,
+     "asOf": "최종(마감)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "컴퓨터+그래픽 융합 학과"
+    },
+    {
+     "key": "taekwondo",
+     "dept": "경찰경호학과",
+     "track": "정원내 합계(일반전형 20/122 + 특별 특기자 8/10)",
+     "quota": 28,
+     "applied": 132,
+     "asOf": "최종(마감)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "leports",
+     "dept": "스포츠건강관리학과",
+     "track": "정원내 합계(일반전형 39/167 + 특별 특기자 9/14)",
+     "quota": 48,
+     "applied": 181,
+     "asOf": "최종(마감)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "스포츠건강관리 — 생활체육 계열로 분류, 분야 해당 여부 검토 필요"
+    },
+    {
+     "key": "free-major",
+     "dept": "자율전공학과",
+     "track": "정원내 일반전형(다른 정원내 전형 모집 없음)",
+     "quota": 18,
+     "applied": 30,
+     "asOf": "최종(마감)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "동원대학교",
+   "province": "경기",
+   "city": "광주(경기)",
+   "lat": 37.432,
+   "lon": 127.283,
+   "checked": [
+    "지원율현황 화면 https://toa.tw.ac.kr/inc/sua/ipsiJiwonRate.jsp — 연도별 PDF 링크는 2025까지만 있고 2026/2027 PDF 없음(2026-s1.pdf, 2027-s1.pdf 요청 시 오류 페이지)",
+    "같은 화면의 데이터 요청 주소 POST https://toa.tw.ac.kr/inc/sua/ext.sua.ExtSuaJiwonRate.ex (strCommand=onLoad) → ENTRN_YEAR=2027, CLSS_NM=수시(1차) 학과별 JSON 확인 (2026-10-20 조회)"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "제과제빵과",
+     "track": "정원내 합계(일반전형 28/240 + 특별전형(추천자) 0/0 + 특별전형(대학자체기준) 4/36)",
+     "quota": 32,
+     "applied": 276,
+     "asOf": "최종(마감 후 2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "동원대학교 입시 조회서비스 - 지원율현황 (2027학년도 수시1차)",
+      "url": "https://toa.tw.ac.kr/inc/sua/ipsiJiwonRate.jsp",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "데이터: ext.sua.ExtSuaJiwonRate.ex JSON(MOJIP_INWON1/27/2, JIWON_INWON1/27/2)"
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "외식조리과",
+     "track": "정원내 합계(일반 20/87 + 대학자체기준 3/11)",
+     "quota": 23,
+     "applied": 98,
+     "asOf": "최종(마감 후 2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "동원대학교 입시 조회서비스 - 지원율현황 (2027학년도 수시1차)",
+      "url": "https://toa.tw.ac.kr/inc/sua/ipsiJiwonRate.jsp",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "software",
+     "dept": "AI소프트웨어과",
+     "track": "정원내 합계(일반 22/51 + 대학자체기준 1/6)",
+     "quota": 23,
+     "applied": 57,
+     "asOf": "최종(마감 후 2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "동원대학교 입시 조회서비스 - 지원율현황 (2027학년도 수시1차)",
+      "url": "https://toa.tw.ac.kr/inc/sua/ipsiJiwonRate.jsp",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "leports",
+     "dept": "전문스포츠지도과",
+     "track": "정원내 합계(특별전형(추천자) 43/100만 있음, 일반·대학자체 0)",
+     "quota": 43,
+     "applied": 100,
+     "asOf": "최종(마감 후 2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "동원대학교 입시 조회서비스 - 지원율현황 (2027학년도 수시1차)",
+      "url": "https://toa.tw.ac.kr/inc/sua/ipsiJiwonRate.jsp",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "스포츠지도 → leports"
+    },
+    {
+     "key": "leports",
+     "dept": "스포츠건강관리과",
+     "track": "정원내 합계(일반 28/121 + 추천자 5/5 + 대학자체기준 1/9)",
+     "quota": 34,
+     "applied": 135,
+     "asOf": "최종(마감 후 2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "동원대학교 입시 조회서비스 - 지원율현황 (2027학년도 수시1차)",
+      "url": "https://toa.tw.ac.kr/inc/sua/ipsiJiwonRate.jsp",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "생활체육/건강관리 성격 — 경계 사례, 제외 여부는 판단 필요"
+    },
+    {
+     "key": "free-major",
+     "dept": "자유전공학과",
+     "track": "정원내 합계(일반전형 93/255만 있음)",
+     "quota": 93,
+     "applied": 255,
+     "asOf": "최종(마감 후 2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "동원대학교 입시 조회서비스 - 지원율현황 (2027학년도 수시1차)",
+      "url": "https://toa.tw.ac.kr/inc/sua/ipsiJiwonRate.jsp",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "동의과학대학교",
+   "province": "부산",
+   "city": "부산 부산진",
+   "lat": 35.165,
+   "lon": 129.068,
+   "checked": [
+    "입학처 지원현황(경쟁률) 게시판 https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01 — 2027 수시1차 최종 PDF"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "베이커리카페산업과",
+     "track": "정원내 합계(일반고+특성화고+대학자체기준+연계/기술사관; 성인학습자 해당 없음)",
+     "quota": 27,
+     "applied": 179,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 경쟁률(최종 마감) — 첨부 '동의과학대학교 2027학년도 신입생 수시1차 모집 지원현황 및 경쟁률(최종)'",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=10034",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 27,
+      "applied": 226,
+      "track": "정원내 합계(같은 5개 전형)",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=9240",
+      "title": "2026학년도 수시1차 경쟁률(최종 마감)"
+     },
+     "note": "전형별 10/75, 9/78, 2/21, 6/5"
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "외식조리산업과",
+     "track": "정원내 합계(일반고+특성화고+대학자체기준+연계/기술사관; 성인학습자 해당 없음)",
+     "quota": 24,
+     "applied": 279,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 경쟁률(최종 마감) — 첨부 '동의과학대학교 2027학년도 신입생 수시1차 모집 지원현황 및 경쟁률(최종)'",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=10034",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 27,
+      "applied": 276,
+      "track": "정원내 합계(같은 5개 전형)",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=9240",
+      "title": "2026학년도 수시1차 경쟁률(최종 마감)"
+     },
+     "note": "전형별 10/184, 8/61, 2/34, 4/0"
+    },
+    {
+     "key": "taekwondo",
+     "dept": "경찰경호보안과",
+     "track": "정원내 합계(일반고+특성화고+대학자체기준+연계/기술사관; 성인학습자 해당 없음)",
+     "quota": 26,
+     "applied": 187,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 경쟁률(최종 마감) — 첨부 '동의과학대학교 2027학년도 신입생 수시1차 모집 지원현황 및 경쟁률(최종)'",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=10034",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 46,
+      "applied": 257,
+      "track": "정원내 합계(같은 5개 전형)",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=9240",
+      "title": "2026학년도 수시1차 경쟁률(최종 마감) — 학과명 경찰경호행정과"
+     },
+     "note": "전형별 10/76, 8/86, 4/22, 4/3. 2026 학과명 경찰경호행정과"
+    },
+    {
+     "key": "leports",
+     "dept": "파크골프지도과",
+     "track": "정원내 합계(일반고+특성화고+대학자체기준; 연계 '-')",
+     "quota": 15,
+     "applied": 62,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 경쟁률(최종 마감) — 첨부 '동의과학대학교 2027학년도 신입생 수시1차 모집 지원현황 및 경쟁률(최종)'",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=10034",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "전형별 6/26, 5/15, 4/21. 2026 결과표에는 없는 학과(신설로 보임)"
+    }
+   ]
+  },
+  {
+   "name": "두원공과대학교",
+   "province": "경기",
+   "city": "안성",
+   "lat": 37.04,
+   "lon": 127.213,
+   "checked": [
+    "경쟁률조회 https://www.doowon.ac.kr/kr/697/subview.do — 기본 화면은 안성캠퍼스만 표시(그래서 일부만 읽혔던 것)",
+    "파주캠퍼스 탭: POST https://www.doowon.ac.kr/mojib/kr/artclList.do (siteId=kr, campus=B, gubun=A) → 2027학년도 경쟁률(수시1차) 파주캠퍼스 표"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "제과제빵과(파주)",
+     "track": "학과계(정원내: 일반 22/164 + 특별 13/20)",
+     "quota": 35,
+     "applied": 184,
+     "asOf": "2027학년도 수시1차 경쟁률(마감 후 2026-10-20 조회, 기준시각 표기 없음)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "두원공과대학교 경쟁률조회 - 2027학년도 경쟁률(수시1차) 파주캠퍼스",
+      "url": "https://www.doowon.ac.kr/kr/697/subview.do",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "파주캠퍼스 탭(campus=B)"
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "호텔조리과(파주)",
+     "track": "학과계(일반 10/102 + 특별 7/14)",
+     "quota": 17,
+     "applied": 116,
+     "asOf": "2027 수시1차(2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "두원공과대학교 경쟁률조회 - 2027학년도 경쟁률(수시1차) 파주캠퍼스",
+      "url": "https://www.doowon.ac.kr/kr/697/subview.do",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "software",
+     "dept": "컴퓨터공학과(파주)",
+     "track": "학과계(일반 26/61 + 특별 5/12)",
+     "quota": 31,
+     "applied": 73,
+     "asOf": "2027 수시1차(2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "두원공과대학교 경쟁률조회 - 2027학년도 경쟁률(수시1차) 파주캠퍼스",
+      "url": "https://www.doowon.ac.kr/kr/697/subview.do",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "학과 사이트 목록의 인공지능과·컴퓨터소프트웨어과·모빌리티소프트웨어과는 2027 경쟁률표에 없음(통합 모집으로 보임)"
+    },
+    {
+     "key": "free-major",
+     "dept": "자유전공학과(파주)",
+     "track": "학과계(일반 17/122 + 특별 3/9)",
+     "quota": 20,
+     "applied": 131,
+     "asOf": "2027 수시1차(2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "두원공과대학교 경쟁률조회 - 2027학년도 경쟁률(수시1차) 파주캠퍼스",
+      "url": "https://www.doowon.ac.kr/kr/697/subview.do",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "free-major",
+     "dept": "자율전공학과(안성)",
+     "track": "학과계(일반 5/36 + 특별 2/1)",
+     "quota": 7,
+     "applied": 37,
+     "asOf": "2027 수시1차(2026-10-20 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "두원공과대학교 경쟁률조회 - 2027학년도 경쟁률(수시1차) 안성캠퍼스",
+      "url": "https://www.doowon.ac.kr/kr/697/subview.do",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "안성캠퍼스(기본 탭)"
+    }
+   ]
+  },
+  {
+   "name": "마산대학교",
+   "province": "경남",
+   "city": "창원 마산",
+   "lat": 35.249,
+   "lon": 128.517,
+   "checked": [
+    "입학 공지 '2027학년도 신입생모집 수시1차 경쟁률 안내'(2026-10-01) 첨부 PDF — 학과·전형별 경쟁률만(인원 없음)",
+    "모집요강 PDF(입학 홈페이지 2027학년도 모집요강) p.30 전형별 모집인원"
+   ],
+   "rows": [
+    {
+     "key": "hotel-culinary",
+     "dept": "외식조리제빵과",
+     "track": "정원내 합계(1차 수시모집 일반고+특성화고+비교과+특기자 + 1차 자율사항 고른기회2)",
+     "quota": 97,
+     "applied": 504,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생모집 수시1차 경쟁률 안내 (첨부: 2027학년도 수시 1차 경쟁률.pdf)",
+      "url": "https://www.masan.ac.kr/info/CMS/Board/Board.do?mCode=MN058&mode=view&mgr_seq=351&board_seq=234889",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 1자리)×모집인원, 전형별 반올림 후 합산: 일반고 45×6.4=288, 특성화고 12×9.9=119, 특기자 30×2.3=69, 고른기회2 10×2.8=28. 모집인원 출처: 2027학년도 마산대학교 신입생 모집요강 p.30 '전형별 모집인원(정원내)' https://www.masan.ac.kr/attach/CONTENTS/PDF/ContentMgr/PDFViewer/2026/10/Fbp3aRMZq18m3jKq.PDF . 경쟁률이 소수 1자리라 전형별 ±0.05×모집인원 오차 있음"
+     },
+     "prior": null,
+     "note": "조리+제빵 통합 학과 — cafe-bakery 로도 볼 수 있음 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "외식조리제빵과",
+     "track": "정원내 합계(1차 수시모집 일반고+특성화고+비교과+특기자 + 1차 자율사항 고른기회2)",
+     "quota": 97,
+     "applied": 504,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생모집 수시1차 경쟁률 안내 (첨부: 2027학년도 수시 1차 경쟁률.pdf)",
+      "url": "https://www.masan.ac.kr/info/CMS/Board/Board.do?mCode=MN058&mode=view&mgr_seq=351&board_seq=234889",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 1자리)×모집인원, 전형별 반올림 후 합산: 일반고 45×6.4=288, 특성화고 12×9.9=119, 특기자 30×2.3=69, 고른기회2 10×2.8=28. 모집인원 출처: 2027학년도 마산대학교 신입생 모집요강 p.30 '전형별 모집인원(정원내)' https://www.masan.ac.kr/attach/CONTENTS/PDF/ContentMgr/PDFViewer/2026/10/Fbp3aRMZq18m3jKq.PDF . 경쟁률이 소수 1자리라 전형별 ±0.05×모집인원 오차 있음"
+     },
+     "prior": null,
+     "note": "조리+제빵 통합 학과 — cafe-bakery 로도 볼 수 있음 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "호텔관광바리스타과",
+     "track": "정원내 합계(1차 수시모집 일반고+특성화고+비교과+특기자 + 1차 자율사항 고른기회2)",
+     "quota": 29,
+     "applied": 167,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생모집 수시1차 경쟁률 안내 (첨부: 2027학년도 수시 1차 경쟁률.pdf)",
+      "url": "https://www.masan.ac.kr/info/CMS/Board/Board.do?mCode=MN058&mode=view&mgr_seq=351&board_seq=234889",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 1자리)×모집인원, 전형별 반올림 후 합산: 일반고 16×5.3=85, 특성화고 9×5.6=50, 비교과 3×9.7=29, 고른기회2 1×3.0=3. 모집인원 출처: 2027학년도 마산대학교 신입생 모집요강 p.30 '전형별 모집인원(정원내)' https://www.masan.ac.kr/attach/CONTENTS/PDF/ContentMgr/PDFViewer/2026/10/Fbp3aRMZq18m3jKq.PDF . 경쟁률이 소수 1자리라 전형별 ±0.05×모집인원 오차 있음"
+     },
+     "prior": null,
+     "note": "호텔관광+바리스타 학과(분야 경계)"
+    },
+    {
+     "key": "leports",
+     "dept": "레저스포츠과",
+     "track": "정원내 합계(1차 수시모집 일반고+특성화고+비교과+특기자 + 1차 자율사항 고른기회2)",
+     "quota": 59,
+     "applied": 162,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생모집 수시1차 경쟁률 안내 (첨부: 2027학년도 수시 1차 경쟁률.pdf)",
+      "url": "https://www.masan.ac.kr/info/CMS/Board/Board.do?mCode=MN058&mode=view&mgr_seq=351&board_seq=234889",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 1자리)×모집인원, 전형별 반올림 후 합산: 일반고 18×4.3=77, 특성화고 13×3.2=42, 특기자 27×1.4=38, 고른기회2 1×5.0=5. 모집인원 출처: 2027학년도 마산대학교 신입생 모집요강 p.30 '전형별 모집인원(정원내)' https://www.masan.ac.kr/attach/CONTENTS/PDF/ContentMgr/PDFViewer/2026/10/Fbp3aRMZq18m3jKq.PDF . 경쟁률이 소수 1자리라 전형별 ±0.05×모집인원 오차 있음"
+     },
+     "prior": null,
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "백석예술대학교",
+   "province": "서울",
+   "city": "서울 서초",
+   "lat": 37.482,
+   "lon": 127.014,
+   "checked": [
+    "입학처 '경쟁률확인' 메뉴 https://www.bau.ac.kr/admission/4356/subview.do → 유웨이 경쟁률 페이지 링크",
+    "유웨이 https://ratio.uwayapply.com/Sl5KOjhCSk1DQ2FMSjdmVGY= — '2027학년도 수시1차 경쟁률 최종현황'",
+    "전년도 입시결과 https://www.bau.ac.kr/admission/5234/subview.do — 2026학년도 수시1차 일반·특별 입시결과"
+   ],
+   "rows": [
+    {
+     "key": "hotel-culinary",
+     "dept": "호텔조리·제과제빵학부",
+     "track": "정원내 합계(일반전형 120/729 + 특별전형 100/360)",
+     "quota": 220,
+     "applied": 1089,
+     "asOf": "최종",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "백석예술대학교 경쟁률 서비스 2027학년도 수시1차 경쟁률 (최종현황, 유웨이 호스팅·입학처 경쟁률확인 메뉴 링크)",
+      "url": "https://ratio.uwayapply.com/Sl5KOjhCSk1DQ2FMSjdmVGY=",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 215,
+      "applied": 894,
+      "track": "정원내 합계(일반 125/636 + 특별 90/258)",
+      "url": "https://www.bau.ac.kr/admission/5234/subview.do",
+      "title": "2026학년도 수시1차 입시결과(일반전형·특별전형)"
+     },
+     "note": "호텔조리+제과제빵 통합 모집단위 — cafe-bakery 에도 해당(분리 수치 없음) · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "호텔조리·제과제빵학부",
+     "track": "정원내 합계(일반전형 120/729 + 특별전형 100/360)",
+     "quota": 220,
+     "applied": 1089,
+     "asOf": "최종",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "백석예술대학교 경쟁률 서비스 2027학년도 수시1차 경쟁률 (최종현황, 유웨이 호스팅·입학처 경쟁률확인 메뉴 링크)",
+      "url": "https://ratio.uwayapply.com/Sl5KOjhCSk1DQ2FMSjdmVGY=",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 215,
+      "applied": 894,
+      "track": "정원내 합계(일반 125/636 + 특별 90/258)",
+      "url": "https://www.bau.ac.kr/admission/5234/subview.do",
+      "title": "2026학년도 수시1차 입시결과(일반전형·특별전형)"
+     },
+     "note": "호텔조리+제과제빵 통합 모집단위 — cafe-bakery 에도 해당(분리 수치 없음) · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "taekwondo",
+     "dept": "경찰경호학과",
+     "track": "정원내 합계(일반전형 90/144 + 특별전형 10/9)",
+     "quota": 100,
+     "applied": 153,
+     "asOf": "최종",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "백석예술대학교 경쟁률 서비스 2027학년도 수시1차 경쟁률 (최종현황)",
+      "url": "https://ratio.uwayapply.com/Sl5KOjhCSk1DQ2FMSjdmVGY=",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 56,
+      "applied": 161,
+      "track": "정원내 합계(일반 53/145 + 특별 3/16)",
+      "url": "https://www.bau.ac.kr/admission/5234/subview.do",
+      "title": "2026학년도 수시1차 입시결과(일반전형·특별전형)"
+     },
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "부산과학기술대학교",
+   "province": "부산",
+   "city": "부산 북구",
+   "lat": 35.222,
+   "lon": 129.01,
+   "checked": [
+    "입학 홈페이지 입시경쟁률 게시판 https://ipsi.bist.ac.kr/ipsi/board/list.php?menu=105&board_id=ipsirate — 2027 수시1차 최종(이미지)"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "바리스타&디저트창업과",
+     "track": "정원내 합계(주간 일반고+특성화고, 야간 일반고+특성화고)",
+     "quota": 21,
+     "applied": 130,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차모집 지원률 현황(최종) — 본문 이미지 표",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=36",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 21,
+      "applied": 129,
+      "track": "정원내 합계(같은 구성)",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=34",
+      "title": "2026학년도 수시1차모집 지원률 현황(최종)"
+     },
+     "note": "주간 8/61, 4/57 · 야간 4/5, 5/7"
+    },
+    {
+     "key": "leports",
+     "dept": "파크골프지도과",
+     "track": "정원내 합계(주간 일반전형+야간 일반전형)",
+     "quota": 29,
+     "applied": 80,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차모집 지원률 현황(최종) — 본문 이미지 표",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=36",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 30,
+      "applied": 42,
+      "track": "정원내(주간 고른기회 열)",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=34",
+      "title": "2026학년도 수시1차모집 지원률 현황(최종) — 학과명 파크골프과"
+     },
+     "note": "주간 17/59 · 야간 12/21"
+    },
+    {
+     "key": "software",
+     "dept": "컴퓨터·디지털미디어과",
+     "track": "정원내 합계(주간 일반고+특성화고)",
+     "quota": 12,
+     "applied": 97,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차모집 지원률 현황(최종) — 본문 이미지 표",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=36",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 12,
+      "applied": 61,
+      "track": "정원내 합계(같은 구성)",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=34",
+      "title": "2026학년도 수시1차모집 지원률 현황(최종)"
+     },
+     "note": "7/43, 5/54. 컴퓨터+디지털미디어 혼합 학과"
+    }
+   ]
+  },
+  {
+   "name": "부산보건대학교",
+   "province": "부산",
+   "city": "부산 사하",
+   "lat": 35.103,
+   "lon": 128.968,
+   "checked": [
+    "입학처 공지 '2027학년도 신입생 수시1차 모집 경쟁률'(2026-10-01) 첨부 PDF — 학과·전형별 경쟁률만",
+    "2027 모집요강 PDF(입학처 자료실)로 수시1차 전형별 모집인원 확인"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "호텔제과제빵과",
+     "track": "정원내 합계(일반고+특성화고+대학자체)",
+     "quota": 71,
+     "applied": 595,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생 수시1차 모집 경쟁률 (첨부: 2027 수시1차 경쟁률.pdf)",
+      "url": "https://ipsi.bhu.ac.kr/ipsi/boardview/2/323",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 20×14.10=282, 특성화고 10×11.10=111, 대학자체 41×4.93=202. 모집인원 출처: 2027학년도 부산보건대 신입생 모집요강 p.27~29(전형별 모집인원) https://ipsi.bhu.ac.kr/upload/dongju/ipsi/board/5/2026/0629105441491.pdf"
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "디저트&서양조리과",
+     "track": "정원내 합계(일반고+특성화고+대학자체)",
+     "quota": 22,
+     "applied": 198,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생 수시1차 모집 경쟁률 (첨부: 2027 수시1차 경쟁률.pdf)",
+      "url": "https://ipsi.bhu.ac.kr/ipsi/boardview/2/323",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 10×7.70=77, 특성화고 10×6.00=60, 대학자체 2×30.50=61. 모집인원 출처: 2027학년도 부산보건대 신입생 모집요강 p.27~29(전형별 모집인원) https://ipsi.bhu.ac.kr/upload/dongju/ipsi/board/5/2026/0629105441491.pdf"
+     },
+     "prior": null,
+     "note": "디저트+서양조리 — cafe-bakery 로도 볼 수 있음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "호텔·바리스타과",
+     "track": "정원내 합계(일반고+특성화고+대학자체)",
+     "quota": 16,
+     "applied": 179,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생 수시1차 모집 경쟁률 (첨부: 2027 수시1차 경쟁률.pdf)",
+      "url": "https://ipsi.bhu.ac.kr/ipsi/boardview/2/323",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 4×21.25=85, 특성화고 9×6.33=57, 대학자체 3×12.33=37. 모집인원 출처: 2027학년도 부산보건대 신입생 모집요강 p.27~29(전형별 모집인원) https://ipsi.bhu.ac.kr/upload/dongju/ipsi/board/5/2026/0629105441491.pdf"
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "K-푸드건강조리과(야)",
+     "track": "정원내(일반고+특성화고+고른기회; 대학자체 1명은 경쟁률 '-'로 제외)",
+     "quota": 14,
+     "applied": 49,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생 수시1차 모집 경쟁률 (첨부: 2027 수시1차 경쟁률.pdf)",
+      "url": "https://ipsi.bhu.ac.kr/ipsi/boardview/2/323",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 2×5.00=10, 특성화고 5×1.80=9, 고른기회 7×4.29=30. 모집인원 출처: 2027학년도 부산보건대 신입생 모집요강 p.27~29(전형별 모집인원) https://ipsi.bhu.ac.kr/upload/dongju/ipsi/board/5/2026/0629105441491.pdf"
+     },
+     "prior": null,
+     "note": "야간 학과"
+    },
+    {
+     "key": "leports",
+     "dept": "파크골프과(야)",
+     "track": "정원내(일반고+특성화고+고른기회; 대학자체 1명은 경쟁률 '-'로 제외)",
+     "quota": 13,
+     "applied": 46,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생 수시1차 모집 경쟁률 (첨부: 2027 수시1차 경쟁률.pdf)",
+      "url": "https://ipsi.bhu.ac.kr/ipsi/boardview/2/323",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 4×1.00=4, 특성화고 5×3.00=15, 고른기회 4×6.75=27. 모집인원 출처: 2027학년도 부산보건대 신입생 모집요강 p.27~29(전형별 모집인원) https://ipsi.bhu.ac.kr/upload/dongju/ipsi/board/5/2026/0629105441491.pdf"
+     },
+     "prior": null,
+     "note": "야간 학과"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "커피&디저트카페창업과(야)",
+     "track": "정원내(고른기회만 모집)",
+     "quota": 18,
+     "applied": 48,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생 수시1차 모집 경쟁률 (첨부: 2027 수시1차 경쟁률.pdf)",
+      "url": "https://ipsi.bhu.ac.kr/ipsi/boardview/2/323",
+      "date": "2026-10-01",
+      "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 고른기회 18×2.67=48. 모집인원 출처: 2027학년도 부산보건대 신입생 모집요강 p.27~29(전형별 모집인원) https://ipsi.bhu.ac.kr/upload/dongju/ipsi/board/5/2026/0629105441491.pdf"
+     },
+     "prior": null,
+     "note": "야간 학과, 성인 대상 성격"
+    }
+   ]
+  },
+  {
+   "name": "서영대학교(광주)",
+   "province": "전남광주",
+   "city": "광주 북구",
+   "lat": 35.215,
+   "lon": 126.896,
+   "checked": [
+    "입학안내 경쟁률현황 https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140 — 정원내 전형별(일반고 in3·특성화고 in4·일반전형 in5·성인학습자 in7, POST로 탭 전환) 모집인원과 경쟁률 공개, 지원인원 칸은 비어 있음"
+   ],
+   "rows": [
+    {
+     "key": "free-major",
+     "dept": "자유전공학부",
+     "track": "정원내 일반고(11명, 3.0:1)+특성화고(11명, 2.1:1); 성인학습자(1명, '-') 제외",
+     "quota": 22,
+     "applied": 56,
+     "asOf": "2026-09-30 18:00 현재 (원서접수 마감일 기준 화면 표기, '최종 경쟁률은 변동될 수 있음' 안내)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30",
+      "derived": "화면에 지원인원 없음 → 모집인원×경쟁률: 11×3.0=33, 11×2.1=23.1→23 (반올림과 맞는 정수는 33·23뿐). 모집인원도 같은 화면 출처"
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "호텔조리제빵과",
+     "track": "정원내 일반고(20명, 5.7:1)+특성화고(25명, 4.4:1); 성인학습자(1명, '-') 제외",
+     "quota": 45,
+     "applied": 224,
+     "asOf": "2026-09-30 18:00 현재 (원서접수 마감일 기준 화면 표기, '최종 경쟁률은 변동될 수 있음' 안내)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30",
+      "derived": "모집인원×경쟁률: 20×5.7=114, 25×4.4=110 → 224 (경쟁률 반올림 때문에 실제 222~226 가능). 모집인원도 같은 화면 출처"
+     },
+     "prior": null,
+     "note": "조리+제빵 통합 학과. 제과제빵 분야와 겹침 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "호텔조리제빵과",
+     "track": "정원내 일반고(20명, 5.7:1)+특성화고(25명, 4.4:1); 성인학습자(1명, '-') 제외",
+     "quota": 45,
+     "applied": 224,
+     "asOf": "2026-09-30 18:00 현재 (원서접수 마감일 기준 화면 표기, '최종 경쟁률은 변동될 수 있음' 안내)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30",
+      "derived": "모집인원×경쟁률: 20×5.7=114, 25×4.4=110 → 224 (경쟁률 반올림 때문에 실제 222~226 가능). 모집인원도 같은 화면 출처"
+     },
+     "prior": null,
+     "note": "조리+제빵 통합 학과. 제과제빵 분야와 겹침 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "카페베이커리과(야)",
+     "track": "정원내 일반전형(13명, 4.5:1); 성인학습자(8명, 0.3:1) 제외",
+     "quota": 13,
+     "applied": 59,
+     "asOf": "2026-09-30 18:00 현재 (원서접수 마감일 기준 화면 표기, '최종 경쟁률은 변동될 수 있음' 안내)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30",
+      "derived": "모집인원×경쟁률: 13×4.5=58.5 → 실제 58 또는 59 (반올림 모호, 59로 기재). 모집인원도 같은 화면 출처"
+     },
+     "prior": null,
+     "note": "야간"
+    },
+    {
+     "key": "leports",
+     "dept": "스포츠융합학부(스포츠지도전공)(야)",
+     "track": "정원내 일반전형(24명, 2.0:1); 성인학습자(1명, '-') 제외",
+     "quota": 24,
+     "applied": 48,
+     "asOf": "2026-09-30 18:00 현재 (원서접수 마감일 기준 화면 표기, '최종 경쟁률은 변동될 수 있음' 안내)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30",
+      "derived": "모집인원×경쟁률: 24×2.0=48 (실제 47~49 가능). 모집인원도 같은 화면 출처"
+     },
+     "prior": null,
+     "note": "야간"
+    },
+    {
+     "key": "leports",
+     "dept": "스포츠융합학부(파크골프웰빙전공)(야)",
+     "track": "정원내 일반전형(19명, 3.6:1); 성인학습자(1명, '-') 제외",
+     "quota": 19,
+     "applied": 68,
+     "asOf": "2026-09-30 18:00 현재 (원서접수 마감일 기준 화면 표기, '최종 경쟁률은 변동될 수 있음' 안내)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30",
+      "derived": "모집인원×경쟁률: 19×3.6=68.4 → 68 (실제 68~69 가능). 모집인원도 같은 화면 출처"
+     },
+     "prior": null,
+     "note": "야간, 2027 신설"
+    },
+    {
+     "key": "leports",
+     "dept": "스포츠융합학부(스포츠트레이닝전공)",
+     "track": "정원내 일반고(5명, 13.0:1)+특성화고(9명, 6.8:1); 성인학습자(1명, '-') 제외",
+     "quota": 14,
+     "applied": 126,
+     "asOf": "2026-09-30 18:00 현재 (원서접수 마감일 기준 화면 표기, '최종 경쟁률은 변동될 수 있음' 안내)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30",
+      "derived": "모집인원×경쟁률: 5×13.0=65, 9×6.8=61.2→61 → 126. 모집인원도 같은 화면 출처"
+     },
+     "prior": null,
+     "note": "분야 경계: 트레이닝(재활 쪽일 수 있음) — 비교에 넣을지 판단 필요"
+    }
+   ]
+  },
+  {
+   "name": "서영대학교(파주)",
+   "province": "경기",
+   "city": "파주",
+   "lat": 37.735,
+   "lon": 126.762,
+   "checked": [
+    "파주캠퍼스 입학처 경쟁률현황 https://www.seoyeong.ac.kr/pjipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2173 — '2026/09/30(수) 23:59 현재 원서접수 현황', 모집인원과 경쟁률만 있고 지원인원 없음",
+    "전형 탭(POST searchRcritSubType=rcritIn, searchRcritCateType=in1 일반고 / in2 특성화고 / in7) 각각 확인",
+    "2026학년도 선택 불가(2027만 제공) — prior 없음"
+   ],
+   "rows": [
+    {
+     "key": "hotel-culinary",
+     "dept": "조리제과제빵과(주간)",
+     "track": "정원내 합계(일반고 12명 9.1:1 + 특성화고 6명 9.8:1)",
+     "quota": 18,
+     "applied": 168,
+     "asOf": "2026-09-30 23:59 (마감 시점)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대학교 파주캠퍼스 2027학년도 수시1차 신입생모집(경쟁률) 현황",
+      "url": "https://www.seoyeong.ac.kr/pjipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2173",
+      "date": "2026-09-30",
+      "derived": "지원인원 = 모집인원×경쟁률: 일반고 12×9.1=109.2→109(109/12=9.08, 110/12=9.17 이므로 109), 특성화고 6×9.8=58.8→59(59/6=9.83). 모집인원은 같은 화면 표기"
+     },
+     "prior": null,
+     "note": "조리+제과제빵 통합 학과 — cafe-bakery 에도 해당 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "조리제과제빵과(주간)",
+     "track": "정원내 합계(일반고 12명 9.1:1 + 특성화고 6명 9.8:1)",
+     "quota": 18,
+     "applied": 168,
+     "asOf": "2026-09-30 23:59 (마감 시점)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대학교 파주캠퍼스 2027학년도 수시1차 신입생모집(경쟁률) 현황",
+      "url": "https://www.seoyeong.ac.kr/pjipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2173",
+      "date": "2026-09-30",
+      "derived": "지원인원 = 모집인원×경쟁률: 일반고 12×9.1=109.2→109(109/12=9.08, 110/12=9.17 이므로 109), 특성화고 6×9.8=58.8→59(59/6=9.83). 모집인원은 같은 화면 표기"
+     },
+     "prior": null,
+     "note": "조리+제과제빵 통합 학과 — cafe-bakery 에도 해당 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "조리제과제빵과(야간)",
+     "track": "정원내 합계(일반고 5명 6.6:1 + 특성화고 2명 4.5:1)",
+     "quota": 7,
+     "applied": 42,
+     "asOf": "2026-09-30 23:59 (마감 시점)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대학교 파주캠퍼스 2027학년도 수시1차 신입생모집(경쟁률) 현황",
+      "url": "https://www.seoyeong.ac.kr/pjipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2173",
+      "date": "2026-09-30",
+      "derived": "5×6.6=33, 2×4.5=9 (정수로 딱 맞음). 모집인원은 같은 화면 표기"
+     },
+     "prior": null,
+     "note": "주간과 합치면 25명/210명 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "조리제과제빵과(야간)",
+     "track": "정원내 합계(일반고 5명 6.6:1 + 특성화고 2명 4.5:1)",
+     "quota": 7,
+     "applied": 42,
+     "asOf": "2026-09-30 23:59 (마감 시점)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대학교 파주캠퍼스 2027학년도 수시1차 신입생모집(경쟁률) 현황",
+      "url": "https://www.seoyeong.ac.kr/pjipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2173",
+      "date": "2026-09-30",
+      "derived": "5×6.6=33, 2×4.5=9 (정수로 딱 맞음). 모집인원은 같은 화면 표기"
+     },
+     "prior": null,
+     "note": "주간과 합치면 25명/210명 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "free-major",
+     "dept": "자율전공학부(주간)",
+     "track": "정원내 합계(일반고 13명 6.5:1 + 특성화고 5명 4.8:1)",
+     "quota": 18,
+     "applied": 108,
+     "asOf": "2026-09-30 23:59 (마감 시점)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대학교 파주캠퍼스 2027학년도 수시1차 신입생모집(경쟁률) 현황",
+      "url": "https://www.seoyeong.ac.kr/pjipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2173",
+      "date": "2026-09-30",
+      "derived": "일반고 13×6.5=84.5 → 84 또는 85(둘 다 6.5로 반올림됨, 화면에서 구분 불가), 특성화고 5×4.8=24. 합계 108~109 중 108 기재"
+     },
+     "prior": null,
+     "note": "화면에서 '공학' 계열 아래 표시됨 — 학교 전체 대상인지 확인 필요. 지원인원 ±1 불확실"
+    }
+   ]
+  },
+  {
+   "name": "수성대학교",
+   "province": "대구",
+   "city": "대구 수성",
+   "lat": 35.822,
+   "lon": 128.694,
+   "checked": [
+    "입학처 학과별 경쟁률(https://ipsi.sc.ac.kr/counsel/05_01.sc) — '2027학년도 수시모집 (1차) 경쟁률' 표, 전형별 경쟁률만(인원 없음)",
+    "입학처 수시모집(1차) 모집인원표(https://ipsi.sc.ac.kr/susi01/02.sc) — 전형별 모집인원",
+    "전년도 입시결과(counsel/09_01.sc) — 등급만, 인원·경쟁률 없음"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "제과제빵커피과(주간)",
+     "track": "정원내 합계(일반+특성화+대학자체)",
+     "quota": 33,
+     "applied": 153,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "수성대 학과별 경쟁률 — 2027학년도 수시모집(1차)",
+      "url": "https://ipsi.sc.ac.kr/counsel/05_01.sc",
+      "date": "2026-10-20(조회)",
+      "derived": "경쟁률×모집인원: 일반 24×4.5=108 + 특성화 4×9.5=38 + 대학자체 5×1.4=7 = 153 (모집인원 출처: https://ipsi.sc.ac.kr/susi01/02.sc 수시1차 모집인원표; 경쟁률이 소수 1자리 반올림이라 ±1~2명 오차 가능)"
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "leports",
+     "dept": "스포츠레저전공(주간+야간)",
+     "track": "정원내 합계(일반+특성화+대학자체), 주·야 합산",
+     "quota": 46,
+     "applied": 160,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "수성대 학과별 경쟁률 — 2027학년도 수시모집(1차)",
+      "url": "https://ipsi.sc.ac.kr/counsel/05_01.sc",
+      "date": "2026-10-20(조회)",
+      "derived": "주간: 일반 15×5.9=88.5 + 특성화 1×12.0=12 + 자체 4×1.0=4 = 104.5 / 야간: 일반 16×2.1=33.6 + 특성화 2×1.5=3 + 자체 8×2.4=19.2 = 55.8 → 합계 약 160 (모집인원 출처: https://ipsi.sc.ac.kr/susi01/02.sc; 반올림 경쟁률 기반이라 ±3명 오차 가능)"
+     },
+     "prior": null,
+     "note": "주간 20명/약 105명, 야간 26명/약 56명"
+    },
+    {
+     "key": "free-major",
+     "dept": "신산업자율학부(주간)",
+     "track": "정원내 합계(일반+특성화+대학자체)",
+     "quota": 84,
+     "applied": 115,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "수성대 학과별 경쟁률 — 2027학년도 수시모집(1차)",
+      "url": "https://ipsi.sc.ac.kr/counsel/05_01.sc",
+      "date": "2026-10-20(조회)",
+      "derived": "일반 45×1.5=67.5 + 특성화 3×3.7=11.1 + 대학자체 36×1.0=36 = 114.6 ≈ 115 (모집인원 출처: https://ipsi.sc.ac.kr/susi01/02.sc; ±3명 오차 가능)"
+     },
+     "prior": null,
+     "note": "모집요강상 '자율전공 모집단위'(신산업자율학부·사회복지자율학부). 사회복지자율학부는 성인학습자 전담이라 제외"
+    }
+   ]
+  },
+  {
+   "name": "신성대학교",
+   "province": "충남",
+   "city": "당진",
+   "lat": 36.917,
+   "lon": 126.632,
+   "checked": [
+    "입학처 지원현황>수시1차(https://ipsi.shinsung.ac.kr/submenu.do?menuurl=DgiYv19qOmenudTJ2AKY2A%3d%3d&) — '2027 수시1차 지원현황(마감)' PDF 게시"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "제과제빵과",
+     "track": "정원내 일반전형(정원내 특별전형 모집 없음)",
+     "quota": 27,
+     "applied": 150,
+     "asOf": "09/30(수) 마감",
+     "official": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신성대학교 수시1차 지원현황 (기준일 09/30(수) 마감) PDF",
+      "url": "https://ipsi.shinsung.ac.kr/file/download.do?sfn=20261001110116567_2027+%ec%88%98%ec%8b%9c1%ec%b0%a8+%ec%a7%80%ec%9b%90%ed%98%84%ed%99%a9(%eb%a7%88%ea%b0%90)_20261001AM08.pdf&ofn=2027+%ec%88%98%ec%8b%9c1%ec%b0%a8+%ec%a7%80%ec%9b%90%ed%98%84%ed%99%a9(%eb%a7%88%ea%b0%90)_20261001AM08.pdf",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "leports",
+     "dept": "스포츠레저과",
+     "track": "정원내 합계(일반전형 5/30 + 특별 비교과 36/49)",
+     "quota": 41,
+     "applied": 79,
+     "asOf": "09/30(수) 마감",
+     "official": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신성대학교 수시1차 지원현황 (기준일 09/30(수) 마감) PDF",
+      "url": "https://ipsi.shinsung.ac.kr/file/download.do?sfn=20261001110116567_2027+%ec%88%98%ec%8b%9c1%ec%b0%a8+%ec%a7%80%ec%9b%90%ed%98%84%ed%99%a9(%eb%a7%88%ea%b0%90)_20261001AM08.pdf&ofn=2027+%ec%88%98%ec%8b%9c1%ec%b0%a8+%ec%a7%80%ec%9b%90%ed%98%84%ed%99%a9(%eb%a7%88%ea%b0%90)_20261001AM08.pdf",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "taekwondo",
+     "dept": "TKD외교과",
+     "track": "정원내 합계(일반전형 4/9 + 특별 지역인재 5/3 + 특별 비교과 35/61)",
+     "quota": 44,
+     "applied": 73,
+     "asOf": "09/30(수) 마감",
+     "official": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신성대학교 수시1차 지원현황 (기준일 09/30(수) 마감) PDF",
+      "url": "https://ipsi.shinsung.ac.kr/file/download.do?sfn=20261001110116567_2027+%ec%88%98%ec%8b%9c1%ec%b0%a8+%ec%a7%80%ec%9b%90%ed%98%84%ed%99%a9(%eb%a7%88%ea%b0%90)_20261001AM08.pdf&ofn=2027+%ec%88%98%ec%8b%9c1%ec%b0%a8+%ec%a7%80%ec%9b%90%ed%98%84%ed%99%a9(%eb%a7%88%ea%b0%90)_20261001AM08.pdf",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "태권도 학과"
+    }
+   ]
+  },
+  {
+   "name": "여주대학교",
+   "province": "경기",
+   "city": "여주",
+   "lat": 37.291,
+   "lon": 127.621,
+   "checked": [
+    "입학처 조회서비스 링크 '수시1차 최종경쟁률' (ajax /ajax/CM_MN02_SVC/CM_MN01_R42.do 에서 확인) → https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010 (WebSquare 화면 '학과별 원서접수 현황(공지용)')",
+    "데이터 주소 POST https://portal.yit.ac.kr/entr/public/entr/aplc/entraplc034/selectlist02 (yy=2027, entexamFg=E010010001, collshFg=E010030010) → 학과별 전형별 모집·지원 JSON (2026-10-20 조회)",
+    "입학처 공지사항 게시판 — 경쟁률 공지 없음"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "카페베이커리과",
+     "track": "정원내 합계(일반전형 20/128)",
+     "quota": 20,
+     "applied": 128,
+     "asOf": "최종(링크명 '수시1차 최종경쟁률', 2026-10-20 조회)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "ttCapai(정원내 합계) 값 = 정원내 전형(일반·일반고·추천자·대학자체·고른기회) 합과 일치 확인"
+    },
+    {
+     "key": "software",
+     "dept": "AI소프트웨어과",
+     "track": "정원내 합계(일반전형 20/50)",
+     "quota": 20,
+     "applied": 50,
+     "asOf": "최종(2026-10-20 조회)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "leports",
+     "dept": "골프산업과",
+     "track": "정원내 합계(일반전형 외 특별전형으로만 모집)",
+     "quota": 20,
+     "applied": 16,
+     "asOf": "최종(2026-10-20 조회)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "leports",
+     "dept": "파크골프지도과",
+     "track": "정원내 합계(특별전형으로만 모집)",
+     "quota": 30,
+     "applied": 48,
+     "asOf": "최종(2026-10-20 조회)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "만학도 중심 학과로 보임"
+    },
+    {
+     "key": "taekwondo",
+     "dept": "스포츠·경호과",
+     "track": "정원내 합계(일반 13/113 + 특별전형들 43/49)",
+     "quota": 56,
+     "applied": 162,
+     "asOf": "최종(2026-10-20 조회)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "스포츠+경호 통합 — leports 로도 볼 수 있음"
+    },
+    {
+     "key": "free-major",
+     "dept": "자유전공과",
+     "track": "정원내 합계(일반전형 27/57)",
+     "quota": 27,
+     "applied": 57,
+     "asOf": "최종(2026-10-20 조회)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "연암공과대학교",
+   "province": "경남",
+   "city": "진주",
+   "lat": 35.18,
+   "lon": 128.097,
+   "checked": [
+    "입학처 수시1차 경쟁률 화면 https://enter.yc.ac.kr/enter/susi1-rate.do — 전형별 경쟁률만",
+    "모집요강(본책) PDF p.29 모집인원",
+    "전년도 입시결과 https://enter.yc.ac.kr/enter/susi1-result-in.do — 2026 수시1차 전형별 모집·지원 인원"
+   ],
+   "rows": [
+    {
+     "key": "software",
+     "dept": "AI소프트웨어학과",
+     "track": "정원내 합계(일반고+특성화고+학교장추천자+SW특기자)",
+     "quota": 46,
+     "applied": 155,
+     "asOf": "최종",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "경쟁률 확인 — 2027학년도 수시1차모집 경쟁률 (2026.09.30.(수) 최종 마감기준)",
+      "url": "https://enter.yc.ac.kr/enter/susi1-rate.do",
+      "date": "2026-09-30",
+      "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 23×4.61=106, 특성화고 19×2.16=41, 학교장추천자 1×1.00=1, SW특기자 3×2.33=7. 모집인원 출처: 2027학년도 신입생 모집요강(본책) p.29 '1. 모집인원' 수시1차 정원내 https://enter.yc.ac.kr/_attach/yonam/file/2026/06/NaXLhkJNJeQSgrWfooXZWVampx.pdf"
+     },
+     "prior": {
+      "quota": 46,
+      "applied": 157,
+      "track": "정원내 합계(일반고 30/96+특성화고 10/59+학교장추천 1/1+SW특기자 5/1)",
+      "url": "https://enter.yc.ac.kr/enter/susi1-result-in.do",
+      "title": "2026학년도 수시1차 입시결과 — 스마트소프트웨어학과(AI소프트웨어학과)"
+     },
+     "note": "경쟁률 화면 열 순서는 전기전자·기계·스마트전기전자·스마트기계·AI소프트웨어·자유전공(모집요강 표 순서와 다름) — 모든 값이 정수로 떨어져 열 매칭 확인"
+    },
+    {
+     "key": "free-major",
+     "dept": "자유전공학과",
+     "track": "정원내 합계(일반고+특성화고)",
+     "quota": 21,
+     "applied": 591,
+     "asOf": "최종",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "경쟁률 확인 — 2027학년도 수시1차모집 경쟁률 (2026.09.30.(수) 최종 마감기준)",
+      "url": "https://enter.yc.ac.kr/enter/susi1-rate.do",
+      "date": "2026-09-30",
+      "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 18×26.61=479, 특성화고 3×37.33=112. 모집인원 출처: 2027학년도 신입생 모집요강(본책) p.29 '1. 모집인원' 수시1차 정원내 https://enter.yc.ac.kr/_attach/yonam/file/2026/06/NaXLhkJNJeQSgrWfooXZWVampx.pdf"
+     },
+     "prior": {
+      "quota": 21,
+      "applied": 482,
+      "track": "정원내 합계(일반고 18/370+특성화고 3/112)",
+      "url": "https://enter.yc.ac.kr/enter/susi1-result-in.do",
+      "title": "2026학년도 수시1차 입시결과"
+     },
+     "note": "특성화고 37.33:1(3명/112명)은 2026과 똑같은 값 — 화면 그대로 옮김"
+    }
+   ]
+  },
+  {
+   "name": "영진전문대학교",
+   "province": "대구",
+   "city": "대구 북구",
+   "lat": 35.896,
+   "lon": 128.622,
+   "checked": [
+    "입학처 공지(ipsi.yju.ac.kr, 학교 도메인 yjc→yju 이전) '[수시]2027학년도 수시1차 전형별 지원 현황(마감기준)' 2026-10-01, 첨부 PDF '2027학년도 수시1차 지원 마감 결과.pdf'(https://ipsi.yju.ac.kr/bbs/ipsi/26/57212/artclView.do) — 정원내계 열 있음",
+    "기사: 전자신문·위키트리 10-01 — 전체 1,885명/13,896명(7.4:1), 학과별 일부만"
+   ],
+   "rows": [
+    {
+     "key": "software",
+     "dept": "컴퓨터정보계열",
+     "track": "정원내계(일반고 33/192 + 특성화고 12/88 + 면접 10/27 + 자체 40/52)",
+     "quota": 95,
+     "applied": 359,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 전형별 지원현황(최종 마감 기준)",
+      "url": "https://ipsi.yju.ac.kr/bbs/ipsi/26/57212/artclView.do",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "software",
+     "dept": "AI컴퓨터",
+     "track": "정원내계(일반고 24/104 + 특성화고 22/36 + 면접 8/11 + 자체 9/3)",
+     "quota": 63,
+     "applied": 154,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 전형별 지원현황(최종 마감 기준)",
+      "url": "https://ipsi.yju.ac.kr/bbs/ipsi/26/57212/artclView.do",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "조리",
+     "track": "정원내계(일반고 12/236 + 특성화고 12/97 + 면접 25/100 + 평생 2/5 + 자체 4/13)",
+     "quota": 55,
+     "applied": 451,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 전형별 지원현황(최종 마감 기준)",
+      "url": "https://ipsi.yju.ac.kr/bbs/ipsi/26/57212/artclView.do",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "표에는 '조리'로만 표기 — 정식 학과명 미확인"
+    }
+   ]
+  },
+  {
+   "name": "우송정보대학",
+   "province": "대전",
+   "city": "대전 동구",
+   "lat": 36.338,
+   "lon": 127.446,
+   "checked": [
+    "입학처 수시모집 지원현황(https://ent.wsi.ac.kr/page/index.jsp?code=ent0206) → 지원현황 시스템(https://wsinfo.wsi.ac.kr/initcontroler?link=NeSju) — '2027학년도 수시1차모집 최종 경쟁률' 공개 (데이터 요청 /enti/is/is14/sisj_6021448_m/selectRqD0_F0)"
+   ],
+   "rows": [
+    {
+     "key": "hotel-culinary",
+     "dept": "외식조리학부 외식조리전공",
+     "track": "정원내 전형 합계(일반 72/536; 다른 정원내 전형 모집 없음)",
+     "quota": 72,
+     "applied": 536,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차모집 최종 경쟁률 (우송정보대학 입학 지원현황, ent.wsi.ac.kr 수시모집 지원현황 링크)",
+      "url": "https://wsinfo.wsi.ac.kr/initcontroler?link=NeSju",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "외식조리학부 K-푸드(한식)전공",
+     "track": "정원내 전형 합계(일반 25/127)",
+     "quota": 25,
+     "applied": 127,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차모집 최종 경쟁률 (우송정보대학 입학 지원현황, ent.wsi.ac.kr 수시모집 지원현황 링크)",
+      "url": "https://wsinfo.wsi.ac.kr/initcontroler?link=NeSju",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "일본외식조리학부",
+     "track": "정원내 전형 합계(일반 47/290)",
+     "quota": 47,
+     "applied": 290,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차모집 최종 경쟁률 (우송정보대학 입학 지원현황, ent.wsi.ac.kr 수시모집 지원현황 링크)",
+      "url": "https://wsinfo.wsi.ac.kr/initcontroler?link=NeSju",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "제과제빵학부 제과제빵전공",
+     "track": "정원내 전형 합계(일반 93/859)",
+     "quota": 93,
+     "applied": 859,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차모집 최종 경쟁률 (우송정보대학 입학 지원현황, ent.wsi.ac.kr 수시모집 지원현황 링크)",
+      "url": "https://wsinfo.wsi.ac.kr/initcontroler?link=NeSju",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "제과제빵학부 기업연계(성심당)전공",
+     "track": "정원내 전형 합계(일반 33/471)",
+     "quota": 33,
+     "applied": 471,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차모집 최종 경쟁률 (우송정보대학 입학 지원현황, ent.wsi.ac.kr 수시모집 지원현황 링크)",
+      "url": "https://wsinfo.wsi.ac.kr/initcontroler?link=NeSju",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "기업연계(성심당) 전공"
+    },
+    {
+     "key": "free-major",
+     "dept": "자율전공학부",
+     "track": "정원내 전형 합계(일반 20/117 + 대학자체 25/25 + 고른기회 43/76)",
+     "quota": 88,
+     "applied": 218,
+     "asOf": "최종",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차모집 최종 경쟁률 (우송정보대학 입학 지원현황, ent.wsi.ac.kr 수시모집 지원현황 링크)",
+      "url": "https://wsinfo.wsi.ac.kr/initcontroler?link=NeSju",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "전형 필드명 NORMAL/INSIDE/CHANCE 를 일반/대학자체/고른기회로 추정해 표기; 학과 합계(TOTAL_CNT 88, APLC_TOTAL_CNT 218)는 원자료 값"
+    }
+   ]
+  },
+  {
+   "name": "전주비전대학교",
+   "province": "전북",
+   "city": "전주",
+   "lat": 35.842,
+   "lon": 127.131,
+   "checked": [
+    "입학처 경쟁률 화면 https://my.jvision.ac.kr/ipsiweb/ipss/compet/compet_view.jsp — '데이터 조회중' 동적 로딩. compet.js 분석 → POST /WebJSON (fsp_action=JVCActionNoSession, SQL_ID ip/ip/web:ip_web_compet1_s01, YEAR=2027)로 학과별 데이터 직접 받음. 표시기간 정보(ip_web_active_info_s01): 2027 수시1차, 지원율 표시 2026-09-07~09-30"
+   ],
+   "rows": [
+    {
+     "key": "software",
+     "dept": "AI컴퓨터학과(주)",
+     "track": "정원내 지원자 합계(JUNGWON_IN) / 수시1차 모집인원(MOJIB)",
+     "quota": 28,
+     "applied": 146,
+     "asOf": "최종 (원서접수 09-07~09-30 종료 후 '전일 마감자료' 표시)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "전주비전대 입시 경쟁률(수시1차) 조회 화면 — 데이터: POST https://my.jvision.ac.kr/WebJSON (SQL_ID ip/ip/web:ip_web_compet1_s01, YEAR=2027)",
+      "url": "https://my.jvision.ac.kr/ipsiweb/ipss/compet/compet_view.jsp",
+      "date": "2026-10-20 조회",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "2027 신설(전년도 0). 화면 지원율 5.21, 정원외 지원 6명 별도"
+    },
+    {
+     "key": "taekwondo",
+     "dept": "태권도체육학과(주)",
+     "track": "정원내 지원자 합계(JUNGWON_IN) / 수시1차 모집인원(MOJIB)",
+     "quota": 26,
+     "applied": 82,
+     "asOf": "최종 (원서접수 09-07~09-30 종료 후 '전일 마감자료' 표시)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "전주비전대 입시 경쟁률(수시1차) 조회 화면 — 데이터: POST https://my.jvision.ac.kr/WebJSON (SQL_ID ip/ip/web:ip_web_compet1_s01, YEAR=2027)",
+      "url": "https://my.jvision.ac.kr/ipsiweb/ipss/compet/compet_view.jsp",
+      "date": "2026-10-20 조회",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 28,
+      "applied": 89,
+      "track": "정원내 지원자(BEFORE_JUNGWON_IN)/모집인원(BEFORE_MOJIB), 화면의 2026학년도(최종마감자료) 열",
+      "url": "https://my.jvision.ac.kr/ipsiweb/ipss/compet/compet_view.jsp",
+      "title": "전주비전대 경쟁률(수시1차) 조회 — 2026학년도(최종마감자료) 열"
+     },
+     "note": "지원율 3.15 (2026: 2.87). 정원외 지원 10명 별도"
+    },
+    {
+     "key": "leports",
+     "dept": "스포츠건강과(야)",
+     "track": "정원내 지원자 합계(JUNGWON_IN) / 수시1차 모집인원(MOJIB)",
+     "quota": 20,
+     "applied": 37,
+     "asOf": "최종 (원서접수 09-07~09-30 종료 후 '전일 마감자료' 표시)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "전주비전대 입시 경쟁률(수시1차) 조회 화면 — 데이터: POST https://my.jvision.ac.kr/WebJSON (SQL_ID ip/ip/web:ip_web_compet1_s01, YEAR=2027)",
+      "url": "https://my.jvision.ac.kr/ipsiweb/ipss/compet/compet_view.jsp",
+      "date": "2026-10-20 조회",
+      "derived": ""
+     },
+     "prior": {
+      "quota": 20,
+      "applied": 24,
+      "track": "정원내 지원자(BEFORE_JUNGWON_IN)/모집인원(BEFORE_MOJIB), 화면의 2026학년도(최종마감자료) 열",
+      "url": "https://my.jvision.ac.kr/ipsiweb/ipss/compet/compet_view.jsp",
+      "title": "전주비전대 경쟁률(수시1차) 조회 — 2026학년도(최종마감자료) 열"
+     },
+     "note": "야간. 지원율 1.85 (2026: 0.69). 정원외 지원 36명 별도. 생활체육 성격으로 판단 — 분야 확인 필요"
+    }
+   ]
+  },
+  {
+   "name": "정화예술대학교",
+   "province": "서울",
+   "city": "서울 중구",
+   "lat": 37.561,
+   "lon": 126.983,
+   "checked": [
+    "입학처 메뉴 '2027학년도 경쟁률'(menu_id=904) — 데이터 POST https://ipsi.jb.ac.kr/api/website/getMenu id=904 → 이미지(2026.09.30 기준, 수시1차, 전형별 경쟁률만 있음)",
+    "2027학년도 수시모집요강 PDF(입학처 모집요강 게시판 첨부) — 모집인원 표",
+    "'2026학년도 입시결과'(menu_id=897) 이미지 — 2026 수시1차 정원내 경쟁률(모집인원 없음)"
+   ],
+   "rows": [
+    {
+     "key": "cafe-bakery",
+     "dept": "디저트베이커리학과(오전)",
+     "track": "일반전형(정원내 유일 전형; 특기자·대학자체 모집 없음)",
+     "quota": 24,
+     "applied": 161,
+     "asOf": "2026-09-30 (이미지 표기, 마감일)",
+     "official": false,
+     "source": {
+      "kind": "school-page",
+      "title": "정화예술대학교 입학안내 - 2027학년도 경쟁률 (2027학년도 수시1차, 이미지)",
+      "url": "https://ipsi.jb.ac.kr/?m1=page&menu_id=904",
+      "date": "2026-09-30",
+      "derived": "경쟁률 6.7:1 × 모집인원 24 = 160.8 → 161 (6.7은 반올림값이라 160~161 가능: 160/24=6.67, 161/24=6.71). 모집인원 출처: 정화예술대_2027수시모집요강_리플릿_웹용(최종1).pdf 2쪽 모집인원표 '디저트베이커리학과 오전 수시1차 일반전형 24' (https://ipsi.jb.ac.kr/api/file/get?path=board/202607//e937cbf3-95b2-4a06-bc3f-80b550536c4f.pdf)"
+     },
+     "prior": null,
+     "note": "경쟁률표에서는 학과명이 '디저트'로 표기. 지원인원 ±1 불확실"
+    }
+   ]
+  },
+  {
+   "name": "청강문화산업대학교",
+   "province": "경기",
+   "city": "이천",
+   "lat": 37.252,
+   "lon": 127.48,
+   "checked": [
+    "입학처 경쟁률조회 https://it4u.ck.ac.kr/ipsi/index2027_1_ck.jsp — '2027학년도 수시1차 정원내 경쟁률', '2026-10-01[09시 현재]', 최종경쟁률은 10/1 16시 이후 공지 예정이라 표기(최종 공지 게시물은 공지사항에서 못 찾음)",
+    "입학처 공지사항 목록 — 2027 최종 경쟁률 게시물 없음",
+    "2026학년도 입시결과 공지 https://ipsi.ck.ac.kr/bbs/board.php?bo_table=notice&wr_id=882 (이미지)"
+   ],
+   "rows": [
+    {
+     "key": "free-major",
+     "dept": "자율전공",
+     "track": "정원내 합계(실기전형 20/246만 있음)",
+     "quota": 20,
+     "applied": 246,
+     "asOf": "2026-10-01 09시 현재(마감 후, 최종 공지 전 마지막 갱신)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "청강문화산업대학 2027학년도 수시1차 정원내 경쟁률",
+      "url": "https://it4u.ck.ac.kr/ipsi/index2027_1_ck.jsp",
+      "date": "2026-10-01",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "학교 전체 대상 무경계 자율전공으로 보임(2026 결과표 스쿨명 '무경계전공')"
+    }
+   ]
+  },
+  {
+   "name": "충남도립대학교",
+   "province": "충남",
+   "city": "청양",
+   "lat": 36.452,
+   "lon": 126.8,
+   "checked": [
+    "입학처 학과별경쟁률>수시모집(https://www.cnsu.ac.kr/entra/entrance-guide/competition-rate/rolling.do) — 표가 <ul><li> 구조로 HTML 안에 있음(스크립트 아님)"
+   ],
+   "rows": [
+    {
+     "key": "software",
+     "dept": "컴퓨터공학과",
+     "track": "정원내 합계(일반 23/73 + 특별 대학자체 1/0)",
+     "quota": 24,
+     "applied": 73,
+     "asOf": "2026-10-20 13:17:48 현재 (페이지에 '해당 경쟁률은 최종 경쟁률이 아님' 표기; 접수 9/30 마감 후 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 학과별경쟁률(정원내전형)",
+      "url": "https://www.cnsu.ac.kr/entra/entrance-guide/competition-rate/rolling.do",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": ""
+    },
+    {
+     "key": "hotel-culinary",
+     "dept": "호텔조리제빵학과",
+     "track": "정원내 합계(일반 28/225; 다른 정원내 전형 모집 없음)",
+     "quota": 28,
+     "applied": 225,
+     "asOf": "2026-10-20 13:17:48 현재 (페이지에 '해당 경쟁률은 최종 경쟁률이 아님' 표기; 접수 9/30 마감 후 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 학과별경쟁률(정원내전형)",
+      "url": "https://www.cnsu.ac.kr/entra/entrance-guide/competition-rate/rolling.do",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "조리+제빵 통합 학과 — cafe-bakery 에도 해당 가능 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    },
+    {
+     "key": "cafe-bakery",
+     "dept": "호텔조리제빵학과",
+     "track": "정원내 합계(일반 28/225; 다른 정원내 전형 모집 없음)",
+     "quota": 28,
+     "applied": 225,
+     "asOf": "2026-10-20 13:17:48 현재 (페이지에 '해당 경쟁률은 최종 경쟁률이 아님' 표기; 접수 9/30 마감 후 조회)",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 학과별경쟁률(정원내전형)",
+      "url": "https://www.cnsu.ac.kr/entra/entrance-guide/competition-rate/rolling.do",
+      "date": "2026-10-20",
+      "derived": ""
+     },
+     "prior": null,
+     "note": "조리+제빵 통합 학과 — cafe-bakery 에도 해당 가능 · 조리·제과제빵 통합 모집단위라 두 분야에 모두 넣음"
+    }
+   ]
+  },
+  {
+   "name": "한국승강기대학교",
+   "province": "경남",
+   "city": "거창",
+   "lat": 35.683,
+   "lon": 127.912,
+   "checked": [
+    "입학 홈페이지 실시간 경쟁률 iframe https://hs.klc.ac.kr/extAuth/check/checkCompetition (데이터: POST /extAuth/select_checkCompetition {ipsiYear:2027})",
+    "수시모집요강 화면 https://ipsi.klc.ac.kr/iphak/web/content.do?proFn=304010000 모집인원 표"
+   ],
+   "rows": [
+    {
+     "key": "free-major",
+     "dept": "글로컬자율전공학부",
+     "track": "정원내 대학자체 특별전형(수시1차 정원내는 이 전형만 모집)",
+     "quota": 26,
+     "applied": 29,
+     "asOf": "최종",
+     "official": true,
+     "source": {
+      "kind": "school-page",
+      "title": "한국승강기대학교 경쟁률 — 2027학년도 수시1차모집 경쟁률",
+      "url": "https://hs.klc.ac.kr/extAuth/check/checkCompetition",
+      "date": "2026-10",
+      "derived": "경쟁률 1.12:1 × 모집인원 26 = 29.12 → 29. 모집인원 출처: 입학 홈페이지 수시모집요강 '모집인원' 표(글로컬자율전공학부 수시1차 대학자체 26) https://ipsi.klc.ac.kr/iphak/web/content.do?proFn=304010000"
+     },
+     "prior": null,
+     "note": "같은 데이터의 2026학년도 값은 0.16:1(2026 모집인원 미확인이라 prior 생략)"
+    }
+   ]
+  }
+ ]
+}
