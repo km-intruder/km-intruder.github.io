@@ -67,7 +67,7 @@
     box.style.cssText = 'visibility:visible;position:fixed;inset:0;z-index:2147483647;background:#fff;display:flex;align-items:center;justify-content:center;font-family:Pretendard,-apple-system,"Malgun Gothic",sans-serif;color:#16191d';
     box.innerHTML =
       '<form style="width:min(320px,calc(100vw - 32px));border-top:3px solid #16191d;padding-top:16px">' +
-      '<div style="font-size:13px;color:#7b838d">김광섭 교수 교육 서비스</div>' +
+      '<div style="font-size:13px;color:#7b838d">Kwangseob Kim Data Analysis Service</div>' +
       '<div style="font-size:20px;font-weight:700;margin:4px 0 14px">접근 코드</div>' +
       '<input type="password" autocomplete="current-password" aria-label="접근 코드" required ' +
       'style="width:100%;box-sizing:border-box;border:1px solid #16191d;padding:10px;font-size:16px;border-radius:0">' +
