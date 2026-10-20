@@ -75,18 +75,33 @@
   const nav = document.getElementById('tabs');
   if (nav) {
     nav.innerHTML = links.map(l => `<a href="${l.href}"${l.active ? ' aria-current="page"' : ''}>${l.label}</a>`).join('');
+    // 학과 선택: '학과 선택' 라벨이 붙은 강조 상자. 목록은 2027 수시 1차 경쟁률이 낮은 학과부터
+    const pick = document.createElement('label');
+    pick.className = 'dept-pick';
+    pick.innerHTML = '<span>학과 선택</span>';
     const sel = document.createElement('select');
     sel.className = 'dept-select';
-    sel.setAttribute('aria-label', '학교 전체 또는 학과 선택');
-    sel.innerHTML = `<option value="">경민대 전체</option>` +
-      DEPTS.map(d => `<option value="${d.id}"${d === dept ? ' selected' : ''}>${d.name}</option>`).join('');
+    sel.setAttribute('aria-label', '학교 전체 또는 학과 선택 (경쟁률 낮은 학과부터)');
+    const fill = (list, rate = {}) => {
+      sel.innerHTML = `<option value="">경민대 전체</option>` + list.map(d =>
+        `<option value="${d.id}"${d === dept ? ' selected' : ''}>${d.name}${rate[d.id] != null ? ` · ${rate[d.id].toFixed(2)}:1` : ''}</option>`).join('');
+    };
+    fill(DEPTS);
+    fetch('school/susi1-2027.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(k => {
+      if (!k) return;
+      const rate = {};
+      for (const d of k.depts) if (d.id && d.quota) rate[d.id] = d.applied / d.quota;
+      // 경쟁률을 모르는 학과는 맨 뒤
+      fill([...DEPTS].sort((a, b) => (rate[a.id] ?? Infinity) - (rate[b.id] ?? Infinity)), rate);
+    }).catch(() => {});
     sel.addEventListener('change', () => {
       if (!sel.value) { location.href = 'school.html'; return; }
       const next = DEPTS.find(d => d.id === sel.value);
       const target = schoolScope || (page === 'industry.html' && !next.boards) ? 'admissions-dashboard.html' : page;
       location.href = target + (next === DEFAULT ? '' : '?dept=' + next.id);
     });
-    nav.appendChild(sel);
+    pick.appendChild(sel);
+    nav.appendChild(pick);
   }
 
   const base = dept ? 'depts/' + dept.id + '/' : '';

@@ -268,7 +268,25 @@ th.sorted::after { content: " " attr(data-dir); }
 
 /* ── 학과 선택 ── */
 .tabs { align-items: flex-end; }
-.dept-select { margin-left: auto; align-self: center; border: 1px solid var(--rule); background: var(--paper); padding: 5px 8px; font-size: 13px; border-radius: 0; }
+.dept-pick {
+  margin-left: auto; align-self: center; display: flex; align-items: center; gap: 8px;
+  background: var(--brand-tint); border: 1px solid var(--brand); padding: 3px 3px 3px 10px; cursor: pointer;
+}
+.dept-pick > span { font-size: 12px; font-weight: 700; color: var(--brand); white-space: nowrap; }
+.dept-select {
+  border: 0; background: var(--paper); color: var(--brand); font-weight: 600;
+  padding: 5px 8px; font-size: 13px; border-radius: 0; cursor: pointer; max-width: 260px;
+}
+.dept-select:focus-visible { outline: 2px solid var(--brand); outline-offset: 1px; }
+.dept-pick:hover { background: #dbe7f6; }
+/* 탭이 많거나 화면이 좁으면 줄을 바꾸고, 휴대폰에서는 학과 선택을 한 줄 전체로 */
+.tabs { flex-wrap: wrap; row-gap: 10px; }
+.tabs a { white-space: nowrap; }
+@media (max-width: 600px) {
+  .tabs { gap: 8px 16px; }
+  .dept-pick { margin-left: 0; width: 100%; box-sizing: border-box; }
+  .dept-select { flex: 1; max-width: none; }
+}
 
 /* ── 학교 전체: 감소 학과 행 ── */
 tr.minus td { background: #fff8f8; }
