@@ -238,7 +238,14 @@ def add_extra(dept, extra, schools, rows):
                 if not row["comparable"]:
                     row["priorNote"] = "2026 자료와 모집인원·전형 구성이 달라 직접 비교 제외"
             else:
-                row["priorNote"] = "2026 같은 기준 자료 없음"
+                # 2026 합계는 없지만 전형별 경쟁률만 있는 경우: 비교 칸에 짧게, 비고에 출처
+                row["priorNote"] = x.get("priorNote") or "2026 같은 기준 자료 없음"
+                if x.get("priorShort"):
+                    row["priorShort"] = x["priorShort"]
+                if x.get("priorSource"):
+                    row["priorSource"] = x["priorSource"]
+            if x.get("noticeUrl") and "source" in row:
+                row["source"]["noticeUrl"] = x["noticeUrl"]
             if not row["note"]:
                 del row["note"]
             rows.append(row)

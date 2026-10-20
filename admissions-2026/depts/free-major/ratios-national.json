@@ -257,7 +257,7 @@
    "lat": 37.648,
    "lon": 126.622,
    "type": "전문대",
-   "time": "2026-10-20 13:43"
+   "time": "2026-10-20 14:18"
   },
   {
    "id": "dl",
@@ -329,7 +329,7 @@
    "lat": 36.84,
    "lon": 127.182,
    "type": "전문대",
-   "time": "2026-10-20 13:48"
+   "time": "2026-10-20 14:24"
   },
   {
    "id": "bc",
@@ -1357,15 +1357,22 @@
    "priorUrl": null,
    "comparable": false,
    "locked": true,
+   "note": "2027 신입생 국가장학금·학자금대출 제한 대학(2026 대학평가 결과) — 학교는 1학기 등록금 전액을 교내장학금으로 지원한다고 안내(입학처 공지 2026-09-07)",
    "source": {
     "asOf": "2026-09-30 18:00 현재 (원서접수 마감일 기준 화면 표기, '최종 경쟁률은 변동될 수 있음' 안내)",
     "kind": "school-page",
     "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
     "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
     "date": "2026-09-30",
-    "derived": "화면에 지원인원 없음 → 모집인원×경쟁률: 11×3.0=33, 11×2.1=23.1→23 (반올림과 맞는 정수는 33·23뿐). 모집인원도 같은 화면 출처"
+    "derived": "화면에 지원인원 없음 → 모집인원×경쟁률: 11×3.0=33, 11×2.1=23.1→23 (반올림과 맞는 정수는 33·23뿐). 모집인원도 같은 화면 출처",
+    "noticeUrl": "https://www.seoyeong.ac.kr/ipsi/na/ntt/selectNttInfo.do?nttSn=130097&mi=2138"
    },
-   "priorNote": "2026 같은 기준 자료 없음"
+   "priorNote": "2026 전형별 경쟁률 일반고 2.6 · 특성화고 1.3 (수시1차 학과 모집 11명, 전문대학포털 전년도 입시결과). 2026 전형별 모집인원이 공개되지 않아 지원자 합계 증감은 계산하지 않음",
+   "priorShort": "2026 일반고 2.6 · 특성화고 1.3",
+   "priorSource": {
+    "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do",
+    "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과 2026"
+   }
   },
   {
    "school": "u38",
@@ -1380,14 +1387,15 @@
    "priorUrl": null,
    "comparable": false,
    "locked": true,
-   "note": "화면에서 '공학' 계열 아래 표시됨 — 학교 전체 대상인지 확인 필요. 지원인원 ±1 불확실",
+   "note": "화면에서 '공학' 계열 아래 표시됨 — 학교 전체 대상인지 확인 필요. 지원인원 ±1 불확실 · 2027 신입생 국가장학금·학자금대출 제한 대학(2026 대학평가 결과) — 학교는 1학기 등록금 전액을 교내장학금으로 지원한다고 안내(입학처 공지 2026-09-07)",
    "source": {
     "asOf": "2026-09-30 23:59 (마감 시점)",
     "kind": "school-page",
     "title": "서영대학교 파주캠퍼스 2027학년도 수시1차 신입생모집(경쟁률) 현황",
     "url": "https://www.seoyeong.ac.kr/pjipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2173",
     "date": "2026-09-30",
-    "derived": "일반고 13×6.5=84.5 → 84 또는 85(둘 다 6.5로 반올림됨, 화면에서 구분 불가), 특성화고 5×4.8=24. 합계 108~109 중 108 기재"
+    "derived": "일반고 13×6.5=84.5 → 84 또는 85(둘 다 6.5로 반올림됨, 화면에서 구분 불가), 특성화고 5×4.8=24. 합계 108~109 중 108 기재",
+    "noticeUrl": "https://www.seoyeong.ac.kr/pjipsi/na/ntt/selectNttInfo.do?nttSn=130098&mi=2171"
    },
    "priorNote": "2026 같은 기준 자료 없음"
   },

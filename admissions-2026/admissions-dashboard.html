@@ -284,7 +284,8 @@ function remark(r) {
   const link = (u, label) => u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>` : esc(label);
   return `<span class="badge unofficial">비공식</span><div class="remark">공식 경쟁률 서비스 자료 아님 · ${esc(SRC_KIND[x.kind] || x.kind)}<br>${link(x.url, x.title || '출처')}${x.date ? ` (${esc(x.date)})` : ''}`
     + (x.derived ? `<details><summary>계산 방법</summary>${esc(x.derived)}</details>` : '') + (x.asOf && x.asOf !== '최종' ? `<br>${esc(x.asOf)} 기준` : '')
-    + (r.priorSource ? `<br>2026: ${link(r.priorSource.url, r.priorSource.title || '출처')}` : '') + '</div>';
+    + (r.priorSource ? `<br>2026: ${link(r.priorSource.url, r.priorSource.title || '출처')}` : '')
+    + (r.note ? `<details><summary>참고</summary>${esc(r.note)}${x.noticeUrl ? ` ${link(x.noticeUrl, '공지')}` : ''}</details>` : '') + '</div>';
 }
 
 function rowHtml(r) {
@@ -305,7 +306,7 @@ function rowHtml(r) {
     <td class="n">${num(a)}${r.isBase ? '' : `<div class="muted">${a - ba >= 0 ? '+' : '−'}${num(Math.abs(a - ba))} vs 경민대</div>`}</td>
     <td class="n ${vs}"><span class="rate">${fx(r.rate)}</span><div class="muted">${r.final ? '최종' : '최종 미확인'}</div></td>
     <td class="n ${vs}">${r.isBase ? '<b>기준</b>' : `<b>${fx(r.vsBase)}배</b><div>${signed(r.gap)}p</div>`}</td>
-    <td class="n">${r.change != null ? `${fx(r.prior)} → ${fx(r.totalRate)}${r.mainTrack ? ' (학과 전체)' : ''}<div class="muted">${opposite ? `<b style="color:var(--ink)">${pct(r.change)} · 경민대와 반대</b>` : pct(r.change)}</div>` : `<span class="muted">${esc(r.priorShort || (r.prior != null ? '직접 비교 제외' : '자료 미확인'))}</span>`}</td>
+    <td class="n">${r.change != null ? `${fx(r.prior)} → ${fx(r.totalRate)}${r.mainTrack ? ' (학과 전체)' : ''}<div class="muted">${opposite ? `<b style="color:var(--ink)">${pct(r.change)} · 경민대와 반대</b>` : pct(r.change)}</div>` : `<span class="muted"${r.priorNote ? ` title="${esc(r.priorNote)}"` : ''}>${esc(r.priorShort || (r.prior != null ? '직접 비교 제외' : '자료 미확인'))}</span>`}</td>
     <td>${r.cause ? esc(r.cause) : '<span class="muted">—</span>'}</td>
     <td class="src">${remark(r)}</td>
   </tr>`;
