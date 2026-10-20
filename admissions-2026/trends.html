@@ -27,6 +27,14 @@
   .chart .end { font-size: 12px; font-weight: 600; }
   .chart .xhair { stroke: var(--ink-3); stroke-width: 1; }
   .trend-table td.y { white-space: nowrap; }
+  .trend-table td.u b, .vals td.u { color: #9a5b00; }
+  .vals { width: auto; min-width: 60%; margin: 0 0 6px; font-size: 12px; }
+  .vals th, .vals td { padding: 3px 10px; }
+  .vals th:first-child, .vals td:first-child { text-align: left; white-space: nowrap; }
+  .vals td.n, .vals th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .vals .sw { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .vals .sw.hollow { background: var(--paper) !important; border: 2px solid; width: 4px; height: 4px; }
+  .mini { font-size: 11px; color: var(--ink-3); }
   .trend-table tr[data-key] { cursor: pointer; }
   .trend-table tr.on td:first-child { box-shadow: inset 3px 0 0 var(--c, var(--brand)); }
   .pop-stats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border: 1px solid var(--rule); margin-bottom: 12px; }
@@ -45,7 +53,7 @@
   <div class="title-row">
     <div>
       <h1><span data-dept="fieldLabel"></span> 입시 추이 <span class="muted">2023~2027학년도 수시 1차</span></h1>
-      <div class="meta">기준 학과: 경민대학교 <span data-dept="name"></span> · 비교 모집단위 <span id="unitCount"></span>개 · 모두 수시 1차 정원내 전형 합계</div>
+      <div class="meta">기준 학과: 경민대학교 <span data-dept="name"></span> · 비교 모집단위 <span id="unitCount"></span>개 · 수시 1차 정원내 전형 합계와 주 전형(일반고·일반전형) 경쟁률 · <span class="badge unofficial">비공식</span> 값은 점선·빈 점</div>
       <div class="meta" data-dept-intro hidden></div>
     </div>
     <div class="tools">
@@ -81,14 +89,21 @@
 <section class="block">
   <div class="block-head"><span class="no">03</span><h2>추이 비교</h2></div>
   <div class="chart-legend" id="legend"></div>
-  <div class="chart-title">지원자 수</div>
+  <div class="chart-title">주 전형 경쟁률 (일반고, 없으면 일반전형)</div>
+  <div class="chart-sub">학교마다 전형 구성이 달라도 같은 기준으로 비교 · 비공식 학교의 과거 해도 이 값은 있음 · 지수 보기와 관계없이 실제 값</div>
+  <div id="valsMain"></div>
+  <div id="chartMain" class="chart"></div>
+  <div class="chart-title">지원자 수 (정원내 전형 합계)</div>
   <div class="chart-sub" id="subApplied"></div>
+  <div id="valsApplied"></div>
   <div id="chartApplied" class="chart"></div>
   <div class="chart-title">모집인원 (수시 1차 정원내)</div>
   <div class="chart-sub" id="subQuota"></div>
+  <div id="valsQuota"></div>
   <div id="chartQuota" class="chart"></div>
-  <div class="chart-title">경쟁률</div>
+  <div class="chart-title">경쟁률 (정원내 전형 합계)</div>
   <div class="chart-sub">지원자 ÷ 모집인원 (:1) · 지수 보기와 관계없이 실제 값</div>
+  <div id="valsRate"></div>
   <div id="chartRate" class="chart"></div>
 </section>
 
@@ -102,9 +117,10 @@
   </div>
   <details class="notes">
     <summary>표 읽는 법 · 자료 기준</summary>
-    <p>칸마다 <b>지원자</b>와 아래에 모집인원·경쟁률을 적었습니다. 모든 해를 <b>수시 1차 정원내 전형 합계</b>(농어촌·기초수급·대졸자·재직자 등 정원외 전형 제외)로 묶어, 학과 비교 화면의 주 전형 경쟁률과는 값이 다를 수 있습니다.</p>
+    <p>칸마다 <b>지원자</b>와 아래에 모집인원·정원내 경쟁률, 그 아래 <b>주 전형 경쟁률</b>을 적었습니다. 주황 글씨와 <span class="badge unofficial">비공식</span>은 공식 경쟁률 원문이 아닌 값입니다 — 학교 공지·입학처 화면 등 조사 자료, 또는 전문대학포털(전문대교협) 전년도 입시결과입니다. 포털에는 학과 모집인원과 전형별 경쟁률만 있어, 정원내 전형이 하나뿐인 해만 지원자를 계산했고(모집인원 × 경쟁률) 그 밖의 해는 주 전형 경쟁률만 있습니다. 칸에 마우스를 올리면 출처와 전형별 경쟁률이 보입니다.</p>
+    <p> 모든 해를 <b>수시 1차 정원내 전형 합계</b>(농어촌·기초수급·대졸자·재직자 등 정원외 전형 제외)로 묶어, 학과 비교 화면의 주 전형 경쟁률과는 값이 다를 수 있습니다.</p>
     <p id="srcNote"></p>
-    <p>학과명이 바뀐 해는 칸에 마우스를 올리면 그해 원문 학과명이 보입니다. 경민대 학과는 입학처 학과명이 한 학과에서 다음 학과로 바로 이어진 경우만 이어 붙였습니다(예: 컴퓨터소프트웨어과 → 지능형소프트웨어과, 효충사관과 → 효충군사학과). 경쟁률을 공개하지 않은 해·학교는 빈칸입니다. 학교 공지·기사 등 비공식 자료로만 확인한 학교는 과거 값이 없어 이 화면에 넣지 않았습니다.</p>
+    <p>학과명이 바뀐 해는 칸에 마우스를 올리면 그해 원문 학과명이 보입니다. 경민대 학과는 입학처 학과명이 한 학과에서 다음 학과로 바로 이어진 경우만 이어 붙였습니다(예: 컴퓨터소프트웨어과 → 지능형소프트웨어과, 효충사관과 → 효충군사학과). 경쟁률을 공개하지 않은 해·학교는 빈칸입니다.</p>
   </details>
 </section>
 
@@ -132,7 +148,7 @@ const val = (u, y) => u.series[y];
 // ── 공통 선 그래프 ──
 const tip = document.createElement('div'); tip.className = 'viz-tip'; document.body.appendChild(tip);
 function lineChart(box, lines, { fmt, refLine, height = 280, yZero = true }) {
-  const W = Math.max(560, box.clientWidth), H = height, L = 56, R = 150, Tp = 14, B = 30;
+  const W = Math.max(560, box.clientWidth), H = height, L = 56, R = 190, Tp = 14, B = 30;
   const all = lines.flatMap(l => l.points.map(p => p.v)).concat(refLine ? refLine.points.map(p => p.v) : []).filter(v => v != null);
   if (!all.length) { box.innerHTML = '<div class="empty">표시할 값이 없습니다.</div>'; return; }
   let lo = yZero ? 0 : Math.min(...all), hi = Math.max(...all);
@@ -149,11 +165,18 @@ function lineChart(box, lines, { fmt, refLine, height = 280, yZero = true }) {
     return d;
   };
   if (refLine) g += `<path d="${path(refLine.points)}" fill="none" stroke="var(--ink-3)" stroke-width="2" stroke-dasharray="5 4"/>`;
-  // 기준(경민대)을 맨 위에 그린다
+  // 기준(경민대)을 맨 위에 그린다. 이웃한 두 해를 잇는 선분마다, 한쪽이라도 비공식이면 점선
   const order = [...lines].sort((a, b) => (a.base ? 1 : 0) - (b.base ? 1 : 0));
   for (const l of order) {
-    g += `<path d="${path(l.points)}" fill="none" stroke="${l.color}" stroke-width="${l.base ? 3 : 2}" stroke-linejoin="round" stroke-linecap="round"/>`;
-    for (const p of l.points) if (p.v != null) g += `<circle cx="${X(p.y)}" cy="${Y(p.v)}" r="${l.base ? 4.5 : 4}" fill="${l.color}" stroke="var(--paper)" stroke-width="2"/>`;
+    const pts = l.points.filter(p => p.v != null);
+    pts.forEach((p, i) => {
+      const q = pts[i + 1];
+      if (!q || YEARS.indexOf(q.y) !== YEARS.indexOf(p.y) + 1) return;
+      g += `<line x1="${X(p.y)}" y1="${Y(p.v)}" x2="${X(q.y)}" y2="${Y(q.v)}" stroke="${l.color}" stroke-width="${l.base ? 3 : 2}" stroke-linecap="round"${p.u || q.u ? ' stroke-dasharray="5 4"' : ''}/>`;
+    });
+    for (const p of pts) g += p.u
+      ? `<circle cx="${X(p.y)}" cy="${Y(p.v)}" r="4" fill="var(--paper)" stroke="${l.color}" stroke-width="2"/>`
+      : `<circle cx="${X(p.y)}" cy="${Y(p.v)}" r="${l.base ? 4.5 : 4}" fill="${l.color}" stroke="var(--paper)" stroke-width="2"/>`;
   }
   // 선 끝 이름표: 마지막 값 위치, 겹치면 아래로 민다
   const ends = [...lines, ...(refLine ? [refLine] : [])].map(l => { const p = [...l.points].reverse().find(q => q.v != null); return p && { l, p, y: Y(p.v) }; }).filter(Boolean).sort((a, b) => a.y - b.y);
@@ -162,14 +185,14 @@ function lineChart(box, lines, { fmt, refLine, height = 280, yZero = true }) {
   const over = last - (H - B); if (over > 0) ends.forEach(e => { e.ly -= over; });
   for (const e of ends) {
     const x = X(e.p.y) + 8;
-    g += `<text class="end" x="${x}" y="${e.ly + 4}" style="fill:var(--ink)">${esc(e.l.label)}</text>`;
+    g += `<text class="end" x="${x}" y="${e.ly + 4}" style="fill:var(--ink)">${esc(e.l.label)} <tspan style="font-weight:400;fill:var(--ink-2)">${fmt(e.p.v)}</tspan></text>`;
     g += `<rect x="${X(e.p.y) + 2}" y="${e.ly - 1}" width="4" height="2" fill="${e.l.color || 'var(--ink-3)'}"/>`;
   }
   // 해마다 세로 띠: 마우스를 올리면 그해 값 전체
   YEARS.forEach((y, i) => {
     const x0 = i ? (X(y) + X(YEARS[i - 1])) / 2 : L - 20, x1 = i < YEARS.length - 1 ? (X(y) + X(YEARS[i + 1])) / 2 : W - R + 20;
     const rows = [...(refLine ? [refLine] : []), ...lines].map(l => ({ l, p: l.points.find(q => q.y === y) })).filter(r => r.p && r.p.v != null).sort((a, b) => b.p.v - a.p.v);
-    const html = `<b>${y}학년도</b><br>` + rows.map(r => `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${r.l.color || 'var(--ink-3)'};margin-right:5px"></span>${esc(r.l.label)} <b>${fmt(r.p.v)}</b>${r.p.note ? ` <span class="muted">${esc(r.p.note)}</span>` : ''}`).join('<br>');
+    const html = `<b>${y}학년도</b><br>` + rows.map(r => `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${r.l.color || 'var(--ink-3)'};margin-right:5px"></span>${esc(r.l.label)} <b>${fmt(r.p.v)}</b>${r.p.u ? ' <span style="color:#9a5b00">비공식</span>' : ''}${r.p.note ? ` <span class="muted">${esc(r.p.note)}</span>` : ''}`).join('<br>');
     g += `<g class="col" data-tip="${esc(html)}"><line class="xhair" x1="${X(y)}" x2="${X(y)}" y1="${Tp}" y2="${H - B}" visibility="hidden"/><rect class="hit" x="${x0}" y="0" width="${x1 - x0}" height="${H}"/></g>`;
   });
   box.innerHTML = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img">${g}</svg>`;
@@ -228,7 +251,8 @@ function topFive() {
     .forEach(u => color.set(keyOf(u), SLOTS[color.size]));
 }
 function renderPicker() {
-  const groups = [['경민대 같은 계열 학과', u => u.isKm && !u.isBase], ['수도권 비교 학교', u => !u.isKm && u.scope === '수도권'], ['전국 비교 학교 (공식 경쟁률 원문)', u => !u.isKm && u.scope === '전국']];
+  const groups = [['경민대 같은 계열 학과', u => u.isKm && !u.isBase], ['수도권 비교 학교', u => !u.isKm && u.scope === '수도권'],
+    ['전국 비교 학교 (공식 경쟁률 원문)', u => !u.isKm && u.scope === '전국' && !u.unofficial], ['전국 비교 학교 (비공식 자료)', u => !u.isKm && u.scope === '전국' && u.unofficial]];
   const b = base();
   el('picker').innerHTML = `<div class="picker-group">기준</div><div class="picker"><label><input type="checkbox" checked disabled><i class="sw" style="background:${BASE_COLOR};border-color:${BASE_COLOR}"></i><span>경민대학교 ${esc(b.dept)}<small>${yearsText(b)}</small></span></label></div>`
     + groups.map(([title, f]) => {
@@ -236,25 +260,31 @@ function renderPicker() {
       if (!us.length) return '';
       return `<div class="picker-group">${title} (${us.length})</div><div class="picker">${us.map(u => {
         const k = keyOf(u), on = color.has(k), off = !on && color.size >= MAX;
-        return `<label class="${off ? 'off' : ''}"><input type="checkbox" data-key="${esc(k)}" ${on ? 'checked' : ''} ${off ? 'disabled' : ''}><i class="sw" style="${on ? `background:${color.get(k)};border-color:${color.get(k)}` : ''}"></i><span>${esc(short(u.schoolName))} ${esc(u.dept)}<small>${esc(u.region)} · ${yearsText(u)}</small></span></label>`;
+        return `<label class="${off ? 'off' : ''}"><input type="checkbox" data-key="${esc(k)}" ${on ? 'checked' : ''} ${off ? 'disabled' : ''}><i class="sw" style="${on ? `background:${color.get(k)};border-color:${color.get(k)}` : ''}"></i><span>${esc(short(u.schoolName))} ${esc(u.dept)}${uBadge(u)}<small>${esc(u.region)} · ${yearsText(u)}</small></span></label>`;
       }).join('')}</div>`;
     }).join('');
   el('picker').querySelectorAll('input[data-key]').forEach(i => i.addEventListener('change', () => toggle(T.units.find(u => keyOf(u) === i.dataset.key), i.checked)));
   el('pickCount').textContent = `비교 ${color.size} / ${MAX}개 선택`;
 }
 const yearsText = u => { const ys = YEARS.filter(y => u.series[y]); return ys.length === YEARS.length ? '2023~2027 모두' : ys.join('·') + (ys.length < 2 ? ' (한 해뿐)' : ''); };
+// 비공식: 모집단위 전체가 비공식이면 '비공식', 일부 해만 포털 등으로 채웠으면 '일부 비공식'
+const someU = u => YEARS.some(y => u.series[y]?.unofficial);
+const uBadge = u => u.unofficial ? ' <span class="badge unofficial">비공식</span>' : someU(u) ? ' <span class="badge unofficial">일부 비공식</span>' : '';
 
 // ── 03 차트 ──
 function seriesFor(u, field) {
-  const ys = YEARS.filter(y => u.series[y]);
+  const ys = YEARS.filter(y => u.series[y] && u.series[y][field] != null);
   const first = ys.length ? u.series[ys[0]][field] : null;
   return YEARS.map(y => {
     const s = u.series[y];
     if (!s) return { y, v: null };
-    const raw = field === 'rate' ? s.applied / s.quota : s[field];
-    const v = mode === 'index' && field !== 'rate' ? (first ? raw / first * 100 : null) : raw;
+    const raw = field === 'rate' ? (s.quota ? s.applied / s.quota : null) : s[field];
+    if (raw == null) return { y, v: null };
+    const idx = mode === 'index' && (field === 'applied' || field === 'quota');
+    const v = idx ? (first ? raw / first * 100 : null) : raw;
     const renamed = s.name && s.name !== u.dept ? s.name : '';
-    return { y, v, note: (mode === 'index' && field !== 'rate' ? `(${num(raw)})` : '') + (renamed ? ' ' + renamed : '') };
+    const track = field === 'mainRate' && s.mainTrack ? s.mainTrack : '';
+    return { y, v, u: !!s.unofficial, note: [idx ? `(${num(raw)})` : '', track, renamed].filter(Boolean).join(' ') };
   });
 }
 function lineFor(u, field) {
@@ -263,31 +293,59 @@ function lineFor(u, field) {
 const dupSchool = u => selected().concat(base()).filter(x => x.schoolName === u.schoolName).length > 1;
 function renderCharts() {
   const shown = [base(), ...selected()];
-  el('legend').innerHTML = shown.map(u => `<span><i class="dot-sw" style="background:${u.isBase ? BASE_COLOR : color.get(keyOf(u))}"></i>${esc(u.isBase ? '경민대학교' : short(u.schoolName))} ${esc(u.dept)}</span>`).join('')
+  el('legend').innerHTML = shown.map(u => `<span><i class="dot-sw" style="background:${u.isBase ? BASE_COLOR : color.get(keyOf(u))}"></i>${esc(u.isBase ? '경민대학교' : short(u.schoolName))} ${esc(u.dept)}${uBadge(u)}</span>`).join('')
+    + '<span><i class="dot-sw" style="background:var(--paper);border:2px solid var(--ink-2);width:6px;height:6px"></i>빈 점·점선 = 비공식 값 (표의 *)</span>'
     + (mode === 'index' ? '<span><i class="sw" style="background:none;border-top:2px dashed var(--ink-3);height:0;border-radius:0"></i>학령인구(고3 지원자) 지수</span>' : '');
   const idx = mode === 'index';
   const pop = idx ? { label: '학령인구', points: YEARS.map(y => ({ y, v: POP.values[y].value / POP.values[2023].value * 100, note: `(${num(POP.values[y].value)}명)` })) } : null;
   const fmtN = (n, axis) => idx ? (axis ? n.toFixed(0) : n.toFixed(0)) : (axis ? num(n) : num(Math.round(n)) + '명');
-  lineChart(el('chartApplied'), shown.map(u => lineFor(u, 'applied')), { fmt: fmtN, refLine: pop, yZero: !idx });
-  lineChart(el('chartQuota'), shown.map(u => lineFor(u, 'quota')), { fmt: fmtN, refLine: pop, yZero: !idx });
-  lineChart(el('chartRate'), shown.map(u => lineFor(u, 'rate')), { fmt: (n, axis) => axis ? n.toFixed(0) : fx(n) + ':1' });
+  const fmtR = (n, axis) => axis ? n.toFixed(0) : fx(n);
+  const draw = (id, field, fmt, opt) => {
+    const lines = shown.map(u => lineFor(u, field));
+    valsTable(el('vals' + id), lines, fmt, opt.refLine);
+    lineChart(el('chart' + id), lines, { fmt, ...opt });
+  };
+  draw('Main', 'mainRate', fmtR, {});
+  draw('Applied', 'applied', fmtN, { refLine: pop, yZero: !idx });
+  draw('Quota', 'quota', fmtN, { refLine: pop, yZero: !idx });
+  draw('Rate', 'rate', fmtR, {});
   el('subApplied').textContent = idx ? '각 모집단위 첫 해 = 100 · 점선은 학령인구(2023 = 100)' : '수시 1차 정원내 전형 지원자 합계';
   el('subQuota').textContent = idx ? '각 모집단위 첫 해 = 100 · 점선은 학령인구(2023 = 100)' : '수시 1차 정원내 전형 모집인원 합계';
 }
 
+// 차트 바로 위 수치 표: 선 하나가 한 줄 (비공식 값은 주황 글씨 + *)
+function valsTable(box, lines, fmt, refLine) {
+  const rows = [...lines, ...(refLine ? [{ ...refLine, color: 'var(--ink-3)' }] : [])];
+  box.innerHTML = `<div class="table-wrap"><table class="vals"><thead><tr><th></th>${YEARS.map(y => `<th class="n">${y}</th>`).join('')}</tr></thead><tbody>`
+    + rows.map(l => `<tr><td><i class="sw ${l.points.some(p => p.u) && !l.base ? '' : ''}" style="background:${l.color}"></i>${esc(l.label)}</td>`
+      + YEARS.map(y => { const p = l.points.find(q => q.y === y); return p && p.v != null ? `<td class="n ${p.u ? 'u' : ''}" title="${esc(p.note || '')}${p.u ? ' · 비공식' : ''}">${fmt(p.v)}${p.u ? '*' : ''}</td>` : '<td class="n muted">—</td>'; }).join('') + '</tr>').join('')
+    + `</tbody></table></div>`;
+}
+
 // ── 04 표 ──
+const SRC_KIND = { 'school-page': '학교 입학처 화면', 'school-notice': '학교 입학처 공지·자료', news: '언론 보도', other: '기타 사이트', portal: '전문대학포털 입시결과' };
+function cellHtml(s) {
+  const tip = [s.name || '', s.unofficial ? '비공식 — 공식 경쟁률 원문 아님' : '', s.source ? (typeof s.source === 'string' ? s.source : `${SRC_KIND[s.source.kind] || ''} ${s.source.title || ''} ${s.source.date || ''}`) : '',
+    s.tracks || '', s.derived || ''].filter(Boolean).join(' · ');
+  const top = s.applied != null ? `<b>${num(s.applied)}</b><div class="muted">${num(s.quota)}명 · ${fx(s.applied / s.quota)}</div>` : '<b class="muted">—</b><div class="muted">지원자 미상</div>';
+  const main = s.mainRate != null ? `<div class="mini">${esc(s.mainTrack)} ${fx(s.mainRate)}</div>` : '';
+  const link = s.source && s.source.url ? `<div class="mini"><a href="${esc(s.source.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">비공식 출처</a></div>` : (s.unofficial ? '<div class="mini">비공식</div>' : '');
+  return `<td class="n y ${s.unofficial ? 'u' : ''}" title="${esc(tip)}">${top}${main}${s.unofficial ? link : ''}</td>`;
+}
+
 function renderTable() {
   const rows = [base(), ...T.units.filter(u => !u.isBase)];
   el('table').innerHTML = rows.map(u => {
     const k = keyOf(u), on = u.isBase || color.has(k), c = u.isBase ? BASE_COLOR : color.get(k);
     const ys = YEARS.filter(y => u.series[y]);
-    const a0 = ys.length ? u.series[ys[0]].applied : null, a1 = u.series[2027]?.applied;
-    const ch = a0 && a1 != null && ys[0] !== 2027 ? (a1 - a0) / a0 * 100 : null;
+    const ya = YEARS.filter(y => u.series[y]?.applied != null);
+    const a0 = ya.length ? u.series[ya[0]].applied : null, a1 = u.series[2027]?.applied;
+    const ch = a0 && a1 != null && ya[0] !== 2027 ? (a1 - a0) / a0 * 100 : null;
     return `<tr data-key="${esc(k)}" class="${on ? 'on' : ''} ${u.isBase ? 'base-row' : ''}" style="${c ? `--c:${c}` : ''}">
-      <td><b>${esc(u.schoolName)}</b><div class="dept">${esc(u.dept)}</div>${u.isKm && !u.isBase ? '<div class="muted">경민대 같은 계열</div>' : ''}</td>
+      <td><b>${esc(u.schoolName)}</b><div class="dept">${esc(u.dept)}${uBadge(u)}</div>${u.isKm && !u.isBase ? '<div class="muted">경민대 같은 계열</div>' : ''}</td>
       <td class="muted">${esc(u.region)}${u.scope === '전국' ? '<div>전국 비교</div>' : ''}</td>
-      ${YEARS.map(y => { const s = u.series[y]; return s ? `<td class="n y" title="${esc(s.name || '')}${s.source ? ' · ' + esc(s.source) : ''}"><b>${num(s.applied)}</b><div class="muted">${num(s.quota)}명 · ${fx(s.applied / s.quota)}</div></td>` : '<td class="n muted">—</td>'; }).join('')}
-      <td class="n ${ch < 0 ? 'alert' : ''}">${ch == null ? '—' : `<b>${pct(ch)}</b><div class="muted">${ys[0]} 기준</div>`}</td></tr>`;
+      ${YEARS.map(y => { const s = u.series[y]; return s ? cellHtml(s) : '<td class="n muted">—</td>'; }).join('')}
+      <td class="n ${ch < 0 ? 'alert' : ''}">${ch == null ? '—' : `<b>${pct(ch)}</b><div class="muted">${ya[0]} 기준</div>`}</td></tr>`;
   }).join('');
   el('table').querySelectorAll('tr[data-key]').forEach(tr => tr.addEventListener('click', () => toggle(T.units.find(u => keyOf(u) === tr.dataset.key))));
 }
@@ -313,7 +371,7 @@ addEventListener('resize', () => { clearTimeout(window._rz); window._rz = setTim
     document.title = D.name + ' 입시 추이';
     el('unitCount').textContent = T.units.length - 1;
     el('stamp').textContent = '자료 생성 ' + T.builtAt;
-    el('srcNote').textContent = `기준: ${T.basis}. 출처: ${T.sources.past}; ${T.sources.now}.`;
+    el('srcNote').textContent = `기준: ${T.basis}. ${T.mainBasis || ''}. 출처: ${T.sources.past}; ${T.sources.now}. ${T.sources.unofficial || ''}`;
     const saved = load();
     if (saved) saved.forEach(k => { const u = T.units.find(x => keyOf(x) === k); if (u && !u.isBase && color.size < MAX) color.set(k, SLOTS[color.size]); });
     else topFive();

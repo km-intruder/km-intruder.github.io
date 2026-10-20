@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,18 +27,24 @@
     "2025": {
      "quota": 33,
      "applied": 231,
-     "name": "응급구조학과"
+     "name": "응급구조학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.0
     },
     "2026": {
      "quota": 32,
      "applied": 388,
-     "name": "응급구조학과"
+     "name": "응급구조학과",
+     "mainTrack": "일반전형",
+     "mainRate": 12.12
     },
     "2027": {
      "quota": 32,
      "applied": 469,
      "name": "응급구조학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 14.66
     }
    }
   },
@@ -52,28 +60,38 @@
     "2023": {
      "quota": 94,
      "applied": 280,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.47
     },
     "2024": {
      "quota": 80,
      "applied": 268,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.06
     },
     "2025": {
      "quota": 88,
      "applied": 280,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.8
     },
     "2026": {
      "quota": 90,
      "applied": 406,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.41
     },
     "2027": {
      "quota": 90,
      "applied": 541,
      "name": "소방안전관리과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 6.12
     }
    }
   },
@@ -89,22 +107,30 @@
     "2024": {
      "quota": 20,
      "applied": 351,
-     "name": "응급구조학과(주간)(3년제)"
+     "name": "응급구조학과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 16.61
     },
     "2025": {
      "quota": 33,
      "applied": 412,
-     "name": "응급구조학과(주간)(3년제)"
+     "name": "응급구조학과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 12.64
     },
     "2026": {
      "quota": 33,
      "applied": 400,
-     "name": "응급구조학과(3년제)"
+     "name": "응급구조학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 11.79
     },
     "2027": {
      "quota": 40,
      "applied": 499,
-     "name": "소사캠퍼스 응급구조학과(3년제) · 응급구조학과(3년제)"
+     "name": "소사캠퍼스 응급구조학과(3년제) · 응급구조학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 13.06
     }
    }
   },
@@ -120,17 +146,23 @@
     "2025": {
      "quota": 20,
      "applied": 272,
-     "name": "응급구조과"
+     "name": "응급구조과",
+     "mainTrack": "일반고",
+     "mainRate": 13.06
     },
     "2026": {
      "quota": 40,
      "applied": 390,
-     "name": "응급구조과"
+     "name": "응급구조과",
+     "mainTrack": "일반고",
+     "mainRate": 10.21
     },
     "2027": {
      "quota": 40,
      "applied": 577,
-     "name": "응급구조과"
+     "name": "응급구조과",
+     "mainTrack": "일반고",
+     "mainRate": 15.21
     }
    }
   },
@@ -146,17 +178,23 @@
     "2025": {
      "quota": 25,
      "applied": 224,
-     "name": "응급구조과"
+     "name": "응급구조과",
+     "mainTrack": "일반고",
+     "mainRate": 8.05
     },
     "2026": {
      "quota": 43,
      "applied": 610,
-     "name": "응급구조과"
+     "name": "응급구조과",
+     "mainTrack": "일반고",
+     "mainRate": 13.92
     },
     "2027": {
      "quota": 43,
      "applied": 732,
-     "name": "응급구조과"
+     "name": "응급구조과",
+     "mainTrack": "일반고",
+     "mainRate": 16.89
     }
    }
   },
@@ -172,12 +210,16 @@
     "2026": {
      "quota": 25,
      "applied": 257,
-     "name": "응급구조학과"
+     "name": "응급구조학과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.28
     },
     "2027": {
      "quota": 30,
      "applied": 408,
-     "name": "응급구조학과"
+     "name": "응급구조학과",
+     "mainTrack": "일반고",
+     "mainRate": 13.64
     }
    }
   },
@@ -193,17 +235,23 @@
     "2025": {
      "quota": 33,
      "applied": 216,
-     "name": "응급구조과"
+     "name": "응급구조과",
+     "mainTrack": "일반고",
+     "mainRate": 7.28
     },
     "2026": {
      "quota": 33,
      "applied": 699,
-     "name": "응급구조과"
+     "name": "응급구조과",
+     "mainTrack": "일반고",
+     "mainRate": 20.89
     },
     "2027": {
      "quota": 29,
      "applied": 591,
-     "name": "응급구조과"
+     "name": "응급구조과",
+     "mainTrack": "일반고",
+     "mainRate": 20.12
     }
    }
   },
@@ -219,27 +267,37 @@
     "2023": {
      "quota": 21,
      "applied": 161,
-     "name": "응급구조과(3년제)"
+     "name": "응급구조과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 7.67
     },
     "2024": {
      "quota": 27,
      "applied": 248,
-     "name": "응급구조과(3년제)"
+     "name": "응급구조과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 9.19
     },
     "2025": {
      "quota": 30,
      "applied": 175,
-     "name": "응급구조과(3년제)"
+     "name": "응급구조과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 5.83
     },
     "2026": {
      "quota": 32,
      "applied": 267,
-     "name": "응급구조과(3년제)"
+     "name": "응급구조과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 8.34
     },
     "2027": {
      "quota": 35,
      "applied": 376,
-     "name": "응급구조과(3년제)"
+     "name": "응급구조과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 10.74
     }
    }
   }

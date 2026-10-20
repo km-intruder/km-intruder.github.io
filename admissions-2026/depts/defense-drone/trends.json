@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -26,7 +28,9 @@
      "quota": 25,
      "applied": 124,
      "name": "국방드론봇시스템과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 4.96
     }
    }
   },
@@ -42,13 +46,17 @@
     "2026": {
      "quota": 13,
      "applied": 44,
-     "name": "사이버보안학과"
+     "name": "사이버보안학과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.38
     },
     "2027": {
      "quota": 15,
      "applied": 68,
      "name": "사이버·정보시스템학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 4.53
     }
    }
   },
@@ -64,28 +72,38 @@
     "2023": {
      "quota": 50,
      "applied": 207,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반고",
+     "mainRate": 4.46
     },
     "2024": {
      "quota": 45,
      "applied": 132,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반고",
+     "mainRate": 2.86
     },
     "2025": {
      "quota": 60,
      "applied": 147,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.45
     },
     "2026": {
      "quota": 35,
      "applied": 133,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.8
     },
     "2027": {
      "quota": 35,
      "applied": 101,
      "name": "지능형소프트웨어과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 2.89
     }
    }
   },
@@ -101,28 +119,38 @@
     "2023": {
      "quota": 72,
      "applied": 81,
-     "name": "효충사관과"
+     "name": "효충사관과",
+     "mainTrack": "일반고",
+     "mainRate": 1.2
     },
     "2024": {
      "quota": 45,
      "applied": 59,
-     "name": "효충사관과"
+     "name": "효충사관과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.31
     },
     "2025": {
      "quota": 35,
      "applied": 69,
-     "name": "효충군사학과"
+     "name": "효충군사학과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.97
     },
     "2026": {
      "quota": 35,
      "applied": 96,
-     "name": "효충군사학과"
+     "name": "효충군사학과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.74
     },
     "2027": {
      "quota": 35,
      "applied": 118,
      "name": "효충군사학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 3.37
     }
    }
   },
@@ -138,27 +166,37 @@
     "2023": {
      "quota": 25,
      "applied": 75,
-     "name": "드론건설환경과"
+     "name": "드론건설환경과",
+     "mainTrack": "일반고",
+     "mainRate": 2.47
     },
     "2024": {
      "quota": 25,
      "applied": 68,
-     "name": "드론건설환경과"
+     "name": "드론건설환경과",
+     "mainTrack": "일반고",
+     "mainRate": 2.93
     },
     "2025": {
      "quota": 26,
      "applied": 89,
-     "name": "드론건설환경과"
+     "name": "드론건설환경과",
+     "mainTrack": "일반고",
+     "mainRate": 3.12
     },
     "2026": {
      "quota": 23,
      "applied": 102,
-     "name": "드론건설환경과"
+     "name": "드론건설환경과",
+     "mainTrack": "일반고",
+     "mainRate": 4.92
     },
     "2027": {
      "quota": 24,
      "applied": 141,
-     "name": "드론건설환경과"
+     "name": "드론건설환경과",
+     "mainTrack": "일반고",
+     "mainRate": 7.57
     }
    }
   },
@@ -174,12 +212,16 @@
     "2026": {
      "quota": 56,
      "applied": 208,
-     "name": "로봇자동화공학과"
+     "name": "로봇자동화공학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.82
     },
     "2027": {
      "quota": 59,
      "applied": 349,
-     "name": "로봇자동화공학과"
+     "name": "로봇자동화공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.21
     }
    }
   },
@@ -195,27 +237,37 @@
     "2023": {
      "quota": 17,
      "applied": 68,
-     "name": "AI학부 드론영상전공"
+     "name": "AI학부 드론영상전공",
+     "mainTrack": "일반전형",
+     "mainRate": 4.0
     },
     "2024": {
      "quota": 22,
      "applied": 105,
-     "name": "드론영상과"
+     "name": "드론영상과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.77
     },
     "2025": {
      "quota": 26,
      "applied": 112,
-     "name": "드론영상과"
+     "name": "드론영상과",
+     "mainTrack": "일반고",
+     "mainRate": 4.73
     },
     "2026": {
      "quota": 26,
      "applied": 126,
-     "name": "드론영상과"
+     "name": "드론영상과",
+     "mainTrack": "일반고",
+     "mainRate": 5.87
     },
     "2027": {
      "quota": 26,
      "applied": 181,
-     "name": "AI융합학부 드론영상과 · 드론영상과"
+     "name": "AI융합학부 드론영상과 · 드론영상과",
+     "mainTrack": "일반고",
+     "mainRate": 8.93
     }
    }
   },
@@ -236,12 +288,16 @@
     "2026": {
      "quota": 73,
      "applied": 1703,
-     "name": "문예창작과-운문 외 1개 학과 · 실용음악과-가창 외 4개 학과"
+     "name": "문예창작과-운문 외 1개 학과 · 실용음악과-가창 외 4개 학과",
+     "mainTrack": "일반전형",
+     "mainRate": 23.33
     },
     "2027": {
      "quota": 36,
      "applied": 315,
-     "name": "AI드론공학과"
+     "name": "AI드론공학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.08
     }
    }
   },
@@ -257,22 +313,30 @@
     "2024": {
      "quota": 26,
      "applied": 117,
-     "name": "전투드론과"
+     "name": "전투드론과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.0
     },
     "2025": {
      "quota": 26,
      "applied": 110,
-     "name": "전투드론과"
+     "name": "전투드론과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.79
     },
     "2026": {
      "quota": 26,
      "applied": 178,
-     "name": "전투드론과"
+     "name": "전투드론과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.33
     },
     "2027": {
      "quota": 26,
      "applied": 170,
-     "name": "군사학부 전투드론과"
+     "name": "군사학부 전투드론과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.5
     }
    }
   }

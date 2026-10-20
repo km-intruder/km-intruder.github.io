@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 40,
      "applied": 186,
-     "name": "호텔관광경영과"
+     "name": "호텔관광경영과",
+     "mainTrack": "일반고",
+     "mainRate": 5.14
     },
     "2024": {
      "quota": 32,
      "applied": 158,
-     "name": "호텔관광경영과"
+     "name": "호텔관광경영과",
+     "mainTrack": "일반고",
+     "mainRate": 5.36
     },
     "2025": {
      "quota": 33,
      "applied": 162,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.91
     },
     "2026": {
      "quota": 29,
      "applied": 212,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.31
     },
     "2027": {
      "quota": 29,
      "applied": 273,
      "name": "호텔관광학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 9.41
     }
    }
   },
@@ -62,28 +74,38 @@
     "2023": {
      "quota": 49,
      "applied": 292,
-     "name": "카페베이커리과"
+     "name": "카페베이커리과",
+     "mainTrack": "일반고",
+     "mainRate": 4.67
     },
     "2024": {
      "quota": 49,
      "applied": 252,
-     "name": "카페베이커리과"
+     "name": "카페베이커리과",
+     "mainTrack": "일반고",
+     "mainRate": 4.92
     },
     "2025": {
      "quota": 51,
      "applied": 182,
-     "name": "카페베이커리과"
+     "name": "카페베이커리과",
+     "mainTrack": "일반고",
+     "mainRate": 3.1
     },
     "2026": {
      "quota": 51,
      "applied": 289,
-     "name": "카페베이커리과"
+     "name": "카페베이커리과",
+     "mainTrack": "일반고",
+     "mainRate": 7.07
     },
     "2027": {
      "quota": 51,
      "applied": 287,
      "name": "카페베이커리과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반고",
+     "mainRate": 5.91
     }
    }
   },
@@ -99,28 +121,38 @@
     "2023": {
      "quota": 65,
      "applied": 248,
-     "name": "호텔조리과"
+     "name": "호텔조리과",
+     "mainTrack": "일반고",
+     "mainRate": 3.33
     },
     "2024": {
      "quota": 61,
      "applied": 242,
-     "name": "호텔조리과"
+     "name": "호텔조리과",
+     "mainTrack": "일반고",
+     "mainRate": 4.81
     },
     "2025": {
      "quota": 63,
      "applied": 187,
-     "name": "호텔조리과"
+     "name": "호텔조리과",
+     "mainTrack": "일반고",
+     "mainRate": 2.92
     },
     "2026": {
      "quota": 63,
      "applied": 228,
-     "name": "호텔조리과"
+     "name": "호텔조리과",
+     "mainTrack": "일반고",
+     "mainRate": 4.57
     },
     "2027": {
      "quota": 63,
      "applied": 318,
      "name": "호텔조리과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반고",
+     "mainRate": 5.6
     }
    }
   },
@@ -136,27 +168,37 @@
     "2023": {
      "quota": 54,
      "applied": 159,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 2.79
     },
     "2024": {
      "quota": 54,
      "applied": 121,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 1.78
     },
     "2025": {
      "quota": 53,
      "applied": 154,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 2.25
     },
     "2026": {
      "quota": 51,
      "applied": 214,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 3.57
     },
     "2027": {
      "quota": 41,
      "applied": 355,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 6.77
     }
    }
   },
@@ -172,27 +214,37 @@
     "2023": {
      "quota": 50,
      "applied": 562,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.7
     },
     "2024": {
      "quota": 49,
      "applied": 430,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.55
     },
     "2025": {
      "quota": 49,
      "applied": 434,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.43
     },
     "2026": {
      "quota": 49,
      "applied": 584,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.93
     },
     "2027": {
      "quota": 49,
      "applied": 656,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 13.8
     }
    }
   },
@@ -208,27 +260,37 @@
     "2023": {
      "quota": 45,
      "applied": 352,
-     "name": "관광서비스경영학과"
+     "name": "관광서비스경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.3
     },
     "2024": {
      "quota": 45,
      "applied": 321,
-     "name": "관광서비스경영학과"
+     "name": "관광서비스경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.23
     },
     "2025": {
      "quota": 45,
      "applied": 256,
-     "name": "관광서비스경영학과"
+     "name": "관광서비스경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.43
     },
     "2026": {
      "quota": 45,
      "applied": 342,
-     "name": "관광서비스경영학과"
+     "name": "관광서비스경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.3
     },
     "2027": {
      "quota": 45,
      "applied": 432,
-     "name": "관광서비스경영학과"
+     "name": "관광서비스경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.77
     }
    }
   },
@@ -244,27 +306,37 @@
     "2023": {
      "quota": 74,
      "applied": 747,
-     "name": "호텔관광경영학과(주간)"
+     "name": "호텔관광경영학과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 8.93
     },
     "2024": {
      "quota": 62,
      "applied": 541,
-     "name": "호텔관광경영학과(주간)"
+     "name": "호텔관광경영학과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 8.29
     },
     "2025": {
      "quota": 62,
      "applied": 451,
-     "name": "호텔관광경영학과(주간)"
+     "name": "호텔관광경영학과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 7.14
     },
     "2026": {
      "quota": 64,
      "applied": 487,
-     "name": "호텔관광경영학과"
+     "name": "호텔관광경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.71
     },
     "2027": {
      "quota": 66,
      "applied": 659,
-     "name": "호텔관광경영학과"
+     "name": "호텔관광경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.38
     }
    }
   },
@@ -280,22 +352,30 @@
     "2023": {
      "quota": 57,
      "applied": 324,
-     "name": "글로벌호텔항공학과 호텔관광전공"
+     "name": "글로벌호텔항공학과 호텔관광전공",
+     "mainTrack": "일반고",
+     "mainRate": 5.56
     },
     "2025": {
      "quota": 44,
      "applied": 286,
-     "name": "호텔관광전공"
+     "name": "호텔관광전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.66
     },
     "2026": {
      "quota": 42,
      "applied": 340,
-     "name": "호텔관광전공"
+     "name": "호텔관광전공",
+     "mainTrack": "일반고",
+     "mainRate": 9.71
     },
     "2027": {
      "quota": 42,
      "applied": 409,
-     "name": "호텔관광전공"
+     "name": "호텔관광전공",
+     "mainTrack": "일반고",
+     "mainRate": 11.71
     }
    }
   },
@@ -311,27 +391,37 @@
     "2023": {
      "quota": 43,
      "applied": 119,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.72
     },
     "2024": {
      "quota": 51,
      "applied": 75,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 1.71
     },
     "2025": {
      "quota": 51,
      "applied": 98,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 1.71
     },
     "2026": {
      "quota": 36,
      "applied": 158,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.11
     },
     "2027": {
      "quota": 27,
      "applied": 263,
-     "name": "서비스컬처학부 호텔관광학과"
+     "name": "서비스컬처학부 호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.26
     }
    }
   },
@@ -347,27 +437,37 @@
     "2023": {
      "quota": 66,
      "applied": 164,
-     "name": "관광경영학과"
+     "name": "관광경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.33
     },
     "2024": {
      "quota": 63,
      "applied": 144,
-     "name": "관광경영학과"
+     "name": "관광경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.52
     },
     "2025": {
      "quota": 61,
      "applied": 157,
-     "name": "관광경영학과"
+     "name": "관광경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.43
     },
     "2026": {
      "quota": 61,
      "applied": 560,
-     "name": "관광경영학과"
+     "name": "관광경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.39
     },
     "2027": {
      "quota": 61,
      "applied": 537,
-     "name": "관광경영학과"
+     "name": "관광경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.22
     }
    }
   },
@@ -383,27 +483,37 @@
     "2023": {
      "quota": 77,
      "applied": 339,
-     "name": "호텔경영학과"
+     "name": "호텔경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.45
     },
     "2024": {
      "quota": 66,
      "applied": 284,
-     "name": "호텔경영학과"
+     "name": "호텔경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.87
     },
     "2025": {
      "quota": 61,
      "applied": 262,
-     "name": "호텔경영학과"
+     "name": "호텔경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.42
     },
     "2026": {
      "quota": 61,
      "applied": 272,
-     "name": "호텔경영학과"
+     "name": "호텔경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.74
     },
     "2027": {
      "quota": 61,
      "applied": 400,
-     "name": "호텔경영학과"
+     "name": "호텔경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.28
     }
    }
   },
@@ -419,22 +529,30 @@
     "2024": {
      "quota": 38,
      "applied": 79,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.03
     },
     "2025": {
      "quota": 33,
      "applied": 68,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 2.08
     },
     "2026": {
      "quota": 30,
      "applied": 120,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 3.55
     },
     "2027": {
      "quota": 30,
      "applied": 280,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 10.45
     }
    }
   },
@@ -450,27 +568,37 @@
     "2023": {
      "quota": 33,
      "applied": 376,
-     "name": "호텔관광경영학과"
+     "name": "호텔관광경영학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.11
     },
     "2024": {
      "quota": 36,
      "applied": 280,
-     "name": "호텔관광경영과"
+     "name": "호텔관광경영과",
+     "mainTrack": "일반고",
+     "mainRate": 8.15
     },
     "2025": {
      "quota": 35,
      "applied": 234,
-     "name": "호텔관광경영과"
+     "name": "호텔관광경영과",
+     "mainTrack": "일반고",
+     "mainRate": 6.84
     },
     "2026": {
      "quota": 45,
      "applied": 298,
-     "name": "호텔관광경영과"
+     "name": "호텔관광경영과",
+     "mainTrack": "일반고",
+     "mainRate": 7.07
     },
     "2027": {
      "quota": 45,
      "applied": 442,
-     "name": "외식관광 호텔관광경영과 · 호텔관광경영과"
+     "name": "외식관광 호텔관광경영과 · 호텔관광경영과",
+     "mainTrack": "일반고",
+     "mainRate": 12.13
     }
    }
   },
@@ -486,22 +614,30 @@
     "2024": {
      "quota": 28,
      "applied": 132,
-     "name": "호텔관광학과"
+     "name": "호텔관광학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.56
     },
     "2025": {
      "quota": 52,
      "applied": 566,
-     "name": "항공호텔관광과"
+     "name": "항공호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 13.94
     },
     "2026": {
      "quota": 52,
      "applied": 344,
-     "name": "항공호텔관광과"
+     "name": "항공호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 7.51
     },
     "2027": {
      "quota": 52,
      "applied": 468,
-     "name": "항공호텔관광과"
+     "name": "항공호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 9.0
     }
    }
   },
@@ -517,22 +653,30 @@
     "2023": {
      "quota": 29,
      "applied": 97,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반고",
+     "mainRate": 3.64
     },
     "2025": {
      "quota": 36,
      "applied": 154,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.28
     },
     "2026": {
      "quota": 45,
      "applied": 194,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.31
     },
     "2027": {
      "quota": 45,
      "applied": 381,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.47
     }
    }
   },
@@ -548,27 +692,37 @@
     "2023": {
      "quota": 26,
      "applied": 204,
-     "name": "호텔관광경영과"
+     "name": "호텔관광경영과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.05
     },
     "2024": {
      "quota": 26,
      "applied": 231,
-     "name": "호텔관광경영과"
+     "name": "호텔관광경영과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.62
     },
     "2025": {
      "quota": 28,
      "applied": 241,
-     "name": "호텔관광경영과"
+     "name": "호텔관광경영과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.8
     },
     "2026": {
      "quota": 27,
      "applied": 246,
-     "name": "호텔관광경영과"
+     "name": "호텔관광경영과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.46
     },
     "2027": {
      "quota": 23,
      "applied": 355,
-     "name": "호텔관광서비스학부 호텔관광경영과"
+     "name": "호텔관광서비스학부 호텔관광경영과",
+     "mainTrack": "일반전형",
+     "mainRate": 14.75
     }
    }
   },
@@ -584,22 +738,30 @@
     "2024": {
      "quota": 5,
      "applied": 38,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.6
     },
     "2025": {
      "quota": 5,
      "applied": 28,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.6
     },
     "2026": {
      "quota": 5,
      "applied": 40,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.0
     },
     "2027": {
      "quota": 10,
      "applied": 108,
-     "name": "호텔관광과"
+     "name": "호텔관광과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.8
     }
    }
   }

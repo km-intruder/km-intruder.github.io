@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -62,28 +64,38 @@
     "2023": {
      "quota": 38,
      "applied": 107,
-     "name": "레포츠과"
+     "name": "레포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.6
     },
     "2024": {
      "quota": 46,
      "applied": 91,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "mainTrack": "일반전형",
+     "mainRate": 5.57
     },
     "2025": {
      "quota": 26,
      "applied": 77,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "mainTrack": "일반전형",
+     "mainRate": 8.0
     },
     "2026": {
      "quota": 29,
      "applied": 96,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "mainTrack": "일반전형",
+     "mainRate": 12.2
     },
     "2027": {
      "quota": 29,
      "applied": 94,
      "name": "레포츠과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 7.4
     }
    }
   },
@@ -120,17 +132,23 @@
     "2025": {
      "quota": 25,
      "applied": 84,
-     "name": "경호무도학과"
+     "name": "경호무도학과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.2
     },
     "2026": {
      "quota": 23,
      "applied": 177,
-     "name": "경호무도학과"
+     "name": "경호무도학과",
+     "mainTrack": "일반전형",
+     "mainRate": 17.57
     },
     "2027": {
      "quota": 25,
      "applied": 233,
-     "name": "경호무도학과"
+     "name": "경호무도학과",
+     "mainTrack": "일반전형",
+     "mainRate": 17.7
     }
    }
   },
@@ -146,27 +164,37 @@
     "2023": {
      "quota": 15,
      "applied": 76,
-     "name": "경호스포츠과"
+     "name": "경호스포츠과",
+     "mainTrack": "일반고",
+     "mainRate": 5.07
     },
     "2024": {
      "quota": 17,
      "applied": 70,
-     "name": "경호스포츠과"
+     "name": "경호스포츠과",
+     "mainTrack": "일반고",
+     "mainRate": 4.12
     },
     "2025": {
      "quota": 18,
      "applied": 56,
-     "name": "경호스포츠과"
+     "name": "경호스포츠과",
+     "mainTrack": "일반고",
+     "mainRate": 3.11
     },
     "2026": {
      "quota": 18,
      "applied": 77,
-     "name": "경호스포츠과"
+     "name": "경호스포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.28
     },
     "2027": {
      "quota": 18,
      "applied": 91,
-     "name": "경호스포츠과"
+     "name": "경호스포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.06
     }
    }
   },
@@ -182,27 +210,37 @@
     "2023": {
      "quota": 60,
      "applied": 182,
-     "name": "경찰경호보안과"
+     "name": "경찰경호보안과",
+     "mainTrack": "일반고",
+     "mainRate": 3.16
     },
     "2024": {
      "quota": 60,
      "applied": 203,
-     "name": "경찰경호보안과"
+     "name": "경찰경호보안과",
+     "mainTrack": "일반고",
+     "mainRate": 3.18
     },
     "2025": {
      "quota": 60,
      "applied": 164,
-     "name": "경찰경호보안과"
+     "name": "경찰경호보안과",
+     "mainTrack": "일반고",
+     "mainRate": 2.71
     },
     "2026": {
      "quota": 60,
      "applied": 207,
-     "name": "경찰경호보안과"
+     "name": "경찰경호보안과",
+     "mainTrack": "일반고",
+     "mainRate": 3.44
     },
     "2027": {
      "quota": 48,
      "applied": 243,
-     "name": "경찰경호보안과"
+     "name": "경찰경호보안과",
+     "mainTrack": "일반고",
+     "mainRate": 5.66
     }
    }
   },
@@ -218,17 +256,23 @@
     "2025": {
      "quota": 46,
      "applied": 51,
-     "name": "무도전공"
+     "name": "무도전공",
+     "mainTrack": "일반전형",
+     "mainRate": 1.5
     },
     "2026": {
      "quota": 47,
      "applied": 69,
-     "name": "무도전공"
+     "name": "무도전공",
+     "mainTrack": "일반전형",
+     "mainRate": 1.75
     },
     "2027": {
      "quota": 47,
      "applied": 42,
-     "name": "무도전공"
+     "name": "무도전공",
+     "mainTrack": "일반전형",
+     "mainRate": 1.44
     }
    }
   },
@@ -244,12 +288,16 @@
     "2026": {
      "quota": 37,
      "applied": 24,
-     "name": "태권도전공"
+     "name": "태권도전공",
+     "mainTrack": "일반전형",
+     "mainRate": 1.05
     },
     "2027": {
      "quota": 37,
      "applied": 17,
-     "name": "태권도전공"
+     "name": "태권도전공",
+     "mainTrack": "일반전형",
+     "mainRate": 0.41
     }
    }
   },
@@ -265,12 +313,16 @@
     "2023": {
      "quota": 24,
      "applied": 54,
-     "name": "태권도융합과(주)"
+     "name": "태권도융합과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 2.25
     },
     "2025": {
      "quota": 24,
      "applied": 54,
-     "name": "태권도융합과"
+     "name": "태권도융합과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.25
     },
     "2027": {
      "quota": 25,
@@ -291,12 +343,16 @@
     "2023": {
      "quota": 35,
      "applied": 120,
-     "name": "무도경호과(주)"
+     "name": "무도경호과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 3.45
     },
     "2025": {
      "quota": 19,
      "applied": 53,
-     "name": "무도경호과"
+     "name": "무도경호과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.29
     },
     "2027": {
      "quota": 30,
@@ -306,33 +362,444 @@
    }
   },
   {
-   "school": "u11",
+   "school": "x:강원도립대학교",
+   "schoolName": "강원도립대학교",
+   "region": "강원",
+   "dept": "경찰경호과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2024": {
+     "name": "경찰경호과",
+     "unofficial": true,
+     "tracks": "학과 모집 18명 · 특성화고 3.2 · 일반고 2.9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.9
+    },
+    "2025": {
+     "name": "경찰경호과",
+     "unofficial": true,
+     "tracks": "학과 모집 18명 · 특성화고 3.2 · 일반고 1.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 1.8
+    },
+    "2026": {
+     "name": "경찰경호과",
+     "unofficial": true,
+     "tracks": "학과 모집 18명 · 특성화고 3.8 · 일반고 2.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.4
+    },
+    "2027": {
+     "quota": 18,
+     "applied": 73,
+     "name": "경찰경호과",
+     "unofficial": false,
+     "mainTrack": "일반고",
+     "mainRate": 4.08
+    }
+   }
+  },
+  {
+   "school": "x:대구과학대학교",
+   "schoolName": "대구과학대학교",
+   "region": "대구·경북",
+   "dept": "경찰경호행정과(주)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "경찰경호행정계열",
+     "unofficial": true,
+     "tracks": "학과 모집 85명 · 특성화고 3.92 · 일반고 2.81",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.81
+    },
+    "2024": {
+     "name": "경찰경호행정과",
+     "unofficial": true,
+     "tracks": "학과 모집 63명 · 특성화고 6 · 대학자체 1.74 · 일반고 6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.0
+    },
+    "2026": {
+     "name": "경찰경호행정과",
+     "unofficial": true,
+     "tracks": "학과 모집 52명 · 특성화고 5.33 · 고른기회 0.33 · 대학자체 1.36 · 일반고 4.53",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.53
+    },
+    "2027": {
+     "quota": 51,
+     "applied": 195,
+     "name": "경찰경호행정과(주)",
+     "unofficial": false,
+     "mainTrack": "일반고",
+     "mainRate": 5.38
+    }
+   }
+  },
+  {
+   "school": "x:대전과학기술대학교",
+   "schoolName": "대전과학기술대학교",
+   "region": "충청",
+   "dept": "경찰경호학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "경찰경호학과",
+     "unofficial": true,
+     "tracks": "학과 모집 71명 · 일반전형 1.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.7,
+     "quota": 71,
+     "applied": 121,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 71 × 경쟁률 1.7"
+    },
+    "2024": {
+     "name": "경찰경호학과",
+     "unofficial": true,
+     "tracks": "학과 모집 34명 · 일반전형 2.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.7,
+     "quota": 34,
+     "applied": 92,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 34 × 경쟁률 2.7"
+    },
+    "2025": {
+     "name": "경찰경호학과",
+     "unofficial": true,
+     "tracks": "학과 모집 30명 · 일반전형 3.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.2,
+     "quota": 30,
+     "applied": 96,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 30 × 경쟁률 3.2"
+    },
+    "2026": {
+     "name": "경찰경호학과",
+     "unofficial": true,
+     "tracks": "학과 모집 31명 · 일반전형 4.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.8,
+     "quota": 31,
+     "applied": 149,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 31 × 경쟁률 4.8"
+    },
+    "2027": {
+     "quota": 28,
+     "applied": 132,
+     "name": "경찰경호학과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.1
+    }
+   }
+  },
+  {
+   "school": "x:동의과학대학교",
+   "schoolName": "동의과학대학교",
+   "region": "부산·울산·경남",
+   "dept": "경찰경호보안과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "quota": 46,
+     "applied": 257,
+     "name": "경찰경호보안과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차 경쟁률(최종 마감) — 학과명 경찰경호행정과",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=9240"
+     }
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 187,
+     "name": "경찰경호보안과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 경쟁률(최종 마감) — 첨부 '동의과학대학교 2027학년도 신입생 수시1차 모집 지원현황 및 경쟁률(최종)'",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=10034",
+      "date": "2026-10-01"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.6
+    }
+   }
+  },
+  {
+   "school": "x:백석예술대학교",
    "schoolName": "백석예술대학교",
    "region": "서울",
    "dept": "경찰경호학과",
    "isBase": false,
    "isKm": false,
    "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2026": {
+     "quota": 56,
+     "applied": 161,
+     "name": "경찰경호학과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차 입시결과(일반전형·특별전형)",
+      "url": "https://www.bau.ac.kr/admission/5234/subview.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.74
+    },
+    "2027": {
+     "quota": 100,
+     "applied": 153,
+     "name": "경찰경호학과",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 1.6
+    }
+   }
+  },
+  {
+   "school": "x:신성대학교",
+   "schoolName": "신성대학교",
+   "region": "충청",
+   "dept": "TKD외교과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2026": {
+     "name": "TKD외교과",
+     "unofficial": true,
+     "tracks": "학과 모집 50명 · 일반전형 3.75 · 고른기회 2.2 · 대학자체 1.51",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.75
+    },
+    "2027": {
+     "quota": 44,
+     "applied": 73,
+     "name": "TKD외교과",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 2.25
+    }
+   }
+  },
+  {
+   "school": "x:여주대학교",
+   "schoolName": "여주대학교",
+   "region": "경기",
+   "dept": "스포츠·경호과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
    "series": {
     "2023": {
-     "quota": 70,
-     "applied": 155,
-     "name": "경찰경호학부"
+     "name": "스포츠·경호과",
+     "unofficial": true,
+     "tracks": "학과 모집 32명 · 일반전형 3.9 · 대학자체 1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.9
     },
     "2024": {
-     "quota": 76,
-     "applied": 142,
-     "name": "경찰경호학부"
+     "name": "스포츠·경호과",
+     "unofficial": true,
+     "tracks": "학과 모집 54명 · 일반전형 8.5 · 대학자체 2.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 8.5
     },
     "2025": {
-     "quota": 111,
-     "applied": 133,
-     "name": "경찰경호학부"
+     "name": "스포츠·경호과",
+     "unofficial": true,
+     "tracks": "학과 모집 53명 · 일반전형 4.9 · 대학자체 1.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.9
     },
     "2026": {
-     "quota": 86,
-     "applied": 168,
-     "name": "미래융합인재학부-경찰경호학과"
+     "name": "스포츠·경호과",
+     "unofficial": true,
+     "tracks": "학과 모집 53명 · 일반전형 6.5 · 대학자체 1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.5
+    },
+    "2027": {
+     "quota": 56,
+     "applied": 162,
+     "name": "스포츠·경호과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 8.69
+    }
+   }
+  },
+  {
+   "school": "x:전주비전대학교",
+   "schoolName": "전주비전대학교",
+   "region": "호남",
+   "dept": "태권도체육학과(주)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "태권도체육학과",
+     "unofficial": true,
+     "tracks": "학과 모집 31명 · 일반전형 4.4 · 특성화고 0 · 고른기회 0 · 대학자체 0 · 일반고 0.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 0.2
+    },
+    "2024": {
+     "name": "태권도체육학과",
+     "unofficial": true,
+     "tracks": "학과 모집 31명 · 일반전형 1.3 · 특성화고 0 · 일반고 1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 1.0
+    },
+    "2025": {
+     "name": "태권도체육학과",
+     "unofficial": true,
+     "tracks": "학과 모집 28명 · 일반전형 2.8 · 특성화고 1.4 · 일반고 1.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 1.8
+    },
+    "2026": {
+     "quota": 28,
+     "applied": 89,
+     "name": "태권도체육학과(주)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "전주비전대 경쟁률(수시1차) 조회 — 2026학년도(최종마감자료) 열",
+      "url": "https://my.jvision.ac.kr/ipsiweb/ipss/compet/compet_view.jsp"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.78,
+     "mainSource": "portal"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 82,
+     "name": "태권도체육학과(주)",
+     "unofficial": false
     }
    }
   }

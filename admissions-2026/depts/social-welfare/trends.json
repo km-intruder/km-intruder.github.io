@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 50,
      "applied": 259,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 4.71
     },
     "2024": {
      "quota": 43,
      "applied": 228,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 4.56
     },
     "2025": {
      "quota": 50,
      "applied": 214,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 3.81
     },
     "2026": {
      "quota": 42,
      "applied": 254,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.05
     },
     "2027": {
      "quota": 42,
      "applied": 280,
      "name": "사회복지과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 6.67
     }
    }
   },
@@ -62,28 +74,38 @@
     "2023": {
      "quota": 30,
      "applied": 135,
-     "name": "건축공간디자인과"
+     "name": "건축공간디자인과",
+     "mainTrack": "일반고",
+     "mainRate": 4.0
     },
     "2024": {
      "quota": 28,
      "applied": 158,
-     "name": "건축공간디자인과"
+     "name": "건축공간디자인과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.64
     },
     "2025": {
      "quota": 31,
      "applied": 147,
-     "name": "건축공간디자인학과"
+     "name": "건축공간디자인학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.74
     },
     "2026": {
      "quota": 27,
      "applied": 181,
-     "name": "건축공간디자인학과"
+     "name": "건축공간디자인학과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.7
     },
     "2027": {
      "quota": 27,
      "applied": 188,
      "name": "건축공간디자인학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 6.96
     }
    }
   },
@@ -99,28 +121,38 @@
     "2023": {
      "quota": 27,
      "applied": 293,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 10.41
     },
     "2024": {
      "quota": 27,
      "applied": 146,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 5.0
     },
     "2025": {
      "quota": 27,
      "applied": 141,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.22
     },
     "2026": {
      "quota": 27,
      "applied": 161,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.96
     },
     "2027": {
      "quota": 25,
      "applied": 204,
      "name": "유아교육학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 8.74
     }
    }
   },
@@ -136,17 +168,23 @@
     "2025": {
      "quota": 50,
      "applied": 251,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 4.26
     },
     "2026": {
      "quota": 49,
      "applied": 305,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 5.13
     },
     "2027": {
      "quota": 41,
      "applied": 312,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 7.0
     }
    }
   },
@@ -162,27 +200,37 @@
     "2023": {
      "quota": 47,
      "applied": 561,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.88
     },
     "2024": {
      "quota": 47,
      "applied": 498,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.0
     },
     "2025": {
      "quota": 48,
      "applied": 468,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.69
     },
     "2026": {
      "quota": 48,
      "applied": 577,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.58
     },
     "2027": {
      "quota": 47,
      "applied": 576,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 13.54
     }
    }
   },
@@ -198,27 +246,37 @@
     "2023": {
      "quota": 39,
      "applied": 432,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.97
     },
     "2024": {
      "quota": 44,
      "applied": 404,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.27
     },
     "2025": {
      "quota": 44,
      "applied": 457,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.76
     },
     "2026": {
      "quota": 44,
      "applied": 526,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.24
     },
     "2027": {
      "quota": 44,
      "applied": 532,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.73
     }
    }
   },
@@ -234,27 +292,37 @@
     "2023": {
      "quota": 57,
      "applied": 273,
-     "name": "사회복지학과(주간)"
+     "name": "사회복지학과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 4.61
     },
     "2024": {
      "quota": 57,
      "applied": 292,
-     "name": "사회복지학과(주간)"
+     "name": "사회복지학과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 5.04
     },
     "2025": {
      "quota": 51,
      "applied": 272,
-     "name": "사회복지학과(주간)"
+     "name": "사회복지학과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 5.22
     },
     "2026": {
      "quota": 50,
      "applied": 584,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.68
     },
     "2027": {
      "quota": 51,
      "applied": 482,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.51
     }
    }
   },
@@ -270,27 +338,37 @@
     "2023": {
      "quota": 45,
      "applied": 203,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.73
     },
     "2024": {
      "quota": 47,
      "applied": 173,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.22
     },
     "2025": {
      "quota": 43,
      "applied": 182,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.57
     },
     "2026": {
      "quota": 40,
      "applied": 231,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.83
     },
     "2027": {
      "quota": 40,
      "applied": 327,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.2
     }
    }
   },
@@ -306,17 +384,23 @@
     "2025": {
      "quota": 48,
      "applied": 355,
-     "name": "사회복지전공"
+     "name": "사회복지전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.73
     },
     "2026": {
      "quota": 48,
      "applied": 309,
-     "name": "사회복지전공"
+     "name": "사회복지전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.08
     },
     "2027": {
      "quota": 48,
      "applied": 415,
-     "name": "사회복지전공"
+     "name": "사회복지전공",
+     "mainTrack": "일반고",
+     "mainRate": 9.11
     }
    }
   },
@@ -332,27 +416,37 @@
     "2023": {
      "quota": 47,
      "applied": 157,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.63
     },
     "2024": {
      "quota": 72,
      "applied": 123,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 1.94
     },
     "2025": {
      "quota": 64,
      "applied": 121,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.04
     },
     "2026": {
      "quota": 41,
      "applied": 176,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.71
     },
     "2027": {
      "quota": 40,
      "applied": 265,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.04
     }
    }
   },
@@ -368,27 +462,37 @@
     "2023": {
      "quota": 38,
      "applied": 190,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.0
     },
     "2024": {
      "quota": 34,
      "applied": 176,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.18
     },
     "2025": {
      "quota": 35,
      "applied": 183,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 5.83
     },
     "2026": {
      "quota": 35,
      "applied": 247,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 8.25
     },
     "2027": {
      "quota": 35,
      "applied": 316,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 10.88
     }
    }
   },
@@ -404,27 +508,37 @@
     "2023": {
      "quota": 54,
      "applied": 179,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.5
     },
     "2024": {
      "quota": 61,
      "applied": 176,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.0
     },
     "2025": {
      "quota": 55,
      "applied": 322,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.53
     },
     "2026": {
      "quota": 42,
      "applied": 473,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 13.07
     },
     "2027": {
      "quota": 36,
      "applied": 496,
-     "name": "보건복지경영 사회복지학과 · 사회복지학과"
+     "name": "보건복지경영 사회복지학과 · 사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 16.38
     }
    }
   },
@@ -440,27 +554,37 @@
     "2023": {
      "quota": 52,
      "applied": 223,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.68
     },
     "2024": {
      "quota": 54,
      "applied": 193,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.97
     },
     "2025": {
      "quota": 54,
      "applied": 214,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.05
     },
     "2026": {
      "quota": 54,
      "applied": 454,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.67
     },
     "2027": {
      "quota": 54,
      "applied": 476,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.7
     }
    }
   },
@@ -476,22 +600,30 @@
     "2023": {
      "quota": 77,
      "applied": 501,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 7.58
     },
     "2025": {
      "quota": 78,
      "applied": 578,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 8.48
     },
     "2026": {
      "quota": 78,
      "applied": 680,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 10.54
     },
     "2027": {
      "quota": 78,
      "applied": 724,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 11.25
     }
    }
   },
@@ -507,22 +639,30 @@
     "2023": {
      "quota": 50,
      "applied": 309,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 5.95
     },
     "2025": {
      "quota": 55,
      "applied": 227,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.13
     },
     "2026": {
      "quota": 47,
      "applied": 336,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.15
     },
     "2027": {
      "quota": 49,
      "applied": 439,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.96
     }
    }
   },
@@ -538,27 +678,37 @@
     "2023": {
      "quota": 58,
      "applied": 344,
-     "name": "사회복지과 사회복지전공"
+     "name": "사회복지과 사회복지전공",
+     "mainTrack": "일반고",
+     "mainRate": 5.44
     },
     "2024": {
      "quota": 52,
      "applied": 271,
-     "name": "사회복지과 사회복지전공"
+     "name": "사회복지과 사회복지전공",
+     "mainTrack": "일반고",
+     "mainRate": 4.46
     },
     "2025": {
      "quota": 54,
      "applied": 345,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 6.12
     },
     "2026": {
      "quota": 49,
      "applied": 377,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 7.6
     },
     "2027": {
      "quota": 46,
      "applied": 387,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 8.25
     }
    }
   },
@@ -574,27 +724,37 @@
     "2023": {
      "quota": 19,
      "applied": 199,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 16.0
     },
     "2024": {
      "quota": 24,
      "applied": 184,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.85
     },
     "2025": {
      "quota": 50,
      "applied": 240,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.39
     },
     "2026": {
      "quota": 31,
      "applied": 341,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반전형",
+     "mainRate": 16.15
     },
     "2027": {
      "quota": 30,
      "applied": 397,
-     "name": "사회복지학과"
+     "name": "사회복지학과",
+     "mainTrack": "일반전형",
+     "mainRate": 15.0
     }
    }
   },
@@ -610,27 +770,37 @@
     "2023": {
      "quota": 57,
      "applied": 346,
-     "name": "사회복지상담과"
+     "name": "사회복지상담과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.93
     },
     "2024": {
      "quota": 56,
      "applied": 285,
-     "name": "사회복지상담과"
+     "name": "사회복지상담과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.52
     },
     "2025": {
      "quota": 56,
      "applied": 273,
-     "name": "사회복지상담과"
+     "name": "사회복지상담과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.47
     },
     "2026": {
      "quota": 56,
      "applied": 363,
-     "name": "사회복지상담과"
+     "name": "사회복지상담과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.54
     },
     "2027": {
      "quota": 59,
      "applied": 467,
-     "name": "사회서비스학부 사회복지상담과"
+     "name": "사회서비스학부 사회복지상담과",
+     "mainTrack": "일반전형",
+     "mainRate": 11.7
     }
    }
   },
@@ -646,27 +816,37 @@
     "2023": {
      "quota": 38,
      "applied": 85,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.24
     },
     "2024": {
      "quota": 20,
      "applied": 95,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.75
     },
     "2025": {
      "quota": 10,
      "applied": 95,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.5
     },
     "2026": {
      "quota": 29,
      "applied": 128,
-     "name": "사회복지학부"
+     "name": "사회복지학부",
+     "mainTrack": "일반전형",
+     "mainRate": 4.41
     },
     "2027": {
      "quota": 29,
      "applied": 187,
-     "name": "사회복지학부"
+     "name": "사회복지학부",
+     "mainTrack": "일반전형",
+     "mainRate": 6.45
     }
    }
   }

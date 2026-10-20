@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,13 +27,17 @@
     "2026": {
      "quota": 13,
      "applied": 44,
-     "name": "사이버보안학과"
+     "name": "사이버보안학과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.38
     },
     "2027": {
      "quota": 15,
      "applied": 68,
      "name": "사이버·정보시스템학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 4.53
     }
    }
   },
@@ -47,28 +53,38 @@
     "2023": {
      "quota": 50,
      "applied": 207,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반고",
+     "mainRate": 4.46
     },
     "2024": {
      "quota": 45,
      "applied": 132,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반고",
+     "mainRate": 2.86
     },
     "2025": {
      "quota": 60,
      "applied": 147,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.45
     },
     "2026": {
      "quota": 35,
      "applied": 133,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.8
     },
     "2027": {
      "quota": 35,
      "applied": 101,
      "name": "지능형소프트웨어과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 2.89
     }
    }
   },
@@ -84,28 +100,38 @@
     "2023": {
      "quota": 72,
      "applied": 81,
-     "name": "효충사관과"
+     "name": "효충사관과",
+     "mainTrack": "일반고",
+     "mainRate": 1.2
     },
     "2024": {
      "quota": 45,
      "applied": 59,
-     "name": "효충사관과"
+     "name": "효충사관과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.31
     },
     "2025": {
      "quota": 35,
      "applied": 69,
-     "name": "효충군사학과"
+     "name": "효충군사학과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.97
     },
     "2026": {
      "quota": 35,
      "applied": 96,
-     "name": "효충군사학과"
+     "name": "효충군사학과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.74
     },
     "2027": {
      "quota": 35,
      "applied": 118,
      "name": "효충군사학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 3.37
     }
    }
   },
@@ -121,27 +147,37 @@
     "2023": {
      "quota": 20,
      "applied": 165,
-     "name": "컴퓨터정보보안학과(주간)(3년제)"
+     "name": "컴퓨터정보보안학과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 8.56
     },
     "2024": {
      "quota": 20,
      "applied": 150,
-     "name": "컴퓨터정보보안학과(주간)(3년제)"
+     "name": "컴퓨터정보보안학과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 6.94
     },
     "2025": {
      "quota": 20,
      "applied": 139,
-     "name": "컴퓨터정보보안학과(주간)(3년제)"
+     "name": "컴퓨터정보보안학과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 7.62
     },
     "2026": {
      "quota": 21,
      "applied": 122,
-     "name": "컴퓨터정보보안학과(3년제)"
+     "name": "컴퓨터정보보안학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 5.35
     },
     "2027": {
      "quota": 21,
      "applied": 168,
-     "name": "컴퓨터정보보안학과(3년제)"
+     "name": "컴퓨터정보보안학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 8.0
     }
    }
   },
@@ -157,22 +193,30 @@
     "2024": {
      "quota": 25,
      "applied": 67,
-     "name": "IT융합학과 사이버보안전공"
+     "name": "IT융합학과 사이버보안전공",
+     "mainTrack": "일반고",
+     "mainRate": 2.63
     },
     "2025": {
      "quota": 24,
      "applied": 65,
-     "name": "IT융합학과 사이버보안전공"
+     "name": "IT융합학과 사이버보안전공",
+     "mainTrack": "일반고",
+     "mainRate": 2.42
     },
     "2026": {
      "quota": 24,
      "applied": 95,
-     "name": "IT융합학과 사이버보안전공"
+     "name": "IT융합학과 사이버보안전공",
+     "mainTrack": "일반고",
+     "mainRate": 3.67
     },
     "2027": {
      "quota": 33,
      "applied": 133,
-     "name": "사이버보안학과"
+     "name": "사이버보안학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.48
     }
    }
   },
@@ -188,17 +232,23 @@
     "2025": {
      "quota": 42,
      "applied": 209,
-     "name": "컴퓨터보안공학과"
+     "name": "컴퓨터보안공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.57
     },
     "2026": {
      "quota": 42,
      "applied": 260,
-     "name": "컴퓨터보안공학과"
+     "name": "컴퓨터보안공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.0
     },
     "2027": {
      "quota": 42,
      "applied": 240,
-     "name": "컴퓨터보안공학과"
+     "name": "컴퓨터보안공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.51
     }
    }
   }

@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 13,
      "applied": 39,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.0
     },
     "2024": {
      "quota": 15,
      "applied": 38,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.53
     },
     "2025": {
      "quota": 15,
      "applied": 44,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.93
     },
     "2026": {
      "quota": 15,
      "applied": 56,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.73
     },
     "2027": {
      "quota": 15,
      "applied": 108,
      "name": "실용음악과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 7.2
     }
    }
   },
@@ -62,28 +74,38 @@
     "2023": {
      "quota": 53,
      "applied": 316,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 5.63
     },
     "2024": {
      "quota": 51,
      "applied": 238,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 4.15
     },
     "2025": {
      "quota": 50,
      "applied": 265,
-     "name": "미디어영상과"
+     "name": "미디어영상과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.3
     },
     "2026": {
      "quota": 38,
      "applied": 306,
-     "name": "미디어영상과"
+     "name": "미디어영상과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.05
     },
     "2027": {
      "quota": 36,
      "applied": 345,
      "name": "미디어영상과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 9.58
     }
    }
   },
@@ -99,28 +121,38 @@
     "2023": {
      "quota": 13,
      "applied": 51,
-     "name": "공연예술과"
+     "name": "공연예술과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.92
     },
     "2024": {
      "quota": 25,
      "applied": 37,
-     "name": "공연예술과"
+     "name": "공연예술과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.48
     },
     "2025": {
      "quota": 15,
      "applied": 52,
-     "name": "연기예술과"
+     "name": "연기예술과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.47
     },
     "2026": {
      "quota": 15,
      "applied": 37,
-     "name": "연기예술과"
+     "name": "연기예술과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.47
     },
     "2027": {
      "quota": 13,
      "applied": 68,
      "name": "연기예술과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 5.23
     }
    }
   },
@@ -136,27 +168,37 @@
     "2023": {
      "quota": 23,
      "applied": 48,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.09
     },
     "2024": {
      "quota": 23,
      "applied": 48,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.09
     },
     "2025": {
      "quota": 18,
      "applied": 37,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.06
     },
     "2026": {
      "quota": 18,
      "applied": 42,
-     "name": "실용음악과(보컬)"
+     "name": "실용음악과(보컬)",
+     "mainTrack": "일반전형",
+     "mainRate": 2.47
     },
     "2027": {
      "quota": 21,
      "applied": 48,
-     "name": "실용음악과(보컬)"
+     "name": "실용음악과(보컬)",
+     "mainTrack": "일반전형",
+     "mainRate": 2.4
     }
    }
   },
@@ -172,12 +214,16 @@
     "2023": {
      "quota": 35,
      "applied": 360,
-     "name": "실용음악학과"
+     "name": "실용음악학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.29
     },
     "2024": {
      "quota": 35,
      "applied": 337,
-     "name": "실용음악학과"
+     "name": "실용음악학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.63
     }
    }
   }

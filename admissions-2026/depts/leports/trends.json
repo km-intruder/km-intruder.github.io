@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 38,
      "applied": 107,
-     "name": "레포츠과"
+     "name": "레포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.6
     },
     "2024": {
      "quota": 46,
      "applied": 91,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "mainTrack": "일반전형",
+     "mainRate": 5.57
     },
     "2025": {
      "quota": 26,
      "applied": 77,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "mainTrack": "일반전형",
+     "mainRate": 8.0
     },
     "2026": {
      "quota": 29,
      "applied": 96,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "mainTrack": "일반전형",
+     "mainRate": 12.2
     },
     "2027": {
      "quota": 29,
      "applied": 94,
      "name": "레포츠과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 7.4
     }
    }
   },
@@ -99,27 +111,37 @@
     "2023": {
      "quota": 58,
      "applied": 321,
-     "name": "스포츠지도과"
+     "name": "스포츠지도과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.09
     },
     "2024": {
      "quota": 57,
      "applied": 343,
-     "name": "스포츠지도과"
+     "name": "스포츠지도과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.2
     },
     "2025": {
      "quota": 57,
      "applied": 299,
-     "name": "스포츠지도과"
+     "name": "스포츠지도과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.73
     },
     "2026": {
      "quota": 57,
      "applied": 375,
-     "name": "스포츠지도과"
+     "name": "스포츠지도과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.29
     },
     "2027": {
      "quota": 57,
      "applied": 522,
-     "name": "스포츠지도과"
+     "name": "스포츠지도과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.4
     }
    }
   },
@@ -135,27 +157,37 @@
     "2023": {
      "quota": 30,
      "applied": 104,
-     "name": "레저스포츠학과"
+     "name": "레저스포츠학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.92
     },
     "2024": {
      "quota": 30,
      "applied": 107,
-     "name": "레저스포츠학과"
+     "name": "레저스포츠학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.12
     },
     "2025": {
      "quota": 40,
      "applied": 131,
-     "name": "레저스포츠학과"
+     "name": "레저스포츠학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.83
     },
     "2026": {
      "quota": 40,
      "applied": 123,
-     "name": "레저스포츠과"
+     "name": "레저스포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.04
     },
     "2027": {
      "quota": 35,
      "applied": 149,
-     "name": "스포츠 레저스포츠과"
+     "name": "스포츠 레저스포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.96
     }
    }
   },
@@ -171,27 +203,37 @@
     "2023": {
      "quota": 49,
      "applied": 214,
-     "name": "스포츠건강지도과"
+     "name": "스포츠건강지도과",
+     "mainTrack": "일반고",
+     "mainRate": 3.91
     },
     "2024": {
      "quota": 63,
      "applied": 182,
-     "name": "스포츠건강지도과"
+     "name": "스포츠건강지도과",
+     "mainTrack": "일반고",
+     "mainRate": 2.76
     },
     "2025": {
      "quota": 63,
      "applied": 221,
-     "name": "스포츠건강지도과"
+     "name": "스포츠건강지도과",
+     "mainTrack": "일반고",
+     "mainRate": 3.22
     },
     "2026": {
      "quota": 63,
      "applied": 276,
-     "name": "스포츠건강지도과"
+     "name": "스포츠건강지도과",
+     "mainTrack": "일반고",
+     "mainRate": 4.22
     },
     "2027": {
      "quota": 50,
      "applied": 359,
-     "name": "스포츠건강지도과"
+     "name": "스포츠건강지도과",
+     "mainTrack": "일반고",
+     "mainRate": 7.02
     }
    }
   },
@@ -207,22 +249,30 @@
     "2024": {
      "quota": 35,
      "applied": 49,
-     "name": "스포츠지도학과"
+     "name": "스포츠지도학과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.44
     },
     "2025": {
      "quota": 46,
      "applied": 47,
-     "name": "스포츠지도전공"
+     "name": "스포츠지도전공",
+     "mainTrack": "일반전형",
+     "mainRate": 1.05
     },
     "2026": {
      "quota": 47,
      "applied": 60,
-     "name": "스포츠지도전공"
+     "name": "스포츠지도전공",
+     "mainTrack": "일반전형",
+     "mainRate": 1.5
     },
     "2027": {
      "quota": 47,
      "applied": 45,
-     "name": "스포츠지도전공"
+     "name": "스포츠지도전공",
+     "mainTrack": "일반전형",
+     "mainRate": 1.41
     }
    }
   },
@@ -238,12 +288,16 @@
     "2023": {
      "quota": 19,
      "applied": 41,
-     "name": "레저스포츠과(주)"
+     "name": "레저스포츠과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 2.16
     },
     "2025": {
      "quota": 45,
      "applied": 57,
-     "name": "레저스포츠과"
+     "name": "레저스포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.27
     },
     "2027": {
      "quota": 30,
@@ -264,12 +318,16 @@
     "2026": {
      "quota": 32,
      "applied": 126,
-     "name": "스포츠레저학부 레저스포츠과"
+     "name": "스포츠레저학부 레저스포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.94
     },
     "2027": {
      "quota": 32,
      "applied": 77,
-     "name": "레저스포츠과(스포츠레저학부)"
+     "name": "레저스포츠과(스포츠레저학부)",
+     "mainTrack": "일반전형",
+     "mainRate": 2.41
     }
    }
   },
@@ -285,12 +343,16 @@
     "2026": {
      "quota": 24,
      "applied": 100,
-     "name": "스포츠레저학부 스포츠지도과"
+     "name": "스포츠레저학부 스포츠지도과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.17
     },
     "2027": {
      "quota": 24,
      "applied": 128,
-     "name": "스포츠지도과(스포츠레저학부)"
+     "name": "스포츠지도과(스포츠레저학부)",
+     "mainTrack": "일반전형",
+     "mainRate": 5.33
     }
    }
   },
@@ -306,27 +368,37 @@
     "2023": {
      "quota": 44,
      "applied": 79,
-     "name": "스포츠지도과"
+     "name": "스포츠지도과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.1
     },
     "2024": {
      "quota": 54,
      "applied": 132,
-     "name": "스포츠지도과"
+     "name": "스포츠지도과",
+     "mainTrack": "일반고",
+     "mainRate": 8.4
     },
     "2025": {
      "quota": 28,
      "applied": 192,
-     "name": "스포츠지도과"
+     "name": "스포츠지도과",
+     "mainTrack": "일반전형",
+     "mainRate": 15.89
     },
     "2026": {
      "quota": 54,
      "applied": 358,
-     "name": "스포츠지도학과"
+     "name": "스포츠지도학과",
+     "mainTrack": "일반전형",
+     "mainRate": 11.13
     },
     "2027": {
      "quota": 46,
      "applied": 310,
-     "name": "스포츠지도학과"
+     "name": "스포츠지도학과",
+     "mainTrack": "일반전형",
+     "mainRate": 38.17
     }
    }
   },
@@ -342,27 +414,37 @@
     "2023": {
      "quota": 31,
      "applied": 212,
-     "name": "레저스포츠케어과"
+     "name": "레저스포츠케어과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.59
     },
     "2024": {
      "quota": 34,
      "applied": 192,
-     "name": "레저스포츠케어과"
+     "name": "레저스포츠케어과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.23
     },
     "2025": {
      "quota": 33,
      "applied": 231,
-     "name": "레저스포츠케어과"
+     "name": "레저스포츠케어과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.0
     },
     "2026": {
      "quota": 33,
      "applied": 305,
-     "name": "레저스포츠케어과"
+     "name": "레저스포츠케어과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.24
     },
     "2027": {
      "quota": 33,
      "applied": 314,
-     "name": "레저스포츠케어과"
+     "name": "레저스포츠케어과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.52
     }
    }
   },
@@ -378,27 +460,37 @@
     "2023": {
      "quota": 24,
      "applied": 139,
-     "name": "스포츠재활학부 스포츠지도전공(3년제)"
+     "name": "스포츠재활학부 스포츠지도전공(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 8.12
     },
     "2024": {
      "quota": 25,
      "applied": 111,
-     "name": "스포츠재활학부 스포츠지도전공(3년제)"
+     "name": "스포츠재활학부 스포츠지도전공(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 7.43
     },
     "2025": {
      "quota": 26,
      "applied": 14,
-     "name": "스포츠재활학부 스포츠지도전공"
+     "name": "스포츠재활학부 스포츠지도전공",
+     "mainTrack": "일반고",
+     "mainRate": 1.14
     },
     "2026": {
      "quota": 26,
      "applied": 19,
-     "name": "스포츠재활학부 스포츠지도전공"
+     "name": "스포츠재활학부 스포츠지도전공",
+     "mainTrack": "일반고",
+     "mainRate": 2.0
     },
     "2027": {
      "quota": 25,
      "applied": 15,
-     "name": "스포츠재활학부 스포츠지도전공"
+     "name": "스포츠재활학부 스포츠지도전공",
+     "mainTrack": "일반고",
+     "mainRate": 1.8
     }
    }
   },
@@ -414,17 +506,23 @@
     "2025": {
      "quota": 42,
      "applied": 125,
-     "name": "생활스포츠과"
+     "name": "생활스포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.98
     },
     "2026": {
      "quota": 42,
      "applied": 370,
-     "name": "생활스포츠과"
+     "name": "생활스포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.81
     },
     "2027": {
      "quota": 40,
      "applied": 452,
-     "name": "보건복지학부 생활스포츠과 · 생활스포츠과"
+     "name": "보건복지학부 생활스포츠과 · 생활스포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 11.84
     }
    }
   },
@@ -440,7 +538,9 @@
     "2026": {
      "quota": 23,
      "applied": 118,
-     "name": "스포츠트레이너과"
+     "name": "스포츠트레이너과",
+     "mainTrack": "일반전형",
+     "mainRate": 14.67
     },
     "2027": {
      "quota": 23,
@@ -461,27 +561,759 @@
     "2023": {
      "quota": 31,
      "applied": 54,
-     "name": "레저스포츠과"
+     "name": "레저스포츠과",
+     "mainTrack": "일반고",
+     "mainRate": 0.8
     },
     "2024": {
      "quota": 32,
      "applied": 70,
-     "name": "레저스포츠과"
+     "name": "레저스포츠과",
+     "mainTrack": "일반고",
+     "mainRate": 0.67
     },
     "2025": {
      "quota": 29,
      "applied": 83,
-     "name": "레저스포츠과"
+     "name": "레저스포츠과",
+     "mainTrack": "일반고",
+     "mainRate": 1.5
     },
     "2026": {
      "quota": 31,
      "applied": 74,
-     "name": "레저스포츠과"
+     "name": "레저스포츠과",
+     "mainTrack": "일반고",
+     "mainRate": 0.5
     },
     "2027": {
      "quota": 31,
      "applied": 77,
-     "name": "레저스포츠과"
+     "name": "레저스포츠과",
+     "mainTrack": "일반고",
+     "mainRate": 2.0
+    }
+   }
+  },
+  {
+   "school": "x:강원도립대학교",
+   "schoolName": "강원도립대학교",
+   "region": "강원",
+   "dept": "레저스포츠과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "레저스포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 38명 · 특성화고 2.33 · 일반고 2.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.5
+    },
+    "2024": {
+     "name": "레저스포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 38명 · 특성화고 2 · 일반고 2.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.8
+    },
+    "2025": {
+     "name": "레저스포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 38명 · 특성화고 2 · 일반고 3.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.6
+    },
+    "2026": {
+     "name": "레저스포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 38명 · 특성화고 1.7 · 일반고 6.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.4
+    },
+    "2027": {
+     "quota": 38,
+     "applied": 65,
+     "name": "레저스포츠과",
+     "unofficial": false,
+     "mainTrack": "일반고",
+     "mainRate": 14.0
+    }
+   }
+  },
+  {
+   "school": "x:거제대학교",
+   "schoolName": "거제대학교",
+   "region": "부산·울산·경남",
+   "dept": "파크골프경영과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "quota": 17,
+     "applied": 21,
+     "name": "파크골프경영과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "같은 화면 2026학년도 수시1차",
+      "url": "https://www.koje.ac.kr/enter/competitionrate"
+     }
+    },
+    "2027": {
+     "quota": 22,
+     "applied": 16,
+     "name": "파크골프경영과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "거제대 입학홈페이지 지원현황(경쟁률) — 2027학년도 수시1차 (데이터: /Common/services/application_compet.aspx)",
+      "url": "https://www.koje.ac.kr/enter/competitionrate",
+      "date": "2026-10"
+     }
+    }
+   }
+  },
+  {
+   "school": "x:계명문화대학교",
+   "schoolName": "계명문화대학교",
+   "region": "대구·경북",
+   "dept": "생활체육학부",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "생활체육학부",
+     "unofficial": true,
+     "tracks": "학과 모집 54명 · 특성화고 5 · 대학자체 5.2 · 일반고 3.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.2
+    },
+    "2024": {
+     "name": "생활체육학부",
+     "unofficial": true,
+     "tracks": "학과 모집 65명 · 특성화고 3 · 일반고 3.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.1
+    },
+    "2025": {
+     "name": "생활체육학부",
+     "unofficial": true,
+     "tracks": "학과 모집 70명 · 특성화고 3.8 · 일반고 2.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.4
+    },
+    "2026": {
+     "quota": 39,
+     "applied": 126,
+     "name": "생활체육학부",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000397"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.0
+    },
+    "2027": {
+     "quota": 39,
+     "applied": 116,
+     "name": "생활체육학부",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000420",
+      "date": "2026-09-30"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.79
+    }
+   }
+  },
+  {
+   "school": "x:대전과학기술대학교",
+   "schoolName": "대전과학기술대학교",
+   "region": "충청",
+   "dept": "스포츠건강관리학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "스포츠건강관리학과",
+     "unofficial": true,
+     "tracks": "학과 모집 39명 · 일반전형 2.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.7,
+     "quota": 39,
+     "applied": 105,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 39 × 경쟁률 2.7"
+    },
+    "2024": {
+     "name": "스포츠건강관리학과",
+     "unofficial": true,
+     "tracks": "학과 모집 48명 · 일반전형 2.9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.9,
+     "quota": 48,
+     "applied": 139,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 48 × 경쟁률 2.9"
+    },
+    "2025": {
+     "name": "스포츠건강관리학과",
+     "unofficial": true,
+     "tracks": "학과 모집 39명 · 일반전형 2.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.4,
+     "quota": 39,
+     "applied": 94,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 39 × 경쟁률 2.4"
+    },
+    "2026": {
+     "name": "스포츠건강관리학과",
+     "unofficial": true,
+     "tracks": "학과 모집 48명 · 일반전형 3.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.7,
+     "quota": 48,
+     "applied": 178,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 48 × 경쟁률 3.7"
+    },
+    "2027": {
+     "quota": 48,
+     "applied": 181,
+     "name": "스포츠건강관리학과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.28
+    }
+   }
+  },
+  {
+   "school": "x:마산대학교",
+   "schoolName": "마산대학교",
+   "region": "부산·울산·경남",
+   "dept": "레저스포츠과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "레저스포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 68명 · 일반전형 3.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.1,
+     "quota": 68,
+     "applied": 211,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 68 × 경쟁률 3.1"
+    },
+    "2024": {
+     "name": "레저스포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 68명 · 특성화고 4.2 · 일반고 2.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.5
+    },
+    "2025": {
+     "name": "레저스포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 66명 · 특성화고 2.4 · 일반고 2.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.5
+    },
+    "2026": {
+     "name": "레저스포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 64명 · 특성화고 3.07 · 고른기회 1 · 일반고 3.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.2
+    },
+    "2027": {
+     "quota": 59,
+     "applied": 162,
+     "name": "레저스포츠과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생모집 수시1차 경쟁률 안내 (첨부: 2027학년도 수시 1차 경쟁률.pdf)",
+      "url": "https://www.masan.ac.kr/info/CMS/Board/Board.do?mCode=MN058&mode=view&mgr_seq=351&board_seq=234889",
+      "date": "2026-10-01"
+     },
+     "derived": "경쟁률(소수 1자리)×모집인원, 전형별 반올림 후 합산: 일반고 18×4.3=77, 특성화고 13×3.2=42, 특기자 27×1.4=38, 고른기회2 1×5.0=5. 모집인원 출처: 2027학년도 마산대학교 신입생 모집요강 p.30 '전형별 모집인원(정원내)' https://www.masan.ac.kr/attach/CONTENTS/PDF/ContentMgr/PDFViewer/2026/10/Fbp3aRMZq18m3jKq.PDF . 경쟁률이 소수 1자리라 전형별 ±0.05×모집인원 오차 있음",
+     "mainTrack": "일반고",
+     "mainRate": 4.3
+    }
+   }
+  },
+  {
+   "school": "x:부산과학기술대학교",
+   "schoolName": "부산과학기술대학교",
+   "region": "부산·울산·경남",
+   "dept": "파크골프지도과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "quota": 30,
+     "applied": 42,
+     "name": "파크골프지도과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차모집 지원률 현황(최종) — 학과명 파크골프과",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=34"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 0.0,
+     "mainSource": "portal"
+    },
+    "2027": {
+     "quota": 29,
+     "applied": 80,
+     "name": "파크골프지도과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차모집 지원률 현황(최종) — 본문 이미지 표",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=36",
+      "date": "2026-10-01"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.76
+    }
+   }
+  },
+  {
+   "school": "x:부산보건대학교",
+   "schoolName": "부산보건대학교",
+   "region": "부산·울산·경남",
+   "dept": "파크골프과(야)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "name": "파크골프과",
+     "unofficial": true,
+     "tracks": "학과 모집 10명 · 특성화고 2.2 · 고른기회 2.5 · 일반고 1.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 1.3
+    },
+    "2027": {
+     "quota": 13,
+     "applied": 46,
+     "name": "파크골프과(야)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생 수시1차 모집 경쟁률 (첨부: 2027 수시1차 경쟁률.pdf)",
+      "url": "https://ipsi.bhu.ac.kr/ipsi/boardview/2/323",
+      "date": "2026-10-01"
+     },
+     "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 4×1.00=4, 특성화고 5×3.00=15, 고른기회 4×6.75=27. 모집인원 출처: 2027학년도 부산보건대 신입생 모집요강 p.27~29(전형별 모집인원) https://ipsi.bhu.ac.kr/upload/dongju/ipsi/board/5/2026/0629105441491.pdf",
+     "mainTrack": "일반고",
+     "mainRate": 1.0
+    }
+   }
+  },
+  {
+   "school": "x:서영대학교(광주)",
+   "schoolName": "서영대학교(광주)",
+   "region": "호남",
+   "dept": "스포츠융합학부(스포츠지도전공)(야)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "name": "스포츠융합학부(스포츠지도전공)",
+     "unofficial": true,
+     "tracks": "학과 모집 11명 · 일반전형 1.8 · 특성화고 3.4 · 고른기회 1 · 일반고 7.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.4
+    },
+    "2027": {
+     "quota": 24,
+     "applied": 48,
+     "name": "스포츠융합학부(스포츠지도전공)(야)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30"
+     },
+     "derived": "모집인원×경쟁률: 24×2.0=48 (실제 47~49 가능). 모집인원도 같은 화면 출처",
+     "mainTrack": "일반전형",
+     "mainRate": 2.0
+    }
+   }
+  },
+  {
+   "school": "x:수성대학교",
+   "schoolName": "수성대학교",
+   "region": "대구·경북",
+   "dept": "스포츠레저전공(주간+야간)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "스포츠레저과",
+     "unofficial": true,
+     "tracks": "학과 모집 92명 · 일반전형 9.8 · 특성화고 11.5 · 대학자체 2.9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 9.8
+    },
+    "2024": {
+     "name": "스포츠레저과",
+     "unofficial": true,
+     "tracks": "학과 모집 62명 · 일반전형 3.2 · 특성화고 4.3 · 대학자체 1.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.2
+    },
+    "2025": {
+     "name": "스포츠레저과",
+     "unofficial": true,
+     "tracks": "학과 모집 26명 · 일반전형 16 · 특성화고 2.3 · 대학자체 1.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 16.0
+    },
+    "2026": {
+     "name": "스포츠학부 스포츠레저전공",
+     "unofficial": true,
+     "tracks": "학과 모집 38명 · 일반전형 5.7 · 특성화고 1 · 대학자체 2.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 5.7
+    },
+    "2027": {
+     "quota": 46,
+     "applied": 160,
+     "name": "스포츠레저전공(주간+야간)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "수성대 학과별 경쟁률 — 2027학년도 수시모집(1차)",
+      "url": "https://ipsi.sc.ac.kr/counsel/05_01.sc",
+      "date": "2026-10-20(조회)"
+     },
+     "derived": "주간: 일반 15×5.9=88.5 + 특성화 1×12.0=12 + 자체 4×1.0=4 = 104.5 / 야간: 일반 16×2.1=33.6 + 특성화 2×1.5=3 + 자체 8×2.4=19.2 = 55.8 → 합계 약 160 (모집인원 출처: https://ipsi.sc.ac.kr/susi01/02.sc; 반올림 경쟁률 기반이라 ±3명 오차 가능)",
+     "mainTrack": "일반전형",
+     "mainRate": 5.9
+    }
+   }
+  },
+  {
+   "school": "x:신성대학교",
+   "schoolName": "신성대학교",
+   "region": "충청",
+   "dept": "스포츠레저과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "스포츠레저과",
+     "unofficial": true,
+     "tracks": "학과 모집 50명 · 일반전형 3.2 · 고른기회 3.8 · 대학자체 1.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.2
+    },
+    "2024": {
+     "name": "스포츠레저과",
+     "unofficial": true,
+     "tracks": "학과 모집 45명 · 일반전형 5.57 · 대학자체 2.51",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 5.57
+    },
+    "2025": {
+     "name": "스포츠레저과",
+     "unofficial": true,
+     "tracks": "학과 모집 50명 · 일반전형 4.6 · 대학자체 1.58",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.6
+    },
+    "2026": {
+     "name": "스포츠레저과",
+     "unofficial": true,
+     "tracks": "학과 모집 45명 · 일반전형 9 · 대학자체 1.66",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 9.0
+    },
+    "2027": {
+     "quota": 41,
+     "applied": 79,
+     "name": "스포츠레저과",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 6.0
+    }
+   }
+  },
+  {
+   "school": "x:여주대학교",
+   "schoolName": "여주대학교",
+   "region": "경기",
+   "dept": "골프산업과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2025": {
+     "name": "골프산업과",
+     "unofficial": true,
+     "tracks": "학과 모집 25명 · 대학자체 0.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "quota": 25,
+     "applied": 15,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 25 × 경쟁률 0.6"
+    },
+    "2026": {
+     "name": "골프산업과",
+     "unofficial": true,
+     "tracks": "학과 모집 25명 · 대학자체 0.9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "quota": 25,
+     "applied": 22,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 25 × 경쟁률 0.9"
+    },
+    "2027": {
+     "quota": 20,
+     "applied": 16,
+     "name": "골프산업과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20"
+     }
+    }
+   }
+  },
+  {
+   "school": "x:여주대학교",
+   "schoolName": "여주대학교",
+   "region": "경기",
+   "dept": "파크골프지도과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "name": "파크골프지도과",
+     "unofficial": true,
+     "tracks": "학과 모집 34명 · 대학자체 1.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "quota": 34,
+     "applied": 58,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 34 × 경쟁률 1.7"
+    },
+    "2027": {
+     "quota": 30,
+     "applied": 48,
+     "name": "파크골프지도과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20"
+     }
+    }
+   }
+  },
+  {
+   "school": "x:전주비전대학교",
+   "schoolName": "전주비전대학교",
+   "region": "호남",
+   "dept": "스포츠건강과(야)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2026": {
+     "quota": 20,
+     "applied": 24,
+     "name": "스포츠건강과(야)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "전주비전대 경쟁률(수시1차) 조회 — 2026학년도(최종마감자료) 열",
+      "url": "https://my.jvision.ac.kr/ipsiweb/ipss/compet/compet_view.jsp"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 0.0,
+     "mainSource": "portal"
+    },
+    "2027": {
+     "quota": 20,
+     "applied": 37,
+     "name": "스포츠건강과(야)",
+     "unofficial": false
     }
    }
   }

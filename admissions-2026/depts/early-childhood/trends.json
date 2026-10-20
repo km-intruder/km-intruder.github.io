@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 27,
      "applied": 293,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 10.41
     },
     "2024": {
      "quota": 27,
      "applied": 146,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 5.0
     },
     "2025": {
      "quota": 27,
      "applied": 141,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.22
     },
     "2026": {
      "quota": 27,
      "applied": 161,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.96
     },
     "2027": {
      "quota": 25,
      "applied": 204,
      "name": "유아교육학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 8.74
     }
    }
   },
@@ -62,28 +74,38 @@
     "2023": {
      "quota": 30,
      "applied": 135,
-     "name": "건축공간디자인과"
+     "name": "건축공간디자인과",
+     "mainTrack": "일반고",
+     "mainRate": 4.0
     },
     "2024": {
      "quota": 28,
      "applied": 158,
-     "name": "건축공간디자인과"
+     "name": "건축공간디자인과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.64
     },
     "2025": {
      "quota": 31,
      "applied": 147,
-     "name": "건축공간디자인학과"
+     "name": "건축공간디자인학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.74
     },
     "2026": {
      "quota": 27,
      "applied": 181,
-     "name": "건축공간디자인학과"
+     "name": "건축공간디자인학과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.7
     },
     "2027": {
      "quota": 27,
      "applied": 188,
      "name": "건축공간디자인학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 6.96
     }
    }
   },
@@ -99,28 +121,38 @@
     "2023": {
      "quota": 50,
      "applied": 259,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 4.71
     },
     "2024": {
      "quota": 43,
      "applied": 228,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 4.56
     },
     "2025": {
      "quota": 50,
      "applied": 214,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반고",
+     "mainRate": 3.81
     },
     "2026": {
      "quota": 42,
      "applied": 254,
-     "name": "사회복지과"
+     "name": "사회복지과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.05
     },
     "2027": {
      "quota": 42,
      "applied": 280,
      "name": "사회복지과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 6.67
     }
    }
   },
@@ -136,27 +168,37 @@
     "2023": {
      "quota": 119,
      "applied": 251,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 1.86
     },
     "2024": {
      "quota": 118,
      "applied": 151,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 1.11
     },
     "2025": {
      "quota": 80,
      "applied": 171,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 2.09
     },
     "2026": {
      "quota": 34,
      "applied": 203,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 8.06
     },
     "2027": {
      "quota": 41,
      "applied": 247,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 5.31
     }
    }
   },
@@ -172,27 +214,37 @@
     "2023": {
      "quota": 38,
      "applied": 560,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반고",
+     "mainRate": 15.04
     },
     "2024": {
      "quota": 38,
      "applied": 306,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.25
     },
     "2025": {
      "quota": 39,
      "applied": 376,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.1
     },
     "2026": {
      "quota": 39,
      "applied": 508,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반고",
+     "mainRate": 14.48
     },
     "2027": {
      "quota": 41,
      "applied": 409,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.0
     }
    }
   },
@@ -208,27 +260,37 @@
     "2023": {
      "quota": 56,
      "applied": 369,
-     "name": "유아교육과(주간)(3년제)"
+     "name": "유아교육과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 6.09
     },
     "2024": {
      "quota": 56,
      "applied": 199,
-     "name": "유아교육과(주간)(3년제)"
+     "name": "유아교육과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 3.52
     },
     "2025": {
      "quota": 56,
      "applied": 211,
-     "name": "유아교육과(주간)(3년제)"
+     "name": "유아교육과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 3.35
     },
     "2026": {
      "quota": 56,
      "applied": 362,
-     "name": "유아교육과(3년제)"
+     "name": "유아교육과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 6.08
     },
     "2027": {
      "quota": 57,
      "applied": 389,
-     "name": "소사캠퍼스 유아교육과(3년제)"
+     "name": "소사캠퍼스 유아교육과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 6.77
     }
    }
   },
@@ -244,27 +306,37 @@
     "2023": {
      "quota": 40,
      "applied": 274,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 5.44
     },
     "2024": {
      "quota": 40,
      "applied": 158,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 3.33
     },
     "2025": {
      "quota": 34,
      "applied": 123,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 3.71
     },
     "2026": {
      "quota": 34,
      "applied": 199,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 5.88
     },
     "2027": {
      "quota": 33,
      "applied": 256,
-     "name": "웰니스 학부 유아교육과 · 유아교육과"
+     "name": "웰니스 학부 유아교육과 · 유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 10.11
     }
    }
   },
@@ -280,27 +352,37 @@
     "2023": {
      "quota": 36,
      "applied": 291,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 7.3
     },
     "2024": {
      "quota": 36,
      "applied": 153,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 3.85
     },
     "2025": {
      "quota": 36,
      "applied": 268,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 6.36
     },
     "2026": {
      "quota": 36,
      "applied": 351,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 8.45
     },
     "2027": {
      "quota": 28,
      "applied": 398,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 13.46
     }
    }
   },
@@ -316,22 +398,30 @@
     "2023": {
      "quota": 41,
      "applied": 355,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.45
     },
     "2025": {
      "quota": 41,
      "applied": 429,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.93
     },
     "2026": {
      "quota": 41,
      "applied": 641,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반고",
+     "mainRate": 17.63
     },
     "2027": {
      "quota": 41,
      "applied": 590,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반고",
+     "mainRate": 16.17
     }
    }
   },
@@ -347,22 +437,30 @@
     "2023": {
      "quota": 84,
      "applied": 438,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 4.74
     },
     "2025": {
      "quota": 74,
      "applied": 174,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.35
     },
     "2026": {
      "quota": 50,
      "applied": 245,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.9
     },
     "2027": {
      "quota": 48,
      "applied": 381,
-     "name": "유아교육학과"
+     "name": "유아교육학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.94
     }
    }
   },
@@ -378,27 +476,37 @@
     "2023": {
      "quota": 78,
      "applied": 479,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 5.57
     },
     "2024": {
      "quota": 78,
      "applied": 304,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 3.54
     },
     "2025": {
      "quota": 78,
      "applied": 308,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 3.6
     },
     "2026": {
      "quota": 78,
      "applied": 453,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 5.26
     },
     "2027": {
      "quota": 76,
      "applied": 453,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반고",
+     "mainRate": 5.69
     }
    }
   },
@@ -414,27 +522,37 @@
     "2023": {
      "quota": 46,
      "applied": 525,
-     "name": "유아교육과(3년제)"
+     "name": "유아교육과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 10.7
     },
     "2024": {
      "quota": 46,
      "applied": 327,
-     "name": "유아교육과(3년제)"
+     "name": "유아교육과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 6.56
     },
     "2025": {
      "quota": 46,
      "applied": 250,
-     "name": "유아교육과"
+     "name": "유아교육과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.26
     },
     "2026": {
      "quota": 38,
      "applied": 338,
-     "name": "유아교육과(3년제)"
+     "name": "유아교육과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 8.39
     },
     "2027": {
      "quota": 38,
      "applied": 360,
-     "name": "유아교육과(3년제)"
+     "name": "유아교육과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 9.61
     }
    }
   }

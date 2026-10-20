@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 94,
      "applied": 280,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.47
     },
     "2024": {
      "quota": 80,
      "applied": 268,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.06
     },
     "2025": {
      "quota": 88,
      "applied": 280,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.8
     },
     "2026": {
      "quota": 90,
      "applied": 406,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.41
     },
     "2027": {
      "quota": 90,
      "applied": 541,
      "name": "소방안전관리과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 6.12
     }
    }
   },
@@ -62,18 +74,24 @@
     "2025": {
      "quota": 33,
      "applied": 231,
-     "name": "응급구조학과"
+     "name": "응급구조학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.0
     },
     "2026": {
      "quota": 32,
      "applied": 388,
-     "name": "응급구조학과"
+     "name": "응급구조학과",
+     "mainTrack": "일반전형",
+     "mainRate": 12.12
     },
     "2027": {
      "quota": 32,
      "applied": 469,
      "name": "응급구조학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 14.66
     }
    }
   },
@@ -89,27 +107,37 @@
     "2023": {
      "quota": 48,
      "applied": 370,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반고",
+     "mainRate": 7.2
     },
     "2024": {
      "quota": 48,
      "applied": 363,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반고",
+     "mainRate": 7.78
     },
     "2025": {
      "quota": 48,
      "applied": 468,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반고",
+     "mainRate": 9.75
     },
     "2026": {
      "quota": 48,
      "applied": 564,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반고",
+     "mainRate": 12.4
     },
     "2027": {
      "quota": 48,
      "applied": 600,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반고",
+     "mainRate": 13.32
     }
    }
   },
@@ -125,22 +153,30 @@
     "2023": {
      "quota": 52,
      "applied": 170,
-     "name": "건축소방안전학과"
+     "name": "건축소방안전학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.33
     },
     "2025": {
      "quota": 38,
      "applied": 199,
-     "name": "건축소방안전학과"
+     "name": "건축소방안전학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.57
     },
     "2026": {
      "quota": 40,
      "applied": 291,
-     "name": "건축소방안전학과"
+     "name": "건축소방안전학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.27
     },
     "2027": {
      "quota": 46,
      "applied": 346,
-     "name": "건축소방안전학과"
+     "name": "건축소방안전학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.76
     }
    }
   },
@@ -156,17 +192,23 @@
     "2025": {
      "quota": 25,
      "applied": 194,
-     "name": "소방설비안전전공"
+     "name": "소방설비안전전공",
+     "mainTrack": "일반고",
+     "mainRate": 9.88
     },
     "2026": {
      "quota": 25,
      "applied": 237,
-     "name": "소방설비안전전공"
+     "name": "소방설비안전전공",
+     "mainTrack": "일반고",
+     "mainRate": 13.0
     },
     "2027": {
      "quota": 25,
      "applied": 245,
-     "name": "소방설비안전전공"
+     "name": "소방설비안전전공",
+     "mainTrack": "일반고",
+     "mainRate": 12.81
     }
    }
   },
@@ -182,27 +224,37 @@
     "2023": {
      "quota": 40,
      "applied": 105,
-     "name": "소방안전설비공학과"
+     "name": "소방안전설비공학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.77
     },
     "2024": {
      "quota": 39,
      "applied": 86,
-     "name": "소방안전설비공학과"
+     "name": "소방안전설비공학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.28
     },
     "2025": {
      "quota": 39,
      "applied": 104,
-     "name": "소방안전설비공학과"
+     "name": "소방안전설비공학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.97
     },
     "2026": {
      "quota": 39,
      "applied": 152,
-     "name": "소방안전설비과"
+     "name": "소방안전설비과",
+     "mainTrack": "일반고",
+     "mainRate": 4.1
     },
     "2027": {
      "quota": 37,
      "applied": 215,
-     "name": "소방안전설비과"
+     "name": "소방안전설비과",
+     "mainTrack": "일반고",
+     "mainRate": 6.27
     }
    }
   },
@@ -218,27 +270,37 @@
     "2023": {
      "quota": 32,
      "applied": 80,
-     "name": "소방행정학과"
+     "name": "소방행정학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.05
     },
     "2024": {
      "quota": 31,
      "applied": 47,
-     "name": "소방행정학과"
+     "name": "소방행정학과",
+     "mainTrack": "일반고",
+     "mainRate": 1.81
     },
     "2025": {
      "quota": 31,
      "applied": 53,
-     "name": "소방행정학과"
+     "name": "소방행정학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.19
     },
     "2026": {
      "quota": 31,
      "applied": 82,
-     "name": "소방행정학과"
+     "name": "소방행정학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.29
     },
     "2027": {
      "quota": 25,
      "applied": 134,
-     "name": "소방행정학과"
+     "name": "소방행정학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.5
     }
    }
   },
@@ -254,27 +316,37 @@
     "2023": {
      "quota": 90,
      "applied": 253,
-     "name": "소방안전설비과"
+     "name": "소방안전설비과",
+     "mainTrack": "일반고",
+     "mainRate": 2.75
     },
     "2024": {
      "quota": 103,
      "applied": 195,
-     "name": "소방안전설비과"
+     "name": "소방안전설비과",
+     "mainTrack": "일반고",
+     "mainRate": 1.89
     },
     "2025": {
      "quota": 101,
      "applied": 216,
-     "name": "소방안전설비과"
+     "name": "소방안전설비과",
+     "mainTrack": "일반고",
+     "mainRate": 1.87
     },
     "2026": {
      "quota": 80,
      "applied": 465,
-     "name": "소방안전설비과"
+     "name": "소방안전설비과",
+     "mainTrack": "일반고",
+     "mainRate": 5.72
     },
     "2027": {
      "quota": 80,
      "applied": 526,
-     "name": "소방안전설비과"
+     "name": "소방안전설비과",
+     "mainTrack": "일반고",
+     "mainRate": 6.44
     }
    }
   },
@@ -290,27 +362,37 @@
     "2023": {
      "quota": 19,
      "applied": 144,
-     "name": "소방안전관리전공"
+     "name": "소방안전관리전공",
+     "mainTrack": "일반고",
+     "mainRate": 11.88
     },
     "2024": {
      "quota": 19,
      "applied": 69,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반고",
+     "mainRate": 5.33
     },
     "2025": {
      "quota": 23,
      "applied": 144,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.5
     },
     "2026": {
      "quota": 20,
      "applied": 257,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 21.8
     },
     "2027": {
      "quota": 27,
      "applied": 331,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 19.8
     }
    }
   },
@@ -326,27 +408,37 @@
     "2023": {
      "quota": 73,
      "applied": 274,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.63
     },
     "2024": {
      "quota": 73,
      "applied": 275,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.55
     },
     "2025": {
      "quota": 61,
      "applied": 274,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.0
     },
     "2026": {
      "quota": 56,
      "applied": 365,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.38
     },
     "2027": {
      "quota": 56,
      "applied": 512,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.31
     }
    }
   },
@@ -362,27 +454,37 @@
     "2023": {
      "quota": 35,
      "applied": 89,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.54
     },
     "2024": {
      "quota": 19,
      "applied": 99,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.21
     },
     "2025": {
      "quota": 20,
      "applied": 111,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.55
     },
     "2026": {
      "quota": 30,
      "applied": 143,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.77
     },
     "2027": {
      "quota": 32,
      "applied": 107,
-     "name": "소방안전관리과"
+     "name": "소방안전관리과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.34
     }
    }
   }

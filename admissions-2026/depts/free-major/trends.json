@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -30,18 +32,24 @@
     "2025": {
      "quota": 27,
      "applied": 89,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.3
     },
     "2026": {
      "quota": 22,
      "applied": 170,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.73
     },
     "2027": {
      "quota": 22,
      "applied": 167,
      "name": "자유전공학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 7.59
     }
    }
   },
@@ -57,12 +65,16 @@
     "2026": {
      "quota": 13,
      "applied": 61,
-     "name": "자유전공학과(3년제)"
+     "name": "자유전공학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 5.83
     },
     "2027": {
      "quota": 13,
      "applied": 135,
-     "name": "자유전공학과(3년제)"
+     "name": "자유전공학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 14.0
     }
    }
   },
@@ -78,17 +90,23 @@
     "2025": {
      "quota": 24,
      "applied": 123,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.37
     },
     "2026": {
      "quota": 39,
      "applied": 276,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.0
     },
     "2027": {
      "quota": 39,
      "applied": 437,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.84
     }
    }
   },
@@ -104,17 +122,23 @@
     "2025": {
      "quota": 8,
      "applied": 99,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.67
     },
     "2026": {
      "quota": 14,
      "applied": 200,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 14.0
     },
     "2027": {
      "quota": 19,
      "applied": 329,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 19.93
     }
    }
   },
@@ -130,17 +154,23 @@
     "2025": {
      "quota": 16,
      "applied": 134,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.67
     },
     "2026": {
      "quota": 49,
      "applied": 439,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.23
     },
     "2027": {
      "quota": 60,
      "applied": 529,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.82
     }
    }
   },
@@ -156,12 +186,16 @@
     "2026": {
      "quota": 13,
      "applied": 162,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 13.0
     },
     "2027": {
      "quota": 13,
      "applied": 262,
-     "name": "본캠퍼스 자율전공학과"
+     "name": "본캠퍼스 자율전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 20.5
     }
    }
   },
@@ -177,17 +211,23 @@
     "2025": {
      "quota": 35,
      "applied": 162,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.33
     },
     "2026": {
      "quota": 44,
      "applied": 297,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.29
     },
     "2027": {
      "quota": 49,
      "applied": 346,
-     "name": "자유전공학과 자유전공학과"
+     "name": "자유전공학과 자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.16
     }
    }
   },
@@ -203,22 +243,30 @@
     "2023": {
      "quota": 27,
      "applied": 105,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.82
     },
     "2025": {
      "quota": 37,
      "applied": 169,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.37
     },
     "2026": {
      "quota": 34,
      "applied": 266,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.15
     },
     "2027": {
      "quota": 34,
      "applied": 260,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.41
     }
    }
   },
@@ -234,12 +282,16 @@
     "2026": {
      "quota": 13,
      "applied": 45,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.8
     },
     "2027": {
      "quota": 13,
      "applied": 92,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.7
     }
    }
   },
@@ -255,17 +307,23 @@
     "2025": {
      "quota": 12,
      "applied": 124,
-     "name": "자유전공학부"
+     "name": "자유전공학부",
+     "mainTrack": "일반고",
+     "mainRate": 10.8
     },
     "2026": {
      "quota": 12,
      "applied": 143,
-     "name": "자유전공학부"
+     "name": "자유전공학부",
+     "mainTrack": "일반고",
+     "mainRate": 11.8
     },
     "2027": {
      "quota": 24,
      "applied": 245,
-     "name": "자유전공학부"
+     "name": "자유전공학부",
+     "mainTrack": "일반고",
+     "mainRate": 9.65
     }
    }
   },
@@ -281,17 +339,23 @@
     "2025": {
      "quota": 32,
      "applied": 169,
-     "name": "자유전공학과,"
+     "name": "자유전공학과,",
+     "mainTrack": "일반고",
+     "mainRate": 5.35
     },
     "2026": {
      "quota": 22,
      "applied": 351,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 17.93
     },
     "2027": {
      "quota": 22,
      "applied": 411,
-     "name": "자유전공학부 자유전공학과"
+     "name": "자유전공학부 자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 21.4
     }
    }
   },
@@ -307,27 +371,37 @@
     "2023": {
      "quota": 27,
      "applied": 130,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.46
     },
     "2024": {
      "quota": 35,
      "applied": 149,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.17
     },
     "2025": {
      "quota": 45,
      "applied": 213,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.59
     },
     "2026": {
      "quota": 38,
      "applied": 307,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.69
     },
     "2027": {
      "quota": 30,
      "applied": 361,
-     "name": "자율 자유전공학과"
+     "name": "자율 자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 13.04
     }
    }
   },
@@ -343,12 +417,16 @@
     "2026": {
      "quota": 18,
      "applied": 212,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 14.42
     },
     "2027": {
      "quota": 14,
      "applied": 225,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 14.5
     }
    }
   },
@@ -364,17 +442,23 @@
     "2025": {
      "quota": 62,
      "applied": 393,
-     "name": "AI·SW융합학부 자유전공학과 · 경영·휴먼라이프학부 자유전공학과 · 자유전공학부 자유전공학과"
+     "name": "AI·SW융합학부 자유전공학과 · 경영·휴먼라이프학부 자유전공학과 · 자유전공학부 자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.77
     },
     "2026": {
      "quota": 69,
      "applied": 667,
-     "name": "자유전공학부 자유전공학과"
+     "name": "자유전공학부 자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.94
     },
     "2027": {
      "quota": 69,
      "applied": 725,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.02
     }
    }
   },
@@ -390,22 +474,30 @@
     "2023": {
      "quota": 36,
      "applied": 77,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.21
     },
     "2025": {
      "quota": 38,
      "applied": 164,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.32
     },
     "2026": {
      "quota": 26,
      "applied": 226,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.69
     },
     "2027": {
      "quota": 32,
      "applied": 280,
-     "name": "자율전공학과 자율전공학과"
+     "name": "자율전공학과 자율전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.75
     }
    }
   },
@@ -421,12 +513,16 @@
     "2026": {
      "quota": 18,
      "applied": 327,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 18.17
     },
     "2027": {
      "quota": 16,
      "applied": 185,
-     "name": "공통계열 자유전공학과"
+     "name": "공통계열 자유전공학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.25
     }
    }
   },
@@ -442,17 +538,23 @@
     "2025": {
      "quota": 29,
      "applied": 152,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.88
     },
     "2026": {
      "quota": 29,
      "applied": 254,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.85
     },
     "2027": {
      "quota": 26,
      "applied": 267,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.33
     }
    }
   },
@@ -468,22 +570,30 @@
     "2024": {
      "quota": 18,
      "applied": 57,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.17
     },
     "2025": {
      "quota": 41,
      "applied": 117,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.88
     },
     "2026": {
      "quota": 38,
      "applied": 144,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.78
     },
     "2027": {
      "quota": 38,
      "applied": 264,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.05
     }
    }
   },
@@ -499,17 +609,23 @@
     "2025": {
      "quota": 24,
      "applied": 81,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.38
     },
     "2026": {
      "quota": 20,
      "applied": 147,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.35
     },
     "2027": {
      "quota": 21,
      "applied": 109,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.19
     }
    }
   },
@@ -525,7 +641,9 @@
     "2025": {
      "quota": 94,
      "applied": 223,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.37
     },
     "2027": {
      "quota": 35,
@@ -551,12 +669,16 @@
     "2026": {
      "quota": 18,
      "applied": 180,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.0
     },
     "2027": {
      "quota": 18,
      "applied": 171,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.5
     }
    }
   },
@@ -572,17 +694,23 @@
     "2025": {
      "quota": 392,
      "applied": 1073,
-     "name": "자율학부(예체능)(시각/실내건축/패션/토탈뷰티/리챠드프로헤어/뉴미디어영상/방송영상) · 자율학부(인문사회)(경찰행정/경찰경호/경영회계/호텔경영/사회복지) · 자율학부(자연과학)(보건의료행정/안경광학)"
+     "name": "자율학부(예체능)(시각/실내건축/패션/토탈뷰티/리챠드프로헤어/뉴미디어영상/방송영상) · 자율학부(인문사회)(경찰행정/경찰경호/경영회계/호텔경영/사회복지) · 자율학부(자연과학)(보건의료행정/안경광학)",
+     "mainTrack": "일반전형",
+     "mainRate": 2.74
     },
     "2026": {
      "quota": 416,
      "applied": 1481,
-     "name": "자율학부(공학) · 자율학부(예체능) · 자율학부(인문사회) · 자율학부(자연과학)"
+     "name": "자율학부(공학) · 자율학부(예체능) · 자율학부(인문사회) · 자율학부(자연과학)",
+     "mainTrack": "일반전형",
+     "mainRate": 3.56
     },
     "2027": {
      "quota": 432,
      "applied": 1605,
-     "name": "자율학부(공학) · 자율학부(예체능) · 자율학부(인문사회) · 자율학부(자연과학)"
+     "name": "자율학부(공학) · 자율학부(예체능) · 자율학부(인문사회) · 자율학부(자연과학)",
+     "mainTrack": "일반전형",
+     "mainRate": 3.72
     }
    }
   },
@@ -624,17 +752,23 @@
     "2025": {
      "quota": 46,
      "applied": 101,
-     "name": "자유전공학과(주)"
+     "name": "자유전공학과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 2.2
     },
     "2026": {
      "quota": 33,
      "applied": 90,
-     "name": "자유전공학과(주)"
+     "name": "자유전공학과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 2.73
     },
     "2027": {
      "quota": 33,
      "applied": 184,
-     "name": "자유전공학과(주)"
+     "name": "자유전공학과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 5.58
     }
    }
   },
@@ -650,12 +784,16 @@
     "2026": {
      "quota": 13,
      "applied": 100,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.69
     },
     "2027": {
      "quota": 19,
      "applied": 182,
-     "name": "자유전공학과"
+     "name": "자유전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.58
     }
    }
   },
@@ -671,17 +809,23 @@
     "2025": {
      "quota": 20,
      "applied": 110,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.5
     },
     "2026": {
      "quota": 20,
      "applied": 224,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 11.2
     },
     "2027": {
      "quota": 16,
      "applied": 207,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 12.94
     }
    }
   },
@@ -697,17 +841,23 @@
     "2025": {
      "quota": 15,
      "applied": 20,
-     "name": "자유전공"
+     "name": "자유전공",
+     "mainTrack": "일반전형",
+     "mainRate": 1.33
     },
     "2026": {
      "quota": 50,
      "applied": 165,
-     "name": "자유전공"
+     "name": "자유전공",
+     "mainTrack": "일반전형",
+     "mainRate": 6.65
     },
     "2027": {
      "quota": 55,
      "applied": 253,
-     "name": "자율학부 자유전공"
+     "name": "자율학부 자유전공",
+     "mainTrack": "일반전형",
+     "mainRate": 12.3
     }
    }
   },
@@ -723,12 +873,16 @@
     "2025": {
      "quota": 71,
      "applied": 139,
-     "name": "VISTA(자율전공)학과"
+     "name": "VISTA(자율전공)학과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.85
     },
     "2026": {
      "quota": 25,
      "applied": 287,
-     "name": "VISTA(자율전공)학과"
+     "name": "VISTA(자율전공)학과",
+     "mainTrack": "일반전형",
+     "mainRate": 37.75
     },
     "2027": {
      "quota": 25,
@@ -749,33 +903,743 @@
     "2026": {
      "quota": 13,
      "applied": 30,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.31
     },
     "2027": {
      "quota": 13,
      "applied": 65,
-     "name": "자율전공학과"
+     "name": "자율전공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.0
     }
    }
   },
   {
-   "school": "u43",
+   "school": "x:계명문화대학교",
+   "schoolName": "계명문화대학교",
+   "region": "대구·경북",
+   "dept": "자율전공과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2025": {
+     "name": "자율전공과",
+     "unofficial": true,
+     "tracks": "학과 모집 20명 · 특성화고 3.2 · 일반고 2.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.1
+    },
+    "2026": {
+     "quota": 18,
+     "applied": 67,
+     "name": "자율전공과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000397"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.75
+    },
+    "2027": {
+     "quota": 27,
+     "applied": 49,
+     "name": "자율전공과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000420",
+      "date": "2026-09-30"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 1.58
+    }
+   }
+  },
+  {
+   "school": "x:대구과학대학교",
+   "schoolName": "대구과학대학교",
+   "region": "대구·경북",
+   "dept": "라이프케어자율대학(주)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2026": {
+     "name": "라이프케어자율대학",
+     "unofficial": true,
+     "tracks": "학과 모집 242명 · 특성화고 4.71 · 고른기회 9.5 · 대학자체 0.89 · 일반고 4.77",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.77
+    },
+    "2027": {
+     "quota": 138,
+     "applied": 460,
+     "name": "라이프케어자율대학(주)",
+     "unofficial": false,
+     "mainTrack": "일반고",
+     "mainRate": 5.66
+    }
+   }
+  },
+  {
+   "school": "x:대구보건대학교",
+   "schoolName": "대구보건대학교",
+   "region": "대구·경북",
+   "dept": "자율전공학과(주)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "name": "자율전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 61명 · 특성화고 7.6 · 일반고 8.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 8.4
+    },
+    "2027": {
+     "quota": 51,
+     "applied": 71,
+     "name": "자율전공학과(주)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "대구보건대학교 입학원서접수 지원현황 조회(수시1차)",
+      "url": "https://apply.dhc.ac.kr/rate/list",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 1.56
+    }
+   }
+  },
+  {
+   "school": "x:대전과학기술대학교",
+   "schoolName": "대전과학기술대학교",
+   "region": "충청",
+   "dept": "자율전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "name": "자율전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 18명 · 일반전형 1.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.8,
+     "quota": 18,
+     "applied": 32,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 18 × 경쟁률 1.8"
+    },
+    "2027": {
+     "quota": 18,
+     "applied": 30,
+     "name": "자율전공학과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.67
+    }
+   }
+  },
+  {
+   "school": "x:동원대학교",
+   "schoolName": "동원대학교",
+   "region": "경기",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "자유전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 23명 · 일반전형 3.13",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.13,
+     "quota": 23,
+     "applied": 72,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 23 × 경쟁률 3.13"
+    },
+    "2024": {
+     "name": "자유전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 39명 · 일반전형 1.41",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.41,
+     "quota": 39,
+     "applied": 55,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 39 × 경쟁률 1.41"
+    },
+    "2025": {
+     "name": "자유전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 86명 · 일반전형 0.9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 0.9,
+     "quota": 86,
+     "applied": 77,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 86 × 경쟁률 0.9"
+    },
+    "2026": {
+     "name": "자유전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 86명 · 일반전형 1.69",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.69,
+     "quota": 86,
+     "applied": 145,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 86 × 경쟁률 1.69"
+    },
+    "2027": {
+     "quota": 93,
+     "applied": 255,
+     "name": "자유전공학과",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 2.74
+    }
+   }
+  },
+  {
+   "school": "x:두원공과대학교",
+   "schoolName": "두원공과대학교",
+   "region": "경기",
+   "dept": "자유전공학과(파주)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2024": {
+     "name": "자유전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 27명 · 일반전형 1.23 · 특성화고 1.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.23
+    },
+    "2025": {
+     "name": "자유전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 31명 · 일반전형 3 · 특성화고 1.33",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.0
+    },
+    "2026": {
+     "name": "자유전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 31명 · 일반전형 3.93 · 특성화고 4.25",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.93
+    },
+    "2027": {
+     "quota": 20,
+     "applied": 131,
+     "name": "자유전공학과(파주)",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 7.18
+    }
+   }
+  },
+  {
+   "school": "x:두원공과대학교",
+   "schoolName": "두원공과대학교",
+   "region": "경기",
+   "dept": "자율전공학과(안성)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2025": {
+     "name": "자율전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 23명 · 일반전형 1.16 · 특성화고 0.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.16
+    },
+    "2026": {
+     "name": "자율전공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 18명 · 일반전형 2.07 · 특성화고 1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.07
+    },
+    "2027": {
+     "quota": 7,
+     "applied": 37,
+     "name": "자율전공학과(안성)",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 7.2
+    }
+   }
+  },
+  {
+   "school": "x:서영대학교(광주)",
+   "schoolName": "서영대학교(광주)",
+   "region": "호남",
+   "dept": "자유전공학부",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2025": {
+     "name": "자유전공학부",
+     "unofficial": true,
+     "tracks": "학과 모집 23명 · 특성화고 0.3 · 일반고 0.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 0.3
+    },
+    "2026": {
+     "name": "자유전공학부",
+     "unofficial": true,
+     "tracks": "학과 모집 11명 · 특성화고 11 · 고른기회 1 · 일반고 11",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 11.0
+    },
+    "2027": {
+     "quota": 22,
+     "applied": 56,
+     "name": "자유전공학부",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30"
+     },
+     "derived": "화면에 지원인원 없음 → 모집인원×경쟁률: 11×3.0=33, 11×2.1=23.1→23 (반올림과 맞는 정수는 33·23뿐). 모집인원도 같은 화면 출처",
+     "mainTrack": "일반고",
+     "mainRate": 3.0
+    }
+   }
+  },
+  {
+   "school": "x:서영대학교(파주)",
+   "schoolName": "서영대학교(파주)",
+   "region": "경기",
+   "dept": "자율전공학부(주간)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2025": {
+     "name": "자율전공학부",
+     "unofficial": true,
+     "tracks": "학과 모집 23명 · 특성화고 2.2 · 일반고 2.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.3
+    },
+    "2026": {
+     "name": "자율전공학부",
+     "unofficial": true,
+     "tracks": "학과 모집 14명 · 특성화고 5 · 고른기회 0.6 · 일반고 5.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 5.2
+    },
+    "2027": {
+     "quota": 18,
+     "applied": 108,
+     "name": "자율전공학부(주간)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대학교 파주캠퍼스 2027학년도 수시1차 신입생모집(경쟁률) 현황",
+      "url": "https://www.seoyeong.ac.kr/pjipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2173",
+      "date": "2026-09-30"
+     },
+     "derived": "일반고 13×6.5=84.5 → 84 또는 85(둘 다 6.5로 반올림됨, 화면에서 구분 불가), 특성화고 5×4.8=24. 합계 108~109 중 108 기재",
+     "mainTrack": "일반고",
+     "mainRate": 6.5
+    }
+   }
+  },
+  {
+   "school": "x:수성대학교",
+   "schoolName": "수성대학교",
+   "region": "대구·경북",
+   "dept": "신산업자율학부(주간)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "name": "신산업자율학부",
+     "unofficial": true,
+     "tracks": "학과 모집 38명 · 일반전형 3.4 · 특성화고 1 · 대학자체 1.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.4
+    },
+    "2027": {
+     "quota": 84,
+     "applied": 115,
+     "name": "신산업자율학부(주간)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "수성대 학과별 경쟁률 — 2027학년도 수시모집(1차)",
+      "url": "https://ipsi.sc.ac.kr/counsel/05_01.sc",
+      "date": "2026-10-20(조회)"
+     },
+     "derived": "일반 45×1.5=67.5 + 특성화 3×3.7=11.1 + 대학자체 36×1.0=36 = 114.6 ≈ 115 (모집인원 출처: https://ipsi.sc.ac.kr/susi01/02.sc; ±3명 오차 가능)",
+     "mainTrack": "일반전형",
+     "mainRate": 1.5
+    }
+   }
+  },
+  {
+   "school": "x:여주대학교",
+   "schoolName": "여주대학교",
+   "region": "경기",
+   "dept": "자유전공과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2025": {
+     "name": "자유전공과",
+     "unofficial": true,
+     "tracks": "학과 모집 34명 · 일반전형 0.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 0.8,
+     "quota": 34,
+     "applied": 27,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 34 × 경쟁률 0.8"
+    },
+    "2026": {
+     "name": "자유전공과",
+     "unofficial": true,
+     "tracks": "학과 모집 34명 · 일반전형 2.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.6,
+     "quota": 34,
+     "applied": 88,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 34 × 경쟁률 2.6"
+    },
+    "2027": {
+     "quota": 27,
+     "applied": 57,
+     "name": "자유전공과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.11
+    }
+   }
+  },
+  {
+   "school": "x:연암공과대학교",
+   "schoolName": "연암공과대학교",
+   "region": "부산·울산·경남",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2026": {
+     "quota": 21,
+     "applied": 482,
+     "name": "자유전공학과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차 입시결과",
+      "url": "https://enter.yc.ac.kr/enter/susi1-result-in.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 20.56
+    },
+    "2027": {
+     "quota": 21,
+     "applied": 591,
+     "name": "자유전공학과",
+     "unofficial": false,
+     "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 18×26.61=479, 특성화고 3×37.33=112. 모집인원 출처: 2027학년도 신입생 모집요강(본책) p.29 '1. 모집인원' 수시1차 정원내 https://enter.yc.ac.kr/_attach/yonam/file/2026/06/NaXLhkJNJeQSgrWfooXZWVampx.pdf",
+     "mainTrack": "일반고",
+     "mainRate": 26.61
+    }
+   }
+  },
+  {
+   "school": "x:우송정보대학",
+   "schoolName": "우송정보대학",
+   "region": "충청",
+   "dept": "자율전공학부",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "자율전공학부",
+     "unofficial": true,
+     "tracks": "학과 모집 85명 · 일반전형 2.3 · 특성화고 1.5 · 대학자체 0.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.3
+    },
+    "2024": {
+     "name": "자율전공학부",
+     "unofficial": true,
+     "tracks": "학과 모집 94명 · 일반전형 1.71 · 특성화고 1.75 · 대학자체 0.17",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.71
+    },
+    "2025": {
+     "name": "자율전공학부",
+     "unofficial": true,
+     "tracks": "학과 모집 97명 · 일반전형 1.1 · 특성화고 1.3 · 대학자체 0.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.1
+    },
+    "2026": {
+     "name": "자율전공학부",
+     "unofficial": true,
+     "tracks": "학과 모집 127명 · 일반전형 2.35 · 특성화고 1.5 · 고른기회 0.88 · 대학자체 1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.35
+    },
+    "2027": {
+     "quota": 88,
+     "applied": 218,
+     "name": "자율전공학부",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차모집 최종 경쟁률 (우송정보대학 입학 지원현황, ent.wsi.ac.kr 수시모집 지원현황 링크)",
+      "url": "https://wsinfo.wsi.ac.kr/initcontroler?link=NeSju",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 5.85
+    }
+   }
+  },
+  {
+   "school": "x:청강문화산업대학교",
    "schoolName": "청강문화산업대학교",
    "region": "경기",
    "dept": "자율전공",
    "isBase": false,
    "isKm": false,
    "scope": "전국",
+   "unofficial": false,
    "series": {
     "2025": {
+     "name": "자율전공",
+     "unofficial": true,
+     "tracks": "학과 모집 15명 · 일반전형 9.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 9.1,
      "quota": 15,
-     "applied": 137,
-     "name": "자율전공"
+     "applied": 136,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 15 × 경쟁률 9.1"
     },
     "2026": {
+     "name": "자율전공",
+     "unofficial": true,
+     "tracks": "학과 모집 15명 · 일반전형 15.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 15.3,
      "quota": 15,
      "applied": 230,
-     "name": "자율전공"
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 15 × 경쟁률 15.3"
+    },
+    "2027": {
+     "quota": 20,
+     "applied": 246,
+     "name": "자율전공",
+     "unofficial": false
+    }
+   }
+  },
+  {
+   "school": "x:한국승강기대학교",
+   "schoolName": "한국승강기대학교",
+   "region": "부산·울산·경남",
+   "dept": "글로컬자율전공학부",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2026": {
+     "name": "글로컬자율전공학부",
+     "unofficial": true,
+     "tracks": "학과 모집 1명 · 대학자체 0.16",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "quota": 1,
+     "applied": 0,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 1 × 경쟁률 0.16"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 29,
+     "name": "글로컬자율전공학부",
+     "unofficial": false,
+     "derived": "경쟁률 1.12:1 × 모집인원 26 = 29.12 → 29. 모집인원 출처: 입학 홈페이지 수시모집요강 '모집인원' 표(글로컬자율전공학부 수시1차 대학자체 26) https://ipsi.klc.ac.kr/iphak/web/content.do?proFn=304010000"
     }
    }
   }

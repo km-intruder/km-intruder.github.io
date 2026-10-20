@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 53,
      "applied": 316,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 5.63
     },
     "2024": {
      "quota": 51,
      "applied": 238,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 4.15
     },
     "2025": {
      "quota": 50,
      "applied": 265,
-     "name": "미디어영상과"
+     "name": "미디어영상과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.3
     },
     "2026": {
      "quota": 38,
      "applied": 306,
-     "name": "미디어영상과"
+     "name": "미디어영상과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.05
     },
     "2027": {
      "quota": 36,
      "applied": 345,
      "name": "미디어영상과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 9.58
     }
    }
   },
@@ -62,28 +74,38 @@
     "2023": {
      "quota": 13,
      "applied": 39,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.0
     },
     "2024": {
      "quota": 15,
      "applied": 38,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.53
     },
     "2025": {
      "quota": 15,
      "applied": 44,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.93
     },
     "2026": {
      "quota": 15,
      "applied": 56,
-     "name": "실용음악과"
+     "name": "실용음악과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.73
     },
     "2027": {
      "quota": 15,
      "applied": 108,
      "name": "실용음악과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 7.2
     }
    }
   },
@@ -99,28 +121,38 @@
     "2023": {
      "quota": 13,
      "applied": 51,
-     "name": "공연예술과"
+     "name": "공연예술과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.92
     },
     "2024": {
      "quota": 25,
      "applied": 37,
-     "name": "공연예술과"
+     "name": "공연예술과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.48
     },
     "2025": {
      "quota": 15,
      "applied": 52,
-     "name": "연기예술과"
+     "name": "연기예술과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.47
     },
     "2026": {
      "quota": 15,
      "applied": 37,
-     "name": "연기예술과"
+     "name": "연기예술과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.47
     },
     "2027": {
      "quota": 13,
      "applied": 68,
      "name": "연기예술과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 5.23
     }
    }
   },
@@ -136,22 +168,30 @@
     "2023": {
      "quota": 33,
      "applied": 152,
-     "name": "영상미디어콘텐츠과"
+     "name": "영상미디어콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 4.23
     },
     "2024": {
      "quota": 54,
      "applied": 178,
-     "name": "영상미디어콘텐츠과"
+     "name": "영상미디어콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 2.63
     },
     "2025": {
      "quota": 54,
      "applied": 333,
-     "name": "영상미디어콘텐츠과"
+     "name": "영상미디어콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 5.21
     },
     "2026": {
      "quota": 57,
      "applied": 361,
-     "name": "영상미디어콘텐츠과"
+     "name": "영상미디어콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 5.49
     }
    }
   },
@@ -167,27 +207,37 @@
     "2023": {
      "quota": 40,
      "applied": 629,
-     "name": "방송영상미디어학과"
+     "name": "방송영상미디어학과",
+     "mainTrack": "일반고",
+     "mainRate": 13.08
     },
     "2024": {
      "quota": 40,
      "applied": 526,
-     "name": "방송영상미디어학과"
+     "name": "방송영상미디어학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.11
     },
     "2025": {
      "quota": 40,
      "applied": 569,
-     "name": "방송영상미디어학과"
+     "name": "방송영상미디어학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.69
     },
     "2026": {
      "quota": 40,
      "applied": 547,
-     "name": "방송영상미디어학과"
+     "name": "방송영상미디어학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.44
     },
     "2027": {
      "quota": 36,
      "applied": 764,
-     "name": "융합미디어콘텐츠학부 방송영상미디어학과"
+     "name": "융합미디어콘텐츠학부 방송영상미디어학과",
+     "mainTrack": "일반고",
+     "mainRate": 19.91
     }
    }
   },
@@ -203,17 +253,23 @@
     "2025": {
      "quota": 54,
      "applied": 301,
-     "name": "방송영상전공"
+     "name": "방송영상전공",
+     "mainTrack": "일반고",
+     "mainRate": 5.97
     },
     "2026": {
      "quota": 53,
      "applied": 357,
-     "name": "방송영상전공"
+     "name": "방송영상전공",
+     "mainTrack": "일반고",
+     "mainRate": 6.97
     },
     "2027": {
      "quota": 53,
      "applied": 469,
-     "name": "방송영상전공"
+     "name": "방송영상전공",
+     "mainTrack": "일반고",
+     "mainRate": 9.2
     }
    }
   },
@@ -229,27 +285,37 @@
     "2023": {
      "quota": 34,
      "applied": 205,
-     "name": "사진영상미디어과"
+     "name": "사진영상미디어과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.03
     },
     "2024": {
      "quota": 38,
      "applied": 154,
-     "name": "사진영상미디어과"
+     "name": "사진영상미디어과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.05
     },
     "2025": {
      "quota": 38,
      "applied": 178,
-     "name": "사진영상미디어과"
+     "name": "사진영상미디어과",
+     "mainTrack": "일반고",
+     "mainRate": 5.15
     },
     "2026": {
      "quota": 38,
      "applied": 242,
-     "name": "사진영상미디어과"
+     "name": "사진영상미디어과",
+     "mainTrack": "일반고",
+     "mainRate": 6.63
     },
     "2027": {
      "quota": 38,
      "applied": 329,
-     "name": "사진영상미디어과"
+     "name": "사진영상미디어과",
+     "mainTrack": "일반고",
+     "mainRate": 9.48
     }
    }
   },
@@ -265,27 +331,37 @@
     "2023": {
      "quota": 54,
      "applied": 160,
-     "name": "방송음향기술과(방송음향영상학부)"
+     "name": "방송음향기술과(방송음향영상학부)",
+     "mainTrack": "일반고",
+     "mainRate": 2.64
     },
     "2024": {
      "quota": 54,
      "applied": 142,
-     "name": "방송음향기술과"
+     "name": "방송음향기술과",
+     "mainTrack": "일반고",
+     "mainRate": 2.36
     },
     "2025": {
      "quota": 57,
      "applied": 153,
-     "name": "방송음향기술과"
+     "name": "방송음향기술과",
+     "mainTrack": "일반고",
+     "mainRate": 2.42
     },
     "2026": {
      "quota": 54,
      "applied": 181,
-     "name": "방송음향기술과"
+     "name": "방송음향기술과",
+     "mainTrack": "일반고",
+     "mainRate": 3.43
     },
     "2027": {
      "quota": 54,
      "applied": 187,
-     "name": "방송음향기술과"
+     "name": "방송음향기술과",
+     "mainTrack": "일반고",
+     "mainRate": 3.43
     }
    }
   },
@@ -301,12 +377,16 @@
     "2026": {
      "quota": 54,
      "applied": 199,
-     "name": "사진영상콘텐츠과"
+     "name": "사진영상콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.69
     },
     "2027": {
      "quota": 46,
      "applied": 293,
-     "name": "정보미디어학부 사진영상콘텐츠과"
+     "name": "정보미디어학부 사진영상콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.37
     }
    }
   },
@@ -322,22 +402,30 @@
     "2023": {
      "quota": 50,
      "applied": 250,
-     "name": "미디어콘텐츠과"
+     "name": "미디어콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 4.95
     },
     "2025": {
      "quota": 53,
      "applied": 234,
-     "name": "미디어콘텐츠과"
+     "name": "미디어콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.42
     },
     "2026": {
      "quota": 47,
      "applied": 337,
-     "name": "미디어콘텐츠과"
+     "name": "미디어콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.17
     },
     "2027": {
      "quota": 47,
      "applied": 440,
-     "name": "미디어콘텐츠과"
+     "name": "미디어콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.36
     }
    }
   },
@@ -353,27 +441,37 @@
     "2023": {
      "quota": 30,
      "applied": 409,
-     "name": "영상콘텐츠과 영상콘텐츠제작전공"
+     "name": "영상콘텐츠과 영상콘텐츠제작전공",
+     "mainTrack": "일반고",
+     "mainRate": 13.33
     },
     "2024": {
      "quota": 32,
      "applied": 315,
-     "name": "영상콘텐츠과 영상콘텐츠제작전공"
+     "name": "영상콘텐츠과 영상콘텐츠제작전공",
+     "mainTrack": "일반고",
+     "mainRate": 10.18
     },
     "2025": {
      "quota": 35,
      "applied": 314,
-     "name": "영상콘텐츠과 영상콘텐츠제작전공"
+     "name": "영상콘텐츠과 영상콘텐츠제작전공",
+     "mainTrack": "일반고",
+     "mainRate": 8.88
     },
     "2026": {
      "quota": 50,
      "applied": 247,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 5.11
     },
     "2027": {
      "quota": 50,
      "applied": 340,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 7.46
     }
    }
   },
@@ -389,27 +487,37 @@
     "2023": {
      "quota": 18,
      "applied": 240,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 20.86
     },
     "2024": {
      "quota": 29,
      "applied": 176,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 6.6
     },
     "2025": {
      "quota": 25,
      "applied": 203,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.6
     },
     "2026": {
      "quota": 28,
      "applied": 311,
-     "name": "영상콘텐츠과"
+     "name": "영상콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 12.74
     },
     "2027": {
      "quota": 30,
      "applied": 478,
-     "name": "예체능 영상콘텐츠과"
+     "name": "예체능 영상콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 16.84
     }
    }
   }

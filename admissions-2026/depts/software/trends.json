@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 50,
      "applied": 207,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반고",
+     "mainRate": 4.46
     },
     "2024": {
      "quota": 45,
      "applied": 132,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반고",
+     "mainRate": 2.86
     },
     "2025": {
      "quota": 60,
      "applied": 147,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.45
     },
     "2026": {
      "quota": 35,
      "applied": 133,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.8
     },
     "2027": {
      "quota": 35,
      "applied": 101,
      "name": "지능형소프트웨어과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 2.89
     }
    }
   },
@@ -62,13 +74,17 @@
     "2026": {
      "quota": 13,
      "applied": 44,
-     "name": "사이버보안학과"
+     "name": "사이버보안학과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.38
     },
     "2027": {
      "quota": 15,
      "applied": 68,
      "name": "사이버·정보시스템학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 4.53
     }
    }
   },
@@ -84,27 +100,37 @@
     "2023": {
      "quota": 45,
      "applied": 575,
-     "name": "컴퓨터소프트웨어과(주간)(3년제)"
+     "name": "컴퓨터소프트웨어과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 12.18
     },
     "2024": {
      "quota": 45,
      "applied": 426,
-     "name": "컴퓨터소프트웨어과(주간)(3년제)"
+     "name": "컴퓨터소프트웨어과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 9.28
     },
     "2025": {
      "quota": 45,
      "applied": 355,
-     "name": "컴퓨터소프트웨어과(주간)(3년제)"
+     "name": "컴퓨터소프트웨어과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 7.23
     },
     "2026": {
      "quota": 45,
      "applied": 303,
-     "name": "컴퓨터소프트웨어과(3년제)"
+     "name": "컴퓨터소프트웨어과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 6.18
     },
     "2027": {
      "quota": 45,
      "applied": 338,
-     "name": "컴퓨터소프트웨어과(3년제)"
+     "name": "컴퓨터소프트웨어과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 7.74
     }
    }
   },
@@ -120,27 +146,37 @@
     "2023": {
      "quota": 20,
      "applied": 165,
-     "name": "컴퓨터정보보안학과(주간)(3년제)"
+     "name": "컴퓨터정보보안학과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 8.56
     },
     "2024": {
      "quota": 20,
      "applied": 150,
-     "name": "컴퓨터정보보안학과(주간)(3년제)"
+     "name": "컴퓨터정보보안학과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 6.94
     },
     "2025": {
      "quota": 20,
      "applied": 139,
-     "name": "컴퓨터정보보안학과(주간)(3년제)"
+     "name": "컴퓨터정보보안학과(주간)(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 7.62
     },
     "2026": {
      "quota": 21,
      "applied": 122,
-     "name": "컴퓨터정보보안학과(3년제)"
+     "name": "컴퓨터정보보안학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 5.35
     },
     "2027": {
      "quota": 21,
      "applied": 168,
-     "name": "컴퓨터정보보안학과(3년제)"
+     "name": "컴퓨터정보보안학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 8.0
     }
    }
   },
@@ -156,27 +192,37 @@
     "2023": {
      "quota": 72,
      "applied": 647,
-     "name": "컴퓨터소프트웨어공학과(3년)"
+     "name": "컴퓨터소프트웨어공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 8.72
     },
     "2024": {
      "quota": 48,
      "applied": 491,
-     "name": "컴퓨터소프트웨어공학과(3년)"
+     "name": "컴퓨터소프트웨어공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 10.07
     },
     "2025": {
      "quota": 48,
      "applied": 401,
-     "name": "컴퓨터소프트웨어공학과(3년)"
+     "name": "컴퓨터소프트웨어공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 8.07
     },
     "2026": {
      "quota": 48,
      "applied": 354,
-     "name": "컴퓨터소프트웨어공학과(3년)"
+     "name": "컴퓨터소프트웨어공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 6.85
     },
     "2027": {
      "quota": 48,
      "applied": 296,
-     "name": "컴퓨터소프트웨어공학과(3년)"
+     "name": "컴퓨터소프트웨어공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 5.92
     }
    }
   },
@@ -192,27 +238,37 @@
     "2023": {
      "quota": 48,
      "applied": 241,
-     "name": "인공지능소프트웨어학과(3년)"
+     "name": "인공지능소프트웨어학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 5.03
     },
     "2024": {
      "quota": 48,
      "applied": 226,
-     "name": "인공지능소프트웨어학과(3년)"
+     "name": "인공지능소프트웨어학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 3.77
     },
     "2025": {
      "quota": 48,
      "applied": 246,
-     "name": "인공지능소프트웨어학과(3년)"
+     "name": "인공지능소프트웨어학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 5.05
     },
     "2026": {
      "quota": 48,
      "applied": 280,
-     "name": "인공지능소프트웨어학과(3년)"
+     "name": "인공지능소프트웨어학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 5.88
     },
     "2027": {
      "quota": 48,
      "applied": 283,
-     "name": "인공지능소프트웨어학과(3년)"
+     "name": "인공지능소프트웨어학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 5.85
     }
    }
   },
@@ -228,17 +284,23 @@
     "2025": {
      "quota": 46,
      "applied": 158,
-     "name": "로봇소프트웨어과(3년)"
+     "name": "로봇소프트웨어과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 3.88
     },
     "2026": {
      "quota": 49,
      "applied": 156,
-     "name": "로봇소프트웨어과(3년)"
+     "name": "로봇소프트웨어과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 3.41
     },
     "2027": {
      "quota": 49,
      "applied": 274,
-     "name": "로봇소프트웨어과(3년)"
+     "name": "로봇소프트웨어과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 6.5
     }
    }
   },
@@ -254,27 +316,37 @@
     "2023": {
      "quota": 74,
      "applied": 302,
-     "name": "정보통신공학과(3년)"
+     "name": "정보통신공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 3.97
     },
     "2024": {
      "quota": 74,
      "applied": 254,
-     "name": "정보통신공학과(3년)"
+     "name": "정보통신공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 3.31
     },
     "2025": {
      "quota": 68,
      "applied": 277,
-     "name": "정보통신공학과(3년)"
+     "name": "정보통신공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 4.35
     },
     "2026": {
      "quota": 71,
      "applied": 252,
-     "name": "정보통신공학과(3년)"
+     "name": "정보통신공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 3.57
     },
     "2027": {
      "quota": 71,
      "applied": 276,
-     "name": "정보통신공학과(3년)"
+     "name": "정보통신공학과(3년)",
+     "mainTrack": "일반고",
+     "mainRate": 4.07
     }
    }
   },
@@ -290,27 +362,37 @@
     "2023": {
      "quota": 58,
      "applied": 542,
-     "name": "소프트웨어공학과"
+     "name": "소프트웨어공학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.48
     },
     "2024": {
      "quota": 58,
      "applied": 455,
-     "name": "소프트웨어공학과"
+     "name": "소프트웨어공학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.0
     },
     "2025": {
      "quota": 60,
      "applied": 338,
-     "name": "소프트웨어공학과"
+     "name": "소프트웨어공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.83
     },
     "2026": {
      "quota": 39,
      "applied": 322,
-     "name": "소프트웨어공학과"
+     "name": "소프트웨어공학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.29
     },
     "2027": {
      "quota": 44,
      "applied": 253,
-     "name": "소프트웨어공학과"
+     "name": "소프트웨어공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.06
     }
    }
   },
@@ -326,17 +408,23 @@
     "2025": {
      "quota": 46,
      "applied": 326,
-     "name": "AI게임융합학과"
+     "name": "AI게임융합학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.5
     },
     "2026": {
      "quota": 62,
      "applied": 345,
-     "name": "AI게임융합학과"
+     "name": "AI게임융합학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.91
     },
     "2027": {
      "quota": 66,
      "applied": 358,
-     "name": "AI게임융합학과"
+     "name": "AI게임융합학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.9
     }
    }
   },
@@ -352,12 +440,16 @@
     "2023": {
      "quota": 58,
      "applied": 404,
-     "name": "컴퓨터전자공학과"
+     "name": "컴퓨터전자공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.96
     },
     "2027": {
      "quota": 47,
      "applied": 294,
-     "name": "컴퓨터전자공학과"
+     "name": "컴퓨터전자공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.92
     }
    }
   },
@@ -373,27 +465,37 @@
     "2023": {
      "quota": 53,
      "applied": 349,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.95
     },
     "2024": {
      "quota": 53,
      "applied": 272,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.1
     },
     "2025": {
      "quota": 54,
      "applied": 196,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.95
     },
     "2026": {
      "quota": 54,
      "applied": 211,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.54
     },
     "2027": {
      "quota": 63,
      "applied": 301,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.55
     }
    }
   },
@@ -409,27 +511,37 @@
     "2023": {
      "quota": 45,
      "applied": 455,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.18
     },
     "2024": {
      "quota": 47,
      "applied": 401,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 10.2
     },
     "2025": {
      "quota": 47,
      "applied": 352,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.3
     },
     "2026": {
      "quota": 48,
      "applied": 313,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.9
     },
     "2027": {
      "quota": 48,
      "applied": 379,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.0
     }
    }
   },
@@ -445,27 +557,37 @@
     "2023": {
      "quota": 45,
      "applied": 307,
-     "name": "컴퓨터전자공학과"
+     "name": "컴퓨터전자공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.29
     },
     "2024": {
      "quota": 45,
      "applied": 246,
-     "name": "컴퓨터전자공학과"
+     "name": "컴퓨터전자공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.03
     },
     "2025": {
      "quota": 45,
      "applied": 191,
-     "name": "컴퓨터전자공학과"
+     "name": "컴퓨터전자공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.71
     },
     "2026": {
      "quota": 45,
      "applied": 213,
-     "name": "컴퓨터전자공학과"
+     "name": "컴퓨터전자공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.13
     },
     "2027": {
      "quota": 44,
      "applied": 321,
-     "name": "컴퓨터전자공학과"
+     "name": "컴퓨터전자공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.83
     }
    }
   },
@@ -481,27 +603,37 @@
     "2023": {
      "quota": 44,
      "applied": 249,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.21
     },
     "2024": {
      "quota": 44,
      "applied": 247,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.43
     },
     "2025": {
      "quota": 44,
      "applied": 170,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.14
     },
     "2026": {
      "quota": 44,
      "applied": 176,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.37
     },
     "2027": {
      "quota": 42,
      "applied": 231,
-     "name": "지능형정보통신공학과"
+     "name": "지능형정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.69
     }
    }
   },
@@ -517,27 +649,37 @@
     "2023": {
      "quota": 44,
      "applied": 295,
-     "name": "컴퓨터모바일융합과"
+     "name": "컴퓨터모바일융합과",
+     "mainTrack": "일반고",
+     "mainRate": 7.03
     },
     "2024": {
      "quota": 56,
      "applied": 208,
-     "name": "컴퓨터모바일융합과"
+     "name": "컴퓨터모바일융합과",
+     "mainTrack": "일반고",
+     "mainRate": 4.05
     },
     "2025": {
      "quota": 56,
      "applied": 186,
-     "name": "컴퓨터모바일융합과"
+     "name": "컴퓨터모바일융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.66
     },
     "2026": {
      "quota": 52,
      "applied": 185,
-     "name": "컴퓨터모바일융합과"
+     "name": "컴퓨터모바일융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.69
     },
     "2027": {
      "quota": 49,
      "applied": 163,
-     "name": "ICT＆소프트웨어 컴퓨터모바일융합과"
+     "name": "ICT＆소프트웨어 컴퓨터모바일융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.59
     }
    }
   },
@@ -553,27 +695,37 @@
     "2023": {
      "quota": 54,
      "applied": 91,
-     "name": "인공지능학과"
+     "name": "인공지능학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.6
     },
     "2024": {
      "quota": 55,
      "applied": 98,
-     "name": "인공지능학과"
+     "name": "인공지능학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.29
     },
     "2025": {
      "quota": 55,
      "applied": 96,
-     "name": "인공지능학과"
+     "name": "인공지능학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.38
     },
     "2026": {
      "quota": 50,
      "applied": 132,
-     "name": "인공지능학과"
+     "name": "인공지능학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.54
     },
     "2027": {
      "quota": 46,
      "applied": 155,
-     "name": "ICT＆소프트웨어 인공지능학과 · 인공지능학과"
+     "name": "ICT＆소프트웨어 인공지능학과 · 인공지능학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.53
     }
    }
   },
@@ -589,22 +741,30 @@
     "2023": {
      "quota": 57,
      "applied": 376,
-     "name": "컴퓨터소프트웨어공학과"
+     "name": "컴퓨터소프트웨어공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.05
     },
     "2025": {
      "quota": 44,
      "applied": 321,
-     "name": "컴퓨터소프트웨어전공"
+     "name": "컴퓨터소프트웨어전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.5
     },
     "2026": {
      "quota": 42,
      "applied": 260,
-     "name": "컴퓨터소프트웨어전공"
+     "name": "컴퓨터소프트웨어전공",
+     "mainTrack": "일반고",
+     "mainRate": 6.41
     },
     "2027": {
      "quota": 25,
      "applied": 313,
-     "name": "컴퓨터소프트웨어전공"
+     "name": "컴퓨터소프트웨어전공",
+     "mainTrack": "일반고",
+     "mainRate": 14.05
     }
    }
   },
@@ -620,22 +780,30 @@
     "2023": {
      "quota": 28,
      "applied": 79,
-     "name": "인공지능학과"
+     "name": "인공지능학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.87
     },
     "2025": {
      "quota": 20,
      "applied": 81,
-     "name": "인공지능전공"
+     "name": "인공지능전공",
+     "mainTrack": "일반고",
+     "mainRate": 4.8
     },
     "2026": {
      "quota": 18,
      "applied": 177,
-     "name": "인공지능전공"
+     "name": "인공지능전공",
+     "mainTrack": "일반고",
+     "mainRate": 11.64
     },
     "2027": {
      "quota": 26,
      "applied": 171,
-     "name": "인공지능전공"
+     "name": "인공지능전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.8
     }
    }
   },
@@ -651,17 +819,23 @@
     "2025": {
      "quota": 56,
      "applied": 111,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반고",
+     "mainRate": 2.09
     },
     "2026": {
      "quota": 46,
      "applied": 98,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반고",
+     "mainRate": 1.89
     },
     "2027": {
      "quota": 42,
      "applied": 123,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반고",
+     "mainRate": 3.18
     }
    }
   },
@@ -677,22 +851,30 @@
     "2024": {
      "quota": 31,
      "applied": 112,
-     "name": "컴퓨터게임과"
+     "name": "컴퓨터게임과",
+     "mainTrack": "일반고",
+     "mainRate": 3.48
     },
     "2025": {
      "quota": 31,
      "applied": 114,
-     "name": "컴퓨터게임과"
+     "name": "컴퓨터게임과",
+     "mainTrack": "일반고",
+     "mainRate": 3.44
     },
     "2026": {
      "quota": 31,
      "applied": 138,
-     "name": "컴퓨터게임과"
+     "name": "컴퓨터게임과",
+     "mainTrack": "일반고",
+     "mainRate": 4.32
     },
     "2027": {
      "quota": 28,
      "applied": 125,
-     "name": "컴퓨터게임과"
+     "name": "컴퓨터게임과",
+     "mainTrack": "일반고",
+     "mainRate": 4.65
     }
    }
   },
@@ -708,27 +890,37 @@
     "2023": {
      "quota": 46,
      "applied": 190,
-     "name": "공간정보빅데이터과"
+     "name": "공간정보빅데이터과",
+     "mainTrack": "일반고",
+     "mainRate": 4.69
     },
     "2024": {
      "quota": 53,
      "applied": 167,
-     "name": "공간정보빅데이터학과"
+     "name": "공간정보빅데이터학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.08
     },
     "2025": {
      "quota": 56,
      "applied": 215,
-     "name": "공간정보빅데이터학과"
+     "name": "공간정보빅데이터학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.16
     },
     "2026": {
      "quota": 56,
      "applied": 186,
-     "name": "공간정보빅데이터학과"
+     "name": "공간정보빅데이터학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.27
     },
     "2027": {
      "quota": 57,
      "applied": 304,
-     "name": "공간정보빅데이터학과"
+     "name": "공간정보빅데이터학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.59
     }
    }
   },
@@ -744,22 +936,30 @@
     "2024": {
      "quota": 38,
      "applied": 153,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.03
     },
     "2025": {
      "quota": 35,
      "applied": 121,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.17
     },
     "2026": {
      "quota": 32,
      "applied": 108,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.24
     },
     "2027": {
      "quota": 32,
      "applied": 145,
-     "name": "AI융합학부 컴퓨터소프트웨어학과"
+     "name": "AI융합학부 컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.63
     }
    }
   },
@@ -775,27 +975,37 @@
     "2023": {
      "quota": 22,
      "applied": 73,
-     "name": "AI학부 컴퓨터시스템전공"
+     "name": "AI학부 컴퓨터시스템전공",
+     "mainTrack": "일반전형",
+     "mainRate": 3.32
     },
     "2024": {
      "quota": 46,
      "applied": 91,
-     "name": "컴퓨터시스템과"
+     "name": "컴퓨터시스템과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.98
     },
     "2025": {
      "quota": 30,
      "applied": 45,
-     "name": "컴퓨터시스템과"
+     "name": "컴퓨터시스템과",
+     "mainTrack": "일반고",
+     "mainRate": 1.67
     },
     "2026": {
      "quota": 30,
      "applied": 85,
-     "name": "컴퓨터시스템과"
+     "name": "컴퓨터시스템과",
+     "mainTrack": "일반고",
+     "mainRate": 2.81
     },
     "2027": {
      "quota": 30,
      "applied": 108,
-     "name": "컴퓨터시스템과"
+     "name": "컴퓨터시스템과",
+     "mainTrack": "일반고",
+     "mainRate": 4.0
     }
    }
   },
@@ -811,27 +1021,37 @@
     "2023": {
      "quota": 85,
      "applied": 506,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.75
     },
     "2024": {
      "quota": 86,
      "applied": 345,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.94
     },
     "2025": {
      "quota": 79,
      "applied": 250,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.95
     },
     "2026": {
      "quota": 72,
      "applied": 237,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.02
     },
     "2027": {
      "quota": 45,
      "applied": 216,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.34
     }
    }
   },
@@ -847,12 +1067,16 @@
     "2026": {
      "quota": 28,
      "applied": 78,
-     "name": "AI데이터과"
+     "name": "AI데이터과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.79
     },
     "2027": {
      "quota": 26,
      "applied": 148,
-     "name": "AI데이터전공"
+     "name": "AI데이터전공",
+     "mainTrack": "일반전형",
+     "mainRate": 5.69
     }
    }
   },
@@ -868,17 +1092,23 @@
     "2024": {
      "quota": 23,
      "applied": 38,
-     "name": "컴퓨터소프트웨어학과(3년제)"
+     "name": "컴퓨터소프트웨어학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 1.56
     },
     "2026": {
      "quota": 25,
      "applied": 29,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.21
     },
     "2027": {
      "quota": 21,
      "applied": 38,
-     "name": "컴퓨터소프트웨어학과"
+     "name": "컴퓨터소프트웨어학과",
+     "mainTrack": "일반전형",
+     "mainRate": 1.85
     }
    }
   },
@@ -894,27 +1124,37 @@
     "2023": {
      "quota": 53,
      "applied": 102,
-     "name": "AI시스템과"
+     "name": "AI시스템과",
+     "mainTrack": "일반고",
+     "mainRate": 1.4
     },
     "2024": {
      "quota": 53,
      "applied": 77,
-     "name": "AI시스템과"
+     "name": "AI시스템과",
+     "mainTrack": "일반고",
+     "mainRate": 1.31
     },
     "2025": {
      "quota": 53,
      "applied": 196,
-     "name": "AI시스템과"
+     "name": "AI시스템과",
+     "mainTrack": "일반고",
+     "mainRate": 3.41
     },
     "2026": {
      "quota": 53,
      "applied": 229,
-     "name": "AI시스템과"
+     "name": "AI시스템과",
+     "mainTrack": "일반고",
+     "mainRate": 4.72
     },
     "2027": {
      "quota": 53,
      "applied": 329,
-     "name": "AI시스템과"
+     "name": "AI시스템과",
+     "mainTrack": "일반고",
+     "mainRate": 6.97
     }
    }
   },
@@ -930,22 +1170,30 @@
     "2024": {
      "quota": 25,
      "applied": 67,
-     "name": "IT융합학과 사이버보안전공"
+     "name": "IT융합학과 사이버보안전공",
+     "mainTrack": "일반고",
+     "mainRate": 2.63
     },
     "2025": {
      "quota": 24,
      "applied": 65,
-     "name": "IT융합학과 사이버보안전공"
+     "name": "IT융합학과 사이버보안전공",
+     "mainTrack": "일반고",
+     "mainRate": 2.42
     },
     "2026": {
      "quota": 24,
      "applied": 95,
-     "name": "IT융합학과 사이버보안전공"
+     "name": "IT융합학과 사이버보안전공",
+     "mainTrack": "일반고",
+     "mainRate": 3.67
     },
     "2027": {
      "quota": 33,
      "applied": 133,
-     "name": "사이버보안학과"
+     "name": "사이버보안학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.48
     }
    }
   },
@@ -961,22 +1209,30 @@
     "2023": {
      "quota": 63,
      "applied": 456,
-     "name": "컴퓨터공학과"
+     "name": "컴퓨터공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.13
     },
     "2025": {
      "quota": 63,
      "applied": 460,
-     "name": "컴퓨터공학과"
+     "name": "컴퓨터공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.61
     },
     "2026": {
      "quota": 63,
      "applied": 404,
-     "name": "컴퓨터공학과"
+     "name": "컴퓨터공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.17
     },
     "2027": {
      "quota": 63,
      "applied": 467,
-     "name": "컴퓨터공학과"
+     "name": "컴퓨터공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.76
     }
    }
   },
@@ -992,17 +1248,23 @@
     "2025": {
      "quota": 42,
      "applied": 209,
-     "name": "컴퓨터보안공학과"
+     "name": "컴퓨터보안공학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.57
     },
     "2026": {
      "quota": 42,
      "applied": 260,
-     "name": "컴퓨터보안공학과"
+     "name": "컴퓨터보안공학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.0
     },
     "2027": {
      "quota": 42,
      "applied": 240,
-     "name": "컴퓨터보안공학과"
+     "name": "컴퓨터보안공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.51
     }
    }
   },
@@ -1018,22 +1280,30 @@
     "2023": {
      "quota": 44,
      "applied": 244,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.36
     },
     "2025": {
      "quota": 44,
      "applied": 166,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.82
     },
     "2026": {
      "quota": 41,
      "applied": 340,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.34
     },
     "2027": {
      "quota": 41,
      "applied": 245,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.81
     }
    }
   },
@@ -1054,12 +1324,16 @@
     "2026": {
      "quota": 35,
      "applied": 63,
-     "name": "컴퓨터공학과(3년제)"
+     "name": "컴퓨터공학과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 1.8
     },
     "2027": {
      "quota": 18,
      "applied": 58,
-     "name": "컴퓨터공학과(3년제)"
+     "name": "컴퓨터공학과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 3.22
     }
    }
   },
@@ -1075,7 +1349,9 @@
     "2023": {
      "quota": 52,
      "applied": 116,
-     "name": "소프트웨어공학과(3년제)"
+     "name": "소프트웨어공학과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 4.35
     },
     "2024": {
      "quota": 46,
@@ -1090,12 +1366,16 @@
     "2026": {
      "quota": 36,
      "applied": 55,
-     "name": "소프트웨어공학과(3년제)"
+     "name": "소프트웨어공학과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 1.71
     },
     "2027": {
      "quota": 16,
      "applied": 47,
-     "name": "소프트웨어공학과(3년제)"
+     "name": "소프트웨어공학과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 3.21
     }
    }
   },
@@ -1111,27 +1391,37 @@
     "2023": {
      "quota": 58,
      "applied": 269,
-     "name": "정보통신과(주간)"
+     "name": "정보통신과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 4.41
     },
     "2024": {
      "quota": 46,
      "applied": 195,
-     "name": "정보통신과(주간)"
+     "name": "정보통신과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 4.1
     },
     "2025": {
      "quota": 46,
      "applied": 210,
-     "name": "정보통신과(주간)"
+     "name": "정보통신과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 4.02
     },
     "2026": {
      "quota": 46,
      "applied": 235,
-     "name": "정보통신과"
+     "name": "정보통신과",
+     "mainTrack": "일반고",
+     "mainRate": 5.29
     },
     "2027": {
      "quota": 46,
      "applied": 277,
-     "name": "정보통신과"
+     "name": "정보통신과",
+     "mainTrack": "일반고",
+     "mainRate": 5.88
     }
    }
   },
@@ -1147,27 +1437,37 @@
     "2023": {
      "quota": 38,
      "applied": 167,
-     "name": "IT융합비즈니스학과(주간)"
+     "name": "IT융합비즈니스학과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 4.48
     },
     "2024": {
      "quota": 38,
      "applied": 172,
-     "name": "IT융합비즈니스학과(주간)"
+     "name": "IT융합비즈니스학과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 3.97
     },
     "2025": {
      "quota": 38,
      "applied": 153,
-     "name": "IT융합비즈니스학과(주간)"
+     "name": "IT융합비즈니스학과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 4.48
     },
     "2026": {
      "quota": 38,
      "applied": 158,
-     "name": "IT융합비즈니스학과"
+     "name": "IT융합비즈니스학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.4
     },
     "2027": {
      "quota": 42,
      "applied": 193,
-     "name": "IT융합비즈니스학과"
+     "name": "IT융합비즈니스학과",
+     "mainTrack": "일반고",
+     "mainRate": 4.27
     }
    }
   },
@@ -1183,17 +1483,23 @@
     "2025": {
      "quota": 25,
      "applied": 86,
-     "name": "컴퓨터정보학과"
+     "name": "컴퓨터정보학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.05
     },
     "2026": {
      "quota": 28,
      "applied": 106,
-     "name": "컴퓨터정보학과"
+     "name": "컴퓨터정보학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.28
     },
     "2027": {
      "quota": 27,
      "applied": 150,
-     "name": "컴퓨터정보학과"
+     "name": "컴퓨터정보학과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.75
     }
    }
   },
@@ -1209,27 +1515,37 @@
     "2023": {
      "quota": 25,
      "applied": 255,
-     "name": "컴퓨터정보학과"
+     "name": "컴퓨터정보학과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.2
     },
     "2024": {
      "quota": 25,
      "applied": 168,
-     "name": "컴퓨터정보학과"
+     "name": "컴퓨터정보학과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.72
     },
     "2025": {
      "quota": 30,
      "applied": 185,
-     "name": "컴퓨터정보학과"
+     "name": "컴퓨터정보학과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.17
     },
     "2026": {
      "quota": 30,
      "applied": 164,
-     "name": "컴퓨터정보학과"
+     "name": "컴퓨터정보학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.47
     },
     "2027": {
      "quota": 27,
      "applied": 162,
-     "name": "컴퓨터정보학과"
+     "name": "컴퓨터정보학과",
+     "mainTrack": "일반전형",
+     "mainRate": 6.0
     }
    }
   },
@@ -1245,27 +1561,37 @@
     "2023": {
      "quota": 25,
      "applied": 115,
-     "name": "인공지능소프트웨어학과"
+     "name": "인공지능소프트웨어학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.6
     },
     "2024": {
      "quota": 25,
      "applied": 116,
-     "name": "인공지능소프트웨어학과"
+     "name": "인공지능소프트웨어학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.64
     },
     "2025": {
      "quota": 24,
      "applied": 110,
-     "name": "인공지능소프트웨어학과"
+     "name": "인공지능소프트웨어학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.58
     },
     "2026": {
      "quota": 17,
      "applied": 130,
-     "name": "인공지능소프트웨어학과"
+     "name": "인공지능소프트웨어학과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.65
     },
     "2027": {
      "quota": 17,
      "applied": 160,
-     "name": "인공지능소프트웨어학과"
+     "name": "인공지능소프트웨어학과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.41
     }
    }
   },
@@ -1281,17 +1607,23 @@
     "2025": {
      "quota": 52,
      "applied": 226,
-     "name": "컴퓨터소프트웨어과"
+     "name": "컴퓨터소프트웨어과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.54
     },
     "2026": {
      "quota": 52,
      "applied": 200,
-     "name": "컴퓨터소프트웨어(3년제)"
+     "name": "컴퓨터소프트웨어(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 3.7
     },
     "2027": {
      "quota": 45,
      "applied": 212,
-     "name": "크리에이티브콘텐츠학부 컴퓨터소프트웨어과(3년제)"
+     "name": "크리에이티브콘텐츠학부 컴퓨터소프트웨어과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 4.63
     }
    }
   },
@@ -1307,17 +1639,23 @@
     "2025": {
      "quota": 55,
      "applied": 34,
-     "name": "컴퓨터공학과"
+     "name": "컴퓨터공학과",
+     "mainTrack": "일반고",
+     "mainRate": 0.76
     },
     "2026": {
      "quota": 54,
      "applied": 36,
-     "name": "컴퓨터공학과"
+     "name": "컴퓨터공학과",
+     "mainTrack": "일반고",
+     "mainRate": 0.73
     },
     "2027": {
      "quota": 54,
      "applied": 38,
-     "name": "컴퓨터공학과"
+     "name": "컴퓨터공학과",
+     "mainTrack": "일반고",
+     "mainRate": 0.74
     }
    }
   },
@@ -1333,27 +1671,37 @@
     "2023": {
      "quota": 72,
      "applied": 452,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.67
     },
     "2024": {
      "quota": 84,
      "applied": 290,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.27
     },
     "2025": {
      "quota": 84,
      "applied": 280,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.18
     },
     "2026": {
      "quota": 84,
      "applied": 300,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 3.51
     },
     "2027": {
      "quota": 63,
      "applied": 420,
-     "name": "정보통신공학과"
+     "name": "정보통신공학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.25
     }
    }
   },
@@ -1369,17 +1717,23 @@
     "2025": {
      "quota": 18,
      "applied": 43,
-     "name": "컴퓨터공학과(3년제)"
+     "name": "컴퓨터공학과(3년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 2.39
     },
     "2026": {
      "quota": 24,
      "applied": 119,
-     "name": "컴퓨터공학과"
+     "name": "컴퓨터공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.96
     },
     "2027": {
      "quota": 24,
      "applied": 131,
-     "name": "AI컴퓨팅학부 컴퓨터공학과"
+     "name": "AI컴퓨팅학부 컴퓨터공학과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.46
     }
    }
   },
@@ -1395,12 +1749,16 @@
     "2026": {
      "quota": 20,
      "applied": 45,
-     "name": "AI융합과"
+     "name": "AI융합과",
+     "mainTrack": "일반전형",
+     "mainRate": 2.25
     },
     "2027": {
      "quota": 20,
      "applied": 82,
-     "name": "AI융합과"
+     "name": "AI융합과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.1
     }
    }
   },
@@ -1416,27 +1774,37 @@
     "2023": {
      "quota": 50,
      "applied": 259,
-     "name": "소프트웨어융합과"
+     "name": "소프트웨어융합과",
+     "mainTrack": "일반고",
+     "mainRate": 5.5
     },
     "2024": {
      "quota": 55,
      "applied": 209,
-     "name": "소프트웨어융합과"
+     "name": "소프트웨어융합과",
+     "mainTrack": "일반고",
+     "mainRate": 4.43
     },
     "2025": {
      "quota": 50,
      "applied": 178,
-     "name": "소프트웨어융합과"
+     "name": "소프트웨어융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.55
     },
     "2026": {
      "quota": 50,
      "applied": 157,
-     "name": "소프트웨어융합과"
+     "name": "소프트웨어융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.18
     },
     "2027": {
      "quota": 50,
      "applied": 218,
-     "name": "공학 소프트웨어융합과"
+     "name": "공학 소프트웨어융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.98
     }
    }
   },
@@ -1452,12 +1820,16 @@
     "2026": {
      "quota": 55,
      "applied": 206,
-     "name": "IT콘텐츠융합과"
+     "name": "IT콘텐츠융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.8
     },
     "2027": {
      "quota": 56,
      "applied": 275,
-     "name": "IT콘텐츠융합과"
+     "name": "IT콘텐츠융합과",
+     "mainTrack": "일반고",
+     "mainRate": 4.75
     }
    }
   },
@@ -1473,27 +1845,37 @@
     "2023": {
      "quota": 49,
      "applied": 197,
-     "name": "빅데이터과"
+     "name": "빅데이터과",
+     "mainTrack": "일반고",
+     "mainRate": 3.79
     },
     "2024": {
      "quota": 52,
      "applied": 169,
-     "name": "빅데이터과"
+     "name": "빅데이터과",
+     "mainTrack": "일반고",
+     "mainRate": 3.31
     },
     "2025": {
      "quota": 57,
      "applied": 169,
-     "name": "빅데이터과"
+     "name": "빅데이터과",
+     "mainTrack": "일반고",
+     "mainRate": 3.04
     },
     "2026": {
      "quota": 58,
      "applied": 174,
-     "name": "빅데이터과"
+     "name": "빅데이터과",
+     "mainTrack": "일반고",
+     "mainRate": 2.91
     },
     "2027": {
      "quota": 58,
      "applied": 270,
-     "name": "빅데이터과"
+     "name": "빅데이터과",
+     "mainTrack": "일반고",
+     "mainRate": 4.72
     }
    }
   },
@@ -1509,48 +1891,438 @@
     "2023": {
      "quota": 20,
      "applied": 73,
-     "name": "AI융합과"
+     "name": "AI융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.47
     },
     "2024": {
      "quota": 20,
      "applied": 111,
-     "name": "AI융합과"
+     "name": "AI융합과",
+     "mainTrack": "일반고",
+     "mainRate": 5.27
     },
     "2025": {
      "quota": 20,
      "applied": 62,
-     "name": "AI융합과"
+     "name": "AI융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.33
     },
     "2026": {
      "quota": 52,
      "applied": 159,
-     "name": "AI융합과"
+     "name": "AI융합과",
+     "mainTrack": "일반고",
+     "mainRate": 3.02
     },
     "2027": {
      "quota": 48,
      "applied": 226,
-     "name": "AI융합과"
+     "name": "AI융합과",
+     "mainTrack": "일반고",
+     "mainRate": 4.8
     }
    }
   },
   {
-   "school": "u33",
+   "school": "x:대전과학기술대학교",
+   "schoolName": "대전과학기술대학교",
+   "region": "충청",
+   "dept": "AI소프트웨어공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "name": "AI소프트웨어공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 34명 · 일반전형 1.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.1,
+     "quota": 34,
+     "applied": 37,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 34 × 경쟁률 1.1"
+    },
+    "2027": {
+     "quota": 34,
+     "applied": 58,
+     "name": "AI소프트웨어공학과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.71
+    }
+   }
+  },
+  {
+   "school": "x:두원공과대학교",
+   "schoolName": "두원공과대학교",
+   "region": "경기",
+   "dept": "컴퓨터공학과(파주)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "컴퓨터공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 40명 · 일반전형 3.63 · 특성화고 2.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.63
+    },
+    "2025": {
+     "name": "컴퓨터공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 36명 · 일반전형 2.7 · 특성화고 1.33",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.7
+    },
+    "2026": {
+     "name": "컴퓨터공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 35명 · 일반전형 2.22 · 특성화고 1.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.22
+    },
+    "2027": {
+     "quota": 31,
+     "applied": 73,
+     "name": "컴퓨터공학과(파주)",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 2.35
+    }
+   }
+  },
+  {
+   "school": "x:부산과학기술대학교",
+   "schoolName": "부산과학기술대학교",
+   "region": "부산·울산·경남",
+   "dept": "컴퓨터·디지털미디어과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2025": {
+     "name": "컴퓨터·디지털미디어과",
+     "unofficial": true,
+     "tracks": "학과 모집 15명 · 특성화고 4.6 · 대학자체 0 · 일반고 3.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.1
+    },
+    "2026": {
+     "quota": 12,
+     "applied": 61,
+     "name": "컴퓨터·디지털미디어과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차모집 지원률 현황(최종)",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=34"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 5.5,
+     "mainSource": "portal"
+    },
+    "2027": {
+     "quota": 12,
+     "applied": 97,
+     "name": "컴퓨터·디지털미디어과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차모집 지원률 현황(최종) — 본문 이미지 표",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=36",
+      "date": "2026-10-01"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.14
+    }
+   }
+  },
+  {
+   "school": "x:여주대학교",
+   "schoolName": "여주대학교",
+   "region": "경기",
+   "dept": "AI소프트웨어과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "name": "AI소프트웨어과",
+     "unofficial": true,
+     "tracks": "학과 모집 25명 · 일반전형 2.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.3,
+     "quota": 25,
+     "applied": 57,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 25 × 경쟁률 2.3"
+    },
+    "2027": {
+     "quota": 20,
+     "applied": 50,
+     "name": "AI소프트웨어과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.5
+    }
+   }
+  },
+  {
+   "school": "x:연암공과대학교",
+   "schoolName": "연암공과대학교",
+   "region": "부산·울산·경남",
+   "dept": "AI소프트웨어학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2026": {
+     "quota": 46,
+     "applied": 157,
+     "name": "AI소프트웨어학과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차 입시결과 — 스마트소프트웨어학과(AI소프트웨어학과)",
+      "url": "https://enter.yc.ac.kr/enter/susi1-result-in.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.2
+    },
+    "2027": {
+     "quota": 46,
+     "applied": 155,
+     "name": "AI소프트웨어학과",
+     "unofficial": false,
+     "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 23×4.61=106, 특성화고 19×2.16=41, 학교장추천자 1×1.00=1, SW특기자 3×2.33=7. 모집인원 출처: 2027학년도 신입생 모집요강(본책) p.29 '1. 모집인원' 수시1차 정원내 https://enter.yc.ac.kr/_attach/yonam/file/2026/06/NaXLhkJNJeQSgrWfooXZWVampx.pdf",
+     "mainTrack": "일반고",
+     "mainRate": 4.61
+    }
+   }
+  },
+  {
+   "school": "x:영진전문대학교",
+   "schoolName": "영진전문대학교",
+   "region": "대구·경북",
+   "dept": "컴퓨터정보계열",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2024": {
+     "name": "컴퓨터정보계열",
+     "unofficial": true,
+     "tracks": "학과 모집 144명 · 특성화고 6.3 · 대학자체 2.8 · 일반고 4.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.6
+    },
+    "2025": {
+     "name": "컴퓨터정보계열",
+     "unofficial": true,
+     "tracks": "학과 모집 68명 · 특성화고 3.7 · 대학자체 1.5 · 일반고 4.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.4
+    },
+    "2026": {
+     "name": "컴퓨터정보계열",
+     "unofficial": true,
+     "tracks": "학과 모집 71명 · 특성화고 8.2 · 고른기회 5 · 대학자체 2.2 · 일반고 3.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.5
+    },
+    "2027": {
+     "quota": 95,
+     "applied": 359,
+     "name": "컴퓨터정보계열",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 전형별 지원현황(최종 마감 기준)",
+      "url": "https://ipsi.yju.ac.kr/bbs/ipsi/26/57212/artclView.do",
+      "date": "2026-10-01"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 5.82
+    }
+   }
+  },
+  {
+   "school": "x:영진전문대학교",
+   "schoolName": "영진전문대학교",
+   "region": "대구·경북",
+   "dept": "AI컴퓨터",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2026": {
+     "name": "AI컴퓨터보안계열",
+     "unofficial": true,
+     "tracks": "학과 모집 38명 · 특성화고 1.5 · 고른기회 1 · 대학자체 0.5 · 일반고 2.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.3
+    },
+    "2027": {
+     "quota": 63,
+     "applied": 154,
+     "name": "AI컴퓨터",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 전형별 지원현황(최종 마감 기준)",
+      "url": "https://ipsi.yju.ac.kr/bbs/ipsi/26/57212/artclView.do",
+      "date": "2026-10-01"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.33
+    }
+   }
+  },
+  {
+   "school": "x:충남도립대학교",
    "schoolName": "충남도립대학교",
    "region": "충청",
    "dept": "컴퓨터공학과",
    "isBase": false,
    "isKm": false,
    "scope": "전국",
+   "unofficial": false,
    "series": {
     "2023": {
+     "name": "컴퓨터공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 28명 · 일반전형 1.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.8,
      "quota": 28,
-     "applied": 49,
-     "name": "컴퓨터공학과"
+     "applied": 50,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 28 × 경쟁률 1.8"
+    },
+    "2024": {
+     "name": "컴퓨터공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 23명 · 일반전형 2.4 · 대학자체 1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.4
+    },
+    "2025": {
+     "name": "컴퓨터공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 23명 · 일반전형 1.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 1.8,
+     "quota": 23,
+     "applied": 41,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 23 × 경쟁률 1.8"
     },
     "2026": {
-     "quota": 23,
-     "applied": 50,
-     "name": "컴퓨터공학과"
+     "name": "컴퓨터공학과",
+     "unofficial": true,
+     "tracks": "학과 모집 6명 · 일반전형 2.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.2,
+     "quota": 6,
+     "applied": 13,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 6 × 경쟁률 2.2"
+    },
+    "2027": {
+     "quota": 24,
+     "applied": 73,
+     "name": "컴퓨터공학과",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 3.17
     }
    }
   }

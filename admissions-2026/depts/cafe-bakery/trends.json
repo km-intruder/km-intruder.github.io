@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 49,
      "applied": 292,
-     "name": "카페베이커리과"
+     "name": "카페베이커리과",
+     "mainTrack": "일반고",
+     "mainRate": 4.67
     },
     "2024": {
      "quota": 49,
      "applied": 252,
-     "name": "카페베이커리과"
+     "name": "카페베이커리과",
+     "mainTrack": "일반고",
+     "mainRate": 4.92
     },
     "2025": {
      "quota": 51,
      "applied": 182,
-     "name": "카페베이커리과"
+     "name": "카페베이커리과",
+     "mainTrack": "일반고",
+     "mainRate": 3.1
     },
     "2026": {
      "quota": 51,
      "applied": 289,
-     "name": "카페베이커리과"
+     "name": "카페베이커리과",
+     "mainTrack": "일반고",
+     "mainRate": 7.07
     },
     "2027": {
      "quota": 51,
      "applied": 287,
      "name": "카페베이커리과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반고",
+     "mainRate": 5.91
     }
    }
   },
@@ -62,28 +74,38 @@
     "2023": {
      "quota": 65,
      "applied": 248,
-     "name": "호텔조리과"
+     "name": "호텔조리과",
+     "mainTrack": "일반고",
+     "mainRate": 3.33
     },
     "2024": {
      "quota": 61,
      "applied": 242,
-     "name": "호텔조리과"
+     "name": "호텔조리과",
+     "mainTrack": "일반고",
+     "mainRate": 4.81
     },
     "2025": {
      "quota": 63,
      "applied": 187,
-     "name": "호텔조리과"
+     "name": "호텔조리과",
+     "mainTrack": "일반고",
+     "mainRate": 2.92
     },
     "2026": {
      "quota": 63,
      "applied": 228,
-     "name": "호텔조리과"
+     "name": "호텔조리과",
+     "mainTrack": "일반고",
+     "mainRate": 4.57
     },
     "2027": {
      "quota": 63,
      "applied": 318,
      "name": "호텔조리과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반고",
+     "mainRate": 5.6
     }
    }
   },
@@ -99,22 +121,30 @@
     "2023": {
      "quota": 27,
      "applied": 301,
-     "name": "호텔조리학과 카페베이커리전공"
+     "name": "호텔조리학과 카페베이커리전공",
+     "mainTrack": "일반고",
+     "mainRate": 11.76
     },
     "2025": {
      "quota": 53,
      "applied": 353,
-     "name": "카페베이커리전공"
+     "name": "카페베이커리전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.03
     },
     "2026": {
      "quota": 51,
      "applied": 376,
-     "name": "카페베이커리전공"
+     "name": "카페베이커리전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.94
     },
     "2027": {
      "quota": 51,
      "applied": 443,
-     "name": "카페베이커리전공"
+     "name": "카페베이커리전공",
+     "mainTrack": "일반고",
+     "mainRate": 9.4
     }
    }
   },
@@ -130,27 +160,37 @@
     "2023": {
      "quota": 46,
      "applied": 373,
-     "name": "제과제빵과"
+     "name": "제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 13.29
     },
     "2024": {
      "quota": 52,
      "applied": 333,
-     "name": "제과제빵과"
+     "name": "제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 8.17
     },
     "2025": {
      "quota": 52,
      "applied": 324,
-     "name": "제과제빵과"
+     "name": "제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 8.07
     },
     "2026": {
      "quota": 52,
      "applied": 360,
-     "name": "제과제빵과"
+     "name": "제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 9.3
     },
     "2027": {
      "quota": 49,
      "applied": 477,
-     "name": "제과제빵과"
+     "name": "제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 10.88
     }
    }
   },
@@ -166,27 +206,37 @@
     "2023": {
      "quota": 22,
      "applied": 178,
-     "name": "호텔외식조리과 베이커리카페전공"
+     "name": "호텔외식조리과 베이커리카페전공",
+     "mainTrack": "일반전형",
+     "mainRate": 8.09
     },
     "2024": {
      "quota": 22,
      "applied": 210,
-     "name": "호텔외식조리과 베이커리카페전공"
+     "name": "호텔외식조리과 베이커리카페전공",
+     "mainTrack": "일반전형",
+     "mainRate": 9.55
     },
     "2025": {
      "quota": 22,
      "applied": 171,
-     "name": "호텔외식조리과 베이커리카페전공"
+     "name": "호텔외식조리과 베이커리카페전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.12
     },
     "2026": {
      "quota": 22,
      "applied": 266,
-     "name": "호텔외식조리과 베이커리카페전공"
+     "name": "호텔외식조리과 베이커리카페전공",
+     "mainTrack": "일반고",
+     "mainRate": 11.44
     },
     "2027": {
      "quota": 22,
      "applied": 282,
-     "name": "호텔외식조리과 베이커리카페전공"
+     "name": "호텔외식조리과 베이커리카페전공",
+     "mainTrack": "일반고",
+     "mainRate": 11.38
     }
    }
   },
@@ -202,27 +252,37 @@
     "2023": {
      "quota": 67,
      "applied": 661,
-     "name": "제과제빵과(호텔조리·제과학부)"
+     "name": "제과제빵과(호텔조리·제과학부)",
+     "mainTrack": "일반고",
+     "mainRate": 10.21
     },
     "2024": {
      "quota": 90,
      "applied": 682,
-     "name": "제과제빵과"
+     "name": "제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 7.75
     },
     "2025": {
      "quota": 90,
      "applied": 799,
-     "name": "제과제빵과"
+     "name": "제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 9.54
     },
     "2026": {
      "quota": 90,
      "applied": 860,
-     "name": "제과제빵과"
+     "name": "제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 9.94
     },
     "2027": {
      "quota": 90,
      "applied": 916,
-     "name": "제과제빵과"
+     "name": "제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 10.01
     }
    }
   },
@@ -238,12 +298,16 @@
     "2026": {
      "quota": 53,
      "applied": 282,
-     "name": "호텔제과제빵과"
+     "name": "호텔제과제빵과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.32
     },
     "2027": {
      "quota": 48,
      "applied": 435,
-     "name": "호텔제과제빵과"
+     "name": "호텔제과제빵과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.06
     }
    }
   },
@@ -259,27 +323,37 @@
     "2023": {
      "quota": 29,
      "applied": 530,
-     "name": "호텔외식조리과 카페·베이커리전공"
+     "name": "호텔외식조리과 카페·베이커리전공",
+     "mainTrack": "일반전형",
+     "mainRate": 18.28
     },
     "2024": {
      "quota": 49,
      "applied": 291,
-     "name": "카페·베이커리과"
+     "name": "카페·베이커리과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.94
     },
     "2025": {
      "quota": 49,
      "applied": 356,
-     "name": "카페·베이커리과"
+     "name": "카페·베이커리과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.27
     },
     "2026": {
      "quota": 49,
      "applied": 429,
-     "name": "카페·베이커리과"
+     "name": "카페·베이커리과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.76
     },
     "2027": {
      "quota": 49,
      "applied": 545,
-     "name": "카페·베이커리과"
+     "name": "카페·베이커리과",
+     "mainTrack": "일반전형",
+     "mainRate": 11.12
     }
    }
   },
@@ -295,27 +369,37 @@
     "2023": {
      "quota": 19,
      "applied": 217,
-     "name": "호텔제과제빵과"
+     "name": "호텔제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 18.71
     },
     "2024": {
      "quota": 23,
      "applied": 206,
-     "name": "호텔제과제빵과"
+     "name": "호텔제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 14.0
     },
     "2025": {
      "quota": 35,
      "applied": 274,
-     "name": "호텔제과제빵과"
+     "name": "호텔제과제빵과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.52
     },
     "2026": {
      "quota": 50,
      "applied": 358,
-     "name": "호텔제과제빵과"
+     "name": "호텔제과제빵과",
+     "mainTrack": "일반전형",
+     "mainRate": 9.9
     },
     "2027": {
      "quota": 53,
      "applied": 500,
-     "name": "호텔제과제빵과"
+     "name": "호텔제과제빵과",
+     "mainTrack": "일반전형",
+     "mainRate": 14.03
     }
    }
   },
@@ -331,27 +415,37 @@
     "2023": {
      "quota": 30,
      "applied": 240,
-     "name": "카페바리스타과"
+     "name": "카페바리스타과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.32
     },
     "2024": {
      "quota": 30,
      "applied": 326,
-     "name": "카페바리스타과"
+     "name": "카페바리스타과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.64
     },
     "2025": {
      "quota": 31,
      "applied": 308,
-     "name": "카페바리스타과"
+     "name": "카페바리스타과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.04
     },
     "2026": {
      "quota": 31,
      "applied": 294,
-     "name": "카페바리스타과"
+     "name": "카페바리스타과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.22
     },
     "2027": {
      "quota": 31,
      "applied": 354,
-     "name": "카페바리스타과"
+     "name": "카페바리스타과",
+     "mainTrack": "일반전형",
+     "mainRate": 12.26
     }
    }
   },
@@ -367,12 +461,16 @@
     "2023": {
      "quota": 34,
      "applied": 270,
-     "name": "호텔제과제빵과(주)"
+     "name": "호텔제과제빵과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 7.42
     },
     "2025": {
      "quota": 23,
      "applied": 222,
-     "name": "호텔제과제빵과"
+     "name": "호텔제과제빵과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.86
     },
     "2027": {
      "quota": 26,
@@ -393,27 +491,37 @@
     "2023": {
      "quota": 62,
      "applied": 310,
-     "name": "제과제빵과(주)"
+     "name": "제과제빵과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 5.55
     },
     "2024": {
      "quota": 62,
      "applied": 255,
-     "name": "제과제빵과(주)"
+     "name": "제과제빵과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 4.6
     },
     "2025": {
      "quota": 54,
      "applied": 277,
-     "name": "제과제빵과(주)"
+     "name": "제과제빵과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 6.07
     },
     "2026": {
      "quota": 51,
      "applied": 313,
-     "name": "제과제빵과(주)"
+     "name": "제과제빵과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 7.09
     },
     "2027": {
      "quota": 55,
      "applied": 341,
-     "name": "제과제빵과(주)"
+     "name": "제과제빵과(주)",
+     "mainTrack": "일반전형",
+     "mainRate": 6.8
     }
    }
   },
@@ -429,7 +537,9 @@
     "2026": {
      "quota": 22,
      "applied": 378,
-     "name": "카페디저트과"
+     "name": "카페디저트과",
+     "mainTrack": "일반전형",
+     "mainRate": 50.67
     },
     "2027": {
      "quota": 35,
@@ -450,48 +560,1576 @@
     "2023": {
      "quota": 37,
      "applied": 121,
-     "name": "바리스타제과제빵과"
+     "name": "바리스타제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 3.0
     },
     "2024": {
      "quota": 41,
      "applied": 108,
-     "name": "바리스타제과제빵과"
+     "name": "바리스타제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 1.17
     },
     "2025": {
      "quota": 41,
      "applied": 113,
-     "name": "바리스타제과제빵과"
+     "name": "바리스타제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 1.5
     },
     "2026": {
      "quota": 42,
      "applied": 98,
-     "name": "바리스타제과제빵과"
+     "name": "바리스타제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 2.67
     },
     "2027": {
      "quota": 42,
      "applied": 128,
-     "name": "바리스타제과제빵과"
+     "name": "바리스타제과제빵과",
+     "mainTrack": "일반고",
+     "mainRate": 5.0
     }
    }
   },
   {
-   "school": "u35",
+   "school": "x:강원도립대학교",
+   "schoolName": "강원도립대학교",
+   "region": "강원",
+   "dept": "바리스타제과제빵과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "바리스타제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 32명 · 특성화고 7.1 · 일반고 4.32",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.32
+    },
+    "2024": {
+     "name": "바리스타제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 39명 · 특성화고 4.4 · 일반고 3.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.7
+    },
+    "2025": {
+     "name": "바리스타제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 39명 · 특성화고 4.5 · 일반고 3.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.7
+    },
+    "2026": {
+     "name": "바리스타제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 39명 · 특성화고 4.3 · 일반고 3.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.8
+    },
+    "2027": {
+     "quota": 39,
+     "applied": 183,
+     "name": "바리스타제과제빵과",
+     "unofficial": false,
+     "mainTrack": "일반고",
+     "mainRate": 5.04
+    }
+   }
+  },
+  {
+   "school": "x:거제대학교",
+   "schoolName": "거제대학교",
+   "region": "부산·울산·경남",
+   "dept": "조리제빵과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 35명 · 특성화고 3.8 · 일반고 4.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.8
+    },
+    "2024": {
+     "name": "조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 37명 · 특성화고 5.75 · 일반고 4.75",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.75
+    },
+    "2025": {
+     "name": "조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 32명 · 특성화고 3.5 · 고른기회 1.5 · 일반고 7.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.7
+    },
+    "2026": {
+     "quota": 32,
+     "applied": 89,
+     "name": "조리제빵과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "같은 화면 2026학년도 수시1차",
+      "url": "https://www.koje.ac.kr/enter/competitionrate"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 8.3,
+     "mainSource": "portal"
+    },
+    "2027": {
+     "quota": 37,
+     "applied": 118,
+     "name": "조리제빵과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "거제대 입학홈페이지 지원현황(경쟁률) — 2027학년도 수시1차 (데이터: /Common/services/application_compet.aspx)",
+      "url": "https://www.koje.ac.kr/enter/competitionrate",
+      "date": "2026-10"
+     }
+    }
+   }
+  },
+  {
+   "school": "x:계명문화대학교",
+   "schoolName": "계명문화대학교",
+   "region": "대구·경북",
+   "dept": "제과제빵과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 46명 · 특성화고 4.87 · 대학자체 3.88 · 일반고 9.47",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 9.47
+    },
+    "2024": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 60명 · 특성화고 7 · 일반고 7.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.8
+    },
+    "2025": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 60명 · 특성화고 6.2 · 일반고 5.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 5.7
+    },
+    "2026": {
+     "quota": 54,
+     "applied": 324,
+     "name": "제과제빵과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000397"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.09
+    },
+    "2027": {
+     "quota": 53,
+     "applied": 364,
+     "name": "제과제빵과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차 정원내 학과별 지원현황",
+      "url": "https://ipsi.kmcu.ac.kr/admission/index.php?pCode=MN5000420",
+      "date": "2026-09-30"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 8.19
+    }
+   }
+  },
+  {
+   "school": "x:김해대학교",
+   "schoolName": "김해대학교",
+   "region": "부산·울산·경남",
+   "dept": "호텔조리제과제빵과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2024": {
+     "name": "호텔조리제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 17명 · 고른기회 6.5 · 대학자체 4.5 · 일반고 7.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.3
+    },
+    "2027": {
+     "quota": 13,
+     "applied": 106,
+     "name": "호텔조리제과제빵과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 경쟁률 (첨부: 2027학년도 수시1차 접수 현황(경쟁률).pdf)",
+      "url": "https://ipsi.gimhae.ac.kr/ipsi/board/postview/73/17816",
+      "date": "2026-10-06"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 14.75
+    }
+   }
+  },
+  {
+   "school": "x:대구보건대학교",
+   "schoolName": "대구보건대학교",
+   "region": "대구·경북",
+   "dept": "호텔제과제빵학과(주)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "호텔제과제빵학과",
+     "unofficial": true,
+     "tracks": "학과 모집 37명 · 특성화고 7.1 · 대학자체 9.3 · 일반고 6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.0
+    },
+    "2024": {
+     "name": "호텔제과제빵학과",
+     "unofficial": true,
+     "tracks": "학과 모집 35명 · 특성화고 6.8 · 대학자체 8.3 · 일반고 7.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.4
+    },
+    "2025": {
+     "name": "호텔제과제빵학과",
+     "unofficial": true,
+     "tracks": "학과 모집 37명 · 특성화고 6.64 · 대학자체 9.33 · 일반고 6.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.3
+    },
+    "2026": {
+     "name": "호텔제과제빵학과",
+     "unofficial": true,
+     "tracks": "학과 모집 27명 · 특성화고 5.4 · 대학자체 7.2 · 일반고 7.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.4
+    },
+    "2027": {
+     "quota": 27,
+     "applied": 317,
+     "name": "호텔제과제빵학과(주)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "대구보건대학교 입학원서접수 지원현황 조회(수시1차)",
+      "url": "https://apply.dhc.ac.kr/rate/list",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 10.88
+    }
+   }
+  },
+  {
+   "school": "x:대전과학기술대학교",
+   "schoolName": "대전과학기술대학교",
+   "region": "충청",
+   "dept": "외식조리제빵계열",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "외식조리제빵계열",
+     "unofficial": true,
+     "tracks": "학과 모집 63명 · 일반전형 3.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.8,
+     "quota": 63,
+     "applied": 239,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 63 × 경쟁률 3.8"
+    },
+    "2024": {
+     "name": "외식조리제빵계열",
+     "unofficial": true,
+     "tracks": "학과 모집 54명 · 일반전형 3.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.5,
+     "quota": 54,
+     "applied": 189,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 54 × 경쟁률 3.5"
+    },
+    "2025": {
+     "name": "외식조리제빵계열",
+     "unofficial": true,
+     "tracks": "학과 모집 54명 · 일반전형 3.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.1,
+     "quota": 54,
+     "applied": 167,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 54 × 경쟁률 3.1"
+    },
+    "2026": {
+     "name": "외식조리제빵계열",
+     "unofficial": true,
+     "tracks": "학과 모집 54명 · 일반전형 4.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.5,
+     "quota": 54,
+     "applied": 243,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 54 × 경쟁률 4.5"
+    },
+    "2027": {
+     "quota": 54,
+     "applied": 330,
+     "name": "외식조리제빵계열",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시모집 1차 정원 내 경쟁률 (마감)",
+      "url": "https://ipsi.dst.ac.kr/ipsi/CMS/Competition/CompetitionAI.do?mCode=MN077",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.11
+    }
+   }
+  },
+  {
+   "school": "x:동원대학교",
+   "schoolName": "동원대학교",
+   "region": "경기",
+   "dept": "제과제빵과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "호텔제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 46명 · 일반전형 7.78 · 대학자체 12.17",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 7.78
+    },
+    "2024": {
+     "name": "호텔제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 48명 · 일반전형 4.5 · 대학자체 8.67",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.5
+    },
+    "2025": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 40명 · 일반전형 7.41 · 대학자체 4.63",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 7.41
+    },
+    "2026": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 40명 · 일반전형 6.53 · 대학자체 4.13",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.53
+    },
+    "2027": {
+     "quota": 32,
+     "applied": 276,
+     "name": "제과제빵과",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 8.57
+    }
+   }
+  },
+  {
+   "school": "x:동의과학대학교",
+   "schoolName": "동의과학대학교",
+   "region": "부산·울산·경남",
+   "dept": "베이커리카페산업과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2024": {
+     "name": "베이커리카페산업과",
+     "unofficial": true,
+     "tracks": "학과 모집 30명 · 특성화고 11.7 · 대학자체 8 · 일반고 9.9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 9.9
+    },
+    "2025": {
+     "name": "베이커리카페산업과",
+     "unofficial": true,
+     "tracks": "학과 모집 27명 · 특성화고 9.3 · 대학자체 14 · 일반고 5.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 5.6
+    },
+    "2026": {
+     "quota": 27,
+     "applied": 226,
+     "name": "베이커리카페산업과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차 경쟁률(최종 마감)",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=9240"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 8.1,
+     "mainSource": "portal"
+    },
+    "2027": {
+     "quota": 27,
+     "applied": 179,
+     "name": "베이커리카페산업과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차 경쟁률(최종 마감) — 첨부 '동의과학대학교 2027학년도 신입생 수시1차 모집 지원현황 및 경쟁률(최종)'",
+      "url": "https://ipsi.dit.ac.kr/ipsi/index.php?pCode=ipsiresult01&mode=view&idx=10034",
+      "date": "2026-10-01"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.5
+    }
+   }
+  },
+  {
+   "school": "x:두원공과대학교",
+   "schoolName": "두원공과대학교",
+   "region": "경기",
+   "dept": "제과제빵과(파주)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "호텔조리제과제빵학부 제과제빵전공",
+     "unofficial": true,
+     "tracks": "학과 모집 18명 · 일반전형 8.21 · 특성화고 4.75",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 8.21
+    },
+    "2024": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 28명 · 일반전형 6 · 특성화고 3.17",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.0
+    },
+    "2025": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 35명 · 일반전형 4.44 · 특성화고 5.33",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.44
+    },
+    "2026": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 35명 · 일반전형 6.09 · 특성화고 9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.09
+    },
+    "2027": {
+     "quota": 35,
+     "applied": 184,
+     "name": "제과제빵과(파주)",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 7.45
+    }
+   }
+  },
+  {
+   "school": "x:마산대학교",
+   "schoolName": "마산대학교",
+   "region": "부산·울산·경남",
+   "dept": "외식조리제빵과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "외식조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 112명 · 특성화고 8.7 · 일반고 4.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.5
+    },
+    "2024": {
+     "name": "외식조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 112명 · 특성화고 6.7 · 일반고 4.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.7
+    },
+    "2025": {
+     "name": "외식조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 110명 · 특성화고 5.9 · 고른기회 1 · 일반고 4.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.2
+    },
+    "2026": {
+     "name": "외식조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 110명 · 특성화고 5.53 · 고른기회 0.1 · 일반고 6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.0
+    },
+    "2027": {
+     "quota": 97,
+     "applied": 504,
+     "name": "외식조리제빵과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생모집 수시1차 경쟁률 안내 (첨부: 2027학년도 수시 1차 경쟁률.pdf)",
+      "url": "https://www.masan.ac.kr/info/CMS/Board/Board.do?mCode=MN058&mode=view&mgr_seq=351&board_seq=234889",
+      "date": "2026-10-01"
+     },
+     "derived": "경쟁률(소수 1자리)×모집인원, 전형별 반올림 후 합산: 일반고 45×6.4=288, 특성화고 12×9.9=119, 특기자 30×2.3=69, 고른기회2 10×2.8=28. 모집인원 출처: 2027학년도 마산대학교 신입생 모집요강 p.30 '전형별 모집인원(정원내)' https://www.masan.ac.kr/attach/CONTENTS/PDF/ContentMgr/PDFViewer/2026/10/Fbp3aRMZq18m3jKq.PDF . 경쟁률이 소수 1자리라 전형별 ±0.05×모집인원 오차 있음",
+     "mainTrack": "일반고",
+     "mainRate": 6.4
+    }
+   }
+  },
+  {
+   "school": "x:마산대학교",
+   "schoolName": "마산대학교",
+   "region": "부산·울산·경남",
+   "dept": "호텔관광바리스타과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "호텔관광바리스타과",
+     "unofficial": true,
+     "tracks": "학과 모집 32명 · 일반전형 4.6 · 대학자체 4.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.6
+    },
+    "2024": {
+     "name": "호텔관광바리스타과",
+     "unofficial": true,
+     "tracks": "학과 모집 34명 · 특성화고 4.7 · 대학자체 2.5 · 일반고 3.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 3.4
+    },
+    "2025": {
+     "name": "호텔관광바리스타과",
+     "unofficial": true,
+     "tracks": "학과 모집 33명 · 특성화고 4.5 · 고른기회 1 · 대학자체 1.5 · 일반고 2.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.7
+    },
+    "2026": {
+     "name": "호텔관광바리스타과",
+     "unofficial": true,
+     "tracks": "학과 모집 33명 · 특성화고 4.8 · 고른기회 0.5 · 대학자체 4.75 · 일반고 4.94",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.94
+    },
+    "2027": {
+     "quota": 29,
+     "applied": 167,
+     "name": "호텔관광바리스타과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생모집 수시1차 경쟁률 안내 (첨부: 2027학년도 수시 1차 경쟁률.pdf)",
+      "url": "https://www.masan.ac.kr/info/CMS/Board/Board.do?mCode=MN058&mode=view&mgr_seq=351&board_seq=234889",
+      "date": "2026-10-01"
+     },
+     "derived": "경쟁률(소수 1자리)×모집인원, 전형별 반올림 후 합산: 일반고 16×5.3=85, 특성화고 9×5.6=50, 비교과 3×9.7=29, 고른기회2 1×3.0=3. 모집인원 출처: 2027학년도 마산대학교 신입생 모집요강 p.30 '전형별 모집인원(정원내)' https://www.masan.ac.kr/attach/CONTENTS/PDF/ContentMgr/PDFViewer/2026/10/Fbp3aRMZq18m3jKq.PDF . 경쟁률이 소수 1자리라 전형별 ±0.05×모집인원 오차 있음",
+     "mainTrack": "일반고",
+     "mainRate": 5.3
+    }
+   }
+  },
+  {
+   "school": "x:백석예술대학교",
+   "schoolName": "백석예술대학교",
+   "region": "서울",
+   "dept": "호텔조리·제과제빵학부",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2026": {
+     "quota": 215,
+     "applied": 894,
+     "name": "호텔조리·제과제빵학부",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차 입시결과(일반전형·특별전형)",
+      "url": "https://www.bau.ac.kr/admission/5234/subview.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 5.09
+    },
+    "2027": {
+     "quota": 220,
+     "applied": 1089,
+     "name": "호텔조리·제과제빵학부",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 6.08
+    }
+   }
+  },
+  {
+   "school": "x:부산과학기술대학교",
+   "schoolName": "부산과학기술대학교",
+   "region": "부산·울산·경남",
+   "dept": "바리스타&디저트창업과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "바리스타과",
+     "unofficial": true,
+     "tracks": "학과 모집 27명 · 특성화고 9.5 · 고른기회 0 · 대학자체 1 · 일반고 11",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 11.0
+    },
+    "2024": {
+     "name": "바리스타과",
+     "unofficial": true,
+     "tracks": "학과 모집 17명 · 특성화고 5.8 · 대학자체 0 · 일반고 6.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.5
+    },
+    "2026": {
+     "quota": 21,
+     "applied": 129,
+     "name": "바리스타&디저트창업과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2026학년도 수시1차모집 지원률 현황(최종)",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=34"
+     }
+    },
+    "2027": {
+     "quota": 21,
+     "applied": 130,
+     "name": "바리스타&디저트창업과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 수시1차모집 지원률 현황(최종) — 본문 이미지 표",
+      "url": "https://ipsi.bist.ac.kr/ipsi/board/view.php?board_id=ipsirate&menu=105&no=36",
+      "date": "2026-10-01"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 5.5
+    }
+   }
+  },
+  {
+   "school": "x:부산보건대학교",
+   "schoolName": "부산보건대학교",
+   "region": "부산·울산·경남",
+   "dept": "호텔제과제빵과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2024": {
+     "name": "호텔제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 80명 · 특성화고 10.8 · 대학자체 4.78 · 일반고 9.29",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 9.29
+    },
+    "2025": {
+     "name": "호텔제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 54명 · 특성화고 10 · 대학자체 4.5 · 일반고 7.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.8
+    },
+    "2026": {
+     "name": "호텔제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 72명 · 특성화고 14.4 · 대학자체 6.1 · 일반고 11.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 11.3
+    },
+    "2027": {
+     "quota": 71,
+     "applied": 595,
+     "name": "호텔제과제빵과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생 수시1차 모집 경쟁률 (첨부: 2027 수시1차 경쟁률.pdf)",
+      "url": "https://ipsi.bhu.ac.kr/ipsi/boardview/2/323",
+      "date": "2026-10-01"
+     },
+     "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 20×14.10=282, 특성화고 10×11.10=111, 대학자체 41×4.93=202. 모집인원 출처: 2027학년도 부산보건대 신입생 모집요강 p.27~29(전형별 모집인원) https://ipsi.bhu.ac.kr/upload/dongju/ipsi/board/5/2026/0629105441491.pdf",
+     "mainTrack": "일반고",
+     "mainRate": 14.1
+    }
+   }
+  },
+  {
+   "school": "x:부산보건대학교",
+   "schoolName": "부산보건대학교",
+   "region": "부산·울산·경남",
+   "dept": "호텔·바리스타과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2024": {
+     "name": "호텔·바리스타과",
+     "unofficial": true,
+     "tracks": "학과 모집 20명 · 특성화고 4.33 · 대학자체 5 · 일반고 9.75",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 9.75
+    },
+    "2025": {
+     "name": "호텔·바리스타과",
+     "unofficial": true,
+     "tracks": "학과 모집 16명 · 특성화고 3.1 · 대학자체 1 · 일반고 8.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 8.5
+    },
+    "2026": {
+     "name": "호텔·바리스타과",
+     "unofficial": true,
+     "tracks": "학과 모집 17명 · 특성화고 6.6 · 대학자체 11.3 · 일반고 18.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 18.3
+    },
+    "2027": {
+     "quota": 16,
+     "applied": 179,
+     "name": "호텔·바리스타과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-notice",
+      "title": "2027학년도 신입생 수시1차 모집 경쟁률 (첨부: 2027 수시1차 경쟁률.pdf)",
+      "url": "https://ipsi.bhu.ac.kr/ipsi/boardview/2/323",
+      "date": "2026-10-01"
+     },
+     "derived": "경쟁률(소수 2자리)×모집인원 반올림 합산: 일반고 4×21.25=85, 특성화고 9×6.33=57, 대학자체 3×12.33=37. 모집인원 출처: 2027학년도 부산보건대 신입생 모집요강 p.27~29(전형별 모집인원) https://ipsi.bhu.ac.kr/upload/dongju/ipsi/board/5/2026/0629105441491.pdf",
+     "mainTrack": "일반고",
+     "mainRate": 21.25
+    }
+   }
+  },
+  {
+   "school": "x:서영대학교(광주)",
+   "schoolName": "서영대학교(광주)",
+   "region": "호남",
+   "dept": "호텔조리제빵과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "호텔조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 51명 · 특성화고 4.8 · 일반고 4.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.3
+    },
+    "2024": {
+     "name": "호텔조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 52명 · 특성화고 5.1 · 일반고 4.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.8
+    },
+    "2025": {
+     "name": "호텔조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 46명 · 특성화고 7.1 · 일반고 4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.0
+    },
+    "2026": {
+     "name": "호텔조리제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 43명 · 특성화고 5 · 고른기회 1 · 일반고 6.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.4
+    },
+    "2027": {
+     "quota": 45,
+     "applied": 224,
+     "name": "호텔조리제빵과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30"
+     },
+     "derived": "모집인원×경쟁률: 20×5.7=114, 25×4.4=110 → 224 (경쟁률 반올림 때문에 실제 222~226 가능). 모집인원도 같은 화면 출처",
+     "mainTrack": "일반고",
+     "mainRate": 5.7
+    }
+   }
+  },
+  {
+   "school": "x:서영대학교(광주)",
+   "schoolName": "서영대학교(광주)",
+   "region": "호남",
+   "dept": "카페베이커리과(야)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2024": {
+     "name": "카페베이커리과",
+     "unofficial": true,
+     "tracks": "학과 모집 12명 · 특성화고 4.5 · 일반고 2.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 2.6
+    },
+    "2025": {
+     "name": "카페베이커리과",
+     "unofficial": true,
+     "tracks": "학과 모집 15명 · 일반전형 4.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.1,
+     "quota": 15,
+     "applied": 61,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 15 × 경쟁률 4.1"
+    },
+    "2026": {
+     "name": "카페베이커리과",
+     "unofficial": true,
+     "tracks": "학과 모집 10명 · 일반전형 5.2 · 고른기회 0.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 5.2
+    },
+    "2027": {
+     "quota": 13,
+     "applied": 59,
+     "name": "카페베이커리과(야)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대 광주캠퍼스 입학안내 경쟁률현황 — 2027학년도 수시1차 신입생모집(경쟁률) 현황 (2026/09/30(수) 18:00 현재 원서접수 현황)",
+      "url": "https://www.seoyeong.ac.kr/ipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2140",
+      "date": "2026-09-30"
+     },
+     "derived": "모집인원×경쟁률: 13×4.5=58.5 → 실제 58 또는 59 (반올림 모호, 59로 기재). 모집인원도 같은 화면 출처",
+     "mainTrack": "일반전형",
+     "mainRate": 4.5
+    }
+   }
+  },
+  {
+   "school": "x:서영대학교(파주)",
+   "schoolName": "서영대학교(파주)",
+   "region": "경기",
+   "dept": "조리제과제빵과(주간)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2025": {
+     "name": "조리제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 33명 · 특성화고 18 · 일반고 6.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 6.1
+    },
+    "2026": {
+     "name": "조리제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 21명 · 특성화고 5.7 · 고른기회 2 · 일반고 7.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 7.8
+    },
+    "2027": {
+     "quota": 18,
+     "applied": 168,
+     "name": "조리제과제빵과(주간)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "서영대학교 파주캠퍼스 2027학년도 수시1차 신입생모집(경쟁률) 현황",
+      "url": "https://www.seoyeong.ac.kr/pjipsi/cmpetrt/selectCmpetrtView.do?searchRcritYear=2027&searchRcritType=SJ3&mi=2173",
+      "date": "2026-09-30"
+     },
+     "derived": "지원인원 = 모집인원×경쟁률: 일반고 12×9.1=109.2→109(109/12=9.08, 110/12=9.17 이므로 109), 특성화고 6×9.8=58.8→59(59/6=9.83). 모집인원은 같은 화면 표기",
+     "mainTrack": "일반고",
+     "mainRate": 9.1
+    }
+   }
+  },
+  {
+   "school": "x:수성대학교",
+   "schoolName": "수성대학교",
+   "region": "대구·경북",
+   "dept": "제과제빵커피과(주간)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "제과제빵커피과",
+     "unofficial": true,
+     "tracks": "학과 모집 40명 · 일반전형 7 · 특성화고 6.9 · 대학자체 3.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 7.0
+    },
+    "2024": {
+     "name": "제과제빵커피과",
+     "unofficial": true,
+     "tracks": "학과 모집 40명 · 일반전형 5.7 · 특성화고 5 · 대학자체 1.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 5.7
+    },
+    "2025": {
+     "name": "제과제빵커피과",
+     "unofficial": true,
+     "tracks": "학과 모집 27명 · 일반전형 7 · 특성화고 7.7 · 대학자체 1.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 7.0
+    },
+    "2026": {
+     "name": "제과제빵커피과",
+     "unofficial": true,
+     "tracks": "학과 모집 25명 · 일반전형 9 · 특성화고 7.7 · 대학자체 1.9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 9.0
+    },
+    "2027": {
+     "quota": 33,
+     "applied": 153,
+     "name": "제과제빵커피과(주간)",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "수성대 학과별 경쟁률 — 2027학년도 수시모집(1차)",
+      "url": "https://ipsi.sc.ac.kr/counsel/05_01.sc",
+      "date": "2026-10-20(조회)"
+     },
+     "derived": "경쟁률×모집인원: 일반 24×4.5=108 + 특성화 4×9.5=38 + 대학자체 5×1.4=7 = 153 (모집인원 출처: https://ipsi.sc.ac.kr/susi01/02.sc 수시1차 모집인원표; 경쟁률이 소수 1자리 반올림이라 ±1~2명 오차 가능)",
+     "mainTrack": "일반전형",
+     "mainRate": 4.5
+    }
+   }
+  },
+  {
+   "school": "x:신성대학교",
+   "schoolName": "신성대학교",
+   "region": "충청",
+   "dept": "제과제빵과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": false,
+   "series": {
+    "2023": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 30명 · 일반전형 10.1 · 고른기회 2.8 · 대학자체 0.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 10.1
+    },
+    "2024": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 30명 · 일반전형 6.71 · 고른기회 1.2 · 대학자체 0.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.71
+    },
+    "2025": {
+     "name": "제과제빵외식조리계열",
+     "unofficial": true,
+     "tracks": "학과 모집 40명 · 일반전형 4.09 · 고른기회 1.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.09
+    },
+    "2026": {
+     "name": "제과제빵외식조리계열",
+     "unofficial": true,
+     "tracks": "학과 모집 40명 · 일반전형 4.63",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.63,
+     "quota": 40,
+     "applied": 185,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 40 × 경쟁률 4.63"
+    },
+    "2027": {
+     "quota": 27,
+     "applied": 150,
+     "name": "제과제빵과",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 5.56
+    }
+   }
+  },
+  {
+   "school": "x:여주대학교",
+   "schoolName": "여주대학교",
+   "region": "경기",
+   "dept": "카페베이커리과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2025": {
+     "name": "카페베이커리과",
+     "unofficial": true,
+     "tracks": "학과 모집 25명 · 일반전형 7.7 · 대학자체 0.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 7.7
+    },
+    "2026": {
+     "name": "카페베이커리과",
+     "unofficial": true,
+     "tracks": "학과 모집 25명 · 일반전형 7.3 · 대학자체 1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 7.3
+    },
+    "2027": {
+     "quota": 20,
+     "applied": 128,
+     "name": "카페베이커리과",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "여주대학교 학과별 원서접수 현황(공지용) 2027 수시1차",
+      "url": "https://portal.yit.ac.kr/public?mvPg=entr/aplc/EntrAplc034.xml&mc=ENTRENTR214&yy=2027&collshfg=E010030010",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.4
+    }
+   }
+  },
+  {
+   "school": "x:우송정보대학",
+   "schoolName": "우송정보대학",
+   "region": "충청",
+   "dept": "제과제빵학부 제과제빵전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "unofficial": true,
+   "series": {
+    "2023": {
+     "name": "제과제빵학부",
+     "unofficial": true,
+     "tracks": "학과 모집 107명 · 일반전형 4.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.7,
+     "quota": 107,
+     "applied": 503,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 107 × 경쟁률 4.7"
+    },
+    "2024": {
+     "name": "제과제빵학부",
+     "unofficial": true,
+     "tracks": "학과 모집 97명 · 일반전형 5.19",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 5.19,
+     "quota": 97,
+     "applied": 503,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 97 × 경쟁률 5.19"
+    },
+    "2025": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 98명 · 일반전형 4.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 4.5,
+     "quota": 98,
+     "applied": 441,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 98 × 경쟁률 4.5"
+    },
+    "2026": {
+     "name": "제과제빵과",
+     "unofficial": true,
+     "tracks": "학과 모집 98명 · 일반전형 6.61",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.61,
+     "quota": 98,
+     "applied": 648,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 98 × 경쟁률 6.61"
+    },
+    "2027": {
+     "quota": 93,
+     "applied": 859,
+     "name": "제과제빵학부 제과제빵전공",
+     "unofficial": true,
+     "source": {
+      "kind": "school-page",
+      "title": "2027학년도 수시1차모집 최종 경쟁률 (우송정보대학 입학 지원현황, ent.wsi.ac.kr 수시모집 지원현황 링크)",
+      "url": "https://wsinfo.wsi.ac.kr/initcontroler?link=NeSju",
+      "date": "2026-10-20"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 9.24
+    }
+   }
+  },
+  {
+   "school": "x:충남도립대학교",
    "schoolName": "충남도립대학교",
    "region": "충청",
    "dept": "호텔조리제빵학과",
    "isBase": false,
    "isKm": false,
    "scope": "전국",
+   "unofficial": false,
    "series": {
     "2023": {
+     "name": "호텔조리제빵학과",
+     "unofficial": true,
+     "tracks": "학과 모집 38명 · 일반전형 3.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.3,
      "quota": 38,
-     "applied": 126,
-     "name": "호텔조리제빵학과"
+     "applied": 125,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 38 × 경쟁률 3.3"
+    },
+    "2024": {
+     "name": "호텔조리제빵학과",
+     "unofficial": true,
+     "tracks": "학과 모집 31명 · 일반전형 5.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 5.6,
+     "quota": 31,
+     "applied": 174,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 31 × 경쟁률 5.6"
+    },
+    "2025": {
+     "name": "호텔조리제빵학과",
+     "unofficial": true,
+     "tracks": "학과 모집 31명 · 일반전형 7.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 7.2,
+     "quota": 31,
+     "applied": 223,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 31 × 경쟁률 7.2"
     },
     "2026": {
+     "name": "호텔조리제빵학과",
+     "unofficial": true,
+     "tracks": "학과 모집 27명 · 일반전형 6.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 6.1,
+     "quota": 27,
+     "applied": 165,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 27 × 경쟁률 6.1"
+    },
+    "2027": {
      "quota": 28,
-     "applied": 170,
-     "name": "호텔조리제빵학과"
+     "applied": 225,
+     "name": "호텔조리제빵학과",
+     "unofficial": false,
+     "mainTrack": "일반전형",
+     "mainRate": 8.04
     }
    }
   }

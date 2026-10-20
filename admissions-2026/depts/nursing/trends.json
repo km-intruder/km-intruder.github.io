@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 92,
      "applied": 695,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.41
     },
     "2024": {
      "quota": 94,
      "applied": 1121,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.51
     },
     "2025": {
      "quota": 104,
      "applied": 1353,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 12.45
     },
     "2026": {
      "quota": 130,
      "applied": 1105,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.52
     },
     "2027": {
      "quota": 120,
      "applied": 1376,
      "name": "간호학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반고",
+     "mainRate": 10.75
     }
    }
   },
@@ -62,28 +74,38 @@
     "2023": {
      "quota": 60,
      "applied": 320,
-     "name": "보건의료행정과"
+     "name": "보건의료행정과",
+     "mainTrack": "일반고",
+     "mainRate": 4.7
     },
     "2024": {
      "quota": 60,
      "applied": 270,
-     "name": "보건의료행정과"
+     "name": "보건의료행정과",
+     "mainTrack": "일반고",
+     "mainRate": 4.04
     },
     "2025": {
      "quota": 59,
      "applied": 217,
-     "name": "보건의료행정과"
+     "name": "보건의료행정과",
+     "mainTrack": "일반고",
+     "mainRate": 3.66
     },
     "2026": {
      "quota": 50,
      "applied": 253,
-     "name": "보건의료행정과"
+     "name": "보건의료행정과",
+     "mainTrack": "일반고",
+     "mainRate": 5.91
     },
     "2027": {
      "quota": 50,
      "applied": 275,
      "name": "보건의료행정과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반고",
+     "mainRate": 6.2
     }
    }
   },
@@ -99,13 +121,17 @@
     "2026": {
      "quota": 26,
      "applied": 52,
-     "name": "언어치료학과"
+     "name": "언어치료학과",
+     "mainTrack": "일반고",
+     "mainRate": 2.06
     },
     "2027": {
      "quota": 24,
      "applied": 107,
      "name": "언어치료학과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 4.46
     }
    }
   },
@@ -121,28 +147,38 @@
     "2023": {
      "quota": 46,
      "applied": 213,
-     "name": "뷰티케어과"
+     "name": "뷰티케어과",
+     "mainTrack": "일반고",
+     "mainRate": 6.86
     },
     "2024": {
      "quota": 34,
      "applied": 187,
-     "name": "뷰티케어과"
+     "name": "뷰티케어과",
+     "mainTrack": "일반고",
+     "mainRate": 7.5
     },
     "2025": {
      "quota": 36,
      "applied": 195,
-     "name": "뷰티케어과"
+     "name": "뷰티케어과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.42
     },
     "2026": {
      "quota": 26,
      "applied": 91,
-     "name": "의료미용과"
+     "name": "의료미용과",
+     "mainTrack": "일반고",
+     "mainRate": 4.19
     },
     "2027": {
      "quota": 26,
      "applied": 122,
      "name": "의료미용과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 4.69
     }
    }
   },
@@ -158,27 +194,37 @@
     "2023": {
      "quota": 203,
      "applied": 1474,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.9
     },
     "2024": {
      "quota": 203,
      "applied": 1611,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.42
     },
     "2025": {
      "quota": 203,
      "applied": 2880,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 13.67
     },
     "2026": {
      "quota": 216,
      "applied": 1533,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.08
     },
     "2027": {
      "quota": 216,
      "applied": 3337,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 16.16
     }
    }
   },
@@ -194,27 +240,37 @@
     "2023": {
      "quota": 40,
      "applied": 772,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 21.7
     },
     "2024": {
      "quota": 40,
      "applied": 833,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 24.1
     },
     "2025": {
      "quota": 40,
      "applied": 911,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 24.18
     },
     "2026": {
      "quota": 40,
      "applied": 824,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 22.32
     },
     "2027": {
      "quota": 40,
      "applied": 1048,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 27.44
     }
    }
   },
@@ -230,27 +286,37 @@
     "2023": {
      "quota": 36,
      "applied": 734,
-     "name": "간호학과(주간)(4년제)"
+     "name": "간호학과(주간)(4년제)",
+     "mainTrack": "일반고",
+     "mainRate": 19.43
     },
     "2024": {
      "quota": 45,
      "applied": 965,
-     "name": "간호학과(주간)(4년제)"
+     "name": "간호학과(주간)(4년제)",
+     "mainTrack": "일반고",
+     "mainRate": 21.02
     },
     "2025": {
      "quota": 45,
      "applied": 922,
-     "name": "간호학과(주간)(4년제)"
+     "name": "간호학과(주간)(4년제)",
+     "mainTrack": "일반고",
+     "mainRate": 20.27
     },
     "2026": {
      "quota": 45,
      "applied": 1021,
-     "name": "간호학과(4년제)"
+     "name": "간호학과(4년제)",
+     "mainTrack": "일반고",
+     "mainRate": 22.37
     },
     "2027": {
      "quota": 45,
      "applied": 1121,
-     "name": "간호학과(4년제)"
+     "name": "간호학과(4년제)",
+     "mainTrack": "일반고",
+     "mainRate": 25.24
     }
    }
   },
@@ -266,27 +332,37 @@
     "2023": {
      "quota": 59,
      "applied": 541,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.45
     },
     "2024": {
      "quota": 68,
      "applied": 1210,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 18.83
     },
     "2025": {
      "quota": 81,
      "applied": 911,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 11.89
     },
     "2026": {
      "quota": 83,
      "applied": 1041,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 13.0
     },
     "2027": {
      "quota": 73,
      "applied": 1559,
-     "name": "휴먼케어학부 간호학과"
+     "name": "휴먼케어학부 간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 20.75
     }
    }
   },
@@ -302,27 +378,37 @@
     "2023": {
      "quota": 12,
      "applied": 412,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 32.2
     },
     "2024": {
      "quota": 12,
      "applied": 381,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 28.7
     },
     "2025": {
      "quota": 12,
      "applied": 454,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 37.2
     },
     "2026": {
      "quota": 12,
      "applied": 456,
-     "name": "간호학과"
+     "name": "간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 36.8
     },
     "2027": {
      "quota": 23,
      "applied": 682,
-     "name": "바이오·헬스케어학부 간호학과"
+     "name": "바이오·헬스케어학부 간호학과",
+     "mainTrack": "일반고",
+     "mainRate": 28.45
     }
    }
   },
@@ -338,27 +424,37 @@
     "2023": {
      "quota": 61,
      "applied": 555,
-     "name": "간호학과(4년제)"
+     "name": "간호학과(4년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 9.1
     },
     "2024": {
      "quota": 80,
      "applied": 611,
-     "name": "간호학과(4년제)"
+     "name": "간호학과(4년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 7.64
     },
     "2025": {
      "quota": 106,
      "applied": 595,
-     "name": "간호학과(4년제)"
+     "name": "간호학과(4년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 5.61
     },
     "2026": {
      "quota": 121,
      "applied": 792,
-     "name": "간호학과(4년제)"
+     "name": "간호학과(4년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 6.55
     },
     "2027": {
      "quota": 109,
      "applied": 1536,
-     "name": "간호학과(4년제)"
+     "name": "간호학과(4년제)",
+     "mainTrack": "일반전형",
+     "mainRate": 14.09
     }
    }
   }

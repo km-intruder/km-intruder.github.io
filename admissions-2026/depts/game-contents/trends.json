@@ -8,9 +8,11 @@
  ],
  "builtAt": "2026-10-20",
  "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "mainBasis": "주 전형 경쟁률 = 일반고 전형, 없으면 일반전형",
  "sources": {
   "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
-  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)",
+  "unofficial": "비공식: 학교 공지·입학처 화면 등 조사 자료와 전문대학포털(한국전문대학교육협의회) 전년도 입시결과(학과 모집인원과 전형별 경쟁률만 있어 정원내 전형이 하나인 해만 지원자를 계산)"
  },
  "units": [
   {
@@ -25,28 +27,38 @@
     "2023": {
      "quota": 54,
      "applied": 244,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 4.41
     },
     "2024": {
      "quota": 54,
      "applied": 286,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 6.3
     },
     "2025": {
      "quota": 57,
      "applied": 290,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 5.97
     },
     "2026": {
      "quota": 63,
      "applied": 351,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.42
     },
     "2027": {
      "quota": 63,
      "applied": 485,
      "name": "게임콘텐츠과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 8.6
     }
    }
   },
@@ -62,28 +74,38 @@
     "2023": {
      "quota": 38,
      "applied": 107,
-     "name": "레포츠과"
+     "name": "레포츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 10.6
     },
     "2024": {
      "quota": 46,
      "applied": 91,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "mainTrack": "일반전형",
+     "mainRate": 5.57
     },
     "2025": {
      "quota": 26,
      "applied": 77,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "mainTrack": "일반전형",
+     "mainRate": 8.0
     },
     "2026": {
      "quota": 29,
      "applied": 96,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "mainTrack": "일반전형",
+     "mainRate": 12.2
     },
     "2027": {
      "quota": 29,
      "applied": 94,
      "name": "레포츠과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 7.4
     }
    }
   },
@@ -136,13 +158,17 @@
     "2026": {
      "quota": 26,
      "applied": 112,
-     "name": "헤어디자인과"
+     "name": "헤어디자인과",
+     "mainTrack": "일반고",
+     "mainRate": 5.5
     },
     "2027": {
      "quota": 27,
      "applied": 185,
      "name": "헤어디자인과",
-     "source": "학교 집계"
+     "source": "학교 집계",
+     "mainTrack": "일반전형",
+     "mainRate": 6.85
     }
    }
   },
@@ -158,17 +184,23 @@
     "2025": {
      "quota": 46,
      "applied": 326,
-     "name": "AI게임융합학과"
+     "name": "AI게임융합학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.5
     },
     "2026": {
      "quota": 62,
      "applied": 345,
-     "name": "AI게임융합학과"
+     "name": "AI게임융합학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.91
     },
     "2027": {
      "quota": 66,
      "applied": 358,
-     "name": "AI게임융합학과"
+     "name": "AI게임융합학과",
+     "mainTrack": "일반고",
+     "mainRate": 5.9
     }
    }
   },
@@ -184,22 +216,30 @@
     "2024": {
      "quota": 30,
      "applied": 273,
-     "name": "게임&VR콘텐츠디자인학과"
+     "name": "게임&VR콘텐츠디자인학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.5
     },
     "2025": {
      "quota": 30,
      "applied": 276,
-     "name": "게임&VR콘텐츠디자인학과"
+     "name": "게임&VR콘텐츠디자인학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.85
     },
     "2026": {
      "quota": 30,
      "applied": 282,
-     "name": "게임&VR콘텐츠디자인학과"
+     "name": "게임&VR콘텐츠디자인학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.8
     },
     "2027": {
      "quota": 30,
      "applied": 258,
-     "name": "게임&VR콘텐츠디자인학과"
+     "name": "게임&VR콘텐츠디자인학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.95
     }
    }
   },
@@ -215,22 +255,30 @@
     "2024": {
      "quota": 46,
      "applied": 675,
-     "name": "영상&게임콘텐츠과(주간)"
+     "name": "영상&게임콘텐츠과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 12.62
     },
     "2025": {
      "quota": 46,
      "applied": 601,
-     "name": "영상&게임콘텐츠과(주간)"
+     "name": "영상&게임콘텐츠과(주간)",
+     "mainTrack": "일반고",
+     "mainRate": 11.53
     },
     "2026": {
      "quota": 32,
      "applied": 615,
-     "name": "영상&게임콘텐츠과(3년제)"
+     "name": "영상&게임콘텐츠과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 16.78
     },
     "2027": {
      "quota": 34,
      "applied": 624,
-     "name": "영상&게임콘텐츠과(3년제)"
+     "name": "영상&게임콘텐츠과(3년제)",
+     "mainTrack": "일반고",
+     "mainRate": 15.2
     }
    }
   },
@@ -246,27 +294,37 @@
     "2023": {
      "quota": 65,
      "applied": 370,
-     "name": "게임콘텐츠학과"
+     "name": "게임콘텐츠학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.11
     },
     "2024": {
      "quota": 73,
      "applied": 454,
-     "name": "게임콘텐츠학과"
+     "name": "게임콘텐츠학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.2
     },
     "2025": {
      "quota": 73,
      "applied": 562,
-     "name": "게임콘텐츠학과"
+     "name": "게임콘텐츠학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.7
     },
     "2026": {
      "quota": 73,
      "applied": 579,
-     "name": "게임콘텐츠학과"
+     "name": "게임콘텐츠학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.37
     },
     "2027": {
      "quota": 73,
      "applied": 568,
-     "name": "게임콘텐츠학과"
+     "name": "게임콘텐츠학과",
+     "mainTrack": "일반고",
+     "mainRate": 7.8
     }
    }
   },
@@ -282,17 +340,23 @@
     "2025": {
      "quota": 43,
      "applied": 270,
-     "name": "게임콘텐츠전공"
+     "name": "게임콘텐츠전공",
+     "mainTrack": "일반고",
+     "mainRate": 6.21
     },
     "2026": {
      "quota": 40,
      "applied": 288,
-     "name": "게임콘텐츠전공"
+     "name": "게임콘텐츠전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.26
     },
     "2027": {
      "quota": 40,
      "applied": 322,
-     "name": "게임콘텐츠전공"
+     "name": "게임콘텐츠전공",
+     "mainTrack": "일반고",
+     "mainRate": 7.74
     }
    }
   },
@@ -308,22 +372,30 @@
     "2024": {
      "quota": 31,
      "applied": 112,
-     "name": "컴퓨터게임과"
+     "name": "컴퓨터게임과",
+     "mainTrack": "일반고",
+     "mainRate": 3.48
     },
     "2025": {
      "quota": 31,
      "applied": 114,
-     "name": "컴퓨터게임과"
+     "name": "컴퓨터게임과",
+     "mainTrack": "일반고",
+     "mainRate": 3.44
     },
     "2026": {
      "quota": 31,
      "applied": 138,
-     "name": "컴퓨터게임과"
+     "name": "컴퓨터게임과",
+     "mainTrack": "일반고",
+     "mainRate": 4.32
     },
     "2027": {
      "quota": 28,
      "applied": 125,
-     "name": "컴퓨터게임과"
+     "name": "컴퓨터게임과",
+     "mainTrack": "일반고",
+     "mainRate": 4.65
     }
    }
   },
@@ -339,27 +411,37 @@
     "2023": {
      "quota": 18,
      "applied": 147,
-     "name": "게임아트디자인과"
+     "name": "게임아트디자인과",
+     "mainTrack": "일반전형",
+     "mainRate": 8.17
     },
     "2024": {
      "quota": 38,
      "applied": 150,
-     "name": "게임아트디자인과"
+     "name": "게임아트디자인과",
+     "mainTrack": "일반전형",
+     "mainRate": 3.95
     },
     "2025": {
      "quota": 38,
      "applied": 206,
-     "name": "게임아트디자인과"
+     "name": "게임아트디자인과",
+     "mainTrack": "일반고",
+     "mainRate": 4.37
     },
     "2026": {
      "quota": 39,
      "applied": 313,
-     "name": "게임아트디자인과"
+     "name": "게임아트디자인과",
+     "mainTrack": "일반고",
+     "mainRate": 6.92
     },
     "2027": {
      "quota": 39,
      "applied": 367,
-     "name": "문화콘텐츠학부 게임아트디자인과"
+     "name": "문화콘텐츠학부 게임아트디자인과",
+     "mainTrack": "일반고",
+     "mainRate": 6.88
     }
    }
   },
@@ -375,12 +457,16 @@
     "2026": {
      "quota": 32,
      "applied": 197,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 7.14
     },
     "2027": {
      "quota": 32,
      "applied": 226,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 7.32
     }
    }
   },
@@ -396,27 +482,37 @@
     "2023": {
      "quota": 64,
      "applied": 482,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 8.2
     },
     "2024": {
      "quota": 64,
      "applied": 402,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 6.38
     },
     "2025": {
      "quota": 64,
      "applied": 390,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 5.69
     },
     "2026": {
      "quota": 64,
      "applied": 441,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 7.11
     },
     "2027": {
      "quota": 45,
      "applied": 543,
-     "name": "게임콘텐츠과 · 콘텐츠제작게임디자인 게임콘텐츠과"
+     "name": "게임콘텐츠과 · 콘텐츠제작게임디자인 게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 17.36
     }
    }
   },
@@ -432,22 +528,30 @@
     "2024": {
      "quota": 36,
      "applied": 171,
-     "name": "메타버스게임애니메이션과"
+     "name": "메타버스게임애니메이션과",
+     "mainTrack": "일반고",
+     "mainRate": 4.32
     },
     "2025": {
      "quota": 35,
      "applied": 140,
-     "name": "메타버스게임애니메이션과"
+     "name": "메타버스게임애니메이션과",
+     "mainTrack": "일반고",
+     "mainRate": 3.93
     },
     "2026": {
      "quota": 35,
      "applied": 173,
-     "name": "메타버스게임애니메이션과"
+     "name": "메타버스게임애니메이션과",
+     "mainTrack": "일반고",
+     "mainRate": 4.78
     },
     "2027": {
      "quota": 35,
      "applied": 208,
-     "name": "메타버스게임애니메이션과"
+     "name": "메타버스게임애니메이션과",
+     "mainTrack": "일반고",
+     "mainRate": 5.59
     }
    }
   },
@@ -463,17 +567,23 @@
     "2025": {
      "quota": 50,
      "applied": 388,
-     "name": "AI게임소프트웨어학과"
+     "name": "AI게임소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 8.22
     },
     "2026": {
      "quota": 50,
      "applied": 346,
-     "name": "AI게임소프트웨어학과"
+     "name": "AI게임소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 6.58
     },
     "2027": {
      "quota": 50,
      "applied": 428,
-     "name": "AI게임소프트웨어학과"
+     "name": "AI게임소프트웨어학과",
+     "mainTrack": "일반고",
+     "mainRate": 9.36
     }
    }
   },
@@ -489,22 +599,30 @@
     "2023": {
      "quota": 50,
      "applied": 199,
-     "name": "VR게임콘텐츠과"
+     "name": "VR게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 3.79
     },
     "2025": {
      "quota": 50,
      "applied": 210,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 4.2
     },
     "2026": {
      "quota": 49,
      "applied": 258,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 5.27
     },
     "2027": {
      "quota": 48,
      "applied": 340,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반전형",
+     "mainRate": 7.08
     }
    }
   },
@@ -520,27 +638,37 @@
     "2023": {
      "quota": 49,
      "applied": 358,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 6.4
     },
     "2024": {
      "quota": 49,
      "applied": 321,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 5.55
     },
     "2025": {
      "quota": 49,
      "applied": 462,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 9.14
     },
     "2026": {
      "quota": 49,
      "applied": 342,
-     "name": "게임콘텐츠과"
+     "name": "게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 6.65
     },
     "2027": {
      "quota": 42,
      "applied": 359,
-     "name": "문화콘텐츠계열 게임콘텐츠과"
+     "name": "문화콘텐츠계열 게임콘텐츠과",
+     "mainTrack": "일반고",
+     "mainRate": 8.28
     }
    }
   }
