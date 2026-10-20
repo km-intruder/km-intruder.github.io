@@ -1,0 +1,247 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "응급구조학과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 33,
+     "applied": 231,
+     "name": "응급구조학과"
+    },
+    "2026": {
+     "quota": 32,
+     "applied": 388,
+     "name": "응급구조학과"
+    },
+    "2027": {
+     "quota": 32,
+     "applied": 469,
+     "name": "응급구조학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "소방안전관리과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 94,
+     "applied": 280,
+     "name": "소방안전관리과"
+    },
+    "2024": {
+     "quota": 80,
+     "applied": 268,
+     "name": "소방안전관리과"
+    },
+    "2025": {
+     "quota": 88,
+     "applied": 280,
+     "name": "소방안전관리과"
+    },
+    "2026": {
+     "quota": 90,
+     "applied": 406,
+     "name": "소방안전관리과"
+    },
+    "2027": {
+     "quota": 90,
+     "applied": 541,
+     "name": "소방안전관리과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "bc",
+   "schoolName": "부천대학교",
+   "region": "경기 서부",
+   "dept": "응급구조학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2024": {
+     "quota": 20,
+     "applied": 351,
+     "name": "응급구조학과(주간)(3년제)"
+    },
+    "2025": {
+     "quota": 33,
+     "applied": 412,
+     "name": "응급구조학과(주간)(3년제)"
+    },
+    "2026": {
+     "quota": 33,
+     "applied": 400,
+     "name": "응급구조학과(3년제)"
+    },
+    "2027": {
+     "quota": 40,
+     "applied": 499,
+     "name": "소사캠퍼스 응급구조학과(3년제) · 응급구조학과(3년제)"
+    }
+   }
+  },
+  {
+   "school": "yh",
+   "schoolName": "유한대학교",
+   "region": "경기 서부",
+   "dept": "응급구조과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 20,
+     "applied": 272,
+     "name": "응급구조과"
+    },
+    "2026": {
+     "quota": 40,
+     "applied": 390,
+     "name": "응급구조과"
+    },
+    "2027": {
+     "quota": 40,
+     "applied": 577,
+     "name": "응급구조과"
+    }
+   }
+  },
+  {
+   "school": "dl",
+   "schoolName": "대림대학교",
+   "region": "경기 남부",
+   "dept": "응급구조과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 25,
+     "applied": 224,
+     "name": "응급구조과"
+    },
+    "2026": {
+     "quota": 43,
+     "applied": 610,
+     "name": "응급구조과"
+    },
+    "2027": {
+     "quota": 43,
+     "applied": 732,
+     "name": "응급구조과"
+    }
+   }
+  },
+  {
+   "school": "sg",
+   "schoolName": "신구대학교",
+   "region": "경기 남부",
+   "dept": "응급구조학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 25,
+     "applied": 257,
+     "name": "응급구조학과"
+    },
+    "2027": {
+     "quota": 30,
+     "applied": 408,
+     "name": "응급구조학과"
+    }
+   }
+  },
+  {
+   "school": "ys",
+   "schoolName": "연성대학교",
+   "region": "경기 남부",
+   "dept": "응급구조과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 33,
+     "applied": 216,
+     "name": "응급구조과"
+    },
+    "2026": {
+     "quota": 33,
+     "applied": 699,
+     "name": "응급구조과"
+    },
+    "2027": {
+     "quota": 29,
+     "applied": 591,
+     "name": "응급구조과"
+    }
+   }
+  },
+  {
+   "school": "sj",
+   "schoolName": "서정대학교",
+   "region": "경기 북부",
+   "dept": "응급구조과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 21,
+     "applied": 161,
+     "name": "응급구조과(3년제)"
+    },
+    "2024": {
+     "quota": 27,
+     "applied": 248,
+     "name": "응급구조과(3년제)"
+    },
+    "2025": {
+     "quota": 30,
+     "applied": 175,
+     "name": "응급구조과(3년제)"
+    },
+    "2026": {
+     "quota": 32,
+     "applied": 267,
+     "name": "응급구조과(3년제)"
+    },
+    "2027": {
+     "quota": 35,
+     "applied": 376,
+     "name": "응급구조과(3년제)"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,783 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "자유전공학과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 72,
+     "applied": 29,
+     "name": "자율전공학부"
+    },
+    "2025": {
+     "quota": 27,
+     "applied": 89,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 22,
+     "applied": 170,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 22,
+     "applied": 167,
+     "name": "자유전공학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "gb",
+   "schoolName": "경복대학교",
+   "region": "경기 북부",
+   "dept": "자유전공학과(3년제)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 13,
+     "applied": 61,
+     "name": "자유전공학과(3년제)"
+    },
+    "2027": {
+     "quota": 13,
+     "applied": 135,
+     "name": "자유전공학과(3년제)"
+    }
+   }
+  },
+  {
+   "school": "dy",
+   "schoolName": "동양미래대학교",
+   "region": "서울",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 24,
+     "applied": 123,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 39,
+     "applied": 276,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 39,
+     "applied": 437,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "si",
+   "schoolName": "서일대학교",
+   "region": "서울",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 8,
+     "applied": 99,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 14,
+     "applied": 200,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 19,
+     "applied": 329,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "id",
+   "schoolName": "인덕대학교",
+   "region": "서울",
+   "dept": "자율전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 16,
+     "applied": 134,
+     "name": "자율전공학과"
+    },
+    "2026": {
+     "quota": 49,
+     "applied": 439,
+     "name": "자율전공학과"
+    },
+    "2027": {
+     "quota": 60,
+     "applied": 529,
+     "name": "자율전공학과"
+    }
+   }
+  },
+  {
+   "school": "bc",
+   "schoolName": "부천대학교",
+   "region": "경기 서부",
+   "dept": "자율전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 13,
+     "applied": 162,
+     "name": "자율전공학과"
+    },
+    "2027": {
+     "quota": 13,
+     "applied": 262,
+     "name": "본캠퍼스 자율전공학과"
+    }
+   }
+  },
+  {
+   "school": "gt",
+   "schoolName": "경기과학기술대학교",
+   "region": "경기 서부",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 35,
+     "applied": 162,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 44,
+     "applied": 297,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 49,
+     "applied": 346,
+     "name": "자유전공학과 자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "yh",
+   "schoolName": "유한대학교",
+   "region": "경기 서부",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 27,
+     "applied": 105,
+     "name": "자유전공학과"
+    },
+    "2025": {
+     "quota": 37,
+     "applied": 169,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 34,
+     "applied": 266,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 34,
+     "applied": 260,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "ss",
+   "schoolName": "수원과학대학교",
+   "region": "경기 남부",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 13,
+     "applied": 45,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 13,
+     "applied": 92,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "ih",
+   "schoolName": "인하공업전문대학",
+   "region": "인천",
+   "dept": "자유전공학부",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 12,
+     "applied": 124,
+     "name": "자유전공학부"
+    },
+    "2026": {
+     "quota": 12,
+     "applied": 143,
+     "name": "자유전공학부"
+    },
+    "2027": {
+     "quota": 24,
+     "applied": 245,
+     "name": "자유전공학부"
+    }
+   }
+  },
+  {
+   "school": "je",
+   "schoolName": "재능대학교",
+   "region": "인천",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 32,
+     "applied": 169,
+     "name": "자유전공학과,"
+    },
+    "2026": {
+     "quota": 22,
+     "applied": 351,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 22,
+     "applied": 411,
+     "name": "자유전공학부 자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "ds",
+   "schoolName": "동서울대학교",
+   "region": "경기 남부",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 27,
+     "applied": 130,
+     "name": "자유전공학과"
+    },
+    "2024": {
+     "quota": 35,
+     "applied": 149,
+     "name": "자유전공학과"
+    },
+    "2025": {
+     "quota": 45,
+     "applied": 213,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 38,
+     "applied": 307,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 30,
+     "applied": 361,
+     "name": "자율 자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "dl",
+   "schoolName": "대림대학교",
+   "region": "경기 남부",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 18,
+     "applied": 212,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 14,
+     "applied": 225,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "mj",
+   "schoolName": "명지전문대학",
+   "region": "서울",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 62,
+     "applied": 393,
+     "name": "AI·SW융합학부 자유전공학과 · 경영·휴먼라이프학부 자유전공학과 · 자유전공학부 자유전공학과"
+    },
+    "2026": {
+     "quota": 69,
+     "applied": 667,
+     "name": "자유전공학부 자유전공학과"
+    },
+    "2027": {
+     "quota": 69,
+     "applied": 725,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "sg",
+   "schoolName": "신구대학교",
+   "region": "경기 남부",
+   "dept": "자율전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 36,
+     "applied": 77,
+     "name": "자율전공학과"
+    },
+    "2025": {
+     "quota": 38,
+     "applied": 164,
+     "name": "자율전공학과"
+    },
+    "2026": {
+     "quota": 26,
+     "applied": 226,
+     "name": "자율전공학과"
+    },
+    "2027": {
+     "quota": 32,
+     "applied": 280,
+     "name": "자율전공학과 자율전공학과"
+    }
+   }
+  },
+  {
+   "school": "ys",
+   "schoolName": "연성대학교",
+   "region": "경기 남부",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 18,
+     "applied": 327,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 16,
+     "applied": 185,
+     "name": "공통계열 자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "os",
+   "schoolName": "오산대학교",
+   "region": "경기 남부",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 29,
+     "applied": 152,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 29,
+     "applied": 254,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 267,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "n04",
+   "schoolName": "경인여자대학교",
+   "region": "인천",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2024": {
+     "quota": 18,
+     "applied": 57,
+     "name": "자유전공학과"
+    },
+    "2025": {
+     "quota": 41,
+     "applied": 117,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 38,
+     "applied": 144,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 38,
+     "applied": 264,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "n06",
+   "schoolName": "국제대학교",
+   "region": "경기",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 24,
+     "applied": 81,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 20,
+     "applied": 147,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 21,
+     "applied": 109,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "n07",
+   "schoolName": "김포대학교",
+   "region": "경기",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 94,
+     "applied": 223,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 35,
+     "applied": 107,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "n12",
+   "schoolName": "배화여자대학교",
+   "region": "서울",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 12,
+     "applied": 81,
+     "name": "자유전공학과"
+    },
+    "2026": {
+     "quota": 18,
+     "applied": 180,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 18,
+     "applied": 171,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "n13",
+   "schoolName": "백석문화대학교",
+   "region": "충청",
+   "dept": "자율학부(인문사회)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 392,
+     "applied": 1073,
+     "name": "자율학부(예체능)(시각/실내건축/패션/토탈뷰티/리챠드프로헤어/뉴미디어영상/방송영상) · 자율학부(인문사회)(경찰행정/경찰경호/경영회계/호텔경영/사회복지) · 자율학부(자연과학)(보건의료행정/안경광학)"
+    },
+    "2026": {
+     "quota": 416,
+     "applied": 1481,
+     "name": "자율학부(공학) · 자율학부(예체능) · 자율학부(인문사회) · 자율학부(자연과학)"
+    },
+    "2027": {
+     "quota": 432,
+     "applied": 1605,
+     "name": "자율학부(공학) · 자율학부(예체능) · 자율학부(인문사회) · 자율학부(자연과학)"
+    }
+   }
+  },
+  {
+   "school": "n15",
+   "schoolName": "삼육보건대학교",
+   "region": "서울",
+   "dept": "자유전공과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 5,
+     "applied": 52,
+     "name": "자유전공과"
+    },
+    "2026": {
+     "quota": 5,
+     "applied": 98,
+     "name": "자유전공과"
+    },
+    "2027": {
+     "quota": 5,
+     "applied": 111,
+     "name": "자유전공과"
+    }
+   }
+  },
+  {
+   "school": "n18",
+   "schoolName": "수원여자대학교",
+   "region": "경기",
+   "dept": "자유전공학과(주)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 46,
+     "applied": 101,
+     "name": "자유전공학과(주)"
+    },
+    "2026": {
+     "quota": 33,
+     "applied": 90,
+     "name": "자유전공학과(주)"
+    },
+    "2027": {
+     "quota": 33,
+     "applied": 184,
+     "name": "자유전공학과(주)"
+    }
+   }
+  },
+  {
+   "school": "n19",
+   "schoolName": "숭의여자대학교",
+   "region": "서울",
+   "dept": "자유전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2026": {
+     "quota": 13,
+     "applied": 100,
+     "name": "자유전공학과"
+    },
+    "2027": {
+     "quota": 19,
+     "applied": 182,
+     "name": "자유전공학과"
+    }
+   }
+  },
+  {
+   "school": "n21",
+   "schoolName": "안산대학교",
+   "region": "경기",
+   "dept": "자율전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 20,
+     "applied": 110,
+     "name": "자율전공학과"
+    },
+    "2026": {
+     "quota": 20,
+     "applied": 224,
+     "name": "자율전공학과"
+    },
+    "2027": {
+     "quota": 16,
+     "applied": 207,
+     "name": "자율전공학과"
+    }
+   }
+  },
+  {
+   "school": "n27",
+   "schoolName": "장안대학교",
+   "region": "경기",
+   "dept": "자율학부 자유전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 15,
+     "applied": 20,
+     "name": "자유전공"
+    },
+    "2026": {
+     "quota": 50,
+     "applied": 165,
+     "name": "자유전공"
+    },
+    "2027": {
+     "quota": 55,
+     "applied": 253,
+     "name": "자율학부 자유전공"
+    }
+   }
+  },
+  {
+   "school": "n29",
+   "schoolName": "한국관광대학교",
+   "region": "경기",
+   "dept": "VISTA(자율전공)학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 71,
+     "applied": 139,
+     "name": "VISTA(자율전공)학과"
+    },
+    "2026": {
+     "quota": 25,
+     "applied": 287,
+     "name": "VISTA(자율전공)학과"
+    },
+    "2027": {
+     "quota": 25,
+     "applied": 133,
+     "name": "VISTA(자율전공)학과"
+    }
+   }
+  },
+  {
+   "school": "n30",
+   "schoolName": "한림성심대학교",
+   "region": "강원",
+   "dept": "자율전공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2026": {
+     "quota": 13,
+     "applied": 30,
+     "name": "자율전공학과"
+    },
+    "2027": {
+     "quota": 13,
+     "applied": 65,
+     "name": "자율전공학과"
+    }
+   }
+  },
+  {
+   "school": "u43",
+   "schoolName": "청강문화산업대학교",
+   "region": "경기",
+   "dept": "자율전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 15,
+     "applied": 137,
+     "name": "자율전공"
+    },
+    "2026": {
+     "quota": 15,
+     "applied": 230,
+     "name": "자율전공"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,370 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "연기예술과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 13,
+     "applied": 51,
+     "name": "공연예술과"
+    },
+    "2024": {
+     "quota": 25,
+     "applied": 37,
+     "name": "공연예술과"
+    },
+    "2025": {
+     "quota": 15,
+     "applied": 52,
+     "name": "연기예술과"
+    },
+    "2026": {
+     "quota": 15,
+     "applied": 37,
+     "name": "연기예술과"
+    },
+    "2027": {
+     "quota": 13,
+     "applied": 68,
+     "name": "연기예술과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "미디어영상과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 53,
+     "applied": 316,
+     "name": "영상콘텐츠과"
+    },
+    "2024": {
+     "quota": 51,
+     "applied": 238,
+     "name": "영상콘텐츠과"
+    },
+    "2025": {
+     "quota": 50,
+     "applied": 265,
+     "name": "미디어영상과"
+    },
+    "2026": {
+     "quota": 38,
+     "applied": 306,
+     "name": "미디어영상과"
+    },
+    "2027": {
+     "quota": 36,
+     "applied": 345,
+     "name": "미디어영상과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "실용음악과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 13,
+     "applied": 39,
+     "name": "실용음악과"
+    },
+    "2024": {
+     "quota": 15,
+     "applied": 38,
+     "name": "실용음악과"
+    },
+    "2025": {
+     "quota": 15,
+     "applied": 44,
+     "name": "실용음악과"
+    },
+    "2026": {
+     "quota": 15,
+     "applied": 56,
+     "name": "실용음악과"
+    },
+    "2027": {
+     "quota": 15,
+     "applied": 108,
+     "name": "실용음악과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "gb",
+   "schoolName": "경복대학교",
+   "region": "경기 북부",
+   "dept": "공연예술과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 12,
+     "applied": 47,
+     "name": "공연예술과"
+    },
+    "2024": {
+     "quota": 14,
+     "applied": 24,
+     "name": "공연예술과"
+    },
+    "2025": {
+     "quota": 12,
+     "applied": 45,
+     "name": "공연예술과"
+    },
+    "2026": {
+     "quota": 17,
+     "applied": 38,
+     "name": "공연예술과"
+    },
+    "2027": {
+     "quota": 18,
+     "applied": 51,
+     "name": "공연예술과"
+    }
+   }
+  },
+  {
+   "school": "yh",
+   "schoolName": "유한대학교",
+   "region": "경기 서부",
+   "dept": "방송연예전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 30,
+     "applied": 108,
+     "name": "방송연예전공"
+    },
+    "2026": {
+     "quota": 30,
+     "applied": 86,
+     "name": "방송연예전공"
+    },
+    "2027": {
+     "quota": 30,
+     "applied": 134,
+     "name": "방송연예전공"
+    }
+   }
+  },
+  {
+   "school": "ss",
+   "schoolName": "수원과학대학교",
+   "region": "경기 남부",
+   "dept": "연기영상과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 40,
+     "applied": 58,
+     "name": "연기영상과"
+    },
+    "2024": {
+     "quota": 48,
+     "applied": 36,
+     "name": "연기영상과"
+    },
+    "2025": {
+     "quota": 48,
+     "applied": 27,
+     "name": "연기영상과"
+    },
+    "2026": {
+     "quota": 24,
+     "applied": 27,
+     "name": "연기영상과"
+    },
+    "2027": {
+     "quota": 20,
+     "applied": 37,
+     "name": "연기영상과"
+    }
+   }
+  },
+  {
+   "school": "ds",
+   "schoolName": "동서울대학교",
+   "region": "경기 남부",
+   "dept": "연기예술학과 연극전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 15,
+     "applied": 517,
+     "name": "연기예술학과 연극전공"
+    },
+    "2024": {
+     "quota": 20,
+     "applied": 572,
+     "name": "연기예술학과 연극전공"
+    },
+    "2025": {
+     "quota": 30,
+     "applied": 664,
+     "name": "연기예술학과 연극전공"
+    },
+    "2026": {
+     "quota": 30,
+     "applied": 703,
+     "name": "연기예술학과 연극전공"
+    },
+    "2027": {
+     "quota": 25,
+     "applied": 833,
+     "name": "예술 연기예술학과 연극전공"
+    }
+   }
+  },
+  {
+   "school": "ds",
+   "schoolName": "동서울대학교",
+   "region": "경기 남부",
+   "dept": "연기예술학과 방송연예전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 15,
+     "applied": 298,
+     "name": "연기예술학과 방송연예전공"
+    },
+    "2024": {
+     "quota": 20,
+     "applied": 273,
+     "name": "연기예술학과 방송연예전공"
+    },
+    "2025": {
+     "quota": 15,
+     "applied": 260,
+     "name": "연기예술학과 방송연예전공"
+    },
+    "2026": {
+     "quota": 15,
+     "applied": 265,
+     "name": "연기예술학과 방송연예전공"
+    },
+    "2027": {
+     "quota": 15,
+     "applied": 285,
+     "name": "연기예술학과 방송연예전공"
+    }
+   }
+  },
+  {
+   "school": "ds",
+   "schoolName": "동서울대학교",
+   "region": "경기 남부",
+   "dept": "뮤지컬과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 15,
+     "applied": 134,
+     "name": "연기예술학과 뮤지컬전공"
+    },
+    "2024": {
+     "quota": 20,
+     "applied": 144,
+     "name": "연기예술학과 뮤지컬전공"
+    },
+    "2025": {
+     "quota": 15,
+     "applied": 171,
+     "name": "연기예술학과 뮤지컬전공"
+    },
+    "2026": {
+     "quota": 15,
+     "applied": 223,
+     "name": "연기예술학과 뮤지컬전공"
+    },
+    "2027": {
+     "quota": 15,
+     "applied": 238,
+     "name": "뮤지컬과"
+    }
+   }
+  },
+  {
+   "school": "os",
+   "schoolName": "오산대학교",
+   "region": "경기 남부",
+   "dept": "공연축제콘텐츠과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 28,
+     "applied": 96,
+     "name": "공연축제콘텐츠과"
+    },
+    "2024": {
+     "quota": 27,
+     "applied": 88,
+     "name": "공연축제콘텐츠과"
+    },
+    "2025": {
+     "quota": 28,
+     "applied": 113,
+     "name": "공연축제콘텐츠과"
+    },
+    "2026": {
+     "quota": 28,
+     "applied": 133,
+     "name": "공연축제콘텐츠과"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 165,
+     "name": "공연축제콘텐츠과 · 문화예술학부 공연축제콘텐츠과"
+    }
+   }
+  }
+ ]
+}

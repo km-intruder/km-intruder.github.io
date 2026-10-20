@@ -1,0 +1,340 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "태권도외교과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 33,
+     "applied": 144,
+     "name": "태권도외교과"
+    },
+    "2024": {
+     "quota": 58,
+     "applied": 218,
+     "name": "태권도외교과-겨루기 · 태권도외교과-시범 · 태권도외교과-태권댄스 · 태권도외교과-품새"
+    },
+    "2025": {
+     "quota": 69,
+     "applied": 263,
+     "name": "태권도외교과-겨루기 · 태권도외교과-시범 · 태권도외교과-자유품새 · 태권도외교과-태권댄스 · 태권도외교과-품새"
+    },
+    "2026": {
+     "quota": 80,
+     "applied": 289,
+     "name": "태권도외교과"
+    },
+    "2027": {
+     "quota": 80,
+     "applied": 203,
+     "name": "태권도외교과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "레포츠과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 38,
+     "applied": 107,
+     "name": "레포츠과"
+    },
+    "2024": {
+     "quota": 46,
+     "applied": 91,
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+    },
+    "2025": {
+     "quota": 26,
+     "applied": 77,
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+    },
+    "2026": {
+     "quota": 29,
+     "applied": 96,
+     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구"
+    },
+    "2027": {
+     "quota": 29,
+     "applied": 94,
+     "name": "레포츠과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "je",
+   "schoolName": "재능대학교",
+   "region": "인천",
+   "dept": "글로벌태권도학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 36,
+     "applied": 55,
+     "name": "글로벌태권도학과"
+    },
+    "2027": {
+     "quota": 36,
+     "applied": 53,
+     "name": "바이오·헬스케어학부 글로벌태권도학과"
+    }
+   }
+  },
+  {
+   "school": "sa",
+   "schoolName": "신안산대학교",
+   "region": "경기 서부",
+   "dept": "경호무도학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 25,
+     "applied": 84,
+     "name": "경호무도학과"
+    },
+    "2026": {
+     "quota": 23,
+     "applied": 177,
+     "name": "경호무도학과"
+    },
+    "2027": {
+     "quota": 25,
+     "applied": 233,
+     "name": "경호무도학과"
+    }
+   }
+  },
+  {
+   "school": "ds",
+   "schoolName": "동서울대학교",
+   "region": "경기 남부",
+   "dept": "경호스포츠과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 15,
+     "applied": 76,
+     "name": "경호스포츠과"
+    },
+    "2024": {
+     "quota": 17,
+     "applied": 70,
+     "name": "경호스포츠과"
+    },
+    "2025": {
+     "quota": 18,
+     "applied": 56,
+     "name": "경호스포츠과"
+    },
+    "2026": {
+     "quota": 18,
+     "applied": 77,
+     "name": "경호스포츠과"
+    },
+    "2027": {
+     "quota": 18,
+     "applied": 91,
+     "name": "경호스포츠과"
+    }
+   }
+  },
+  {
+   "school": "ys",
+   "schoolName": "연성대학교",
+   "region": "경기 남부",
+   "dept": "경찰경호보안과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 60,
+     "applied": 182,
+     "name": "경찰경호보안과"
+    },
+    "2024": {
+     "quota": 60,
+     "applied": 203,
+     "name": "경찰경호보안과"
+    },
+    "2025": {
+     "quota": 60,
+     "applied": 164,
+     "name": "경찰경호보안과"
+    },
+    "2026": {
+     "quota": 60,
+     "applied": 207,
+     "name": "경찰경호보안과"
+    },
+    "2027": {
+     "quota": 48,
+     "applied": 243,
+     "name": "경찰경호보안과"
+    }
+   }
+  },
+  {
+   "school": "n01",
+   "schoolName": "국제대학교",
+   "region": "경기",
+   "dept": "무도전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 46,
+     "applied": 51,
+     "name": "무도전공"
+    },
+    "2026": {
+     "quota": 47,
+     "applied": 69,
+     "name": "무도전공"
+    },
+    "2027": {
+     "quota": 47,
+     "applied": 42,
+     "name": "무도전공"
+    }
+   }
+  },
+  {
+   "school": "n01",
+   "schoolName": "국제대학교",
+   "region": "경기",
+   "dept": "태권도전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2026": {
+     "quota": 37,
+     "applied": 24,
+     "name": "태권도전공"
+    },
+    "2027": {
+     "quota": 37,
+     "applied": 17,
+     "name": "태권도전공"
+    }
+   }
+  },
+  {
+   "school": "n02",
+   "schoolName": "김포대학교",
+   "region": "경기",
+   "dept": "태권도융합과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 24,
+     "applied": 54,
+     "name": "태권도융합과(주)"
+    },
+    "2025": {
+     "quota": 24,
+     "applied": 54,
+     "name": "태권도융합과"
+    },
+    "2027": {
+     "quota": 25,
+     "applied": 73,
+     "name": "태권도융합과"
+    }
+   }
+  },
+  {
+   "school": "n02",
+   "schoolName": "김포대학교",
+   "region": "경기",
+   "dept": "무도경호과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 35,
+     "applied": 120,
+     "name": "무도경호과(주)"
+    },
+    "2025": {
+     "quota": 19,
+     "applied": 53,
+     "name": "무도경호과"
+    },
+    "2027": {
+     "quota": 30,
+     "applied": 56,
+     "name": "무도경호과"
+    }
+   }
+  },
+  {
+   "school": "u11",
+   "schoolName": "백석예술대학교",
+   "region": "서울",
+   "dept": "경찰경호학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 70,
+     "applied": 155,
+     "name": "경찰경호학부"
+    },
+    "2024": {
+     "quota": 76,
+     "applied": 142,
+     "name": "경찰경호학부"
+    },
+    "2025": {
+     "quota": 111,
+     "applied": 133,
+     "name": "경찰경호학부"
+    },
+    "2026": {
+     "quota": 86,
+     "applied": 168,
+     "name": "미래융합인재학부-경찰경호학과"
+    }
+   }
+  }
+ ]
+}

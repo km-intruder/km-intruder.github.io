@@ -65,6 +65,7 @@
         href: link('admissions-dashboard.html', { round: r === dept.rounds[0] ? '' : r.id }),
         label: r.label, active: page === 'admissions-dashboard.html' && r === round,
       })),
+      { href: link('trends.html'), label: '입시 추이', active: page === 'trends.html' },
       { href: link('competition-curriculum.html'), label: '교육과정 비교', active: page === 'competition-curriculum.html' },
       ...(dept.boards ? [{ href: link('industry.html'), label: '산업 현황', active: page === 'industry.html' }] : []),
     ];

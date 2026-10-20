@@ -1,0 +1,171 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "언어치료학과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 26,
+     "applied": 52,
+     "name": "언어치료학과"
+    },
+    "2027": {
+     "quota": 24,
+     "applied": 107,
+     "name": "언어치료학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "간호학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 92,
+     "applied": 695,
+     "name": "간호학과"
+    },
+    "2024": {
+     "quota": 94,
+     "applied": 1121,
+     "name": "간호학과"
+    },
+    "2025": {
+     "quota": 104,
+     "applied": 1353,
+     "name": "간호학과"
+    },
+    "2026": {
+     "quota": 130,
+     "applied": 1105,
+     "name": "간호학과"
+    },
+    "2027": {
+     "quota": 120,
+     "applied": 1376,
+     "name": "간호학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "보건의료행정과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 60,
+     "applied": 320,
+     "name": "보건의료행정과"
+    },
+    "2024": {
+     "quota": 60,
+     "applied": 270,
+     "name": "보건의료행정과"
+    },
+    "2025": {
+     "quota": 59,
+     "applied": 217,
+     "name": "보건의료행정과"
+    },
+    "2026": {
+     "quota": 50,
+     "applied": 253,
+     "name": "보건의료행정과"
+    },
+    "2027": {
+     "quota": 50,
+     "applied": 275,
+     "name": "보건의료행정과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "의료미용과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 26,
+     "applied": 91,
+     "name": "의료미용과"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 122,
+     "name": "의료미용과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "dl",
+   "schoolName": "대림대학교",
+   "region": "경기 남부",
+   "dept": "언어치료학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 46,
+     "applied": 85,
+     "name": "언어치료학과"
+    },
+    "2024": {
+     "quota": 46,
+     "applied": 80,
+     "name": "언어치료학과"
+    },
+    "2025": {
+     "quota": 46,
+     "applied": 190,
+     "name": "언어치료학과"
+    },
+    "2026": {
+     "quota": 46,
+     "applied": 203,
+     "name": "언어치료학과"
+    },
+    "2027": {
+     "quota": 46,
+     "applied": 230,
+     "name": "언어치료학과"
+    }
+   }
+  }
+ ]
+}

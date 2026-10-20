@@ -1,0 +1,390 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "소방안전관리과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 94,
+     "applied": 280,
+     "name": "소방안전관리과"
+    },
+    "2024": {
+     "quota": 80,
+     "applied": 268,
+     "name": "소방안전관리과"
+    },
+    "2025": {
+     "quota": 88,
+     "applied": 280,
+     "name": "소방안전관리과"
+    },
+    "2026": {
+     "quota": 90,
+     "applied": 406,
+     "name": "소방안전관리과"
+    },
+    "2027": {
+     "quota": 90,
+     "applied": 541,
+     "name": "소방안전관리과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "응급구조학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 33,
+     "applied": 231,
+     "name": "응급구조학과"
+    },
+    "2026": {
+     "quota": 32,
+     "applied": 388,
+     "name": "응급구조학과"
+    },
+    "2027": {
+     "quota": 32,
+     "applied": 469,
+     "name": "응급구조학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "dy",
+   "schoolName": "동양미래대학교",
+   "region": "서울",
+   "dept": "소방안전관리과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 48,
+     "applied": 370,
+     "name": "소방안전관리과"
+    },
+    "2024": {
+     "quota": 48,
+     "applied": 363,
+     "name": "소방안전관리과"
+    },
+    "2025": {
+     "quota": 48,
+     "applied": 468,
+     "name": "소방안전관리과"
+    },
+    "2026": {
+     "quota": 48,
+     "applied": 564,
+     "name": "소방안전관리과"
+    },
+    "2027": {
+     "quota": 48,
+     "applied": 600,
+     "name": "소방안전관리과"
+    }
+   }
+  },
+  {
+   "school": "gt",
+   "schoolName": "경기과학기술대학교",
+   "region": "경기 서부",
+   "dept": "건축소방안전학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 52,
+     "applied": 170,
+     "name": "건축소방안전학과"
+    },
+    "2025": {
+     "quota": 38,
+     "applied": 199,
+     "name": "건축소방안전학과"
+    },
+    "2026": {
+     "quota": 40,
+     "applied": 291,
+     "name": "건축소방안전학과"
+    },
+    "2027": {
+     "quota": 46,
+     "applied": 346,
+     "name": "건축소방안전학과"
+    }
+   }
+  },
+  {
+   "school": "yh",
+   "schoolName": "유한대학교",
+   "region": "경기 서부",
+   "dept": "소방설비안전전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 25,
+     "applied": 194,
+     "name": "소방설비안전전공"
+    },
+    "2026": {
+     "quota": 25,
+     "applied": 237,
+     "name": "소방설비안전전공"
+    },
+    "2027": {
+     "quota": 25,
+     "applied": 245,
+     "name": "소방설비안전전공"
+    }
+   }
+  },
+  {
+   "school": "ss",
+   "schoolName": "수원과학대학교",
+   "region": "경기 남부",
+   "dept": "소방안전설비과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 40,
+     "applied": 105,
+     "name": "소방안전설비공학과"
+    },
+    "2024": {
+     "quota": 39,
+     "applied": 86,
+     "name": "소방안전설비공학과"
+    },
+    "2025": {
+     "quota": 39,
+     "applied": 104,
+     "name": "소방안전설비공학과"
+    },
+    "2026": {
+     "quota": 39,
+     "applied": 152,
+     "name": "소방안전설비과"
+    },
+    "2027": {
+     "quota": 37,
+     "applied": 215,
+     "name": "소방안전설비과"
+    }
+   }
+  },
+  {
+   "school": "ss",
+   "schoolName": "수원과학대학교",
+   "region": "경기 남부",
+   "dept": "소방행정학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 32,
+     "applied": 80,
+     "name": "소방행정학과"
+    },
+    "2024": {
+     "quota": 31,
+     "applied": 47,
+     "name": "소방행정학과"
+    },
+    "2025": {
+     "quota": 31,
+     "applied": 53,
+     "name": "소방행정학과"
+    },
+    "2026": {
+     "quota": 31,
+     "applied": 82,
+     "name": "소방행정학과"
+    },
+    "2027": {
+     "quota": 25,
+     "applied": 134,
+     "name": "소방행정학과"
+    }
+   }
+  },
+  {
+   "school": "dl",
+   "schoolName": "대림대학교",
+   "region": "경기 남부",
+   "dept": "소방안전설비과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 90,
+     "applied": 253,
+     "name": "소방안전설비과"
+    },
+    "2024": {
+     "quota": 103,
+     "applied": 195,
+     "name": "소방안전설비과"
+    },
+    "2025": {
+     "quota": 101,
+     "applied": 216,
+     "name": "소방안전설비과"
+    },
+    "2026": {
+     "quota": 80,
+     "applied": 465,
+     "name": "소방안전설비과"
+    },
+    "2027": {
+     "quota": 80,
+     "applied": 526,
+     "name": "소방안전설비과"
+    }
+   }
+  },
+  {
+   "school": "sa",
+   "schoolName": "신안산대학교",
+   "region": "경기 서부",
+   "dept": "소방안전관리과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 19,
+     "applied": 144,
+     "name": "소방안전관리전공"
+    },
+    "2024": {
+     "quota": 19,
+     "applied": 69,
+     "name": "소방안전관리과"
+    },
+    "2025": {
+     "quota": 23,
+     "applied": 144,
+     "name": "소방안전관리과"
+    },
+    "2026": {
+     "quota": 20,
+     "applied": 257,
+     "name": "소방안전관리과"
+    },
+    "2027": {
+     "quota": 27,
+     "applied": 331,
+     "name": "소방안전관리과"
+    }
+   }
+  },
+  {
+   "school": "os",
+   "schoolName": "오산대학교",
+   "region": "경기 남부",
+   "dept": "소방안전관리과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 73,
+     "applied": 274,
+     "name": "소방안전관리과"
+    },
+    "2024": {
+     "quota": 73,
+     "applied": 275,
+     "name": "소방안전관리과"
+    },
+    "2025": {
+     "quota": 61,
+     "applied": 274,
+     "name": "소방안전관리과"
+    },
+    "2026": {
+     "quota": 56,
+     "applied": 365,
+     "name": "소방안전관리과"
+    },
+    "2027": {
+     "quota": 56,
+     "applied": 512,
+     "name": "소방안전관리과"
+    }
+   }
+  },
+  {
+   "school": "sj",
+   "schoolName": "서정대학교",
+   "region": "경기 북부",
+   "dept": "소방안전관리과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 35,
+     "applied": 89,
+     "name": "소방안전관리과"
+    },
+    "2024": {
+     "quota": 19,
+     "applied": 99,
+     "name": "소방안전관리과"
+    },
+    "2025": {
+     "quota": 20,
+     "applied": 111,
+     "name": "소방안전관리과"
+    },
+    "2026": {
+     "quota": 30,
+     "applied": 143,
+     "name": "소방안전관리과"
+    },
+    "2027": {
+     "quota": 32,
+     "applied": 107,
+     "name": "소방안전관리과"
+    }
+   }
+  }
+ ]
+}

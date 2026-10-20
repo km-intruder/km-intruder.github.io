@@ -1,0 +1,351 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "간호학과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 92,
+     "applied": 695,
+     "name": "간호학과"
+    },
+    "2024": {
+     "quota": 94,
+     "applied": 1121,
+     "name": "간호학과"
+    },
+    "2025": {
+     "quota": 104,
+     "applied": 1353,
+     "name": "간호학과"
+    },
+    "2026": {
+     "quota": 130,
+     "applied": 1105,
+     "name": "간호학과"
+    },
+    "2027": {
+     "quota": 120,
+     "applied": 1376,
+     "name": "간호학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "보건의료행정과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 60,
+     "applied": 320,
+     "name": "보건의료행정과"
+    },
+    "2024": {
+     "quota": 60,
+     "applied": 270,
+     "name": "보건의료행정과"
+    },
+    "2025": {
+     "quota": 59,
+     "applied": 217,
+     "name": "보건의료행정과"
+    },
+    "2026": {
+     "quota": 50,
+     "applied": 253,
+     "name": "보건의료행정과"
+    },
+    "2027": {
+     "quota": 50,
+     "applied": 275,
+     "name": "보건의료행정과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "언어치료학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 26,
+     "applied": 52,
+     "name": "언어치료학과"
+    },
+    "2027": {
+     "quota": 24,
+     "applied": 107,
+     "name": "언어치료학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "의료미용과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 26,
+     "applied": 91,
+     "name": "의료미용과"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 122,
+     "name": "의료미용과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "gb",
+   "schoolName": "경복대학교",
+   "region": "경기 북부",
+   "dept": "간호학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 203,
+     "applied": 1474,
+     "name": "간호학과"
+    },
+    "2024": {
+     "quota": 203,
+     "applied": 1611,
+     "name": "간호학과"
+    },
+    "2025": {
+     "quota": 203,
+     "applied": 2880,
+     "name": "간호학과"
+    },
+    "2026": {
+     "quota": 216,
+     "applied": 1533,
+     "name": "간호학과"
+    },
+    "2027": {
+     "quota": 216,
+     "applied": 3337,
+     "name": "간호학과"
+    }
+   }
+  },
+  {
+   "school": "si",
+   "schoolName": "서일대학교",
+   "region": "서울",
+   "dept": "간호학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 40,
+     "applied": 772,
+     "name": "간호학과"
+    },
+    "2024": {
+     "quota": 40,
+     "applied": 833,
+     "name": "간호학과"
+    },
+    "2025": {
+     "quota": 40,
+     "applied": 911,
+     "name": "간호학과"
+    },
+    "2026": {
+     "quota": 40,
+     "applied": 824,
+     "name": "간호학과"
+    },
+    "2027": {
+     "quota": 40,
+     "applied": 1048,
+     "name": "간호학과"
+    }
+   }
+  },
+  {
+   "school": "bc",
+   "schoolName": "부천대학교",
+   "region": "경기 서부",
+   "dept": "간호학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 36,
+     "applied": 734,
+     "name": "간호학과(주간)(4년제)"
+    },
+    "2024": {
+     "quota": 45,
+     "applied": 965,
+     "name": "간호학과(주간)(4년제)"
+    },
+    "2025": {
+     "quota": 45,
+     "applied": 922,
+     "name": "간호학과(주간)(4년제)"
+    },
+    "2026": {
+     "quota": 45,
+     "applied": 1021,
+     "name": "간호학과(4년제)"
+    },
+    "2027": {
+     "quota": 45,
+     "applied": 1121,
+     "name": "간호학과(4년제)"
+    }
+   }
+  },
+  {
+   "school": "ss",
+   "schoolName": "수원과학대학교",
+   "region": "경기 남부",
+   "dept": "간호학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 59,
+     "applied": 541,
+     "name": "간호학과"
+    },
+    "2024": {
+     "quota": 68,
+     "applied": 1210,
+     "name": "간호학과"
+    },
+    "2025": {
+     "quota": 81,
+     "applied": 911,
+     "name": "간호학과"
+    },
+    "2026": {
+     "quota": 83,
+     "applied": 1041,
+     "name": "간호학과"
+    },
+    "2027": {
+     "quota": 73,
+     "applied": 1559,
+     "name": "휴먼케어학부 간호학과"
+    }
+   }
+  },
+  {
+   "school": "je",
+   "schoolName": "재능대학교",
+   "region": "인천",
+   "dept": "간호학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 12,
+     "applied": 412,
+     "name": "간호학과"
+    },
+    "2024": {
+     "quota": 12,
+     "applied": 381,
+     "name": "간호학과"
+    },
+    "2025": {
+     "quota": 12,
+     "applied": 454,
+     "name": "간호학과"
+    },
+    "2026": {
+     "quota": 12,
+     "applied": 456,
+     "name": "간호학과"
+    },
+    "2027": {
+     "quota": 23,
+     "applied": 682,
+     "name": "바이오·헬스케어학부 간호학과"
+    }
+   }
+  },
+  {
+   "school": "sj",
+   "schoolName": "서정대학교",
+   "region": "경기 북부",
+   "dept": "간호학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 61,
+     "applied": 555,
+     "name": "간호학과(4년제)"
+    },
+    "2024": {
+     "quota": 80,
+     "applied": 611,
+     "name": "간호학과(4년제)"
+    },
+    "2025": {
+     "quota": 106,
+     "applied": 595,
+     "name": "간호학과(4년제)"
+    },
+    "2026": {
+     "quota": 121,
+     "applied": 792,
+     "name": "간호학과(4년제)"
+    },
+    "2027": {
+     "quota": 109,
+     "applied": 1536,
+     "name": "간호학과(4년제)"
+    }
+   }
+  }
+ ]
+}

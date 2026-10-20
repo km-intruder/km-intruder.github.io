@@ -1,0 +1,185 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "효충군사학과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 72,
+     "applied": 81,
+     "name": "효충사관과"
+    },
+    "2024": {
+     "quota": 45,
+     "applied": 59,
+     "name": "효충사관과"
+    },
+    "2025": {
+     "quota": 35,
+     "applied": 69,
+     "name": "효충군사학과"
+    },
+    "2026": {
+     "quota": 35,
+     "applied": 96,
+     "name": "효충군사학과"
+    },
+    "2027": {
+     "quota": 35,
+     "applied": 118,
+     "name": "효충군사학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "사이버·정보시스템학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 13,
+     "applied": 44,
+     "name": "사이버보안학과"
+    },
+    "2027": {
+     "quota": 15,
+     "applied": 68,
+     "name": "사이버·정보시스템학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "지능형소프트웨어과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 50,
+     "applied": 207,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2024": {
+     "quota": 45,
+     "applied": 132,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2025": {
+     "quota": 60,
+     "applied": 147,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2026": {
+     "quota": 35,
+     "applied": 133,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2027": {
+     "quota": 35,
+     "applied": 101,
+     "name": "지능형소프트웨어과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "gt",
+   "schoolName": "경기과학기술대학교",
+   "region": "경기 서부",
+   "dept": "국방군사학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 60,
+     "applied": 98,
+     "name": "군사학과"
+    },
+    "2024": {
+     "quota": 34,
+     "applied": 87,
+     "name": "군사학과"
+    },
+    "2025": {
+     "quota": 22,
+     "applied": 95,
+     "name": "군사학과"
+    },
+    "2026": {
+     "quota": 20,
+     "applied": 170,
+     "name": "국방군사학과"
+    },
+    "2027": {
+     "quota": 20,
+     "applied": 221,
+     "name": "국방군사학과"
+    }
+   }
+  },
+  {
+   "school": "ys",
+   "schoolName": "연성대학교",
+   "region": "경기 남부",
+   "dept": "국방군사학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 51,
+     "applied": 100,
+     "name": "군사학과"
+    },
+    "2024": {
+     "quota": 47,
+     "applied": 73,
+     "name": "군사학과"
+    },
+    "2025": {
+     "quota": 26,
+     "applied": 78,
+     "name": "국방군사학과"
+    },
+    "2026": {
+     "quota": 25,
+     "applied": 87,
+     "name": "국방군사학과"
+    },
+    "2027": {
+     "quota": 23,
+     "applied": 118,
+     "name": "국방군사학과"
+    }
+   }
+  }
+ ]
+}

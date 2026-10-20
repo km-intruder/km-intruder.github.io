@@ -1,0 +1,465 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "보건의료행정과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 60,
+     "applied": 320,
+     "name": "보건의료행정과"
+    },
+    "2024": {
+     "quota": 60,
+     "applied": 270,
+     "name": "보건의료행정과"
+    },
+    "2025": {
+     "quota": 59,
+     "applied": 217,
+     "name": "보건의료행정과"
+    },
+    "2026": {
+     "quota": 50,
+     "applied": 253,
+     "name": "보건의료행정과"
+    },
+    "2027": {
+     "quota": 50,
+     "applied": 275,
+     "name": "보건의료행정과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "간호학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 92,
+     "applied": 695,
+     "name": "간호학과"
+    },
+    "2024": {
+     "quota": 94,
+     "applied": 1121,
+     "name": "간호학과"
+    },
+    "2025": {
+     "quota": 104,
+     "applied": 1353,
+     "name": "간호학과"
+    },
+    "2026": {
+     "quota": 130,
+     "applied": 1105,
+     "name": "간호학과"
+    },
+    "2027": {
+     "quota": 120,
+     "applied": 1376,
+     "name": "간호학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "언어치료학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 26,
+     "applied": 52,
+     "name": "언어치료학과"
+    },
+    "2027": {
+     "quota": 24,
+     "applied": 107,
+     "name": "언어치료학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "의료미용과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 26,
+     "applied": 91,
+     "name": "의료미용과"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 122,
+     "name": "의료미용과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "bc",
+   "schoolName": "부천대학교",
+   "region": "경기 서부",
+   "dept": "보건의료행정학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 37,
+     "applied": 596,
+     "name": "보건의료행정학과(주간)(3년제)"
+    },
+    "2024": {
+     "quota": 37,
+     "applied": 342,
+     "name": "보건의료행정학과(주간)(3년제)"
+    },
+    "2025": {
+     "quota": 37,
+     "applied": 352,
+     "name": "보건의료행정학과(주간)(3년제)"
+    },
+    "2026": {
+     "quota": 37,
+     "applied": 322,
+     "name": "보건의료행정학과(3년제)"
+    },
+    "2027": {
+     "quota": 37,
+     "applied": 386,
+     "name": "보건의료행정학과(3년제)"
+    }
+   }
+  },
+  {
+   "school": "gt",
+   "schoolName": "경기과학기술대학교",
+   "region": "경기 서부",
+   "dept": "보건의료정보학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 47,
+     "applied": 335,
+     "name": "보건의료정보학과"
+    },
+    "2027": {
+     "quota": 47,
+     "applied": 402,
+     "name": "휴먼＆라이프 보건의료정보학과"
+    }
+   }
+  },
+  {
+   "school": "yh",
+   "schoolName": "유한대학교",
+   "region": "경기 서부",
+   "dept": "보건의료행정학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 68,
+     "applied": 425,
+     "name": "보건의료행정학과"
+    },
+    "2025": {
+     "quota": 60,
+     "applied": 336,
+     "name": "보건의료행정학과"
+    },
+    "2026": {
+     "quota": 59,
+     "applied": 382,
+     "name": "보건의료행정학과"
+    },
+    "2027": {
+     "quota": 59,
+     "applied": 440,
+     "name": "보건의료행정학과"
+    }
+   }
+  },
+  {
+   "school": "ss",
+   "schoolName": "수원과학대학교",
+   "region": "경기 남부",
+   "dept": "보건의료행정학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 38,
+     "applied": 240,
+     "name": "보건의료행정학과"
+    },
+    "2024": {
+     "quota": 48,
+     "applied": 166,
+     "name": "보건의료행정학과"
+    },
+    "2025": {
+     "quota": 48,
+     "applied": 167,
+     "name": "보건의료행정학과"
+    },
+    "2026": {
+     "quota": 48,
+     "applied": 225,
+     "name": "보건의료행정학과"
+    },
+    "2027": {
+     "quota": 36,
+     "applied": 351,
+     "name": "보건의료행정학과"
+    }
+   }
+  },
+  {
+   "school": "je",
+   "schoolName": "재능대학교",
+   "region": "인천",
+   "dept": "보건의료행정과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 45,
+     "applied": 290,
+     "name": "보건의료행정과"
+    },
+    "2024": {
+     "quota": 49,
+     "applied": 243,
+     "name": "보건의료행정과"
+    },
+    "2025": {
+     "quota": 49,
+     "applied": 198,
+     "name": "보건의료행정과"
+    },
+    "2026": {
+     "quota": 43,
+     "applied": 344,
+     "name": "보건의료행정과"
+    },
+    "2027": {
+     "quota": 43,
+     "applied": 414,
+     "name": "보건의료행정과"
+    }
+   }
+  },
+  {
+   "school": "ds",
+   "schoolName": "동서울대학교",
+   "region": "경기 남부",
+   "dept": "보건의료행정과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 36,
+     "applied": 342,
+     "name": "보건의료행정과"
+    },
+    "2024": {
+     "quota": 41,
+     "applied": 406,
+     "name": "보건의료행정과"
+    },
+    "2025": {
+     "quota": 41,
+     "applied": 370,
+     "name": "보건의료행정과"
+    },
+    "2026": {
+     "quota": 41,
+     "applied": 418,
+     "name": "보건의료행정과"
+    },
+    "2027": {
+     "quota": 37,
+     "applied": 504,
+     "name": "보건복지경영 보건의료행정과"
+    }
+   }
+  },
+  {
+   "school": "dl",
+   "schoolName": "대림대학교",
+   "region": "경기 남부",
+   "dept": "보건의료행정과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 58,
+     "applied": 208,
+     "name": "보건의료행정과"
+    },
+    "2024": {
+     "quota": 59,
+     "applied": 195,
+     "name": "보건의료행정과"
+    },
+    "2025": {
+     "quota": 53,
+     "applied": 489,
+     "name": "보건의료행정과"
+    },
+    "2026": {
+     "quota": 53,
+     "applied": 525,
+     "name": "보건의료행정과"
+    },
+    "2027": {
+     "quota": 53,
+     "applied": 547,
+     "name": "보건의료행정과"
+    }
+   }
+  },
+  {
+   "school": "mj",
+   "schoolName": "명지전문대학",
+   "region": "서울",
+   "dept": "보건의료정보과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 32,
+     "applied": 362,
+     "name": "보건의료정보과"
+    },
+    "2025": {
+     "quota": 32,
+     "applied": 469,
+     "name": "보건의료정보과"
+    },
+    "2026": {
+     "quota": 32,
+     "applied": 591,
+     "name": "보건의료정보과"
+    },
+    "2027": {
+     "quota": 32,
+     "applied": 554,
+     "name": "보건의료정보과"
+    }
+   }
+  },
+  {
+   "school": "sg",
+   "schoolName": "신구대학교",
+   "region": "경기 남부",
+   "dept": "보건의료행정학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 54,
+     "applied": 402,
+     "name": "보건의료행정학과"
+    },
+    "2025": {
+     "quota": 59,
+     "applied": 275,
+     "name": "보건의료행정학과"
+    },
+    "2026": {
+     "quota": 54,
+     "applied": 376,
+     "name": "보건의료행정학과"
+    },
+    "2027": {
+     "quota": 47,
+     "applied": 508,
+     "name": "보건의료학부 보건의료행정학과"
+    }
+   }
+  },
+  {
+   "school": "ys",
+   "schoolName": "연성대학교",
+   "region": "경기 남부",
+   "dept": "보건의료행정학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 57,
+     "applied": 548,
+     "name": "보건의료행정과"
+    },
+    "2024": {
+     "quota": 57,
+     "applied": 146,
+     "name": "보건의료행정과"
+    },
+    "2025": {
+     "quota": 51,
+     "applied": 386,
+     "name": "보건의료행정과"
+    },
+    "2026": {
+     "quota": 53,
+     "applied": 479,
+     "name": "보건의료행정과"
+    },
+    "2027": {
+     "quota": 48,
+     "applied": 451,
+     "name": "보건의료행정학과"
+    }
+   }
+  }
+ ]
+}

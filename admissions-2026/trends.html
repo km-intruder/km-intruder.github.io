@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<script src="/assets/gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>입시 추이</title>
+<meta name="description" content="경민대학교 학과 기준, 2023~2027학년도 수시 1차 학령인구·모집인원·지원자 추이와 비교 학교">
+<link rel="icon" href="../assets/logo-kyungmin.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="report.css?v=20261020">
+<style>
+  /* 비교 학교 선택 */
+  .picker { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 4px 16px; margin: 8px 0 4px; }
+  .picker label { display: flex; align-items: flex-start; gap: 7px; font-size: 13px; padding: 4px 0; cursor: pointer; line-height: 1.35; }
+  .picker label.off { color: var(--ink-3); cursor: not-allowed; }
+  .picker input { margin-top: 2px; }
+  .picker .sw { flex: none; width: 10px; height: 10px; border-radius: 50%; margin-top: 3px; background: transparent; border: 1px solid var(--rule); }
+  .picker small { color: var(--ink-3); display: block; }
+  .picker-group { font-size: 12px; font-weight: 700; color: var(--ink-2); margin-top: 12px; }
+  .seg { display: inline-flex; border: 1px solid var(--rule-strong); }
+  .seg button { font: inherit; font-size: 13px; padding: 5px 12px; background: var(--paper); border: 0; cursor: pointer; color: var(--ink); }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+  .chart-title { font-size: 15px; font-weight: 700; margin: 22px 0 4px; }
+  .chart-sub { font-size: 12px; color: var(--ink-3); margin-bottom: 8px; }
+  .chart .end { font-size: 12px; font-weight: 600; }
+  .chart .xhair { stroke: var(--ink-3); stroke-width: 1; }
+  .trend-table td.y { white-space: nowrap; }
+  .trend-table tr[data-key] { cursor: pointer; }
+  .trend-table tr.on td:first-child { box-shadow: inset 3px 0 0 var(--c, var(--brand)); }
+  .pop-stats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border: 1px solid var(--rule); margin-bottom: 12px; }
+  .pop-stats div { padding: 10px 12px; border-right: 1px solid var(--rule); }
+  .pop-stats div:last-child { border-right: 0; }
+  .pop-stats span { font-size: 12px; color: var(--ink-3); display: block; }
+  .pop-stats b { font-size: 18px; }
+  .pop-stats small { font-size: 12px; color: var(--ink-2); display: block; }
+  @media (max-width: 720px) { .pop-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="masthead">
+  <div class="title-row">
+    <div>
+      <h1><span data-dept="fieldLabel"></span> 입시 추이 <span class="muted">2023~2027학년도 수시 1차</span></h1>
+      <div class="meta">기준 학과: 경민대학교 <span data-dept="name"></span> · 비교 모집단위 <span id="unitCount"></span>개 · 모두 수시 1차 정원내 전형 합계</div>
+      <div class="meta" data-dept-intro hidden></div>
+    </div>
+    <div class="tools">
+      <span class="stamp" id="stamp"></span>
+      <button class="btn" type="button" onclick="window.print()">인쇄 · PDF</button>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs"></nav>
+  <script src="nav.js?v=20261020"></script>
+</header>
+
+<section class="block">
+  <div class="block-head"><span class="no">01</span><h2>학령인구 — 수능 재학생(고3) 지원자</h2></div>
+  <div class="pop-stats" id="popStats"></div>
+  <div id="chartPop" class="chart"></div>
+  <p class="muted" id="popNote" style="font-size:12px"></p>
+</section>
+
+<section class="block">
+  <div class="block-head"><span class="no">02</span><h2>비교할 학교 선택</h2><span class="aside" id="pickCount"></span></div>
+  <div class="filters" style="align-items:center">
+    <div class="seg" role="group" aria-label="값 보기">
+      <button type="button" data-mode="value" aria-pressed="true">실제 값</button>
+      <button type="button" data-mode="index" aria-pressed="false">첫 해 = 100 지수</button>
+    </div>
+    <button class="btn" type="button" id="pickTop">지원자 많은 비교 학교 5곳</button>
+    <button class="btn" type="button" id="pickNone">비교 학교 모두 해제</button>
+  </div>
+  <p class="muted" style="font-size:12px;margin:6px 0 0">경민대 기준 학과는 항상 표시됩니다. 비교 모집단위는 한 번에 7개까지 고를 수 있고, 고른 순서대로 색이 정해져 해제하기 전까지 바뀌지 않습니다. 지수 보기는 각 모집단위의 첫 해(대부분 2023)를 100으로 놓고, 학령인구 지수(점선)와 함께 봅니다.</p>
+  <div id="picker"></div>
+</section>
+
+<section class="block">
+  <div class="block-head"><span class="no">03</span><h2>추이 비교</h2></div>
+  <div class="chart-legend" id="legend"></div>
+  <div class="chart-title">지원자 수</div>
+  <div class="chart-sub" id="subApplied"></div>
+  <div id="chartApplied" class="chart"></div>
+  <div class="chart-title">모집인원 (수시 1차 정원내)</div>
+  <div class="chart-sub" id="subQuota"></div>
+  <div id="chartQuota" class="chart"></div>
+  <div class="chart-title">경쟁률</div>
+  <div class="chart-sub">지원자 ÷ 모집인원 (:1) · 지수 보기와 관계없이 실제 값</div>
+  <div id="chartRate" class="chart"></div>
+</section>
+
+<section class="block">
+  <div class="block-head"><span class="no">04</span><h2>모집단위별 연도 값</h2><span class="aside">행을 누르면 차트에 넣거나 뺍니다</span></div>
+  <div class="table-wrap">
+    <table class="trend-table">
+      <thead><tr><th>학교 · 모집단위</th><th>권역</th><th class="n">2023</th><th class="n">2024</th><th class="n">2025</th><th class="n">2026</th><th class="n">2027</th><th class="n">지원자 증감<br>첫 해 → 2027</th></tr></thead>
+      <tbody id="table"></tbody>
+    </table>
+  </div>
+  <details class="notes">
+    <summary>표 읽는 법 · 자료 기준</summary>
+    <p>칸마다 <b>지원자</b>와 아래에 모집인원·경쟁률을 적었습니다. 모든 해를 <b>수시 1차 정원내 전형 합계</b>(농어촌·기초수급·대졸자·재직자 등 정원외 전형 제외)로 묶어, 학과 비교 화면의 주 전형 경쟁률과는 값이 다를 수 있습니다.</p>
+    <p id="srcNote"></p>
+    <p>학과명이 바뀐 해는 칸에 마우스를 올리면 그해 원문 학과명이 보입니다. 경민대 학과는 입학처 학과명이 한 학과에서 다음 학과로 바로 이어진 경우만 이어 붙였습니다(예: 컴퓨터소프트웨어과 → 지능형소프트웨어과, 효충사관과 → 효충군사학과). 경쟁률을 공개하지 않은 해·학교는 빈칸입니다. 학교 공지·기사 등 비공식 자료로만 확인한 학교는 과거 값이 없어 이 화면에 넣지 않았습니다.</p>
+  </details>
+</section>
+
+<footer class="colophon">경민대학교 김광섭 · 교육용 참고 자료. 정확한 모집 기준은 각 대학 원문을 확인하세요.</footer>
+</div>
+
+<script src="common.js?v=20261020"></script>
+<script>
+const { esc, num, fx, pct } = Ratio;
+const el = id => document.getElementById(id);
+const YEARS = [2023, 2024, 2025, 2026, 2027];
+const BASE_COLOR = '#0b4f9c';   // 경민대 기준 학과 (사이트 대표색)
+// 비교 모집단위: 검증한 범주형 순서(데이터 시각화 기본 팔레트 2~8번). 고른 순서대로 빈 자리를 쓴다
+const SLOTS = ['#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#008300', '#6250d6', '#e34948'];
+const MAX = SLOTS.length;
+let T = null, POP = null, mode = 'value';
+const color = new Map();   // key → 색 (선택하는 동안 고정)
+
+const keyOf = u => u.school + '|' + u.dept;
+// 선 끝·범례용 짧은 학교 이름
+const SHORT = { '인하공업전문대학': '인하공전', '명지전문대학': '명지전문', '한국관광대학교': '한국관광' };
+const short = n => SHORT[n] || n.replace(/(대학교|대학)(\(.+\))?$/, '$2');
+const val = (u, y) => u.series[y];
+
+// ── 공통 선 그래프 ──
+const tip = document.createElement('div'); tip.className = 'viz-tip'; document.body.appendChild(tip);
+function lineChart(box, lines, { fmt, refLine, height = 280, yZero = true }) {
+  const W = Math.max(560, box.clientWidth), H = height, L = 56, R = 150, Tp = 14, B = 30;
+  const all = lines.flatMap(l => l.points.map(p => p.v)).concat(refLine ? refLine.points.map(p => p.v) : []).filter(v => v != null);
+  if (!all.length) { box.innerHTML = '<div class="empty">표시할 값이 없습니다.</div>'; return; }
+  let lo = yZero ? 0 : Math.min(...all), hi = Math.max(...all);
+  if (!yZero) { const pad = (hi - lo) * 0.15 || hi * 0.1; lo = Math.max(0, lo - pad); }
+  const step = niceStep((hi - lo) / 4); hi = Math.ceil(hi / step) * step; lo = Math.floor(lo / step) * step;
+  const X = y => L + (YEARS.indexOf(y)) / (YEARS.length - 1) * (W - L - R);
+  const Y = v => Tp + (hi - v) / (hi - lo || 1) * (H - Tp - B);
+  let g = '<g class="grid">';
+  for (let v = lo; v <= hi + 1e-9; v += step) g += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${fmt(v, true)}</text>`;
+  g += '</g>' + YEARS.map(y => `<text x="${X(y)}" y="${H - 8}" text-anchor="middle">${y}</text>`).join('');
+  const path = (pts) => {   // 빈 해에서 선을 끊는다
+    let d = '', on = false;
+    YEARS.forEach(y => { const p = pts.find(q => q.y === y); if (p && p.v != null) { d += `${on ? 'L' : 'M'}${X(y).toFixed(1)},${Y(p.v).toFixed(1)}`; on = true; } else on = false; });
+    return d;
+  };
+  if (refLine) g += `<path d="${path(refLine.points)}" fill="none" stroke="var(--ink-3)" stroke-width="2" stroke-dasharray="5 4"/>`;
+  // 기준(경민대)을 맨 위에 그린다
+  const order = [...lines].sort((a, b) => (a.base ? 1 : 0) - (b.base ? 1 : 0));
+  for (const l of order) {
+    g += `<path d="${path(l.points)}" fill="none" stroke="${l.color}" stroke-width="${l.base ? 3 : 2}" stroke-linejoin="round" stroke-linecap="round"/>`;
+    for (const p of l.points) if (p.v != null) g += `<circle cx="${X(p.y)}" cy="${Y(p.v)}" r="${l.base ? 4.5 : 4}" fill="${l.color}" stroke="var(--paper)" stroke-width="2"/>`;
+  }
+  // 선 끝 이름표: 마지막 값 위치, 겹치면 아래로 민다
+  const ends = [...lines, ...(refLine ? [refLine] : [])].map(l => { const p = [...l.points].reverse().find(q => q.v != null); return p && { l, p, y: Y(p.v) }; }).filter(Boolean).sort((a, b) => a.y - b.y);
+  let last = -Infinity;
+  for (const e of ends) { e.ly = Math.max(e.y, last + 14); last = e.ly; }
+  const over = last - (H - B); if (over > 0) ends.forEach(e => { e.ly -= over; });
+  for (const e of ends) {
+    const x = X(e.p.y) + 8;
+    g += `<text class="end" x="${x}" y="${e.ly + 4}" style="fill:var(--ink)">${esc(e.l.label)}</text>`;
+    g += `<rect x="${X(e.p.y) + 2}" y="${e.ly - 1}" width="4" height="2" fill="${e.l.color || 'var(--ink-3)'}"/>`;
+  }
+  // 해마다 세로 띠: 마우스를 올리면 그해 값 전체
+  YEARS.forEach((y, i) => {
+    const x0 = i ? (X(y) + X(YEARS[i - 1])) / 2 : L - 20, x1 = i < YEARS.length - 1 ? (X(y) + X(YEARS[i + 1])) / 2 : W - R + 20;
+    const rows = [...(refLine ? [refLine] : []), ...lines].map(l => ({ l, p: l.points.find(q => q.y === y) })).filter(r => r.p && r.p.v != null).sort((a, b) => b.p.v - a.p.v);
+    const html = `<b>${y}학년도</b><br>` + rows.map(r => `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${r.l.color || 'var(--ink-3)'};margin-right:5px"></span>${esc(r.l.label)} <b>${fmt(r.p.v)}</b>${r.p.note ? ` <span class="muted">${esc(r.p.note)}</span>` : ''}`).join('<br>');
+    g += `<g class="col" data-tip="${esc(html)}"><line class="xhair" x1="${X(y)}" x2="${X(y)}" y1="${Tp}" y2="${H - B}" visibility="hidden"/><rect class="hit" x="${x0}" y="0" width="${x1 - x0}" height="${H}"/></g>`;
+  });
+  box.innerHTML = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img">${g}</svg>`;
+  box.querySelectorAll('.col').forEach(c => {
+    const line = c.querySelector('.xhair');
+    c.addEventListener('mousemove', e => {
+      line.setAttribute('visibility', 'visible');
+      tip.innerHTML = c.dataset.tip; tip.style.display = 'block';
+      tip.style.left = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8) + 'px';
+      tip.style.top = Math.min(e.clientY + 14, innerHeight - tip.offsetHeight - 8) + 'px';
+    });
+    c.addEventListener('mouseleave', () => { line.setAttribute('visibility', 'hidden'); tip.style.display = 'none'; });
+  });
+}
+function niceStep(raw) {
+  const p = Math.pow(10, Math.floor(Math.log10(raw || 1))), n = raw / p;
+  return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10) * p;
+}
+
+// ── 01 학령인구 ──
+function renderPop() {
+  const v = y => POP.values[y]?.value;
+  el('popStats').innerHTML = YEARS.map((y, i) => {
+    const d = i ? (v(y) - v(YEARS[i - 1])) / v(YEARS[i - 1]) * 100 : null;
+    return `<div><span>${y}학년도</span><b>${num(v(y))}</b><small class="${d < 0 ? 'alert' : ''}">${d == null ? '기준' : '전년 ' + pct(d)}</small></div>`;
+  }).join('');
+  lineChart(el('chartPop'), [{ label: '고3 지원자', color: 'var(--ink-2)', points: YEARS.map(y => ({ y, v: v(y) })) }],
+    { fmt: (n, axis) => axis ? (n / 10000).toFixed(0) + '만' : num(Math.round(n)) + '명', height: 200, yZero: false });
+  el('popNote').innerHTML = esc(POP.note) + ' 출처: ' + YEARS.map(y => `<a href="${esc(POP.values[y].url)}" target="_blank" rel="noopener noreferrer">${y}</a> ${esc(POP.values[y].source)}`).join(' · ');
+}
+
+// ── 02 선택 ──
+const units = () => T.units;
+const base = () => T.units.find(u => u.isBase);
+function selected() { return T.units.filter(u => color.has(keyOf(u)) && !u.isBase); }
+function toggle(u, on) {
+  const k = keyOf(u);
+  if (u.isBase) return;
+  if (on === undefined) on = !color.has(k);
+  if (on && !color.has(k)) {
+    if (color.size >= MAX) return;
+    const used = new Set(color.values());
+    color.set(k, SLOTS.find(c => !used.has(c)));
+  } else if (!on) color.delete(k);
+  save(); renderPicker(); renderCharts(); renderTable();
+}
+function save() { try { localStorage.setItem('trends-pick-' + Admission.dept.id, JSON.stringify([...color.keys()])); } catch (e) {} }
+function load() {
+  try { const ks = JSON.parse(localStorage.getItem('trends-pick-' + Admission.dept.id) || 'null'); if (Array.isArray(ks)) return ks; } catch (e) {}
+  return null;
+}
+function topFive() {
+  color.clear();
+  const last = u => { const y = [...YEARS].reverse().find(y => u.series[y]); return y ? u.series[y].applied : 0; };
+  T.units.filter(u => !u.isBase && !u.isKm && Object.keys(u.series).length >= 3).sort((a, b) => last(b) - last(a)).slice(0, 5)
+    .forEach(u => color.set(keyOf(u), SLOTS[color.size]));
+}
+function renderPicker() {
+  const groups = [['경민대 같은 계열 학과', u => u.isKm && !u.isBase], ['수도권 비교 학교', u => !u.isKm && u.scope === '수도권'], ['전국 비교 학교 (공식 경쟁률 원문)', u => !u.isKm && u.scope === '전국']];
+  const b = base();
+  el('picker').innerHTML = `<div class="picker-group">기준</div><div class="picker"><label><input type="checkbox" checked disabled><i class="sw" style="background:${BASE_COLOR};border-color:${BASE_COLOR}"></i><span>경민대학교 ${esc(b.dept)}<small>${yearsText(b)}</small></span></label></div>`
+    + groups.map(([title, f]) => {
+      const us = T.units.filter(u => !u.isBase && f(u));
+      if (!us.length) return '';
+      return `<div class="picker-group">${title} (${us.length})</div><div class="picker">${us.map(u => {
+        const k = keyOf(u), on = color.has(k), off = !on && color.size >= MAX;
+        return `<label class="${off ? 'off' : ''}"><input type="checkbox" data-key="${esc(k)}" ${on ? 'checked' : ''} ${off ? 'disabled' : ''}><i class="sw" style="${on ? `background:${color.get(k)};border-color:${color.get(k)}` : ''}"></i><span>${esc(short(u.schoolName))} ${esc(u.dept)}<small>${esc(u.region)} · ${yearsText(u)}</small></span></label>`;
+      }).join('')}</div>`;
+    }).join('');
+  el('picker').querySelectorAll('input[data-key]').forEach(i => i.addEventListener('change', () => toggle(T.units.find(u => keyOf(u) === i.dataset.key), i.checked)));
+  el('pickCount').textContent = `비교 ${color.size} / ${MAX}개 선택`;
+}
+const yearsText = u => { const ys = YEARS.filter(y => u.series[y]); return ys.length === YEARS.length ? '2023~2027 모두' : ys.join('·') + (ys.length < 2 ? ' (한 해뿐)' : ''); };
+
+// ── 03 차트 ──
+function seriesFor(u, field) {
+  const ys = YEARS.filter(y => u.series[y]);
+  const first = ys.length ? u.series[ys[0]][field] : null;
+  return YEARS.map(y => {
+    const s = u.series[y];
+    if (!s) return { y, v: null };
+    const raw = field === 'rate' ? s.applied / s.quota : s[field];
+    const v = mode === 'index' && field !== 'rate' ? (first ? raw / first * 100 : null) : raw;
+    const renamed = s.name && s.name !== u.dept ? s.name : '';
+    return { y, v, note: (mode === 'index' && field !== 'rate' ? `(${num(raw)})` : '') + (renamed ? ' ' + renamed : '') };
+  });
+}
+function lineFor(u, field) {
+  return { label: u.isBase ? '경민대' : short(u.schoolName) + (dupSchool(u) ? ' ' + u.dept.slice(0, 6) : ''), color: u.isBase ? BASE_COLOR : color.get(keyOf(u)), base: u.isBase, points: seriesFor(u, field) };
+}
+const dupSchool = u => selected().concat(base()).filter(x => x.schoolName === u.schoolName).length > 1;
+function renderCharts() {
+  const shown = [base(), ...selected()];
+  el('legend').innerHTML = shown.map(u => `<span><i class="dot-sw" style="background:${u.isBase ? BASE_COLOR : color.get(keyOf(u))}"></i>${esc(u.isBase ? '경민대학교' : short(u.schoolName))} ${esc(u.dept)}</span>`).join('')
+    + (mode === 'index' ? '<span><i class="sw" style="background:none;border-top:2px dashed var(--ink-3);height:0;border-radius:0"></i>학령인구(고3 지원자) 지수</span>' : '');
+  const idx = mode === 'index';
+  const pop = idx ? { label: '학령인구', points: YEARS.map(y => ({ y, v: POP.values[y].value / POP.values[2023].value * 100, note: `(${num(POP.values[y].value)}명)` })) } : null;
+  const fmtN = (n, axis) => idx ? (axis ? n.toFixed(0) : n.toFixed(0)) : (axis ? num(n) : num(Math.round(n)) + '명');
+  lineChart(el('chartApplied'), shown.map(u => lineFor(u, 'applied')), { fmt: fmtN, refLine: pop, yZero: !idx });
+  lineChart(el('chartQuota'), shown.map(u => lineFor(u, 'quota')), { fmt: fmtN, refLine: pop, yZero: !idx });
+  lineChart(el('chartRate'), shown.map(u => lineFor(u, 'rate')), { fmt: (n, axis) => axis ? n.toFixed(0) : fx(n) + ':1' });
+  el('subApplied').textContent = idx ? '각 모집단위 첫 해 = 100 · 점선은 학령인구(2023 = 100)' : '수시 1차 정원내 전형 지원자 합계';
+  el('subQuota').textContent = idx ? '각 모집단위 첫 해 = 100 · 점선은 학령인구(2023 = 100)' : '수시 1차 정원내 전형 모집인원 합계';
+}
+
+// ── 04 표 ──
+function renderTable() {
+  const rows = [base(), ...T.units.filter(u => !u.isBase)];
+  el('table').innerHTML = rows.map(u => {
+    const k = keyOf(u), on = u.isBase || color.has(k), c = u.isBase ? BASE_COLOR : color.get(k);
+    const ys = YEARS.filter(y => u.series[y]);
+    const a0 = ys.length ? u.series[ys[0]].applied : null, a1 = u.series[2027]?.applied;
+    const ch = a0 && a1 != null && ys[0] !== 2027 ? (a1 - a0) / a0 * 100 : null;
+    return `<tr data-key="${esc(k)}" class="${on ? 'on' : ''} ${u.isBase ? 'base-row' : ''}" style="${c ? `--c:${c}` : ''}">
+      <td><b>${esc(u.schoolName)}</b><div class="dept">${esc(u.dept)}</div>${u.isKm && !u.isBase ? '<div class="muted">경민대 같은 계열</div>' : ''}</td>
+      <td class="muted">${esc(u.region)}${u.scope === '전국' ? '<div>전국 비교</div>' : ''}</td>
+      ${YEARS.map(y => { const s = u.series[y]; return s ? `<td class="n y" title="${esc(s.name || '')}${s.source ? ' · ' + esc(s.source) : ''}"><b>${num(s.applied)}</b><div class="muted">${num(s.quota)}명 · ${fx(s.applied / s.quota)}</div></td>` : '<td class="n muted">—</td>'; }).join('')}
+      <td class="n ${ch < 0 ? 'alert' : ''}">${ch == null ? '—' : `<b>${pct(ch)}</b><div class="muted">${ys[0]} 기준</div>`}</td></tr>`;
+  }).join('');
+  el('table').querySelectorAll('tr[data-key]').forEach(tr => tr.addEventListener('click', () => toggle(T.units.find(u => keyOf(u) === tr.dataset.key))));
+}
+
+document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+  mode = b.dataset.mode;
+  document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  renderCharts();
+}));
+el('pickTop').addEventListener('click', () => { topFive(); save(); renderPicker(); renderCharts(); renderTable(); });
+el('pickNone').addEventListener('click', () => { color.clear(); save(); renderPicker(); renderCharts(); renderTable(); });
+addEventListener('resize', () => { clearTimeout(window._rz); window._rz = setTimeout(() => { if (T) { renderPop(); renderCharts(); } }, 200); });
+
+(async () => {
+  try {
+    const [D, t, p] = await Promise.all([
+      Admission.loadDept(),
+      fetch(Admission.base + 'trends.json', { cache: 'no-store' }).then(r => { if (!r.ok) throw new Error('trends.json'); return r.json(); }),
+      fetch('school/population.json', { cache: 'no-store' }).then(r => r.json()),
+    ]);
+    T = t; POP = p;
+    Admission.fill(D);
+    document.title = D.name + ' 입시 추이';
+    el('unitCount').textContent = T.units.length - 1;
+    el('stamp').textContent = '자료 생성 ' + T.builtAt;
+    el('srcNote').textContent = `기준: ${T.basis}. 출처: ${T.sources.past}; ${T.sources.now}.`;
+    const saved = load();
+    if (saved) saved.forEach(k => { const u = T.units.find(x => keyOf(x) === k); if (u && !u.isBase && color.size < MAX) color.set(k, SLOTS[color.size]); });
+    else topFive();
+    renderPop(); renderPicker(); renderCharts(); renderTable();
+  } catch (e) {
+    el('stamp').innerHTML = '<span class="alert">추이 자료를 불러오지 못했습니다</span>';
+  }
+})();
+</script>
+</body>
+</html>

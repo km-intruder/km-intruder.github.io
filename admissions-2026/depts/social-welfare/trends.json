@@ -1,0 +1,674 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "사회복지과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 50,
+     "applied": 259,
+     "name": "사회복지과"
+    },
+    "2024": {
+     "quota": 43,
+     "applied": 228,
+     "name": "사회복지과"
+    },
+    "2025": {
+     "quota": 50,
+     "applied": 214,
+     "name": "사회복지과"
+    },
+    "2026": {
+     "quota": 42,
+     "applied": 254,
+     "name": "사회복지과"
+    },
+    "2027": {
+     "quota": 42,
+     "applied": 280,
+     "name": "사회복지과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "건축공간디자인학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 30,
+     "applied": 135,
+     "name": "건축공간디자인과"
+    },
+    "2024": {
+     "quota": 28,
+     "applied": 158,
+     "name": "건축공간디자인과"
+    },
+    "2025": {
+     "quota": 31,
+     "applied": 147,
+     "name": "건축공간디자인학과"
+    },
+    "2026": {
+     "quota": 27,
+     "applied": 181,
+     "name": "건축공간디자인학과"
+    },
+    "2027": {
+     "quota": 27,
+     "applied": 188,
+     "name": "건축공간디자인학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "유아교육학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 27,
+     "applied": 293,
+     "name": "유아교육과"
+    },
+    "2024": {
+     "quota": 27,
+     "applied": 146,
+     "name": "유아교육과"
+    },
+    "2025": {
+     "quota": 27,
+     "applied": 141,
+     "name": "유아교육학과"
+    },
+    "2026": {
+     "quota": 27,
+     "applied": 161,
+     "name": "유아교육학과"
+    },
+    "2027": {
+     "quota": 25,
+     "applied": 204,
+     "name": "유아교육학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "gb",
+   "schoolName": "경복대학교",
+   "region": "경기 북부",
+   "dept": "사회복지과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 50,
+     "applied": 251,
+     "name": "사회복지과"
+    },
+    "2026": {
+     "quota": 49,
+     "applied": 305,
+     "name": "사회복지과"
+    },
+    "2027": {
+     "quota": 41,
+     "applied": 312,
+     "name": "사회복지과"
+    }
+   }
+  },
+  {
+   "school": "si",
+   "schoolName": "서일대학교",
+   "region": "서울",
+   "dept": "사회복지학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 47,
+     "applied": 561,
+     "name": "사회복지학과"
+    },
+    "2024": {
+     "quota": 47,
+     "applied": 498,
+     "name": "사회복지학과"
+    },
+    "2025": {
+     "quota": 48,
+     "applied": 468,
+     "name": "사회복지학과"
+    },
+    "2026": {
+     "quota": 48,
+     "applied": 577,
+     "name": "사회복지학과"
+    },
+    "2027": {
+     "quota": 47,
+     "applied": 576,
+     "name": "사회복지학과"
+    }
+   }
+  },
+  {
+   "school": "id",
+   "schoolName": "인덕대학교",
+   "region": "서울",
+   "dept": "사회복지학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 39,
+     "applied": 432,
+     "name": "사회복지학과"
+    },
+    "2024": {
+     "quota": 44,
+     "applied": 404,
+     "name": "사회복지학과"
+    },
+    "2025": {
+     "quota": 44,
+     "applied": 457,
+     "name": "사회복지학과"
+    },
+    "2026": {
+     "quota": 44,
+     "applied": 526,
+     "name": "사회복지학과"
+    },
+    "2027": {
+     "quota": 44,
+     "applied": 532,
+     "name": "사회복지학과"
+    }
+   }
+  },
+  {
+   "school": "bc",
+   "schoolName": "부천대학교",
+   "region": "경기 서부",
+   "dept": "사회복지학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 57,
+     "applied": 273,
+     "name": "사회복지학과(주간)"
+    },
+    "2024": {
+     "quota": 57,
+     "applied": 292,
+     "name": "사회복지학과(주간)"
+    },
+    "2025": {
+     "quota": 51,
+     "applied": 272,
+     "name": "사회복지학과(주간)"
+    },
+    "2026": {
+     "quota": 50,
+     "applied": 584,
+     "name": "사회복지학과"
+    },
+    "2027": {
+     "quota": 51,
+     "applied": 482,
+     "name": "사회복지학과"
+    }
+   }
+  },
+  {
+   "school": "gt",
+   "schoolName": "경기과학기술대학교",
+   "region": "경기 서부",
+   "dept": "사회복지학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 45,
+     "applied": 203,
+     "name": "사회복지학과"
+    },
+    "2024": {
+     "quota": 47,
+     "applied": 173,
+     "name": "사회복지학과"
+    },
+    "2025": {
+     "quota": 43,
+     "applied": 182,
+     "name": "사회복지학과"
+    },
+    "2026": {
+     "quota": 40,
+     "applied": 231,
+     "name": "사회복지학과"
+    },
+    "2027": {
+     "quota": 40,
+     "applied": 327,
+     "name": "사회복지학과"
+    }
+   }
+  },
+  {
+   "school": "yh",
+   "schoolName": "유한대학교",
+   "region": "경기 서부",
+   "dept": "사회복지전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 48,
+     "applied": 355,
+     "name": "사회복지전공"
+    },
+    "2026": {
+     "quota": 48,
+     "applied": 309,
+     "name": "사회복지전공"
+    },
+    "2027": {
+     "quota": 48,
+     "applied": 415,
+     "name": "사회복지전공"
+    }
+   }
+  },
+  {
+   "school": "ss",
+   "schoolName": "수원과학대학교",
+   "region": "경기 남부",
+   "dept": "사회복지학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 47,
+     "applied": 157,
+     "name": "사회복지학과"
+    },
+    "2024": {
+     "quota": 72,
+     "applied": 123,
+     "name": "사회복지학과"
+    },
+    "2025": {
+     "quota": 64,
+     "applied": 121,
+     "name": "사회복지학과"
+    },
+    "2026": {
+     "quota": 41,
+     "applied": 176,
+     "name": "사회복지학과"
+    },
+    "2027": {
+     "quota": 40,
+     "applied": 265,
+     "name": "사회복지학과"
+    }
+   }
+  },
+  {
+   "school": "je",
+   "schoolName": "재능대학교",
+   "region": "인천",
+   "dept": "사회복지과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 38,
+     "applied": 190,
+     "name": "사회복지과"
+    },
+    "2024": {
+     "quota": 34,
+     "applied": 176,
+     "name": "사회복지과"
+    },
+    "2025": {
+     "quota": 35,
+     "applied": 183,
+     "name": "사회복지과"
+    },
+    "2026": {
+     "quota": 35,
+     "applied": 247,
+     "name": "사회복지과"
+    },
+    "2027": {
+     "quota": 35,
+     "applied": 316,
+     "name": "사회복지과"
+    }
+   }
+  },
+  {
+   "school": "ds",
+   "schoolName": "동서울대학교",
+   "region": "경기 남부",
+   "dept": "사회복지학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 54,
+     "applied": 179,
+     "name": "사회복지학과"
+    },
+    "2024": {
+     "quota": 61,
+     "applied": 176,
+     "name": "사회복지학과"
+    },
+    "2025": {
+     "quota": 55,
+     "applied": 322,
+     "name": "사회복지학과"
+    },
+    "2026": {
+     "quota": 42,
+     "applied": 473,
+     "name": "사회복지학과"
+    },
+    "2027": {
+     "quota": 36,
+     "applied": 496,
+     "name": "보건복지경영 사회복지학과 · 사회복지학과"
+    }
+   }
+  },
+  {
+   "school": "dl",
+   "schoolName": "대림대학교",
+   "region": "경기 남부",
+   "dept": "사회복지학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 52,
+     "applied": 223,
+     "name": "사회복지학과"
+    },
+    "2024": {
+     "quota": 54,
+     "applied": 193,
+     "name": "사회복지학과"
+    },
+    "2025": {
+     "quota": 54,
+     "applied": 214,
+     "name": "사회복지학과"
+    },
+    "2026": {
+     "quota": 54,
+     "applied": 454,
+     "name": "사회복지학과"
+    },
+    "2027": {
+     "quota": 54,
+     "applied": 476,
+     "name": "사회복지학과"
+    }
+   }
+  },
+  {
+   "school": "mj",
+   "schoolName": "명지전문대학",
+   "region": "서울",
+   "dept": "사회복지과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 77,
+     "applied": 501,
+     "name": "사회복지과"
+    },
+    "2025": {
+     "quota": 78,
+     "applied": 578,
+     "name": "사회복지과"
+    },
+    "2026": {
+     "quota": 78,
+     "applied": 680,
+     "name": "사회복지과"
+    },
+    "2027": {
+     "quota": 78,
+     "applied": 724,
+     "name": "사회복지과"
+    }
+   }
+  },
+  {
+   "school": "sg",
+   "schoolName": "신구대학교",
+   "region": "경기 남부",
+   "dept": "사회복지학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 50,
+     "applied": 309,
+     "name": "사회복지과"
+    },
+    "2025": {
+     "quota": 55,
+     "applied": 227,
+     "name": "사회복지학과"
+    },
+    "2026": {
+     "quota": 47,
+     "applied": 336,
+     "name": "사회복지학과"
+    },
+    "2027": {
+     "quota": 49,
+     "applied": 439,
+     "name": "사회복지학과"
+    }
+   }
+  },
+  {
+   "school": "ys",
+   "schoolName": "연성대학교",
+   "region": "경기 남부",
+   "dept": "사회복지과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 58,
+     "applied": 344,
+     "name": "사회복지과 사회복지전공"
+    },
+    "2024": {
+     "quota": 52,
+     "applied": 271,
+     "name": "사회복지과 사회복지전공"
+    },
+    "2025": {
+     "quota": 54,
+     "applied": 345,
+     "name": "사회복지과"
+    },
+    "2026": {
+     "quota": 49,
+     "applied": 377,
+     "name": "사회복지과"
+    },
+    "2027": {
+     "quota": 46,
+     "applied": 387,
+     "name": "사회복지과"
+    }
+   }
+  },
+  {
+   "school": "sa",
+   "schoolName": "신안산대학교",
+   "region": "경기 서부",
+   "dept": "사회복지학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 19,
+     "applied": 199,
+     "name": "사회복지학과"
+    },
+    "2024": {
+     "quota": 24,
+     "applied": 184,
+     "name": "사회복지학과"
+    },
+    "2025": {
+     "quota": 50,
+     "applied": 240,
+     "name": "사회복지학과"
+    },
+    "2026": {
+     "quota": 31,
+     "applied": 341,
+     "name": "사회복지학과"
+    },
+    "2027": {
+     "quota": 30,
+     "applied": 397,
+     "name": "사회복지학과"
+    }
+   }
+  },
+  {
+   "school": "os",
+   "schoolName": "오산대학교",
+   "region": "경기 남부",
+   "dept": "사회복지상담과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 57,
+     "applied": 346,
+     "name": "사회복지상담과"
+    },
+    "2024": {
+     "quota": 56,
+     "applied": 285,
+     "name": "사회복지상담과"
+    },
+    "2025": {
+     "quota": 56,
+     "applied": 273,
+     "name": "사회복지상담과"
+    },
+    "2026": {
+     "quota": 56,
+     "applied": 363,
+     "name": "사회복지상담과"
+    },
+    "2027": {
+     "quota": 59,
+     "applied": 467,
+     "name": "사회서비스학부 사회복지상담과"
+    }
+   }
+  },
+  {
+   "school": "sj",
+   "schoolName": "서정대학교",
+   "region": "경기 북부",
+   "dept": "사회복지학부",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 38,
+     "applied": 85,
+     "name": "사회복지과"
+    },
+    "2024": {
+     "quota": 20,
+     "applied": 95,
+     "name": "사회복지과"
+    },
+    "2025": {
+     "quota": 10,
+     "applied": 95,
+     "name": "사회복지과"
+    },
+    "2026": {
+     "quota": 29,
+     "applied": 128,
+     "name": "사회복지학부"
+    },
+    "2027": {
+     "quota": 29,
+     "applied": 187,
+     "name": "사회복지학부"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1558 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "지능형소프트웨어과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 50,
+     "applied": 207,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2024": {
+     "quota": 45,
+     "applied": 132,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2025": {
+     "quota": 60,
+     "applied": 147,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2026": {
+     "quota": 35,
+     "applied": 133,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2027": {
+     "quota": 35,
+     "applied": 101,
+     "name": "지능형소프트웨어과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "사이버·정보시스템학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 13,
+     "applied": 44,
+     "name": "사이버보안학과"
+    },
+    "2027": {
+     "quota": 15,
+     "applied": 68,
+     "name": "사이버·정보시스템학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "bc",
+   "schoolName": "부천대학교",
+   "region": "경기 서부",
+   "dept": "컴퓨터소프트웨어과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 45,
+     "applied": 575,
+     "name": "컴퓨터소프트웨어과(주간)(3년제)"
+    },
+    "2024": {
+     "quota": 45,
+     "applied": 426,
+     "name": "컴퓨터소프트웨어과(주간)(3년제)"
+    },
+    "2025": {
+     "quota": 45,
+     "applied": 355,
+     "name": "컴퓨터소프트웨어과(주간)(3년제)"
+    },
+    "2026": {
+     "quota": 45,
+     "applied": 303,
+     "name": "컴퓨터소프트웨어과(3년제)"
+    },
+    "2027": {
+     "quota": 45,
+     "applied": 338,
+     "name": "컴퓨터소프트웨어과(3년제)"
+    }
+   }
+  },
+  {
+   "school": "bc",
+   "schoolName": "부천대학교",
+   "region": "경기 서부",
+   "dept": "컴퓨터정보보안학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 20,
+     "applied": 165,
+     "name": "컴퓨터정보보안학과(주간)(3년제)"
+    },
+    "2024": {
+     "quota": 20,
+     "applied": 150,
+     "name": "컴퓨터정보보안학과(주간)(3년제)"
+    },
+    "2025": {
+     "quota": 20,
+     "applied": 139,
+     "name": "컴퓨터정보보안학과(주간)(3년제)"
+    },
+    "2026": {
+     "quota": 21,
+     "applied": 122,
+     "name": "컴퓨터정보보안학과(3년제)"
+    },
+    "2027": {
+     "quota": 21,
+     "applied": 168,
+     "name": "컴퓨터정보보안학과(3년제)"
+    }
+   }
+  },
+  {
+   "school": "dy",
+   "schoolName": "동양미래대학교",
+   "region": "서울",
+   "dept": "컴퓨터소프트웨어공학과(3년)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 72,
+     "applied": 647,
+     "name": "컴퓨터소프트웨어공학과(3년)"
+    },
+    "2024": {
+     "quota": 48,
+     "applied": 491,
+     "name": "컴퓨터소프트웨어공학과(3년)"
+    },
+    "2025": {
+     "quota": 48,
+     "applied": 401,
+     "name": "컴퓨터소프트웨어공학과(3년)"
+    },
+    "2026": {
+     "quota": 48,
+     "applied": 354,
+     "name": "컴퓨터소프트웨어공학과(3년)"
+    },
+    "2027": {
+     "quota": 48,
+     "applied": 296,
+     "name": "컴퓨터소프트웨어공학과(3년)"
+    }
+   }
+  },
+  {
+   "school": "dy",
+   "schoolName": "동양미래대학교",
+   "region": "서울",
+   "dept": "인공지능소프트웨어학과(3년)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 48,
+     "applied": 241,
+     "name": "인공지능소프트웨어학과(3년)"
+    },
+    "2024": {
+     "quota": 48,
+     "applied": 226,
+     "name": "인공지능소프트웨어학과(3년)"
+    },
+    "2025": {
+     "quota": 48,
+     "applied": 246,
+     "name": "인공지능소프트웨어학과(3년)"
+    },
+    "2026": {
+     "quota": 48,
+     "applied": 280,
+     "name": "인공지능소프트웨어학과(3년)"
+    },
+    "2027": {
+     "quota": 48,
+     "applied": 283,
+     "name": "인공지능소프트웨어학과(3년)"
+    }
+   }
+  },
+  {
+   "school": "dy",
+   "schoolName": "동양미래대학교",
+   "region": "서울",
+   "dept": "로봇소프트웨어과(3년)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 46,
+     "applied": 158,
+     "name": "로봇소프트웨어과(3년)"
+    },
+    "2026": {
+     "quota": 49,
+     "applied": 156,
+     "name": "로봇소프트웨어과(3년)"
+    },
+    "2027": {
+     "quota": 49,
+     "applied": 274,
+     "name": "로봇소프트웨어과(3년)"
+    }
+   }
+  },
+  {
+   "school": "dy",
+   "schoolName": "동양미래대학교",
+   "region": "서울",
+   "dept": "정보통신공학과(3년)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 74,
+     "applied": 302,
+     "name": "정보통신공학과(3년)"
+    },
+    "2024": {
+     "quota": 74,
+     "applied": 254,
+     "name": "정보통신공학과(3년)"
+    },
+    "2025": {
+     "quota": 68,
+     "applied": 277,
+     "name": "정보통신공학과(3년)"
+    },
+    "2026": {
+     "quota": 71,
+     "applied": 252,
+     "name": "정보통신공학과(3년)"
+    },
+    "2027": {
+     "quota": 71,
+     "applied": 276,
+     "name": "정보통신공학과(3년)"
+    }
+   }
+  },
+  {
+   "school": "si",
+   "schoolName": "서일대학교",
+   "region": "서울",
+   "dept": "소프트웨어공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 58,
+     "applied": 542,
+     "name": "소프트웨어공학과"
+    },
+    "2024": {
+     "quota": 58,
+     "applied": 455,
+     "name": "소프트웨어공학과"
+    },
+    "2025": {
+     "quota": 60,
+     "applied": 338,
+     "name": "소프트웨어공학과"
+    },
+    "2026": {
+     "quota": 39,
+     "applied": 322,
+     "name": "소프트웨어공학과"
+    },
+    "2027": {
+     "quota": 44,
+     "applied": 253,
+     "name": "소프트웨어공학과"
+    }
+   }
+  },
+  {
+   "school": "si",
+   "schoolName": "서일대학교",
+   "region": "서울",
+   "dept": "AI게임융합학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 46,
+     "applied": 326,
+     "name": "AI게임융합학과"
+    },
+    "2026": {
+     "quota": 62,
+     "applied": 345,
+     "name": "AI게임융합학과"
+    },
+    "2027": {
+     "quota": 66,
+     "applied": 358,
+     "name": "AI게임융합학과"
+    }
+   }
+  },
+  {
+   "school": "si",
+   "schoolName": "서일대학교",
+   "region": "서울",
+   "dept": "컴퓨터전자공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 58,
+     "applied": 404,
+     "name": "컴퓨터전자공학과"
+    },
+    "2027": {
+     "quota": 47,
+     "applied": 294,
+     "name": "컴퓨터전자공학과"
+    }
+   }
+  },
+  {
+   "school": "si",
+   "schoolName": "서일대학교",
+   "region": "서울",
+   "dept": "정보통신공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 53,
+     "applied": 349,
+     "name": "정보통신공학과"
+    },
+    "2024": {
+     "quota": 53,
+     "applied": 272,
+     "name": "정보통신공학과"
+    },
+    "2025": {
+     "quota": 54,
+     "applied": 196,
+     "name": "정보통신공학과"
+    },
+    "2026": {
+     "quota": 54,
+     "applied": 211,
+     "name": "정보통신공학과"
+    },
+    "2027": {
+     "quota": 63,
+     "applied": 301,
+     "name": "정보통신공학과"
+    }
+   }
+  },
+  {
+   "school": "id",
+   "schoolName": "인덕대학교",
+   "region": "서울",
+   "dept": "컴퓨터소프트웨어학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 45,
+     "applied": 455,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2024": {
+     "quota": 47,
+     "applied": 401,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2025": {
+     "quota": 47,
+     "applied": 352,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2026": {
+     "quota": 48,
+     "applied": 313,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2027": {
+     "quota": 48,
+     "applied": 379,
+     "name": "컴퓨터소프트웨어학과"
+    }
+   }
+  },
+  {
+   "school": "id",
+   "schoolName": "인덕대학교",
+   "region": "서울",
+   "dept": "컴퓨터전자공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 45,
+     "applied": 307,
+     "name": "컴퓨터전자공학과"
+    },
+    "2024": {
+     "quota": 45,
+     "applied": 246,
+     "name": "컴퓨터전자공학과"
+    },
+    "2025": {
+     "quota": 45,
+     "applied": 191,
+     "name": "컴퓨터전자공학과"
+    },
+    "2026": {
+     "quota": 45,
+     "applied": 213,
+     "name": "컴퓨터전자공학과"
+    },
+    "2027": {
+     "quota": 44,
+     "applied": 321,
+     "name": "컴퓨터전자공학과"
+    }
+   }
+  },
+  {
+   "school": "id",
+   "schoolName": "인덕대학교",
+   "region": "서울",
+   "dept": "지능형정보통신공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 44,
+     "applied": 249,
+     "name": "정보통신공학과"
+    },
+    "2024": {
+     "quota": 44,
+     "applied": 247,
+     "name": "정보통신공학과"
+    },
+    "2025": {
+     "quota": 44,
+     "applied": 170,
+     "name": "정보통신공학과"
+    },
+    "2026": {
+     "quota": 44,
+     "applied": 176,
+     "name": "정보통신공학과"
+    },
+    "2027": {
+     "quota": 42,
+     "applied": 231,
+     "name": "지능형정보통신공학과"
+    }
+   }
+  },
+  {
+   "school": "gt",
+   "schoolName": "경기과학기술대학교",
+   "region": "경기 서부",
+   "dept": "컴퓨터모바일융합과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 44,
+     "applied": 295,
+     "name": "컴퓨터모바일융합과"
+    },
+    "2024": {
+     "quota": 56,
+     "applied": 208,
+     "name": "컴퓨터모바일융합과"
+    },
+    "2025": {
+     "quota": 56,
+     "applied": 186,
+     "name": "컴퓨터모바일융합과"
+    },
+    "2026": {
+     "quota": 52,
+     "applied": 185,
+     "name": "컴퓨터모바일융합과"
+    },
+    "2027": {
+     "quota": 49,
+     "applied": 163,
+     "name": "ICT＆소프트웨어 컴퓨터모바일융합과"
+    }
+   }
+  },
+  {
+   "school": "gt",
+   "schoolName": "경기과학기술대학교",
+   "region": "경기 서부",
+   "dept": "인공지능학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 54,
+     "applied": 91,
+     "name": "인공지능학과"
+    },
+    "2024": {
+     "quota": 55,
+     "applied": 98,
+     "name": "인공지능학과"
+    },
+    "2025": {
+     "quota": 55,
+     "applied": 96,
+     "name": "인공지능학과"
+    },
+    "2026": {
+     "quota": 50,
+     "applied": 132,
+     "name": "인공지능학과"
+    },
+    "2027": {
+     "quota": 46,
+     "applied": 155,
+     "name": "ICT＆소프트웨어 인공지능학과 · 인공지능학과"
+    }
+   }
+  },
+  {
+   "school": "yh",
+   "schoolName": "유한대학교",
+   "region": "경기 서부",
+   "dept": "컴퓨터소프트웨어전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 57,
+     "applied": 376,
+     "name": "컴퓨터소프트웨어공학과"
+    },
+    "2025": {
+     "quota": 44,
+     "applied": 321,
+     "name": "컴퓨터소프트웨어전공"
+    },
+    "2026": {
+     "quota": 42,
+     "applied": 260,
+     "name": "컴퓨터소프트웨어전공"
+    },
+    "2027": {
+     "quota": 25,
+     "applied": 313,
+     "name": "컴퓨터소프트웨어전공"
+    }
+   }
+  },
+  {
+   "school": "yh",
+   "schoolName": "유한대학교",
+   "region": "경기 서부",
+   "dept": "인공지능전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 28,
+     "applied": 79,
+     "name": "인공지능학과"
+    },
+    "2025": {
+     "quota": 20,
+     "applied": 81,
+     "name": "인공지능전공"
+    },
+    "2026": {
+     "quota": 18,
+     "applied": 177,
+     "name": "인공지능전공"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 171,
+     "name": "인공지능전공"
+    }
+   }
+  },
+  {
+   "school": "ss",
+   "schoolName": "수원과학대학교",
+   "region": "경기 남부",
+   "dept": "컴퓨터소프트웨어과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2025": {
+     "quota": 56,
+     "applied": 111,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2026": {
+     "quota": 46,
+     "applied": 98,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2027": {
+     "quota": 42,
+     "applied": 123,
+     "name": "컴퓨터소프트웨어과"
+    }
+   }
+  },
+  {
+   "school": "ss",
+   "schoolName": "수원과학대학교",
+   "region": "경기 남부",
+   "dept": "컴퓨터게임과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2024": {
+     "quota": 31,
+     "applied": 112,
+     "name": "컴퓨터게임과"
+    },
+    "2025": {
+     "quota": 31,
+     "applied": 114,
+     "name": "컴퓨터게임과"
+    },
+    "2026": {
+     "quota": 31,
+     "applied": 138,
+     "name": "컴퓨터게임과"
+    },
+    "2027": {
+     "quota": 28,
+     "applied": 125,
+     "name": "컴퓨터게임과"
+    }
+   }
+  },
+  {
+   "school": "ih",
+   "schoolName": "인하공업전문대학",
+   "region": "인천",
+   "dept": "공간정보빅데이터학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 46,
+     "applied": 190,
+     "name": "공간정보빅데이터과"
+    },
+    "2024": {
+     "quota": 53,
+     "applied": 167,
+     "name": "공간정보빅데이터학과"
+    },
+    "2025": {
+     "quota": 56,
+     "applied": 215,
+     "name": "공간정보빅데이터학과"
+    },
+    "2026": {
+     "quota": 56,
+     "applied": 186,
+     "name": "공간정보빅데이터학과"
+    },
+    "2027": {
+     "quota": 57,
+     "applied": 304,
+     "name": "공간정보빅데이터학과"
+    }
+   }
+  },
+  {
+   "school": "je",
+   "schoolName": "재능대학교",
+   "region": "인천",
+   "dept": "컴퓨터소프트웨어학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2024": {
+     "quota": 38,
+     "applied": 153,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2025": {
+     "quota": 35,
+     "applied": 121,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2026": {
+     "quota": 32,
+     "applied": 108,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2027": {
+     "quota": 32,
+     "applied": 145,
+     "name": "AI융합학부 컴퓨터소프트웨어학과"
+    }
+   }
+  },
+  {
+   "school": "je",
+   "schoolName": "재능대학교",
+   "region": "인천",
+   "dept": "컴퓨터시스템과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 22,
+     "applied": 73,
+     "name": "AI학부 컴퓨터시스템전공"
+    },
+    "2024": {
+     "quota": 46,
+     "applied": 91,
+     "name": "컴퓨터시스템과"
+    },
+    "2025": {
+     "quota": 30,
+     "applied": 45,
+     "name": "컴퓨터시스템과"
+    },
+    "2026": {
+     "quota": 30,
+     "applied": 85,
+     "name": "컴퓨터시스템과"
+    },
+    "2027": {
+     "quota": 30,
+     "applied": 108,
+     "name": "컴퓨터시스템과"
+    }
+   }
+  },
+  {
+   "school": "ds",
+   "schoolName": "동서울대학교",
+   "region": "경기 남부",
+   "dept": "컴퓨터소프트웨어학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 85,
+     "applied": 506,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2024": {
+     "quota": 86,
+     "applied": 345,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2025": {
+     "quota": 79,
+     "applied": 250,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2026": {
+     "quota": 72,
+     "applied": 237,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2027": {
+     "quota": 45,
+     "applied": 216,
+     "name": "컴퓨터소프트웨어학과"
+    }
+   }
+  },
+  {
+   "school": "sg",
+   "schoolName": "신구대학교",
+   "region": "경기 남부",
+   "dept": "AI데이터전공",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 28,
+     "applied": 78,
+     "name": "AI데이터과"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 148,
+     "name": "AI데이터전공"
+    }
+   }
+  },
+  {
+   "school": "n03",
+   "schoolName": "경인여자대학교",
+   "region": "인천",
+   "dept": "컴퓨터소프트웨어학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2024": {
+     "quota": 23,
+     "applied": 38,
+     "name": "컴퓨터소프트웨어학과(3년제)"
+    },
+    "2026": {
+     "quota": 25,
+     "applied": 29,
+     "name": "컴퓨터소프트웨어학과"
+    },
+    "2027": {
+     "quota": 21,
+     "applied": 38,
+     "name": "컴퓨터소프트웨어학과"
+    }
+   }
+  },
+  {
+   "school": "dl",
+   "schoolName": "대림대학교",
+   "region": "경기",
+   "dept": "AI시스템과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 53,
+     "applied": 102,
+     "name": "AI시스템과"
+    },
+    "2024": {
+     "quota": 53,
+     "applied": 77,
+     "name": "AI시스템과"
+    },
+    "2025": {
+     "quota": 53,
+     "applied": 196,
+     "name": "AI시스템과"
+    },
+    "2026": {
+     "quota": 53,
+     "applied": 229,
+     "name": "AI시스템과"
+    },
+    "2027": {
+     "quota": 53,
+     "applied": 329,
+     "name": "AI시스템과"
+    }
+   }
+  },
+  {
+   "school": "ds",
+   "schoolName": "동서울대학교",
+   "region": "경기",
+   "dept": "사이버보안학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2024": {
+     "quota": 25,
+     "applied": 67,
+     "name": "IT융합학과 사이버보안전공"
+    },
+    "2025": {
+     "quota": 24,
+     "applied": 65,
+     "name": "IT융합학과 사이버보안전공"
+    },
+    "2026": {
+     "quota": 24,
+     "applied": 95,
+     "name": "IT융합학과 사이버보안전공"
+    },
+    "2027": {
+     "quota": 33,
+     "applied": 133,
+     "name": "사이버보안학과"
+    }
+   }
+  },
+  {
+   "school": "mj",
+   "schoolName": "명지전문대학",
+   "region": "서울",
+   "dept": "컴퓨터공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 63,
+     "applied": 456,
+     "name": "컴퓨터공학과"
+    },
+    "2025": {
+     "quota": 63,
+     "applied": 460,
+     "name": "컴퓨터공학과"
+    },
+    "2026": {
+     "quota": 63,
+     "applied": 404,
+     "name": "컴퓨터공학과"
+    },
+    "2027": {
+     "quota": 63,
+     "applied": 467,
+     "name": "컴퓨터공학과"
+    }
+   }
+  },
+  {
+   "school": "mj",
+   "schoolName": "명지전문대학",
+   "region": "서울",
+   "dept": "컴퓨터보안공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 42,
+     "applied": 209,
+     "name": "컴퓨터보안공학과"
+    },
+    "2026": {
+     "quota": 42,
+     "applied": 260,
+     "name": "컴퓨터보안공학과"
+    },
+    "2027": {
+     "quota": 42,
+     "applied": 240,
+     "name": "컴퓨터보안공학과"
+    }
+   }
+  },
+  {
+   "school": "mj",
+   "schoolName": "명지전문대학",
+   "region": "서울",
+   "dept": "정보통신공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 44,
+     "applied": 244,
+     "name": "정보통신공학과"
+    },
+    "2025": {
+     "quota": 44,
+     "applied": 166,
+     "name": "정보통신공학과"
+    },
+    "2026": {
+     "quota": 41,
+     "applied": 340,
+     "name": "정보통신공학과"
+    },
+    "2027": {
+     "quota": 41,
+     "applied": 245,
+     "name": "정보통신공학과"
+    }
+   }
+  },
+  {
+   "school": "n08",
+   "schoolName": "배화여자대학교",
+   "region": "서울",
+   "dept": "컴퓨터공학과(3년제)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 39,
+     "applied": 63,
+     "name": "컴퓨터공학과(3년제)"
+    },
+    "2026": {
+     "quota": 35,
+     "applied": 63,
+     "name": "컴퓨터공학과(3년제)"
+    },
+    "2027": {
+     "quota": 18,
+     "applied": 58,
+     "name": "컴퓨터공학과(3년제)"
+    }
+   }
+  },
+  {
+   "school": "n08",
+   "schoolName": "배화여자대학교",
+   "region": "서울",
+   "dept": "소프트웨어공학과(3년제)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 52,
+     "applied": 116,
+     "name": "소프트웨어공학과(3년제)"
+    },
+    "2024": {
+     "quota": 46,
+     "applied": 78,
+     "name": "소프트웨어공학과(3년제)"
+    },
+    "2025": {
+     "quota": 34,
+     "applied": 56,
+     "name": "소프트웨어공학과(3년제)"
+    },
+    "2026": {
+     "quota": 36,
+     "applied": 55,
+     "name": "소프트웨어공학과(3년제)"
+    },
+    "2027": {
+     "quota": 16,
+     "applied": 47,
+     "name": "소프트웨어공학과(3년제)"
+    }
+   }
+  },
+  {
+   "school": "bc",
+   "schoolName": "부천대학교",
+   "region": "경기",
+   "dept": "정보통신과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 58,
+     "applied": 269,
+     "name": "정보통신과(주간)"
+    },
+    "2024": {
+     "quota": 46,
+     "applied": 195,
+     "name": "정보통신과(주간)"
+    },
+    "2025": {
+     "quota": 46,
+     "applied": 210,
+     "name": "정보통신과(주간)"
+    },
+    "2026": {
+     "quota": 46,
+     "applied": 235,
+     "name": "정보통신과"
+    },
+    "2027": {
+     "quota": 46,
+     "applied": 277,
+     "name": "정보통신과"
+    }
+   }
+  },
+  {
+   "school": "bc",
+   "schoolName": "부천대학교",
+   "region": "경기",
+   "dept": "IT융합비즈니스학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 38,
+     "applied": 167,
+     "name": "IT융합비즈니스학과(주간)"
+    },
+    "2024": {
+     "quota": 38,
+     "applied": 172,
+     "name": "IT융합비즈니스학과(주간)"
+    },
+    "2025": {
+     "quota": 38,
+     "applied": 153,
+     "name": "IT융합비즈니스학과(주간)"
+    },
+    "2026": {
+     "quota": 38,
+     "applied": 158,
+     "name": "IT융합비즈니스학과"
+    },
+    "2027": {
+     "quota": 42,
+     "applied": 193,
+     "name": "IT융합비즈니스학과"
+    }
+   }
+  },
+  {
+   "school": "sa",
+   "schoolName": "신안산대학교",
+   "region": "경기",
+   "dept": "컴퓨터정보학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 25,
+     "applied": 86,
+     "name": "컴퓨터정보학과"
+    },
+    "2026": {
+     "quota": 28,
+     "applied": 106,
+     "name": "컴퓨터정보학과"
+    },
+    "2027": {
+     "quota": 27,
+     "applied": 150,
+     "name": "컴퓨터정보학과"
+    }
+   }
+  },
+  {
+   "school": "n15",
+   "schoolName": "안산대학교",
+   "region": "경기",
+   "dept": "컴퓨터정보학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 25,
+     "applied": 255,
+     "name": "컴퓨터정보학과"
+    },
+    "2024": {
+     "quota": 25,
+     "applied": 168,
+     "name": "컴퓨터정보학과"
+    },
+    "2025": {
+     "quota": 30,
+     "applied": 185,
+     "name": "컴퓨터정보학과"
+    },
+    "2026": {
+     "quota": 30,
+     "applied": 164,
+     "name": "컴퓨터정보학과"
+    },
+    "2027": {
+     "quota": 27,
+     "applied": 162,
+     "name": "컴퓨터정보학과"
+    }
+   }
+  },
+  {
+   "school": "n15",
+   "schoolName": "안산대학교",
+   "region": "경기",
+   "dept": "인공지능소프트웨어학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 25,
+     "applied": 115,
+     "name": "인공지능소프트웨어학과"
+    },
+    "2024": {
+     "quota": 25,
+     "applied": 116,
+     "name": "인공지능소프트웨어학과"
+    },
+    "2025": {
+     "quota": 24,
+     "applied": 110,
+     "name": "인공지능소프트웨어학과"
+    },
+    "2026": {
+     "quota": 17,
+     "applied": 130,
+     "name": "인공지능소프트웨어학과"
+    },
+    "2027": {
+     "quota": 17,
+     "applied": 160,
+     "name": "인공지능소프트웨어학과"
+    }
+   }
+  },
+  {
+   "school": "os",
+   "schoolName": "오산대학교",
+   "region": "경기",
+   "dept": "크리에이티브콘텐츠학부 컴퓨터소프트웨어과(3년제)",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 52,
+     "applied": 226,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2026": {
+     "quota": 52,
+     "applied": 200,
+     "name": "컴퓨터소프트웨어(3년제)"
+    },
+    "2027": {
+     "quota": 45,
+     "applied": 212,
+     "name": "크리에이티브콘텐츠학부 컴퓨터소프트웨어과(3년제)"
+    }
+   }
+  },
+  {
+   "school": "n18",
+   "schoolName": "울산과학대학교",
+   "region": "부산·울산·경남",
+   "dept": "컴퓨터공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 55,
+     "applied": 34,
+     "name": "컴퓨터공학과"
+    },
+    "2026": {
+     "quota": 54,
+     "applied": 36,
+     "name": "컴퓨터공학과"
+    },
+    "2027": {
+     "quota": 54,
+     "applied": 38,
+     "name": "컴퓨터공학과"
+    }
+   }
+  },
+  {
+   "school": "ih",
+   "schoolName": "인하공업전문대학",
+   "region": "인천",
+   "dept": "정보통신공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 72,
+     "applied": 452,
+     "name": "정보통신공학과"
+    },
+    "2024": {
+     "quota": 84,
+     "applied": 290,
+     "name": "정보통신공학과"
+    },
+    "2025": {
+     "quota": 84,
+     "applied": 280,
+     "name": "정보통신공학과"
+    },
+    "2026": {
+     "quota": 84,
+     "applied": 300,
+     "name": "정보통신공학과"
+    },
+    "2027": {
+     "quota": 63,
+     "applied": 420,
+     "name": "정보통신공학과"
+    }
+   }
+  },
+  {
+   "school": "n22",
+   "schoolName": "장안대학교",
+   "region": "경기",
+   "dept": "AI컴퓨팅학부 컴퓨터공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2025": {
+     "quota": 18,
+     "applied": 43,
+     "name": "컴퓨터공학과(3년제)"
+    },
+    "2026": {
+     "quota": 24,
+     "applied": 119,
+     "name": "컴퓨터공학과"
+    },
+    "2027": {
+     "quota": 24,
+     "applied": 131,
+     "name": "AI컴퓨팅학부 컴퓨터공학과"
+    }
+   }
+  },
+  {
+   "school": "n22",
+   "schoolName": "장안대학교",
+   "region": "경기",
+   "dept": "AI융합과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2026": {
+     "quota": 20,
+     "applied": 45,
+     "name": "AI융합과"
+    },
+    "2027": {
+     "quota": 20,
+     "applied": 82,
+     "name": "AI융합과"
+    }
+   }
+  },
+  {
+   "school": "n24",
+   "schoolName": "한양여자대학교",
+   "region": "서울",
+   "dept": "공학 소프트웨어융합과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 50,
+     "applied": 259,
+     "name": "소프트웨어융합과"
+    },
+    "2024": {
+     "quota": 55,
+     "applied": 209,
+     "name": "소프트웨어융합과"
+    },
+    "2025": {
+     "quota": 50,
+     "applied": 178,
+     "name": "소프트웨어융합과"
+    },
+    "2026": {
+     "quota": 50,
+     "applied": 157,
+     "name": "소프트웨어융합과"
+    },
+    "2027": {
+     "quota": 50,
+     "applied": 218,
+     "name": "공학 소프트웨어융합과"
+    }
+   }
+  },
+  {
+   "school": "n24",
+   "schoolName": "한양여자대학교",
+   "region": "서울",
+   "dept": "IT콘텐츠융합과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2026": {
+     "quota": 55,
+     "applied": 206,
+     "name": "IT콘텐츠융합과"
+    },
+    "2027": {
+     "quota": 56,
+     "applied": 275,
+     "name": "IT콘텐츠융합과"
+    }
+   }
+  },
+  {
+   "school": "n24",
+   "schoolName": "한양여자대학교",
+   "region": "서울",
+   "dept": "빅데이터과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 49,
+     "applied": 197,
+     "name": "빅데이터과"
+    },
+    "2024": {
+     "quota": 52,
+     "applied": 169,
+     "name": "빅데이터과"
+    },
+    "2025": {
+     "quota": 57,
+     "applied": 169,
+     "name": "빅데이터과"
+    },
+    "2026": {
+     "quota": 58,
+     "applied": 174,
+     "name": "빅데이터과"
+    },
+    "2027": {
+     "quota": 58,
+     "applied": 270,
+     "name": "빅데이터과"
+    }
+   }
+  },
+  {
+   "school": "n24",
+   "schoolName": "한양여자대학교",
+   "region": "서울",
+   "dept": "AI융합과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 20,
+     "applied": 73,
+     "name": "AI융합과"
+    },
+    "2024": {
+     "quota": 20,
+     "applied": 111,
+     "name": "AI융합과"
+    },
+    "2025": {
+     "quota": 20,
+     "applied": 62,
+     "name": "AI융합과"
+    },
+    "2026": {
+     "quota": 52,
+     "applied": 159,
+     "name": "AI융합과"
+    },
+    "2027": {
+     "quota": 48,
+     "applied": 226,
+     "name": "AI융합과"
+    }
+   }
+  },
+  {
+   "school": "u33",
+   "schoolName": "충남도립대학교",
+   "region": "충청",
+   "dept": "컴퓨터공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "전국",
+   "series": {
+    "2023": {
+     "quota": 28,
+     "applied": 49,
+     "name": "컴퓨터공학과"
+    },
+    "2026": {
+     "quota": 23,
+     "applied": 50,
+     "name": "컴퓨터공학과"
+    }
+   }
+  }
+ ]
+}

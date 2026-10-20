@@ -1,0 +1,280 @@
+{
+ "years": [
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "builtAt": "2026-10-20",
+ "basis": "수시 1차 정원내 전형 합계 (농어촌·기초수급·대졸자·재직자 등 정원외 제외)",
+ "sources": {
+  "past": "진학사 스마트경쟁률 과거 경쟁률(2023~2026학년도 수시 1차)",
+  "now": "2027: 경민대 학교 집계, 다른 학교 경쟁률 원문(진학어플라이·유웨이어플라이·학교 입학처)"
+ },
+ "units": [
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "국방드론봇시스템과",
+   "isBase": true,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2027": {
+     "quota": 25,
+     "applied": 124,
+     "name": "국방드론봇시스템과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "사이버·정보시스템학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 13,
+     "applied": 44,
+     "name": "사이버보안학과"
+    },
+    "2027": {
+     "quota": 15,
+     "applied": 68,
+     "name": "사이버·정보시스템학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "지능형소프트웨어과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 50,
+     "applied": 207,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2024": {
+     "quota": 45,
+     "applied": 132,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2025": {
+     "quota": 60,
+     "applied": 147,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2026": {
+     "quota": 35,
+     "applied": 133,
+     "name": "컴퓨터소프트웨어과"
+    },
+    "2027": {
+     "quota": 35,
+     "applied": 101,
+     "name": "지능형소프트웨어과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "km",
+   "schoolName": "경민대학교",
+   "region": "경기 북부",
+   "dept": "효충군사학과",
+   "isBase": false,
+   "isKm": true,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 72,
+     "applied": 81,
+     "name": "효충사관과"
+    },
+    "2024": {
+     "quota": 45,
+     "applied": 59,
+     "name": "효충사관과"
+    },
+    "2025": {
+     "quota": 35,
+     "applied": 69,
+     "name": "효충군사학과"
+    },
+    "2026": {
+     "quota": 35,
+     "applied": 96,
+     "name": "효충군사학과"
+    },
+    "2027": {
+     "quota": 35,
+     "applied": 118,
+     "name": "효충군사학과",
+     "source": "학교 집계"
+    }
+   }
+  },
+  {
+   "school": "gb",
+   "schoolName": "경복대학교",
+   "region": "경기 북부",
+   "dept": "드론건설환경과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 25,
+     "applied": 75,
+     "name": "드론건설환경과"
+    },
+    "2024": {
+     "quota": 25,
+     "applied": 68,
+     "name": "드론건설환경과"
+    },
+    "2025": {
+     "quota": 26,
+     "applied": 89,
+     "name": "드론건설환경과"
+    },
+    "2026": {
+     "quota": 23,
+     "applied": 102,
+     "name": "드론건설환경과"
+    },
+    "2027": {
+     "quota": 24,
+     "applied": 141,
+     "name": "드론건설환경과"
+    }
+   }
+  },
+  {
+   "school": "ih",
+   "schoolName": "인하공업전문대학",
+   "region": "인천",
+   "dept": "로봇자동화공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2026": {
+     "quota": 56,
+     "applied": 208,
+     "name": "로봇자동화공학과"
+    },
+    "2027": {
+     "quota": 59,
+     "applied": 349,
+     "name": "로봇자동화공학과"
+    }
+   }
+  },
+  {
+   "school": "je",
+   "schoolName": "재능대학교",
+   "region": "인천",
+   "dept": "드론영상과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 17,
+     "applied": 68,
+     "name": "AI학부 드론영상전공"
+    },
+    "2024": {
+     "quota": 22,
+     "applied": 105,
+     "name": "드론영상과"
+    },
+    "2025": {
+     "quota": 26,
+     "applied": 112,
+     "name": "드론영상과"
+    },
+    "2026": {
+     "quota": 26,
+     "applied": 126,
+     "name": "드론영상과"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 181,
+     "name": "AI융합학부 드론영상과 · 드론영상과"
+    }
+   }
+  },
+  {
+   "school": "mj",
+   "schoolName": "명지전문대학",
+   "region": "서울",
+   "dept": "AI드론공학과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2023": {
+     "quota": 14,
+     "applied": 10,
+     "name": "드론공학과"
+    },
+    "2026": {
+     "quota": 73,
+     "applied": 1703,
+     "name": "문예창작과-운문 외 1개 학과 · 실용음악과-가창 외 4개 학과"
+    },
+    "2027": {
+     "quota": 36,
+     "applied": 315,
+     "name": "AI드론공학과"
+    }
+   }
+  },
+  {
+   "school": "os",
+   "schoolName": "오산대학교",
+   "region": "경기 남부",
+   "dept": "전투드론과",
+   "isBase": false,
+   "isKm": false,
+   "scope": "수도권",
+   "series": {
+    "2024": {
+     "quota": 26,
+     "applied": 117,
+     "name": "전투드론과"
+    },
+    "2025": {
+     "quota": 26,
+     "applied": 110,
+     "name": "전투드론과"
+    },
+    "2026": {
+     "quota": 26,
+     "applied": 178,
+     "name": "전투드론과"
+    },
+    "2027": {
+     "quota": 26,
+     "applied": 170,
+     "name": "군사학부 전투드론과"
+    }
+   }
+  }
+ ]
+}
