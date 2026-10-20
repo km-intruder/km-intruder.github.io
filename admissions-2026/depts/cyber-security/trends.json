@@ -26,10 +26,11 @@
    "series": {
     "2026": {
      "quota": 13,
-     "applied": 44,
+     "applied": 45,
      "name": "사이버보안학과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 3.38
+     "mainRate": 3.5
     },
     "2027": {
      "quota": 15,
@@ -51,32 +52,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
-     "quota": 50,
-     "applied": 207,
      "name": "컴퓨터소프트웨어과",
+     "unofficial": true,
+     "tracks": "학과 모집 50명 · 특성화고 3.4 · 일반고 4.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 4.46
+     "mainRate": 4.5,
+     "quota": 50,
+     "applied": 211,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 37×4.5, 특성화고 13×3.4 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 45,
-     "applied": 132,
      "name": "컴퓨터소프트웨어과",
+     "unofficial": true,
+     "tracks": "학과 모집 45명 · 특성화고 3.3 · 일반고 3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 2.86
+     "mainRate": 3.0,
+     "quota": 45,
+     "applied": 138,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 35×3, 특성화고 10×3.3 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 60,
-     "applied": 147,
      "name": "컴퓨터소프트웨어과",
+     "unofficial": true,
+     "tracks": "학과 모집 60명 · 일반전형 2.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 2.45
+     "mainRate": 2.5,
+     "quota": 60,
+     "applied": 150,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 60×2.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 35,
-     "applied": 133,
+     "applied": 136,
      "name": "컴퓨터소프트웨어과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 3.8
+     "mainRate": 3.9
     },
     "2027": {
      "quota": 35,
@@ -98,32 +139,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
-     "quota": 72,
-     "applied": 81,
      "name": "효충사관과",
+     "unofficial": true,
+     "tracks": "학과 모집 72명 · 특성화고 1 · 일반고 1.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 1.2
+     "mainRate": 1.2,
+     "quota": 72,
+     "applied": 82,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 50×1.2, 특성화고 22×1 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 45,
-     "applied": 59,
      "name": "효충사관과",
+     "unofficial": true,
+     "tracks": "학과 모집 45명 · 일반전형 1.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 1.31
+     "mainRate": 1.4,
+     "quota": 45,
+     "applied": 63,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 45×1.4 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 35,
-     "applied": 69,
      "name": "효충군사학과",
+     "unofficial": true,
+     "tracks": "학과 모집 35명 · 일반전형 2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 1.97
+     "mainRate": 2.0,
+     "quota": 35,
+     "applied": 70,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 35×2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 35,
-     "applied": 96,
+     "applied": 98,
      "name": "효충군사학과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 2.74
+     "mainRate": 2.8
     },
     "2027": {
      "quota": 35,

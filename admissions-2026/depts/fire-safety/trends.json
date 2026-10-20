@@ -25,32 +25,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
-     "quota": 94,
-     "applied": 280,
      "name": "소방안전관리과",
+     "unofficial": true,
+     "tracks": "학과 모집 94명 · 일반전형 3.5 · 대학자체 0.9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 3.47
+     "mainRate": 3.5,
+     "quota": 94,
+     "applied": 282,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 76×3.5, 대학자체기준 18×0.9 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 80,
-     "applied": 268,
      "name": "소방안전관리과",
+     "unofficial": true,
+     "tracks": "학과 모집 80명 · 일반전형 4.2 · 대학자체 0.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 4.06
+     "mainRate": 4.2,
+     "quota": 80,
+     "applied": 277,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 64×4.2, 대학자체기준 16×0.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
+     "name": "소방안전관리과",
+     "unofficial": true,
+     "tracks": "학과 모집 88명 · 일반전형 3.8 · 대학자체 0.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.8,
      "quota": 88,
      "applied": 280,
-     "name": "소방안전관리과",
-     "mainTrack": "일반전형",
-     "mainRate": 3.8
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 70×3.8, 대학자체기준 18×0.8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 90,
-     "applied": 406,
+     "applied": 424,
      "name": "소방안전관리과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 4.41
+     "mainRate": 4.6
     },
     "2027": {
      "quota": 90,
@@ -72,18 +112,32 @@
    "scope": "수도권",
    "series": {
     "2025": {
-     "quota": 33,
-     "applied": 231,
      "name": "응급구조학과",
+     "unofficial": true,
+     "tracks": "학과 모집 33명 · 일반전형 7.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 7.0
+     "mainRate": 7.1,
+     "quota": 33,
+     "applied": 234,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 33×7.1 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 32,
-     "applied": 388,
+     "applied": 402,
      "name": "응급구조학과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 12.12
+     "mainRate": 12.6
     },
     "2027": {
      "quota": 32,

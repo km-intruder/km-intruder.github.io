@@ -5,6 +5,9 @@ admissions-2026/depts/<학과>/trends.json 을 학과마다 만든다.
 - 비교 대상: 학과 ratios.json 의 전문대 모집단위(수도권 비교군) + ratios-national.json 모집단위(공식·비공식)
 - 2023~2026: 진학사 스마트경쟁률 과거 경쟁률(PastRatioUniv)
 - 2027: 경민대는 학교 집계(school/susi1-2027.json), 다른 학교는 경쟁률 원문
+- 경민대: 진학사 공개값이 원서 마감 전 값이라 학교 최종 집계보다 적다(2026 호텔조리과 228명 ↔ 학교 325명).
+  그래서 2026은 학교 집계(prevApplied), 2023~2025는 포털 전형별 모집인원 × 최종 경쟁률로 계산한 값을 쓰고,
+  포털에 경쟁률이 빠진 전형이 있으면 진학사 값을 둔다.
 - 모든 해를 '수시 1차 정원내 전형 합계'로 묶는다 (build_national_ratios.py 와 같은 기준).
 - 주 전형 경쟁률(일반고, 없으면 일반전형)을 해마다 따로 둔다 — 학교마다 전형 구성이 달라도 같은 기준으로 비교하려고.
 - 진학사 과거값이 없는 학교(비공식 자료 학교 등)는 national-extra.json 의 2027·2026 값과
@@ -46,7 +49,7 @@ ALIAS = {
     ("경민대학교", "호텔관광학과"): ["호텔관광경영과"],
     ("경민대학교", "미디어영상과"): ["영상콘텐츠과"],
     ("경민대학교", "연기예술과"): ["공연예술과"],
-    ("경민대학교", "자유전공학과"): ["자율전공학부"],
+    # 2023 자율전공학부는 성인학습자 전담 모집단위라 자유전공학과와 잇지 않는다
     ("경민대학교", "의료미용과"): ["뷰티케어과"],
     ("서영대학교(파주)", "조리제과제빵과(주간)"): ["호텔외식조리과"],
     ("서영대학교(파주)", "조리제과제빵과(야간)"): ["호텔외식조리과(야)"],
@@ -335,6 +338,8 @@ def main():
     with ThreadPoolExecutor(4) as ex:
         prows = dict(zip(pjobs, ex.map(lambda j: portal.rows(*j), pjobs)))
         plans = dict(zip(pjobs, ex.map(lambda j: portal.plan(*j), pjobs)))
+    # 경민대 과거 해: 포털 최종 경쟁률 기반 계산 (진학사 공개값은 마감 전 값이라)
+    km_portal = {y: (portal.rows("경민대학교", y), portal.plan("경민대학교", y)) for y in PAST_YEARS}
     # 비공식 경로 학교도 진학사 과거 경쟁률이 공개된 해가 있으면 공식값으로 쓴다
     xjobs = sorted({(u["schoolName"], y) for us in plan.values() for u in us if "extra" in u
                     for y in PAST_YEARS if cs.get(u["schoolName"], {}).get("uid")} - set(past))
@@ -360,6 +365,20 @@ def main():
                     series[str(y)] = v
             if u["isKm"]:
                 d = next((d for d in km_total.values() if base_name(d["name"]) == base_name(u["dept"])), None)
+                for y, (rows, pl) in km_portal.items():
+                    v = portal_year(rows, "경기", names, pl)
+                    if y == PAST_YEARS[-1]:   # 2026 지원자는 아래 학교 집계로, 포털에서는 최종 주 전형 경쟁률만
+                        if v and "mainRate" in v and str(y) in series:
+                            series[str(y)].update(mainTrack=v["mainTrack"], mainRate=v["mainRate"])
+                        continue
+                    if v and v.get("applied") is not None and "경쟁률 없는 전형" not in v.get("derived", ""):
+                        v["note"] = "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
+                        series[str(y)] = v
+                if d and d.get("prevApplied") is not None and "2026" in series:
+                    # 2026: 학교 집계 최종 지원자 (모집인원은 그해 원문, 주 전형 경쟁률은 그대로)
+                    s = series["2026"]
+                    series["2026"] = {"quota": s["quota"], "applied": d["prevApplied"], "name": s["name"], "source": "학교 집계",
+                                      **({"mainTrack": s["mainTrack"], "mainRate": s["mainRate"]} if "mainRate" in s else {})}
                 if d:   # 경민대 2027: 학교 집계 최종(정원내 학과 전체)
                     series["2027"] = {"quota": d["quota"], "applied": d["applied"], "name": d["name"], "source": "학교 집계"}
                     for mt, k in (("일반고", "regular"), ("일반전형", "general")):

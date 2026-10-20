@@ -32,25 +32,52 @@
      "mainRate": 4.41
     },
     "2024": {
-     "quota": 54,
-     "applied": 286,
      "name": "게임콘텐츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 54명 · 특성화고 5.5 · 대학자체 2.1 · 일반고 6.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 6.3
+     "mainRate": 6.4,
+     "quota": 54,
+     "applied": 297,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 8×2.1, 일반고 30×6.4, 특성화고 16×5.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 57,
-     "applied": 290,
      "name": "게임콘텐츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 57명 · 특성화고 4.1 · 대학자체 4.9 · 일반고 6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 5.97
+     "mainRate": 6.0,
+     "quota": 57,
+     "applied": 301,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 10×4.9, 일반고 31×6, 특성화고 16×4.1 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 63,
-     "applied": 351,
+     "applied": 373,
      "name": "게임콘텐츠과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 5.42
+     "mainRate": 5.8
     },
     "2027": {
      "quota": 63,
@@ -79,11 +106,24 @@
      "mainRate": 10.6
     },
     "2024": {
-     "quota": 46,
-     "applied": 91,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "name": "레포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 46명 · 일반전형 5.7 · 대학자체 1.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 5.57
+     "mainRate": 5.7,
+     "quota": 46,
+     "applied": 94,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 7×5.7, 대학자체기준 39×1.4 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
      "quota": 26,
@@ -94,10 +134,11 @@
     },
     "2026": {
      "quota": 29,
-     "applied": 96,
+     "applied": 104,
      "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 12.2
+     "mainRate": 12.6
     },
     "2027": {
      "quota": 29,
@@ -119,9 +160,18 @@
    "scope": "수도권",
    "series": {
     "2023": {
+     "name": "태권도외교과",
+     "unofficial": true,
+     "tracks": "학과 모집 33명 · 대학자체 3.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "quota": 33,
-     "applied": 144,
-     "name": "태권도외교과"
+     "applied": 109,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 33 × 경쟁률 3.3",
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
      "quota": 58,
@@ -136,7 +186,8 @@
     "2026": {
      "quota": 80,
      "applied": 289,
-     "name": "태권도외교과"
+     "name": "태권도외교과",
+     "source": "학교 집계"
     },
     "2027": {
      "quota": 80,
@@ -157,10 +208,11 @@
    "series": {
     "2026": {
      "quota": 26,
-     "applied": 112,
+     "applied": 120,
      "name": "헤어디자인과",
+     "source": "학교 집계",
      "mainTrack": "일반고",
-     "mainRate": 5.5
+     "mainRate": 5.8
     },
     "2027": {
      "quota": 27,

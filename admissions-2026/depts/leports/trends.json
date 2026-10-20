@@ -32,11 +32,24 @@
      "mainRate": 10.6
     },
     "2024": {
-     "quota": 46,
-     "applied": 91,
-     "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "name": "레포츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 46명 · 일반전형 5.7 · 대학자체 1.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 5.57
+     "mainRate": 5.7,
+     "quota": 46,
+     "applied": 94,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 7×5.7, 대학자체기준 39×1.4 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
      "quota": 26,
@@ -47,10 +60,11 @@
     },
     "2026": {
      "quota": 29,
-     "applied": 96,
+     "applied": 104,
      "name": "레포츠과 · 레포츠과-야구 · 레포츠과-줄넘기 · 레포츠과-축구",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 12.2
+     "mainRate": 12.6
     },
     "2027": {
      "quota": 29,
@@ -72,9 +86,18 @@
    "scope": "수도권",
    "series": {
     "2023": {
+     "name": "태권도외교과",
+     "unofficial": true,
+     "tracks": "학과 모집 33명 · 대학자체 3.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "quota": 33,
-     "applied": 144,
-     "name": "태권도외교과"
+     "applied": 109,
+     "derived": "정원내 전형이 하나뿐이라 지원자 = 학과 모집인원 33 × 경쟁률 3.3",
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
      "quota": 58,
@@ -89,7 +112,8 @@
     "2026": {
      "quota": 80,
      "applied": 289,
-     "name": "태권도외교과"
+     "name": "태권도외교과",
+     "source": "학교 집계"
     },
     "2027": {
      "quota": 80,

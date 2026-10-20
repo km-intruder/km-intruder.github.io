@@ -90,7 +90,7 @@
   <div class="block-head"><span class="no">03</span><h2>추이 비교</h2></div>
   <div class="chart-legend" id="legend"></div>
   <div class="chart-title">주 전형 경쟁률 (일반고, 없으면 일반전형)</div>
-  <div class="chart-sub">학교마다 전형 구성이 달라도 같은 기준으로 비교 · 비공식 학교의 과거 해도 이 값은 있음 · 지수 보기와 관계없이 실제 값</div>
+  <div class="chart-sub">수시 1차 탭의 학과 비교와 같은 기준 · 학교마다 전형 구성이 달라도 같은 기준으로 비교 · 비공식 학교의 과거 해도 이 값은 있음 · 지수 보기와 관계없이 실제 값</div>
   <div id="valsMain"></div>
   <div id="chartMain" class="chart"></div>
   <div class="chart-title">지원자 수 (정원내 전형 합계)</div>
@@ -120,6 +120,7 @@
     <p>칸마다 <b>지원자</b>와 아래에 모집인원·정원내 경쟁률, 그 아래 <b>주 전형 경쟁률</b>을 적었습니다. 주황 글씨와 <span class="badge unofficial">비공식</span>은 공식 경쟁률 원문이 아닌 값입니다 — 학교 공지·입학처 화면 등 조사 자료, 또는 전문대학포털(전문대교협) 전년도 입시결과입니다. 포털 값은 ‘대학별 전형방법’의 전형별 모집인원(입학전형 시행계획)에 ‘전년도 입시결과’의 전형별 경쟁률을 곱해 지원자를 계산한 것이라, 경쟁률 반올림 때문에 몇 명 차이 날 수 있습니다. 진학사에 공개된 해는 공식값을 그대로 씁니다. 칸에 마우스를 올리면 출처와 전형별 경쟁률이 보입니다.</p>
     <p> 모든 해를 <b>수시 1차 정원내 전형 합계</b>(농어촌·기초수급·대졸자·재직자 등 정원외 전형 제외)로 묶어, 학과 비교 화면의 주 전형 경쟁률과는 값이 다를 수 있습니다.</p>
     <p id="srcNote"></p>
+    <p>경민대는 진학사 공개 경쟁률이 원서 마감 전 값이라 학교 최종 집계보다 적게 나옵니다(예: 2026 호텔조리과 진학사 228명, 학교 집계 325명). 그래서 경민대 2026·2027은 학교 집계, 2023~2025는 전문대학포털의 전형별 모집인원 × 최종 전형별 경쟁률로 계산한 값(점선)을 씁니다. 포털에 경쟁률이 빠진 전형이 있는 해만 진학사 값을 둡니다.</p>
     <p>학과명이 바뀐 해는 칸에 마우스를 올리면 그해 원문 학과명이 보입니다. 경민대 학과는 입학처 학과명이 한 학과에서 다음 학과로 바로 이어진 경우만 이어 붙였습니다(예: 컴퓨터소프트웨어과 → 지능형소프트웨어과, 효충사관과 → 효충군사학과). 경쟁률을 공개하지 않은 해·학교는 빈칸입니다.</p>
   </details>
 </section>
@@ -309,7 +310,10 @@ function renderCharts() {
   draw('Applied', 'applied', fmtN, { refLine: pop, yZero: !idx });
   draw('Quota', 'quota', fmtN, { refLine: pop, yZero: !idx });
   draw('Rate', 'rate', fmtR, {});
-  el('subApplied').textContent = idx ? '각 모집단위 첫 해 = 100 · 점선은 학령인구(2023 = 100)' : '수시 1차 정원내 전형 지원자 합계';
+  // 기준 안내: 수시 1차 탭의 학과 비교는 주 전형(일반고 등) 값이라 이 합계와 다르다
+  const b = base(), b27 = b.series[2027];
+  const basisNote = b27 && b27.mainRate != null && Math.abs(b27.mainRate - b27.applied / b27.quota) > 0.005 ? ` · 수시 1차 탭의 학과 비교는 주 전형 기준이라 값이 다릅니다 (예: 경민대 2027 ${b27.mainTrack} 경쟁률 ${fx(b27.mainRate)} / 정원내 합계 ${num(b27.applied)}명·${fx(b27.applied / b27.quota)})` : '';
+  el('subApplied').textContent = idx ? '각 모집단위 첫 해 = 100 · 점선은 학령인구(2023 = 100)' : '수시 1차 정원내 전형(일반고·특성화고·대학자체 등) 지원자 합계' + basisNote;
   el('subQuota').textContent = idx ? '각 모집단위 첫 해 = 100 · 점선은 학령인구(2023 = 100)' : '수시 1차 정원내 전형 모집인원 합계';
 }
 

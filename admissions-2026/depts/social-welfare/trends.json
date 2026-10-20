@@ -25,32 +25,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
-     "quota": 50,
-     "applied": 259,
      "name": "사회복지과",
+     "unofficial": true,
+     "tracks": "학과 모집 50명 · 특성화고 9.8 · 일반고 4.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 4.71
+     "mainRate": 4.7,
+     "quota": 50,
+     "applied": 260,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 45×4.7, 특성화고 5×9.8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 43,
-     "applied": 228,
      "name": "사회복지과",
+     "unofficial": true,
+     "tracks": "학과 모집 43명 · 특성화고 12.8 · 일반고 4.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 4.56
+     "mainRate": 4.8,
+     "quota": 43,
+     "applied": 238,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 39×4.8, 특성화고 4×12.8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 50,
-     "applied": 214,
      "name": "사회복지과",
+     "unofficial": true,
+     "tracks": "학과 모집 50명 · 특성화고 8 · 일반고 4.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 3.81
+     "mainRate": 4.1,
+     "quota": 50,
+     "applied": 236,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 42×4.1, 특성화고 8×8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 42,
-     "applied": 254,
+     "applied": 266,
      "name": "사회복지과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 6.05
+     "mainRate": 6.3
     },
     "2027": {
      "quota": 42,
@@ -72,32 +112,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
+     "name": "건축공간디자인과",
+     "unofficial": true,
+     "tracks": "학과 모집 30명 · 특성화고 11.5 · 일반고 4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반고",
+     "mainRate": 4.0,
      "quota": 30,
      "applied": 135,
-     "name": "건축공간디자인과",
-     "mainTrack": "일반고",
-     "mainRate": 4.0
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 28×4, 특성화고 2×11.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 28,
-     "applied": 158,
      "name": "건축공간디자인과",
+     "unofficial": true,
+     "tracks": "학과 모집 28명 · 일반전형 5.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 5.64
+     "mainRate": 5.7,
+     "quota": 28,
+     "applied": 160,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 28×5.7 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 31,
-     "applied": 147,
      "name": "건축공간디자인학과",
+     "unofficial": true,
+     "tracks": "학과 모집 31명 · 일반전형 4.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 4.74
+     "mainRate": 4.8,
+     "quota": 31,
+     "applied": 149,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 31×4.8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 27,
-     "applied": 181,
+     "applied": 187,
      "name": "건축공간디자인학과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 6.7
+     "mainRate": 6.9
     },
     "2027": {
      "quota": 27,
@@ -119,32 +199,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
-     "quota": 27,
-     "applied": 293,
      "name": "유아교육과",
+     "unofficial": true,
+     "tracks": "학과 모집 27명 · 특성화고 12.8 · 일반고 10.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 10.41
+     "mainRate": 10.5,
+     "quota": 27,
+     "applied": 295,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 22×10.5, 특성화고 5×12.8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 27,
-     "applied": 146,
      "name": "유아교육과",
+     "unofficial": true,
+     "tracks": "학과 모집 27명 · 특성화고 7.2 · 일반고 5.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 5.0
+     "mainRate": 5.1,
+     "quota": 27,
+     "applied": 148,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 22×5.1, 특성화고 5×7.2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 27,
-     "applied": 141,
      "name": "유아교육학과",
+     "unofficial": true,
+     "tracks": "학과 모집 27명 · 일반전형 5.3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 5.22
+     "mainRate": 5.3,
+     "quota": 27,
+     "applied": 143,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 27×5.3 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 27,
-     "applied": 161,
+     "applied": 171,
      "name": "유아교육학과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 5.96
+     "mainRate": 6.3
     },
     "2027": {
      "quota": 25,

@@ -32,25 +32,52 @@
      "mainRate": 5.63
     },
     "2024": {
-     "quota": 51,
-     "applied": 238,
      "name": "영상콘텐츠과",
+     "unofficial": true,
+     "tracks": "학과 모집 51명 · 특성화고 6.8 · 일반고 4.2",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 4.15
+     "mainRate": 4.2,
+     "quota": 51,
+     "applied": 240,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 41×4.2, 특성화고 10×6.8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 50,
-     "applied": 265,
      "name": "미디어영상과",
+     "unofficial": true,
+     "tracks": "학과 모집 50명 · 일반전형 5.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 5.3
+     "mainRate": 5.4,
+     "quota": 50,
+     "applied": 270,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 50×5.4 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 38,
-     "applied": 306,
+     "applied": 321,
      "name": "미디어영상과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 8.05
+     "mainRate": 8.5
     },
     "2027": {
      "quota": 36,
@@ -72,32 +99,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
+     "name": "실용음악과",
+     "unofficial": true,
+     "tracks": "학과 모집 13명 · 일반전형 3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.0,
      "quota": 13,
      "applied": 39,
-     "name": "실용음악과",
-     "mainTrack": "일반전형",
-     "mainRate": 3.0
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 13×3 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
+     "name": "실용음악과",
+     "unofficial": true,
+     "tracks": "학과 모집 15명 · 일반전형 2.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 2.5,
      "quota": 15,
      "applied": 38,
-     "name": "실용음악과",
-     "mainTrack": "일반전형",
-     "mainRate": 2.53
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 15×2.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 15,
-     "applied": 44,
      "name": "실용음악과",
+     "unofficial": true,
+     "tracks": "학과 모집 15명 · 일반전형 3",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 2.93
+     "mainRate": 3.0,
+     "quota": 15,
+     "applied": 45,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 15×3 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 15,
      "applied": 56,
      "name": "실용음악과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 3.73
+     "mainRate": 3.4
     },
     "2027": {
      "quota": 15,
@@ -119,32 +186,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
+     "name": "공연예술과",
+     "unofficial": true,
+     "tracks": "학과 모집 13명 · 일반전형 3.9",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
+     "mainTrack": "일반전형",
+     "mainRate": 3.9,
      "quota": 13,
      "applied": 51,
-     "name": "공연예술과",
-     "mainTrack": "일반전형",
-     "mainRate": 3.92
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 13×3.9 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 25,
-     "applied": 37,
      "name": "공연예술과",
+     "unofficial": true,
+     "tracks": "학과 모집 25명 · 일반전형 1.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 1.48
+     "mainRate": 1.5,
+     "quota": 25,
+     "applied": 38,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 25×1.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 15,
-     "applied": 52,
      "name": "연기예술과",
+     "unofficial": true,
+     "tracks": "학과 모집 15명 · 일반전형 3.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 3.47
+     "mainRate": 3.6,
+     "quota": 15,
+     "applied": 54,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 15×3.6 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 15,
-     "applied": 37,
+     "applied": 38,
      "name": "연기예술과",
+     "source": "학교 집계",
      "mainTrack": "일반전형",
-     "mainRate": 2.47
+     "mainRate": 2.5
     },
     "2027": {
      "quota": 13,

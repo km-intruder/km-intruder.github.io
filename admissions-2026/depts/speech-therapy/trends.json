@@ -26,10 +26,11 @@
    "series": {
     "2026": {
      "quota": 26,
-     "applied": 52,
+     "applied": 58,
      "name": "언어치료학과",
+     "source": "학교 집계",
      "mainTrack": "일반고",
-     "mainRate": 2.06
+     "mainRate": 2.1
     },
     "2027": {
      "quota": 24,
@@ -51,32 +52,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
-     "quota": 92,
-     "applied": 695,
      "name": "간호학과",
+     "unofficial": true,
+     "tracks": "학과 모집 92명 · 특성화고 8.9 · 일반고 7.4",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 7.41
+     "mainRate": 7.4,
+     "quota": 92,
+     "applied": 694,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 83×7.4, 특성화고 9×8.9 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 94,
-     "applied": 1121,
      "name": "간호학과",
+     "unofficial": true,
+     "tracks": "학과 모집 94명 · 특성화고 21.3 · 일반고 11.6",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 11.51
+     "mainRate": 11.6,
+     "quota": 94,
+     "applied": 1129,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 90×11.6, 특성화고 4×21.3 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 104,
-     "applied": 1353,
      "name": "간호학과",
+     "unofficial": true,
+     "tracks": "학과 모집 104명 · 특성화고 21.1 · 일반고 12.5",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 12.45
+     "mainRate": 12.5,
+     "quota": 104,
+     "applied": 1360,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 97×12.5, 특성화고 7×21.1 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 130,
-     "applied": 1105,
+     "applied": 1149,
      "name": "간호학과",
+     "source": "학교 집계",
      "mainTrack": "일반고",
-     "mainRate": 8.52
+     "mainRate": 8.8
     },
     "2027": {
      "quota": 120,
@@ -98,32 +139,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
-     "quota": 60,
-     "applied": 320,
      "name": "보건의료행정과",
+     "unofficial": true,
+     "tracks": "학과 모집 60명 · 특성화고 14.5 · 일반고 4.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 4.7
+     "mainRate": 4.7,
+     "quota": 60,
+     "applied": 321,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 56×4.7, 특성화고 4×14.5 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 60,
-     "applied": 270,
      "name": "보건의료행정과",
+     "unofficial": true,
+     "tracks": "학과 모집 60명 · 특성화고 7.9 · 일반고 4.1",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 4.04
+     "mainRate": 4.1,
+     "quota": 60,
+     "applied": 276,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 52×4.1, 특성화고 8×7.9 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 59,
-     "applied": 217,
      "name": "보건의료행정과",
+     "unofficial": true,
+     "tracks": "학과 모집 59명 · 특성화고 3.8 · 일반고 3.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 3.66
+     "mainRate": 3.7,
+     "quota": 59,
+     "applied": 220,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반고 47×3.7, 특성화고 12×3.8 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 50,
-     "applied": 253,
+     "applied": 267,
      "name": "보건의료행정과",
+     "source": "학교 집계",
      "mainTrack": "일반고",
-     "mainRate": 5.91
+     "mainRate": 6.2
     },
     "2027": {
      "quota": 50,
@@ -145,32 +226,72 @@
    "scope": "수도권",
    "series": {
     "2023": {
-     "quota": 46,
-     "applied": 213,
      "name": "뷰티케어과",
+     "unofficial": true,
+     "tracks": "학과 모집 46명 · 특성화고 3.2 · 대학자체 3.3 · 일반고 7.8",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 6.86
+     "mainRate": 7.8,
+     "quota": 46,
+     "applied": 249,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 4×3.3, 일반고 22×7.8, 특성화고 20×3.2 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2024": {
-     "quota": 34,
-     "applied": 187,
      "name": "뷰티케어과",
+     "unofficial": true,
+     "tracks": "학과 모집 34명 · 특성화고 3.4 · 대학자체 2.5 · 일반고 7.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반고",
-     "mainRate": 7.5
+     "mainRate": 7.7,
+     "quota": 34,
+     "applied": 191,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 대학자체기준 2×2.5, 일반고 18×7.7, 특성화고 14×3.4 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2025": {
-     "quota": 36,
-     "applied": 195,
      "name": "뷰티케어과",
+     "unofficial": true,
+     "tracks": "학과 모집 36명 · 일반전형 5.7",
+     "source": {
+      "kind": "portal",
+      "title": "전문대학포털(한국전문대학교육협의회) 전년도 입시결과",
+      "url": "https://www.procollege.kr/web/entrance/webEntrancePreResult.do"
+     },
      "mainTrack": "일반전형",
-     "mainRate": 5.42
+     "mainRate": 5.7,
+     "quota": 36,
+     "applied": 205,
+     "derived": "지원자 = 전형별 모집인원 × 전형별 경쟁률: 일반전형 36×5.7 — 경쟁률이 소수 한두 자리라 몇 명 차이 날 수 있음",
+     "planSource": {
+      "title": "전문대학포털 대학별 전형방법(전형별 모집인원)",
+      "url": "https://www.procollege.kr/web/entrance/webEntranceTypeGradeModel.do"
+     },
+     "note": "진학사 공개값은 마감 전 값이라 포털 최종 경쟁률로 계산"
     },
     "2026": {
      "quota": 26,
-     "applied": 91,
+     "applied": 102,
      "name": "의료미용과",
+     "source": "학교 집계",
      "mainTrack": "일반고",
-     "mainRate": 4.19
+     "mainRate": 4.5
     },
     "2027": {
      "quota": 26,
