@@ -286,6 +286,9 @@ th.sorted::after { content: " " attr(data-dir); }
   .tabs { gap: 8px 16px; }
   .dept-pick { margin-left: 0; width: 100%; box-sizing: border-box; }
   .dept-select { flex: 1; max-width: none; }
+  /* 글이 긴 표는 찌그러뜨리지 않고 옆으로 넘겨 본다 */
+  table.wide { min-width: 760px; }
+  table.wide td b, table.wide td .reco { white-space: nowrap; }
 }
 
 /* ── 학교 전체: 감소 학과 행 ── */
