@@ -40,6 +40,8 @@
     { href: 'kyungmin.html', label: '학교 소식' },
   ];
 
+  // 수시 분석 공유 코드로 들어온 경우(gate.js): 공유 범위 밖인 산업 현황 탭은 숨긴다
+  const shared = document.documentElement.getAttribute('data-access') === 'share';
   const params = new URLSearchParams(location.search);
   const page = location.pathname.split('/').pop() || 'index.html';
   const schoolScope = SCHOOL_PAGES.some(p => p.href === page);
@@ -67,7 +69,7 @@
       })),
       { href: link('trends.html'), label: '입시 추이', active: page === 'trends.html' },
       { href: link('competition-curriculum.html'), label: '교육과정 비교', active: page === 'competition-curriculum.html' },
-      ...(dept.boards ? [{ href: link('industry.html'), label: '산업 현황', active: page === 'industry.html' }] : []),
+      ...(dept.boards && !shared ? [{ href: link('industry.html'), label: '산업 현황', active: page === 'industry.html' }] : []),
     ];
 
   const nav = document.getElementById('tabs');
