@@ -6,7 +6,7 @@
    - 입력 상태는 sessionStorage 에만 둔다: 브라우저(탭)를 닫으면 다시 묻는다
    - 공개 저장소의 파일 자체를 숨기지는 않는다. 우연한 방문·검색 노출을 막는 용도 */
 (function () {
-  var HASH = '56bb10679132bfba0133eb050cb5bb48a0ea50efe91ad934ff4bf6f6df63ac1a'; // set_access_code.py 가 갱신
+  var HASH = '1126d1bfdef85d933341612d8ace3714f981cd5a8eb01934e16dee953198aa8f'; // set_access_code.py 가 갱신
   var SHARE_HASH = 'ff9e7c55352dd985a2e63e9eed074da3f23cd1786c53b934902f071f8782a87c'; // set_access_code.py --share 가 갱신 (수시 분석 화면 전용)
   var SHARE_PAGES = /\/admissions-2026\/((index|school|admissions-dashboard|trends|competition-curriculum|colleges|kyungmin)\.html)?$/;
   var SALT = 'km-intruder:';
