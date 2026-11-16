@@ -1,5 +1,5 @@
 /* 공통 탭 메뉴 · 학교/학과 선택
-   - 학교 화면: 경민대 전체 · 전문대 동향 · 학교 소식
+   - 학교 화면: 경민대 수시 1차 · 경민대 수시 2차 · 전문대 동향 · 학교 소식
    - 학과 화면: 수시 1차(회차별) · 교육과정 비교 · 산업 현황(boards: true 인 학과만)
    학과 추가: DEPTS 에 한 줄 + depts/<id>/ 폴더(dept.json, ratios.json) 생성 (depts/README.md 참고)
    회차 추가: 해당 학과 rounds 에 { id: 'susi2', label: '수시 2차', file: 'ratios-susi2.json' } 추가
@@ -37,7 +37,7 @@
     { id: 'free-major', name: '자유전공학과', rounds: S1N },
   ];
   const SCHOOL_PAGES = [
-    { href: 'school.html', label: '경민대 전체' },
+    { href: 'school.html', label: '경민대 수시 1차' },
     { href: 'school.html', round: 'susi2', label: '경민대 수시 2차' },
     { href: 'colleges.html', label: '전문대 동향' },
     { href: 'kyungmin.html', label: '학교 소식' },
@@ -69,7 +69,7 @@
     ? SCHOOL_PAGES.map(p => ({ href: p.href + (p.round ? '?round=' + p.round : ''), label: p.label,
       active: page === p.href && (p.round || null) === (page === 'school.html' ? schoolRound : null) }))
     : [
-      { href: 'school.html' + (round && round.id === 'susi2' ? '?round=susi2' : ''), label: '← 경민대 전체' },
+      { href: 'school.html' + (round && round.id === 'susi2' ? '?round=susi2' : ''), label: '← 경민대 ' + (round && round.id === 'susi2' ? '수시 2차' : '수시 1차') },
       ...dept.rounds.map(r => ({
         href: link('admissions-dashboard.html', { round: r === dept.rounds[0] ? '' : r.id }),
         label: r.label, active: page === 'admissions-dashboard.html' && r === round,
@@ -92,7 +92,7 @@
     sel.setAttribute('aria-label', '학교 전체 또는 학과 선택 (지원자 감소가 큰 학과부터)');
     const fmt = v => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(1) + '%';
     const fill = (list, chg = {}) => {
-      sel.innerHTML = `<option value="">경민대 전체</option>` + list.map(d =>
+      sel.innerHTML = `<option value="">경민대 전체 (${keepRound === 'susi2' ? '수시 2차' : '수시 1차'})</option>` + list.map(d =>
         `<option value="${d.id}"${d === dept ? ' selected' : ''}>${d.name}${chg[d.id] != null ? ` · ${fmt(chg[d.id])}` : ''}</option>`).join('');
     };
     fill(DEPTS);
