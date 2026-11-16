@@ -226,6 +226,8 @@ def update_file(path, dry_run):
                 live.append(school["id"])
             continue
         entries = parse_entries(html)
+        if school["id"] == "km":
+            entries = km_entries(entries)
         page_time = parse_time(html)
         is_final = bool(FINAL_RE.search(re.sub(r"<[^>]+>", " ", html)))
         if "최종" not in (school.get("time") or ""):
@@ -265,12 +267,86 @@ def update_file(path, dry_run):
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
+# ── 경민대 전체(학교 화면) 수시 2차 이후 회차: 진학어플라이 공개값의 학과별 정원내 전형 ──
+SCHOOL_TRACKS = [(r"특별인재", "talent"), (r"성인|독자|특기", "special"), (r"특성화", "vocational"),
+                 (r"일반고", "regular"), (r"일반", "general")]
+
+
+def km_entries(entries):
+    """경민대 원문: 학과 칸이 rowspan 으로 묶인 다음 줄(예: 레포츠과 '야구')은 학과명이 빠지므로 앞 줄 학과를 붙인다."""
+    out, prev = [], None
+    for e in entries:
+        head = e["label"].split(" ")[0]
+        if re.search(r"(과|학부|전공)$", head):
+            prev = (e["section"], head)
+        elif prev and prev[0] == e["section"] and not re.search(SUMMARY + r"|총계", e["label"]):
+            e = {**e, "label": prev[1] + " " + e["label"]}
+        out.append(e)
+    return out
+
+
+def school_depts(entries, names):
+    """경민대 경쟁률 원문 → {학과명: {tracks, quota, applied}}. 학과명은 names 중 가장 길게 맞는 것,
+    없으면 라벨 첫 단어(새로 생긴 모집단위)."""
+    out = {}
+    for e in km_entries(entries):
+        if not inside(e) or re.search(r"^전형별", e["section"]) or re.search(SUMMARY + r"|총계", e["label"]):
+            continue
+        cands = [n for n in names if norm(e["label"]).startswith(norm(n))]
+        name = max(cands, key=len) if cands else e["label"].split(" ")[0]
+        key = next((k for p, k in SCHOOL_TRACKS if re.search(p, e["section"])), "special")
+        d = out.setdefault(name, {"tracks": {}, "quota": 0, "applied": 0})
+        q, a = d["tracks"].get(key, [0, 0])
+        d["tracks"][key] = [q + e["quota"], a + e["applied"]]
+        d["quota"] += e["quota"]
+        d["applied"] += e["applied"]
+    return out
+
+
+def school_totals(data):
+    day = [d for d in data["depts"] if not d.get("adult")]
+    tot = lambda ds: {"quota": sum(d["quota"] for d in ds), "applied": sum(d["applied"] for d in ds),
+                      "prevApplied": sum(d.get("prevApplied") or 0 for d in ds)}
+    data["total"] = {**tot(data["depts"]), "day": tot(day)}
+
+
+def update_school(path, dry_run):
+    """school/susi2-2027.json: 모집·지원·전형별 값만 원문으로 갱신 (2026 값·계열 등은 생성기가 정한 그대로)."""
+    print(f"== {path.relative_to(DATA_DIR)}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    before = json.dumps(data, ensure_ascii=False, sort_keys=True)
+    try:
+        html = fetch(data["url"])
+    except Exception as e:
+        print(f"[경민대학교] 불러오기 실패: {e}")
+        return
+    live = school_depts(parse_entries(html), [d["name"] for d in data["depts"]])
+    for d in data["depts"]:
+        v = live.get(d["name"])
+        if v:
+            d.update(v)
+    t = parse_time(html)
+    final = bool(FINAL_RE.search(re.sub(r"<[^>]+>", " ", html)))
+    data["final"] = final
+    if t:
+        data["basis"] = f"{t} 기준 (진학어플라이 공개값{', 최종' if final else ', 접수 중'})"
+    school_totals(data)
+    if json.dumps(data, ensure_ascii=False, sort_keys=True) == before:
+        print("변경 없음 - 파일을 쓰지 않습니다.")
+        return
+    print(f"총 지원 {data['total']['applied']}명 · {data['basis']}")
+    if not dry_run:
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def main():
     dry_run = "--dry-run" in sys.argv
     for path in sorted(DATA_DIR.glob("depts/*/ratios*.json")):
         if path.name == "ratios-national.json":  # 전국 비교는 마감 뒤 한 번 만드는 자료 (build_national_ratios.py)
             continue
         update_file(path, dry_run)
+    for path in sorted(DATA_DIR.glob("school/susi[2-9]-*.json")):  # 수시 1차는 학교 집계표라 수동
+        update_school(path, dry_run)
 
 
 if __name__ == "__main__":

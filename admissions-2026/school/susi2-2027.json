@@ -1,0 +1,455 @@
+{
+ "title": "2027학년도 수시 2차 정원내 지원현황",
+ "round": "susi2",
+ "basis": "2026-11-16 09:30 기준 (진학어플라이 공개값, 접수 중)",
+ "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
+ "source": "진학어플라이 경민대학교 수시 2차 경쟁률 · 2026은 진학사 스마트경쟁률 과거 경쟁률(2026학년도 수시 2차)",
+ "columns": {
+  "general": "일반전형",
+  "regular": "특별전형-일반고",
+  "vocational": "특별전형-특성화고",
+  "special": "특별전형-성인/특기자/독자",
+  "talent": "특별전형-특별인재"
+ },
+ "notRecruiting": [],
+ "depts": [
+  {
+   "group": "보건의료",
+   "name": "간호학과",
+   "id": "nursing",
+   "tracks": {
+    "regular": [
+     17,
+     23
+    ],
+    "vocational": [
+     5,
+     9
+    ]
+   },
+   "quota": 22,
+   "applied": 32,
+   "prevQuota": 12,
+   "prevApplied": 315
+  },
+  {
+   "group": "보건의료",
+   "name": "보건의료행정과",
+   "id": "health-admin",
+   "tracks": {
+    "regular": [
+     5,
+     6
+    ],
+    "vocational": [
+     4,
+     2
+    ]
+   },
+   "quota": 9,
+   "applied": 8,
+   "prevQuota": 9,
+   "prevApplied": 147
+  },
+  {
+   "group": "보건의료",
+   "name": "언어치료학과",
+   "id": "speech-therapy",
+   "tracks": {
+    "general": [
+     5,
+     8
+    ]
+   },
+   "quota": 5,
+   "applied": 8,
+   "prevQuota": 3,
+   "prevApplied": 27
+  },
+  {
+   "group": "보건의료",
+   "name": "의료미용과",
+   "id": "medical-beauty",
+   "tracks": {
+    "general": [
+     3,
+     4
+    ]
+   },
+   "quota": 3,
+   "applied": 4,
+   "prevQuota": 3,
+   "prevApplied": 39
+  },
+  {
+   "group": "공공안전",
+   "name": "소방안전관리과",
+   "id": "fire-safety",
+   "tracks": {
+    "general": [
+     16,
+     40
+    ],
+    "special": [
+     10,
+     6
+    ]
+   },
+   "quota": 26,
+   "applied": 46,
+   "prevQuota": 24,
+   "prevApplied": 160
+  },
+  {
+   "group": "공공안전",
+   "name": "응급구조학과",
+   "id": "emergency-rescue",
+   "tracks": {
+    "general": [
+     7,
+     22
+    ]
+   },
+   "quota": 7,
+   "applied": 22,
+   "prevQuota": 7,
+   "prevApplied": 149
+  },
+  {
+   "group": "외식관광",
+   "name": "카페베이커리과",
+   "id": "cafe-bakery",
+   "tracks": {
+    "regular": [
+     5,
+     9
+    ],
+    "vocational": [
+     3,
+     4
+    ]
+   },
+   "quota": 8,
+   "applied": 13,
+   "prevQuota": 8,
+   "prevApplied": 117
+  },
+  {
+   "group": "외식관광",
+   "name": "호텔관광학과",
+   "id": "hotel-tourism",
+   "tracks": {
+    "general": [
+     5,
+     11
+    ]
+   },
+   "quota": 5,
+   "applied": 11,
+   "prevQuota": 5,
+   "prevApplied": 131
+  },
+  {
+   "group": "외식관광",
+   "name": "호텔조리과",
+   "id": "hotel-culinary",
+   "tracks": {
+    "regular": [
+     6,
+     8
+    ],
+    "vocational": [
+     2,
+     3
+    ]
+   },
+   "quota": 8,
+   "applied": 11,
+   "prevQuota": 8,
+   "prevApplied": 92
+  },
+  {
+   "group": "휴먼서비스",
+   "name": "건축공간디자인학과",
+   "id": "interior-design",
+   "tracks": {
+    "general": [
+     7,
+     18
+    ]
+   },
+   "quota": 7,
+   "applied": 18,
+   "prevQuota": 7,
+   "prevApplied": 117
+  },
+  {
+   "group": "휴먼서비스",
+   "name": "사회복지과",
+   "id": "social-welfare",
+   "tracks": {
+    "general": [
+     7,
+     28
+    ]
+   },
+   "quota": 7,
+   "applied": 28,
+   "prevQuota": 7,
+   "prevApplied": 158
+  },
+  {
+   "group": "휴먼서비스",
+   "name": "유아교육학과",
+   "id": "early-childhood",
+   "tracks": {
+    "general": [
+     6,
+     14
+    ]
+   },
+   "quota": 6,
+   "applied": 14,
+   "prevQuota": 4,
+   "prevApplied": 110
+  },
+  {
+   "group": "국방안전",
+   "name": "국방드론봇시스템과",
+   "id": "defense-drone",
+   "tracks": {
+    "general": [
+     4,
+     2
+    ]
+   },
+   "quota": 4,
+   "applied": 2,
+   "prevQuota": null,
+   "prevApplied": null,
+   "new": true
+  },
+  {
+   "group": "국방안전",
+   "name": "사이버·정보시스템학과",
+   "id": "cyber-security",
+   "tracks": {
+    "general": [
+     4,
+     3
+    ]
+   },
+   "quota": 4,
+   "applied": 3,
+   "prevQuota": 1,
+   "prevApplied": 14
+  },
+  {
+   "group": "국방안전",
+   "name": "지능형소프트웨어과",
+   "id": "software",
+   "tracks": {
+    "general": [
+     3,
+     5
+    ]
+   },
+   "quota": 3,
+   "applied": 5,
+   "prevQuota": 3,
+   "prevApplied": 59
+  },
+  {
+   "group": "국방안전",
+   "name": "효충군사학과",
+   "id": "military",
+   "tracks": {
+    "general": [
+     4,
+     7
+    ]
+   },
+   "quota": 4,
+   "applied": 7,
+   "prevQuota": 4,
+   "prevApplied": 31
+  },
+  {
+   "group": "인플루언서 재양성",
+   "name": "미디어영상과",
+   "id": "media-video",
+   "tracks": {
+    "general": [
+     12,
+     14
+    ]
+   },
+   "quota": 12,
+   "applied": 14,
+   "prevQuota": 10,
+   "prevApplied": 172
+  },
+  {
+   "group": "인플루언서 재양성",
+   "name": "실용음악과",
+   "id": "practical-music",
+   "tracks": {
+    "general": [
+     13,
+     25
+    ]
+   },
+   "quota": 13,
+   "applied": 25,
+   "prevQuota": 13,
+   "prevApplied": 62
+  },
+  {
+   "group": "인플루언서 재양성",
+   "name": "연기예술과",
+   "id": "acting-arts",
+   "tracks": {
+    "general": [
+     15,
+     9
+    ]
+   },
+   "quota": 15,
+   "applied": 9,
+   "prevQuota": 15,
+   "prevApplied": 51
+  },
+  {
+   "group": "K-콘텐츠",
+   "name": "게임콘텐츠과",
+   "id": "game-contents",
+   "tracks": {
+    "general": [
+     10,
+     10
+    ],
+    "special": [
+     6,
+     6
+    ]
+   },
+   "quota": 16,
+   "applied": 16,
+   "prevQuota": 16,
+   "prevApplied": 188
+  },
+  {
+   "group": "K-콘텐츠",
+   "name": "레포츠과",
+   "id": "leports",
+   "tracks": {
+    "general": [
+     4,
+     2
+    ],
+    "special": [
+     11,
+     1
+    ],
+    "talent": [
+     1,
+     0
+    ]
+   },
+   "quota": 16,
+   "applied": 3,
+   "prevQuota": 4,
+   "prevApplied": 32
+  },
+  {
+   "group": "K-콘텐츠",
+   "name": "태권도외교과",
+   "id": "taekwondo",
+   "tracks": {
+    "special": [
+     14,
+     4
+    ],
+    "talent": [
+     3,
+     1
+    ]
+   },
+   "quota": 17,
+   "applied": 5,
+   "prevQuota": null,
+   "prevApplied": null,
+   "new": true
+  },
+  {
+   "group": "K-콘텐츠",
+   "name": "헤어디자인과",
+   "id": "hair-design",
+   "tracks": {
+    "general": [
+     2,
+     13
+    ]
+   },
+   "quota": 2,
+   "applied": 13,
+   "prevQuota": 3,
+   "prevApplied": 39
+  },
+  {
+   "group": "공통",
+   "name": "자유전공학과",
+   "id": "free-major",
+   "tracks": {
+    "general": [
+     7,
+     12
+    ]
+   },
+   "quota": 7,
+   "applied": 12,
+   "prevQuota": 7,
+   "prevApplied": 125
+  },
+  {
+   "group": "성인학습자",
+   "name": "라이프케어과",
+   "adult": true,
+   "tracks": {
+    "special": [
+     3,
+     1
+    ]
+   },
+   "quota": 3,
+   "applied": 1,
+   "prevQuota": 3,
+   "prevApplied": 3
+  },
+  {
+   "group": "성인학습자",
+   "name": "라이프콘텐츠과",
+   "adult": true,
+   "tracks": {
+    "special": [
+     2,
+     0
+    ]
+   },
+   "quota": 2,
+   "applied": 0,
+   "prevQuota": 2,
+   "prevApplied": 1
+  }
+ ],
+ "total": {
+  "quota": 231,
+  "applied": 330,
+  "prevApplied": 2339,
+  "day": {
+   "quota": 226,
+   "applied": 329,
+   "prevApplied": 2335
+  }
+ }
+}

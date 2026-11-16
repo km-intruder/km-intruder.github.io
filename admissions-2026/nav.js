@@ -38,6 +38,7 @@
   ];
   const SCHOOL_PAGES = [
     { href: 'school.html', label: '경민대 전체' },
+    { href: 'school.html', round: 'susi2', label: '경민대 수시 2차' },
     { href: 'colleges.html', label: '전문대 동향' },
     { href: 'kyungmin.html', label: '학교 소식' },
   ];
@@ -51,6 +52,9 @@
   const DEFAULT = DEPTS.find(d => d.id === 'software');
   const dept = schoolScope ? null : (DEPTS.find(d => d.id === params.get('dept')) || DEFAULT);
   const round = dept ? (dept.rounds.find(r => r.id === params.get('round')) || dept.rounds[0]) : null;
+  // 경민대 전체 화면의 회차 (school.html?round=susi2) — 학과 화면으로 갈 때도 같은 회차를 연다
+  const schoolRound = schoolScope && params.get('round') === 'susi2' ? 'susi2' : null;
+  const keepRound = round && dept && round !== dept.rounds[0] ? round.id : schoolRound;
 
   // 기본 학과·기본 회차는 주소에 붙이지 않아 기존 주소가 그대로 유지된다
   const link = (href, extra = {}) => {
@@ -62,9 +66,10 @@
   };
 
   const links = schoolScope
-    ? SCHOOL_PAGES.map(p => ({ href: p.href, label: p.label, active: page === p.href }))
+    ? SCHOOL_PAGES.map(p => ({ href: p.href + (p.round ? '?round=' + p.round : ''), label: p.label,
+      active: page === p.href && (p.round || null) === (page === 'school.html' ? schoolRound : null) }))
     : [
-      { href: 'school.html', label: '← 경민대 전체' },
+      { href: 'school.html' + (round && round.id === 'susi2' ? '?round=susi2' : ''), label: '← 경민대 전체' },
       ...dept.rounds.map(r => ({
         href: link('admissions-dashboard.html', { round: r === dept.rounds[0] ? '' : r.id }),
         label: r.label, active: page === 'admissions-dashboard.html' && r === round,
@@ -99,13 +104,13 @@
       fill([...DEPTS].sort((a, b) => (chg[a.id] ?? Infinity) - (chg[b.id] ?? Infinity)), chg);
     }).catch(() => {});
     sel.addEventListener('change', () => {
-      if (!sel.value) { location.href = 'school.html'; return; }
+      if (!sel.value) { location.href = 'school.html' + (keepRound === 'susi2' ? '?round=susi2' : ''); return; }
       const next = DEPTS.find(d => d.id === sel.value);
       const target = schoolScope || (page === 'industry.html' && !next.boards) ? 'admissions-dashboard.html' : page;
       // 경쟁률 화면에서는 보고 있던 회차(수시 2차 등)를 다른 학과에서도 유지한다
       const q = new URLSearchParams();
       if (next !== DEFAULT) q.set('dept', next.id);
-      if (target === 'admissions-dashboard.html' && round && round !== dept.rounds[0] && next.rounds.some(r => r.id === round.id)) q.set('round', round.id);
+      if (target === 'admissions-dashboard.html' && keepRound && next.rounds.some(r => r.id === keepRound)) q.set('round', keepRound);
       location.href = target + (q.toString() ? '?' + q : '');
     });
     pick.appendChild(sel);
@@ -117,7 +122,14 @@
   window.Admission = {
     DEPTS, dept, round, base, link,
     dataFile: dept ? base + round.file : null,
-    deptHref: id => 'admissions-dashboard.html' + (id === DEFAULT.id ? '' : '?dept=' + id),
+    schoolRound,
+    // 학과 경쟁률 화면 주소 (round 를 주면 그 회차 탭)
+    deptHref: (id, r) => {
+      const q = new URLSearchParams();
+      if (id !== DEFAULT.id) q.set('dept', id);
+      if (r) q.set('round', r);
+      return 'admissions-dashboard.html' + (q.toString() ? '?' + q : '');
+    },
     // 학과 설정(dept.json): 이름·분야·교육과정 데이터
     loadDept() {
       return deptConfig || (deptConfig = fetch(base + 'dept.json', { cache: 'no-store' }).then(r => {

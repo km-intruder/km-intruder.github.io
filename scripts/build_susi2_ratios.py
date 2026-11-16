@@ -24,6 +24,7 @@ import build_national_ratios as B
 import update_admissions_ratios as U
 
 DEPT_DIR = Path(__file__).resolve().parent.parent / "admissions-2026" / "depts"
+SCHOOL_DIR = DEPT_DIR.parent / "school"
 OUT = "ratios-susi2.json"
 # 이름이 바뀐 경민대 학과 (2026 학과명) — build_trends.py 의 ALIAS 와 같다
 KM_ALIAS = {
@@ -113,9 +114,44 @@ def build_row(row, entries, past, warn):
     return out
 
 
+def build_school(km, dry):
+    """경민대 전체 화면용 school/susi2-2027.json — 학과·계열은 수시 1차 집계표 순서를 따른다."""
+    s1 = json.loads((SCHOOL_DIR / "susi1-2027.json").read_text(encoding="utf-8"))
+    html = U._fetch(km["url"])
+    names = [d["name"] for d in s1["depts"]]
+    live = U.school_depts(U.parse_entries(html), names)
+    past = [p for p in B.table(B.hidden_json(U._fetch(B.PAST.format(km["uid"])), "hdnResult"))
+            if p["CategoryDisplayName"] == "수시2차" and not re.search(U.OUTSIDE, p["SelTypeName"])]
+    depts = []
+    for d in s1["depts"] + [{"name": n, "group": "기타"} for n in live if n not in names]:
+        if d["name"] not in live:
+            continue
+        old = {U.norm(n) for n in [d["name"]] + KM_ALIAS.get(d["name"], [])}
+        pr = [p for p in past if U.norm(p["MajorName"]) in old]
+        row = {k: d[k] for k in ("group", "name", "id", "adult") if d.get(k) is not None}
+        row.update(live[d["name"]])
+        row["prevQuota"] = sum(p["Mojip"] for p in pr) if pr else None
+        row["prevApplied"] = sum(p["Jiwon"] for p in pr) if pr else None
+        if not pr:
+            row["new"] = True   # 2026 수시 2차에 모집하지 않았거나 신설
+        depts.append(row)
+    missing = [n for n in names if n not in live]
+    t = U.parse_time(html)
+    data = {"title": "2027학년도 수시 2차 정원내 지원현황", "round": "susi2",
+            "basis": f"{t} 기준 (진학어플라이 공개값, 접수 중)", "url": km["url"],
+            "source": "진학어플라이 경민대학교 수시 2차 경쟁률 · 2026은 진학사 스마트경쟁률 과거 경쟁률(2026학년도 수시 2차)",
+            "columns": s1["columns"], "notRecruiting": missing, "depts": depts}
+    U.school_totals(data)
+    print(f"== school/susi2-2027.json: 학과 {len(depts)} · 총 지원 {data['total']['applied']}/{data['total']['quota']} · 2026 {data['total']['prevApplied']}"
+          + (f" · 수시 2차 미모집 {', '.join(missing)}" if missing else ""))
+    if not dry:
+        (SCHOOL_DIR / "susi2-2027.json").write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def main():
     dry = "--dry-run" in sys.argv
     r2 = round2()
+    build_school(r2["경민대학교"], dry)
     print(f"수시 2차 전문대 {len(r2)}곳")
     files = sorted(DEPT_DIR.glob("*/ratios.json"))
     names = {s["name"] for f in files for s in json.loads(f.read_text(encoding="utf-8"))["schools"] if s["type"] != "4년제"}
@@ -130,7 +166,10 @@ def main():
         except Exception as e:  # 한 학교 실패가 전체를 막지 않도록
             print(f"[{name}] 불러오기 실패: {e}")
             return name, None
-        return name, {**info, "entries": U.parse_entries(html), "time": U.parse_time(html), "past": past}
+        entries = U.parse_entries(html)
+        if name == "경민대학교":
+            entries = U.km_entries(entries)
+        return name, {**info, "entries": entries, "time": U.parse_time(html), "past": past}
 
     with ThreadPoolExecutor(8) as ex:
         pages = dict(ex.map(load, sorted(names)))
