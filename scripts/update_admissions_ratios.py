@@ -20,6 +20,9 @@ KST = timezone(timedelta(hours=9))
 RATE_RE = re.compile(r"^\d+(?:\.\d+\s*(?::\s*1)?|\s*:\s*1)$")  # "7.74 : 1" 또는 "7.74"
 FINAL_RE = re.compile(r"최종\s*(?:경쟁률\s*(?:현황)?\s*입니다|마감\s*(?:현황)?\s*입니다|마감되었습니다)")
 NUM_RE = re.compile(r"^[\d,]+$")
+OUTSIDE = (r"정원\s*외|농어촌|기초|수급|차상위|한부모|기회균형|고른기회\s*(?:1|Ⅰ|I)(?!I)|재직자|재외|외국인|북한|장애|졸업자|대졸"
+           r"|전문대.*졸|전문대학이상|이상\s*졸업|학사학위|서해|특수교육|순수외국|전공심화|위탁")
+SUMMARY = r"합계|소계|총계|전체|^계$|정원\s*내\s*$"
 TIME_RE = re.compile(
     r"(\d{4})\s*[-./년]\s*(\d{1,2})\s*[-./월]\s*(\d{1,2})\s*일?[^\d<]{0,20}?"
     r"(오전|오후|AM|PM)?\s*(\d{1,2})\s*[:시]\s*(\d{2})?"
@@ -148,9 +151,49 @@ def parse_time(html):
     return None
 
 
+def inside(entry):
+    """정원내 전형의 학과 행인지 (정원외·합계 행 제외)."""
+    return not any(re.search(OUTSIDE, entry[k]) for k in ("section", "label")) and not re.search(SUMMARY, entry["section"])
+
+
+def track_name(section):
+    return re.sub(r"\s*경쟁률\s*(현황)?\s*$", "", section).strip() or section
+
+
+def starts_word(d, label):
+    """정규화한 학과 이름 d 가 label 의 어느 단어 첫머리에서 시작하는지."""
+    return any(norm(label[m.start():]).startswith(d) for m in re.finditer(r"(?:^|(?<=\s))\S", label))
+
+
+def dept_hits(dept, entries):
+    """학과 이름이 단어 첫머리에서 맞는 정원내 행 (‘건축과’가 ‘실내건축과’에 걸리지 않게). 없으면 부분 일치."""
+    d = norm(dept)
+    hits = [e for e in entries if inside(e) and d and d in norm(e["label"])]
+    return [e for e in hits if starts_word(d, e["label"])] or hits
+
+
+def sum_row(row, entries):
+    """sum: true 행 — 학과 정원내 합계(track '정원내 전체') 또는 한 전형 안의 여러 전공 합계."""
+    hits = dept_hits(row["dept"], entries)
+    if row.get("track") != "정원내 전체":
+        hits = [e for e in hits if norm_track(track_name(e["section"])) == norm_track(row["track"])]
+    if not hits:
+        return None, None
+    main = None
+    if row.get("main"):
+        m = [e for e in hits if norm_track(track_name(e["section"])) == norm_track(row["main"]["track"])]
+        if m:
+            main = {"track": row["main"]["track"], "quota": sum(e["quota"] for e in m), "applied": sum(e["applied"] for e in m)}
+    return {"quota": sum(e["quota"] for e in hits), "applied": sum(e["applied"] for e in hits)}, main
+
+
 def match_row(row, entries):
+    if row.get("sum"):
+        return sum_row(row, entries)[0]
     dept = norm(row["dept"])
     cands = [e for e in entries if dept and dept in norm(e["label"])]
+    if len(cands) > 1:  # ‘건축과’ 행이 ‘실내건축과’에도 걸리면 단어 첫머리에서 맞는 쪽
+        cands = [e for e in cands if starts_word(dept, e["label"])] or cands
     if len(cands) > 1:
         track = norm_track(row.get("track", ""))
         by_track = [e for e in cands if track and track in norm_track(e["section"])]
@@ -206,6 +249,9 @@ def update_file(path, dry_run):
                 print(f"[{school['name']}] {row['dept']}: {row['quota']}/{row['applied']} → {hit['quota']}/{hit['applied']}")
                 row["quota"], row["applied"] = hit["quota"], hit["applied"]
                 changed += 1
+            main = sum_row(row, entries)[1] if row.get("sum") else None
+            if main and main != row.get("main"):
+                row["main"] = main
 
     data["live"] = live
     print(f"변경된 학과: {changed}개")

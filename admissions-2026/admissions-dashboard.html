@@ -21,6 +21,7 @@
       <h1><span class="scope-label">수도권</span> <span data-dept="fieldLabel"></span> <span class="round-label">수시 1차</span> 경쟁률</h1>
       <div class="meta">기준 학과: 경민대학교 <span data-dept="name"></span> (<span id="baseTrack"></span>) · <span class="scope-label">수도권</span> 전문대 <span id="collegeCount"></span>개교</div>
       <div class="meta" data-dept-intro hidden></div>
+      <div class="meta alert" data-round="susi2" hidden>수시 2차는 접수 중입니다(대부분 11.11~11.25). 2027 값은 접수 중 공개값이라 2026 최종값보다 낮게 나오므로, 2026 대비 변화는 마감 뒤에 보는 것이 정확합니다.</div>
     </div>
     <div class="tools">
       <span class="stamp" id="stamp">불러오는 중</span>
@@ -29,7 +30,7 @@
     </div>
   </div>
   <nav class="tabs" id="tabs"></nav>
-  <script src="nav.js?v=20261024"></script>
+  <script src="nav.js?v=20261116"></script>
 </header>
 
 <section class="block" id="sec-base">
@@ -94,7 +95,7 @@
     <summary>표 읽는 법</summary>
     <p>‘순위’는 경민대 <span data-dept="name"></span>를 포함한 경쟁률 순위입니다(같은 경쟁률은 같은 순위). 순위·경쟁률·경민대 대비가 <span class="vs-hi">파란색</span>이면 경민대보다 높고, <span class="vs-lo">빨간색</span>이면 경민대보다 낮은 모집단위입니다. ‘경민대 대비’는 각 모집단위 경쟁률 ÷ 경민대 경쟁률입니다.</p>
     <p data-scope="national" hidden>전국 비교는 학교마다 주 전형 이름과 구성이 달라, 경민대를 포함한 모든 모집단위를 <b>정원내 전형 합계</b>(농어촌·기초수급·대졸자·재직자 등 정원외 전형 제외)로 비교합니다. 그래서 수도권 화면의 주 전형 경쟁률과 값이 다를 수 있습니다.</p>
-    <p data-scope="local">경민대는 비교 학교와 같은 주 전형(일반전형 또는 특별전형-일반고) 값이 학교 집계표에 있으면 그 값으로 순위를 매기고, 없으면 학과 전체(정원내) 값을 씁니다. 2026 → 2027 변화는 학과 전체 기준입니다. 진로가 겹치는 경민대 학과(호텔조리과↔카페베이커리과, 지능형소프트웨어과↔사이버·정보시스템학과, 레포츠과↔태권도외교과)는 순위에는 넣지만, 비교군 중앙값과 시장 지원자 합계에서는 뺍니다.</p>
+    <p data-scope="local">경민대는 비교 학교와 같은 주 전형(일반전형 또는 특별전형-일반고) 값이 학교 집계표(수시 2차는 진학어플라이 공개값)에 있으면 그 값으로 순위를 매기고, 없으면 학과 전체(정원내) 값을 씁니다. 2026 → 2027 변화는 학과 전체 기준입니다. 진로가 겹치는 경민대 학과(호텔조리과↔카페베이커리과, 지능형소프트웨어과↔사이버·정보시스템학과, 레포츠과↔태권도외교과)는 순위에는 넣지만, 비교군 중앙값과 시장 지원자 합계에서는 뺍니다.</p>
     <p>‘변화 원인’은 2026학년도 대비 모집인원·지원인원 변화로 나눈 산술적 분류입니다. 정원이 줄면 지원자가 줄어도 경쟁률이 오를 수 있습니다.</p>
   </details>
 </section>
@@ -125,6 +126,7 @@
   <p id="finalNote"></p>
   <p>모집인원은 학과 전체 입학정원이 아니라 표시된 <span class="round-label">수시 1차</span> 전형의 모집인원입니다. 학교마다 전형과 복수지원 규칙이 다릅니다.</p>
   <p>2026 모집·지원·경쟁률은 대학 공식 최종 자료를 확인한 학과만 표시합니다. 학과명이 달라졌거나 전공 구성이 바뀐 경우 변화율 계산에서 제외했습니다.</p>
+  <p data-round="susi2" hidden>수시 2차의 2026 값은 진학사 스마트경쟁률 과거 경쟁률(2026학년도 수시 2차)의 같은 학과·전형 값입니다. 비교 학교와 모집단위는 수시 1차와 같고, 수시 2차에 모집하지 않는 모집단위는 빠집니다. 수시 1차와 같은 전형이 없으면 일반고·일반전형 값을 쓰고, 전공별로 나뉜 모집단위는 합쳤습니다. 경민대는 진학어플라이 공개값의 학과 정원내 전형 합계입니다.</p>
   <div data-scope="national" hidden id="coverage"></div>
   <p>공개값은 GitHub Actions가 매시 정각 각 대학 경쟁률 원문(진학어플라이·유웨이어플라이)에서 수집하며, 값이 바뀐 경우에만 갱신됩니다. 지도 좌표는 대학 소재지 기준 참고 위치입니다.</p>
   <p>경쟁률 수치를 아직 수록하지 않은 학교:</p>
@@ -472,6 +474,7 @@ const roundName = Admission.round.label.replace(/\s*전국$/, '');
 document.querySelectorAll('.round-label').forEach(e => { e.textContent = roundName; });
 document.querySelectorAll('.scope-label').forEach(e => { e.textContent = SCOPE.area; });
 document.querySelectorAll('[data-scope]').forEach(e => { e.hidden = (e.dataset.scope === 'national') !== NATIONAL; });
+document.querySelectorAll('[data-round]').forEach(e => { e.hidden = e.dataset.round !== Admission.round.id; });
 el('reg').insertAdjacentHTML('beforeend', SCOPE.regions.map(r => `<option>${esc(r)}</option>`).join(''));
 el('map').setAttribute('aria-label', SCOPE.area + ' 학교 위치 지도');
 if (NATIONAL) el('srcHead').textContent = '원문 · 비고';

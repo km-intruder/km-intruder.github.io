@@ -1,0 +1,122 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "dl",
+   "name": "대림대학교",
+   "region": "경기 남부",
+   "city": "안양",
+   "url": "https://ratio.uwayapply.com/SmZKTSVDYDhWSmZDQ2FMSjdmVGY=",
+   "lat": 37.403,
+   "lon": 126.928,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "언어치료학과",
+   "field": "언어치료",
+   "comparable": true,
+   "track": "정원내 전체",
+   "quota": 5,
+   "applied": 8,
+   "sum": true,
+   "prior": 9.0,
+   "priorQuota": 3,
+   "priorApplied": 27,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "간호학과",
+   "field": "보건의료",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 22,
+   "applied": 32,
+   "sum": true,
+   "main": {
+    "track": "특별전형-일반고",
+    "quota": 17,
+    "applied": 23
+   },
+   "prior": 26.25,
+   "priorQuota": 12,
+   "priorApplied": 315,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "보건의료행정과",
+   "field": "보건의료",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 9,
+   "applied": 8,
+   "sum": true,
+   "main": {
+    "track": "특별전형-일반고",
+    "quota": 5,
+    "applied": 6
+   },
+   "prior": 16.33,
+   "priorQuota": 9,
+   "priorApplied": 147,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "의료미용과",
+   "field": "보건의료",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 3,
+   "applied": 4,
+   "sum": true,
+   "prior": 13.0,
+   "priorQuota": 3,
+   "priorApplied": 39,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "dl",
+   "dept": "언어치료학과",
+   "field": "언어치료",
+   "track": "정원내 특별전형(일반고전형)",
+   "quota": 10,
+   "applied": 23,
+   "prior": 13.1,
+   "priorName": "언어치료학과",
+   "priorQuota": 10,
+   "priorApplied": 131,
+   "priorUrl": null,
+   "comparable": true
+  }
+ ],
+ "live": [
+  "dl",
+  "km"
+ ],
+ "finalized": [],
+ "checkedAt": "2026-11-16 09:33",
+ "baseline": {
+  "school": "km",
+  "dept": "언어치료학과"
+ }
+}

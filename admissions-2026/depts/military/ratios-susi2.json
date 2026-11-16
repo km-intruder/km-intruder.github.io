@@ -1,0 +1,137 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "gt",
+   "name": "경기과학기술대학교",
+   "region": "경기 서부",
+   "city": "시흥",
+   "url": "https://ratio.uwayapply.com/SnBKMCZXJTlKZkNDYUxKN2ZUZg==",
+   "lat": 37.337,
+   "lon": 126.734,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "ys",
+   "name": "연성대학교",
+   "region": "경기 남부",
+   "city": "안양",
+   "url": "https://ratio.uwayapply.com/SmZKclc6JldhYGJKZkNDYUxKN2ZUZg==",
+   "lat": 37.397,
+   "lon": 126.926,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "효충군사학과",
+   "field": "군사",
+   "comparable": true,
+   "track": "정원내 전체",
+   "quota": 4,
+   "applied": 7,
+   "sum": true,
+   "prior": 7.75,
+   "priorQuota": 4,
+   "priorApplied": 31,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "국방드론봇시스템과",
+   "field": "국방안전",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 4,
+   "applied": 2,
+   "sum": true,
+   "priorNote": "2026학년도 수시 2차에 같은 모집단위 없음",
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "사이버·정보시스템학과",
+   "field": "국방안전",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 4,
+   "applied": 3,
+   "sum": true,
+   "prior": 14.0,
+   "priorQuota": 1,
+   "priorApplied": 14,
+   "priorUrl": null,
+   "priorName": "사이버보안학과",
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "지능형소프트웨어과",
+   "field": "국방안전",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 3,
+   "applied": 5,
+   "sum": true,
+   "prior": 19.67,
+   "priorQuota": 3,
+   "priorApplied": 59,
+   "priorUrl": null,
+   "priorName": "컴퓨터소프트웨어과",
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "gt",
+   "dept": "국방군사학과",
+   "field": "군사",
+   "track": "정원내 일반고(학생부)",
+   "quota": 2,
+   "applied": 29,
+   "prior": 38.5,
+   "priorName": "국방군사학과",
+   "priorQuota": 2,
+   "priorApplied": 77,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "ys",
+   "dept": "국방군사학과",
+   "field": "군사",
+   "track": "정원내 특별전형-일반고",
+   "quota": 6,
+   "applied": 7,
+   "prior": 5.8,
+   "priorName": "국방군사학과",
+   "priorQuota": 5,
+   "priorApplied": 29,
+   "priorUrl": null,
+   "comparable": true
+  }
+ ],
+ "live": [
+  "gt",
+  "km",
+  "ys"
+ ],
+ "finalized": [],
+ "checkedAt": "2026-11-16 09:33",
+ "baseline": {
+  "school": "km",
+  "dept": "효충군사학과"
+ }
+}

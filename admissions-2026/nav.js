@@ -5,9 +5,11 @@
    회차 추가: 해당 학과 rounds 에 { id: 'susi2', label: '수시 2차', file: 'ratios-susi2.json' } 추가
    전국 비교: scope: 'national' 회차는 같은 화면을 전국 공개 전문대 기준으로 보여 준다 (ratios-national.json) */
 (function () {
-  const S1 = [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }];
+  // 수시 2차: 모든 학과 (scripts/build_susi2_ratios.py 로 만들고 매시 수집기가 갱신)
+  const S2 = { id: 'susi2', label: '수시 2차', file: 'ratios-susi2.json' };
+  const S1 = [{ id: 'susi1', label: '수시 1차', file: 'ratios.json' }, S2];
   // 2026 대비 지원자가 줄어든 학과: 수도권 비교(수시 1차)에 더해 전국 공개 전문대 비교
-  const S1N = [...S1, { id: 'national', label: '수시 1차 전국', file: 'ratios-national.json', scope: 'national' }];
+  const S1N = [S1[0], { id: 'national', label: '수시 1차 전국', file: 'ratios-national.json', scope: 'national' }, S2];
   const DEPTS = [
     { id: 'nursing', name: '간호학과', rounds: S1 },
     { id: 'health-admin', name: '보건의료행정과', rounds: S1 },
@@ -100,7 +102,11 @@
       if (!sel.value) { location.href = 'school.html'; return; }
       const next = DEPTS.find(d => d.id === sel.value);
       const target = schoolScope || (page === 'industry.html' && !next.boards) ? 'admissions-dashboard.html' : page;
-      location.href = target + (next === DEFAULT ? '' : '?dept=' + next.id);
+      // 경쟁률 화면에서는 보고 있던 회차(수시 2차 등)를 다른 학과에서도 유지한다
+      const q = new URLSearchParams();
+      if (next !== DEFAULT) q.set('dept', next.id);
+      if (target === 'admissions-dashboard.html' && round && round !== dept.rounds[0] && next.rounds.some(r => r.id === round.id)) q.set('round', round.id);
+      location.href = target + (q.toString() ? '?' + q : '');
     });
     pick.appendChild(sel);
     nav.appendChild(pick);

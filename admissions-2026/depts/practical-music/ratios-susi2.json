@@ -1,0 +1,97 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "gb",
+   "name": "경복대학교",
+   "region": "경기 북부",
+   "city": "남양주",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40130851.html",
+   "lat": 37.739,
+   "lon": 127.192,
+   "type": "전문대",
+   "time": "2026-11-16 09:32"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "실용음악과",
+   "field": "실용음악",
+   "comparable": true,
+   "track": "정원내 전체",
+   "quota": 13,
+   "applied": 25,
+   "sum": true,
+   "prior": 4.77,
+   "priorQuota": 13,
+   "priorApplied": 62,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "미디어영상과",
+   "field": "인플루언서 재양성",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 12,
+   "applied": 14,
+   "sum": true,
+   "prior": 17.2,
+   "priorQuota": 10,
+   "priorApplied": 172,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "연기예술과",
+   "field": "인플루언서 재양성",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 15,
+   "applied": 9,
+   "sum": true,
+   "prior": 3.4,
+   "priorQuota": 15,
+   "priorApplied": 51,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "gb",
+   "dept": "실용음악과(보컬)",
+   "field": "실용음악",
+   "track": "일반전형",
+   "quota": 9,
+   "applied": 6,
+   "prior": 3.75,
+   "priorName": "실용음악과(보컬)",
+   "priorQuota": 8,
+   "priorApplied": 30,
+   "priorUrl": null,
+   "comparable": true
+  }
+ ],
+ "live": [
+  "gb",
+  "km"
+ ],
+ "finalized": [],
+ "checkedAt": "2026-11-16 09:33",
+ "baseline": {
+  "school": "km",
+  "dept": "실용음악과"
+ }
+}

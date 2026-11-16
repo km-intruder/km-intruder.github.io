@@ -1,0 +1,213 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "bc",
+   "name": "부천대학교",
+   "region": "경기 서부",
+   "city": "부천",
+   "url": "https://ratio.uwayapply.com/SmZKTEJKZkNDYUxKN2ZUZg==",
+   "lat": 37.486,
+   "lon": 126.784,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "yh",
+   "name": "유한대학교",
+   "region": "경기 서부",
+   "city": "부천",
+   "url": "https://ratio.uwayapply.com/SmZKVzh8OmJKZkNDYUxKN2ZUZg==",
+   "lat": 37.488,
+   "lon": 126.813,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "dl",
+   "name": "대림대학교",
+   "region": "경기 남부",
+   "city": "안양",
+   "url": "https://ratio.uwayapply.com/SmZKTSVDYDhWSmZDQ2FMSjdmVGY=",
+   "lat": 37.403,
+   "lon": 126.928,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "sg",
+   "name": "신구대학교",
+   "region": "경기 남부",
+   "city": "성남",
+   "url": "https://ratio.uwayapply.com/SmZKOnJXJXwmSmZDQ2FMSjdmVGY=",
+   "lat": 37.446,
+   "lon": 127.158,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "ys",
+   "name": "연성대학교",
+   "region": "경기 남부",
+   "city": "안양",
+   "url": "https://ratio.uwayapply.com/SmZKclc6JldhYGJKZkNDYUxKN2ZUZg==",
+   "lat": 37.397,
+   "lon": 126.926,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "sj",
+   "name": "서정대학교",
+   "region": "경기 북부",
+   "city": "양주",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41600451.html",
+   "lat": 37.857,
+   "lon": 127.038,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "응급구조학과",
+   "field": "응급구조",
+   "comparable": true,
+   "track": "정원내 전체",
+   "quota": 7,
+   "applied": 22,
+   "sum": true,
+   "prior": 21.29,
+   "priorQuota": 7,
+   "priorApplied": 149,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "소방안전관리과",
+   "field": "공공안전",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 26,
+   "applied": 46,
+   "sum": true,
+   "main": {
+    "track": "일반전형",
+    "quota": 16,
+    "applied": 40
+   },
+   "prior": 6.67,
+   "priorQuota": 24,
+   "priorApplied": 160,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "bc",
+   "dept": "응급구조학과",
+   "field": "응급구조",
+   "track": "일반고",
+   "quota": 5,
+   "applied": 25,
+   "prior": 16.0,
+   "priorName": "응급구조학과(3년제)",
+   "priorQuota": 10,
+   "priorApplied": 160,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "yh",
+   "dept": "응급구조과",
+   "field": "응급구조",
+   "track": "정원내 일반고 전형",
+   "quota": 7,
+   "applied": 16,
+   "prior": 20.57,
+   "priorName": "응급구조과",
+   "priorQuota": 7,
+   "priorApplied": 144,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "dl",
+   "dept": "응급구조과",
+   "field": "응급구조",
+   "track": "정원내 특별전형(일반고전형)",
+   "quota": 10,
+   "applied": 64,
+   "prior": 25.6,
+   "priorName": "응급구조과",
+   "priorQuota": 10,
+   "priorApplied": 256,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "sg",
+   "dept": "응급구조학과",
+   "field": "응급구조",
+   "track": "정원내 특별전형 일반고전형",
+   "quota": 14,
+   "applied": 17,
+   "comparable": false,
+   "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
+  },
+  {
+   "school": "ys",
+   "dept": "응급구조과",
+   "field": "응급구조",
+   "track": "정원내 특별전형-일반고",
+   "quota": 15,
+   "applied": 23,
+   "prior": 24.45,
+   "priorName": "응급구조과",
+   "priorQuota": 11,
+   "priorApplied": 269,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "sj",
+   "dept": "응급구조과",
+   "field": "응급구조",
+   "track": "일반전형",
+   "quota": 24,
+   "applied": 33,
+   "prior": 7.7,
+   "priorName": "응급구조과(3년제)",
+   "priorQuota": 27,
+   "priorApplied": 208,
+   "priorUrl": null,
+   "comparable": true
+  }
+ ],
+ "live": [
+  "bc",
+  "dl",
+  "km",
+  "sg",
+  "sj",
+  "yh",
+  "ys"
+ ],
+ "finalized": [],
+ "checkedAt": "2026-11-16 09:33",
+ "baseline": {
+  "school": "km",
+  "dept": "응급구조학과"
+ }
+}

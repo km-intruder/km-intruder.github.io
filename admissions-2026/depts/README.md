@@ -5,7 +5,8 @@
 ```
 depts/<학과 id>/
 ├─ dept.json        학과 이름·분야·교육과정 비교 데이터
-├─ ratios.json      수시 1차 경쟁률 (회차가 늘면 ratios-susi2.json …)
+├─ ratios.json      수시 1차 경쟁률
+├─ ratios-susi2.json  수시 2차 경쟁률 (모든 학과, 아래 참고)
 ├─ ratios-national.json  수시 1차 전국 공개 전문대 비교 (지원 감소 학과만, 아래 참고)
 └─ posts/            전문대·산업 현황 게시판 (boards: true 인 학과만, 현재 software)
 ```
@@ -39,6 +40,15 @@ depts/<학과 id>/
 - `rows`: 모집단위별 `school`, `dept`, `field`, `track`, `quota`, `applied`, 2026 대비용 `prior`·`priorQuota`·`priorApplied`·`priorUrl`, 직접 비교 가능 여부 `comparable`
 - 경민대의 같은 학교 다른 학과 행은 비교군에서 자동 제외되고 진단 표의 “경민대 ○○ 계열 합계”에만 쓰인다
 - 학과에서 받은 확정값은 `"locked": true`로 두면 자동 수집이 덮어쓰지 않는다
+
+## 수시 2차 (ratios-susi2.json)
+
+모든 학과에 ‘수시 2차’ 탭이 붙는다 (`nav.js`의 `S2`). 같은 `admissions-dashboard.html?round=susi2`.
+
+- 만들기: `python scripts/build_susi2_ratios.py` (학과 `ratios.json`의 전문대·모집단위 → 진학사 스마트경쟁률 '수시2차' 경쟁률 원문 + 2026 수시2차 진학사 과거 경쟁률). 다시 돌리면 덮어쓴다
+- 수시 2차에 모집하지 않는 모집단위·학교, 4년제는 빠진다. 전형은 수시 1차와 같은 전형 → 일반고·일반전형 순
+- 경민대 행과 전공별로 나뉜 모집단위는 `"sum": true`: 매시 수집기가 학과 정원내 합계(`track: "정원내 전체"`) 또는 그 전형의 전공 합계를 낸다. 경민대 `main`(주 전형)도 함께 갱신
+- 접수 중에는 화면 위에 ‘접수 중’ 안내가 뜬다 (`data-round="susi2"`)
 
 ## 전국 비교 (ratios-national.json)
 

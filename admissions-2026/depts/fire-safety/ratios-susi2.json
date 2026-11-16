@@ -1,0 +1,249 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "dy",
+   "name": "동양미래대학교",
+   "region": "서울",
+   "city": "구로",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40580421.html",
+   "lat": 37.499,
+   "lon": 126.868,
+   "type": "전문대",
+   "time": "2026-11-11 09:00"
+  },
+  {
+   "id": "gt",
+   "name": "경기과학기술대학교",
+   "region": "경기 서부",
+   "city": "시흥",
+   "url": "https://ratio.uwayapply.com/SnBKMCZXJTlKZkNDYUxKN2ZUZg==",
+   "lat": 37.337,
+   "lon": 126.734,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "yh",
+   "name": "유한대학교",
+   "region": "경기 서부",
+   "city": "부천",
+   "url": "https://ratio.uwayapply.com/SmZKVzh8OmJKZkNDYUxKN2ZUZg==",
+   "lat": 37.488,
+   "lon": 126.813,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "ss",
+   "name": "수원과학대학교",
+   "region": "경기 남부",
+   "city": "화성",
+   "url": "https://ratio.uwayapply.com/SmZKTCYmSmZDQ2FMSjdmVGY=",
+   "lat": 37.194,
+   "lon": 126.973,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "dl",
+   "name": "대림대학교",
+   "region": "경기 남부",
+   "city": "안양",
+   "url": "https://ratio.uwayapply.com/SmZKTSVDYDhWSmZDQ2FMSjdmVGY=",
+   "lat": 37.403,
+   "lon": 126.928,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "os",
+   "name": "오산대학교",
+   "region": "경기 남부",
+   "city": "오산",
+   "url": "https://ratio.uwayapply.com/SmZKVzgmYUpmQ0NhTEo3ZlRm",
+   "lat": 37.148,
+   "lon": 127.067,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "sj",
+   "name": "서정대학교",
+   "region": "경기 북부",
+   "city": "양주",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41600451.html",
+   "lat": 37.857,
+   "lon": 127.038,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "소방안전관리과",
+   "field": "소방안전",
+   "comparable": true,
+   "track": "정원내 전체",
+   "quota": 26,
+   "applied": 46,
+   "sum": true,
+   "main": {
+    "track": "일반전형",
+    "quota": 16,
+    "applied": 40
+   },
+   "prior": 6.67,
+   "priorQuota": 24,
+   "priorApplied": 160,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "응급구조학과",
+   "field": "공공안전",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 7,
+   "applied": 22,
+   "sum": true,
+   "prior": 21.29,
+   "priorQuota": 7,
+   "priorApplied": 149,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "dy",
+   "dept": "소방안전관리과",
+   "field": "소방안전",
+   "track": "일반고 전형",
+   "quota": 20,
+   "applied": 28,
+   "prior": 11.6,
+   "priorName": "소방안전관리과",
+   "priorQuota": 20,
+   "priorApplied": 232,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "gt",
+   "dept": "건축소방안전학과",
+   "field": "소방안전",
+   "track": "정원내 일반고(학생부)",
+   "quota": 4,
+   "applied": 27,
+   "prior": 44.25,
+   "priorName": "건축소방안전학과",
+   "priorQuota": 4,
+   "priorApplied": 177,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "yh",
+   "dept": "소방설비안전전공",
+   "field": "소방안전",
+   "track": "정원내 일반고 전형",
+   "quota": 5,
+   "applied": 11,
+   "prior": 19.0,
+   "priorName": "소방설비안전전공",
+   "priorQuota": 5,
+   "priorApplied": 95,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "ss",
+   "dept": "소방안전설비과",
+   "field": "소방안전",
+   "track": "정원내 전형 일반고 출신자(일반과정)",
+   "quota": 10,
+   "applied": 26,
+   "comparable": false,
+   "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
+  },
+  {
+   "school": "ss",
+   "dept": "소방행정학과",
+   "field": "소방안전",
+   "track": "정원내 전형 일반고 출신자(일반과정)",
+   "quota": 11,
+   "applied": 15,
+   "comparable": false,
+   "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
+  },
+  {
+   "school": "dl",
+   "dept": "소방안전설비과",
+   "field": "소방안전",
+   "track": "정원내 특별전형(일반고전형)",
+   "quota": 15,
+   "applied": 52,
+   "prior": 16.93,
+   "priorName": "소방안전설비과",
+   "priorQuota": 15,
+   "priorApplied": 254,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "os",
+   "dept": "소방안전관리과",
+   "field": "소방안전",
+   "track": "정원내 일반전형",
+   "quota": 13,
+   "applied": 59,
+   "prior": 16.46,
+   "priorName": "소방안전관리과",
+   "priorQuota": 13,
+   "priorApplied": 214,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "sj",
+   "dept": "소방안전관리과",
+   "field": "소방안전",
+   "track": "일반전형",
+   "quota": 13,
+   "applied": 8,
+   "prior": 10.5,
+   "priorName": "소방안전관리과",
+   "priorQuota": 10,
+   "priorApplied": 105,
+   "priorUrl": null,
+   "comparable": true
+  }
+ ],
+ "live": [
+  "dl",
+  "dy",
+  "gt",
+  "km",
+  "os",
+  "sj",
+  "ss",
+  "yh"
+ ],
+ "finalized": [],
+ "checkedAt": "2026-11-16 09:33",
+ "baseline": {
+  "school": "km",
+  "dept": "소방안전관리과"
+ }
+}

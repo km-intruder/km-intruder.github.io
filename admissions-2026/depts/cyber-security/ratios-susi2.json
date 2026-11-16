@@ -1,0 +1,160 @@
+{
+ "schools": [
+  {
+   "id": "km",
+   "name": "경민대학교",
+   "region": "경기 북부",
+   "city": "의정부",
+   "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
+   "lat": 37.746,
+   "lon": 127.071,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "bc",
+   "name": "부천대학교",
+   "region": "경기 서부",
+   "city": "부천",
+   "url": "https://ratio.uwayapply.com/SmZKTEJKZkNDYUxKN2ZUZg==",
+   "lat": 37.486,
+   "lon": 126.784,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "ds",
+   "name": "동서울대학교",
+   "region": "경기 남부",
+   "city": "성남",
+   "url": "https://ratio.uwayapply.com/SmZKOlZKZkNDYUxKN2ZUZg==",
+   "lat": 37.459,
+   "lon": 127.162,
+   "type": "전문대",
+   "time": "2026-11-16 09:30"
+  },
+  {
+   "id": "mj",
+   "name": "명지전문대학",
+   "region": "서울",
+   "city": "서대문",
+   "url": "https://ratio.uwayapply.com/SmZKTC9NSmZDQ2FMSjdmVGY=",
+   "lat": 37.584,
+   "lon": 126.925,
+   "type": "전문대",
+   "time": "2026-11-15 17:00"
+  }
+ ],
+ "rows": [
+  {
+   "school": "km",
+   "dept": "사이버·정보시스템학과",
+   "field": "사이버보안",
+   "comparable": true,
+   "track": "정원내 전체",
+   "quota": 4,
+   "applied": 3,
+   "sum": true,
+   "prior": 14.0,
+   "priorQuota": 1,
+   "priorApplied": 14,
+   "priorUrl": null,
+   "priorName": "사이버보안학과",
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "국방드론봇시스템과",
+   "field": "국방안전",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 4,
+   "applied": 2,
+   "sum": true,
+   "priorNote": "2026학년도 수시 2차에 같은 모집단위 없음",
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "지능형소프트웨어과",
+   "field": "국방안전",
+   "comparable": false,
+   "rankWith": true,
+   "track": "정원내 전체",
+   "quota": 3,
+   "applied": 5,
+   "sum": true,
+   "prior": 19.67,
+   "priorQuota": 3,
+   "priorApplied": 59,
+   "priorUrl": null,
+   "priorName": "컴퓨터소프트웨어과",
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "km",
+   "dept": "효충군사학과",
+   "field": "국방안전",
+   "comparable": false,
+   "track": "정원내 전체",
+   "quota": 4,
+   "applied": 7,
+   "sum": true,
+   "prior": 7.75,
+   "priorQuota": 4,
+   "priorApplied": 31,
+   "priorUrl": null,
+   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+  },
+  {
+   "school": "bc",
+   "dept": "컴퓨터정보보안학과",
+   "field": "사이버보안",
+   "track": "일반고",
+   "quota": 5,
+   "applied": 4,
+   "prior": 8.0,
+   "priorName": "컴퓨터정보보안학과(3년제)",
+   "priorQuota": 4,
+   "priorApplied": 32,
+   "priorUrl": null,
+   "comparable": true
+  },
+  {
+   "school": "ds",
+   "dept": "사이버보안학과",
+   "field": "사이버보안",
+   "track": "정원내 일반고전형",
+   "quota": 2,
+   "applied": 3,
+   "comparable": false,
+   "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
+  },
+  {
+   "school": "mj",
+   "dept": "컴퓨터보안공학과",
+   "field": "사이버보안",
+   "track": "정원내 특별전형(일반고)",
+   "quota": 11,
+   "applied": 5,
+   "prior": 9.82,
+   "priorName": "컴퓨터보안공학과",
+   "priorQuota": 11,
+   "priorApplied": 108,
+   "priorUrl": null,
+   "comparable": true
+  }
+ ],
+ "live": [
+  "bc",
+  "ds",
+  "km",
+  "mj"
+ ],
+ "finalized": [],
+ "checkedAt": "2026-11-16 09:33",
+ "baseline": {
+  "school": "km",
+  "dept": "사이버·정보시스템학과"
+ }
+}
