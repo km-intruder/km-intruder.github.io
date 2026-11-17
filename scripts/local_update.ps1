@@ -3,7 +3,7 @@
 # 작업 폴더와 섞이지 않게 수집 전용 worktree(F:\git\km-intruder-updater)에서 origin/master 를 받아 돌린다.
 #
 # 설치: git worktree add --detach F:\git\km-intruder-updater origin/master
-#       schtasks /Create /TN "km-intruder 경쟁률 수집" /SC MINUTE /MO 30 /TR "powershell -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File F:\git\km-intruder-updater\scripts\local_update.ps1"
+#       schtasks /Create /TN "km-intruder ratio update" /SC MINUTE /MO 30 /TR "powershell -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File F:\git\km-intruder-updater\scripts\local_update.ps1"
 # 로그: F:\git\km-intruder-updater.log (최근 2000줄 유지)
 $ErrorActionPreference = 'Continue'
 $repo = Split-Path -Parent $PSScriptRoot
