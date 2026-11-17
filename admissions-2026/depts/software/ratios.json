@@ -36,7 +36,8 @@
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11870871.html",
    "lat": 37.709,
    "lon": 127.047,
-   "type": "4년제"
+   "type": "4년제",
+   "time": "2026-11-17 최종 마감"
   },
   {
    "id": "dj",
@@ -48,7 +49,8 @@
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio1051411.aspx",
    "lat": 37.893,
    "lon": 127.201,
-   "type": "4년제"
+   "type": "4년제",
+   "time": "2026-11-17 최종 마감"
   },
   {
    "id": "dy",
@@ -149,7 +151,7 @@
    "x": 262,
    "y": 314,
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260551.html",
-   "time": "2026-09-30 21:00",
+   "time": "2026-09-30 최종 마감",
    "lat": 37.448,
    "lon": 126.657,
    "type": "전문대"
@@ -693,6 +695,8 @@
  "live": [
   "gb",
   "km",
+  "sh",
+  "dj",
   "dy",
   "si",
   "id",
@@ -718,9 +722,12 @@
   "yh",
   "ss",
   "ds",
-  "km"
+  "km",
+  "sh",
+  "dj",
+  "ih"
  ],
- "checkedAt": "2026-10-02 06:21",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "지능형소프트웨어과"

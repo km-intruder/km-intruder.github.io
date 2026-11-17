@@ -109,12 +109,13 @@
   }
  ],
  "live": [
+  "km",
   "dl"
  ],
  "finalized": [
   "km"
  ],
- "checkedAt": "2026-10-04 18:00",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "언어치료학과"

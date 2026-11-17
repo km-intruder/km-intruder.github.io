@@ -320,7 +320,6 @@
   }
  ],
  "live": [
-  "km",
   "sj",
   "bc",
   "yh",
@@ -346,7 +345,7 @@
   "je",
   "km"
  ],
- "checkedAt": "2026-10-03 22:24",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "호텔조리과"

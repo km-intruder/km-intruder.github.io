@@ -28,7 +28,7 @@
    "region": "인천",
    "city": "미추홀",
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260551.html",
-   "time": "2026-09-30 21:00",
+   "time": "2026-09-30 최종 마감",
    "lat": 37.448,
    "lon": 126.657,
    "type": "전문대"
@@ -183,6 +183,10 @@
   }
  ],
  "live": [
+  "km",
+  "gb",
+  "ih",
+  "je",
   "mj",
   "os"
  ],
@@ -191,9 +195,10 @@
   "gb",
   "je",
   "mj",
-  "os"
+  "os",
+  "ih"
  ],
- "checkedAt": "2026-10-04 18:00",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "국방드론봇시스템과"

@@ -261,8 +261,11 @@
   }
  ],
  "live": [
+  "km",
+  "gb",
   "id",
   "yh",
+  "je",
   "dl",
   "sg",
   "ys",
@@ -278,7 +281,7 @@
   "ys",
   "sa"
  ],
- "checkedAt": "2026-10-04 18:00",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "미디어영상과"

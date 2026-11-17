@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-16 09:30"
+   "time": "2026-11-17 11:50"
   },
   {
    "id": "si",
@@ -20,7 +20,7 @@
    "lat": 37.586,
    "lon": 127.097,
    "type": "전문대",
-   "time": "2026-11-15 18:00"
+   "time": "2026-11-17 10:00"
   },
   {
    "id": "id",
@@ -42,7 +42,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-17 11:50"
+   "time": "2026-11-17 11:55"
   },
   {
    "id": "gt",
@@ -53,7 +53,7 @@
    "lat": 37.337,
    "lon": 126.734,
    "type": "전문대",
-   "time": "2026-11-17 11:50"
+   "time": "2026-11-17 11:55"
   },
   {
    "id": "yh",
@@ -64,7 +64,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-17 11:50"
+   "time": "2026-11-17 11:55"
   },
   {
    "id": "ss",
@@ -97,7 +97,7 @@
    "lat": 37.459,
    "lon": 127.162,
    "type": "전문대",
-   "time": "2026-11-17 11:50"
+   "time": "2026-11-17 11:55"
   },
   {
    "id": "mj",
@@ -119,7 +119,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-17 11:50"
+   "time": "2026-11-17 11:55"
   },
   {
    "id": "ys",
@@ -130,7 +130,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-17 11:50"
+   "time": "2026-11-17 11:55"
   }
  ],
  "rows": [
@@ -141,12 +141,12 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 16,
-   "applied": 16,
+   "applied": 19,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 10,
-    "applied": 10
+    "applied": 11
    },
    "prior": 11.75,
    "priorQuota": 16,
@@ -161,12 +161,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 16,
-   "applied": 3,
+   "applied": 4,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 4,
-    "applied": 2
+    "applied": 3
    },
    "prior": 8.0,
    "priorQuota": 4,
@@ -181,7 +181,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 17,
-   "applied": 5,
+   "applied": 8,
    "sum": true,
    "priorNote": "2026학년도 수시 2차에 같은 모집단위 없음",
    "note": "진학어플라이 공개값 (정원내 전형 합계)"
@@ -193,7 +193,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 2,
-   "applied": 13,
+   "applied": 14,
    "sum": true,
    "prior": 13.0,
    "priorQuota": 3,
@@ -207,7 +207,7 @@
    "field": "게임콘텐츠",
    "track": "특별전형(일반고)",
    "quota": 22,
-   "applied": 12,
+   "applied": 15,
    "prior": 6.44,
    "priorName": "AI게임융합학과",
    "priorQuota": 25,
@@ -287,7 +287,7 @@
    "field": "게임콘텐츠",
    "track": "일반고전형",
    "quota": 6,
-   "applied": 17,
+   "applied": 20,
    "prior": 16.5,
    "priorName": "게임아트디자인과",
    "priorQuota": 6,
@@ -405,7 +405,7 @@
   "ys"
  ],
  "finalized": [],
- "checkedAt": "2026-11-17 11:54",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "게임콘텐츠과"

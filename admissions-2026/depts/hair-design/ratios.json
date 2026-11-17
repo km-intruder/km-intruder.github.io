@@ -273,6 +273,8 @@
   }
  ],
  "live": [
+  "km",
+  "gb",
   "id",
   "bc",
   "ds",
@@ -292,7 +294,7 @@
   "ys",
   "os"
  ],
- "checkedAt": "2026-10-04 18:00",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "헤어디자인과"

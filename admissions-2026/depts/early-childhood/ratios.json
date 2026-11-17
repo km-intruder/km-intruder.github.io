@@ -277,7 +277,11 @@
   }
  ],
  "live": [
+  "km",
+  "gb",
+  "si",
   "bc",
+  "je",
   "dl",
   "mj",
   "sg",
@@ -295,7 +299,7 @@
   "ys",
   "os"
  ],
- "checkedAt": "2026-10-04 18:00",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "유아교육학과"

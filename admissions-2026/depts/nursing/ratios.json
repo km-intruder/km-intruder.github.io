@@ -107,7 +107,8 @@
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41600441.html",
    "lat": 37.857,
    "lon": 127.038,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-11-17 최종 마감"
   }
  ],
  "rows": [
@@ -284,11 +285,16 @@
   }
  ],
  "live": [
+  "km",
+  "gb",
+  "si",
   "bc",
   "yh",
   "ss",
+  "je",
   "sg",
-  "ys"
+  "ys",
+  "sj"
  ],
  "finalized": [
   "km",
@@ -302,7 +308,7 @@
   "sj",
   "ys"
  ],
- "checkedAt": "2026-10-04 18:00",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "간호학과"

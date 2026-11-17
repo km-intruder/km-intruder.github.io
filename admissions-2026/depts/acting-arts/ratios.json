@@ -207,6 +207,8 @@
   }
  ],
  "live": [
+  "km",
+  "gb",
   "yh",
   "ss",
   "ds",
@@ -220,7 +222,7 @@
   "ds",
   "os"
  ],
- "checkedAt": "2026-10-04 17:59",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "연기예술과"

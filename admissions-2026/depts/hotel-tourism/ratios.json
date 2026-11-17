@@ -83,7 +83,7 @@
    "region": "인천",
    "city": "미추홀",
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41260551.html",
-   "time": "2026-09-30 21:00",
+   "time": "2026-09-30 최종 마감",
    "lat": 37.448,
    "lon": 126.657,
    "type": "전문대"
@@ -151,7 +151,8 @@
    "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio41600441.html",
    "lat": 37.857,
    "lon": 127.038,
-   "type": "전문대"
+   "type": "전문대",
+   "time": "2026-11-17 최종 마감"
   }
  ],
  "rows": [
@@ -390,14 +391,20 @@
   }
  ],
  "live": [
+  "km",
+  "gb",
+  "dy",
   "id",
   "bc",
   "yh",
   "ss",
+  "ih",
+  "je",
   "ds",
   "dl",
   "sg",
-  "os"
+  "os",
+  "sj"
  ],
  "finalized": [
   "km",
@@ -411,9 +418,10 @@
   "ds",
   "sg",
   "sj",
-  "os"
+  "os",
+  "ih"
  ],
- "checkedAt": "2026-10-04 18:00",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "호텔관광학과"

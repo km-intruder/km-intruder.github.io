@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-16 09:30"
+   "time": "2026-11-17 11:50"
   },
   {
    "id": "dy",
@@ -31,7 +31,7 @@
    "lat": 37.337,
    "lon": 126.734,
    "type": "전문대",
-   "time": "2026-11-17 11:50"
+   "time": "2026-11-17 11:55"
   },
   {
    "id": "yh",
@@ -42,7 +42,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-17 11:50"
+   "time": "2026-11-17 11:55"
   },
   {
    "id": "ss",
@@ -64,7 +64,7 @@
    "lat": 37.403,
    "lon": 126.928,
    "type": "전문대",
-   "time": "2026-11-17 11:50"
+   "time": "2026-11-17 11:55"
   },
   {
    "id": "os",
@@ -86,7 +86,7 @@
    "lat": 37.857,
    "lon": 127.038,
    "type": "전문대",
-   "time": "2026-11-16 09:30"
+   "time": "2026-11-17 11:50"
   }
  ],
  "rows": [
@@ -97,12 +97,12 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 26,
-   "applied": 46,
+   "applied": 57,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 16,
-    "applied": 40
+    "applied": 51
    },
    "prior": 6.67,
    "priorQuota": 24,
@@ -117,7 +117,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 7,
-   "applied": 22,
+   "applied": 24,
    "sum": true,
    "prior": 21.29,
    "priorQuota": 7,
@@ -131,7 +131,7 @@
    "field": "소방안전",
    "track": "일반고 전형",
    "quota": 20,
-   "applied": 28,
+   "applied": 32,
    "prior": 11.6,
    "priorName": "소방안전관리과",
    "priorQuota": 20,
@@ -221,7 +221,7 @@
    "field": "소방안전",
    "track": "일반전형",
    "quota": 13,
-   "applied": 8,
+   "applied": 10,
    "prior": 10.5,
    "priorName": "소방안전관리과",
    "priorQuota": 10,
@@ -241,7 +241,7 @@
   "sj"
  ],
  "finalized": [],
- "checkedAt": "2026-11-17 11:54",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "소방안전관리과"

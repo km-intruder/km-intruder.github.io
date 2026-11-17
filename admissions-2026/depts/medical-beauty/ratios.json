@@ -317,9 +317,13 @@
   }
  ],
  "live": [
+  "km",
+  "gb",
+  "si",
   "bc",
   "yh",
   "ss",
+  "je",
   "ds",
   "mj",
   "sg",
@@ -338,7 +342,7 @@
   "mj",
   "ys"
  ],
- "checkedAt": "2026-10-04 18:00",
+ "checkedAt": "2026-11-17 11:55",
  "baseline": {
   "school": "km",
   "dept": "의료미용과"
