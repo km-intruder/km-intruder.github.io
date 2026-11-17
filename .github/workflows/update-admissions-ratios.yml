@@ -2,7 +2,7 @@ name: 수시 경쟁률 공개값 갱신
 
 on:
   schedule:
-    - cron: "0 * * * *"   # 매시 정각 (UTC 기준, 한국시간도 매시 정각)
+    - cron: "17,47 * * * *"   # 30분마다 (정각은 GitHub 예약 실행이 자주 밀리거나 빠져 붐비지 않는 분으로)
   workflow_dispatch:       # Actions 탭에서 수동 실행
 
 permissions:
