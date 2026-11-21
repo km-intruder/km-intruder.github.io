@@ -1,7 +1,7 @@
 {
  "title": "2027학년도 수시 2차 정원내 지원현황",
  "round": "susi2",
- "basis": "2026-11-21 21:50 기준 (진학어플라이 공개값, 접수 중)",
+ "basis": "2026-11-21 22:20 기준 (진학어플라이 공개값, 접수 중)",
  "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
  "source": "진학어플라이 경민대학교 수시 2차 경쟁률 · 2026은 진학사 스마트경쟁률 과거 경쟁률(2026학년도 수시 2차)",
  "columns": {
@@ -24,11 +24,11 @@
     ],
     "vocational": [
      5,
-     19
+     20
     ]
    },
    "quota": 22,
-   "applied": 75,
+   "applied": 76,
    "prevQuota": 12,
    "prevApplied": 315
   },
@@ -88,7 +88,7 @@
    "tracks": {
     "general": [
      16,
-     68
+     69
     ],
     "special": [
      10,
@@ -96,7 +96,7 @@
     ]
    },
    "quota": 26,
-   "applied": 79,
+   "applied": 80,
    "prevQuota": 24,
    "prevApplied": 160
   },
@@ -141,11 +141,11 @@
    "tracks": {
     "general": [
      5,
-     31
+     32
     ]
    },
    "quota": 5,
-   "applied": 31,
+   "applied": 32,
    "prevQuota": 5,
    "prevApplied": 131
   },
@@ -281,11 +281,11 @@
    "tracks": {
     "general": [
      12,
-     33
+     34
     ]
    },
    "quota": 12,
-   "applied": 33,
+   "applied": 34,
    "prevQuota": 10,
    "prevApplied": 172
   },
@@ -311,11 +311,11 @@
    "tracks": {
     "general": [
      15,
-     26
+     27
     ]
    },
    "quota": 15,
-   "applied": 26,
+   "applied": 27,
    "prevQuota": 15,
    "prevApplied": 51
   },
@@ -368,7 +368,7 @@
    "tracks": {
     "special": [
      14,
-     15
+     17
     ],
     "talent": [
      3,
@@ -376,7 +376,7 @@
     ]
    },
    "quota": 17,
-   "applied": 18,
+   "applied": 20,
    "prevQuota": null,
    "prevApplied": null,
    "new": true
@@ -388,11 +388,11 @@
    "tracks": {
     "general": [
      2,
-     29
+     30
     ]
    },
    "quota": 2,
-   "applied": 29,
+   "applied": 30,
    "prevQuota": 3,
    "prevApplied": 39
   },
@@ -444,11 +444,11 @@
  ],
  "total": {
   "quota": 231,
-  "applied": 728,
+  "applied": 736,
   "prevApplied": 2339,
   "day": {
    "quota": 226,
-   "applied": 727,
+   "applied": 735,
    "prevApplied": 2335
   }
  },
