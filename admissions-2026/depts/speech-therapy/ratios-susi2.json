@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-23 03:20"
+   "time": "2026-11-23 03:50"
   },
   {
    "id": "dl",
@@ -20,7 +20,7 @@
    "lat": 37.403,
    "lon": 126.928,
    "type": "전문대",
-   "time": "2026-11-23 03:30"
+   "time": "2026-11-23 04:00"
   }
  ],
  "rows": [
@@ -46,12 +46,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 22,
-   "applied": 97,
+   "applied": 98,
    "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 17,
-    "applied": 77
+    "applied": 78
    },
    "prior": 26.25,
    "priorQuota": 12,
@@ -86,7 +86,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 3,
-   "applied": 18,
+   "applied": 19,
    "sum": true,
    "prior": 13.0,
    "priorQuota": 3,
@@ -114,7 +114,7 @@
   "dl"
  ],
  "finalized": [],
- "checkedAt": "2026-11-23 03:31",
+ "checkedAt": "2026-11-23 04:01",
  "baseline": {
   "school": "km",
   "dept": "언어치료학과"
