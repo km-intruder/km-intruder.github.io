@@ -1,7 +1,7 @@
 {
  "title": "2027학년도 수시 2차 정원내 지원현황",
  "round": "susi2",
- "basis": "2026-11-23 16:50 기준 (진학어플라이 공개값, 접수 중)",
+ "basis": "2026-11-23 17:20 기준 (진학어플라이 공개값, 접수 중)",
  "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
  "source": "진학어플라이 경민대학교 수시 2차 경쟁률 · 2026은 진학사 스마트경쟁률 과거 경쟁률(2026학년도 수시 2차)",
  "columns": {
@@ -20,15 +20,15 @@
    "tracks": {
     "regular": [
      17,
-     91
+     92
     ],
     "vocational": [
      5,
-     23
+     24
     ]
    },
    "quota": 22,
-   "applied": 114,
+   "applied": 116,
    "prevQuota": 12,
    "prevApplied": 315
   },
@@ -58,11 +58,11 @@
    "tracks": {
     "general": [
      5,
-     20
+     21
     ]
    },
    "quota": 5,
-   "applied": 20,
+   "applied": 21,
    "prevQuota": 3,
    "prevApplied": 27
   },
@@ -73,11 +73,11 @@
    "tracks": {
     "general": [
      3,
-     21
+     23
     ]
    },
    "quota": 3,
-   "applied": 21,
+   "applied": 23,
    "prevQuota": 3,
    "prevApplied": 39
   },
@@ -88,15 +88,15 @@
    "tracks": {
     "general": [
      16,
-     86
+     88
     ],
     "special": [
      10,
-     15
+     16
     ]
    },
    "quota": 26,
-   "applied": 101,
+   "applied": 104,
    "prevQuota": 24,
    "prevApplied": 160
   },
@@ -107,11 +107,11 @@
    "tracks": {
     "general": [
      7,
-     48
+     50
     ]
    },
    "quota": 7,
-   "applied": 48,
+   "applied": 50,
    "prevQuota": 7,
    "prevApplied": 149
   },
@@ -266,11 +266,11 @@
    "tracks": {
     "general": [
      4,
-     17
+     18
     ]
    },
    "quota": 4,
-   "applied": 17,
+   "applied": 18,
    "prevQuota": 4,
    "prevApplied": 31
   },
@@ -444,11 +444,11 @@
  ],
  "total": {
   "quota": 231,
-  "applied": 987,
+  "applied": 998,
   "prevApplied": 2339,
   "day": {
    "quota": 226,
-   "applied": 986,
+   "applied": 997,
    "prevApplied": 2335
   }
  },
