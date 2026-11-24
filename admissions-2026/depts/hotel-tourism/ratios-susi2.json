@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-24 21:20"
+   "time": "2026-11-24 21:50"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-24 21:29"
+   "time": "2026-11-24 21:59"
   },
   {
    "id": "dy",
@@ -53,7 +53,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-24 21:30"
+   "time": "2026-11-24 22:00"
   },
   {
    "id": "yh",
@@ -64,7 +64,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-24 21:30"
+   "time": "2026-11-24 22:00"
   },
   {
    "id": "ss",
@@ -75,7 +75,7 @@
    "lat": 37.194,
    "lon": 126.973,
    "type": "전문대",
-   "time": "2026-11-24 21:30"
+   "time": "2026-11-24 22:00"
   },
   {
    "id": "ih",
@@ -108,7 +108,7 @@
    "lat": 37.459,
    "lon": 127.162,
    "type": "전문대",
-   "time": "2026-11-24 21:30"
+   "time": "2026-11-24 22:00"
   },
   {
    "id": "dl",
@@ -119,7 +119,7 @@
    "lat": 37.403,
    "lon": 126.928,
    "type": "전문대",
-   "time": "2026-11-24 21:30"
+   "time": "2026-11-24 22:00"
   },
   {
    "id": "sg",
@@ -130,7 +130,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-24 21:30"
+   "time": "2026-11-24 22:00"
   },
   {
    "id": "os",
@@ -141,7 +141,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-24 21:30"
+   "time": "2026-11-24 22:00"
   },
   {
    "id": "sj",
@@ -152,7 +152,7 @@
    "lat": 37.857,
    "lon": 127.038,
    "type": "전문대",
-   "time": "2026-11-24 21:20"
+   "time": "2026-11-24 21:50"
   }
  ],
  "rows": [
@@ -163,7 +163,7 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 5,
-   "applied": 59,
+   "applied": 60,
    "sum": true,
    "prior": 26.2,
    "priorQuota": 5,
@@ -178,12 +178,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 8,
-   "applied": 62,
+   "applied": 65,
    "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 5,
-    "applied": 46
+    "applied": 48
    },
    "prior": 14.62,
    "priorQuota": 8,
@@ -198,12 +198,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 8,
-   "applied": 42,
+   "applied": 44,
    "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 6,
-    "applied": 33
+    "applied": 34
    },
    "prior": 11.5,
    "priorQuota": 8,
@@ -217,7 +217,7 @@
    "field": "호텔관광",
    "track": "일반고",
    "quota": 6,
-   "applied": 43,
+   "applied": 45,
    "prior": 18.0,
    "priorName": "호텔관광과",
    "priorQuota": 4,
@@ -259,7 +259,7 @@
    "field": "호텔관광",
    "track": "일반고",
    "quota": 18,
-   "applied": 134,
+   "applied": 141,
    "prior": 11.89,
    "priorName": "호텔관광경영학과",
    "priorQuota": 18,
@@ -273,7 +273,7 @@
    "field": "호텔관광",
    "track": "정원내 일반고 전형",
    "quota": 9,
-   "applied": 116,
+   "applied": 117,
    "prior": 15.0,
    "priorName": "호텔관광전공",
    "priorQuota": 6,
@@ -287,7 +287,7 @@
    "field": "호텔관광",
    "track": "정원내 전형 일반고 출신자(일반과정)",
    "quota": 14,
-   "applied": 138,
+   "applied": 141,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -297,7 +297,7 @@
    "field": "호텔관광",
    "track": "일반고",
    "quota": 18,
-   "applied": 84,
+   "applied": 86,
    "prior": 19.0,
    "priorName": "관광경영학과",
    "priorQuota": 18,
@@ -311,7 +311,7 @@
    "field": "호텔관광",
    "track": "일반고",
    "quota": 16,
-   "applied": 110,
+   "applied": 114,
    "prior": 10.13,
    "priorName": "호텔경영학과",
    "priorQuota": 16,
@@ -325,7 +325,7 @@
    "field": "호텔관광",
    "track": "일반고전형",
    "quota": 6,
-   "applied": 111,
+   "applied": 114,
    "prior": 8.5,
    "priorName": "호텔관광과",
    "priorQuota": 6,
@@ -339,7 +339,7 @@
    "field": "호텔관광",
    "track": "정원내 일반고전형",
    "quota": 9,
-   "applied": 139,
+   "applied": 143,
    "prior": 15.44,
    "priorName": "호텔관광경영과",
    "priorQuota": 9,
@@ -353,7 +353,7 @@
    "field": "호텔관광",
    "track": "정원내 특별전형(일반고전형)",
    "quota": 11,
-   "applied": 109,
+   "applied": 112,
    "prior": 16.0,
    "priorName": "항공호텔관광과",
    "priorQuota": 10,
@@ -367,7 +367,7 @@
    "field": "호텔관광",
    "track": "정원내 일반전형 일반전형",
    "quota": 14,
-   "applied": 207,
+   "applied": 216,
    "prior": 8.86,
    "priorName": "호텔관광과",
    "priorQuota": 14,
@@ -381,7 +381,7 @@
    "field": "호텔관광",
    "track": "정원내 일반전형",
    "quota": 10,
-   "applied": 167,
+   "applied": 169,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -391,7 +391,7 @@
    "field": "호텔관광",
    "track": "일반전형",
    "quota": 4,
-   "applied": 63,
+   "applied": 65,
    "prior": 9.2,
    "priorName": "호텔관광과",
    "priorQuota": 5,
@@ -417,7 +417,7 @@
   "sj"
  ],
  "finalized": [],
- "checkedAt": "2026-11-24 21:31",
+ "checkedAt": "2026-11-24 22:01",
  "baseline": {
   "school": "km",
   "dept": "호텔관광학과"
