@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-24 19:20"
+   "time": "2026-11-24 19:50"
   },
   {
    "id": "bc",
@@ -20,7 +20,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-24 19:30"
+   "time": "2026-11-24 20:00"
   },
   {
    "id": "gt",
@@ -31,7 +31,7 @@
    "lat": 37.337,
    "lon": 126.734,
    "type": "전문대",
-   "time": "2026-11-24 19:30"
+   "time": "2026-11-24 20:00"
   },
   {
    "id": "yh",
@@ -42,7 +42,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-24 19:30"
+   "time": "2026-11-24 20:00"
   },
   {
    "id": "ss",
@@ -53,7 +53,7 @@
    "lat": 37.194,
    "lon": 126.973,
    "type": "전문대",
-   "time": "2026-11-24 19:30"
+   "time": "2026-11-24 20:00"
   },
   {
    "id": "je",
@@ -75,7 +75,7 @@
    "lat": 37.459,
    "lon": 127.162,
    "type": "전문대",
-   "time": "2026-11-24 19:30"
+   "time": "2026-11-24 20:00"
   },
   {
    "id": "dl",
@@ -86,7 +86,7 @@
    "lat": 37.403,
    "lon": 126.928,
    "type": "전문대",
-   "time": "2026-11-24 19:30"
+   "time": "2026-11-24 20:00"
   },
   {
    "id": "mj",
@@ -108,7 +108,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-24 19:30"
+   "time": "2026-11-24 20:00"
   },
   {
    "id": "ys",
@@ -119,7 +119,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-24 19:30"
+   "time": "2026-11-24 20:00"
   }
  ],
  "rows": [
@@ -130,12 +130,12 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 9,
-   "applied": 57,
+   "applied": 58,
    "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 5,
-    "applied": 47
+    "applied": 48
    },
    "prior": 16.33,
    "priorQuota": 9,
@@ -150,12 +150,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 22,
-   "applied": 167,
+   "applied": 171,
    "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 17,
-    "applied": 133
+    "applied": 136
    },
    "prior": 26.25,
    "priorQuota": 12,
@@ -199,7 +199,7 @@
    "field": "보건의료행정",
    "track": "일반고",
    "quota": 16,
-   "applied": 62,
+   "applied": 64,
    "prior": 11.94,
    "priorName": "보건의료행정학과(3년제)",
    "priorQuota": 16,
@@ -213,7 +213,7 @@
    "field": "보건의료행정",
    "track": "정원내 일반고(학생부)",
    "quota": 7,
-   "applied": 203,
+   "applied": 205,
    "prior": 32.14,
    "priorName": "보건의료정보학과",
    "priorQuota": 7,
@@ -227,7 +227,7 @@
    "field": "보건의료행정",
    "track": "정원내 일반고 전형",
    "quota": 8,
-   "applied": 60,
+   "applied": 61,
    "prior": 14.5,
    "priorName": "보건의료행정학과",
    "priorQuota": 8,
@@ -241,7 +241,7 @@
    "field": "보건의료행정",
    "track": "정원내 전형 일반고 출신자(일반과정)",
    "quota": 20,
-   "applied": 173,
+   "applied": 176,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -265,7 +265,7 @@
    "field": "보건의료행정",
    "track": "정원내 일반고전형",
    "quota": 21,
-   "applied": 168,
+   "applied": 169,
    "prior": 17.6,
    "priorName": "보건의료행정과",
    "priorQuota": 15,
@@ -279,7 +279,7 @@
    "field": "보건의료행정",
    "track": "정원내 특별전형(일반고전형)",
    "quota": 15,
-   "applied": 89,
+   "applied": 91,
    "prior": 14.53,
    "priorName": "보건의료행정과",
    "priorQuota": 15,
@@ -307,7 +307,7 @@
    "field": "보건의료행정",
    "track": "정원내 일반전형 일반전형",
    "quota": 17,
-   "applied": 130,
+   "applied": 134,
    "prior": 12.3,
    "priorName": "보건의료행정학과",
    "priorQuota": 20,
@@ -321,7 +321,7 @@
    "field": "보건의료행정",
    "track": "정원내 특별전형-일반고",
    "quota": 15,
-   "applied": 73,
+   "applied": 75,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   }
@@ -340,7 +340,7 @@
   "ys"
  ],
  "finalized": [],
- "checkedAt": "2026-11-24 19:31",
+ "checkedAt": "2026-11-24 20:01",
  "baseline": {
   "school": "km",
   "dept": "보건의료행정과"
