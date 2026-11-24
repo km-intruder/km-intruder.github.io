@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-24 22:20"
+   "time": "2026-11-24 22:50"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-24 22:29"
+   "time": "2026-11-24 22:59"
   },
   {
    "id": "dy",
@@ -64,7 +64,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "gt",
@@ -75,7 +75,7 @@
    "lat": 37.337,
    "lon": 126.734,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "yh",
@@ -86,7 +86,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "ss",
@@ -97,7 +97,7 @@
    "lat": 37.194,
    "lon": 126.973,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "ih",
@@ -130,7 +130,7 @@
    "lat": 37.459,
    "lon": 127.162,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "dl",
@@ -141,7 +141,7 @@
    "lat": 37.403,
    "lon": 126.928,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "sg",
@@ -152,7 +152,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "ys",
@@ -163,7 +163,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   }
  ],
  "rows": [
@@ -174,7 +174,7 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 7,
-   "applied": 94,
+   "applied": 97,
    "sum": true,
    "prior": 16.71,
    "priorQuota": 7,
@@ -189,7 +189,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 7,
-   "applied": 102,
+   "applied": 105,
    "sum": true,
    "prior": 22.57,
    "priorQuota": 7,
@@ -204,7 +204,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 6,
-   "applied": 40,
+   "applied": 41,
    "sum": true,
    "prior": 27.5,
    "priorQuota": 4,
@@ -308,7 +308,7 @@
    "field": "건축공간디자인",
    "track": "일반고",
    "quota": 17,
-   "applied": 118,
+   "applied": 119,
    "prior": 13.76,
    "priorName": "건축과(3년제)",
    "priorQuota": 17,
@@ -350,7 +350,7 @@
    "field": "건축공간디자인",
    "track": "정원내 일반고 전형",
    "quota": 5,
-   "applied": 46,
+   "applied": 47,
    "prior": 16.8,
    "priorName": "실내건축전공",
    "priorQuota": 5,
@@ -364,7 +364,7 @@
    "field": "건축공간디자인",
    "track": "정원내 전형 일반고 출신자(일반과정)",
    "quota": 14,
-   "applied": 54,
+   "applied": 55,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -374,7 +374,7 @@
    "field": "건축공간디자인",
    "track": "정원내 전형 일반고 출신자(일반과정)",
    "quota": 22,
-   "applied": 95,
+   "applied": 97,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -384,7 +384,7 @@
    "field": "건축공간디자인",
    "track": "일반고",
    "quota": 18,
-   "applied": 68,
+   "applied": 70,
    "prior": 7.67,
    "priorName": "건축학과",
    "priorQuota": 18,
@@ -398,7 +398,7 @@
    "field": "건축공간디자인",
    "track": "일반고",
    "quota": 18,
-   "applied": 62,
+   "applied": 65,
    "prior": 7.0,
    "priorName": "실내건축학과",
    "priorQuota": 18,
@@ -426,7 +426,7 @@
    "field": "건축공간디자인",
    "track": "정원내 일반고전형",
    "quota": 5,
-   "applied": 128,
+   "applied": 130,
    "prior": 17.33,
    "priorName": "건축학과",
    "priorQuota": 6,
@@ -440,7 +440,7 @@
    "field": "건축공간디자인",
    "track": "정원내 일반고전형",
    "quota": 15,
-   "applied": 146,
+   "applied": 148,
    "prior": 15.6,
    "priorName": "실내디자인학과",
    "priorQuota": 5,
@@ -454,7 +454,7 @@
    "field": "건축공간디자인",
    "track": "정원내 특별전형(일반고전형)",
    "quota": 13,
-   "applied": 157,
+   "applied": 159,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -464,7 +464,7 @@
    "field": "건축공간디자인",
    "track": "정원내 특별전형(일반고전형)",
    "quota": 21,
-   "applied": 125,
+   "applied": 128,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -474,7 +474,7 @@
    "field": "건축공간디자인",
    "track": "정원내 일반전형 일반전형",
    "quota": 7,
-   "applied": 85,
+   "applied": 87,
    "prior": 10.89,
    "priorName": "실내건축과",
    "priorQuota": 9,
@@ -488,7 +488,7 @@
    "field": "건축공간디자인",
    "track": "정원내 일반전형 일반전형",
    "quota": 6,
-   "applied": 91,
+   "applied": 94,
    "prior": 14.6,
    "priorName": "건축학과",
    "priorQuota": 5,
@@ -502,7 +502,7 @@
    "field": "건축공간디자인",
    "track": "정원내 특별전형-일반고",
    "quota": 13,
-   "applied": 89,
+   "applied": 90,
    "prior": 15.4,
    "priorName": "건축과",
    "priorQuota": 10,
@@ -516,7 +516,7 @@
    "field": "건축공간디자인",
    "track": "정원내 특별전형-일반고",
    "quota": 18,
-   "applied": 93,
+   "applied": 95,
    "prior": 11.0,
    "priorName": "실내건축과",
    "priorQuota": 11,
@@ -543,7 +543,7 @@
   "ys"
  ],
  "finalized": [],
- "checkedAt": "2026-11-24 22:31",
+ "checkedAt": "2026-11-24 23:01",
  "baseline": {
   "school": "km",
   "dept": "건축공간디자인학과"

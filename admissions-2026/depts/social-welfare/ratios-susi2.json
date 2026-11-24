@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-24 22:20"
+   "time": "2026-11-24 22:50"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-24 22:29"
+   "time": "2026-11-24 22:59"
   },
   {
    "id": "si",
@@ -53,7 +53,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "gt",
@@ -64,7 +64,7 @@
    "lat": 37.337,
    "lon": 126.734,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "yh",
@@ -75,7 +75,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "ss",
@@ -86,7 +86,7 @@
    "lat": 37.194,
    "lon": 126.973,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "je",
@@ -108,7 +108,7 @@
    "lat": 37.459,
    "lon": 127.162,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "dl",
@@ -119,7 +119,7 @@
    "lat": 37.403,
    "lon": 126.928,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "mj",
@@ -141,7 +141,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "ys",
@@ -152,7 +152,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "os",
@@ -163,7 +163,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-24 22:30"
+   "time": "2026-11-24 23:00"
   },
   {
    "id": "sj",
@@ -174,7 +174,7 @@
    "lat": 37.857,
    "lon": 127.038,
    "type": "전문대",
-   "time": "2026-11-24 22:20"
+   "time": "2026-11-24 22:50"
   }
  ],
  "rows": [
@@ -185,7 +185,7 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 7,
-   "applied": 102,
+   "applied": 105,
    "sum": true,
    "prior": 22.57,
    "priorQuota": 7,
@@ -200,7 +200,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 7,
-   "applied": 94,
+   "applied": 97,
    "sum": true,
    "prior": 16.71,
    "priorQuota": 7,
@@ -215,7 +215,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 6,
-   "applied": 40,
+   "applied": 41,
    "sum": true,
    "prior": 27.5,
    "priorQuota": 4,
@@ -229,7 +229,7 @@
    "field": "사회복지",
    "track": "일반고",
    "quota": 6,
-   "applied": 43,
+   "applied": 45,
    "prior": 13.8,
    "priorName": "사회복지과",
    "priorQuota": 5,
@@ -271,7 +271,7 @@
    "field": "사회복지",
    "track": "일반고",
    "quota": 14,
-   "applied": 90,
+   "applied": 95,
    "prior": 17.36,
    "priorName": "사회복지학과",
    "priorQuota": 14,
@@ -285,7 +285,7 @@
    "field": "사회복지",
    "track": "정원내 일반고(학생부)",
    "quota": 5,
-   "applied": 217,
+   "applied": 219,
    "prior": 24.0,
    "priorName": "사회복지학과",
    "priorQuota": 5,
@@ -313,7 +313,7 @@
    "field": "사회복지",
    "track": "정원내 전형 일반고 출신자(일반과정)",
    "quota": 22,
-   "applied": 132,
+   "applied": 134,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -337,7 +337,7 @@
    "field": "사회복지",
    "track": "정원내 일반고전형",
    "quota": 17,
-   "applied": 208,
+   "applied": 212,
    "prior": 15.42,
    "priorName": "사회복지학과",
    "priorQuota": 19,
@@ -351,7 +351,7 @@
    "field": "사회복지",
    "track": "정원내 특별전형(일반고전형)",
    "quota": 12,
-   "applied": 120,
+   "applied": 123,
    "prior": 18.82,
    "priorName": "사회복지학과",
    "priorQuota": 11,
@@ -379,7 +379,7 @@
    "field": "사회복지",
    "track": "정원내 일반전형 일반전형",
    "quota": 15,
-   "applied": 150,
+   "applied": 151,
    "prior": 11.71,
    "priorName": "사회복지학과",
    "priorQuota": 17,
@@ -393,7 +393,7 @@
    "field": "사회복지",
    "track": "정원내 특별전형-일반고",
    "quota": 13,
-   "applied": 81,
+   "applied": 82,
    "prior": 17.1,
    "priorName": "사회복지과",
    "priorQuota": 10,
@@ -421,7 +421,7 @@
    "field": "사회복지",
    "track": "일반전형",
    "quota": 10,
-   "applied": 112,
+   "applied": 115,
    "prior": 8.2,
    "priorName": "사회복지학부",
    "priorQuota": 10,
@@ -449,7 +449,7 @@
   "sj"
  ],
  "finalized": [],
- "checkedAt": "2026-11-24 22:31",
+ "checkedAt": "2026-11-24 23:01",
  "baseline": {
   "school": "km",
   "dept": "사회복지과"
