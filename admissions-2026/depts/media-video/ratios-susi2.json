@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-24 14:20"
+   "time": "2026-11-24 14:50"
   },
   {
    "id": "id",
@@ -31,7 +31,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-24 14:30"
+   "time": "2026-11-24 15:00"
   },
   {
    "id": "je",
@@ -53,7 +53,7 @@
    "lat": 37.403,
    "lon": 126.928,
    "type": "전문대",
-   "time": "2026-11-24 14:30"
+   "time": "2026-11-24 15:00"
   },
   {
    "id": "sg",
@@ -64,7 +64,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-24 14:30"
+   "time": "2026-11-24 15:00"
   },
   {
    "id": "ys",
@@ -75,7 +75,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-24 14:30"
+   "time": "2026-11-24 15:00"
   }
  ],
  "rows": [
@@ -86,7 +86,7 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 12,
-   "applied": 61,
+   "applied": 62,
    "sum": true,
    "prior": 17.2,
    "priorQuota": 10,
@@ -101,7 +101,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 13,
-   "applied": 66,
+   "applied": 67,
    "sum": true,
    "prior": 4.77,
    "priorQuota": 13,
@@ -116,7 +116,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 15,
-   "applied": 39,
+   "applied": 40,
    "sum": true,
    "prior": 3.4,
    "priorQuota": 15,
@@ -140,7 +140,7 @@
    "field": "미디어영상",
    "track": "정원내 일반고 전형",
    "quota": 5,
-   "applied": 45,
+   "applied": 46,
    "prior": 16.2,
    "priorName": "방송영상전공",
    "priorQuota": 5,
@@ -154,7 +154,7 @@
    "field": "미디어영상",
    "track": "일반고전형",
    "quota": 7,
-   "applied": 67,
+   "applied": 68,
    "prior": 12.86,
    "priorName": "사진영상미디어과",
    "priorQuota": 7,
@@ -225,7 +225,7 @@
   "ys"
  ],
  "finalized": [],
- "checkedAt": "2026-11-24 14:31",
+ "checkedAt": "2026-11-24 15:01",
  "baseline": {
   "school": "km",
   "dept": "미디어영상과"
