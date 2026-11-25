@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 12:20"
+   "time": "2026-11-25 12:50"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-25 12:29"
+   "time": "2026-11-25 12:59"
   }
  ],
  "rows": [
@@ -31,7 +31,7 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 13,
-   "applied": 88,
+   "applied": 90,
    "sum": true,
    "prior": 4.77,
    "priorQuota": 13,
@@ -89,7 +89,7 @@
   "gb"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 12:31",
+ "checkedAt": "2026-11-25 13:01",
  "baseline": {
   "school": "km",
   "dept": "실용음악과"
