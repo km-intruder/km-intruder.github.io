@@ -102,14 +102,13 @@
   }
  ],
  "live": [
-  "km",
   "ds",
   "ys"
  ],
  "finalized": [
   "km"
  ],
- "checkedAt": "2026-11-26 00:31",
+ "checkedAt": "2026-11-26 01:31",
  "baseline": {
   "school": "km",
   "dept": "태권도외교과"

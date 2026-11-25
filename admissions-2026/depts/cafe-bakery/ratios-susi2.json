@@ -265,7 +265,6 @@
   }
  ],
  "live": [
-  "km",
   "si",
   "yh",
   "ss",
@@ -279,7 +278,7 @@
  "finalized": [
   "km"
  ],
- "checkedAt": "2026-11-26 00:31",
+ "checkedAt": "2026-11-26 01:31",
  "baseline": {
   "school": "km",
   "dept": "카페베이커리과"
