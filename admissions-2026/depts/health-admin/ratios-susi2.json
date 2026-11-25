@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 23:50"
+   "time": "2026-11-26 00:00"
   },
   {
    "id": "bc",
@@ -170,7 +170,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 5,
-   "applied": 71,
+   "applied": 73,
    "sum": true,
    "prior": 9.0,
    "priorQuota": 3,
@@ -185,7 +185,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 3,
-   "applied": 60,
+   "applied": 61,
    "sum": true,
    "prior": 13.0,
    "priorQuota": 3,
@@ -251,7 +251,7 @@
    "field": "보건의료행정",
    "track": "일반고전형",
    "quota": 10,
-   "applied": 189,
+   "applied": 190,
    "prior": 16.9,
    "priorName": "보건의료행정과",
    "priorQuota": 10,
@@ -340,7 +340,7 @@
   "ys"
  ],
  "finalized": [],
- "checkedAt": "2026-11-26 00:01",
+ "checkedAt": "2026-11-26 00:31",
  "baseline": {
   "school": "km",
   "dept": "보건의료행정과"

@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 23:50"
+   "time": "2026-11-26 00:00"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-25 23:59"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "dy",
@@ -174,7 +174,7 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 7,
-   "applied": 158,
+   "applied": 159,
    "sum": true,
    "prior": 16.71,
    "priorQuota": 7,
@@ -204,7 +204,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 6,
-   "applied": 58,
+   "applied": 59,
    "sum": true,
    "prior": 27.5,
    "priorQuota": 4,
@@ -542,8 +542,10 @@
   "sg",
   "ys"
  ],
- "finalized": [],
- "checkedAt": "2026-11-26 00:01",
+ "finalized": [
+  "gb"
+ ],
+ "checkedAt": "2026-11-26 00:31",
  "baseline": {
   "school": "km",
   "dept": "건축공간디자인학과"

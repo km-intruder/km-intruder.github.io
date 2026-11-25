@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 23:50"
+   "time": "2026-11-26 00:00"
   },
   {
    "id": "dy",
@@ -86,7 +86,7 @@
    "lat": 37.857,
    "lon": 127.038,
    "type": "전문대",
-   "time": "2026-11-25 23:50"
+   "time": "2026-11-26 00:00"
   }
  ],
  "rows": [
@@ -97,12 +97,12 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 26,
-   "applied": 285,
+   "applied": 288,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 16,
-    "applied": 247
+    "applied": 250
    },
    "prior": 6.67,
    "priorQuota": 24,
@@ -241,7 +241,7 @@
   "sj"
  ],
  "finalized": [],
- "checkedAt": "2026-11-26 00:01",
+ "checkedAt": "2026-11-26 00:31",
  "baseline": {
   "school": "km",
   "dept": "소방안전관리과"
