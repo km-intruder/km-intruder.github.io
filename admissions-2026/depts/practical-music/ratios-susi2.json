@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 12:50"
+   "time": "2026-11-25 13:20"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-25 12:59"
+   "time": "2026-11-25 13:29"
   }
  ],
  "rows": [
@@ -61,7 +61,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 15,
-   "applied": 59,
+   "applied": 60,
    "sum": true,
    "prior": 3.4,
    "priorQuota": 15,
@@ -75,7 +75,7 @@
    "field": "실용음악",
    "track": "일반전형",
    "quota": 9,
-   "applied": 40,
+   "applied": 42,
    "prior": 3.75,
    "priorName": "실용음악과(보컬)",
    "priorQuota": 8,
@@ -89,7 +89,7 @@
   "gb"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 13:01",
+ "checkedAt": "2026-11-25 13:31",
  "baseline": {
   "school": "km",
   "dept": "실용음악과"

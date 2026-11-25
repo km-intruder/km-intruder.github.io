@@ -1,7 +1,7 @@
 {
  "title": "2027학년도 수시 2차 정원내 지원현황",
  "round": "susi2",
- "basis": "2026-11-25 12:50 기준 (진학어플라이 공개값, 접수 중)",
+ "basis": "2026-11-25 13:20 기준 (진학어플라이 공개값, 접수 중)",
  "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
  "source": "진학어플라이 경민대학교 수시 2차 경쟁률 · 2026은 진학사 스마트경쟁률 과거 경쟁률(2026학년도 수시 2차)",
  "columns": {
@@ -20,15 +20,15 @@
    "tracks": {
     "regular": [
      17,
-     202
+     206
     ],
     "vocational": [
      5,
-     42
+     43
     ]
    },
    "quota": 22,
-   "applied": 244,
+   "applied": 249,
    "prevQuota": 12,
    "prevApplied": 315
   },
@@ -39,7 +39,7 @@
    "tracks": {
     "regular": [
      5,
-     71
+     73
     ],
     "vocational": [
      4,
@@ -47,7 +47,7 @@
     ]
    },
    "quota": 9,
-   "applied": 85,
+   "applied": 87,
    "prevQuota": 9,
    "prevApplied": 147
   },
@@ -58,11 +58,11 @@
    "tracks": {
     "general": [
      5,
-     48
+     49
     ]
    },
    "quota": 5,
-   "applied": 48,
+   "applied": 49,
    "prevQuota": 3,
    "prevApplied": 27
   },
@@ -88,7 +88,7 @@
    "tracks": {
     "general": [
      16,
-     194
+     195
     ],
     "special": [
      10,
@@ -96,7 +96,7 @@
     ]
    },
    "quota": 26,
-   "applied": 225,
+   "applied": 226,
    "prevQuota": 24,
    "prevApplied": 160
   },
@@ -107,11 +107,11 @@
    "tracks": {
     "general": [
      7,
-     103
+     104
     ]
    },
    "quota": 7,
-   "applied": 103,
+   "applied": 104,
    "prevQuota": 7,
    "prevApplied": 149
   },
@@ -141,11 +141,11 @@
    "tracks": {
     "general": [
      5,
-     73
+     76
     ]
    },
    "quota": 5,
-   "applied": 73,
+   "applied": 76,
    "prevQuota": 5,
    "prevApplied": 131
   },
@@ -175,11 +175,11 @@
    "tracks": {
     "general": [
      7,
-     119
+     120
     ]
    },
    "quota": 7,
-   "applied": 119,
+   "applied": 120,
    "prevQuota": 7,
    "prevApplied": 117
   },
@@ -190,11 +190,11 @@
    "tracks": {
     "general": [
      7,
-     124
+     125
     ]
    },
    "quota": 7,
-   "applied": 124,
+   "applied": 125,
    "prevQuota": 7,
    "prevApplied": 158
   },
@@ -205,11 +205,11 @@
    "tracks": {
     "general": [
      6,
-     45
+     46
     ]
    },
    "quota": 6,
-   "applied": 45,
+   "applied": 46,
    "prevQuota": 4,
    "prevApplied": 110
   },
@@ -236,11 +236,11 @@
    "tracks": {
     "general": [
      4,
-     19
+     20
     ]
    },
    "quota": 4,
-   "applied": 19,
+   "applied": 20,
    "prevQuota": 1,
    "prevApplied": 14
   },
@@ -251,11 +251,11 @@
    "tracks": {
     "general": [
      3,
-     43
+     44
     ]
    },
    "quota": 3,
-   "applied": 43,
+   "applied": 44,
    "prevQuota": 3,
    "prevApplied": 59
   },
@@ -266,11 +266,11 @@
    "tracks": {
     "general": [
      4,
-     36
+     37
     ]
    },
    "quota": 4,
-   "applied": 36,
+   "applied": 37,
    "prevQuota": 4,
    "prevApplied": 31
   },
@@ -311,11 +311,11 @@
    "tracks": {
     "general": [
      15,
-     59
+     60
     ]
    },
    "quota": 15,
-   "applied": 59,
+   "applied": 60,
    "prevQuota": 15,
    "prevApplied": 51
   },
@@ -388,11 +388,11 @@
    "tracks": {
     "general": [
      2,
-     76
+     77
     ]
    },
    "quota": 2,
-   "applied": 76,
+   "applied": 77,
    "prevQuota": 3,
    "prevApplied": 39
   },
@@ -444,11 +444,11 @@
  ],
  "total": {
   "quota": 231,
-  "applied": 1954,
+  "applied": 1975,
   "prevApplied": 2339,
   "day": {
    "quota": 226,
-   "applied": 1953,
+   "applied": 1974,
    "prevApplied": 2335
   }
  },
