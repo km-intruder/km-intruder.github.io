@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 17:20"
+   "time": "2026-11-25 17:50"
   },
   {
    "id": "dy",
@@ -31,7 +31,7 @@
    "lat": 37.337,
    "lon": 126.734,
    "type": "전문대",
-   "time": "2026-11-25 17:30"
+   "time": "2026-11-25 18:00"
   },
   {
    "id": "yh",
@@ -42,7 +42,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-25 17:30"
+   "time": "2026-11-25 18:00"
   },
   {
    "id": "ss",
@@ -53,7 +53,7 @@
    "lat": 37.194,
    "lon": 126.973,
    "type": "전문대",
-   "time": "2026-11-25 17:30"
+   "time": "2026-11-25 18:00"
   },
   {
    "id": "dl",
@@ -64,7 +64,7 @@
    "lat": 37.403,
    "lon": 126.928,
    "type": "전문대",
-   "time": "2026-11-25 17:30"
+   "time": "2026-11-25 18:00"
   },
   {
    "id": "os",
@@ -75,7 +75,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-25 17:30"
+   "time": "2026-11-25 18:00"
   },
   {
    "id": "sj",
@@ -86,7 +86,7 @@
    "lat": 37.857,
    "lon": 127.038,
    "type": "전문대",
-   "time": "2026-11-25 17:20"
+   "time": "2026-11-25 17:50"
   }
  ],
  "rows": [
@@ -97,12 +97,12 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 26,
-   "applied": 251,
+   "applied": 256,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 16,
-    "applied": 216
+    "applied": 220
    },
    "prior": 6.67,
    "priorQuota": 24,
@@ -117,7 +117,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 7,
-   "applied": 118,
+   "applied": 119,
    "sum": true,
    "prior": 21.29,
    "priorQuota": 7,
@@ -145,7 +145,7 @@
    "field": "소방안전",
    "track": "정원내 일반고(학생부)",
    "quota": 4,
-   "applied": 132,
+   "applied": 135,
    "prior": 44.25,
    "priorName": "건축소방안전학과",
    "priorQuota": 4,
@@ -159,7 +159,7 @@
    "field": "소방안전",
    "track": "정원내 일반고 전형",
    "quota": 5,
-   "applied": 67,
+   "applied": 68,
    "prior": 19.0,
    "priorName": "소방설비안전전공",
    "priorQuota": 5,
@@ -173,7 +173,7 @@
    "field": "소방안전",
    "track": "정원내 전형 일반고 출신자(일반과정)",
    "quota": 10,
-   "applied": 134,
+   "applied": 135,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -183,7 +183,7 @@
    "field": "소방안전",
    "track": "정원내 전형 일반고 출신자(일반과정)",
    "quota": 11,
-   "applied": 102,
+   "applied": 104,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -193,7 +193,7 @@
    "field": "소방안전",
    "track": "정원내 특별전형(일반고전형)",
    "quota": 15,
-   "applied": 173,
+   "applied": 180,
    "prior": 16.93,
    "priorName": "소방안전설비과",
    "priorQuota": 15,
@@ -207,7 +207,7 @@
    "field": "소방안전",
    "track": "정원내 일반전형",
    "quota": 13,
-   "applied": 270,
+   "applied": 272,
    "prior": 16.46,
    "priorName": "소방안전관리과",
    "priorQuota": 13,
@@ -221,7 +221,7 @@
    "field": "소방안전",
    "track": "일반전형",
    "quota": 13,
-   "applied": 47,
+   "applied": 48,
    "prior": 10.5,
    "priorName": "소방안전관리과",
    "priorQuota": 10,
@@ -241,7 +241,7 @@
   "sj"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 17:31",
+ "checkedAt": "2026-11-25 18:01",
  "baseline": {
   "school": "km",
   "dept": "소방안전관리과"
