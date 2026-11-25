@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 23:20"
+   "time": "2026-11-25 23:50"
   },
   {
    "id": "os",
@@ -20,7 +20,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-25 23:30"
+   "time": "2026-11-25 23:50"
   },
   {
    "id": "ds",
@@ -53,12 +53,12 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 16,
-   "applied": 27,
+   "applied": 28,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 4,
-    "applied": 19
+    "applied": 20
    },
    "prior": 8.0,
    "priorQuota": 4,
@@ -125,7 +125,7 @@
   "ss"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 23:31",
+ "checkedAt": "2026-11-26 00:01",
  "baseline": {
   "school": "km",
   "dept": "레포츠과"
