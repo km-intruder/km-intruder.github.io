@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 21:20"
+   "time": "2026-11-25 21:50"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-25 21:29"
+   "time": "2026-11-25 21:59"
   },
   {
    "id": "ih",
@@ -64,7 +64,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-25 21:30"
+   "time": "2026-11-25 22:00"
   }
  ],
  "rows": [
@@ -119,7 +119,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 4,
-   "applied": 48,
+   "applied": 50,
    "sum": true,
    "prior": 7.75,
    "priorQuota": 4,
@@ -133,7 +133,7 @@
    "field": "국방드론봇",
    "track": "일반고",
    "quota": 4,
-   "applied": 35,
+   "applied": 36,
    "prior": 9.5,
    "priorName": "드론건설환경과",
    "priorQuota": 4,
@@ -203,7 +203,7 @@
   "os"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 21:31",
+ "checkedAt": "2026-11-25 22:01",
  "baseline": {
   "school": "km",
   "dept": "국방드론봇시스템과"
