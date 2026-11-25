@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 22:50"
+   "time": "2026-11-25 23:20"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-25 22:59"
+   "time": "2026-11-25 23:29"
   },
   {
    "id": "si",
@@ -42,7 +42,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-25 23:00"
+   "time": "2026-11-25 23:30"
   },
   {
    "id": "yh",
@@ -108,7 +108,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-25 23:00"
+   "time": "2026-11-25 23:30"
   },
   {
    "id": "ys",
@@ -119,7 +119,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-25 23:00"
+   "time": "2026-11-25 23:30"
   }
  ],
  "rows": [
@@ -145,12 +145,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 22,
-   "applied": 324,
+   "applied": 330,
    "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 17,
-    "applied": 267
+    "applied": 273
    },
    "prior": 26.25,
    "priorQuota": 12,
@@ -165,12 +165,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 9,
-   "applied": 125,
+   "applied": 127,
    "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 5,
-    "applied": 103
+    "applied": 105
    },
    "prior": 16.33,
    "priorQuota": 9,
@@ -199,7 +199,7 @@
    "field": "의료미용",
    "track": "일반전형",
    "quota": 5,
-   "applied": 80,
+   "applied": 82,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -219,7 +219,7 @@
    "field": "의료미용",
    "track": "일반고",
    "quota": 11,
-   "applied": 557,
+   "applied": 558,
    "sum": true,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
@@ -292,7 +292,7 @@
    "field": "의료미용",
    "track": "정원내 일반전형 일반전형",
    "quota": 6,
-   "applied": 121,
+   "applied": 122,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -321,7 +321,7 @@
   "ys"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 23:01",
+ "checkedAt": "2026-11-25 23:31",
  "baseline": {
   "school": "km",
   "dept": "의료미용과"
