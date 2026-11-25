@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 18:20"
+   "time": "2026-11-25 18:50"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-25 18:29"
+   "time": "2026-11-25 18:59"
   },
   {
    "id": "id",
@@ -42,7 +42,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-25 18:30"
+   "time": "2026-11-25 19:00"
   },
   {
    "id": "ds",
@@ -53,7 +53,7 @@
    "lat": 37.459,
    "lon": 127.162,
    "type": "전문대",
-   "time": "2026-11-25 18:30"
+   "time": "2026-11-25 19:00"
   },
   {
    "id": "mj",
@@ -75,7 +75,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-25 18:30"
+   "time": "2026-11-25 19:00"
   },
   {
    "id": "ys",
@@ -86,7 +86,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-25 18:30"
+   "time": "2026-11-25 19:00"
   },
   {
    "id": "os",
@@ -97,7 +97,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-25 18:30"
+   "time": "2026-11-25 19:00"
   }
  ],
  "rows": [
@@ -123,12 +123,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 16,
-   "applied": 119,
+   "applied": 121,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 10,
-    "applied": 82
+    "applied": 84
    },
    "prior": 11.75,
    "priorQuota": 16,
@@ -143,12 +143,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 16,
-   "applied": 22,
+   "applied": 23,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 4,
-    "applied": 16
+    "applied": 17
    },
    "prior": 8.0,
    "priorQuota": 4,
@@ -163,7 +163,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 17,
-   "applied": 89,
+   "applied": 90,
    "sum": true,
    "priorNote": "2026학년도 수시 2차에 같은 모집단위 없음",
    "note": "진학어플라이 공개값 (정원내 전형 합계)"
@@ -202,7 +202,7 @@
    "field": "헤어디자인",
    "track": "일반고",
    "quota": 6,
-   "applied": 246,
+   "applied": 248,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -212,7 +212,7 @@
    "field": "헤어디자인",
    "track": "정원내 일반고전형",
    "quota": 7,
-   "applied": 258,
+   "applied": 259,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -236,7 +236,7 @@
    "field": "헤어디자인",
    "track": "정원내 일반전형 일반전형",
    "quota": 8,
-   "applied": 184,
+   "applied": 185,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -246,7 +246,7 @@
    "field": "헤어디자인",
    "track": "정원내 특별전형-일반고",
    "quota": 16,
-   "applied": 430,
+   "applied": 432,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -256,7 +256,7 @@
    "field": "헤어디자인",
    "track": "정원내 일반전형",
    "quota": 5,
-   "applied": 215,
+   "applied": 232,
    "prior": 27.4,
    "priorName": "준오헤어시그니처과",
    "priorQuota": 5,
@@ -277,7 +277,7 @@
   "os"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 18:31",
+ "checkedAt": "2026-11-25 19:01",
  "baseline": {
   "school": "km",
   "dept": "헤어디자인과"
