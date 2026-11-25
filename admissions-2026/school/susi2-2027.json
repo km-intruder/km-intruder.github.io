@@ -1,7 +1,7 @@
 {
  "title": "2027학년도 수시 2차 정원내 지원현황",
  "round": "susi2",
- "basis": "2026-11-25 13:50 기준 (진학어플라이 공개값, 접수 중)",
+ "basis": "2026-11-25 14:20 기준 (진학어플라이 공개값, 접수 중)",
  "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
  "source": "진학어플라이 경민대학교 수시 2차 경쟁률 · 2026은 진학사 스마트경쟁률 과거 경쟁률(2026학년도 수시 2차)",
  "columns": {
@@ -20,7 +20,7 @@
    "tracks": {
     "regular": [
      17,
-     208
+     211
     ],
     "vocational": [
      5,
@@ -28,7 +28,7 @@
     ]
    },
    "quota": 22,
-   "applied": 251,
+   "applied": 254,
    "prevQuota": 12,
    "prevApplied": 315
   },
@@ -39,7 +39,7 @@
    "tracks": {
     "regular": [
      5,
-     73
+     75
     ],
     "vocational": [
      4,
@@ -47,7 +47,7 @@
     ]
    },
    "quota": 9,
-   "applied": 87,
+   "applied": 89,
    "prevQuota": 9,
    "prevApplied": 147
   },
@@ -58,11 +58,11 @@
    "tracks": {
     "general": [
      5,
-     50
+     53
     ]
    },
    "quota": 5,
-   "applied": 50,
+   "applied": 53,
    "prevQuota": 3,
    "prevApplied": 27
   },
@@ -88,7 +88,7 @@
    "tracks": {
     "general": [
      16,
-     197
+     198
     ],
     "special": [
      10,
@@ -96,7 +96,7 @@
     ]
    },
    "quota": 26,
-   "applied": 229,
+   "applied": 230,
    "prevQuota": 24,
    "prevApplied": 160
   },
@@ -107,11 +107,11 @@
    "tracks": {
     "general": [
      7,
-     107
+     108
     ]
    },
    "quota": 7,
-   "applied": 107,
+   "applied": 108,
    "prevQuota": 7,
    "prevApplied": 149
   },
@@ -122,7 +122,7 @@
    "tracks": {
     "regular": [
      5,
-     55
+     56
     ],
     "vocational": [
      3,
@@ -130,7 +130,7 @@
     ]
    },
    "quota": 8,
-   "applied": 73,
+   "applied": 74,
    "prevQuota": 8,
    "prevApplied": 117
   },
@@ -156,7 +156,7 @@
    "tracks": {
     "regular": [
      6,
-     46
+     47
     ],
     "vocational": [
      2,
@@ -164,7 +164,7 @@
     ]
    },
    "quota": 8,
-   "applied": 56,
+   "applied": 57,
    "prevQuota": 8,
    "prevApplied": 92
   },
@@ -175,11 +175,11 @@
    "tracks": {
     "general": [
      7,
-     121
+     122
     ]
    },
    "quota": 7,
-   "applied": 121,
+   "applied": 122,
    "prevQuota": 7,
    "prevApplied": 117
   },
@@ -190,11 +190,11 @@
    "tracks": {
     "general": [
      7,
-     126
+     128
     ]
    },
    "quota": 7,
-   "applied": 126,
+   "applied": 128,
    "prevQuota": 7,
    "prevApplied": 158
   },
@@ -205,11 +205,11 @@
    "tracks": {
     "general": [
      6,
-     46
+     47
     ]
    },
    "quota": 6,
-   "applied": 46,
+   "applied": 47,
    "prevQuota": 4,
    "prevApplied": 110
   },
@@ -251,11 +251,11 @@
    "tracks": {
     "general": [
      3,
-     45
+     46
     ]
    },
    "quota": 3,
-   "applied": 45,
+   "applied": 46,
    "prevQuota": 3,
    "prevApplied": 59
   },
@@ -281,11 +281,11 @@
    "tracks": {
     "general": [
      12,
-     89
+     90
     ]
    },
    "quota": 12,
-   "applied": 89,
+   "applied": 90,
    "prevQuota": 10,
    "prevApplied": 172
   },
@@ -311,11 +311,11 @@
    "tracks": {
     "general": [
      15,
-     60
+     62
     ]
    },
    "quota": 15,
-   "applied": 60,
+   "applied": 62,
    "prevQuota": 15,
    "prevApplied": 51
   },
@@ -330,11 +330,11 @@
     ],
     "special": [
      6,
-     34
+     35
     ]
    },
    "quota": 16,
-   "applied": 108,
+   "applied": 109,
    "prevQuota": 16,
    "prevApplied": 188
   },
@@ -368,7 +368,7 @@
    "tracks": {
     "special": [
      14,
-     69
+     71
     ],
     "talent": [
      3,
@@ -376,7 +376,7 @@
     ]
    },
    "quota": 17,
-   "applied": 77,
+   "applied": 79,
    "prevQuota": null,
    "prevApplied": null,
    "new": true
@@ -403,11 +403,11 @@
    "tracks": {
     "general": [
      7,
-     69
+     70
     ]
    },
    "quota": 7,
-   "applied": 69,
+   "applied": 70,
    "prevQuota": 7,
    "prevApplied": 125
   },
@@ -444,11 +444,11 @@
  ],
  "total": {
   "quota": 231,
-  "applied": 1997,
+  "applied": 2021,
   "prevApplied": 2339,
   "day": {
    "quota": 226,
-   "applied": 1996,
+   "applied": 2020,
    "prevApplied": 2335
   }
  },
