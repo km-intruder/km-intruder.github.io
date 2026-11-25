@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 09:50"
+   "time": "2026-11-25 10:20"
   },
   {
    "id": "bc",
@@ -20,7 +20,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-25 10:00"
+   "time": "2026-11-25 10:30"
   },
   {
    "id": "yh",
@@ -31,7 +31,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-25 10:00"
+   "time": "2026-11-25 10:30"
   },
   {
    "id": "dl",
@@ -42,7 +42,7 @@
    "lat": 37.403,
    "lon": 126.928,
    "type": "전문대",
-   "time": "2026-11-25 10:00"
+   "time": "2026-11-25 10:30"
   },
   {
    "id": "sg",
@@ -53,7 +53,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-25 10:00"
+   "time": "2026-11-25 10:30"
   },
   {
    "id": "ys",
@@ -64,7 +64,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-25 10:00"
+   "time": "2026-11-25 10:30"
   },
   {
    "id": "sj",
@@ -75,7 +75,7 @@
    "lat": 37.857,
    "lon": 127.038,
    "type": "전문대",
-   "time": "2026-11-25 09:50"
+   "time": "2026-11-25 10:20"
   }
  ],
  "rows": [
@@ -86,7 +86,7 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 7,
-   "applied": 100,
+   "applied": 101,
    "sum": true,
    "prior": 21.29,
    "priorQuota": 7,
@@ -101,12 +101,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 26,
-   "applied": 215,
+   "applied": 219,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 16,
-    "applied": 184
+    "applied": 188
    },
    "prior": 6.67,
    "priorQuota": 24,
@@ -134,7 +134,7 @@
    "field": "응급구조",
    "track": "정원내 일반고 전형",
    "quota": 7,
-   "applied": 74,
+   "applied": 77,
    "prior": 20.57,
    "priorName": "응급구조과",
    "priorQuota": 7,
@@ -148,7 +148,7 @@
    "field": "응급구조",
    "track": "정원내 특별전형(일반고전형)",
    "quota": 10,
-   "applied": 178,
+   "applied": 179,
    "prior": 25.6,
    "priorName": "응급구조과",
    "priorQuota": 10,
@@ -162,7 +162,7 @@
    "field": "응급구조",
    "track": "정원내 특별전형 일반고전형",
    "quota": 14,
-   "applied": 113,
+   "applied": 115,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -172,7 +172,7 @@
    "field": "응급구조",
    "track": "정원내 특별전형-일반고",
    "quota": 15,
-   "applied": 163,
+   "applied": 164,
    "prior": 24.45,
    "priorName": "응급구조과",
    "priorQuota": 11,
@@ -205,7 +205,7 @@
   "sj"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 10:01",
+ "checkedAt": "2026-11-25 10:31",
  "baseline": {
   "school": "km",
   "dept": "응급구조학과"
