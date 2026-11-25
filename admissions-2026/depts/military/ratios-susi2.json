@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 13:20"
+   "time": "2026-11-25 13:50"
   },
   {
    "id": "gt",
@@ -20,7 +20,7 @@
    "lat": 37.337,
    "lon": 126.734,
    "type": "전문대",
-   "time": "2026-11-25 13:35"
+   "time": "2026-11-25 14:00"
   },
   {
    "id": "ys",
@@ -31,7 +31,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-25 13:35"
+   "time": "2026-11-25 14:00"
   }
  ],
  "rows": [
@@ -42,7 +42,7 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 4,
-   "applied": 37,
+   "applied": 39,
    "sum": true,
    "prior": 7.75,
    "priorQuota": 4,
@@ -57,7 +57,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 4,
-   "applied": 34,
+   "applied": 35,
    "sum": true,
    "priorNote": "2026학년도 수시 2차에 같은 모집단위 없음",
    "note": "진학어플라이 공개값 (정원내 전형 합계)"
@@ -85,7 +85,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 3,
-   "applied": 44,
+   "applied": 45,
    "sum": true,
    "prior": 19.67,
    "priorQuota": 3,
@@ -114,7 +114,7 @@
    "field": "군사",
    "track": "정원내 특별전형-일반고",
    "quota": 6,
-   "applied": 27,
+   "applied": 28,
    "prior": 5.8,
    "priorName": "국방군사학과",
    "priorQuota": 5,
@@ -129,7 +129,7 @@
   "ys"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 13:38",
+ "checkedAt": "2026-11-25 14:01",
  "baseline": {
   "school": "km",
   "dept": "효충군사학과"
