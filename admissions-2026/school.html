@@ -201,7 +201,7 @@ function renderSummary() {
       <div class="stat"><span>모집 · 경쟁률</span><b>${fx(t.applied / t.quota)}:1</b><small>모집 ${num(t.quota)}명 (주간 ${fx(dt.applied / dt.quota)}:1)</small></div>
       <div class="stat"><span>증가 학과</span><b>${plus.length}개</b><small>${day.length}개 주간 학과 + 성인학습자 2개</small></div>
       <div class="stat"><span>감소 학과</span><b class="alert">${minus.length}개</b><small>합계 ${signed(loss, 0)}명</small></div>
-      <div class="stat"><span>${S2 ? '2026 수시 2차 미모집' : '신설'}</span><b>${fresh.length}개</b><small>${fresh.map(d => esc(d.name)).join(', ')}</small></div>
+      <div class="stat"><span>${S2 && !K.locked ? '2026 수시 2차 미모집' : '신설'}</span><b>${fresh.length}개</b><small>${fresh.map(d => esc(d.name)).join(', ')}</small></div>
     </div>
     <ul class="findings">
       <li>학교 전체 지원자는 <b class="${tChg >= 0 ? 'good' : 'alert'}">${pct(tChg)}</b> ${tChg >= 0 ? '늘었지만' : '줄었고'}, <b class="alert">${minus.length}개 학과</b>(${minus.map(d => esc(d.name)).join(', ')})는 줄었습니다.${S2 && !K.final ? ' (접수 중 값과 2026 최종값 비교)' : ''}</li>
@@ -417,7 +417,7 @@ function renderAll() {
       <td class="muted">${esc(d.group)}</td>
       <td><b>${esc(d.name)}</b></td>
       <td class="n">${num(d.quota)}</td><td class="n">${num(d.applied)}</td><td class="n">${fx(rate(d))}</td>
-      <td class="n">${d.new ? `<span class="muted">${S2 ? '2026 없음' : '신설'}</span>` : num(d.prevApplied)}</td>
+      <td class="n">${d.new ? `<span class="muted">${S2 && !K.locked ? '2026 없음' : '신설'}</span>` : num(d.prevApplied)}</td>
       <td class="n">${df == null ? '—' : `<b class="${df < 0 ? 'alert' : ''}">${signed(df, 0)}</b>`}</td>
       <td class="n ${p < 0 ? 'alert' : ''}">${p == null ? '—' : pct(p)}</td>
       <td class="n ${d.remain < 0 ? 'alert' : ''}">${d.remain == null ? '—' : num(d.remain)}</td>
