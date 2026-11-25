@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 16:50"
+   "time": "2026-11-25 17:20"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-25 16:59"
+   "time": "2026-11-25 17:29"
   },
   {
    "id": "id",
@@ -42,7 +42,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-25 17:00"
+   "time": "2026-11-25 17:30"
   },
   {
    "id": "ds",
@@ -53,7 +53,7 @@
    "lat": 37.459,
    "lon": 127.162,
    "type": "전문대",
-   "time": "2026-11-25 17:00"
+   "time": "2026-11-25 17:30"
   },
   {
    "id": "mj",
@@ -75,7 +75,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-25 17:00"
+   "time": "2026-11-25 17:30"
   },
   {
    "id": "ys",
@@ -86,7 +86,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-25 17:00"
+   "time": "2026-11-25 17:30"
   },
   {
    "id": "os",
@@ -97,7 +97,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-25 17:00"
+   "time": "2026-11-25 17:30"
   }
  ],
  "rows": [
@@ -108,7 +108,7 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 2,
-   "applied": 84,
+   "applied": 86,
    "sum": true,
    "prior": 13.0,
    "priorQuota": 3,
@@ -123,12 +123,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 16,
-   "applied": 116,
+   "applied": 118,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 10,
-    "applied": 80
+    "applied": 81
    },
    "prior": 11.75,
    "priorQuota": 16,
@@ -143,12 +143,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 16,
-   "applied": 21,
+   "applied": 22,
    "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 4,
-    "applied": 15
+    "applied": 16
    },
    "prior": 8.0,
    "priorQuota": 4,
@@ -174,7 +174,7 @@
    "field": "헤어디자인",
    "track": "일반고",
    "quota": 3,
-   "applied": 57,
+   "applied": 58,
    "prior": 12.5,
    "priorName": "준오헤어디자인과",
    "priorQuota": 2,
@@ -202,7 +202,7 @@
    "field": "헤어디자인",
    "track": "일반고",
    "quota": 6,
-   "applied": 239,
+   "applied": 240,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -212,7 +212,7 @@
    "field": "헤어디자인",
    "track": "정원내 일반고전형",
    "quota": 7,
-   "applied": 252,
+   "applied": 253,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -236,7 +236,7 @@
    "field": "헤어디자인",
    "track": "정원내 일반전형 일반전형",
    "quota": 8,
-   "applied": 181,
+   "applied": 182,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -246,7 +246,7 @@
    "field": "헤어디자인",
    "track": "정원내 특별전형-일반고",
    "quota": 16,
-   "applied": 418,
+   "applied": 423,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -256,7 +256,7 @@
    "field": "헤어디자인",
    "track": "정원내 일반전형",
    "quota": 5,
-   "applied": 213,
+   "applied": 215,
    "prior": 27.4,
    "priorName": "준오헤어시그니처과",
    "priorQuota": 5,
@@ -277,7 +277,7 @@
   "os"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 17:01",
+ "checkedAt": "2026-11-25 17:31",
  "baseline": {
   "school": "km",
   "dept": "헤어디자인과"
