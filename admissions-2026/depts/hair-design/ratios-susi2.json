@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-26 00:00"
+   "time": "2026-11-26 24시 최종 (학교 집계)"
   },
   {
    "id": "gb",
@@ -108,13 +108,13 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 2,
-   "applied": 95,
-   "sum": true,
-   "prior": 13.0,
+   "applied": 106,
+   "prior": 13.33,
    "priorQuota": 3,
-   "priorApplied": 39,
+   "priorApplied": 40,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true
   },
   {
    "school": "km",
@@ -124,17 +124,17 @@
    "track": "정원내 전체",
    "quota": 16,
    "applied": 131,
-   "sum": true,
    "main": {
     "track": "일반전형",
     "quota": 10,
     "applied": 93
    },
-   "prior": 11.75,
+   "prior": 11.81,
    "priorQuota": 16,
-   "priorApplied": 188,
+   "priorApplied": 189,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true
   },
   {
    "school": "km",
@@ -143,18 +143,19 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 16,
-   "applied": 28,
-   "sum": true,
+   "applied": 53,
    "main": {
     "track": "일반전형",
     "quota": 4,
-    "applied": 20
+    "applied": 21
    },
-   "prior": 8.0,
-   "priorQuota": 4,
-   "priorApplied": 32,
+   "prior": null,
+   "priorQuota": null,
+   "priorApplied": 56,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true,
+   "priorNote": "2026 지원인원은 학교 집계표 값, 2026 모집인원은 확인 안 됨"
   },
   {
    "school": "km",
@@ -164,9 +165,12 @@
    "track": "정원내 전체",
    "quota": 17,
    "applied": 100,
-   "sum": true,
-   "priorNote": "2026학년도 수시 2차에 같은 모집단위 없음",
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "priorNote": "2026 지원인원은 학교 집계표 값, 2026 모집인원은 확인 안 됨",
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true,
+   "priorApplied": 183,
+   "priorQuota": null,
+   "prior": null
   },
   {
    "school": "gb",
@@ -277,6 +281,7 @@
   "os"
  ],
  "finalized": [
+  "km",
   "gb"
  ],
  "checkedAt": "2026-11-26 00:31",

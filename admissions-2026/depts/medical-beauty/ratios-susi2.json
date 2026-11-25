@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-26 00:00"
+   "time": "2026-11-26 24시 최종 (학교 집계)"
   },
   {
    "id": "gb",
@@ -130,13 +130,13 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 3,
-   "applied": 61,
-   "sum": true,
+   "applied": 72,
    "prior": 13.0,
    "priorQuota": 3,
    "priorApplied": 39,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true
   },
   {
    "school": "km",
@@ -146,17 +146,17 @@
    "track": "정원내 전체",
    "quota": 22,
    "applied": 335,
-   "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 17,
     "applied": 277
    },
-   "prior": 26.25,
+   "prior": 26.42,
    "priorQuota": 12,
-   "priorApplied": 315,
+   "priorApplied": 317,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true
   },
   {
    "school": "km",
@@ -166,17 +166,17 @@
    "track": "정원내 전체",
    "quota": 9,
    "applied": 127,
-   "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 5,
     "applied": 105
    },
-   "prior": 16.33,
+   "prior": 16.44,
    "priorQuota": 9,
-   "priorApplied": 147,
+   "priorApplied": 148,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true
   },
   {
    "school": "km",
@@ -185,13 +185,13 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 5,
-   "applied": 73,
-   "sum": true,
-   "prior": 9.0,
+   "applied": 85,
+   "prior": 10.0,
    "priorQuota": 3,
-   "priorApplied": 27,
+   "priorApplied": 30,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true
   },
   {
    "school": "gb",
@@ -321,6 +321,7 @@
   "ys"
  ],
  "finalized": [
+  "km",
   "gb"
  ],
  "checkedAt": "2026-11-26 00:31",

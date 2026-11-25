@@ -1,9 +1,9 @@
 {
  "title": "2027학년도 수시 2차 정원내 지원현황",
  "round": "susi2",
- "basis": "2026-11-26 00:00 기준 (진학어플라이 공개값, 접수 중)",
+ "basis": "2026-11-26 24시 기준 (15일차, 학교 내부 집계, 최종)",
  "url": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio40120541.html",
- "source": "진학어플라이 경민대학교 수시 2차 경쟁률 · 2026은 진학사 스마트경쟁률 과거 경쟁률(2026학년도 수시 2차)",
+ "source": "경민대학교 수시 2차 내부 집계표(15일차 최종) · 2026은 집계표의 ‘전년도 지원인원’",
  "columns": {
   "general": "일반전형",
   "regular": "특별전형-일반고",
@@ -30,7 +30,9 @@
    "quota": 22,
    "applied": 335,
    "prevQuota": 12,
-   "prevApplied": 315
+   "prevApplied": 317,
+   "capacity": 145,
+   "remain": 274
   },
   {
    "group": "보건의료",
@@ -49,7 +51,9 @@
    "quota": 9,
    "applied": 127,
    "prevQuota": 9,
-   "prevApplied": 147
+   "prevApplied": 148,
+   "capacity": 60,
+   "remain": 68
   },
   {
    "group": "보건의료",
@@ -58,13 +62,15 @@
    "tracks": {
     "general": [
      5,
-     73
+     85
     ]
    },
    "quota": 5,
-   "applied": 73,
+   "applied": 85,
    "prevQuota": 3,
-   "prevApplied": 27
+   "prevApplied": 30,
+   "capacity": 30,
+   "remain": -19
   },
   {
    "group": "보건의료",
@@ -73,13 +79,15 @@
    "tracks": {
     "general": [
      3,
-     61
+     72
     ]
    },
    "quota": 3,
-   "applied": 61,
+   "applied": 72,
    "prevQuota": 3,
-   "prevApplied": 39
+   "prevApplied": 39,
+   "capacity": 30,
+   "remain": 30
   },
   {
    "group": "공공안전",
@@ -88,7 +96,7 @@
    "tracks": {
     "general": [
      16,
-     250
+     253
     ],
     "special": [
      10,
@@ -96,9 +104,11 @@
     ]
    },
    "quota": 26,
-   "applied": 288,
+   "applied": 291,
    "prevQuota": 24,
-   "prevApplied": 160
+   "prevApplied": 161,
+   "capacity": 120,
+   "remain": 121
   },
   {
    "group": "공공안전",
@@ -113,7 +123,9 @@
    "quota": 7,
    "applied": 141,
    "prevQuota": 7,
-   "prevApplied": 149
+   "prevApplied": 151,
+   "capacity": 40,
+   "remain": 121
   },
   {
    "group": "외식관광",
@@ -122,7 +134,7 @@
    "tracks": {
     "regular": [
      5,
-     77
+     78
     ],
     "vocational": [
      3,
@@ -130,9 +142,11 @@
     ]
    },
    "quota": 8,
-   "applied": 98,
+   "applied": 99,
    "prevQuota": 8,
-   "prevApplied": 117
+   "prevApplied": 117,
+   "capacity": 60,
+   "remain": 89
   },
   {
    "group": "외식관광",
@@ -147,7 +161,9 @@
    "quota": 5,
    "applied": 100,
    "prevQuota": 5,
-   "prevApplied": 131
+   "prevApplied": 132,
+   "capacity": 35,
+   "remain": 103
   },
   {
    "group": "외식관광",
@@ -156,7 +172,7 @@
    "tracks": {
     "regular": [
      6,
-     61
+     63
     ],
     "vocational": [
      2,
@@ -164,29 +180,16 @@
     ]
    },
    "quota": 8,
-   "applied": 73,
+   "applied": 75,
    "prevQuota": 8,
-   "prevApplied": 92
+   "prevApplied": 97,
+   "capacity": 72,
+   "remain": 73
   },
   {
    "group": "휴먼서비스",
    "name": "건축공간디자인학과",
    "id": "interior-design",
-   "tracks": {
-    "general": [
-     7,
-     159
-    ]
-   },
-   "quota": 7,
-   "applied": 159,
-   "prevQuota": 7,
-   "prevApplied": 117
-  },
-  {
-   "group": "휴먼서비스",
-   "name": "사회복지과",
-   "id": "social-welfare",
    "tracks": {
     "general": [
      7,
@@ -196,7 +199,26 @@
    "quota": 7,
    "applied": 164,
    "prevQuota": 7,
-   "prevApplied": 158
+   "prevApplied": 120,
+   "capacity": 35,
+   "remain": 25
+  },
+  {
+   "group": "휴먼서비스",
+   "name": "사회복지과",
+   "id": "social-welfare",
+   "tracks": {
+    "general": [
+     7,
+     168
+    ]
+   },
+   "quota": 7,
+   "applied": 168,
+   "prevQuota": 7,
+   "prevApplied": 160,
+   "capacity": 50,
+   "remain": 73
   },
   {
    "group": "휴먼서비스",
@@ -211,7 +233,9 @@
    "quota": 6,
    "applied": 59,
    "prevQuota": 4,
-   "prevApplied": 110
+   "prevApplied": 111,
+   "capacity": 32,
+   "remain": 104
   },
   {
    "group": "국방안전",
@@ -220,13 +244,15 @@
    "tracks": {
     "general": [
      4,
-     42
+     47
     ]
    },
    "quota": 4,
-   "applied": 42,
+   "applied": 47,
    "prevQuota": null,
    "prevApplied": null,
+   "capacity": 30,
+   "remain": null,
    "new": true
   },
   {
@@ -242,7 +268,9 @@
    "quota": 4,
    "applied": 34,
    "prevQuota": 1,
-   "prevApplied": 14
+   "prevApplied": 14,
+   "capacity": 20,
+   "remain": -8
   },
   {
    "group": "국방안전",
@@ -251,13 +279,15 @@
    "tracks": {
     "general": [
      3,
-     56
+     65
     ]
    },
    "quota": 3,
-   "applied": 56,
+   "applied": 65,
    "prevQuota": 3,
-   "prevApplied": 59
+   "prevApplied": 62,
+   "capacity": 39,
+   "remain": -13
   },
   {
    "group": "국방안전",
@@ -272,7 +302,9 @@
    "quota": 4,
    "applied": 53,
    "prevQuota": 4,
-   "prevApplied": 31
+   "prevApplied": 37,
+   "capacity": 40,
+   "remain": 23
   },
   {
    "group": "인플루언서 재양성",
@@ -287,7 +319,9 @@
    "quota": 12,
    "applied": 118,
    "prevQuota": 10,
-   "prevApplied": 172
+   "prevApplied": 173,
+   "capacity": 50,
+   "remain": 137
   },
   {
    "group": "인플루언서 재양성",
@@ -296,13 +330,15 @@
    "tracks": {
     "general": [
      13,
-     107
+     109
     ]
    },
    "quota": 13,
-   "applied": 107,
+   "applied": 109,
    "prevQuota": 13,
-   "prevApplied": 62
+   "prevApplied": 62,
+   "capacity": 40,
+   "remain": 18
   },
   {
    "group": "인플루언서 재양성",
@@ -317,7 +353,9 @@
    "quota": 15,
    "applied": 85,
    "prevQuota": 15,
-   "prevApplied": 51
+   "prevApplied": 51,
+   "capacity": 40,
+   "remain": 10
   },
   {
    "group": "K-콘텐츠",
@@ -336,7 +374,9 @@
    "quota": 16,
    "applied": 131,
    "prevQuota": 16,
-   "prevApplied": 188
+   "prevApplied": 189,
+   "capacity": 80,
+   "remain": 151
   },
   {
    "group": "K-콘텐츠",
@@ -345,11 +385,11 @@
    "tracks": {
     "general": [
      4,
-     20
+     21
     ],
     "special": [
      11,
-     7
+     31
     ],
     "talent": [
      1,
@@ -357,9 +397,11 @@
     ]
    },
    "quota": 16,
-   "applied": 28,
+   "applied": 53,
    "prevQuota": 4,
-   "prevApplied": 32
+   "prevApplied": 56,
+   "capacity": 50,
+   "remain": 26
   },
   {
    "group": "K-콘텐츠",
@@ -378,8 +420,10 @@
    "quota": 17,
    "applied": 100,
    "prevQuota": null,
-   "prevApplied": null,
-   "new": true
+   "prevApplied": 183,
+   "capacity": 100,
+   "remain": 155,
+   "trackDetail": "전공별 — 시범: 특기자 7명·51명, 특별인재 1명·6명 · 품새: 3명·22명, 1명·4명 · 겨루기: 3명·12명, 1명·2명 · 자유품새: 특기자 1명·3명"
   },
   {
    "group": "K-콘텐츠",
@@ -388,13 +432,15 @@
    "tracks": {
     "general": [
      2,
-     95
+     106
     ]
    },
    "quota": 2,
-   "applied": 95,
+   "applied": 106,
    "prevQuota": 3,
-   "prevApplied": 39
+   "prevApplied": 40,
+   "capacity": 30,
+   "remain": 28
   },
   {
    "group": "공통",
@@ -403,13 +449,15 @@
    "tracks": {
     "general": [
      7,
-     102
+     104
     ]
    },
    "quota": 7,
-   "applied": 102,
+   "applied": 104,
    "prevQuota": 7,
-   "prevApplied": 125
+   "prevApplied": 128,
+   "capacity": 30,
+   "remain": 73
   },
   {
    "group": "성인학습자",
@@ -418,13 +466,15 @@
    "tracks": {
     "special": [
      3,
-     1
+     26
     ]
    },
    "quota": 3,
-   "applied": 1,
+   "applied": 26,
    "prevQuota": 3,
-   "prevApplied": 3
+   "prevApplied": 60,
+   "capacity": 90,
+   "remain": 39
   },
   {
    "group": "성인학습자",
@@ -433,24 +483,27 @@
    "tracks": {
     "special": [
      2,
-     1
+     20
     ]
    },
    "quota": 2,
-   "applied": 1,
+   "applied": 20,
    "prevQuota": 2,
-   "prevApplied": 1
+   "prevApplied": 20,
+   "capacity": 70,
+   "remain": 16
   }
  ],
  "total": {
   "quota": 231,
-  "applied": 2631,
-  "prevApplied": 2339,
+  "applied": 2767,
+  "prevApplied": 2658,
   "day": {
    "quota": 226,
-   "applied": 2629,
-   "prevApplied": 2335
+   "applied": 2721,
+   "prevApplied": 2578
   }
  },
- "final": false
+ "final": true,
+ "locked": true
 }

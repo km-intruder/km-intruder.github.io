@@ -109,7 +109,7 @@
   <details class="notes">
     <summary>표 읽는 법</summary>
     <p>학과 행을 누르면 전형별(일반전형·특별전형 일반고·특성화고·성인/특기자/독자·특별인재) 모집·지원 인원이 펼쳐집니다. ‘분석’이 있는 학과는 수도권 전문대 같은 계열과 비교한 화면으로 이동합니다.</p>
-    <p>‘잔존인원’은 학교 집계표의 ‘전년도 수시1차 충원 후 잔존인원’ 값을 그대로 옮긴 것입니다.</p>
+    <p id="remainNote">‘잔존인원’은 학교 집계표의 ‘전년도 수시1차 충원 후 잔존인원’ 값을 그대로 옮긴 것입니다.</p>
   </details>
 </section>
 
@@ -493,7 +493,7 @@ async function latest(cat, target, hrefPage) {
 
 if (S2) {
   // 산업 수요 × 점유 분석은 마감된 수시 1차 기준으로만 본다
-  el('sec-strategy').querySelector('details').outerHTML = '<p class="lead">학과 포지션 지도와 권고는 마감된 <a href="school.html">수시 1차</a> 기준으로 봅니다. 수시 2차는 모집 규모가 작고 접수 중이라 점유 변화가 크게 흔들립니다.</p>';
+  el('sec-strategy').querySelector('details').outerHTML = '<p class="lead">학과 포지션 지도와 권고는 마감된 <a href="school.html">수시 1차</a> 기준으로 봅니다. 수시 2차는 모집 규모가 작아 점유 변화가 크게 흔들립니다.</p>';
   el('s1Note').hidden = true;
   el('roundAlert').hidden = false;
 }
@@ -503,9 +503,12 @@ fetch(`school/${ROUND}-2027.json`, { cache: 'no-store' }).then(r => r.json()).th
     el('pageTitle').textContent = '경민대학교 2027학년도 수시 2차';
     document.title = '경민대 전체 · 수시 2차';
     el('roundAlert').hidden = !!K.final;
+    el('remainNote').textContent = '‘잔존인원’은 학교 집계표의 ‘전년도 수시2차 충원 후 잔존인원’ 값을 그대로 옮긴 것입니다.';
   }
   el('basis').textContent = `${K.title} · ${K.basis}`;
-  el('sourceNote').textContent = S2
+  el('sourceNote').textContent = S2 && K.locked
+    ? `${K.source} · ${K.basis}. 학과별 정원내 전형(수급자·농어촌·대졸자 등 정원외 제외) 합계입니다.`
+    : S2
     ? `${K.source}. ${K.basis}. 학과별 정원내 전형(수급자·농어촌·대졸자 등 정원외 제외) 합계이며, 매시 정각 갱신됩니다.${K.notRecruiting?.length ? ' 수시 2차에 모집하지 않는 학과: ' + K.notRecruiting.join(', ') + '.' : ''}`
     : `${K.source} · ${K.basis}. 학과별 2026 지원인원은 집계표의 ‘전년도 지원인원’입니다.`;
   el('group').insertAdjacentHTML('beforeend', [...new Set(K.depts.map(d => d.group))].map(g => `<option>${esc(g)}</option>`).join(''));

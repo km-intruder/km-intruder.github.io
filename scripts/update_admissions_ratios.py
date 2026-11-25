@@ -314,6 +314,9 @@ def update_school(path, dry_run):
     """school/susi2-2027.json: 모집·지원·전형별 값만 원문으로 갱신 (2026 값·계열 등은 생성기가 정한 그대로)."""
     print(f"== {path.relative_to(DATA_DIR)}")
     data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("locked"):  # 학교 집계표 최종값으로 바꾼 파일은 원문 수집으로 덮어쓰지 않음
+        print("최종값 잠금 - 건너뜁니다.")
+        return
     before = json.dumps(data, ensure_ascii=False, sort_keys=True)
     try:
         html = fetch(data["url"])

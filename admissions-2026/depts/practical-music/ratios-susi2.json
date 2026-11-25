@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-26 00:00"
+   "time": "2026-11-26 24시 최종 (학교 집계)"
   },
   {
    "id": "gb",
@@ -31,13 +31,13 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 13,
-   "applied": 107,
-   "sum": true,
+   "applied": 109,
    "prior": 4.77,
    "priorQuota": 13,
    "priorApplied": 62,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true
   },
   {
    "school": "km",
@@ -47,12 +47,12 @@
    "track": "정원내 전체",
    "quota": 12,
    "applied": 118,
-   "sum": true,
-   "prior": 17.2,
+   "prior": 17.3,
    "priorQuota": 10,
-   "priorApplied": 172,
+   "priorApplied": 173,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true
   },
   {
    "school": "km",
@@ -62,12 +62,12 @@
    "track": "정원내 전체",
    "quota": 15,
    "applied": 85,
-   "sum": true,
    "prior": 3.4,
    "priorQuota": 15,
    "priorApplied": 51,
    "priorUrl": null,
-   "note": "진학어플라이 공개값 (정원내 전형 합계)"
+   "note": "학교 내부 집계 최종값 (정원내 전형 합계, 11.26 24시)",
+   "locked": true
   },
   {
    "school": "gb",
@@ -89,6 +89,7 @@
   "gb"
  ],
  "finalized": [
+  "km",
   "gb"
  ],
  "checkedAt": "2026-11-26 00:31",
