@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 17:50"
+   "time": "2026-11-25 18:20"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-25 17:59"
+   "time": "2026-11-25 18:29"
   },
   {
    "id": "si",
@@ -42,7 +42,7 @@
    "lat": 37.486,
    "lon": 126.784,
    "type": "전문대",
-   "time": "2026-11-25 18:00"
+   "time": "2026-11-25 18:30"
   },
   {
    "id": "yh",
@@ -53,7 +53,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-25 18:00"
+   "time": "2026-11-25 18:30"
   },
   {
    "id": "ss",
@@ -64,7 +64,7 @@
    "lat": 37.194,
    "lon": 126.973,
    "type": "전문대",
-   "time": "2026-11-25 18:00"
+   "time": "2026-11-25 18:30"
   },
   {
    "id": "je",
@@ -86,7 +86,7 @@
    "lat": 37.446,
    "lon": 127.158,
    "type": "전문대",
-   "time": "2026-11-25 18:00"
+   "time": "2026-11-25 18:30"
   },
   {
    "id": "ys",
@@ -97,7 +97,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-25 18:00"
+   "time": "2026-11-25 18:30"
   },
   {
    "id": "sj",
@@ -108,7 +108,7 @@
    "lat": 37.857,
    "lon": 127.038,
    "type": "전문대",
-   "time": "2026-11-25 17:50"
+   "time": "2026-11-25 18:20"
   }
  ],
  "rows": [
@@ -119,12 +119,12 @@
    "comparable": true,
    "track": "정원내 전체",
    "quota": 22,
-   "applied": 279,
+   "applied": 288,
    "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 17,
-    "applied": 232
+    "applied": 237
    },
    "prior": 26.25,
    "priorQuota": 12,
@@ -139,12 +139,12 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 9,
-   "applied": 102,
+   "applied": 104,
    "sum": true,
    "main": {
     "track": "특별전형-일반고",
     "quota": 5,
-    "applied": 85
+    "applied": 86
    },
    "prior": 16.33,
    "priorQuota": 9,
@@ -174,7 +174,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 3,
-   "applied": 50,
+   "applied": 51,
    "sum": true,
    "prior": 13.0,
    "priorQuota": 3,
@@ -188,7 +188,7 @@
    "field": "간호",
    "track": "일반고",
    "quota": 51,
-   "applied": 893,
+   "applied": 910,
    "prior": 13.2,
    "priorName": "간호학과",
    "priorQuota": 45,
@@ -216,7 +216,7 @@
    "field": "간호",
    "track": "일반고",
    "quota": 24,
-   "applied": 440,
+   "applied": 443,
    "prior": 16.17,
    "priorName": "간호학과(4년제)",
    "priorQuota": 24,
@@ -230,7 +230,7 @@
    "field": "간호",
    "track": "정원내 일반고 전형",
    "quota": 8,
-   "applied": 438,
+   "applied": 446,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -240,7 +240,7 @@
    "field": "간호",
    "track": "정원내 전형 일반고 출신자(일반과정)",
    "quota": 39,
-   "applied": 554,
+   "applied": 570,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -250,7 +250,7 @@
    "field": "간호",
    "track": "일반고전형",
    "quota": 15,
-   "applied": 246,
+   "applied": 247,
    "prior": 25.4,
    "priorName": "간호학과",
    "priorQuota": 10,
@@ -264,7 +264,7 @@
    "field": "간호",
    "track": "정원내 특별전형 일반고전형",
    "quota": 9,
-   "applied": 340,
+   "applied": 343,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -274,7 +274,7 @@
    "field": "간호",
    "track": "정원내 특별전형-일반고",
    "quota": 18,
-   "applied": 315,
+   "applied": 320,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -284,7 +284,7 @@
    "field": "간호",
    "track": "일반전형",
    "quota": 29,
-   "applied": 602,
+   "applied": 610,
    "prior": 10.09,
    "priorName": "간호학과(4년제)",
    "priorQuota": 32,
@@ -306,7 +306,7 @@
   "sj"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 18:01",
+ "checkedAt": "2026-11-25 18:31",
  "baseline": {
   "school": "km",
   "dept": "간호학과"
