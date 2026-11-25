@@ -9,7 +9,7 @@
    "lat": 37.746,
    "lon": 127.071,
    "type": "전문대",
-   "time": "2026-11-25 20:20"
+   "time": "2026-11-25 20:50"
   },
   {
    "id": "gb",
@@ -20,7 +20,7 @@
    "lat": 37.739,
    "lon": 127.192,
    "type": "전문대",
-   "time": "2026-11-25 20:29"
+   "time": "2026-11-25 20:59"
   },
   {
    "id": "ih",
@@ -64,7 +64,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-25 20:30"
+   "time": "2026-11-25 21:00"
   }
  ],
  "rows": [
@@ -75,7 +75,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 4,
-   "applied": 40,
+   "applied": 41,
    "sum": true,
    "priorNote": "2026학년도 수시 2차에 같은 모집단위 없음",
    "note": "진학어플라이 공개값 (정원내 전형 합계)"
@@ -103,7 +103,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 3,
-   "applied": 50,
+   "applied": 53,
    "sum": true,
    "prior": 19.67,
    "priorQuota": 3,
@@ -119,7 +119,7 @@
    "comparable": false,
    "track": "정원내 전체",
    "quota": 4,
-   "applied": 47,
+   "applied": 48,
    "sum": true,
    "prior": 7.75,
    "priorQuota": 4,
@@ -147,7 +147,7 @@
    "field": "국방드론봇",
    "track": "일반고",
    "quota": 17,
-   "applied": 126,
+   "applied": 131,
    "prior": 6.5,
    "priorName": "로봇자동화공학과",
    "priorQuota": 16,
@@ -161,7 +161,7 @@
    "field": "국방드론봇",
    "track": "일반고전형",
    "quota": 1,
-   "applied": 23,
+   "applied": 25,
    "prior": 19.0,
    "priorName": "드론영상과",
    "priorQuota": 1,
@@ -203,7 +203,7 @@
   "os"
  ],
  "finalized": [],
- "checkedAt": "2026-11-25 20:31",
+ "checkedAt": "2026-11-25 21:01",
  "baseline": {
   "school": "km",
   "dept": "국방드론봇시스템과"
