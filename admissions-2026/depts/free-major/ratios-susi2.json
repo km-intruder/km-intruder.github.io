@@ -185,7 +185,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-25 23:50"
+   "time": "2026-11-26 최종 마감"
   }
  ],
  "rows": [
@@ -412,7 +412,7 @@
    "field": "자유전공",
    "track": "정원내 일반전형",
    "quota": 4,
-   "applied": 217,
+   "applied": 232,
    "prior": 29.67,
    "priorName": "자유전공학과",
    "priorQuota": 6,
@@ -452,9 +452,10 @@
   "ds",
   "sg",
   "si",
-  "ys"
+  "ys",
+  "os"
  ],
- "checkedAt": "2026-11-26 10:31",
+ "checkedAt": "2026-11-26 11:01",
  "baseline": {
   "school": "km",
   "dept": "자유전공학과"

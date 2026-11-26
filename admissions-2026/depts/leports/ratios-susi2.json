@@ -20,7 +20,7 @@
    "lat": 37.148,
    "lon": 127.067,
    "type": "전문대",
-   "time": "2026-11-25 23:50"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "ds",
@@ -89,7 +89,7 @@
    "field": "스포츠지도·레저",
    "track": "정원내 일반전형",
    "quota": 13,
-   "applied": 220,
+   "applied": 233,
    "prior": 22.08,
    "priorName": "스포츠지도과",
    "priorQuota": 13,
@@ -130,9 +130,10 @@
  "finalized": [
   "km",
   "ds",
-  "ss"
+  "ss",
+  "os"
  ],
- "checkedAt": "2026-11-26 09:31",
+ "checkedAt": "2026-11-26 11:01",
  "baseline": {
   "school": "km",
   "dept": "레포츠과"

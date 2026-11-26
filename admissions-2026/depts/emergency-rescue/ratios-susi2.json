@@ -148,7 +148,7 @@
    "field": "응급구조",
    "track": "정원내 특별전형(일반고전형)",
    "quota": 10,
-   "applied": 252,
+   "applied": 253,
    "prior": 25.6,
    "priorName": "응급구조과",
    "priorQuota": 10,
@@ -211,7 +211,7 @@
   "sg",
   "ys"
  ],
- "checkedAt": "2026-11-26 10:31",
+ "checkedAt": "2026-11-26 11:01",
  "baseline": {
   "school": "km",
   "dept": "응급구조학과"

@@ -168,7 +168,7 @@
    "field": "미디어영상",
    "track": "정원내 특별전형(일반고전형)",
    "quota": 16,
-   "applied": 74,
+   "applied": 75,
    "prior": 3.2,
    "priorName": "방송음향기술과",
    "priorQuota": 15,
@@ -231,7 +231,7 @@
   "sg",
   "ys"
  ],
- "checkedAt": "2026-11-26 10:31",
+ "checkedAt": "2026-11-26 11:01",
  "baseline": {
   "school": "km",
   "dept": "미디어영상과"
