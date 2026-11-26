@@ -96,7 +96,8 @@
         `<option value="${d.id}"${d === dept ? ' selected' : ''}>${d.name}${chg[d.id] != null ? ` · ${fmt(chg[d.id])}` : ''}</option>`).join('');
     };
     fill(DEPTS);
-    fetch('school/susi1-2027.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(k => {
+    // 보고 있는 회차(수시 1차/2차)의 학교 집계표 기준 지원자 증감률
+    fetch(`school/${keepRound === 'susi2' ? 'susi2' : 'susi1'}-2027.json`, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(k => {
       if (!k) return;
       const chg = {};
       for (const d of k.depts) if (d.id && d.prevApplied) chg[d.id] = (d.applied - d.prevApplied) / d.prevApplied * 100;
