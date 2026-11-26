@@ -90,19 +90,18 @@
     const sel = document.createElement('select');
     sel.className = 'dept-select';
     sel.setAttribute('aria-label', '학교 전체 또는 학과 선택 (지원자 감소가 큰 학과부터)');
-    const fmt = v => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(1) + '%';
-    const fill = (list, chg = {}) => {
+    const fill = list => {
       sel.innerHTML = `<option value="">경민대 전체 (${keepRound === 'susi2' ? '수시 2차' : '수시 1차'})</option>` + list.map(d =>
-        `<option value="${d.id}"${d === dept ? ' selected' : ''}>${d.name}${chg[d.id] != null ? ` · ${fmt(chg[d.id])}` : ''}</option>`).join('');
+        `<option value="${d.id}"${d === dept ? ' selected' : ''}>${d.name}</option>`).join('');
     };
     fill(DEPTS);
-    // 보고 있는 회차(수시 1차/2차)의 학교 집계표 기준 지원자 증감률
+    // 순서: 보고 있는 회차(수시 1차/2차) 학교 집계표의 지원자 증감률 (숫자는 표시하지 않음)
     fetch(`school/${keepRound === 'susi2' ? 'susi2' : 'susi1'}-2027.json`, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(k => {
       if (!k) return;
       const chg = {};
       for (const d of k.depts) if (d.id && d.prevApplied) chg[d.id] = (d.applied - d.prevApplied) / d.prevApplied * 100;
       // 2026 값이 없는 신설 학과는 맨 뒤
-      fill([...DEPTS].sort((a, b) => (chg[a.id] ?? Infinity) - (chg[b.id] ?? Infinity)), chg);
+      fill([...DEPTS].sort((a, b) => (chg[a.id] ?? Infinity) - (chg[b.id] ?? Infinity)));
     }).catch(() => {});
     sel.addEventListener('change', () => {
       if (!sel.value) { location.href = 'school.html' + (keepRound === 'susi2' ? '?round=susi2' : ''); return; }
