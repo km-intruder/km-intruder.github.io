@@ -42,7 +42,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-25 19:00"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "ss",
@@ -198,7 +198,7 @@
    "field": "호텔조리",
    "track": "정원내 일반고 전형",
    "quota": 8,
-   "applied": 97,
+   "applied": 115,
    "prior": 12.78,
    "priorName": "호텔조리전공",
    "priorQuota": 9,
@@ -306,9 +306,10 @@
   "os"
  ],
  "finalized": [
-  "km"
+  "km",
+  "yh"
  ],
- "checkedAt": "2026-11-26 01:31",
+ "checkedAt": "2026-11-26 09:01",
  "baseline": {
   "school": "km",
   "dept": "호텔조리과"

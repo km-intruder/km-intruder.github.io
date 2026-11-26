@@ -42,7 +42,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-25 19:00"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "ss",
@@ -97,7 +97,7 @@
    "lat": 37.584,
    "lon": 126.925,
    "type": "전문대",
-   "time": "2026-11-25 13:00"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "sg",
@@ -227,7 +227,7 @@
    "field": "보건의료행정",
    "track": "정원내 일반고 전형",
    "quota": 8,
-   "applied": 104,
+   "applied": 132,
    "prior": 14.5,
    "priorName": "보건의료행정학과",
    "priorQuota": 8,
@@ -293,7 +293,7 @@
    "field": "보건의료행정",
    "track": "정원내 특별전형(일반고)",
    "quota": 15,
-   "applied": 162,
+   "applied": 240,
    "prior": 16.73,
    "priorName": "보건의료정보과",
    "priorQuota": 15,
@@ -340,9 +340,11 @@
   "ys"
  ],
  "finalized": [
-  "km"
+  "km",
+  "yh",
+  "mj"
  ],
- "checkedAt": "2026-11-26 00:31",
+ "checkedAt": "2026-11-26 09:01",
  "baseline": {
   "school": "km",
   "dept": "보건의료행정과"

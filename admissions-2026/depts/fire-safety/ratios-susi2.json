@@ -42,7 +42,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-25 19:00"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "ss",
@@ -159,7 +159,7 @@
    "field": "소방안전",
    "track": "정원내 일반고 전형",
    "quota": 5,
-   "applied": 70,
+   "applied": 81,
    "prior": 19.0,
    "priorName": "소방설비안전전공",
    "priorQuota": 5,
@@ -241,9 +241,10 @@
   "sj"
  ],
  "finalized": [
-  "km"
+  "km",
+  "yh"
  ],
- "checkedAt": "2026-11-26 00:31",
+ "checkedAt": "2026-11-26 09:01",
  "baseline": {
   "school": "km",
   "dept": "소방안전관리과"

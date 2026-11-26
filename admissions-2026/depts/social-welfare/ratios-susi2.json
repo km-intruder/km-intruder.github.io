@@ -75,7 +75,7 @@
    "lat": 37.488,
    "lon": 126.813,
    "type": "전문대",
-   "time": "2026-11-25 19:00"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "ss",
@@ -130,7 +130,7 @@
    "lat": 37.584,
    "lon": 126.925,
    "type": "전문대",
-   "time": "2026-11-25 13:00"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "sg",
@@ -299,7 +299,7 @@
    "field": "사회복지",
    "track": "정원내 일반고 전형",
    "quota": 4,
-   "applied": 82,
+   "applied": 93,
    "prior": 34.25,
    "priorName": "사회복지전공",
    "priorQuota": 4,
@@ -365,7 +365,7 @@
    "field": "사회복지",
    "track": "정원내 특별전형(일반고)",
    "quota": 16,
-   "applied": 145,
+   "applied": 221,
    "prior": 13.38,
    "priorName": "사회복지과",
    "priorQuota": 16,
@@ -450,9 +450,11 @@
  ],
  "finalized": [
   "km",
-  "gb"
+  "gb",
+  "yh",
+  "mj"
  ],
- "checkedAt": "2026-11-26 00:31",
+ "checkedAt": "2026-11-26 09:01",
  "baseline": {
   "school": "km",
   "dept": "사회복지과"
