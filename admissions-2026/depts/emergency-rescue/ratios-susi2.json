@@ -64,7 +64,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-25 23:55"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "sj",
@@ -172,7 +172,7 @@
    "field": "응급구조",
    "track": "정원내 특별전형-일반고",
    "quota": 15,
-   "applied": 263,
+   "applied": 264,
    "prior": 24.45,
    "priorName": "응급구조과",
    "priorQuota": 11,
@@ -208,9 +208,10 @@
   "km",
   "yh",
   "bc",
-  "sg"
+  "sg",
+  "ys"
  ],
- "checkedAt": "2026-11-26 09:31",
+ "checkedAt": "2026-11-26 10:31",
  "baseline": {
   "school": "km",
   "dept": "응급구조학과"

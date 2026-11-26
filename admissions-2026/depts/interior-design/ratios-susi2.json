@@ -42,7 +42,7 @@
    "lat": 37.586,
    "lon": 127.097,
    "type": "전문대",
-   "time": "2026-11-25 10:00"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "id",
@@ -163,7 +163,7 @@
    "lat": 37.397,
    "lon": 126.926,
    "type": "전문대",
-   "time": "2026-11-25 23:55"
+   "time": "2026-11-26 최종 마감"
   }
  ],
  "rows": [
@@ -256,7 +256,7 @@
    "field": "건축공간디자인",
    "track": "일반전형(학생부위주)",
    "quota": 24,
-   "applied": 133,
+   "applied": 226,
    "prior": 8.22,
    "priorName": "실내디자인학과",
    "priorQuota": 27,
@@ -270,7 +270,7 @@
    "field": "건축공간디자인",
    "track": "특별전형(일반고)",
    "quota": 21,
-   "applied": 120,
+   "applied": 200,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -516,7 +516,7 @@
    "field": "건축공간디자인",
    "track": "정원내 특별전형-일반고",
    "quota": 18,
-   "applied": 179,
+   "applied": 180,
    "prior": 11.0,
    "priorName": "실내건축과",
    "priorQuota": 11,
@@ -551,9 +551,11 @@
   "bc",
   "ss",
   "ds",
-  "sg"
+  "sg",
+  "si",
+  "ys"
  ],
- "checkedAt": "2026-11-26 09:31",
+ "checkedAt": "2026-11-26 10:31",
  "baseline": {
   "school": "km",
   "dept": "건축공간디자인학과"

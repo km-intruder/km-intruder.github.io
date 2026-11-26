@@ -50,7 +50,7 @@
    "lat": 37.586,
    "lon": 127.097,
    "type": "전문대",
-   "time": "2026-11-25 10:00"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "id",
@@ -327,7 +327,7 @@
    "field": "SW",
    "track": "특별전형(일반고)",
    "quota": 13,
-   "applied": 79,
+   "applied": 142,
    "prior": 8.94,
    "priorName": "소프트웨어공학과",
    "priorQuota": 17,
@@ -341,7 +341,7 @@
    "field": "게임",
    "track": "특별전형(일반고)",
    "quota": 22,
-   "applied": 117,
+   "applied": 199,
    "prior": 6.44,
    "priorName": "AI게임융합학과",
    "priorQuota": 25,
@@ -355,7 +355,7 @@
    "field": "컴퓨터",
    "track": "특별전형(일반고)",
    "quota": 15,
-   "applied": 176,
+   "applied": 267,
    "comparable": false,
    "priorNote": "2026학년도 수시 2차 같은 모집단위·전형 값을 찾지 못함"
   },
@@ -365,7 +365,7 @@
    "field": "IT",
    "track": "특별전형(일반고)",
    "quota": 18,
-   "applied": 166,
+   "applied": 283,
    "prior": 7.43,
    "priorName": "정보통신공학과",
    "priorQuota": 23,
@@ -629,9 +629,10 @@
   "bc",
   "ss",
   "ds",
-  "sg"
+  "sg",
+  "si"
  ],
- "checkedAt": "2026-11-26 09:31",
+ "checkedAt": "2026-11-26 10:31",
  "baseline": {
   "school": "km",
   "dept": "지능형소프트웨어과"
