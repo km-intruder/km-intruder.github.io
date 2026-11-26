@@ -64,7 +64,7 @@
    "lat": 37.337,
    "lon": 126.734,
    "type": "전문대",
-   "time": "2026-11-25 23:55"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "yh",
@@ -285,7 +285,7 @@
    "field": "사회복지",
    "track": "정원내 일반고(학생부)",
    "quota": 5,
-   "applied": 289,
+   "applied": 305,
    "prior": 24.0,
    "priorName": "사회복지학과",
    "priorQuota": 5,
@@ -460,9 +460,10 @@
   "sg",
   "si",
   "ys",
-  "os"
+  "os",
+  "gt"
  ],
- "checkedAt": "2026-11-26 11:01",
+ "checkedAt": "2026-11-26 13:01",
  "baseline": {
   "school": "km",
   "dept": "사회복지과"

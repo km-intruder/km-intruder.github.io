@@ -20,7 +20,7 @@
    "lat": 37.337,
    "lon": 126.734,
    "type": "전문대",
-   "time": "2026-11-25 23:55"
+   "time": "2026-11-26 최종 마감"
   },
   {
    "id": "ys",
@@ -101,7 +101,7 @@
    "field": "군사",
    "track": "정원내 일반고(학생부)",
    "quota": 2,
-   "applied": 96,
+   "applied": 99,
    "prior": 38.5,
    "priorName": "국방군사학과",
    "priorQuota": 2,
@@ -131,9 +131,10 @@
  ],
  "finalized": [
   "km",
-  "ys"
+  "ys",
+  "gt"
  ],
- "checkedAt": "2026-11-26 10:31",
+ "checkedAt": "2026-11-26 13:01",
  "baseline": {
   "school": "km",
   "dept": "효충군사학과"
